@@ -1,0 +1,1 @@
+image_id,region,dataset,source_path,split,marking_type,bbox_x1,bbox_y1,bbox_x2,bbox_y2,visibility,expected_behavior,rule_id,label_status,labeler,label_date,notes

@@ -1,0 +1,65 @@
+{
+  "_comment": "Where every input of the project lives. playground.ipynb reads this file; nothing here is secret.",
+  "bdd100k": {
+    "name": "BDD100K",
+    "region": "US",
+    "version": "BDD100K 100K images, 2020 label release (validation split; lane + det_20 labels)",
+    "homepage": "https://bdd100k.com",
+    "base_url": "https://dl.cv.ethz.ch/bdd100k/data/",
+    "archives": {
+      "images_val": "100k_images_val.zip",
+      "lane_labels": "bdd100k_lane_labels_trainval.zip",
+      "det_labels": "bdd100k_det_20_labels_trainval.zip",
+      "images_train": "100k_images_train.zip"
+    },
+    "license": "BDD100K License (UC Berkeley): educational, research and not-for-profit use; copies must keep the copyright notice; commercial use needs a separate license.",
+    "mirror": {
+      "_comment": "Used only when the official server is unreachable. Same BDD100K 100K release (all splits, lane labels, scene tags) in Supervisely format.",
+      "page": "https://datasetninja.com/bdd100k",
+      "url": "https://assets.supervisely.com/remote/eyJsaW5rIjogInMzOi8vc3VwZXJ2aXNlbHktZGF0YXNldHMvMzA2MF9CREQxMDBLOiBJbWFnZXMgMTAwSy9iZGQxMDBrOi1pbWFnZXMtMTAway1EYXRhc2V0TmluamEudGFyIiwgInNpZyI6ICJSV1B1Z0pCN0gyWEQ5d0FQVldRNnRMQjExZE90RjZIUmFqdWNyQXA3TTBrPSJ9?response-content-disposition=attachment%3B%20filename%3D%22bdd100k%3A-images-100k-DatasetNinja.tar%22",
+      "file": "bdd100k_images_100k_DatasetNinja.tar",
+      "size": "about 5.4 GB",
+      "format": "Supervisely (img/ + ann/ JSON per image)"
+    }
+  },
+  "culane": {
+    "name": "CULane",
+    "region": "CN",
+    "version": "CULane (Pan et al., AAAI 2018), test split: 34,680 frames in 9 scene categories",
+    "homepage": "https://xingangpan.github.io/projects/CULane.html",
+    "gdrive_folder_id": "1mSLgwVTiaUMAb4AVOWwlCD5JcWdrwpvu",
+    "baidu_mirror": "https://pan.baidu.com/s/1KUtzC24cH20n6BtU5D0oyw",
+    "archives": [
+      "list.tar.gz",
+      "driver_37_30frame.tar.gz",
+      "driver_100_30frame.tar.gz",
+      "driver_193_90frame.tar.gz",
+      "annotations_new.tar.gz"
+    ],
+    "file_ids": {
+      "_comment": "Optional. Paste a Google Drive file ID here if the automatic folder listing fails (right-click the file in the official Drive folder > Share > Copy link; the ID is the long code in the link).",
+      "list.tar.gz": "",
+      "driver_37_30frame.tar.gz": "",
+      "driver_100_30frame.tar.gz": "",
+      "driver_193_90frame.tar.gz": "",
+      "annotations_new.tar.gz": ""
+    },
+    "license": "CULane terms (SenseTime): non-commercial research and teaching only; cite the dataset; do not redistribute the images or modified versions."
+  },
+  "mutcd": {
+    "name": "MUTCD 11th Edition, Part 3 (Markings)",
+    "region": "US",
+    "version": "MUTCD 11th Edition, December 2023",
+    "url": "https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/part3.pdf",
+    "local_file": "MUTCD_11th_Part3_Markings.pdf",
+    "license": "U.S. federal government work (FHWA); no copyright restrictions."
+  },
+  "gb5768": {
+    "name": "GB 5768.3-2025 Road traffic signs and markings, Part 3: Road traffic markings",
+    "region": "CN",
+    "version": "GB 5768.3-2025",
+    "homepage": "https://openstd.samr.gov.cn",
+    "local_file": "GB_5768.3-2025.pdf",
+    "license": "Mandatory national standard, free to read on the official platform; the text is copyrighted, so only short quoted passages go into the repository."
+  }
+}
