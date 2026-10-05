@@ -1,9 +1,8 @@
 # Reasoning Driving
 
-**Cross-region lane marking interpretation with a multimodal LLM** · EGN 6216 AI Systems, Fall 2026 · Jiahao Pang
+**Cross-region lane marking recognition with a multimodal LLM** · EGN 6216 AI Systems, Fall 2026 · Jiahao Pang
 
-The project shows a GPT model a road image from China or the US and asks what a lane marking means there. Each image is asked twice: once with the image only (Test A) and once with the matching rule text from the local standard (Test B). The comparison shows whether the rule text helps.
-
+The project shows a multi LLM model a road image from China or the US and asks what a lane marking means there. Each image is asked twice: once with the image only and once with the matching rule text with image from the local standard. The comparison shows whether the rule text helps，and show a approch to hand semantic differences in lane recognition caused by varying traffic rules across different countries or regions, which eliminates the need to train region-specific lane line recognition models. This enables autonomous vehicles to achieve interpretable lane line perception with cross-region generalization capability.
 This repository covers the data collection stage. `playground.ipynb` downloads the datasets and rule documents, loads them into tables, shows real examples and checks the data quality.
 
 ## What the notebook does
