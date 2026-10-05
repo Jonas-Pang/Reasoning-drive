@@ -44,9 +44,10 @@ This repository covers the data collection stage. `playground.ipynb` downloads t
 
 ## Storage, privacy and credentials
 
-* The raw data is not copied to any cloud service. CULane may not be redistributed, and the images show people and licence plates. The data lives in `data/` on an external SSD, and `data/` is ignored by Git.
-* The repository is **private** and shared with the instructor only, because the saved notebook shows a few dataset images. Faces and plates will be blurred before any image is used in a report.
-* No keys or tokens are in the repository. `.env` (ignored by Git) holds local settings such as `DATA_DIR`; `.env.example` shows the format. This notebook does not call the OpenAI API.
+* **The datasets are not in this repository.** CULane may not be redistributed, both datasets show people and licence plates, and together they are about 20 GB (GitHub refuses files over 100 MB). The data lives in `data/` on an external SSD, `data/` is ignored by Git, and anyone who runs the notebook downloads the data from the official sources listed above.
+* The repository is **public**. It holds only code, configuration, the label template, short quoted rule passages and the saved notebook. The notebook output shows a few sample frames so the data can be inspected; no dataset files are shared. Faces and plates will be blurred before any image is used in a report.
+* No keys or tokens are in the repository. `.env` (ignored by Git) holds local settings such as `DATA_DIR`; `.env.example` shows the format.
+* The OpenAI API is not called yet. This stage only collects and checks the data; the GPT experiments (Test A and Test B) come in the next milestone, and the API key will then be read from `.env`.
 
 ## How to run
 
