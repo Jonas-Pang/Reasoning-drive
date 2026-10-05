@@ -1,0 +1,25 @@
+# Datasets and downloads: licensed data, never committed (CULane forbids redistribution)
+data/
+*.zip
+*.tar.gz
+*.part
+*.pdf
+
+# Secrets
+.env
+
+# Python and notebook clutter
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS files (including macOS helper files on external drives)
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+Thumbs.db
+desktop.ini

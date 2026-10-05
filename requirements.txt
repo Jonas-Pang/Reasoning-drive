@@ -1,0 +1,17 @@
+# Python 3.11 (record the exact version you run with: `python --version`)
+# Notebook runtime
+jupyterlab==4.2.5
+ipykernel==6.29.5
+httpx==0.27.2          # JupyterLab 4.2's extension manager fails with httpx 0.28+
+# Data handling and plots
+pandas==2.2.3
+numpy==2.1.3
+matplotlib==3.9.2
+pillow==11.0.0
+# Retrieval
+requests==2.32.3
+gdown==5.2.0
+# PDF text for the rule corpus
+pypdf==5.1.0
+# Reads DATA_DIR (and later the API key) from a local .env file
+python-dotenv==1.0.1
