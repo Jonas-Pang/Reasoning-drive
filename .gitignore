@@ -8,6 +8,12 @@ data/
 # Secrets
 .env
 
+# Model runs: the answer cache and runs with made-up (mock) answers
+runs/cache/
+runs/*_mock/
+# Early demo runs (22 Oct, 1 repeat, prompt v1), kept locally only
+runs/archive/
+
 # Python and notebook clutter
 .venv/
 venv/

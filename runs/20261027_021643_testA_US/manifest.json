@@ -1,0 +1,161 @@
+{
+  "run_id": "20261027_021643_testA_US",
+  "created_utc": "2026-10-27T02:16:43Z",
+  "tool": "lane_reasoner 0.1",
+  "git_commit": "d650e3c9c560",
+  "code_sha": "519f4acf56aa6e36",
+  "test": "A",
+  "region": "US",
+  "mock": false,
+  "use_cache": true,
+  "repeats": 3,
+  "n_items": 40,
+  "settings": {
+    "base_url": "https://api.openai.com/v1",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "temperature": null,
+    "image_detail": "high",
+    "max_output_tokens": 2000,
+    "instruction_role": "developer",
+    "store": false
+  },
+  "prompt_hashes": {
+    "instructions": "df7ad138ee9822e8",
+    "user_text": "342addc94759d914",
+    "schema": "4fc9a63e494a5d6d",
+    "shared_parts": "bb67091b0894ed80",
+    "rules_file": "3f66bf1d6d07c3ee",
+    "prompt_dir": "prompts/v1"
+  },
+  "label_sets": {
+    "own_video": "71010826f22fad45"
+  },
+  "split": "dev",
+  "split_version": 2,
+  "items": [
+    "fl_20261017_night_01_f0030060",
+    "fl_20261017_night_01_f0001970",
+    "fl_20261017_night_01_f0011910",
+    "fl_20261017_night_01_f0012315",
+    "fl_20261017_night_01_f0012465",
+    "fl_20261017_night_01_f0032820",
+    "fl_20261017_night_01_f0011685",
+    "fl_20261017_night_01_f0032025",
+    "fl_20261017_night_01_f0001950",
+    "fl_20261017_night_01_f0012705",
+    "fl_20261017_night_01_f0032775",
+    "fl_20261017_night_01_f0018240",
+    "fl_20261017_night_01_f0006600",
+    "fl_20261017_night_01_f0014235",
+    "fl_20261017_night_01_f0011775",
+    "fl_20261017_night_01_f0018210",
+    "fl_20261017_night_01_f0014670",
+    "fl_20261017_night_01_f0014280",
+    "fl_20261017_night_01_f0032685",
+    "fl_20261017_night_01_f0011400",
+    "fl_20261017_night_01_f0008220",
+    "fl_20261017_night_01_f0030555",
+    "fl_20261017_night_01_f0012135",
+    "fl_20261017_night_01_f0032505",
+    "fl_20261017_night_01_f0011310",
+    "fl_20261017_night_01_f0030360",
+    "fl_20261017_night_01_f0039465",
+    "fl_20261017_night_01_f0014325",
+    "fl_20261017_night_01_f0015915",
+    "fl_20261017_night_01_f0007725",
+    "fl_20261017_night_01_f0018300",
+    "fl_20261017_night_01_f0032220",
+    "fl_20261017_night_01_f0032865",
+    "fl_20261017_night_01_f0031695",
+    "fl_20261017_night_01_f0039450",
+    "fl_20261017_night_01_f0011100",
+    "fl_20261017_night_01_f0006510",
+    "fl_20261017_night_01_f0008355",
+    "fl_20261017_night_01_f0003105",
+    "fl_20261017_night_01_f0032940"
+  ],
+  "config": {
+    "version": "1",
+    "mock": false,
+    "api": {
+      "base_url": "https://api.openai.com/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "temperature": null,
+      "image_detail": "high",
+      "max_output_tokens": 2000,
+      "instruction_role": "developer",
+      "store": false,
+      "timeout_s": 90,
+      "max_retries": 4,
+      "parallel": 8,
+      "price_per_million_tokens": {
+        "input": 2.0,
+        "output": 10.0
+      },
+      "api_key_set": true
+    },
+    "run": {
+      "test": "A",
+      "region": "US",
+      "split": "any",
+      "repeats": 1,
+      "limit": 0,
+      "marking_types": [],
+      "order_seed": 6216
+    },
+    "datasets_root": "/Volumes/T9/数据集",
+    "workspaces": [
+      "UF",
+      "bdd100k",
+      "culane"
+    ],
+    "data_policy": {
+      "_comment": "Collections whose images may be sent to the OpenAI API. own_video is the author's own footage. Add bdd100k / culane only after the dataset owners have confirmed in writing that sending images to a third-party API for non-commercial course research is allowed (README, 'Data sent to the API').",
+      "send_to_api": [
+        "own_video"
+      ]
+    },
+    "prompt": {
+      "dir": "prompts/v1",
+      "box_color_rgb": [
+        0,
+        229,
+        255
+      ],
+      "box_width": 3,
+      "box_margin": 6,
+      "jpeg_quality": 92,
+      "restrict_rule_ids_in_schema": false
+    },
+    "regions": {
+      "US": {
+        "name": "the United States",
+        "name_zh": "美国",
+        "rule_region": "US",
+        "rule_text": "text_en",
+        "rules_title": "MUTCD 11th Edition (December 2023), Part 3 Markings"
+      },
+      "CN": {
+        "name": "China",
+        "name_zh": "中国",
+        "rule_region": "CN",
+        "rule_text": "text_en",
+        "rules_title": "GB 5768.3-2025 Road traffic signs and markings, Part 3: Road traffic markings (English translation by the project)"
+      }
+    }
+  },
+  "code_sha_files": [
+    "lane_reasoner/client.py",
+    "lane_reasoner/config.py",
+    "lane_reasoner/data.py",
+    "lane_reasoner/prompts.py",
+    "lane_reasoner/runner.py",
+    "lane_reasoner/scoring.py",
+    "config/label_schema.json",
+    "config/action_rules.json"
+  ],
+  "code_sha_note": "Recomputed on 2026-10-27 with the final definition (only the files that build the requests and score the answers); these files are byte-identical to the ones used for this run (local commit fdcef85)."
+}

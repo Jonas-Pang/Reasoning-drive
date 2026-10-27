@@ -1,0 +1,10 @@
+region,split,group,marking,images,clips,collections,agreed_by_two,adjudicated,single_label,not_full_evidence
+US,dev,arrow,arrow/left,5,1,own_video,5,0,0,0
+US,dev,arrow,arrow/straight,3,1,own_video,2,1,0,0
+US,dev,arrow,arrow/straight_left,1,1,own_video,1,0,0,0
+US,dev,dashed,white_dashed,7,1,own_video,7,0,0,0
+US,dev,other,other,2,1,own_video,2,0,0,0
+US,dev,solid,white_solid,1,1,own_video,1,0,0,0
+US,dev,yellow,two_way_left_turn_lane,2,1,own_video,2,0,0,0
+US,dev,yellow,yellow_double_solid,15,1,own_video,15,0,0,0
+US,dev,yellow,yellow_solid,4,1,own_video,4,0,0,0

@@ -1,0 +1,2 @@
+trip_id,region,dataset,recorded_date,time_of_day,weather,road_type,video_file,size_bytes,sha256,duration_s,width,height,fps,split_policy,registered_utc,license
+fl_20261017_night_01,US,own_FL,2026-10-17,night,clear,,DJI_20261017015320_0076_D.MP4,8457615394,27a0c290d893fbb2b5f64e212bbbcc092490810ecf077ae9dde4ed2d7382b546,1351.42,2688,1512,29.97,dev,2026-10-17T10:13:16Z,Own recording by the project author; no third-party license. Raw video stays private; faces and plates are blurred in any published figure.

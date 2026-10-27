@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lane Labeler</title>
+<!--STYLE-->
+</head>
+<body>
+<noscript>Please enable JavaScript. 请允许浏览器运行 JavaScript。</noscript>
+<header class="topbar">
+  <div class="brand">Lane Labeler</div>
+  <div id="pkginfo" class="pkginfo"></div>
+  <div id="progress" class="progress"></div>
+  <span class="grow"></span>
+  <span id="savestate" class="savestate"></span>
+  <label class="bright"><span data-t="brighten"></span> <input id="bright" type="range" min="1" max="4" step="0.1" value="1.8"></label>
+  <button id="lang-btn" class="ghost" title="中文 / English"></button>
+  <button id="guide-btn" data-t="guide"></button>
+  <button id="import-btn" data-t="import"></button>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+  <button id="export-btn" class="primary" data-t="export"></button>
+</header>
+<div id="storage-warn" class="banner hidden" data-t="storage_warn"></div>
+
+<main class="layout">
+  <aside class="list">
+    <div class="list-head">
+      <select id="filter" aria-label="filter">
+        <option value="todo" data-t="f_todo"></option>
+        <option value="all" data-t="f_all"></option>
+        <option value="done" data-t="f_done"></option>
+      </select>
+    </div>
+    <ol id="items"></ol>
+  </aside>
+
+  <section class="work">
+    <div class="toolbar">
+      <button id="tool-privacy" class="tool active" data-t="privacy_tool"></button>
+      <button id="del-box" data-t="delete_sel"></button>
+      <span class="sep"></span>
+      <label class="check"><input type="checkbox" id="loupe-on" checked> <span data-t="loupe"></span></label>
+      <span class="grow"></span>
+      <span id="img-title" class="imgtitle"></span>
+    </div>
+    <div id="stage" class="stage">
+      <img id="img" alt="">
+      <canvas id="overlay" class="overlay"></canvas>
+      <canvas id="loupe" class="loupe hidden" width="220" height="220"></canvas>
+    </div>
+    <p class="hint" data-t="stage_hint"></p>
+  </section>
+
+  <form id="form" class="form" autocomplete="off" onsubmit="return false">
+    <div id="form-empty" class="empty" data-t="pick_item"></div>
+    <div id="form-body" class="hidden">
+      <div id="practice-bar" class="practicebar hidden" data-t="practice_bar"></div>
+      <fieldset>
+        <legend><span data-t="marking_type"></span> <code>marking_type</code></legend>
+        <div id="f-marking" class="seg grid3"></div>
+      </fieldset>
+      <fieldset id="fs-arrow" class="hidden">
+        <legend><span data-t="arrow_type"></span> <code>arrow_type</code></legend>
+        <div id="f-arrow" class="seg grid3"></div>
+      </fieldset>
+      <fieldset id="fs-dashed" class="hidden">
+        <legend><span data-t="dashed_side"></span> <code>dashed_side</code></legend>
+        <div id="f-dashed" class="seg"></div>
+      </fieldset>
+      <fieldset>
+        <legend><span data-t="position"></span> <code>position</code></legend>
+        <div id="f-position" class="seg"></div>
+      </fieldset>
+      <fieldset>
+        <legend><span data-t="visibility"></span> <code>visibility</code> <button type="button" id="vis-help" class="info">?</button></legend>
+        <div id="f-visibility" class="seg"></div>
+        <div id="fs-decidable" class="sub hidden">
+          <span data-t="decidable_q"></span>
+          <div id="f-decidable" class="seg"></div>
+        </div>
+        <div class="evidence"><span data-t="evidence"></span>: <strong id="f-evidence">—</strong></div>
+      </fieldset>
+      <fieldset>
+        <legend><span data-t="actions"></span> <button type="button" id="prefill-btn" class="link" data-t="prefill"></button></legend>
+        <div id="rule-note" class="note hidden"></div>
+        <table class="acts" id="f-actions"></table>
+      </fieldset>
+      <fieldset>
+        <legend><span data-t="rules"></span> <button type="button" id="orig-btn" class="link"></button></legend>
+        <div id="f-rules" class="rules"></div>
+      </fieldset>
+      <fieldset>
+        <label class="check unsure"><input type="checkbox" id="f-unsure"> <span data-t="unsure"></span></label>
+        <textarea id="f-comment" rows="2"></textarea>
+      </fieldset>
+      <div id="form-msgs" class="msgs" role="status" aria-live="polite"></div>
+      <div class="buttons">
+        <button type="button" id="save-done" class="primary"></button>
+        <button type="button" id="save-draft" data-t="save_draft"></button>
+      </div>
+    </div>
+  </form>
+</main>
+
+<div id="welcome" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <div id="welcome-body"></div>
+    <label class="check ack"><input type="checkbox" id="ack"> <span data-t="ack"></span></label>
+    <div class="modal-actions">
+      <button id="welcome-lang" class="ghost"></button>
+      <button id="welcome-guide" data-t="guide"></button>
+      <button id="welcome-start" class="primary" data-t="start" disabled></button>
+    </div>
+  </div>
+</div>
+<div id="guide" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-box wide">
+    <div class="modal-actions top">
+      <button id="guide-lang" class="langbtn"></button>
+      <button id="guide-print" data-t="guide_print"></button>
+      <button id="guide-close" class="primary" data-t="close"></button>
+    </div>
+    <div id="guide-body" class="guide"></div>
+  </div>
+</div>
+<div id="tip" class="tooltip hidden" role="tooltip"></div>
+<!--SCRIPT-->
+</body>
+</html>

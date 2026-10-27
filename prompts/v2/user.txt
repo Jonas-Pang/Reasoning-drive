@@ -1,0 +1,1 @@
+This photo was taken in {region_name}. The cyan rectangle marks the target marking. Interpret it.

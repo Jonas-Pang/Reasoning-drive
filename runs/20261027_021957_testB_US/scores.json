@@ -1,0 +1,1140 @@
+{
+  "summary": {
+    "n": 40,
+    "output1": {
+      "correct": 40,
+      "n": 40,
+      "acc": 1.0
+    },
+    "output2": {
+      "correct": 36,
+      "n": 37,
+      "acc": 0.973
+    },
+    "actions": {
+      "cross_line": {
+        "n": 26,
+        "correct": 25
+      },
+      "go_straight": {
+        "n": 9,
+        "correct": 9
+      },
+      "turn_left": {
+        "n": 11,
+        "correct": 11
+      },
+      "turn_right": {
+        "n": 9,
+        "correct": 9
+      },
+      "u_turn": {
+        "n": 3,
+        "correct": 3
+      },
+      "enter_center_lane_to_wait": {
+        "n": 2,
+        "correct": 2
+      }
+    },
+    "contested": {
+      "n": 7,
+      "correct": 1
+    },
+    "position": {
+      "correct": 40,
+      "n": 40
+    },
+    "evidence_groups": {
+      "correct": 39,
+      "over_withholding": 1
+    },
+    "citations": {
+      "accepted": 37,
+      "in_pack_not_accepted": 1,
+      "none_needed": 2
+    },
+    "unsafe_errors": 0,
+    "over_cautious_errors": 0,
+    "contested_unsafe_errors": 0,
+    "inconsistent_answers": 0,
+    "contested_over_cautious_errors": 6,
+    "output1_by_type": {
+      "arrow/left": {
+        "n": 5,
+        "correct": 5
+      },
+      "arrow/straight": {
+        "n": 3,
+        "correct": 3
+      },
+      "arrow/straight_left": {
+        "n": 1,
+        "correct": 1
+      },
+      "other": {
+        "n": 2,
+        "correct": 2
+      },
+      "two_way_left_turn_lane": {
+        "n": 2,
+        "correct": 2
+      },
+      "white_dashed": {
+        "n": 7,
+        "correct": 7
+      },
+      "white_solid": {
+        "n": 1,
+        "correct": 1
+      },
+      "yellow_double_solid": {
+        "n": 15,
+        "correct": 15
+      },
+      "yellow_solid": {
+        "n": 4,
+        "correct": 4
+      }
+    },
+    "confusion": [
+      {
+        "label": "arrow/left",
+        "answer": "arrow/left",
+        "count": 5
+      },
+      {
+        "label": "arrow/straight",
+        "answer": "arrow/straight",
+        "count": 3
+      },
+      {
+        "label": "arrow/straight_left",
+        "answer": "arrow/straight_left",
+        "count": 1
+      },
+      {
+        "label": "other",
+        "answer": "other",
+        "count": 2
+      },
+      {
+        "label": "two_way_left_turn_lane",
+        "answer": "two_way_left_turn_lane",
+        "count": 2
+      },
+      {
+        "label": "white_dashed",
+        "answer": "white_dashed",
+        "count": 7
+      },
+      {
+        "label": "white_solid",
+        "answer": "white_solid",
+        "count": 1
+      },
+      {
+        "label": "yellow_double_solid",
+        "answer": "yellow_double_solid",
+        "count": 15
+      },
+      {
+        "label": "yellow_solid",
+        "answer": "yellow_solid",
+        "count": 4
+      }
+    ],
+    "usage": {
+      "input_tokens": 475200,
+      "output_tokens": 26744
+    },
+    "requests": 120,
+    "errors": 0,
+    "readable": {
+      "n": 120,
+      "of": 120
+    },
+    "cached": 0,
+    "cost_usd": 1.2178,
+    "latency_s": {
+      "mean": 4.13,
+      "max": 9.67
+    },
+    "flip_rate_output1": 0.025,
+    "flip_rate_output2": 0.0,
+    "elapsed_s": 65.1
+  },
+  "per_image": {
+    "fl_20261017_night_01_f0001970": {
+      "image_id": "fl_20261017_night_01_f0001970",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "arrow/straight",
+        "o1_label": "arrow/straight"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0030060": {
+      "image_id": "fl_20261017_night_01_f0030060",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "white_dashed",
+        "o1_label": "white_dashed"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0011910": {
+      "image_id": "fl_20261017_night_01_f0011910",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0012315": {
+      "image_id": "fl_20261017_night_01_f0012315",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0032820": {
+      "image_id": "fl_20261017_night_01_f0032820",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": false
+        },
+        "contested": {
+          "u_turn": false
+        },
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [
+          "u_turn"
+        ],
+        "o1_answer": "arrow/left",
+        "o1_label": "arrow/left"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0012465": {
+      "image_id": "fl_20261017_night_01_f0012465",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0011685": {
+      "image_id": "fl_20261017_night_01_f0011685",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0032025": {
+      "image_id": "fl_20261017_night_01_f0032025",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "white_dashed",
+        "o1_label": "white_dashed"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0001950": {
+      "image_id": "fl_20261017_night_01_f0001950",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "arrow/straight",
+        "o1_label": "arrow/straight"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0012705": {
+      "image_id": "fl_20261017_night_01_f0012705",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0032775": {
+      "image_id": "fl_20261017_night_01_f0032775",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": false
+        },
+        "contested": {
+          "u_turn": false
+        },
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [
+          "u_turn"
+        ],
+        "o1_answer": "arrow/left",
+        "o1_label": "arrow/left"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0018240": {
+      "image_id": "fl_20261017_night_01_f0018240",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0006600": {
+      "image_id": "fl_20261017_night_01_f0006600",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_solid",
+        "o1_label": "yellow_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0014235": {
+      "image_id": "fl_20261017_night_01_f0014235",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0011775": {
+      "image_id": "fl_20261017_night_01_f0011775",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0018210": {
+      "image_id": "fl_20261017_night_01_f0018210",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0014670": {
+      "image_id": "fl_20261017_night_01_f0014670",
+      "score": {
+        "output1": true,
+        "output2": null,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {
+          "cross_line": true
+        },
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "white_solid",
+        "o1_label": "white_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0014280": {
+      "image_id": "fl_20261017_night_01_f0014280",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "arrow/straight",
+        "o1_label": "arrow/straight"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0032685": {
+      "image_id": "fl_20261017_night_01_f0032685",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": false
+        },
+        "contested": {
+          "u_turn": false
+        },
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [
+          "u_turn"
+        ],
+        "o1_answer": "arrow/left",
+        "o1_label": "arrow/left"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0011400": {
+      "image_id": "fl_20261017_night_01_f0011400",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0030555": {
+      "image_id": "fl_20261017_night_01_f0030555",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "white_dashed",
+        "o1_label": "white_dashed"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0012135": {
+      "image_id": "fl_20261017_night_01_f0012135",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0008220": {
+      "image_id": "fl_20261017_night_01_f0008220",
+      "score": {
+        "output1": true,
+        "output2": false,
+        "actions": {
+          "cross_line": false
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "over_withholding",
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_solid",
+        "o1_label": "yellow_solid"
+      },
+      "stable_o1": false,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0032505": {
+      "image_id": "fl_20261017_night_01_f0032505",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "white_dashed",
+        "o1_label": "white_dashed"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0011310": {
+      "image_id": "fl_20261017_night_01_f0011310",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0030360": {
+      "image_id": "fl_20261017_night_01_f0030360",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "white_dashed",
+        "o1_label": "white_dashed"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0039465": {
+      "image_id": "fl_20261017_night_01_f0039465",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "turn_left": true,
+          "enter_center_lane_to_wait": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "two_way_left_turn_lane",
+        "o1_label": "two_way_left_turn_lane"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0015915": {
+      "image_id": "fl_20261017_night_01_f0015915",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0014325": {
+      "image_id": "fl_20261017_night_01_f0014325",
+      "score": {
+        "output1": true,
+        "output2": null,
+        "actions": {},
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "none_needed",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "other",
+        "o1_label": "other"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0007725": {
+      "image_id": "fl_20261017_night_01_f0007725",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_solid",
+        "o1_label": "yellow_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0018300": {
+      "image_id": "fl_20261017_night_01_f0018300",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0032220": {
+      "image_id": "fl_20261017_night_01_f0032220",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "white_dashed",
+        "o1_label": "white_dashed"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0032865": {
+      "image_id": "fl_20261017_night_01_f0032865",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": false
+        },
+        "contested": {
+          "u_turn": false
+        },
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [
+          "u_turn"
+        ],
+        "o1_answer": "arrow/left",
+        "o1_label": "arrow/left"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0031695": {
+      "image_id": "fl_20261017_night_01_f0031695",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "white_dashed",
+        "o1_label": "white_dashed"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0039450": {
+      "image_id": "fl_20261017_night_01_f0039450",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "turn_left": true,
+          "enter_center_lane_to_wait": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "two_way_left_turn_lane",
+        "o1_label": "two_way_left_turn_lane"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0011100": {
+      "image_id": "fl_20261017_night_01_f0011100",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_double_solid",
+        "o1_label": "yellow_double_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0006510": {
+      "image_id": "fl_20261017_night_01_f0006510",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "cross_line": true
+        },
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "yellow_solid",
+        "o1_label": "yellow_solid"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0008355": {
+      "image_id": "fl_20261017_night_01_f0008355",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": false
+        },
+        "contested": {
+          "u_turn": false
+        },
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [
+          "u_turn"
+        ],
+        "o1_answer": "arrow/straight_left",
+        "o1_label": "arrow/straight_left"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0003105": {
+      "image_id": "fl_20261017_night_01_f0003105",
+      "score": {
+        "output1": true,
+        "output2": null,
+        "actions": {},
+        "contested": {},
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "none_needed",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [],
+        "o1_answer": "other",
+        "o1_label": "other"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    },
+    "fl_20261017_night_01_f0032940": {
+      "image_id": "fl_20261017_night_01_f0032940",
+      "score": {
+        "output1": true,
+        "output2": true,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": false
+        },
+        "contested": {
+          "u_turn": false
+        },
+        "position": true,
+        "evidence_group": "correct",
+        "citation": "accepted",
+        "consistency": [],
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "contested_over_cautious": [
+          "u_turn"
+        ],
+        "o1_answer": "arrow/left",
+        "o1_label": "arrow/left"
+      },
+      "stable_o1": true,
+      "stable_o2": true
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "trip_id": "bdd100k_val",
+  "set_id": "bdd100k_val",
+  "kind": "images",
+  "registered_utc": "2026-10-22T08:58:39Z",
+  "annotators_required": 2,
+  "split": "hash",
+  "quota": {
+    "dev": {
+      "solid": 6,
+      "dashed": 6,
+      "yellow": 6,
+      "arrow": 6,
+      "degraded": 0
+    },
+    "test": {
+      "solid": 30,
+      "dashed": 30,
+      "yellow": 30,
+      "arrow": 30,
+      "degraded": 30
+    }
+  },
+  "time_of_day": "",
+  "weather": "",
+  "dataset": "BDD100K",
+  "region": "US",
+  "source_root": "/Volumes/T9/Project/Reasning_Drive/data/extracted/bdd100k/mirror/val",
+  "license": "BDD100K (Yu et al., CVPR 2020), 2020 label release, validation split, Dataset Ninja mirror. Copyright (c) 2018 The Regents of the University of California. Educational, research and not-for-profit use; copies keep the copyright notice.",
+  "split_unit": "image (each BDD100K image comes from a different video)",
+  "index": {
+    "built_utc": "2026-10-22T08:58:39Z",
+    "images": 10000,
+    "dev_pool": 1022,
+    "test_pool": 8978,
+    "hints": {
+      "crosswalk": 3625,
+      "no_lane": 2114,
+      "white_dashed": 5147,
+      "white_double_solid": 367,
+      "white_solid": 4855,
+      "yellow_dashed": 98,
+      "yellow_double_solid": 2057,
+      "yellow_solid": 1323,
+      "yellow_solid_dashed": 157
+    }
+  },
+  "tool_version": "1.3",
+  "updated_utc": "2026-10-22T09:36:47Z"
+}

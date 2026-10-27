@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lane Labeler</title>
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="/static/offline.css">
+<link rel="stylesheet" href="/static/share.css">
+<link rel="stylesheet" href="/static/pick.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Lane Labeler</div>
+  <div id="tripinfo" class="tripinfo"></div>
+  <nav class="tabs" role="tablist">
+    <button id="tab-screen" class="tab active" role="tab" data-view="screen" data-t="tab_screen"></button>
+    <button id="tab-label" class="tab" role="tab" data-view="label" data-t="tab_label"></button>
+    <button id="tab-adjudicate" class="tab" role="tab" data-view="adjudicate" data-t="tab_adjudicate"></button>
+    <button id="tab-share" class="tab" role="tab" data-view="share" data-t="tab_share"></button>
+    <button id="tab-recheck" class="tab hidden" role="tab" data-view="recheck" data-t="tab_recheck"></button>
+  </nav>
+  <div id="counts" class="counts"></div>
+  <label class="bright"><span data-t="brighten"></span> <input id="bright" type="range" min="1" max="4" step="0.1" value="1.8"> <span id="bright-val">1.8×</span></label>
+  <button id="lang-btn" class="langbtn" title="中文 / English"></button>
+  <button id="guide-btn" data-t="guide"></button>
+  <button id="help-btn" class="ghost" data-tt="shortcuts">?</button>
+</header>
+
+<main>
+  <!-- ① screening -->
+  <section id="view-screen" class="view active">
+    <div id="screen-stage" class="stage">
+      <img id="screen-img" alt="">
+      <canvas id="screen-overlay" class="overlay"></canvas>
+      <div id="screen-badges" class="badges"></div>
+    </div>
+    <canvas id="timeline" height="84"></canvas>
+    <div class="controls">
+      <button id="prev-btn" data-tt="tt_prev">⟸</button>
+      <button id="play-btn" class="primary" data-tt="tt_play"></button>
+      <button id="next-btn" data-tt="tt_next">⟹</button>
+      <select id="speed" data-tt="tt_speed">
+        <option value="2" data-t="speed2"></option>
+        <option value="4" selected data-t="speed4"></option>
+        <option value="8" data-t="speed8"></option>
+      </select>
+      <span class="sep"></span>
+      <button id="frame-back" data-tt="tt_fback" data-t="fback"></button>
+      <button id="frame-fwd" data-tt="tt_ffwd" data-t="ffwd"></button>
+      <span class="sep"></span>
+      <button id="keep-btn" class="keep" data-tt="tt_keep" data-t="keep"></button>
+      <button id="label-now-btn" data-tt="tt_label_now" data-t="label_now"></button>
+      <span class="sep"></span>
+      <label class="check"><input type="checkbox" id="show-all"> <span data-t="show_all"></span></label>
+      <label class="check"><input type="checkbox" id="only-paint"> <span data-t="only_paint"></span></label>
+      <span class="grow"></span>
+      <button id="mask-btn" data-tt="tt_mask" data-t="mask"></button>
+    </div>
+    <div id="mask-bar" class="maskbar hidden">
+      <span data-t="mask_help"></span>
+      <button id="mask-save" class="primary" data-t="mask_save"></button>
+      <button id="mask-cancel" data-t="cancel"></button>
+    </div>
+    <div id="screen-msg" class="msg" role="status" aria-live="polite"></div>
+  </section>
+
+  <!-- ① pick images (dataset workspaces) -->
+  <section id="view-pick" class="view pick">
+    <aside class="pk-side">
+      <h3 data-t="pk_filters"></h3>
+      <div class="pk-field"><span data-t="pk_pool"></span><div id="pk-pool" class="seg"></div>
+        <p class="muted small" data-t="pk_pool_help"></p></div>
+      <label class="pk-field"><span data-t="pk_hint"></span><select id="pk-hint"></select></label>
+      <label class="pk-field" id="pk-tod-row"><span data-t="pk_tod"></span><select id="pk-tod"></select></label>
+      <label class="check"><input type="checkbox" id="pk-hide" checked> <span data-t="pk_hide"></span></label>
+      <button id="pk-shuffle" type="button" data-t="pk_shuffle"></button>
+      <h3 data-t="pk_quota"></h3>
+      <table id="pk-quota" class="pk-quota"></table>
+      <p class="muted small" id="pk-other"></p>
+      <p class="muted small" data-t="pk_quota_help"></p>
+    </aside>
+    <div class="pk-main">
+      <div class="pk-pager">
+        <button id="pk-prev" type="button">◀</button>
+        <span id="pk-pageinfo" class="muted"></span>
+        <button id="pk-next" type="button">▶</button>
+        <span class="grow"></span>
+        <span class="muted small" data-t="pk_help"></span>
+      </div>
+      <div id="pk-grid" class="pk-grid"></div>
+    </div>
+    <div class="pk-detail">
+      <div class="pk-stage"><img id="pk-img" alt=""><canvas id="pk-overlay" class="overlay"></canvas></div>
+      <div id="pk-keep" class="pk-keep">
+        <span data-t="pk_keep_as"></span>
+        <button type="button" data-g="solid"><kbd>1</kbd> <span class="gname"></span></button>
+        <button type="button" data-g="dashed"><kbd>2</kbd> <span class="gname"></span></button>
+        <button type="button" data-g="yellow"><kbd>3</kbd> <span class="gname"></span></button>
+        <button type="button" data-g="arrow"><kbd>4</kbd> <span class="gname"></span></button>
+        <button type="button" data-g="degraded"><kbd>5</kbd> <span class="gname"></span></button>
+        <span id="pk-kept" class="ok hidden" data-t="pk_kept"></span>
+        <button type="button" id="pk-label" class="primary hidden" data-t="pk_goto_label"></button>
+      </div>
+      <div id="pk-msg" class="msg" role="status" aria-live="polite"></div>
+      <div id="pk-info" class="pk-info"></div>
+    </div>
+  </section>
+
+  <!-- ② labeling, ③ adjudication, re-check -->
+  <section id="view-label" class="view">
+    <aside class="kept">
+      <div class="kept-head">
+        <strong id="kept-title"></strong>
+        <select id="kept-filter"></select>
+      </div>
+      <ol id="kept-list"></ol>
+    </aside>
+
+    <div class="work">
+      <div class="toolbar">
+        <button id="tool-box" class="tool active" data-tt="tt_box" data-t="tool_box"></button>
+        <button id="tool-privacy" class="tool" data-tt="tt_privacy" data-t="tool_privacy"></button>
+        <button id="del-box" data-tt="tt_del" data-t="delete_sel"></button>
+        <span class="sep"></span>
+        <label class="check"><input type="checkbox" id="loupe-on" checked> <span data-t="loupe"></span></label>
+        <span id="coords" class="coords"></span>
+        <span class="grow"></span>
+        <span id="img-title" class="imgtitle"></span>
+      </div>
+      <div id="label-stage" class="stage">
+        <img id="label-img" alt="">
+        <canvas id="label-overlay" class="overlay"></canvas>
+        <canvas id="loupe" class="loupe hidden" width="220" height="220"></canvas>
+      </div>
+      <p class="hint" id="stage-hint"></p>
+    </div>
+
+    <form id="form" class="form" autocomplete="off" onsubmit="return false">
+      <div id="form-empty" class="empty" data-t="form_empty"></div>
+      <div id="form-body" class="hidden">
+        <fieldset>
+          <legend><span data-t="lg_marking"></span> <code>marking_type</code></legend>
+          <div id="f-marking" class="seg grid3"></div>
+        </fieldset>
+        <fieldset id="fs-arrow" class="hidden">
+          <legend><span data-t="lg_arrow"></span> <code>arrow_type</code></legend>
+          <div id="f-arrow" class="seg grid3"></div>
+        </fieldset>
+        <fieldset id="fs-dashed" class="hidden">
+          <legend><span data-t="lg_dashed"></span> <code>dashed_side</code></legend>
+          <div id="f-dashed" class="seg"></div>
+        </fieldset>
+        <fieldset>
+          <legend><span data-t="lg_position"></span> <code>position</code></legend>
+          <div id="f-position" class="seg"></div>
+        </fieldset>
+        <fieldset>
+          <legend><span data-t="lg_visibility"></span> <code>visibility</code> <button type="button" class="info" id="vis-help">?</button></legend>
+          <div id="f-visibility" class="seg"></div>
+          <div id="fs-decidable" class="sub hidden">
+            <span data-t="decidable_q"></span>
+            <div id="f-decidable" class="seg"></div>
+          </div>
+          <div class="evidence"><span data-t="evidence"></span> <code>expected_evidence</code>: <strong id="f-evidence">—</strong></div>
+        </fieldset>
+        <fieldset>
+          <legend><span data-t="lg_actions"></span> <button type="button" id="prefill-btn" class="link" data-t="prefill"></button></legend>
+          <div id="rule-note" class="note hidden"></div>
+          <table class="acts" id="f-actions"></table>
+        </fieldset>
+        <fieldset id="fs-rules">
+          <legend><span data-t="lg_rules"></span> <code>accepted_rule_ids</code> <button type="button" id="rules-expand" class="link"></button></legend>
+          <div id="f-rules" class="rules"></div>
+        </fieldset>
+        <fieldset>
+          <legend data-t="lg_notes"></legend>
+          <textarea id="f-notes" rows="2" data-tp="notes_ph"></textarea>
+        </fieldset>
+        <div id="form-msgs" class="msgs" role="status" aria-live="polite"></div>
+        <div class="buttons">
+          <button type="button" id="save-done" class="primary" title="⌘/Ctrl + Enter"></button>
+          <button type="button" id="save-draft" title="⌘/Ctrl + S" data-t="save_draft"></button>
+          <button type="button" id="save-box" data-tt="tt_save_box" data-t="save_box"></button>
+          <button type="button" id="adj-cancel" class="hidden" data-t="cancel"></button>
+          <button type="button" id="save-exclude" data-tt="tt_exclude" data-t="exclude"></button>
+          <button type="button" id="unkeep" class="danger" data-t="unkeep"></button>
+        </div>
+      </div>
+    </form>
+
+    <aside id="adj-panel" class="form hidden">
+      <div id="adj-body"></div>
+      <fieldset>
+        <legend data-t="adj_note"></legend>
+        <textarea id="adj-note" rows="2" data-tp="adj_note_ph"></textarea>
+      </fieldset>
+      <div id="adj-msgs" class="msgs" role="status" aria-live="polite"></div>
+      <div class="buttons">
+        <button type="button" id="adj-edit" data-t="adj_edit"></button>
+        <button type="button" id="adj-exclude" class="danger" data-t="adj_exclude"></button>
+        <button type="button" id="adj-reopen" class="hidden" data-t="adj_reopen"></button>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ④ share with helpers -->
+  <section id="view-share" class="view share">
+    <div class="share-wrap">
+      <h2 data-t="sh_title"></h2>
+      <p class="muted" data-t="sh_intro"></p>
+      <ol class="flow" id="sh-flow"></ol>
+      <div class="cards" id="sh-cards"></div>
+      <div id="sh-warn"></div>
+
+      <section class="panel">
+        <h3 data-t="sh_make_h"></h3>
+        <label class="field"><span data-t="sh_names"></span>
+          <textarea id="sh-names" rows="2" data-tp="sh_names_ph"></textarea></label>
+        <div id="sh-known" class="chips"></div>
+        <div class="row">
+          <label class="field small"><span data-t="sh_practice"></span> <input type="number" id="sh-practice" value="6" min="0" max="20"></label>
+          <label class="field small"><span data-t="sh_max"></span> <input type="number" id="sh-max" min="1" data-tp="sh_max_ph"></label>
+          <button id="sh-make" class="primary" data-t="sh_make"></button>
+        </div>
+        <div id="sh-made"></div>
+      </section>
+
+      <section class="panel">
+        <h3 data-t="sh_sent_h"></h3>
+        <div id="sh-table"></div>
+        <div class="row"><button id="sh-open-packages" data-t="sh_open_packages"></button> <span class="muted mono" id="sh-pkg-path"></span></div>
+      </section>
+
+      <section class="panel">
+        <h3 data-t="sh_import_h"></h3>
+        <div id="sh-drop" class="drop">
+          <span data-t="sh_drop"></span>
+          <button id="sh-pick" type="button" data-t="sh_pick"></button>
+          <input type="file" id="sh-file" multiple accept=".json,application/json" hidden>
+        </div>
+        <div class="row">
+          <button id="sh-import-folder" data-t="sh_import_folder"></button>
+          <button id="sh-open-returned" data-t="sh_open_returned"></button>
+          <span class="muted mono" id="sh-ret-path"></span>
+        </div>
+        <div id="sh-import-result"></div>
+        <details><summary data-t="sh_log"></summary><pre id="sh-log"></pre></details>
+      </section>
+    </div>
+  </section>
+</main>
+
+<div id="guide" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-box wide">
+    <div class="modal-actions top">
+      <button id="guide-lang" class="langbtn"></button>
+      <button id="guide-print" data-t="guide_print"></button>
+      <button id="guide-close" class="primary" data-t="close"></button>
+    </div>
+    <div id="guide-body" class="guide"></div>
+  </div>
+</div>
+
+<div id="help" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-box"><div id="help-body"></div><button id="help-close" class="primary" data-t="got_it"></button></div>
+</div>
+
+<div id="tip" class="tooltip hidden" role="tooltip"></div>
+<script src="/static/i18n.js"></script>
+<script src="/static/guide.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

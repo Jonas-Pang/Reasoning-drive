@@ -1,0 +1,87 @@
+/* Extras for the offline package page (style.css is included before this file). */
+.layout { display: flex; height: calc(100% - 50px); }
+.banner:not(.hidden) ~ .layout { height: calc(100% - 50px - 34px); }
+.banner { background: #3a1d1d; color: #ffb4b4; border-bottom: 1px solid #6b2b2b; padding: 7px 14px; font-size: 13px; height: 34px; overflow: hidden; }
+.pkginfo { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 300px; }
+.progress { font-size: 12px; color: var(--text); white-space: nowrap; }
+.progress b { color: var(--keep); }
+.savestate { font-size: 11px; color: var(--muted); white-space: nowrap; }
+.savestate.warn { color: var(--warn); }
+.list { width: 200px; flex: none; border-right: 1px solid var(--line); background: var(--panel); display: flex; flex-direction: column; }
+.list-head { padding: 8px; border-bottom: 1px solid var(--line); }
+.list-head select { width: 100%; }
+#items { list-style: none; margin: 0; padding: 6px; overflow-y: auto; flex: 1; }
+#items li.section { cursor: default; color: var(--muted); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .4px; padding: 8px 4px 4px; border: none; background: none; }
+#items li { display: flex; gap: 6px; align-items: center; padding: 4px; border-radius: var(--radius); cursor: pointer; border: 1px solid transparent; }
+#items li:hover { background: var(--panel-2); }
+#items li.sel { border-color: var(--accent); background: var(--panel-2); }
+#items img { width: 72px; height: 40px; object-fit: cover; border-radius: 3px; background: #000; flex: none; filter: var(--imgfilter); }
+#items .meta { font-size: 11px; line-height: 1.4; overflow: hidden; }
+.pill.todo { background: #39404b; }
+.pill.unsure { background: #8a5cf6; color: #fff; }
+.pill.checked { background: var(--accent); color: var(--accent-ink); }
+.practicebar { background: #1d2a3a; border: 1px solid #2d4d6b; color: #bfe0ff; padding: 6px 8px; border-radius: 4px; font-size: 12px; margin-bottom: 8px; }
+.unsure { color: var(--text); font-weight: 600; margin-bottom: 4px; }
+#f-comment { margin-top: 4px; }
+.cmp { width: 100%; border-collapse: collapse; font-size: 12px; margin: 6px 0; }
+.cmp th, .cmp td { border-bottom: 1px solid var(--line); padding: 3px 4px; text-align: left; }
+.cmp tr.bad td { color: var(--danger); }
+.cmp tr.bad td:first-child::before { content: "✗ "; }
+.cmp tr.good td:first-child::before { content: "✓ "; color: var(--keep); }
+.modal-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px; flex-wrap: wrap; }
+.modal-box.wide { width: min(900px, 94vw); }
+.ack { margin-top: 12px; color: var(--text); font-size: 14px; }
+.guide h2 { margin: 0 0 8px; }
+.guide h3 { margin: 16px 0 6px; font-size: 15px; }
+.guide p, .guide li { line-height: 1.6; font-size: 13.5px; }
+.guide .glead { font-size: 14px; }
+.guide .cyan { color: var(--box); }
+.guide .pink { color: var(--privacy); }
+.guide .dot { color: var(--warn); }
+.gfigs { display: flex; gap: 10px; flex-wrap: wrap; margin: 8px 0; }
+.gfig { margin: 0; width: 132px; font-size: 11px; color: var(--muted); text-align: center; }
+.gfig svg { border-radius: 4px; display: block; margin: 0 auto 4px; }
+.welcome h2 { margin-top: 0; }
+.welcome li { line-height: 1.6; }
+.welcome .privacy { background: #2b1830; border: 1px solid #6b2b6b; border-radius: 6px; padding: 8px 12px; margin: 10px 0; }
+.welcome .notice { color: var(--muted); font-size: 12px; }
+#img, #loupe { filter: var(--imgfilter); }
+#stage { cursor: crosshair; }
+
+/* action table: the label wraps, the four choices stay on one line */
+table.acts td:first-child { white-space: normal; line-height: 1.3; padding-right: 8px; }
+table.acts td:last-child { width: 1%; }
+table.acts .seg { flex-wrap: nowrap; }
+table.acts .seg button { white-space: nowrap; }
+
+/* labeling guide */
+.guide { font-size: 13.5px; }
+.guide .glead { font-size: 14px; }
+.guide .gtoc { background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; margin: 10px 0 6px; }
+.guide .gtoc ol { columns: 2; margin: 6px 0 0; padding-left: 4px; list-style: none; }
+.guide .gtoc a { color: var(--accent); text-decoration: none; }
+.guide .gsec { border-top: 1px solid var(--line); padding-top: 4px; margin-top: 14px; scroll-margin-top: 50px; }
+.guide h4 { margin: 14px 0 6px; font-size: 14px; }
+.guide .gsteps li, .guide .gnum li { margin-bottom: 5px; }
+.guide .gfig.wide { width: auto; }
+.guide .gfig.small { width: 72px; }
+.guide .gfig.bad figcaption { color: var(--danger); }
+.guide .gfig svg, .guide .gcard svg, .guide .gex svg { border-radius: 6px; max-width: 100%; height: auto; }
+.guide .gcards { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+.guide .gcard { background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+.guide .gcard-h { font-weight: 700; margin-bottom: 6px; }
+.guide .gcard p { font-size: 12.5px; line-height: 1.55; margin: 6px 0 0; }
+.guide .gtable-wrap { overflow-x: auto; }
+.guide table.gtable, .guide table.gans { border-collapse: collapse; font-size: 12px; margin: 6px 0; }
+.guide table.gtable th, .guide table.gtable td, .guide table.gans td, .guide table.gans th { border: 1px solid var(--line); padding: 4px 6px; vertical-align: top; text-align: left; }
+.guide table.gtable th { color: var(--muted); font-weight: 600; }
+.guide td.ok { color: var(--keep); } .guide td.no { color: var(--danger); } .guide td.nd { color: var(--warn); } .guide td.na { color: var(--muted); }
+.guide td.tbd { background: #3a3014; color: var(--warn); font-weight: 600; }
+.guide td.ids { font-family: ui-monospace, Menlo, monospace; font-size: 10.5px; }
+.guide .knote { font-size: 11px; color: var(--warn); margin-top: 3px; max-width: 280px; }
+.guide .gex { background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; margin: 10px 0; }
+.guide .gex-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: flex-start; }
+.guide .gex-row p { margin-top: 0; }
+.guide .gfaq dt { font-weight: 700; margin-top: 8px; color: var(--text); font-family: inherit; }
+.guide .gfaq dd { margin: 2px 0 0; color: var(--text); }
+.guide .ctd, .ctd { color: var(--warn); font-weight: 700; }

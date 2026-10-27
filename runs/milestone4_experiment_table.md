@@ -1,0 +1,6 @@
+| Run | run_id | Configuration | Change | Images × repeats | Output 1 acc. | Output 1 macro-F1 | Output 2 exact match | Unsafe errors | Inconsistent answers | Readable | Same answer in all repeats | Mean / p95 latency (s) | Wall time (s) | Cost (USD) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 · initial | 20261027_021643_testA_US | gpt-6.1-sol · effort low · A (image only) · v1 | — (gpt-6.1-sol, image only, prompts/v1, zero-shot) | 40 × 3 | 1.0 | 1.0 | 36/37 (97.3%) | 1 | 6 | 1.0 | 0.825 | 4.83 / 7.33 | 49.8 | 0.5104 |
+| 2 · targeted change | 20261027_021740_testB_US | gpt-6.1-sol · effort low · B (image + rule passages) · v1 | add the region's rule passages (Test B); everything else fixed | 40 × 3 | 0.975 | 0.984 | 35/37 (94.6%) | 0 | 7 | 1.0 | 0.8 | 4.57 / 7.81 | 48.5 | 0.7687 |
+| 3 · second iteration | 20261027_021835_testA_US | gpt-6.1-sol · effort low · A (image only) · v2 | prompts/v2 (shared instructions), image only | 40 × 3 | 0.975 | 0.984 | 35/37 (94.6%) | 1 | 0 | 1.0 | 0.9 | 4.78 / 7.99 | 74.7 | 0.8228 |
+| 4 · second iteration | 20261027_021957_testB_US | gpt-6.1-sol · effort low · B (image + rule passages) · v2 | prompts/v2 + the region's rule passages | 40 × 3 | 1.0 | 1.0 | 36/37 (97.3%) | 0 | 0 | 1.0 | 0.975 | 4.13 / 7.26 | 65.1 | 1.2178 |

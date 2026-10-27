@@ -220,6 +220,39 @@
     "text_en_is_translation": false
   },
   {
+    "rule_id": "US-3B.01-06",
+    "region": "US",
+    "source": "MUTCD 11th Edition (Dec 2023), Part 3",
+    "section": "3B.01 ¶06",
+    "page": 540,
+    "marking_type": "yellow centre line (double solid, four or more lanes)",
+    "text_zh": null,
+    "text_en": "Except where a reversible lane or a two-way left-turn lane is present, the center line markings on undivided two-way roadways with four or more lanes for moving motor vehicle traffic always available shall be the two-direction no-passing zone markings consisting of normal width double solid yellow lines.",
+    "text_en_is_translation": false
+  },
+  {
+    "rule_id": "US-3B.05-01",
+    "region": "US",
+    "source": "MUTCD 11th Edition (Dec 2023), Part 3",
+    "section": "3B.05 ¶01",
+    "page": 543,
+    "marking_type": "two-way left-turn lane",
+    "text_zh": null,
+    "text_en": "If a two-way left-turn lane that is never operated as a reversible lane is used, the lane line pavement markings on each side of the two-way left-turn lane shall consist of a normal width broken yellow line and a normal width solid yellow line to delineate the edges of a lane that can be used by traffic in either direction as part of a left-turn maneuver. These markings shall be placed with the broken line toward the two-way left-turn lane and the solid line toward the adjacent traffic lane.",
+    "text_en_is_translation": false
+  },
+  {
+    "rule_id": "US-3B.05-04",
+    "region": "US",
+    "source": "MUTCD 11th Edition (Dec 2023), Part 3",
+    "section": "3B.05 ¶04",
+    "page": 546,
+    "marking_type": "two-way left-turn lane (arrows)",
+    "text_zh": null,
+    "text_en": "A single-direction lane-use arrow shall not be used in a lane bordered on both sides by yellow two-way left-turn lane longitudinal markings.",
+    "text_en_is_translation": false
+  },
+  {
     "rule_id": "US-3B.06-01",
     "region": "US",
     "source": "MUTCD 11th Edition (Dec 2023), Part 3",
@@ -261,6 +294,17 @@
     "marking_type": "solid line (double solid white)",
     "text_en": "Where crossing the lane line markings is prohibited, the lane line markings shall consist of a double solid white line.",
     "text_zh": null,
+    "text_en_is_translation": false
+  },
+  {
+    "rule_id": "US-3B.09-03",
+    "region": "US",
+    "source": "MUTCD 11th Edition (Dec 2023), Part 3",
+    "section": "3B.09 ¶03",
+    "page": 562,
+    "marking_type": "yellow left edge line (single solid)",
+    "text_zh": null,
+    "text_en": "If used on the roadways of divided highways or one-way streets, or on any ramp in the direction of travel, left edge line pavement markings shall consist of a normal width solid yellow line to delineate the left-hand edge of a roadway or to indicate driving or passing restrictions left of these markings.",
     "text_en_is_translation": false
   },
   {

@@ -1,0 +1,594 @@
+{
+  "_comment": "Region rule table (Milestone 3, 6.1). Used ONLY to prefill the action columns and accepted rule IDs in the labeling tool, so labels stay consistent. It is never used to check or correct model answers. Every prefilled value can be changed in the tool. An empty string means the tool will not guess: the labeler must choose. Keys: marking_type, marking_type|dashed_side, or arrow|arrow_type. Default when the rules are silent (fixed before any model is run): a longitudinal line allows an action unless a passage prohibits it ('discouraged' is not 'prohibited'); an arrow allows the movements it shows and prohibits the others. 'contested' lists cells whose value comes from a project convention rather than from a passage's own words (US: single solid white line crossing; U-turn from a lane with a left-type arrow); the evaluation reports them separately from the main score.",
+  "version": "1",
+  "partial_evidence": "When the expected evidence is partial or insufficient, every action that would be allowed or prohibited is prefilled as not_determined instead.",
+  "US": {
+    "white_dashed": {
+      "actions": {
+        "cross_line": "allowed",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3A.04-01",
+        "US-3B.06-05-06"
+      ]
+    },
+    "white_solid": {
+      "actions": {
+        "cross_line": "allowed",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.06-05-06",
+        "US-3A.04-01"
+      ],
+      "note": "Project convention: MUTCD 3A.04 and 3B.06 ¶06 say a single solid white lane line discourages crossing; a prohibition is shown by a double solid white line (3B.06 ¶12). No passage prohibits crossing it, so cross_line = allowed (discouraged is not prohibited). Only for a line between two lanes going our way: road edge lines and bike lane lines are not targets. Contested cell: scored separately.",
+      "note_zh": "项目约定：MUTCD 3A.04 和 3B.06 第 06 段说单条白实线是“不鼓励”跨越；禁止跨越要用双白实线（3B.06 第 12 段）。没有条文禁止跨越单白实线，所以越线 = 允许（不鼓励不等于禁止）。只适用于两条同向车道之间的线；路边线和自行车道线不作为目标。这是有争议的格子，评估时单独统计。",
+      "contested": [
+        "cross_line"
+      ]
+    },
+    "white_double_solid": {
+      "actions": {
+        "cross_line": "prohibited",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3A.04-01",
+        "US-3B.06-12"
+      ]
+    },
+    "yellow_dashed": {
+      "actions": {
+        "cross_line": "allowed",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.01-04",
+        "US-3A.04-01"
+      ]
+    },
+    "yellow_solid": {
+      "actions": {
+        "cross_line": "prohibited",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.09-03",
+        "US-3B.01-05",
+        "US-3A.03-03-04"
+      ],
+      "note": "In the US a single solid yellow line is not a centre line (3B.01 ¶05). It is the left edge line of a divided highway, one-way street or ramp, which marks the left-hand edge of the roadway and indicates driving or passing restrictions left of it (3B.09 ¶03), so cross_line = prohibited. If it is clearly something else, tick Unsure and explain.",
+      "note_zh": "美国的单黄实线不是中心线（3B.01 第 05 段），而是分隔式公路、单行道或匝道的左侧边线：标示车行道左侧边缘，并表示其左侧的行驶或超车限制（3B.09 第 03 段），所以越线 = 禁止。如果明显是别的情况，勾“不确定”并写明。"
+    },
+    "yellow_double_solid": {
+      "actions": {
+        "cross_line": "prohibited",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.01-04",
+        "US-3B.01-06"
+      ],
+      "note": "3B.01 ¶04 C (two-lane roads) and ¶06 (undivided roads with four or more lanes): two solid yellow lines prohibit crossing for passing in either direction.",
+      "note_zh": "3B.01 第 04 段 C 款（双车道道路）和第 06 段（四车道及以上的无分隔道路）：双黄实线，两个方向都禁止越线超车。"
+    },
+    "yellow_solid_dashed|ego_side": {
+      "actions": {
+        "cross_line": "allowed",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.01-04"
+      ],
+      "note": "Broken line on my side: passing with care is permitted.",
+      "note_zh": "我这一侧是虚线：可以谨慎越线超车。"
+    },
+    "yellow_solid_dashed|far_side": {
+      "actions": {
+        "cross_line": "prohibited",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.01-04"
+      ],
+      "note": "Solid line on my side: passing is prohibited.",
+      "note_zh": "我这一侧是实线：禁止越线超车。"
+    },
+    "two_way_left_turn_lane": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "not_applicable",
+        "turn_left": "allowed",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "allowed"
+      },
+      "rule_ids": [
+        "US-3B.05-01",
+        "US-3B.23-01"
+      ],
+      "note": "3B.05 ¶01: a lane that can be used by traffic in either direction as part of a left-turn maneuver, so entering it to wait and turning left from it are allowed; the other actions are not governed by it. The same answer applies whether the lane is beside us (position left) or we are in it (position in_ego_lane).",
+      "note_zh": "3B.05 第 01 段：这条车道可供任一方向的车辆在左转过程中使用，所以进入等待和从这里左转都是允许；其他动作不归它管。不论这条车道在我旁边（位置选“左边”），还是我的车就在里面（位置选“在我的车道里”），答案都一样。"
+    },
+    "arrow|straight": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "allowed",
+        "turn_left": "prohibited",
+        "turn_right": "prohibited",
+        "u_turn": "prohibited",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.23-01",
+        "US-3B.23-08"
+      ]
+    },
+    "arrow|left": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "prohibited",
+        "turn_left": "allowed",
+        "turn_right": "prohibited",
+        "u_turn": "allowed",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.23-01",
+        "US-3B.23-08"
+      ],
+      "note": "Project convention: a U-turn is made from a lane where left turns are allowed, and no passage prohibits it, so u_turn = allowed. If a NO U-TURN sign is visible, keep this answer, tick Unsure and write it in the comment. Contested cell: the arrow does not show a U-turn; scored separately.",
+      "note_zh": "项目约定：掉头是在允许左转的车道里进行的，而且没有条文禁止，所以掉头 = 允许。如果图里能看到“禁止掉头”标志，保持这个答案，勾“不确定”并在备注里写明。这是有争议的格子（箭头没有画出掉头），评估时单独统计。",
+      "contested": [
+        "u_turn"
+      ]
+    },
+    "arrow|right": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "prohibited",
+        "turn_left": "prohibited",
+        "turn_right": "allowed",
+        "u_turn": "prohibited",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.23-01",
+        "US-3B.23-08"
+      ]
+    },
+    "arrow|straight_left": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "allowed",
+        "turn_left": "allowed",
+        "turn_right": "prohibited",
+        "u_turn": "allowed",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.23-01",
+        "US-3B.23-08"
+      ],
+      "note": "Project convention: a U-turn is made from a lane where left turns are allowed, and no passage prohibits it, so u_turn = allowed. If a NO U-TURN sign is visible, keep this answer, tick Unsure and write it in the comment. Contested cell: the arrow does not show a U-turn; scored separately.",
+      "note_zh": "项目约定：掉头是在允许左转的车道里进行的，而且没有条文禁止，所以掉头 = 允许。如果图里能看到“禁止掉头”标志，保持这个答案，勾“不确定”并在备注里写明。这是有争议的格子（箭头没有画出掉头），评估时单独统计。",
+      "contested": [
+        "u_turn"
+      ]
+    },
+    "arrow|straight_right": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "allowed",
+        "turn_left": "prohibited",
+        "turn_right": "allowed",
+        "u_turn": "prohibited",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.23-01",
+        "US-3B.23-08"
+      ]
+    },
+    "arrow|left_right": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "prohibited",
+        "turn_left": "allowed",
+        "turn_right": "allowed",
+        "u_turn": "allowed",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.23-01",
+        "US-3B.23-08"
+      ],
+      "note": "Project convention: a U-turn is made from a lane where left turns are allowed, and no passage prohibits it, so u_turn = allowed. If a NO U-TURN sign is visible, keep this answer, tick Unsure and write it in the comment. Contested cell: the arrow does not show a U-turn; scored separately.",
+      "note_zh": "项目约定：掉头是在允许左转的车道里进行的，而且没有条文禁止，所以掉头 = 允许。如果图里能看到“禁止掉头”标志，保持这个答案，勾“不确定”并在备注里写明。这是有争议的格子（箭头没有画出掉头），评估时单独统计。",
+      "contested": [
+        "u_turn"
+      ]
+    },
+    "arrow|u_turn": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "prohibited",
+        "turn_left": "prohibited",
+        "turn_right": "prohibited",
+        "u_turn": "allowed",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.23-01",
+        "US-3B.23-08"
+      ]
+    },
+    "arrow|left_u_turn": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "prohibited",
+        "turn_left": "allowed",
+        "turn_right": "prohibited",
+        "u_turn": "allowed",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.23-01",
+        "US-3B.23-08"
+      ]
+    },
+    "arrow|straight_u_turn": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "allowed",
+        "turn_left": "prohibited",
+        "turn_right": "prohibited",
+        "u_turn": "allowed",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "US-3B.23-01",
+        "US-3B.23-08"
+      ]
+    },
+    "other": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [],
+      "note": "Crosswalks, stop lines, curbs and other markings: no action is scored.",
+      "note_zh": "人行横道、停止线、路缘等其他标线：不评判任何动作。"
+    },
+    "none_visible": {
+      "actions": {
+        "cross_line": "not_determined",
+        "go_straight": "not_determined",
+        "turn_left": "not_determined",
+        "turn_right": "not_determined",
+        "u_turn": "not_determined",
+        "enter_center_lane_to_wait": "not_determined"
+      },
+      "rule_ids": [],
+      "note": "No usable evidence (V0): nothing can be decided.",
+      "note_zh": "没有可用证据（V0）：任何动作都无法确定。"
+    }
+  },
+  "CN": {
+    "white_dashed": {
+      "actions": {
+        "cross_line": "allowed",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-4.2.2-a",
+        "CN-5.2.1-2",
+        "CN-5.2.3"
+      ]
+    },
+    "white_solid": {
+      "actions": {
+        "cross_line": "prohibited",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-4.2.2-a",
+        "CN-6.2.1",
+        "CN-6.10.1-2"
+      ]
+    },
+    "white_double_solid": {
+      "actions": {
+        "cross_line": "prohibited",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-4.2.2-a"
+      ],
+      "note": "No passage in the rule file is specific to double solid white lines; check GB 5768.3 before accepting.",
+      "note_zh": "规则文件里没有专门针对双白实线的条文，请先核对 GB 5768.3。"
+    },
+    "yellow_dashed": {
+      "actions": {
+        "cross_line": "allowed",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-4.3.2",
+        "CN-5.1.1",
+        "CN-5.1.2"
+      ]
+    },
+    "yellow_solid": {
+      "actions": {
+        "cross_line": "prohibited",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-6.1.1",
+        "CN-6.1.4"
+      ]
+    },
+    "yellow_double_solid": {
+      "actions": {
+        "cross_line": "prohibited",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-6.1.1",
+        "CN-6.1.2"
+      ]
+    },
+    "yellow_solid_dashed|ego_side": {
+      "actions": {
+        "cross_line": "allowed",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-4.2.2-a",
+        "CN-6.1.3"
+      ]
+    },
+    "yellow_solid_dashed|far_side": {
+      "actions": {
+        "cross_line": "prohibited",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-4.2.2-a",
+        "CN-6.1.3"
+      ]
+    },
+    "two_way_left_turn_lane": {
+      "actions": {
+        "cross_line": "",
+        "go_straight": "",
+        "turn_left": "",
+        "turn_right": "",
+        "u_turn": "",
+        "enter_center_lane_to_wait": ""
+      },
+      "rule_ids": [],
+      "note": "Not a GB 5768.3-2025 marking in the rule file; leave for review.",
+      "note_zh": "规则文件里没有对应的 GB 5768.3-2025 标线，请交给负责人复核。"
+    },
+    "arrow|straight": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "allowed",
+        "turn_left": "prohibited",
+        "turn_right": "prohibited",
+        "u_turn": "prohibited",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-5.13.1"
+      ]
+    },
+    "arrow|left": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "prohibited",
+        "turn_left": "allowed",
+        "turn_right": "prohibited",
+        "u_turn": "",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-5.13.1"
+      ],
+      "note": "A left arrow does not by itself prohibit a U-turn; Chinese law allows a U-turn where left turns are allowed unless a sign or marking prohibits it. Decide in the labeling guide.",
+      "note_zh": "左转箭头本身并不禁止掉头；按中国法规，允许左转的地方可以掉头，除非有标志或标线禁止。请按标注约定选择。"
+    },
+    "arrow|right": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "prohibited",
+        "turn_left": "prohibited",
+        "turn_right": "allowed",
+        "u_turn": "prohibited",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-5.13.1"
+      ]
+    },
+    "arrow|straight_left": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "allowed",
+        "turn_left": "allowed",
+        "turn_right": "prohibited",
+        "u_turn": "",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-5.13.1"
+      ],
+      "note": "A left arrow does not by itself prohibit a U-turn; Chinese law allows a U-turn where left turns are allowed unless a sign or marking prohibits it. Decide in the labeling guide.",
+      "note_zh": "左转箭头本身并不禁止掉头；按中国法规，允许左转的地方可以掉头，除非有标志或标线禁止。请按标注约定选择。"
+    },
+    "arrow|straight_right": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "allowed",
+        "turn_left": "prohibited",
+        "turn_right": "allowed",
+        "u_turn": "prohibited",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-5.13.1"
+      ]
+    },
+    "arrow|left_right": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "prohibited",
+        "turn_left": "allowed",
+        "turn_right": "allowed",
+        "u_turn": "",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-5.13.1"
+      ],
+      "note": "A left arrow does not by itself prohibit a U-turn; Chinese law allows a U-turn where left turns are allowed unless a sign or marking prohibits it. Decide in the labeling guide.",
+      "note_zh": "左转箭头本身并不禁止掉头；按中国法规，允许左转的地方可以掉头，除非有标志或标线禁止。请按标注约定选择。"
+    },
+    "arrow|u_turn": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "prohibited",
+        "turn_left": "prohibited",
+        "turn_right": "prohibited",
+        "u_turn": "allowed",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-5.13.1"
+      ]
+    },
+    "arrow|left_u_turn": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "prohibited",
+        "turn_left": "allowed",
+        "turn_right": "prohibited",
+        "u_turn": "allowed",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-5.13.1"
+      ]
+    },
+    "arrow|straight_u_turn": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "allowed",
+        "turn_left": "prohibited",
+        "turn_right": "prohibited",
+        "u_turn": "allowed",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [
+        "CN-5.13.1"
+      ]
+    },
+    "other": {
+      "actions": {
+        "cross_line": "not_applicable",
+        "go_straight": "not_applicable",
+        "turn_left": "not_applicable",
+        "turn_right": "not_applicable",
+        "u_turn": "not_applicable",
+        "enter_center_lane_to_wait": "not_applicable"
+      },
+      "rule_ids": [],
+      "note": "Crosswalks, stop lines, curbs and other markings: no action is scored.",
+      "note_zh": "人行横道、停止线、路缘等其他标线：不评判任何动作。"
+    },
+    "none_visible": {
+      "actions": {
+        "cross_line": "not_determined",
+        "go_straight": "not_determined",
+        "turn_left": "not_determined",
+        "turn_right": "not_determined",
+        "u_turn": "not_determined",
+        "enter_center_lane_to_wait": "not_determined"
+      },
+      "rule_ids": [],
+      "note": "No usable evidence (V0): nothing can be decided.",
+      "note_zh": "没有可用证据（V0）：任何动作都无法确定。"
+    }
+  }
+}

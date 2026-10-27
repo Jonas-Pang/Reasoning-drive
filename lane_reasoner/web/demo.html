@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reasoning Driving Demo</title>
+<link rel="stylesheet" href="/static/demo.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">Reasoning Driving <span class="muted">· demo</span></div>
+  <div class="seg" id="test-seg">
+    <button data-test="A"></button>
+    <button data-test="B"></button>
+  </div>
+  <label class="inline"><span data-t="region"></span> <select id="region"></select></label>
+  <div class="seg" id="mode-seg">
+    <button data-mock="1" data-t="mode_mock"></button>
+    <button data-mock="0" data-t="mode_real"></button>
+  </div>
+  <span id="keyinfo" class="pill"></span>
+  <span id="modelinfo" class="muted small"></span>
+  <span class="grow"></span>
+  <button id="settings-btn" data-t="settings"></button>
+  <button id="lang-btn"></button>
+</header>
+<div id="banner" class="banner hidden"></div>
+
+<main>
+  <aside class="list">
+    <div class="list-head"><b data-t="images"></b> <span id="count" class="muted"></span></div>
+    <select id="type-filter"></select>
+    <ol id="items"></ol>
+  </aside>
+
+  <section class="center">
+    <div class="imgwrap"><img id="img" alt=""></div>
+    <div class="meta small muted" id="imgmeta"></div>
+    <div class="ask">
+      <button id="ask-a" class="primary"></button>
+      <button id="ask-b" class="primary"></button>
+      <button id="ask-both"></button>
+      <label class="check small"><input type="checkbox" id="use-cache" checked> <span data-t="use_cache"></span></label>
+    </div>
+    <div id="ask-msg" class="msg"></div>
+    <div class="results" id="results"></div>
+  </section>
+
+  <aside class="side">
+    <div class="tabs">
+      <button class="tab active" data-tab="prompt" data-t="tab_prompt"></button>
+      <button class="tab" data-tab="batch" data-t="tab_batch"></button>
+      <button class="tab" data-tab="io" data-t="tab_io"></button>
+    </div>
+    <div class="pane" id="pane-prompt">
+      <p class="muted small" data-t="prompt_help"></p>
+      <h4 data-t="p_instructions"></h4>
+      <pre id="p-instructions" class="prompt"></pre>
+      <div id="p-rules-wrap" class="hidden">
+        <h4 class="rules-h" data-t="p_rules"></h4>
+        <pre id="p-rules" class="prompt rules"></pre>
+      </div>
+      <h4 data-t="p_user"></h4>
+      <pre id="p-user" class="prompt"></pre>
+      <details><summary data-t="p_schema"></summary><pre id="p-schema" class="prompt"></pre></details>
+      <div class="muted small" id="p-hashes"></div>
+    </div>
+    <div class="pane hidden" id="pane-batch">
+      <p class="muted small" data-t="batch_help"></p>
+      <div class="row">
+        <label class="inline">Test <select id="b-test"><option value="AB" selected>A + B</option><option>A</option><option>B</option></select></label>
+        <label class="inline"><span data-t="limit"></span> <input type="number" id="b-limit" min="0" value="0"></label>
+        <label class="inline"><span data-t="repeats"></span> <input type="number" id="b-repeats" min="1" max="5" value="1"></label>
+        <button id="b-run" class="primary" data-t="run"></button>
+      </div>
+      <div class="progress"><div id="b-bar"></div></div>
+      <div id="b-status" class="small"></div>
+      <h4 data-t="runs"></h4>
+      <div id="runs"></div>
+      <div class="row"><button id="b-compare" data-t="compare"></button> <span class="muted small" data-t="compare_help"></span></div>
+      <div id="compare-out"></div>
+      <div id="run-detail"></div>
+    </div>
+    <div class="pane hidden" id="pane-io">
+      <div id="io-text" class="io"></div>
+    </div>
+  </aside>
+</main>
+
+<div id="settings" class="modal hidden">
+  <div class="box">
+    <h3 data-t="settings"></h3>
+    <p class="muted small" data-t="settings_help"></p>
+    <div class="grid2">
+      <label><span>model</span><input id="s-model"></label>
+      <label><span>reasoning_effort</span><input id="s-effort" placeholder="none"></label>
+      <label><span>temperature</span><input id="s-temp" placeholder="0"></label>
+      <label><span>image_detail</span><select id="s-detail"><option>high</option><option>low</option><option>auto</option></select></label>
+      <label><span>max_output_tokens</span><input id="s-max" type="number"></label>
+      <label><span>parallel</span><input id="s-par" type="number" min="1" max="20"></label>
+    </div>
+    <label class="check"><input type="checkbox" id="s-save"> <span data-t="save_default"></span></label>
+    <div class="row end"><button id="s-cancel" data-t="cancel"></button><button id="s-ok" class="primary" data-t="apply"></button></div>
+  </div>
+</div>
+<script src="/static/demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "trip_id": "fl_20261017_night_01",
+  "region": "US",
+  "dataset": "own_FL",
+  "place": "FL",
+  "recorded_date": "2026-10-17",
+  "time_of_day": "night",
+  "weather": "clear",
+  "road_type": "",
+  "notes": "",
+  "license": "Own recording by the project author; no third-party license. Raw video stays private; faces and plates are blurred in any published figure.",
+  "split": "dev",
+  "video": {
+    "file": "DJI_20261017015320_0076_D.MP4",
+    "original_name": "DJI_20261017015320_0076_D.MP4",
+    "sha256": "27a0c290d893fbb2b5f64e212bbbcc092490810ecf077ae9dde4ed2d7382b546",
+    "size_bytes": 8457615394,
+    "width": 2688,
+    "height": 1512,
+    "fps": 29.97,
+    "frame_count": 40502,
+    "duration_s": 1351.42,
+    "codec": "hevc"
+  },
+  "output": {
+    "width": 1280,
+    "height": 720,
+    "jpeg_quality": 95
+  },
+  "trim": {
+    "start_s": 0.0,
+    "end_s": null
+  },
+  "masks": [],
+  "registered_utc": "2026-10-17T10:13:16Z",
+  "tool_version": "1.0",
+  "scan": {
+    "scanned_utc": "2026-10-17T10:30:22Z",
+    "elapsed_s": 1020.1,
+    "sample_fps": 1.998,
+    "step_frames": 15,
+    "start_s": 0.0,
+    "end_s": null,
+    "samples": 2701,
+    "stationary_samples": 346,
+    "stationary_minutes": 2.89,
+    "duplicate_samples": 8,
+    "candidates": 2347,
+    "dark_candidates": 0,
+    "blurry_candidates": 275,
+    "min_stop_s": 3.0,
+    "roi": {
+      "x1": 0.15,
+      "x2": 0.85,
+      "y1": 0.5,
+      "y2": 0.92
+    },
+    "motion_threshold": 1.993,
+    "auto_threshold": true
+  },
+  "updated_utc": "2026-10-27T02:16:23Z",
+  "split_history": [
+    {
+      "date_utc": "2026-10-27T02:16:23Z",
+      "from": "test",
+      "to": "dev",
+      "reason": "Used to build, debug and demo the prompts and the scoring on 22 Oct 2026 (Test A/B answers and errors were inspected), so it is development data, not held-out test data. No other data was affected; BDD100K and CULane test pools are untouched."
+    }
+  ]
+}

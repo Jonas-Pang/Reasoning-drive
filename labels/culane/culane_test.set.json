@@ -1,0 +1,50 @@
+{
+  "trip_id": "culane_test",
+  "set_id": "culane_test",
+  "kind": "images",
+  "registered_utc": "2026-10-22T08:58:40Z",
+  "annotators_required": 2,
+  "split": "hash",
+  "quota": {
+    "dev": {
+      "solid": 6,
+      "dashed": 6,
+      "yellow": 6,
+      "arrow": 6,
+      "degraded": 0
+    },
+    "test": {
+      "solid": 30,
+      "dashed": 30,
+      "yellow": 30,
+      "arrow": 30,
+      "degraded": 30
+    }
+  },
+  "time_of_day": "",
+  "weather": "",
+  "dataset": "CULane",
+  "region": "CN",
+  "source_root": "/Volumes/T9/Project/Reasning_Drive/data/extracted/culane",
+  "license": "CULane (Pan et al., AAAI 2018), test split. Rights reserved by SenseTime Group Limited. Free for non-commercial research with citation; the dataset or modified versions may not be redistributed. Helpers label under a written no-sharing notice and delete the images afterwards.",
+  "split_unit": "video clip (driver folder + clip)",
+  "index": {
+    "built_utc": "2026-10-22T08:58:40Z",
+    "images": 34680,
+    "dev_pool": 2805,
+    "test_pool": 31875,
+    "hints": {
+      "cu_arrow": 890,
+      "cu_cross": 3122,
+      "cu_crowd": 8113,
+      "cu_curve": 422,
+      "cu_hlight": 486,
+      "cu_night": 7029,
+      "cu_noline": 4067,
+      "cu_normal": 9621,
+      "cu_shadow": 930
+    }
+  },
+  "tool_version": "1.3",
+  "updated_utc": "2026-10-22T09:53:33Z"
+}

@@ -1,0 +1,2 @@
+date_utc,collection,drive_id,trips,from_split,to_split,labels_changed,reason
+2026-10-27T02:16:23Z,own_video,fl_20261017_night_01,fl_20261017_night_01,test,dev,142,"Used to build, debug and demo the prompts and the scoring on 22 Oct 2026 (Test A/B answers and errors were inspected), so it is development data, not held-out test data. No other data was affected; BDD100K and CULane test pools are untouched."

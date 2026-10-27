@@ -1,0 +1,13 @@
+field,items,percent_agreement,fleiss_kappa
+marking_type,43,1.0,1.0
+arrow_type,43,1.0,1.0
+position,43,0.953,0.917
+dashed_side,43,1.0,
+visibility,43,0.977,0.788
+behavior_decidable,43,0.977,0.788
+act_cross_line,43,0.977,0.964
+act_go_straight,43,1.0,1.0
+act_turn_left,43,0.977,0.947
+act_turn_right,43,1.0,1.0
+act_u_turn,43,1.0,1.0
+act_enter_center_lane_to_wait,43,1.0,1.0

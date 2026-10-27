@@ -1,0 +1,44 @@
+{
+  "_comment": "Allowed values of every label field (Milestone 3, section 6.1). The labeling tool reads this file; the API answer schema should use the same lists. Change the lists only before the criteria freeze (criteria-v1).",
+  "version": "1",
+  "marking_type": [
+    "white_dashed",
+    "white_solid",
+    "white_double_solid",
+    "yellow_dashed",
+    "yellow_solid",
+    "yellow_double_solid",
+    "yellow_solid_dashed",
+    "two_way_left_turn_lane",
+    "arrow",
+    "other",
+    "none_visible"
+  ],
+  "arrow_type": [
+    "straight",
+    "left",
+    "right",
+    "straight_left",
+    "straight_right",
+    "left_right",
+    "u_turn",
+    "left_u_turn",
+    "straight_u_turn"
+  ],
+  "position": ["left", "in_ego_lane", "right"],
+  "dashed_side": ["ego_side", "far_side"],
+  "visibility": ["V2", "V1", "V0"],
+  "evidence": ["full", "partial", "insufficient"],
+  "actions": [
+    "cross_line",
+    "go_straight",
+    "turn_left",
+    "turn_right",
+    "u_turn",
+    "enter_center_lane_to_wait"
+  ],
+  "action_values": ["allowed", "prohibited", "not_determined", "not_applicable"],
+  "label_status": ["kept", "draft", "done", "excluded"],
+  "needs_dashed_side": ["yellow_solid_dashed"],
+  "no_rule_needed": ["other", "none_visible"]
+}
