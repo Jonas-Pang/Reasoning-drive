@@ -1,5 +1,5 @@
 {
-  "_comment": "Settings for the model runs (Test A = image only, Test B = image + the region's rule passages). No secrets in this file: the API key is read from the environment variable named in api.api_key_env, which you keep in the .env file of the repository (Git ignores .env). Every run saves a copy of these settings (without the key) in runs/<run_id>/manifest.json. Relative workspaces are resolved under DATASETS_ROOT (environment or .env), else under datasets_root.",
+  "_comment": "Settings for the model runs (Test A: image only; Test B: image + the region's rule passages). The API key is read from the environment variable named in api.api_key_env, usually set in .env. Relative workspace names are resolved under DATASETS_ROOT (set in .env) or datasets_root.",
   "version": "1",
   "mock": true,
   "api": {
@@ -29,14 +29,14 @@
     "marking_types": [],
     "order_seed": 6216
   },
-  "datasets_root": "/Volumes/T9/数据集",
+  "datasets_root": "",
   "workspaces": [
     "UF",
     "bdd100k",
     "culane"
   ],
   "data_policy": {
-    "_comment": "Collections whose images may be sent to the OpenAI API. own_video is the author's own footage. Add bdd100k / culane only after the dataset owners have confirmed in writing that sending images to a third-party API for non-commercial course research is allowed (README, 'Data sent to the API').",
+    "_comment": "Collections whose images may be sent to the API. Add bdd100k or culane only with the dataset owners' permission.",
     "send_to_api": [
       "own_video"
     ]

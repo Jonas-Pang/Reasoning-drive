@@ -93,14 +93,17 @@
     <p class="muted small" data-t="settings_help"></p>
     <div class="grid2">
       <label><span>model</span><input id="s-model"></label>
-      <label><span>reasoning_effort</span><input id="s-effort" placeholder="none"></label>
+      <label><span>prompt</span><select id="s-prompt"></select></label>
+      <label><span>reasoning_effort</span><input id="s-effort" placeholder="low"></label>
+      <label><span>reasoning_summary</span><select id="s-summary"><option>off</option><option>auto</option><option>concise</option><option>detailed</option></select></label>
       <label><span>temperature</span><input id="s-temp" placeholder="0"></label>
       <label><span>image_detail</span><select id="s-detail"><option>high</option><option>low</option><option>auto</option></select></label>
       <label><span>max_output_tokens</span><input id="s-max" type="number"></label>
       <label><span>parallel</span><input id="s-par" type="number" min="1" max="20"></label>
     </div>
     <label class="check"><input type="checkbox" id="s-save"> <span data-t="save_default"></span></label>
-    <div class="row end"><button id="s-cancel" data-t="cancel"></button><button id="s-ok" class="primary" data-t="apply"></button></div>
+    <p class="muted small" id="s-unsaved"></p>
+    <div class="row end"><button id="s-reload" data-t="reload"></button><span class="grow"></span><button id="s-cancel" data-t="cancel"></button><button id="s-ok" class="primary" data-t="apply"></button></div>
   </div>
 </div>
 <script src="/static/demo.js"></script>

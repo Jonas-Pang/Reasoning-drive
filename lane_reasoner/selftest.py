@@ -3,7 +3,7 @@
 Builds a throw-away copy of the repository (settings, rules, prompts) and a tiny synthetic image workspace with
 final labels, then checks: loading the labels, the prompts of Test A and Test B, the boxed image, mock runs and
 their comparison, a fake Responses API server (request format, parsing, retries, errors, cache), the demo
-server, and that the API key never ends up in a file.
+server, and that the API key is not written to any file.
 """
 from __future__ import annotations
 
@@ -34,18 +34,19 @@ def _build(root: Path, src_repo: Path) -> Path:
     from types import SimpleNamespace
     repo = root / "repo"
     for d in ("config", "prompts"):
-        shutil.copytree(src_repo / d, repo / d, ignore=shutil.ignore_patterns("._*", ".DS_Store"))  # macOS helper files on exFAT
+        shutil.copytree(src_repo / d, repo / d, ignore=shutil.ignore_patterns("._*", ".DS_Store"))  # macOS helper files
     (repo / "rules").mkdir(parents=True)
     shutil.copy(src_repo / "rules" / "rule_passages.json", repo / "rules" / "rule_passages.json")
     ws = root / "ws"
     (ws / "selected" / "st_set").mkdir(parents=True)
     (ws / "workspace.json").write_text(json.dumps({"collection": "selftest", "kind": "images", "dataset": "synthetic"}), encoding="utf-8")
-    cfg = json.loads((repo / "config" / "experiment.json").read_text(encoding="utf-8"))
-    cfg["workspaces"] = [str(ws)]
-    cfg["data_policy"] = {"send_to_api": ["selftest"]}
-    cfg["mock"] = True
-    cfg["api"]["parallel"] = 3
-    (repo / "config" / "experiment.json").write_text(json.dumps(cfg, indent=2), encoding="utf-8")
+    import yaml
+    y = yaml.safe_load((repo / "config" / "experiment.yaml").read_text(encoding="utf-8"))
+    y["data"]["workspaces"] = [str(ws)]
+    y["data"]["send_to_api"] = ["selftest"]
+    y["experiment"]["mock"] = True
+    y["model"]["parallel"] = 3
+    (repo / "config" / "experiment.yaml").write_text(yaml.safe_dump(y, allow_unicode=True, sort_keys=False), encoding="utf-8")
     table = load_action_rules(SimpleNamespace(repo=repo))
     passages = json.loads((repo / "rules" / "rule_passages.json").read_text(encoding="utf-8"))
     rows = []
@@ -92,9 +93,14 @@ class FakeApi:
                     return self._send(429, {"error": {"message": "Rate limit"}}, {"retry-after": "0.05"})
                 if api.mode == "bad_param":
                     return self._send(400, {"error": {"message": "Unsupported value", "param": "temperature"}})
+                wants_summary = "summary" in (body.get("reasoning") or {})
+                if api.mode == "no_summary" and wants_summary:
+                    return self._send(400, {"error": {"message": "Your organization must be verified to generate reasoning summaries.",
+                                                      "param": "reasoning.summary"}})
                 text = json.dumps(api.answer)
+                summary = [{"type": "summary_text", "text": "The line is solid and yellow, so crossing is prohibited."}] if wants_summary else []
                 out = {"id": "resp_fake", "model": body["model"] + "-2026-01-01", "status": "completed",
-                       "output": [{"type": "reasoning", "summary": []},
+                       "output": [{"type": "reasoning", "summary": summary},
                                   {"type": "message", "role": "assistant", "content": [{"type": "output_text", "text": text}]}],
                        "usage": {"input_tokens": 1234, "output_tokens": 99, "total_tokens": 1333}}
                 if api.mode == "incomplete":
@@ -207,10 +213,10 @@ def main() -> int:
         ra = run_batch(cfg, "A", "US", 0, 2, "any", True, log=lambda *x: None)
         rb = run_batch(cfg, "B", "US", 0, 2, "any", True, log=lambda *x: None)
         d = C.repo_of(cfg) / "runs" / ra
-        files_ok = all((d / f).exists() for f in ("manifest.json", "results.jsonl", "scores.json", "summary.md"))
+        files_ok = all((d / f).exists() for f in ("manifest.json", "results.jsonl", "scores.json", "summary.md", "trace.md"))
         lines = (d / "results.jsonl").read_text(encoding="utf-8").splitlines()
         man = json.loads((d / "manifest.json").read_text(encoding="utf-8"))
-        check("mock run writes manifest (with code hash and split version), results (9 images × 2), scores, summary",
+        check("mock run writes manifest (with code hash and split version), results (9 images × 2), scores, summary, trace",
               files_ok and len(lines) == 18 and len(man.get("code_sha", "")) == 16 and man.get("split_version") == 1)
         c = compare_runs(cfg, ra, rb)
         check("compare A vs B: paired on 9 images, same settings and shared prompt",
@@ -281,6 +287,22 @@ def main() -> int:
         r = ping(cfg)
         check("ping sends a tiny text request with the same model and settings",
               "input_image" not in json.dumps(api.requests[-1]) and api.requests[-1]["model"] == cfg["api"]["model"] and r["text"])
+        from .client import settings_of
+        from .trace import trace_text
+        cfg["api"]["reasoning_summary"] = "auto"
+        rec6 = ask(cfg, it, "B", 0, False, use_cache=False)
+        req6 = api.requests[-1]
+        check("reasoning summary: requested when set, kept with the answer and shown in the trace",
+              req6["reasoning"].get("summary") == "auto" and "solid and yellow" in (rec6["response"] or {}).get("reasoning_summary", "")
+              and "Model's summary" in trace_text(rec6) and settings_of(cfg).get("reasoning_summary") == "auto", json.dumps(rec6.get("response"))[:300])
+        api.mode = "no_summary"
+        rec7 = ask(cfg, it, "B", 0, False, use_cache=False)
+        check("reasoning summary refused by the API: sent again without it, the answer notes why",
+              rec7["answer"] is not None and "summary" not in (api.requests[-1].get("reasoning") or {})
+              and "not available" in (rec7["response"] or {}).get("reasoning_summary_note", ""), rec7.get("error", ""))
+        api.mode = "ok"
+        cfg["api"]["reasoning_summary"] = None
+        check("settings without a reasoning summary are the same as before it existed", "reasoning_summary" not in settings_of(cfg))
         os.environ["OPENAI_API_KEY"] = ""
         n = api.hits
         nokey = ask(cfg, it, "A", 0, False, use_cache=False)["error"]
@@ -319,7 +341,18 @@ def main() -> int:
               and (ans["cited_passage"] or ans["answer"]["cited_rule_id"] is None))
         conf2 = post("/api/config", {"run.test": "B", "api.temperature": ""})
         check("demo: settings change (not saved)", conf2["config"]["run"]["test"] == "B" and conf2["config"]["api"]["temperature"] is None
-              and json.loads((repo / "config" / "experiment.json").read_text())["run"]["test"] == "A")
+              and C.load(repo)["run"]["test"] == "A")
+        conf3 = post("/api/config", {"api.model": "gpt-ui", "prompt.dir": "prompts/v2"})
+        unsaved_ok = {"model.name", "experiment.prompt"} <= set(conf3["unsaved"]) and C.load(repo)["api"]["model"] != "gpt-ui"
+        conf4 = post("/api/config", {"save": True})
+        on_file = C.load(repo)
+        saved_ok = on_file["api"]["model"] == "gpt-ui" and on_file["prompt"]["dir"] == "prompts/v2" and conf4["unsaved"] == []
+        yf = repo / "config" / "experiment.yaml"
+        yf.write_text(yf.read_text(encoding="utf-8").replace("gpt-ui", "gpt-file"), encoding="utf-8")
+        conf5 = post("/api/config", {"reload": True})
+        check("demo: page settings are listed as unsaved, written to the YAML file on request, and reloaded after a manual edit",
+              unsaved_ok and saved_ok and conf5["config"]["api"]["model"] == "gpt-file" and conf5["unsaved"] == [],
+              f"{conf3['unsaved']} {conf4['unsaved']} {conf5['config']['api']['model']}")
         post("/api/run", {"test": "AB", "region": "US", "limit": 3, "repeats": 1})
         for _ in range(100):
             pr = json.loads(get("/api/progress"))
@@ -336,7 +369,64 @@ def main() -> int:
         check("runs started in the same second get their own folders; run_pair runs A and B together",
               r1 != r2 and set(pair) == {"A", "B"} and pair["A"] != pair["B"], f"{r1} {r2} {pair}")
 
-        # 8. the key is in no file
+        # 8. settings file, prompt versions, reasoning trace, a new region
+        import yaml
+        from types import SimpleNamespace
+        from video_tool.core import load_rule_passages
+        base = yaml.safe_load((C.REPO / "config" / "experiment.yaml").read_text(encoding="utf-8"))
+        yb = yaml.safe_load(yaml.safe_dump(base)); yb["experiment"]["use_rules"] = True; yb["model"]["reasoning_summary"] = False
+        mb = C.from_yaml(yb)
+        try:
+            C.from_yaml(yaml.safe_load("experiment: {region: NO}\nregions: {}"))
+            quoted = False
+        except C.ConfigError:
+            quoted = True
+        check("YAML settings: use_rules yes = Test B, reasoning_summary off = not sent, a region code read as true/false is refused",
+              mb["run"]["test"] == "B" and mb["api"]["reasoning_summary"] is None and C.from_yaml(base)["run"]["test"] == "A" and quoted)
+        src_text = (C.REPO / "config" / "experiment.yaml").read_text(encoding="utf-8")
+        (repo / "config" / "experiment.yaml").write_text(src_text, encoding="utf-8")
+        c2 = C.load(repo)
+        c2["run"]["test"], c2["api"]["model"], c2["api"]["temperature"] = "B", "gpt-test", None
+        C.save(c2)
+        saved = (repo / "config" / "experiment.yaml").read_text(encoding="utf-8")
+        c3 = C.load(repo)
+        check("saving settings changes only the values and keeps the comments of the YAML file",
+              c3["run"]["test"] == "B" and c3["api"]["model"] == "gpt-test" and saved.count("#") == src_text.count("#")
+              and len(saved.splitlines()) == len(src_text.splitlines()))
+        same = []
+        for m in sorted((C.REPO / "runs").glob("2026*/manifest.json")):
+            man = json.loads(m.read_text(encoding="utf-8"))
+            h = man["prompt_hashes"]
+            c3["prompt"]["dir"] = h["prompt_dir"]
+            got = prompt_parts(c3, man["test"], man["region"])["hashes"]
+            same.append(all(got[k] == h[k] for k in ("instructions", "user_text", "schema")))
+        check("prompts v1 and v2 are byte for byte the ones of the saved runs", all(same), f"{len(same)} runs checked")
+        c3["prompt"]["dir"] = "prompts/v3"
+        p3 = prompt_parts(c3, "B", "US")
+        order = list(p3["schema"]["properties"])
+        check("prompt v3: the reasoning fields come before the actions in the answer schema",
+              order.index("rule_reasoning") < order.index("actions") and order.index("action_reasons") < order.index("actions")
+              and order.index("self_check") < order.index("actions") and order[-1] == "actions" and strict_ok(p3["schema"]), str(order))
+        c3["mock"], c3["workspaces"], c3["data_policy"] = True, cfg["workspaces"], cfg["data_policy"]
+        r3 = run_batch(c3, "B", "US", 2, 1, "any", True, log=lambda *x: None)
+        tr = (C.repo_of(c3) / "runs" / r3 / "trace.md").read_text(encoding="utf-8")
+        check("trace: every answer of a run, step by step (look, rule, decide, check)",
+              all(k in tr for k in ("Step 1  Look", "Step 2  Rule", "Step 3  Decide", "Step 4  Check", "cross_line")) and tr.count("Step 1  Look") == 2)
+        (repo / "rules" / "xx_rules.yaml").write_text(yaml.safe_dump([
+            {"rule_id": "XX-1", "region": "XX", "source": "Test standard", "section": "1", "page": 1, "marking_type": "white_solid",
+             "text_en": "A solid white line shall not be crossed."},
+            {"rule_id": "XX-2", "region": "XX", "source": "Test standard", "section": "2", "page": 2, "marking_type": "white_dashed",
+             "text_en": "A broken white line may be crossed."}]), encoding="utf-8")
+        y4 = yaml.safe_load(src_text)
+        y4["regions"]["XX"] = {"name": "Testland", "rules": {"file": "rules/xx_rules.yaml", "code": "XX", "title": "Test standard", "language": "en"}}
+        c4 = C.from_yaml(y4); c4["_repo"] = str(repo); C.check(c4)
+        px = prompt_parts(c4, "B", "XX")
+        check("a new region needs only a passages file and a YAML entry (model prompt and labeling tool both see it)",
+              "[XX-1]" in px["instructions"] and "[XX-2]" in px["instructions"] and "Testland" in px["user_text"]
+              and "[US-" not in px["instructions"] and len(load_rule_passages(SimpleNamespace(repo=repo), "XX")) == 2)
+        (repo / "rules" / "xx_rules.yaml").unlink()
+
+        # 9. the key is not written to any file
         leaked = [str(p) for p in repo.rglob("*") if p.is_file() and SECRET.encode() in p.read_bytes()]
         check("the API key is in no file (runs, cache, config)", not leaked, ", ".join(leaked))
         try:

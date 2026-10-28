@@ -15,7 +15,7 @@
   selftest run the whole pipeline on a small synthetic night video and two tiny synthetic datasets
 
 Every command works on one data folder (--data). Own videos and each dataset have their own folder, e.g.
-  --data "/Volumes/T9/数据集/UF"   --data "/Volumes/T9/数据集/bdd100k"   --data "/Volumes/T9/数据集/culane"
+  --data "<root>/UF"   --data "<root>/bdd100k"   --data "<root>/culane"
 """
 from __future__ import annotations
 
@@ -121,7 +121,7 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--budget", type=float, help="start no new file after this many seconds (run again to continue)")
 
     p = sub.add_parser("combine", help="all final labels of every workspace together, for the model runs")
-    p.add_argument("folders", nargs="+", help="the data folders, e.g. /Volumes/T9/数据集/UF /Volumes/T9/数据集/bdd100k /Volumes/T9/数据集/culane")
+    p.add_argument("folders", nargs="+", help="the data folders, e.g. <root>/UF <root>/bdd100k <root>/culane")
     sub.add_parser("selftest", help="run everything on a synthetic night video")
 
     a = ap.parse_args(argv)
@@ -132,7 +132,7 @@ def main(argv: list[str] | None = None) -> None:
         if a.cmd == "images":
             from .imagesets import init_workspace
             if not a.data:
-                raise ToolError('Give the dataset workspace with --data, e.g. --data "/Volumes/T9/数据集/bdd100k".')
+                raise ToolError('Give the dataset workspace with --data, e.g. --data "<root>/bdd100k".')
             init_workspace(a.repo, a.data, a.dataset, a.source, rebuild_index=a.rebuild_index)
             return
         if a.cmd == "hash-sources":

@@ -7,7 +7,7 @@ A data folder that holds dataset images has a workspace.json; see imagesets.py f
 
 Where things live for own videos (one "trip" = one recorded video):
 
-  In Git (repository, small text files):
+  In the repository:
     labels/own_video/trips.csv              one row per trip: source record for 6.2
     labels/own_video/<trip>.trip.json       video metadata, settings, scan summary
     labels/own_video/<trip>.labels.csv      one row per kept frame: target box + FINAL label
@@ -15,13 +15,13 @@ Where things live for own videos (one "trip" = one recorded video):
     labels/own_video/<trip>.recheck.csv     blind re-check labels (risk R2)
     labels/own_video/packages.csv           labeling packages sent to helpers (annotator codes only)
 
-  On the data drive (DATA_DIR, ignored by Git):
+  In DATA_DIR:
     raw/own_video/<trip>/<video>            the original video, never changed
     interim/own_video/<trip>/scan.csv       scan results (can be rebuilt)
     extracted/own_video/<trip>/frames/      the kept frames (can be rebuilt from the video)
     report_figures/own_video/<trip>/        copies with plates and faces blurred, for reports only
     packages/                               labeling packages (zip) for helpers
-    annotators.json                         private: annotator code -> real name (never in Git)
+    annotators.json                         annotator code -> real name
 """
 from __future__ import annotations
 
@@ -150,7 +150,7 @@ class Paths:
         _load_env_file(repo_path / ".env")
         data_path = Path(data or os.environ.get("DATA_DIR") or repo_path / "data").expanduser().resolve()
         if not data_path.parent.exists():
-            raise ToolError(f"{data_path.parent} does not exist. Is the external drive connected? (DATA_DIR is set in .env)")
+            raise ToolError(f"{data_path.parent} does not exist. Check DATA_DIR in .env.")
         data_path.mkdir(parents=True, exist_ok=True)
         collection, kind = "own_video", "video"
         ws = data_path / WORKSPACE_FILE
@@ -167,7 +167,7 @@ class Paths:
     def meta_suffix(self) -> str:
         return ".set.json" if self.is_images else ".trip.json"
 
-    # Git side
+    # repository side
     @property
     def labels_dir(self) -> Path:
         return self.repo / "labels" / self.collection
@@ -200,7 +200,7 @@ class Paths:
     def annotators_json(self) -> Path:
         return self.data / "annotators.json"
 
-    # data drive side
+    # DATA_DIR side
     def raw_dir(self, trip_id: str) -> Path:
         return self.data / "raw" / "own_video" / trip_id
 
@@ -324,7 +324,7 @@ class Trip:
     def check_video(self) -> Path:
         vp = self.video_path
         if not vp.exists():
-            raise ToolError(f"The video for trip '{self.id}' is not at {vp}. Is the external drive connected?")
+            raise ToolError(f"The video for trip '{self.id}' is not at {vp}.")
         return vp
 
 
@@ -372,7 +372,17 @@ def load_action_rules(paths: Paths) -> dict:
 
 
 def load_rule_passages(paths: Paths, region: str | None = None) -> list[dict]:
+    """Passages of rules/rule_passages.json and of any other passages file in rules/ (JSON or YAML list;
+    every passage has a "region" code)."""
     items = read_json(paths.repo / "rules" / "rule_passages.json")
+    for f in sorted((paths.repo / "rules").iterdir()):
+        if f.name == "rule_passages.json" or f.name.startswith(".") or f.suffix not in (".json", ".yaml", ".yml"):
+            continue
+        if f.suffix == ".json":
+            items = items + read_json(f)
+        else:
+            import yaml
+            items = items + (yaml.safe_load(f.read_text(encoding="utf-8")) or [])
     if region:
         items = [p for p in items if p.get("region") == region]
     return items

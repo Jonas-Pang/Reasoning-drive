@@ -24,7 +24,7 @@ from .runner import _label_hashes, list_runs, load_run, run_batch, split_version
 from .scoring import ACTIONS
 
 BOX_KEYS = ("bbox_x1", "bbox_y1", "bbox_x2", "bbox_y2")
-NOT_SHOWN = {"culane"}  # collections whose images must not appear in a public notebook
+NOT_SHOWN = {"culane"}  # collections whose images are not shown (licence)
 
 
 # ---------------------------------------------------------------- data
@@ -299,9 +299,9 @@ def paired_differences(cfg: dict, run_a: str, run_b: str):
 def crop(cfg: dict, image_id: str, region: str, width: int = 420, context: float = 0.8) -> np.ndarray:
     """The image as the model saw it (cyan box), cropped to the box plus some road around it, as RGB.
 
-    The crop keeps the notebook readable and shows little beyond the road surface (privacy of the own videos)."""
+    The crop keeps the figure small and shows little beyond the road surface."""
     it = next(i for i in load_items(cfg, region, "any", []) if i.image_id == image_id)
-    if it.collection in NOT_SHOWN:  # e.g. CULane: the licence forbids redistribution, and notebooks are public
+    if it.collection in NOT_SHOWN:  # CULane: no redistribution
         ph = np.full((int(width * 0.5), width, 3), 40, np.uint8)
         cv2.putText(ph, f"{it.collection} image not shown", (12, int(width * 0.25)), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (220, 220, 220), 1)
         cv2.putText(ph, "(licence: no redistribution)", (12, int(width * 0.25) + 26), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (180, 180, 180), 1)

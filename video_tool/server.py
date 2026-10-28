@@ -1,4 +1,4 @@
-"""Local labeling app: a small web server on 127.0.0.1 that only you can reach.
+"""Local labeling app: a small local web server on 127.0.0.1.
 
 Own video: the browser shows the video moment by moment (frames are decoded on request and kept in
 memory), you keep the frames you want, and label them on the same page.

@@ -10,17 +10,18 @@ const TXT = {
     all_types: "全部类型", use_cache: "相同请求用缓存（不重复花钱）", tab_prompt: "提示词", tab_batch: "批量运行", tab_io: "输入 / 输出设计",
     ask: "问模型 · Test {t}", ask_both: "A 和 B 都问", asking: "正在问模型（Test {t}）…", test_A: "Test A · 只有图片", test_B: "Test B · 图片 + 法规",
     key_ok: "API key 已设置 {h}", key_missing: "没有 API key", banner_mock: "模拟模式：答案是程序编的（Test A 故意多错一些），没有调用模型，也不花钱。演示真实结果请切到“真实 API”。",
-    banner_nokey: "真实 API 模式需要 API key：在 notebook 里运行“设置 API key”那一格（key 只存在仓库的 .env 文件里，Git 不会上传）。",
+    banner_nokey: "真实 API 模式需要 API key：在 .env 里设置 OPENAI_API_KEY（见 README）。",
     prompt_help: "这是发给模型的完整文字（图片另外附上）。Test B 只比 Test A 多了下面的法规条文，以及指令里标蓝的两行；其余部分两组完全一样。",
     p_instructions: "① 指令（developer 消息）。两组只有标蓝的两行不同",
     p_rules: "①′ 法规条文：只在 Test B，接在指令后面（同一条 developer 消息）", p_user: "② 用户消息（后面附上画了青色框的图片）", p_schema: "③ 输出格式（JSON schema，严格模式）",
-    batch_help: "对当前地区所有已标注的图跑一遍（选 A + B 时两组同时跑，跑完自动比较），结果存在 runs/ 里（只有文字，没有图片和 key）。0 = 全部。勾选了“用缓存”时，问过的相同请求直接用旧答案（不花钱）。",
+    batch_help: "对当前地区所有已标注的图跑一遍（选 A + B 时两组同时跑，跑完自动比较），结果存在 runs/ 里。0 = 全部。勾选了“用缓存”时，问过的相同请求直接用旧答案（不花钱）。",
     limit: "张数", repeats: "重复次数", run: "开始运行", runs: "运行记录（点两条再比较）", compare: "比较选中的两次", compare_help: "McNemar 配对检验",
-    cancel: "取消", apply: "应用", save_default: "同时保存为默认设置（写入 config/experiment.json）",
-    settings_help: "这些设置对 Test A 和 Test B 完全一样。API key 不在这里，放在 .env 里。",
+    cancel: "取消", apply: "应用", save_default: "同时保存为默认设置（写入 config/experiment.yaml）",
+    settings_help: "这些设置对 Test A 和 Test B 完全一样。点“应用”只改这次打开的页面；勾选下面一项才会写进 config/experiment.yaml（文件里的注释保留）。API key 不在这里，放在 .env 里。",
+    reload: "从文件重新读取", unsaved: "还没写进 config/experiment.yaml 的修改：{k}", all_saved: "页面上的设置和 config/experiment.yaml 一致。",
     field: "项目", label: "标注（标准答案）", answer: "模型回答", o1: "输出 1", o2: "输出 2", cite: "引用",
     marking_type: "标线类型", arrow_type: "箭头类型", position: "位置", evidence: "证据", cited_rule_id: "引用的条文",
-    description: "描述", reasoning: "理由", cited_passage: "引用条文原文", tokens: "tokens", latency: "耗时", cost: "费用", cached: "缓存", mock: "模拟",
+    description: "描述", reasoning: "理由", st_look: "1 看", st_rule: "2 规则", st_decide: "3 决定", st_check: "4 检查", st_none: "（这个提示词版本没有单独写）", st_after: "写在决定之后", st_summary: "模型对自己内部推理的总结（API 返回）", cited_passage: "引用条文原文", tokens: "tokens", latency: "耗时", cost: "费用", cached: "缓存", mock: "模拟",
     running: "运行中 {d}/{n}…", finished: "完成：{id}", none: "—", err: "出错：",
     eg_correct: "正确", eg_wrong: "错误", eg_unsupported_guess: "无依据猜测", eg_appropriate_withholding: "恰当保留", eg_over_withholding: "过度保留",
     c_accepted: "引用正确", c_in_pack_not_accepted: "引用了不支持答案的条文", c_unlisted: "编造的编号", c_none: "没有引用", c_none_needed: "无需引用（正确）",
@@ -33,17 +34,18 @@ const TXT = {
     all_types: "All types", use_cache: "Reuse cached answers for identical requests", tab_prompt: "Prompt", tab_batch: "Batch run", tab_io: "Input / output design",
     ask: "Ask the model · Test {t}", ask_both: "Ask A and B", asking: "Asking the model (Test {t}) …", test_A: "Test A · image only", test_B: "Test B · image + rules",
     key_ok: "API key set {h}", key_missing: "No API key", banner_mock: "Mock mode: the answers are made up by the program (Test A makes more mistakes on purpose); no model is called and nothing is paid. Switch to Real API for real results.",
-    banner_nokey: "Real API mode needs an API key: run the 'Set the API key' cell in the notebook (the key is stored only in the repository's .env file, which Git ignores).",
+    banner_nokey: "Real API mode needs an API key: set OPENAI_API_KEY in .env (see the README).",
     prompt_help: "The full text sent to the model (the image is attached separately). Test B only adds the rule passages below and changes the two highlighted lines; everything else is identical in both tests.",
     p_instructions: "① Instructions (developer message). Only the two highlighted lines differ between the tests",
     p_rules: "①′ Rule passages: Test B only, appended to the instructions (same developer message)", p_user: "② User message (followed by the image with the cyan box)", p_schema: "③ Output format (JSON schema, strict)",
-    batch_help: "Run every labeled image of the current region (A + B runs both tests at the same time and compares them); results go to runs/ (text only: no images, no key). 0 = all. With 'reuse cached answers' ticked, identical requests asked before are not paid again.",
+    batch_help: "Run every labeled image of the current region (A + B runs both tests at the same time and compares them); results go to runs/. 0 = all. With 'reuse cached answers' ticked, identical requests asked before are not paid again.",
     limit: "Images", repeats: "Repeats", run: "Run", runs: "Runs (click two to compare)", compare: "Compare the two selected", compare_help: "McNemar paired test",
-    cancel: "Cancel", apply: "Apply", save_default: "Also save as default (config/experiment.json)",
-    settings_help: "These settings are identical for Test A and Test B. The API key is not here; it lives in .env.",
+    cancel: "Cancel", apply: "Apply", save_default: "Also save as default (config/experiment.yaml)",
+    settings_help: "These settings are identical for Test A and Test B. Apply changes this page session only; tick the box below to also write them into config/experiment.yaml (its comments are kept). The API key is not here; it lives in .env.",
+    reload: "Reload from file", unsaved: "Not yet written to config/experiment.yaml: {k}", all_saved: "The page settings match config/experiment.yaml.",
     field: "Field", label: "Label (ground truth)", answer: "Model answer", o1: "Output 1", o2: "Output 2", cite: "Citation",
     marking_type: "Marking type", arrow_type: "Arrow type", position: "Position", evidence: "Evidence", cited_rule_id: "Cited rule",
-    description: "Description", reasoning: "Reasoning", cited_passage: "Cited passage", tokens: "tokens", latency: "time", cost: "cost", cached: "cached", mock: "mock",
+    description: "Description", reasoning: "Reasoning", st_look: "1 Look", st_rule: "2 Rule", st_decide: "3 Decide", st_check: "4 Check", st_none: "(not written separately in this prompt version)", st_after: "written after the decision", st_summary: "The model's summary of its hidden reasoning (from the API)", cited_passage: "Cited passage", tokens: "tokens", latency: "time", cost: "cost", cached: "cached", mock: "mock",
     running: "Running {d}/{n} …", finished: "Finished: {id}", none: "—", err: "Error: ",
     eg_correct: "correct", eg_wrong: "wrong", eg_unsupported_guess: "unsupported guess", eg_appropriate_withholding: "appropriate withholding", eg_over_withholding: "over-withholding",
     c_accepted: "citation accepted", c_in_pack_not_accepted: "cited a passage that does not support it", c_unlisted: "made-up ID", c_none: "no citation", c_none_needed: "no passage applies (right)",
@@ -54,55 +56,55 @@ const TXT = {
 };
 const IO = {
   zh: `<h4>输入</h4><ul>
-<li><b>图片</b>：标注时画的目标框用青色画在图片的副本上，原图不改。和指令一起发给模型（高清，<code>detail: high</code>）。</li>
+<li><b>图片</b>：标注时画的目标框用青色画在图片的副本上，原图不改。和指令一起发给模型（<code>detail: high</code>）。</li>
 <li><b>地区</b>：一句话“This photo was taken in the United States / China”，两组都有。</li>
-<li><b>指令</b>：任务、三步推理（描述 → 匹配规则 → 判断）和每个输出字段的含义。<b>只定义题目，不含任何地区的规则。</b></li>
-<li><b>Test B 额外加上</b>：这个地区的全部法规条文（来自 <code>rules/rule_passages.json</code>），每条带编号、出处、章节和页码。只能引用这些编号。</li></ul>
-<h4>输出（固定格式，严格 JSON schema）</h4><ul>
-<li><code>description</code>：第一步，描述框里的标线</li>
-<li><code>evidence</code>：full / partial / insufficient</li>
-<li><code>marking</code>：输出 1，标线类型、箭头类型、位置</li>
-<li><code>actions</code>：输出 2，6 个动作各自 allowed / prohibited / not_determined / not_applicable</li>
-<li><code>cited_rule_id</code>：Test B 引用的条文编号（Test A 为 null）</li>
-<li><code>reasoning</code>：一两句理由（只给人看，程序不读）</li></ul>
+<li><b>指令</b>：<code>prompts/&lt;版本&gt;/</code> 里的文件：角色、处理步骤（看、规则、决定、检查）、每个输出字段的含义。只定义题目，不含任何地区的规则。</li>
+<li><b>Test B 额外加上</b>：这个地区的全部法规条文（文件和地区代码在 <code>config/experiment.yaml</code> 的 <code>regions</code> 里设置），每条带编号、出处、章节和页码。只能引用这些编号。</li></ul>
+<h4>输出（严格 JSON schema，按顺序写）</h4><ol>
+<li><code>description</code>、<code>evidence</code>、<code>marking</code>：看到了什么（输出 1）</li>
+<li><code>rule_reasoning</code>、<code>cited_rule_id</code>：适用哪条规则、它怎么说</li>
+<li><code>action_reasons</code>：每个动作一句理由</li>
+<li><code>self_check</code>：对照任务定义检查</li>
+<li><code>actions</code>：最后的决定（输出 2），6 个动作各自 allowed / prohibited / not_determined / not_applicable</li></ol>
+<p class="small">决定写在推理之后，所以答案是从前面的步骤推出来的（提示词 v3）。v1、v2 的 <code>reasoning</code> 写在决定之后。</p>
 <h4>怎么调用 API</h4><ul>
 <li>OpenAI Responses API：<code>POST https://api.openai.com/v1/responses</code>，用标准库发请求，不依赖 SDK。</li>
-<li>设置在 <code>config/experiment.json</code>：模型、reasoning_effort、temperature、图片清晰度、最大输出长度。两组完全相同。</li>
-<li>API key 只从环境变量（<code>.env</code> 文件）读取，不写进任何会上传的文件；每次运行只保存“有没有 key”。</li>
-<li>每次运行在 <code>runs/&lt;运行编号&gt;/</code> 保存设置、提示词哈希、模型返回的版本号、原始回答、评分和 token 用量。</li></ul>
+<li>设置在 <code>config/experiment.yaml</code> 的 <code>model</code> 部分：模型、reasoning_effort、reasoning_summary、temperature、图片清晰度、最大输出长度。两组完全相同。</li>
+<li>API key 从 <code>.env</code> 里的 <code>OPENAI_API_KEY</code> 读取。</li>
+<li>每次运行在 <code>runs/&lt;运行编号&gt;/</code> 保存设置、提示词哈希、原始回答、评分、token 用量，以及每个回答的推理步骤（<code>trace.md</code>）。</li></ul>
 <h4>评分</h4><ul>
 <li>输出 1：类型（箭头再加箭头类型）和标注相同才算对。</li>
 <li>输出 2：标线管的每个动作都对才算对；有争议的格子单独统计。</li>
-<li>还会统计：五组证据、引用检查（Test B）、不安全 / 过度保守错误，以及 A 对 B 的 McNemar 配对检验。</li></ul>
+<li>还会统计：五组证据、引用检查（Test B）、不安全 / 过度保守错误、自相矛盾的回答，以及 A 对 B 的 McNemar 配对检验。</li></ul>
 <h4>加一个新国家</h4><ol>
-<li>在 <code>config/experiment.json</code> 的 <code>regions</code> 里加一项（名称、规则文件里的地区代码、法规名称）。</li>
-<li>把这个国家的条文加进 <code>rules/rule_passages.json</code>（同一个地区代码）。</li>
-<li>用标注工具标好这个国家的图。页面上的地区选择就会出现它。</li></ol>`,
+<li>把这个国家的条文写成一个文件放进 <code>rules/</code>（每条带编号、出处、章节、页码、原文和英文）。</li>
+<li>在 <code>config/experiment.yaml</code> 的 <code>regions</code> 里加一项：名称、条文文件、地区代码、法规名称、语言。</li>
+<li>用标注工具标好这个国家的图，把工作区加进 <code>data.workspaces</code>，再把 <code>experiment.region</code> 改成这个代码。</li></ol>`,
   en: `<h4>Input</h4><ul>
 <li><b>Image</b>: a copy with the labeled target box drawn in cyan (the original is not changed), sent with <code>detail: high</code>.</li>
 <li><b>Region</b>: one sentence, "This photo was taken in the United States / China", in both tests.</li>
-<li><b>Instructions</b>: the task, three reasoning steps (describe → match a rule → decide) and the meaning of every field. <b>They define the task only; no region's rules are in them.</b></li>
-<li><b>Test B adds</b>: every rule passage of the region (from <code>rules/rule_passages.json</code>) with its ID, source, section and page. Only these IDs may be cited.</li></ul>
-<h4>Output (fixed, strict JSON schema)</h4><ul>
-<li><code>description</code>: step 1, the marking in the box</li>
-<li><code>evidence</code>: full / partial / insufficient</li>
-<li><code>marking</code>: Output 1, marking type, arrow type, position</li>
-<li><code>actions</code>: Output 2, six actions, each allowed / prohibited / not_determined / not_applicable</li>
-<li><code>cited_rule_id</code>: the passage cited in Test B (null in Test A)</li>
-<li><code>reasoning</code>: one or two sentences (for people; not scored)</li></ul>
+<li><b>Instructions</b>: the files in <code>prompts/&lt;version&gt;/</code>: role, procedure (look, rule, decide, check) and the meaning of every field. They define the task only; no region's rules are in them.</li>
+<li><b>Test B adds</b>: every rule passage of the region (file and code set under <code>regions</code> in <code>config/experiment.yaml</code>) with its ID, source, section and page. Only these IDs may be cited.</li></ul>
+<h4>Output (strict JSON schema, written in this order)</h4><ol>
+<li><code>description</code>, <code>evidence</code>, <code>marking</code>: what is visible (Output 1)</li>
+<li><code>rule_reasoning</code>, <code>cited_rule_id</code>: which rule applies and what it says</li>
+<li><code>action_reasons</code>: one reason per action</li>
+<li><code>self_check</code>: checked against the task definition</li>
+<li><code>actions</code>: the decision (Output 2), six actions, each allowed / prohibited / not_determined / not_applicable</li></ol>
+<p class="small">The decision is written after the reasoning, so the answer follows from the steps before it (prompt v3). In v1 and v2, <code>reasoning</code> came after the decision.</p>
 <h4>How the API is called</h4><ul>
 <li>OpenAI Responses API, <code>POST https://api.openai.com/v1/responses</code>, with the Python standard library (no SDK).</li>
-<li>Settings in <code>config/experiment.json</code>: model, reasoning_effort, temperature, image detail, max output tokens; identical in both tests.</li>
-<li>The key is read only from the environment (<code>.env</code>), never written to a tracked file; a run records only whether a key was set.</li>
-<li>Every run keeps settings, prompt hashes, the model ID returned, raw answers, scores and token use in <code>runs/&lt;run_id&gt;/</code>.</li></ul>
+<li>Settings under <code>model</code> in <code>config/experiment.yaml</code>: model, reasoning_effort, reasoning_summary, temperature, image detail, max output tokens; identical in both tests.</li>
+<li>The API key is read from <code>OPENAI_API_KEY</code> in <code>.env</code>.</li>
+<li>Every run keeps settings, prompt hashes, raw answers, scores, token use and the reasoning steps of every answer (<code>trace.md</code>) in <code>runs/&lt;run_id&gt;/</code>.</li></ul>
 <h4>Scoring</h4><ul>
 <li>Output 1: the type (and arrow type for arrows) matches the label.</li>
 <li>Output 2: every action the marking decides matches; contested cells are counted separately.</li>
-<li>Also: the five evidence groups, the citation check (Test B), unsafe vs over-cautious errors, and McNemar between A and B.</li></ul>
+<li>Also: the five evidence groups, the citation check (Test B), unsafe vs over-cautious errors, self-contradicting answers, and McNemar between A and B.</li></ul>
 <h4>Adding a country</h4><ol>
-<li>Add an entry under <code>regions</code> in <code>config/experiment.json</code> (name, region code in the rule file, rules title).</li>
-<li>Add its passages to <code>rules/rule_passages.json</code> with that region code.</li>
-<li>Label its images with the labeling tool; the region then appears in the selector.</li></ol>`,
+<li>Put the country's passages in a file in <code>rules/</code> (ID, source, section, page, original text and English).</li>
+<li>Add an entry under <code>regions</code> in <code>config/experiment.yaml</code>: name, passages file, region code, rules title, language.</li>
+<li>Label its images with the labeling tool, add the workspace to <code>data.workspaces</code> and set <code>experiment.region</code> to the new code.</li></ol>`,
 };
 const S = { lang: "zh", runs: [], cfg: null, test: "A", region: "US", items: [], sel: null, results: {}, prompt: null, runsSel: [], poll: null };
 try { S.lang = localStorage.getItem(LANG_KEY) || "zh"; } catch (e) { /* storage not available */ }
@@ -128,7 +130,9 @@ function renderTop() {
   const k = $("keyinfo");
   k.textContent = c.api.api_key_set ? t("key_ok", { h: c.api.api_key_hint }) : t("key_missing");
   k.className = "pill " + (c.api.api_key_set ? "ok" : "bad");
-  $("modelinfo").textContent = `${c.api.model} · effort ${c.api.reasoning_effort ?? "—"} · T ${c.api.temperature ?? "—"}`;
+  $("modelinfo").textContent = `${c.api.model} · ${c.prompt.dir.split("/").pop()} · effort ${c.api.reasoning_effort ?? "—"}` +
+    ((S.cfg.unsaved || []).length ? " · *" : "");
+  $("modelinfo").title = (S.cfg.unsaved || []).length ? t("unsaved", { k: S.cfg.unsaved.join(", ") }) : t("all_saved");
   const ban = $("banner");
   if (c.mock) { ban.textContent = t("banner_mock"); ban.classList.remove("hidden"); }
   else if (!c.api.api_key_set) { ban.textContent = t("banner_nokey"); ban.classList.remove("hidden"); }
@@ -195,6 +199,19 @@ function tags(rec) {
     (sc.citation ? `<span class="tag ${["accepted", "none_needed"].includes(sc.citation) ? "ok" : "bad"}">${esc(t("c_" + sc.citation))}</span>` : "") +
     (sc.unsafe.length ? `<span class="tag bad">${t("unsafe")}: ${sc.unsafe.join(", ")}</span>` : "") + `</div>`;
 }
+function stepsHtml(r) {  // the answer fields in the order the model wrote them
+  const a = r.answer, rs = a.action_reasons || null, resp = r.response || {}, m = a.marking || {};
+  let h = `<ol class="steps"><li><b>${t("st_look")}</b> ${esc(a.description)} <span class="muted">(${esc(a.evidence)}; ${esc(m.marking_type)}${m.arrow_type ? " / " + esc(m.arrow_type) : ""})</span></li>`;
+  h += `<li><b>${t("st_rule")}</b> ${a.rule_reasoning !== undefined ? esc(a.rule_reasoning) : `<span class="muted">${t("st_none")}</span>`}${a.cited_rule_id ? ` <span class="muted">[${esc(a.cited_rule_id)}]</span>` : ""}</li>`;
+  h += `<li><b>${t("st_decide")}</b><table class="reasons">` + ACTS.filter((k) => (a.actions || {})[k] !== undefined)
+    .map((k) => `<tr><td>${esc(k)}</td><td>${esc(a.actions[k])}</td><td>${rs ? esc(rs[k] || "") : ""}</td></tr>`).join("") + `</table></li>`;
+  if (a.self_check !== undefined) h += `<li><b>${t("st_check")}</b> ${esc(a.self_check)}</li>`;
+  h += `</ol>`;
+  if (a.reasoning) h += `<p class="small"><b>${t("reasoning")}:</b> ${esc(a.reasoning)}${a.self_check === undefined ? ` <span class="muted">(${t("st_after")})</span>` : ""}</p>`;
+  if (resp.reasoning_summary) h += `<div class="quote"><b>${t("st_summary")}</b><br>${esc(resp.reasoning_summary)}</div>`;
+  else if (resp.reasoning_summary_note) h += `<p class="small muted">${esc(resp.reasoning_summary_note)}</p>`;
+  return h;
+}
 function renderResults() {
   const tests = ["A", "B"].filter((x) => S.results[x]);
   if (!tests.length) { $("results").innerHTML = ""; return; }
@@ -231,7 +248,7 @@ function renderResults() {
     const a = ans(r);
     h += `<div class="card"><h3>${esc(t("test_" + r.test))}</h3>`;
     if (a) {
-      h += `<p class="small"><b>${t("description")}:</b> ${esc(a.description)}<br><b>${t("reasoning")}:</b> ${esc(a.reasoning)}</p>`;
+      h += stepsHtml(r);
       if (r.cited_passage) {
         const p = r.cited_passage;
         h += `<div class="quote"><b>${esc(a.cited_rule_id)}</b> ${esc(p.section)}<br>${esc(S.lang === "zh" && p.text_zh ? p.text_zh : p.text_en)}</div>`;
@@ -328,12 +345,21 @@ function openSettings() {
   const a = S.cfg.config.api;
   $("s-model").value = a.model; $("s-effort").value = a.reasoning_effort ?? ""; $("s-temp").value = a.temperature ?? "";
   $("s-detail").value = a.image_detail; $("s-max").value = a.max_output_tokens; $("s-par").value = a.parallel; $("s-save").checked = false;
+  const cur = S.cfg.config.prompt.dir.split("/").pop();
+  $("s-prompt").innerHTML = (S.cfg.prompt_versions || [cur]).map((v) => `<option${v === cur ? " selected" : ""}>${esc(v)}</option>`).join("");
+  $("s-summary").value = a.reasoning_summary || "off";
+  renderUnsaved();
   $("settings").classList.remove("hidden");
+}
+function renderUnsaved() {
+  const u = S.cfg.unsaved || [];
+  $("s-unsaved").textContent = u.length ? t("unsaved", { k: u.join(", ") }) : t("all_saved");
 }
 async function applySettings() {
   try {
     await setCfg({ "api.model": $("s-model").value.trim(), "api.reasoning_effort": $("s-effort").value.trim(), "api.temperature": $("s-temp").value.trim(),
-      "api.image_detail": $("s-detail").value, "api.max_output_tokens": Number($("s-max").value), "api.parallel": Number($("s-par").value), save: $("s-save").checked });
+      "api.image_detail": $("s-detail").value, "api.max_output_tokens": Number($("s-max").value), "api.parallel": Number($("s-par").value),
+      "prompt.dir": "prompts/" + $("s-prompt").value, "api.reasoning_summary": $("s-summary").value, save: $("s-save").checked });
     $("settings").classList.add("hidden"); loadPrompt();
   } catch (e) { alert(e.message); }
 }
@@ -360,6 +386,10 @@ async function boot() {
   $("settings-btn").addEventListener("click", openSettings);
   $("s-cancel").addEventListener("click", () => $("settings").classList.add("hidden"));
   $("s-ok").addEventListener("click", applySettings);
+  $("s-reload").addEventListener("click", async () => {
+    S.cfg = await api("/api/config", { reload: true }); S.test = S.cfg.config.run.test; S.region = S.cfg.config.run.region;
+    renderTop(); openSettings(); loadItems(); loadPrompt();
+  });
   $("lang-btn").addEventListener("click", () => { S.lang = S.lang === "zh" ? "en" : "zh"; try { localStorage.setItem(LANG_KEY, S.lang); } catch (e) { /* ignore */ } applyStatic(); renderTop(); renderResults(); renderFilter(); renderItems(); if (S.prompt) loadPrompt(); });
   await loadItems();
   await loadPrompt();

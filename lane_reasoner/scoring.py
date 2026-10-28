@@ -35,7 +35,7 @@ def contested_actions(table: dict, region: str, label: dict) -> set:
 
 
 def evidence_group(ans: dict, label: dict, o1: bool, o2: bool | None) -> str:
-    """The five groups of requirement 5."""
+    """The five evidence groups."""
     want, got = label.get("expected_evidence", ""), ans.get("evidence", "")
     if want == "full":
         if got in ("partial", "insufficient"):

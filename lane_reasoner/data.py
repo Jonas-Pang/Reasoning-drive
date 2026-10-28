@@ -31,7 +31,7 @@ class Item:
 
 def workspace_dirs(cfg: dict) -> list[Path]:
     """The data folders: absolute paths as written, relative ones under DATASETS_ROOT (environment or .env),
-    else under "datasets_root" in config/experiment.json. Others who reproduce the project set DATASETS_ROOT."""
+    else under data.datasets_root in config/experiment.yaml."""
     import os
     root = Path(os.environ.get("DATASETS_ROOT") or cfg.get("datasets_root") or ".").expanduser()
     return [Path(d).expanduser() if Path(d).expanduser().is_absolute() else root / d for d in cfg.get("workspaces", [])]
@@ -61,7 +61,7 @@ def load_items(cfg: dict, region: str | None = None, split: str | None = None, t
     allowed = allowed_collections(cfg)
     for p in workspaces(cfg):
         if allowed is not None and p.collection not in allowed:
-            continue  # no permission (yet) to send this dataset's images to the API: see README, "Data sent to the API"
+            continue  # not listed in data_policy.send_to_api
         for tid in list_trip_ids(p):
             for r in LabelStore(p.labels_csv(tid)).all():
                 if r.get("label_status") != "done" or r.get("region") != region:

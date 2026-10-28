@@ -7,4 +7,4 @@ The prompt has four parts (Milestone 3, section 6.1):
 3. Fixed examples from `examples.json` (text only, the same in Test A and Test B, written from development images only). Empty for now.
 4. The user message: `user.txt` plus the image with the cyan box drawn on it.
 
-Test A and Test B differ only in part 2 and in the two one-line slots. Change these files only before the criteria freeze; a changed file changes the prompt hash saved with every run.
+Test A and Test B differ only in part 2 and in the two one-line slots. A changed file changes the prompt hash saved with every run.

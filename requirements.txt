@@ -13,7 +13,9 @@ requests==2.32.3
 gdown==5.2.0
 # PDF text for the rule corpus
 pypdf==5.1.0
-# Reads DATA_DIR (and later the API key) from a local .env file
+# Reads DATA_DIR and the API key from a local .env file
 python-dotenv==1.0.1
+# Settings file config/experiment.yaml
+PyYAML==6.0.2
 # Own dash-cam videos: decoding, frame saving, blurring (video_tool/)
 opencv-python-headless==4.10.0.84

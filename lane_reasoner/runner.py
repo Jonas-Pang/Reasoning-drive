@@ -1,11 +1,12 @@
 """Run Test A / Test B on the labeled images and keep a complete record (Milestone 3, sections 2.4 and 6.6).
 
-  runs/<run_id>/manifest.json   settings (no key), prompt and rule-file hashes, label-file hashes, Git commit, items
+  runs/<run_id>/manifest.json   settings, prompt and rule-file hashes, label-file hashes, Git commit, items
   runs/<run_id>/results.jsonl   one line per image and repeat: request settings, raw answer, parsed answer, score
   runs/<run_id>/scores.json     summary per output, actions, evidence groups, citations, tokens, cost, time
   runs/<run_id>/summary.md      the same, readable
+  runs/<run_id>/trace.md        the reasoning steps of every answer (see trace.py)
   runs/cache/<key>.json         answers by request hash, so re-running the same request costs nothing
-No image is ever written under runs/ (it is in Git).
+Images are not copied into runs/.
 """
 from __future__ import annotations
 
@@ -19,7 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import __version__
-from .client import ApiError, build_payload, call, mock_answer, settings_of
+from .client import ApiError, build_payload, call_with_fallback, mock_answer, settings_of
 from .config import public, repo_of
 from .data import Item, boxed_jpeg, load_items
 from .prompts import passages, prompt_parts
@@ -121,11 +122,11 @@ def ask(cfg: dict, item: Item, test: str, repeat: int = 0, mock: bool | None = N
         rec["cached"] = True
     else:
         try:
-            resp = mock_answer(cfg, item, test, repeat) if mock else call(cfg, build_payload(cfg, parts, jpeg))
+            resp = mock_answer(cfg, item, test, repeat) if mock else call_with_fallback(cfg, build_payload(cfg, parts, jpeg))
         except ApiError as e:
             rec["error"] = str(e)
             return rec
-    rec["response"] = {k: resp.get(k) for k in ("model", "usage", "latency_s", "response_id", "attempts")}
+    rec["response"] = {k: resp.get(k) for k in ("model", "usage", "latency_s", "response_id", "attempts", "reasoning_summary", "reasoning_summary_note")}
     rec["text"] = resp.get("text", "")
     ans, perr = parse(rec["text"])
     rec["answer"], rec["parse_error"] = ans, perr
@@ -275,6 +276,8 @@ def run_batch(cfg: dict, test: str | None = None, region: str | None = None, lim
     s["elapsed_s"] = round(time.time() - t0, 1)
     (out / "scores.json").write_text(json.dumps(res, indent=2, ensure_ascii=False), encoding="utf-8")
     write_summary_md(out / "summary.md", manifest, s)
+    from .trace import write_trace_file
+    write_trace_file(cfg, run_id)
     errs = [r["error"] for r in records if r.get("error")]
     log(f"Run {run_id}: Output 1 {s.get('output1', {}).get('acc')}, Output 2 {s.get('output2', {}).get('acc')}, "
         f"{s['errors']} errors, cost ≈ ${s['cost_usd']}" + (f". First error: {errs[0]}" if errs else ""))

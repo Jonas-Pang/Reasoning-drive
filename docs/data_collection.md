@@ -1,4 +1,4 @@
-# Data collection (Milestone 2–3): `playground.ipynb`
+# Data collection: `playground.ipynb`
 
 How the public datasets and rule documents were retrieved, loaded and checked. The project overview and the reproduction steps are in the [README](../README.md).
 
@@ -12,7 +12,7 @@ How the public datasets and rule documents were retrieved, loaded and checked. T
 | 3 Rule sources | Downloads MUTCD Part 3, checks the GB 5768.3-2025 PDF, writes `data_manifest.csv` |
 | 4 Load | Builds three tables: BDD100K images, BDD100K lane labels, CULane test frames |
 | 5 Size and types | Rows, fields and data types of each table, and the size on disk |
-| 6 Examples | Real BDD100K images with their lane annotations drawn on top; CULane frames only on your own computer with `SHOW_CULANE = True` (not saved in the notebook) |
+| 6 Examples | Real BDD100K images with their lane annotations drawn on top; CULane frames only with `SHOW_CULANE = True` |
 | 7 Data checks | Missing labels, class balance, near-duplicates, image sizes and coordinate ranges, coverage of driving conditions and of the four marking types |
 | 8 Rule corpus | Page counts, keyword search and an excerpt of both standards; the curated rule passages |
 | 9 Findings and gaps | Summary of what the checks found, including problems that cannot be fixed |
@@ -38,34 +38,31 @@ How the public datasets and rule documents were retrieved, loaded and checked. T
 * Labels used: BDD100K: lane category (e.g. single white, double yellow, crosswalk), solid/dashed, direction, and weather / time of day / scene. CULane: lane positions only (no colour or type) and the scene category of each frame.
 * Rule passages: 30 short passages (14 from GB 5768.3-2025, 16 from MUTCD Part 3) for the core marking types are in `rules/rule_passages.json`, each with section and page. Chinese passages keep the original text and have an English translation.
 
-## Storage, privacy and credentials
+## Storage and licences
 
-* The datasets are not in this repository: CULane may not be redistributed, both datasets show people and licence plates, and together they are about 20 GB (GitHub refuses files over 100 MB). The data lives in `data/` on an external SSD, `data/` is ignored by Git, and anyone who runs the notebook downloads the data from the official sources listed above.
-* The repository is **public**. It holds only code, configuration, the label template, short quoted rule passages and the saved notebook. The notebook output shows a few sample frames so the data can be inspected; no dataset files are shared. Faces and plates will be blurred before any image is used in a report.
-* No keys or tokens are in the repository. `.env` (ignored by Git) holds local settings such as `DATA_DIR` and the OpenAI API key; `.env.example` shows the format.
-* The model runs (`lane_reasoner/`, see below) read the API key only from the environment (`OPENAI_API_KEY`, normally from `.env`). Settings files, run records and the demo page only ever show whether a key is set.
+* The notebook downloads about 20 GB into `data/` (or `DATA_DIR`). CULane frames may not be redistributed, and both datasets show people and licence plates; faces and plates are blurred before an image is used in a report.
 
 ## How to run
 
-Tested on macOS with Python 3.11 (conda). The repository and data are on an external SSD at `/Volumes/T9/Project/Reasning_Drive`; the Python environment stays on the laptop, because exFAT drives do not support the links a virtual environment needs.
+Tested on macOS with Python 3.11 (conda). If the repository is on an exFAT drive, keep the Python environment on the internal disk: exFAT does not support the links a virtual environment needs.
 
 ```bash
 conda create -n reasoning-driving -c conda-forge --override-channels python=3.11 -y
 conda activate reasoning-driving
-cd /Volumes/T9/Project/Reasning_Drive
+cd Reasoning-drive
 pip install -r requirements.txt
 jupyter lab
 ```
 
 Open `playground.ipynb` and choose **Kernel > Restart Kernel and Run All Cells**.
 
-* The first run downloads about 20 GB. Later runs reuse `data/` and take about 15 minutes, mostly reading tens of thousands of small label files from the external drive.
+* The first run downloads about 20 GB. Later runs reuse `data/` and take about 15 minutes, mostly for reading tens of thousands of small label files.
 * If the five CULane archives are not in `data/raw/culane/`, the notebook stops and says which files to download from the official page.
-* To keep the data somewhere else, copy `.env.example` to `.env` and set `DATA_DIR`. The notebook stops with a message if that drive is not connected.
+* To keep the data somewhere else, copy `.env.example` to `.env` and set `DATA_DIR`.
 * On Windows: `py -3.11 -m venv .venv`, then `.venv\Scripts\python -m pip install -r requirements.txt` and `.venv\Scripts\python -m jupyter lab`.
 
 ## Changes since Milestone 2
 
-* Storage: Milestone 2 planned for the laptop's internal disk (about 10 GB free) and deleting archives after unpacking. The data now lives on an external SSD (about 900 GB), so the full CULane test split is used and archives are kept until the image selection is final. Sections 2.3 and 2.6 will be updated in Milestone 3.
+* Storage: Milestone 2 planned for the laptop's internal disk (about 10 GB free) and deleting archives after unpacking. The data now lives on an external SSD (about 900 GB), so the full CULane test split is used and archives are kept until the image selection is final.
 * BDD100K source: the official server was unreachable, so the mirror of the same release is used.
 * Marking types: four core types (solid white line, dashed white line, yellow centre line, turn-guide arrow). The no-stopping grid from the proposal was dropped: neither dataset labels it, it was not found in a sample of CULane crossroad frames, and its US counterpart (MUTCD 3B.26) is optional and rare.

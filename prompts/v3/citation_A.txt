@@ -1,0 +1,1 @@
+cited_rule_id: always null (no rule passages are given in this setting).

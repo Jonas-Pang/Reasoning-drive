@@ -1,5 +1,5 @@
 """Demo page: pick a labeled image, see the exact prompt, ask the model (Test A / Test B), compare with the label,
-run a whole batch and compare two runs. A small web server on 127.0.0.1 that only you can reach."""
+run a whole batch and compare two runs. A small local web server on 127.0.0.1."""
 from __future__ import annotations
 
 import json
@@ -21,7 +21,7 @@ from .runner import Context, ask, compare_runs, list_runs, load_run, run_batch
 WEB = Path(__file__).resolve().parent / "web"
 EDITABLE = {"mock": bool, "run.test": str, "run.region": str, "run.repeats": int, "run.limit": int, "run.split": str,
             "api.model": str, "api.reasoning_effort": str, "api.temperature": float, "api.image_detail": str,
-            "api.max_output_tokens": int, "api.parallel": int}
+            "api.max_output_tokens": int, "api.parallel": int, "api.reasoning_summary": str, "prompt.dir": str}
 
 
 class Demo:
@@ -39,15 +39,37 @@ class Demo:
                 counts[r] = len(load_items(self.cfg, r, "any", []))
             except Exception:  # noqa: BLE001
                 counts[r] = 0
-        return {"config": cfg, "tests": C.TESTS, "items_per_region": counts}
+        repo = C.repo_of(self.cfg)
+        versions = sorted(d.name for d in (repo / "prompts").iterdir()
+                          if d.is_dir() and ((d / "instructions.txt").exists() or (d / "role.txt").exists()))
+        return {"config": cfg, "tests": C.TESTS, "items_per_region": counts, "prompt_versions": versions,
+                "config_file": C.CONFIG_FILE, "unsaved": self.unsaved()}
+
+    def unsaved(self) -> list[str]:
+        """Settings changed on the page but not written to config/experiment.yaml."""
+        try:
+            on_file = C.load(C.repo_of(self.cfg))
+        except C.ConfigError:
+            return []
+        out = []
+        for path, (section, key) in C.YAML_PATH.items():
+            a, b = self.cfg, on_file
+            for k in path.split("."):
+                a, b = a[k], b[k]
+            if a != b:
+                out.append(f"{section}.{key}")
+        return out
 
     def update(self, body: dict) -> dict:
         with self.lock:
+            if body.get("reload"):
+                self.cfg = C.load(C.repo_of(self.cfg))
+                return self.config()
             for path, typ in EDITABLE.items():
                 if path not in body:
                     continue
                 v = body[path]
-                if v in ("", None) and path in ("api.reasoning_effort", "api.temperature"):
+                if v in ("", None, "off") and path in ("api.reasoning_effort", "api.temperature", "api.reasoning_summary"):
                     v = None
                 elif typ is bool:
                     v = bool(v)

@@ -2,7 +2,7 @@
 
 One workspace (data folder) per dataset, separate from the own-video folder:
 
-  On the data drive, e.g. /Volumes/T9/数据集/bdd100k (ignored by Git):
+  In the workspace folder, e.g. <root>/bdd100k:
     workspace.json                   marks the folder as a dataset workspace (which dataset)
     index/<set>/candidates.csv       every image of the dataset with its hints (built once by `images init`)
     selected/<set>/<image_id>.jpg    copies of the images you picked (the originals are never changed)
@@ -10,7 +10,7 @@ One workspace (data folder) per dataset, separate from the own-video folder:
     report_figures/<set>/            copies with plates and faces blurred, for reports only
     annotators.json                  private: helper code -> real name
 
-  In Git (repository):
+  In the repository:
     labels/<dataset>/<set>.set.json         where the dataset is, region, license, quotas, index summary
     labels/<dataset>/<set>.labels.csv       one row per picked image: target box + FINAL label
     labels/<dataset>/<set>.annotations.csv  every independent label
@@ -325,7 +325,7 @@ class Picker:
         self.paths, self.trip = paths, trip
         self.source = Path(trip.meta["source_root"])
         if not self.source.exists():
-            raise ToolError(f"The dataset folder {self.source} is not there. Is the external drive connected?")
+            raise ToolError(f"The dataset folder {self.source} is not there.")
         self.cands = read_csv(paths.scan_csv(trip.id))
         if not self.cands:
             raise ToolError(f"No candidate index for {trip.id}. Run: python -m video_tool --data \"{paths.data}\" images init "
@@ -556,7 +556,11 @@ def split_check(repo: Path, rows: list[dict], root: Path, version: int, changes:
     split_of = {r["image_id"]: r["split"] for r in rows}
     examples, outside = 0, []
     try:
-        prompt_dir = json.loads((repo / "config" / "experiment.json").read_text(encoding="utf-8"))["prompt"]["dir"]
+        from lane_reasoner.config import ConfigError, load as load_settings
+        try:
+            prompt_dir = load_settings(repo)["prompt"]["dir"]
+        except ConfigError:
+            prompt_dir = ""
         ex_file = repo / prompt_dir / "examples.json"
         ex = json.loads(ex_file.read_text(encoding="utf-8")) if ex_file.exists() else []
         examples = len(ex)
@@ -631,7 +635,7 @@ def combine(repo: str | Path | None, data_dirs: list[str], log=print) -> dict:
         seen_coll.add(p.collection)
         ws.append(p)
     if not ws:
-        raise ToolError("Give the data folders to combine, e.g. /Volumes/T9/数据集/UF /Volumes/T9/数据集/bdd100k /Volumes/T9/数据集/culane")
+        raise ToolError("Give the data folders to combine, e.g. <root>/UF <root>/bdd100k <root>/culane")
     import os
     root = Path(os.path.commonpath([str(p.data) for p in ws])) if len(ws) > 1 else ws[0].data.parent
     rows, split_rows, counts = [], [], Counter()

@@ -1,0 +1,66 @@
+# Reasoning Driving: settings of the whole experiment.
+# Edit this file, or use the settings dialog of the demo page (python -m lane_reasoner demo).
+# The API key is not written here: put OPENAI_API_KEY=... in .env (copy .env.example).
+
+experiment:
+  region: US            # whose images and rules are used: one of the codes under "regions" below
+  use_rules: no         # no = Test A (image only); yes = Test B (image + the region's rule passages)
+  prompt: v3            # prompt folder under prompts/ (v1 and v2 are the Milestone 4 versions)
+  split: dev            # dev, test or any
+  repeats: 1            # each image is asked this many times; the majority answer is scored
+  limit: 0              # number of images, 0 = all
+  marking_types: []     # only these marking types, [] = all
+  order_seed: 6216      # fixed random order of the images
+  mock: true            # true = made-up answers without calling the API (free); false = real API calls
+
+model:
+  provider: openai
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY   # name of the variable in .env that holds the key
+  name: gpt-6.1-sol
+  reasoning_effort: low         # low, medium, high, xhigh or max (gpt-6.1-sol does not accept "none")
+  reasoning_summary: off        # off, auto, concise or detailed: also ask for the model's summary of its hidden reasoning
+  temperature: null             # null = not sent (gpt-6.1-sol does not accept it)
+  image_detail: high
+  max_output_tokens: 2000       # includes the hidden reasoning tokens
+  instruction_role: developer
+  store: false
+  timeout_s: 90
+  max_retries: 4
+  parallel: 5                   # requests sent at the same time
+  price_per_million_tokens:
+    input: 2.0
+    output: 10.0
+
+data:
+  datasets_root: ""             # folder that holds the workspaces; usually set as DATASETS_ROOT in .env
+  workspaces:                   # labeling workspaces (made with video_tool) whose final labels are used
+    - UF
+    - bdd100k
+    - culane
+  send_to_api:                  # collections whose images may be sent to the API
+    - own_video                 # add bdd100k or culane only with the dataset owners' permission
+
+image:                          # how the target box is drawn on the copy sent to the model
+  box_color_rgb: [0, 229, 255]
+  box_width: 3
+  box_margin: 6
+  jpeg_quality: 92
+
+regions:
+  US:
+    name: the United States     # used in the prompt: "This photo was taken in ..."
+    name_zh: 美国
+    rules:
+      file: rules/rule_passages.json   # passages file (JSON or YAML list)
+      code: US                         # value of "region" in that file
+      title: MUTCD 11th Edition (December 2023), Part 3 Markings
+      language: en                     # en, zh or both
+  CN:
+    name: China
+    name_zh: 中国
+    rules:
+      file: rules/rule_passages.json
+      code: CN
+      title: "GB 5768.3-2025 Road traffic signs and markings, Part 3: Road traffic markings (English translation by the project)"
+      language: en

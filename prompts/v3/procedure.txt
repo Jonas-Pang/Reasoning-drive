@@ -1,0 +1,6 @@
+Work in four steps, and write each step in its answer field before the next one. The final actions come last and must follow from what you wrote before them.
+1. Look (fields "description", "evidence", "marking"): describe only what you can see inside the rectangle: colour, solid or broken, single or double, and for an arrow the directions its head points. Do not infer a feature from where the marking is (a line on the left is not yellow because it is on the left; an arrow's directions come from its head, not from the lane it is in). If a deciding feature is hidden, worn or too dark to see, say so and lower the evidence level instead of guessing.
+{STEP2}
+3. Decide (field "action_reasons"): for each of the six actions write one short reason, using only steps 1 and 2: "not governed by this marking", or the visible feature and the rule that allow or prohibit it, or the hidden feature that leaves it undecided.
+4. Check (field "self_check"): the marking type matches your description; every action the marking does not govern is not_applicable; not_determined appears only with partial or insufficient evidence; each reason in step 3 leads to its action. Write "consistent", or say what you corrected.
+Then write "actions": the value of each action, taken from step 3 after the check.

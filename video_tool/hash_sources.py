@@ -43,7 +43,7 @@ def hash_sources(repo: Path, raw: Path | None = None, log=print, rehash: bool = 
         raw = Path(data).expanduser() / "raw"
     raw = Path(raw)
     if not raw.is_dir():
-        raise ToolError(f"{raw} does not exist. Is the external drive connected? (DATA_DIR in .env)")
+        raise ToolError(f"{raw} does not exist. Check DATA_DIR in .env.")
     manifest = repo / "data_manifest.csv"
     rows = read_csv(manifest)
     if not rows:

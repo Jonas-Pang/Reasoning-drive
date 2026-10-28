@@ -1,27 +1,29 @@
 """Command line: python -m lane_reasoner <command> ...
 
-  config    show the settings in config/experiment.json (and whether an API key is set; never the key)
+  config    show the settings in config/experiment.yaml (and whether an API key is set)
   prompt    print the exact prompt of Test A or Test B for a region
   items     list the labeled images the runs use (final labels from every workspace)
   ping      one tiny text request: checks the API key, the model name and the settings (costs almost nothing)
-  ask       ask the model about one image and print the answer next to the label
-  run       run Test A or Test B on all labeled images of a region; results go to runs/<run_id>/
+  ask       ask the model about one image and print its reasoning step by step, next to the label
+  run       run Test A or Test B on all labeled images of a region; results go to runs/<run_id>/ (--trace prints each answer's reasoning)
+  trace     print the reasoning steps of the answers of a saved run (also written to runs/<run_id>/trace.md)
   runs      list the runs
   rescore   score the saved answers of runs again (after a scoring or rule-table change; no API calls)
-  table     experiment table of saved runs in Markdown (needs no images and no key)
+  table     experiment table of saved runs in Markdown
   compare   compare two runs (normally Test A and Test B): accuracy and McNemar test
   demo      open the demo page in the browser
   selftest  check everything without the API (synthetic images, mock answers, a fake API server)
 
-Mock or real: "mock" in config/experiment.json decides; --mock / --real override it for one command.
-The API key is read from the environment variable in api.api_key_env (default OPENAI_API_KEY), normally from
-the .env file of the repository, which Git ignores. Never put the key in config/experiment.json.
+Mock or real: experiment.mock in config/experiment.yaml decides; --mock / --real override it for one command.
+The API key is read from the environment variable named in api.api_key_env (default OPENAI_API_KEY),
+usually set in the .env file of the repository.
 """
 from __future__ import annotations
 
 import argparse
 import json
 import sys
+import threading
 
 from . import config as C
 
@@ -38,26 +40,19 @@ def _cfg(args) -> dict:
     return cfg
 
 
-def _print_answer(rec: dict) -> None:
-    if rec.get("error"):
-        print("  error:", rec["error"])
-        return
-    a, L, s = rec.get("answer"), rec["label"], rec.get("score")
-    if not a:
-        print("  unreadable answer:", rec.get("parse_error"), rec.get("text", "")[:300])
-        return
-    m = a["marking"]
-    ok = lambda b: "✓" if b else ("—" if b is None else "✗")  # noqa: E731
-    print(f"  Output 1 {ok(s['output1'])}  marking {m['marking_type']}{('/' + m['arrow_type']) if m.get('arrow_type') else ''}"
-          f"  (label {L['marking_type']}{('/' + L['arrow_type']) if L.get('arrow_type') else ''}), position {m['position']}")
-    print(f"  Output 2 {ok(s['output2'])}  " + ", ".join(f"{k} {v}{'' if L.get('act_' + k) == v else ' (label ' + L.get('act_' + k, '') + ')'}"
-                                                     for k, v in a["actions"].items() if v != "not_applicable" or L.get("act_" + k) != "not_applicable"))
-    print(f"  evidence {a['evidence']} (label {L.get('expected_evidence')}), group {s['evidence_group']}"
-          + (f", cited {a.get('cited_rule_id')} → {s['citation']}" if rec["test"] == "B" else ""))
-    print(f"  description: {a.get('description')}\n  reasoning:   {a.get('reasoning')}")
-    r = rec.get("response") or {}
-    print(f"  model {r.get('model')}, tokens {(r.get('usage') or {}).get('input_tokens')}/{(r.get('usage') or {}).get('output_tokens')}, "
-          f"{r.get('latency_s')} s" + (", from cache" if rec.get("cached") else "") + (", MOCK" if rec.get("mock") else ""))
+_PRINT = threading.Lock()
+
+
+def _print_trace(cfg: dict, rec: dict) -> None:
+    from .runner import cost_of
+    from .trace import passage_map, trace_text
+    try:
+        pm = passage_map(cfg, rec["region"])
+    except Exception:  # noqa: BLE001
+        pm = {}
+    cost = None if rec.get("cached") or rec.get("mock") else cost_of(cfg, (rec.get("response") or {}).get("usage") or {})
+    with _PRINT:
+        print(trace_text(rec, pm, cost) + "\n", flush=True)
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -92,9 +87,13 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--repeats", type=int)
     p.add_argument("--split", choices=["any", "dev", "test"])
     p.add_argument("--no-cache", action="store_true", help="ask again even if the same request was answered before")
+    p.add_argument("--trace", action="store_true", help="print the reasoning steps of every answer as it arrives")
     mode(p)
+    p = sub.add_parser("trace", help="print the reasoning steps of a saved run")
+    p.add_argument("run_id")
+    p.add_argument("image_ids", nargs="*", help="only these images (default: all)")
     sub.add_parser("runs", help="list the runs")
-    p = sub.add_parser("table", help="experiment table (Markdown) of saved runs; needs no images and no key")
+    p = sub.add_parser("table", help="experiment table (Markdown) of saved runs")
     p.add_argument("run_ids", nargs="+")
     p = sub.add_parser("rescore", help="score the saved answers of runs again (no API calls)")
     p.add_argument("run_ids", nargs="+")
@@ -142,6 +141,10 @@ def main(argv: list[str] | None = None) -> None:
             from .client import ping
             r = ping(cfg)
             print(f"OK: model {r['model']} answered {r['text']!r} in {r['latency_s']} s, tokens {r['usage']}")
+            if r.get("reasoning_summary"):
+                print("Reasoning summary:", r["reasoning_summary"])
+            if r.get("reasoning_summary_note"):
+                print("Note:", r["reasoning_summary_note"])
         elif args.cmd == "ask":
             from .data import load_items
             from .runner import ask
@@ -153,11 +156,11 @@ def main(argv: list[str] | None = None) -> None:
                 raise ValueError(f"No labeled image {args.image_id} in region {cfg['run']['region']}.")
             print(f"{it.image_id} ({it.marking}), {'MOCK' if cfg.get('mock') else cfg['api']['model']}")
             for t in args.test:
-                print(f"Test {t}:")
-                _print_answer(ask(cfg, it, t, 0, cfg.get("mock"), use_cache=not args.no_cache))
+                _print_trace(cfg, ask(cfg, it, t, 0, cfg.get("mock"), use_cache=not args.no_cache))
         elif args.cmd == "run" and args.test == "AB":
             from .runner import compare_runs, run_pair
-            ids = run_pair(cfg, cfg["run"]["region"], args.limit, args.repeats, args.split, cfg.get("mock"), use_cache=not args.no_cache)
+            ids = run_pair(cfg, cfg["run"]["region"], args.limit, args.repeats, args.split, cfg.get("mock"), use_cache=not args.no_cache,
+                           progress=(lambda t, d, n, r: _print_trace(cfg, r)) if args.trace else None)
             c = compare_runs(cfg, ids["A"], ids["B"])
             print(f"Saved in runs/{ids['A']}/ and runs/{ids['B']}/")
             for k in ("output1", "output2"):
@@ -167,9 +170,18 @@ def main(argv: list[str] | None = None) -> None:
         elif args.cmd == "run":
             from .runner import run_batch
             rid = run_batch(cfg, cfg["run"]["test"], cfg["run"]["region"], args.limit, args.repeats, args.split, cfg.get("mock"),
-                            progress=lambda d, n, r: print(f"\r{d}/{n}", end="", flush=True) if d < n else print(f"\r{d}/{n}"),
+                            progress=(lambda d, n, r: _print_trace(cfg, r)) if args.trace else
+                            (lambda d, n, r: print(f"\r{d}/{n}", end="", flush=True) if d < n else print(f"\r{d}/{n}")),
                             use_cache=not args.no_cache)
-            print(f"Saved in runs/{rid}/ (summary.md, scores.json, results.jsonl, manifest.json)")
+            print(f"Saved in runs/{rid}/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)")
+        elif args.cmd == "trace":
+            from .runner import load_run
+            from .trace import write_trace_file
+            want = set(args.image_ids)
+            for r in sorted(load_run(cfg, args.run_id)["records"], key=lambda r: (r["image_id"], r.get("repeat", 0))):
+                if not want or r["image_id"] in want or any(r["image_id"].endswith(w) for w in want):
+                    _print_trace(cfg, r)
+            print("Written to", write_trace_file(cfg, args.run_id))
         elif args.cmd == "runs":
             from .runner import list_runs
             for r in list_runs(cfg):

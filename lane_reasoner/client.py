@@ -3,8 +3,10 @@
 Uses only the Python standard library (no SDK version to pin). The request is
   POST {base_url}/responses
   {"model", "input": [instructions message, user message with text + image], "text": {"format": json_schema},
-   "reasoning": {"effort"}, "temperature", "max_output_tokens", "store"}
-and the answer is the output_text of the message in "output".
+   "reasoning": {"effort", "summary"}, "temperature", "max_output_tokens", "store"}
+and the answer is the output_text of the message in "output". When model.reasoning_summary is set, the
+"reasoning" items of the output carry the model's own summary of its hidden reasoning; it is kept with the
+answer and shown in the trace.
 """
 from __future__ import annotations
 
@@ -40,8 +42,7 @@ def build_payload(cfg: dict, parts: dict, jpeg: bytes) -> dict:
         "text": {"format": {"type": "json_schema", "name": "lane_marking_answer", "schema": parts["schema"], "strict": True}},
         "max_output_tokens": int(a.get("max_output_tokens", 400)),
     }
-    if a.get("reasoning_effort") not in (None, ""):
-        payload["reasoning"] = {"effort": a["reasoning_effort"]}
+    _reasoning(payload, a)
     if a.get("temperature") is not None:
         payload["temperature"] = a["temperature"]
     if a.get("store") is not None:
@@ -49,16 +50,32 @@ def build_payload(cfg: dict, parts: dict, jpeg: bytes) -> dict:
     return payload
 
 
+def _reasoning(payload: dict, a: dict) -> None:
+    r = {}
+    if a.get("reasoning_effort") not in (None, ""):
+        r["effort"] = a["reasoning_effort"]
+    if a.get("reasoning_summary"):
+        r["summary"] = a["reasoning_summary"]
+    if r:
+        payload["reasoning"] = r
+
+
 def settings_of(cfg: dict) -> dict:
-    """The request settings saved with every result (requirement 2: the same in both tests)."""
+    """The request settings saved with every result (the same in both tests)."""
     a = cfg["api"]
-    return {k: a.get(k) for k in ("base_url", "model", "reasoning_effort", "temperature", "image_detail",
-                                  "max_output_tokens", "instruction_role", "store")}
+    out = {k: a.get(k) for k in ("base_url", "model", "reasoning_effort", "temperature", "image_detail",
+                                 "max_output_tokens", "instruction_role", "store")}
+    if a.get("reasoning_summary"):
+        out["reasoning_summary"] = a["reasoning_summary"]
+    return out
 
 
-def _output_text(data: dict) -> tuple[str, str]:
-    text, refusal = [], []
+def _output_text(data: dict) -> tuple[str, str, str]:
+    text, refusal, summary = [], [], []
     for item in data.get("output", []) or []:
+        if item.get("type") == "reasoning":
+            summary += [s.get("text", "") for s in item.get("summary", []) or [] if s.get("text")]
+            continue
         if item.get("type") != "message":
             continue
         for c in item.get("content", []) or []:
@@ -68,7 +85,7 @@ def _output_text(data: dict) -> tuple[str, str]:
                 refusal.append(c.get("refusal", ""))
     if not text and isinstance(data.get("output_text"), str):
         text.append(data["output_text"])
-    return "".join(text), " ".join(refusal)
+    return "".join(text), " ".join(refusal), "\n\n".join(summary)
 
 
 def call(cfg: dict, payload: dict) -> dict:
@@ -88,7 +105,7 @@ def call(cfg: dict, payload: dict) -> dict:
         try:
             with urllib.request.urlopen(req, timeout=float(a.get("timeout_s", 90))) as r:
                 data = json.loads(r.read().decode("utf-8"))
-            text, refusal = _output_text(data)
+            text, refusal, summary = _output_text(data)
             status = data.get("status", "")
             if status and status != "completed":
                 reason = (data.get("incomplete_details") or {}).get("reason", "")
@@ -97,7 +114,8 @@ def call(cfg: dict, payload: dict) -> dict:
             if refusal and not text:
                 raise ApiError("The model refused: " + refusal)
             return {"text": text, "model": data.get("model", ""), "usage": data.get("usage") or {},
-                    "latency_s": round(time.time() - t0, 2), "response_id": data.get("id", ""), "attempts": attempt + 1}
+                    "latency_s": round(time.time() - t0, 2), "response_id": data.get("id", ""), "attempts": attempt + 1,
+                    "reasoning_summary": summary}
         except urllib.error.HTTPError as e:
             raw = e.read().decode("utf-8", "replace")
             try:
@@ -120,6 +138,23 @@ def call(cfg: dict, payload: dict) -> dict:
     raise last or ApiError("Request failed.")
 
 
+def call_with_fallback(cfg: dict, payload: dict) -> dict:
+    """call(), but if the API refuses the reasoning summary (some models and organisations cannot get one), the
+    request is sent again without it and the answer notes why the summary is missing."""
+    try:
+        return call(cfg, payload)
+    except ApiError as e:
+        if e.status != 400 or "summary" not in str(e).lower() or "summary" not in (payload.get("reasoning") or {}):
+            raise
+        p2 = json.loads(json.dumps(payload))
+        p2["reasoning"].pop("summary")
+        if not p2["reasoning"]:
+            p2.pop("reasoning")
+        out = call(cfg, p2)
+        out["reasoning_summary_note"] = f"reasoning summary not available: {e}"
+        return out
+
+
 def ping(cfg: dict) -> dict:
     """One tiny text request with the same model and settings as the real runs (no image, no schema).
 
@@ -127,16 +162,15 @@ def ping(cfg: dict) -> dict:
     a = cfg["api"]
     payload = {"model": a["model"], "input": [{"role": "user", "content": [{"type": "input_text", "text": "Reply with the single word OK."}]}],
                "max_output_tokens": max(64, int(a.get("max_output_tokens", 400)) // 4)}
-    if a.get("reasoning_effort") not in (None, ""):
-        payload["reasoning"] = {"effort": a["reasoning_effort"]}
+    _reasoning(payload, a)
     if a.get("temperature") is not None:
         payload["temperature"] = a["temperature"]
     if a.get("store") is not None:
         payload["store"] = bool(a["store"])
-    return call(cfg, payload)
+    return call_with_fallback(cfg, payload)
 
 
-# ------------------------------------------------------------------ mock (no API call, no cost)
+# ------------------------------------------------------------------ mock answers
 
 def mock_answer(cfg: dict, item, test: str, repeat: int = 0) -> dict:
     """A made-up answer for trying the pipeline without the API: the label, with deterministic mistakes.
@@ -170,7 +204,10 @@ def mock_answer(cfg: dict, item, test: str, repeat: int = 0) -> dict:
         "marking": {"marking_type": mt, "arrow_type": at if mt == "arrow" else None, "position": lab.get("position") or "left"},
         "actions": acts,
         "cited_rule_id": (ids[0] if ids else None) if test == "B" else None,
+        "rule_reasoning": "(mock) the rule of this marking type",
+        "action_reasons": {k: "(mock)" for k in acts},
+        "self_check": "(mock) consistent",
         "reasoning": "(mock answer: no model was called)",
     }
-    usage = {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}  # nothing is sent, nothing is paid
+    usage = {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}  # no request is sent
     return {"text": json.dumps(ans), "model": "mock", "usage": usage, "latency_s": 0.0, "response_id": "", "attempts": 0}

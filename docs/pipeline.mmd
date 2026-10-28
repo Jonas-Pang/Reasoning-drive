@@ -1,0 +1,14 @@
+flowchart LR
+  subgraph Data["Data (not AI)"]
+    V[Own dash-cam video] --> T[video_tool: keep frames, target box,<br/>2 independent labels, adjudication]
+    D[BDD100K / CULane] --> T
+    T --> L[labels, split, saved checks]
+  end
+  subgraph Request["One request (lane_reasoner)"]
+    L --> I[copy of the image with the cyan box]
+    P[prompts/v2: task, steps, definitions] --> Q
+    R[rule passages of the region<br/>Test B only] --> Q
+    I --> Q[OpenAI Responses API<br/>strict JSON schema]
+  end
+  Q --> S[scoring vs labels: outputs 1 and 2,<br/>unsafe errors, citations, consistency]
+  S --> O[runs/, notebook, demo]
