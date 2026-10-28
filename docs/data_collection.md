@@ -31,7 +31,7 @@ How the public datasets and rule documents were retrieved, loaded and checked. T
 
 ## How the datasets are handled
 
-* Only the needed parts are used: CULane: the test split, because only the test split is sorted into scene categories (arrow, crossroad, night, no line, ...). BDD100K: the validation split, because the test split has no public labels.
+* Only the needed parts are downloaded: CULane: the test split, because only the test split is sorted into scene categories (arrow, crossroad, night, no line, ...). BDD100K: the validation split, because the test split has no public labels. These are candidate pools: only a small sample is picked and labeled for the experiment (README, *How much of each dataset is used*).
 * BDD100K download: The notebook first tries the official server. In October 2026 its host name did not resolve (other users report the same on the BDD100K GitHub discussions), so it downloads the Dataset Ninja mirror (one tar archive, Supervisely format) and unpacks only the validation images and their annotation files.
 * CULane download: The notebook tries `gdown`, but Google Drive blocks popular files ("too many users have downloaded this file"). The five archives (`list`, `annotations_new` and the three `driver_*` test archives) were therefore downloaded in the browser into `data/raw/culane/`; the notebook checks them and unpacks them.
 * Unpacking: Archives stay in `data/raw/`; unpacked files go to `data/extracted/`. A marker file per archive makes reruns skip finished steps. File names are made safe for the exFAT drive, and macOS `._` helper files are ignored.

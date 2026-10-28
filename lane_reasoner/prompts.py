@@ -1,4 +1,4 @@
-"""Memory (DiLu): the prompt parts, the region's rule passages and the answer schema.
+"""The prompt parts, the region's rule passages and the answer schema.
 
 Test A and Test B use the same instructions, examples, schema and image; Test B adds the rule block of the
 image's region and two one-line slots that refer to it. Everything that goes into a request is hashed, and the

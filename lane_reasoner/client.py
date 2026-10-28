@@ -1,4 +1,4 @@
-"""Reasoning (DiLu): one request to the model through the OpenAI Responses API, or a mock answer.
+"""One request to the model through the OpenAI Responses API, or a mock answer.
 
 Uses only the Python standard library (no SDK version to pin). The request is
   POST {base_url}/responses

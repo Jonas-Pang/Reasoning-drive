@@ -10,7 +10,7 @@ Lane markings mean different things in different countries, and a lane detector 
 
 | Stage | Status | Where |
 |---|---|---|
-| Data collection | BDD100K validation split, CULane test split, MUTCD Part 3, GB 5768.3-2025 | [`playground.ipynb`](playground.ipynb), [docs/data_collection.md](docs/data_collection.md) |
+| Data collection | BDD100K validation split and CULane test split as candidate pools (only a small labeled sample is used), MUTCD Part 3, GB 5768.3-2025 | [`playground.ipynb`](playground.ipynb), [docs/data_collection.md](docs/data_collection.md) |
 | Rule pack | 30 passages (16 US, 14 CN) | `rules/rule_passages.json`, `config/action_rules.json` |
 | Labels | 40 images from one US night drive; BDD100K and CULane in progress | [`video_tool`](docs/labeling_tool.md), `labels/` |
 | Splits | v1 and v2, with separation checks | `labels/split_v*.csv`, `labels/split_check_v*.json` |
@@ -190,19 +190,26 @@ Images enter through labeling workspaces made with `video_tool`: `video_tool ing
 | Scoring | no | compares with the labels; contested cells kept separate; McNemar test | self-test |
 | Policy, retries, cache | no | sends only permitted collections; retries on 429 and 5xx; caches identical requests | self-test with a fake API server |
 
-The answer fields are `description`, `evidence` (full, partial or insufficient), `marking` (Output 1: type, arrow type, position), `actions` (Output 2: cross line, go straight, turn left, turn right, U-turn, enter centre lane; each allowed, prohibited, not_determined or not_applicable), `cited_rule_id` (Test B) and `reasoning`. The strict schema keeps this order, so the model describes what it sees before it decides.
+The answer fields of prompt v3, in the order the model writes them, are `description`, `evidence` (full, partial or insufficient), `marking` (Output 1: type, arrow type, position), `rule_reasoning`, `cited_rule_id` (Test B), `action_reasons`, `self_check` and `actions` (Output 2: cross line, go straight, turn left, turn right, U-turn, enter centre lane; each allowed, prohibited, not_determined or not_applicable). In v1 and v2 the fields are `description`, `evidence`, `marking`, `actions`, `cited_rule_id` and `reasoning`.
 
-### Prompt design against hallucinations (ideas from DiLu)
+### Prompt versions
 
-DiLu builds a driving agent from reasoning (describe the scene, then decide), memory (knowledge and past experience in the prompt) and reflection (learn from wrong decisions). Here they are used as follows.
+| Version | What it is | Runs | Result |
+|---|---|---|---|
+| v1 | The first prompt: one instructions file with three steps (describe, match a rule, decide); the reasoning is written after the actions | 1, 2 | 6 to 7 answers per run contradict themselves; repeats agree on 80 to 82% of images |
+| v2 | v1 corrected after its errors on development images: describe only visible features, which actions each marking type governs, `not_determined` only with partial evidence, a self-check step, and in Test B "use the passages, not memory" | 3, 4 | no contradictions; repeats agree on 90 to 97.5%; same accuracy |
+| v3 | v2 split into files by purpose; each reasoning step is an answer field written before the actions | 5, 6 | reasoning visible in every answer; one or two more errors (see *Results so far*) |
 
-| DiLu module | In this project | Hallucination it targets |
-|---|---|---|
-| Reasoning | Four steps: look (visible features only), match the rule, decide only the actions this marking governs, check. In v3 each step is an answer field written before the decision | deciding before looking; inventing features |
-| Memory | Test B gives the region's passages with IDs; only listed IDs may be cited, checked automatically. Fixed text examples are planned | invented rules and citations |
-| Reflection | Offline, development images only: the errors of runs 1 and 2 led to prompt v2 | answers outside the task definition |
+Each folder has a README with the details ([v1](prompts/v1/README.md), [v2](prompts/v2/README.md), [v3](prompts/v3/README.md)).
 
-The schema has a closed vocabulary, the evidence level allows abstention, each image is asked three times, and a consistency check (`scoring.consistency_issues`) counts answers that contradict themselves. See [`prompts/v2/README.md`](prompts/v2/README.md).
+### Measures against unsupported answers
+
+* The model describes what it sees before it decides (v3: as separate fields before the actions).
+* The answer must match a strict schema with fixed values, so it cannot invent categories.
+* The evidence level lets the model say that the photo does not show enough, instead of guessing.
+* Test B may cite only the listed passage IDs; the scoring checks each citation.
+* Repeated requests show how stable the answers are, and the majority answer is scored.
+* A consistency check that needs no labels (`scoring.consistency_issues`) counts answers that contradict themselves.
 
 ### Metrics
 
@@ -218,12 +225,16 @@ The schema has a closed vocabulary, the evidence level allows abstention, each i
 
 | Source | Content | Licence |
 |---|---|---|
-| BDD100K (Dataset Ninja mirror of the official release) | validation split, 10,000 images, US | educational, research and non-profit use; keep the copyright notice |
-| CULane | test split, 34,680 frames, China | non-commercial research and teaching; no redistribution |
+| BDD100K (Dataset Ninja mirror of the official release) | validation split (10,000 images, US): candidate pool | educational, research and non-profit use; keep the copyright notice |
+| CULane | test split (34,680 frames, China): candidate pool | non-commercial research and teaching; no redistribution |
 | MUTCD 11th Edition, Part 3 | US marking rules | U.S. government work |
 | GB 5768.3-2025 | Chinese marking rules | free to read; short quotes only |
 
 Origin, size, SHA-256 and MD5 of every download are in `data_manifest.csv` and `data_hashes.csv`.
+
+### How much of each dataset is used
+
+The BDD100K validation split and the CULane test split are downloaded in full only so that suitable images can be found. `video_tool images init` indexes every image as a candidate with hints from the dataset's own labels (lane type, scene category, time of day), and images are then picked by hand into quota cells. The planned sample, per marking type and region, is 6 development images and 30 test images, plus 30 degraded test images per region: about 350 labeled images in total, own videos included. Only labeled images are scored, and only images of collections listed in `data.send_to_api` are sent to the model. So far 5 BDD100K images are picked and none of BDD100K or CULane is labeled; `labels/candidate_supply.csv` shows how many candidates each pool offers.
 
 ### Labels
 
@@ -287,7 +298,7 @@ The steps are in *Configuration*. Left-hand traffic (UK, Japan, Australia) needs
 3. Permission from the BDD100K and CULane owners to send images to the API.
 4. Development labels for China (CULane arrow frames) and for BDD100K.
 5. More own drives on other routes and in daylight.
-6. Fixed text examples (DiLu memory) from a separate pool of development images.
+6. Fixed text examples written from a separate pool of development images.
 7. A targeted change for the v3 error: in Test B, prefer the passage for the specific marking over a general one, and state the "discouraged counts as allowed" convention more narrowly; then run v3 again.
 8. Controls: Chinese original versus English translation; own video versus BDD100K.
 9. A `driving_side` field for left-hand traffic; passage selection for long standards.

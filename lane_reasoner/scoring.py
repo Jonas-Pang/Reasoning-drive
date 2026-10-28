@@ -1,4 +1,4 @@
-"""Reflection (DiLu) / evaluation: compare answers with the FINAL labels (Milestone 3, requirements 3–6).
+"""Evaluation: compare answers with the FINAL labels (Milestone 3, requirements 3–6).
 
 Output 1 is correct when the marking type (and the arrow type for arrows) matches.
 Output 2 is correct when every action the marking decides (label not "not_applicable") matches; actions in a
