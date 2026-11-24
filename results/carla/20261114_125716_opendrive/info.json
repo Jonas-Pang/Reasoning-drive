@@ -1,0 +1,86 @@
+{
+ "server": "0.9.16",
+ "client": "",
+ "rules": {
+  "LHT": {
+   "load_s": 7.1,
+   "lanes": {
+    "2": {
+     "travels": "+x",
+     "yaw": -0.0,
+     "left_marking": "White Solid",
+     "right_marking": "White Solid",
+     "lane_change": "NONE"
+    },
+    "1": {
+     "travels": "+x",
+     "yaw": -0.0,
+     "left_marking": "White Solid",
+     "right_marking": "Yellow SolidSolid",
+     "lane_change": "NONE"
+    },
+    "-1": {
+     "travels": "-x",
+     "yaw": 180.0,
+     "left_marking": "White Solid",
+     "right_marking": "Yellow SolidSolid",
+     "lane_change": "NONE"
+    },
+    "-2": {
+     "travels": "-x",
+     "yaw": 180.0,
+     "left_marking": "White Solid",
+     "right_marking": "White Solid",
+     "lane_change": "NONE"
+    }
+   },
+   "cars": [],
+   "photos": [
+    "LHT_solid_section.png",
+    "LHT_broken_section.png",
+    "LHT_solid_section_debug_lines.png",
+    "LHT_broken_section_debug_lines.png"
+   ]
+  },
+  "RHT": {
+   "load_s": 5.9,
+   "lanes": {
+    "2": {
+     "travels": "-x",
+     "yaw": 180.0,
+     "left_marking": "White Solid",
+     "right_marking": "White Solid",
+     "lane_change": "NONE"
+    },
+    "1": {
+     "travels": "-x",
+     "yaw": 180.0,
+     "left_marking": "Yellow SolidSolid",
+     "right_marking": "White Solid",
+     "lane_change": "NONE"
+    },
+    "-1": {
+     "travels": "+x",
+     "yaw": -0.0,
+     "left_marking": "Yellow SolidSolid",
+     "right_marking": "White Solid",
+     "lane_change": "NONE"
+    },
+    "-2": {
+     "travels": "+x",
+     "yaw": -0.0,
+     "left_marking": "White Solid",
+     "right_marking": "White Solid",
+     "lane_change": "NONE"
+    }
+   },
+   "cars": [],
+   "photos": [
+    "RHT_solid_section.png",
+    "RHT_broken_section.png",
+    "RHT_solid_section_debug_lines.png",
+    "RHT_broken_section_debug_lines.png"
+   ]
+  }
+ }
+}

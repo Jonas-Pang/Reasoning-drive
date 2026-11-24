@@ -1,0 +1,48 @@
+carla_Town03_lane_change | lane | Test A | gpt-6.1-sol
+------------------------------------------------------
+Step 1  Scene           A two-way urban road runs beneath an elevated structure in China. My car is in the
+                        leftmost of two lanes in its direction; the road continues ahead, with no clearly
+                        identifiable intersection or lane ending visible. (lanes 2, mine 1, full)
+Step 2  Left            Two parallel continuous yellow lines form the left boundary, with opposing traffic
+                        lanes beyond and no curb along this boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 2  Right           A continuous white line forms the right boundary, with another same-direction lane
+                        beyond it; the roadside curb is beyond that other lane.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: The center line on the left and same-direction lane line on the right agree
+                        with my car occupying lane 1 of 2. | roles: The double solid yellow center line
+                        separates opposing directions, and the solid white lane line separates same-direction
+                        lanes. | markings: No arrows, words, symbols, transverse lines or waiting areas are
+                        visible in my lane. | unseen: No distant intersection layout or hidden lane-use
+                        marking has been inferred. | result: consistent
+Step 5  Rule            left_boundary: In China, a double solid yellow center line prohibits crossing into the
+                        opposing side for overtaking or other lateral movement.
+Step 5  Rule            right_boundary: In China, a solid white lane-dividing line prohibits crossing it to
+                        change lanes.
+Step 6  change_left     prohibited: The double solid yellow center line prohibits crossing the left boundary.
+Step 6  change_right    prohibited: The solid white lane line prohibits crossing the right boundary.
+Step 6  go_straight     not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_left       not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_right      not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  u_turn          not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  enter_waiting_areanot_applicable: No left-turn waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         consistent
+Advice                  Stay within the current lane and do not cross either solid boundary. Movement-specific
+                        lane guidance and a stopping location are not visible; reassess when approaching an
+                        intersection.
+Model's summary         **Evaluating schema patterns**  I need to check if there are any patterns I should
+                        omit based on the schema. It seems there are no additional restrictions, but the
+                        requested matches need to follow a certain pattern. I’m trying to figure out the right
+                        approach while considering that I have ample time.    Regarding the image, it shows a
+                        solid lane divider and outer lane to the curb with a double yellow line on the left.
+                        There’s no intersection visible, and I'm not making any guesses about actions or
+                        movements.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4424, out 839, 11.95 s

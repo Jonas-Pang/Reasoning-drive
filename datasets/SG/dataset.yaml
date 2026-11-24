@@ -1,0 +1,21 @@
+# Images and labels of Singapore (see datasets/US/dataset.yaml for the fields). The image sources are the ones
+# GeoDrive-Bench uses for this country; download them from their pages (each has its own terms), then:
+#   python main.py label --data <root>/nuscenes_sg images init nuscenes_sg --source <the unpacked dataset>
+
+region: SG
+collections:
+  - name: nuscenes_sg
+    kind: images
+    reader: folder              # any folder of images; the frames of one sub-folder form one clip
+    dataset_name: nuScenes
+    source: "nuScenes (Motional), Singapore scenes, CAM_FRONT; CC BY-NC-SA 4.0 after registration"
+    download: https://www.nuscenes.org/nuscenes
+    default_source: data/extracted/nuscenes
+    candidates: datasets/SG/candidates_geodrive.csv   # frames with lane markings in GeoDrive-Bench (label geodrive)
+    access: registration
+    access_note: "register at https://www.nuscenes.org/sign-up, accept the terms, download the trainval CAM_FRONT keyframes (samples/CAM_FRONT); then point --source at it"
+
+split:
+  rule: 'sha1("6216:" + clip) mod 10 = 0 -> dev, else test'
+  per_marking_type: {dev: 6, test: 30}
+  degraded_test: 30

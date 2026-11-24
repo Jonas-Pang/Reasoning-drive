@@ -1,0 +1,56 @@
+carla_Town03_lane_change_mirrored | lane | Test A | gpt-6.1-sol
+---------------------------------------------------------------
+Step 1  Scene           An urban road runs beneath an elevated structure, with two visible lanes in each
+                        direction. My car is in the right-hand lane of the left-hand carriageway; the distant
+                        road end or next junction is not clearly visible. (lanes 2, mine 2, full)
+Step 2  Left            A continuous white line separates my lane from another lane travelling in the same
+                        direction on the left; no curb forms this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           Two continuous yellow lines run side by side on my right, separating my lane from the
+                        opposing carriageway; neither line has visible gaps, and there is no curb at this
+                        boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: Lane 2 of 2 agrees with a same-direction lane on the left and the opposing
+                        carriageway on the right. | roles: The white divider fits a lane-line role. The yellow
+                        pair occupies the centre-line position, but yellow centre lines are not standard UK
+                        road markings. | markings: No arrows, words, symbols, transverse lines or waiting
+                        areas are visible in my lane. | unseen: No distant junction layout or hidden lane-use
+                        marking has been inferred. | result: The geometry is consistent, but the yellow
+                        centre-line colour does not conform to standard UK centre-line markings.
+Step 5  Rule            left_boundary: A continuous white same-direction lane divider discourages unnecessary
+                        lane changes in the UK but does not by itself impose the double-white-centre-line
+                        crossing prohibition.
+Step 5  Rule            right_boundary: This yellow centre pair is not a prescribed UK double-white centre
+                        marking, so its appearance alone does not establish the UK statutory double-white-line
+                        crossing prohibition.
+Step 6  change_left     allowed: The white same-direction divider discourages unnecessary changes but does not
+                        itself prohibit crossing.
+Step 6  change_right    not_applicable: The fully visible yellow centre pair is nonstandard for the UK and
+                        does not establish a prescribed crossing restriction.
+Step 6  go_straight     not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_left       not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_right      not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  u_turn          not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or two-way left-turn lane is
+                          visible.
+Step 7  Reflect         Consistent: the nonstandard yellow centre pair is not treated as a UK double-white-
+                        line prohibition; marking-based permission does not imply that entering opposing
+                        traffic is safe.
+Advice                  Keep to the left-hand lane when practical and safe, avoiding unnecessary lane changes
+                        across the continuous divider. Do not enter the opposing carriageway; the unusual
+                        yellow centre markings do not provide reliable UK lane guidance, and no junction
+                        movement or stopping point is established here.
+Model's summary         **Determining lane rules**  I need to concisely clarify the lane markings in the UK.
+                        There's a solid white line on the left and a double solid yellow on the right.
+                        However, I can't infer US rules for this situation since the UK has its own
+                        guidelines. The left solid lane discourages changing lanes unnecessarily according to
+                        the highway code. For two-lane roads, I need to focus on the left markings and
+                        determine if any actions are allowed on the right.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4426, out 965, 17.8 s

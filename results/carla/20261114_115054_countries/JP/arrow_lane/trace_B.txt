@@ -1,0 +1,45 @@
+carla_Town03_arrow_lane_mirrored | lane | Test B | gpt-6.1-sol
+--------------------------------------------------------------
+Step 1  Scene           An urban road approaches a T-junction beneath an elevated structure. My car is in the
+                        right-hand lane of the two visible approach lanes. (lanes 2, mine 2, full)
+Step 2  Left            A single solid white line separates my lane from another approach lane on the left;
+                        there is no curb along this divider.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           A single solid white line runs along the right edge of my lane, with a narrow paved
+                        margin and a raised sidewalk curb beyond it.
+                        white solid, curb yes, edge_line, evidence full
+Step 3  Markings        arrow:right (full): A white arrow ahead has a stem bending right and a single right-
+                        pointing arrowhead.
+Step 4  Cross-check     position: The lane divider on the left and roadway edge on the right agree with my car
+                        occupying lane 2 of 2. | roles: The white divider is consistent with a same-direction
+                        lane boundary, and the white line beside the sidewalk is consistent with a roadway
+                        edge. | markings: The right-turn arrow agrees with the right-hand approach lane at the
+                        junction; no conflicting marking or waiting area is visible. | unseen: No stop line is
+                        clearly identifiable, so none is reported; no hidden wording or additional arrowhead
+                        is inferred. | result: consistent
+Step 5  Rule            left_boundary: This white lane boundary separates lanes and does not itself prohibit
+                        changing left under the supplied passage. [JP-別表第五車線境界線（２０６）] "Indicates the boundary
+                        between lanes on a section of road with four or more lanes."
+Step 5  Rule            right_boundary: No supplied passage specifically governs this edge line or curb; the
+                        raised physical edge precludes leaving the roadway across this side.
+Step 5  Rule            arrow:right: The arrow indicates that this lane permits a right turn, restricting its
+                        exit movement to that direction. [JP-別表第五進行方向（２０４）] "Indicates a direction in which
+                        vehicles may proceed."
+Step 6  change_left     allowed: The white lane divider identifies a lane boundary, without a supplied
+                        prohibition on crossing it.
+Step 6  change_right    prohibited: The raised curb physically bounds the roadway on the right.
+Step 6  go_straight     prohibited: The right-only arrow does not permit proceeding straight.
+Step 6  turn_left       prohibited: The right-only arrow does not permit turning left.
+Step 6  turn_right      allowed: The right-pointing arrow permits turning right.
+Step 6  u_turn          prohibited: The right-only arrow does not indicate a U-turn.
+Step 6  enter_waiting_areanot_applicable: No marked waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         consistent
+Advice                  Use this lane for a right turn; another movement requires selecting an appropriately
+                        marked lane before the junction, after checking that changing lanes is safe. Do not
+                        cross the right curb, and approach cautiously because no stop line is clearly
+                        identifiable.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:right'], missed []), actions None, unsafe [], citation in_pack_not_accepted,
+                        contradictions []
+Tokens                  in 7122, out 981, 16.71 s

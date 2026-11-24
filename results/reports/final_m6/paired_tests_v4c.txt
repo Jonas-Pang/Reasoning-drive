@@ -1,0 +1,19 @@
+{'A': 289, 'B': 289, 'C': 289} {'A': ['20261117_182216_laneA_CN', '20261117_183059_laneA_US', '20261117_183434_laneA_UK', '20261117_183617_laneA_IN', '20261117_184713_laneA_CN', '20261117_185029_laneA_US', '20261117_185904_laneA_UK', '20261117_190316_laneA_IN'], 'B': ['20261117_183639_laneB_CN', '20261117_184053_laneB_US', '20261117_184432_laneB_UK', '20261117_184619_laneB_IN', '20261117_193557_laneB_CN', '20261117_195730_laneB_US', '20261117_200823_laneB_UK', '20261117_201049_laneB_IN', '20261117_211411_laneB_UK', '20261117_212459_laneB_IN', '20261117_215523_laneB_UK', '20261117_215526_laneB_IN'], 'C': ['20261117_201113_laneC_CN', '20261117_201525_laneC_US', '20261117_201909_laneC_UK', '20261117_202054_laneC_IN', '20261117_212606_laneC_CN', '20261117_213842_laneC_US', '20261117_214856_laneC_UK', '20261117_215321_laneC_IN', '20261117_215528_laneC_CN', '20261117_215531_laneC_US', '20261117_215534_laneC_UK', '20261117_215536_laneC_IN']}
+A vs B key4: n=289 right_only_A=30 right_only_B=13 p=0.0137 A=0.644 B=0.585
+A vs B lines: n=289 right_only_A=27 right_only_B=17 p=0.1742 A=0.512 B=0.478
+A vs B acts: n=289 right_only_A=22 right_only_B=14 p=0.2430 A=0.602 B=0.574
+   CN n=124 key4 A=0.581 B=0.524 onlyA=10 onlyB=3 p=0.092
+   US n=108 key4 A=0.731 B=0.667 onlyA=11 onlyB=4 p=0.118
+   UK n=48 key4 A=0.562 B=0.562 onlyA=6 onlyB=6 p=1.000
+   IN n=9 key4 A=0.889 B=0.556 onlyA=3 onlyB=0 p=0.250
+A vs C key4: n=289 right_only_A=23 right_only_C=15 p=0.2559 A=0.644 C=0.616
+A vs C lines: n=289 right_only_A=15 right_only_C=19 p=0.6076 A=0.512 C=0.526
+A vs C acts: n=289 right_only_A=13 right_only_C=17 p=0.5847 A=0.602 C=0.616
+   CN n=124 key4 A=0.581 C=0.556 onlyA=7 onlyC=4 p=0.549
+   US n=108 key4 A=0.731 C=0.722 onlyA=9 onlyC=8 p=1.000
+   UK n=48 key4 A=0.562 C=0.542 onlyA=4 onlyC=3 p=1.000
+   IN n=9 key4 A=0.889 C=0.556 onlyA=3 onlyC=0 p=0.250
+A CN 124 key4 0.581 lines 0.452 acts 0.548 unsafe 35
+A US 108 key4 0.731 lines 0.63 acts 0.741 unsafe 5
+A UK 48 key4 0.562 lines 0.375 acts 0.438 unsafe 3
+A IN 9 key4 0.889 lines 0.667 acts 0.556 unsafe 1

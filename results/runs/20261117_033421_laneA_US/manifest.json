@@ -1,0 +1,319 @@
+{
+  "run_id": "20261117_033421_laneA_US",
+  "task": "lane",
+  "created_utc": "2026-11-17T08:34:21Z",
+  "tool": "reasoning_drive 0.1",
+  "git_commit": "",
+  "code_sha": "7c7cf8531f7d0061",
+  "marking_code_sha": "208c018d27817576",
+  "test": "A",
+  "region": "US",
+  "mock": false,
+  "use_cache": true,
+  "repeats": 1,
+  "n_items": 108,
+  "rules_region": null,
+  "settings": {
+    "base_url": "http://127.0.0.1:11434",
+    "model": "gemma4:31b",
+    "reasoning_effort": null,
+    "temperature": 0,
+    "image_detail": null,
+    "max_output_tokens": 6000,
+    "instruction_role": "developer",
+    "store": false,
+    "provider": "ollama",
+    "think": false,
+    "num_ctx": 16384,
+    "seed": 6216,
+    "num_thread": 2,
+    "quantization": "Q4_K_M",
+    "model_digest": "17ba34c06c801ba22f6047bab21ced9429c6d43e0e42ecf339b0f3e5a61e8d97",
+    "parameter_size": "30.7B",
+    "engine": "ollama 0.33.0"
+  },
+  "prompt_hashes": {
+    "instructions": "eea4bfe819dd0eb5",
+    "user_text": "74e5823acc8c746f",
+    "schema": "84e99a1356d325aa",
+    "shared_parts": "fceec2a81945bd5a",
+    "rules_file": "2029650fa895a286",
+    "prompt_dir": "prompts/lane_v3"
+  },
+  "label_sets": {
+    "bdd100k": "4aa50a5060d1d067"
+  },
+  "split": "test",
+  "split_version": 2,
+  "protocol": {
+    "frozen": true,
+    "matches": true,
+    "frozen_utc": "2026-11-17T07:32:43Z"
+  },
+  "again": false,
+  "items": [
+    "bdd100k_val__c6dcc1a9-0fa80e62",
+    "bdd100k_val__bdf6ab8b-3ebe8356",
+    "bdd100k_val__c300fd4b-8ff92c2d",
+    "bdd100k_val__c4b3ce3d-cdc056ce",
+    "bdd100k_val__c561cb9a-aafc0bad",
+    "bdd100k_val__b263f57d-1ccf6e51",
+    "bdd100k_val__bfe2b817-505676ef",
+    "bdd100k_val__c1627cd8-d8c10968",
+    "bdd100k_val__c1589305-200e315b",
+    "bdd100k_val__bcbf328d-953430de",
+    "bdd100k_val__c94d8213-1f593522",
+    "bdd100k_val__b91cdc5d-bce994ce",
+    "bdd100k_val__c264943c-5e493c9f",
+    "bdd100k_val__b306fb3f-f02e46cc",
+    "bdd100k_val__bfa92b30-f12f3535",
+    "bdd100k_val__b8fe9f2b-d63131a3",
+    "bdd100k_val__c0e7271a-a3c8d55f",
+    "bdd100k_val__be22a1e1-cbcd82a6",
+    "bdd100k_val__b1f0efd9-e900c6e5",
+    "bdd100k_val__bdc0dc52-b4d05890",
+    "bdd100k_val__b5042634-1034573c",
+    "bdd100k_val__b59e50fa-ca034dd0",
+    "bdd100k_val__c1b3582d-b9c87c82",
+    "bdd100k_val__bbfe3b4f-5137ff9f",
+    "bdd100k_val__c3bb4925-f78e285a",
+    "bdd100k_val__c31d9531-694298f0",
+    "bdd100k_val__c9283177-4ac407c3",
+    "bdd100k_val__bbf48d08-b6a11dd8",
+    "bdd100k_val__be926190-5293afb9",
+    "bdd100k_val__c47fb4ff-92db68d6",
+    "bdd100k_val__b928271b-fe5cc5d1",
+    "bdd100k_val__b5cd5f72-32232751",
+    "bdd100k_val__bbf0f5d7-ea2f1cc3",
+    "bdd100k_val__b20b69d2-e31380a7",
+    "bdd100k_val__c909551e-fb24caeb",
+    "bdd100k_val__bab692c9-4d1f2bdd",
+    "bdd100k_val__b1f4491b-dd8dfed5",
+    "bdd100k_val__c4e97226-7be7eef5",
+    "bdd100k_val__c07733d0-aebb8786",
+    "bdd100k_val__bd656105-ed6f8161",
+    "bdd100k_val__c121b93f-b2ee73d4",
+    "bdd100k_val__b4542860-0b880bb4",
+    "bdd100k_val__b5661732-3684230b",
+    "bdd100k_val__bd8d420d-ec34c634",
+    "bdd100k_val__be60191c-2dea5114",
+    "bdd100k_val__bd65dd37-4c3cdf2d",
+    "bdd100k_val__c2021c8c-474a8eda",
+    "bdd100k_val__bd338426-4b27de63",
+    "bdd100k_val__b3060c96-d2391b61",
+    "bdd100k_val__c173438f-01b0b013",
+    "bdd100k_val__c308561a-1b698bb4",
+    "bdd100k_val__c8a7a62d-e58e7297",
+    "bdd100k_val__b2fbf86d-d5de82a4",
+    "bdd100k_val__b80018ef-3a620af0",
+    "bdd100k_val__c66d2237-f9c0a1ef",
+    "bdd100k_val__c6ed8102-2bbcbcc2",
+    "bdd100k_val__c90c8198-f73aed79",
+    "bdd100k_val__bb8dba97-3537805c",
+    "bdd100k_val__c68f8fd2-61681484",
+    "bdd100k_val__be0a188d-c47bac51",
+    "bdd100k_val__c100db13-71b423e5",
+    "bdd100k_val__b4d18d1a-193e24a1",
+    "bdd100k_val__c65c2462-96e8ae92",
+    "bdd100k_val__c6d77a40-03423c96",
+    "bdd100k_val__ba2db972-f29458c8",
+    "bdd100k_val__c5588233-b03622f3",
+    "bdd100k_val__bc9b5bfb-51ebcf39",
+    "bdd100k_val__bb289fdb-4bc01501",
+    "bdd100k_val__c4ee0cc4-b7af9602",
+    "bdd100k_val__b7935597-13c4b9dd",
+    "bdd100k_val__c2fb790e-4cd5a630",
+    "bdd100k_val__b84146a1-a5f588ef",
+    "bdd100k_val__ba9f6c98-2a75a096",
+    "bdd100k_val__c3026ac7-8105e9a9",
+    "bdd100k_val__b5f84825-c97df380",
+    "bdd100k_val__bff4bb8b-152c6105",
+    "bdd100k_val__c85416bd-db975d94",
+    "bdd100k_val__c9b099e4-6ab2e4f4",
+    "bdd100k_val__b7aa329e-25d68dec",
+    "bdd100k_val__b54c065e-8b13cfe7",
+    "bdd100k_val__bd354e59-e5a9e8c6",
+    "bdd100k_val__c02d18db-f5278de0",
+    "bdd100k_val__c1b5a91c-9e402e78",
+    "bdd100k_val__c28b60fb-a5e9b955",
+    "bdd100k_val__b49d6c0d-457e13b3",
+    "bdd100k_val__be839b4c-fba3ea45",
+    "bdd100k_val__b9429f07-33ae3ff1",
+    "bdd100k_val__ca146661-7f70d0c4",
+    "bdd100k_val__b1c66a42-6f7d68ca",
+    "bdd100k_val__b65fd3df-87ed965a",
+    "bdd100k_val__b48c7b5f-800d31b4",
+    "bdd100k_val__c4057c0c-000a6aaf",
+    "bdd100k_val__c15c29a5-74788f46",
+    "bdd100k_val__c0efbe92-2ee3e529",
+    "bdd100k_val__b577827c-28fc9b0d",
+    "bdd100k_val__bc19c993-c0a0f85f",
+    "bdd100k_val__c6e1c974-906461f4",
+    "bdd100k_val__c07733d0-7525eae7",
+    "bdd100k_val__c107c2f1-b2b8fff0",
+    "bdd100k_val__b321c6b6-ab603d42",
+    "bdd100k_val__c8e01103-9ff8595d",
+    "bdd100k_val__c6dca574-6e641016",
+    "bdd100k_val__c3321660-e6b60390",
+    "bdd100k_val__b7041acc-6de39959",
+    "bdd100k_val__c4b3ab99-a4a09eeb",
+    "bdd100k_val__c068a67b-03b6e200",
+    "bdd100k_val__bd3bd3ab-8e38f822",
+    "bdd100k_val__c90b5398-8d49f2f2"
+  ],
+  "config": {
+    "version": "3",
+    "mock": false,
+    "api": {
+      "provider": "ollama",
+      "base_url": "http://127.0.0.1:11434",
+      "api_key_env": "OPENAI_API_KEY",
+      "model": "gemma4:31b",
+      "reasoning_effort": null,
+      "temperature": 0,
+      "image_detail": null,
+      "max_output_tokens": 2000,
+      "instruction_role": "developer",
+      "store": false,
+      "timeout_s": 900,
+      "max_retries": 2,
+      "parallel": 3,
+      "price_per_million_tokens": {
+        "gemma4:31b": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "seed": 6216,
+      "num_ctx": 16384,
+      "think": false,
+      "num_thread": 2,
+      "protocol_file": "configs/lane_protocol__hpg_gemma4_31b.json",
+      "profile": "hpg_gemma4_31b",
+      "connect_url": "http://127.0.0.1:11434",
+      "engine": "ollama 0.33.0",
+      "model_digest": "17ba34c06c801ba22f6047bab21ced9429c6d43e0e42ecf339b0f3e5a61e8d97",
+      "parameter_size": "30.7B",
+      "quantization": "Q4_K_M",
+      "api_key_set": false
+    },
+    "run": {
+      "test": "A",
+      "region": "US",
+      "split": "dev",
+      "repeats": 1,
+      "limit": 0,
+      "marking_types": [],
+      "order_seed": 6216
+    },
+    "datasets_root": "",
+    "workspaces": [
+      "UF",
+      "bdd100k",
+      "culane",
+      "mapdr_ws",
+      "lingoqa_ws",
+      "idd_ws"
+    ],
+    "data_policy": {
+      "send_to_api": [
+        "own_video",
+        "bdd100k",
+        "culane",
+        "mapdr",
+        "lingoqa",
+        "idd"
+      ]
+    },
+    "prompt": {
+      "dir": "prompts/v4",
+      "box_color_rgb": [
+        0,
+        229,
+        255
+      ],
+      "box_width": 3,
+      "box_margin": 6,
+      "jpeg_quality": 92,
+      "restrict_rule_ids_in_schema": false
+    },
+    "regions": {
+      "CN": {
+        "name": "China",
+        "name_zh": "中国",
+        "rule_region": "CN",
+        "rule_text": "text_en",
+        "rules_title": "GB 5768.3-2025 Road traffic signs and markings, Part 3: Road traffic markings (English translation by the project)",
+        "rules_file": "regulations/CN/passages_marking.json",
+        "driving_side": "right",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/CN/passages_marking.json",
+          "regulations/CN/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "CN"
+        ]
+      },
+      "IN": {
+        "name": "India",
+        "name_zh": "印度",
+        "rule_region": "IN",
+        "rule_text": "text_en",
+        "rules_title": "The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))",
+        "rules_file": "regulations/IN/passages_lane.yaml",
+        "driving_side": "left",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/IN/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "IN"
+        ]
+      },
+      "UK": {
+        "name": "the United Kingdom",
+        "name_zh": "英国",
+        "rule_region": "UK",
+        "rule_text": "text_en",
+        "rules_title": "The Highway Code (rules 127-143 and Road markings) and the Traffic Signs Regulations and General Directions 2016, Schedule 9 Part 6 (regulatory road markings) and Schedule 11 Part 4 (advisory road markings)",
+        "rules_file": "regulations/UK/passages_lane.yaml",
+        "driving_side": "left",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/UK/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "UK"
+        ]
+      },
+      "US": {
+        "name": "the United States",
+        "name_zh": "美国",
+        "rule_region": "US",
+        "rule_text": "text_en",
+        "rules_title": "MUTCD 11th Edition (December 2023), Part 3 Markings",
+        "rules_file": "regulations/US/passages_marking.json",
+        "driving_side": "right",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/US/passages_marking.json",
+          "regulations/US/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "US"
+        ]
+      }
+    },
+    "lane": {
+      "prompt_dir": "prompts/lane_v3",
+      "max_output_tokens": 6000,
+      "control_region": {
+        "CN": "US",
+        "US": "CN",
+        "UK": "IN",
+        "IN": "UK"
+      }
+    }
+  }
+}

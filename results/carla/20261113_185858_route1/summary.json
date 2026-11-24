@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "route": "route1",
+    "map": "Town03",
+    "weather": "ClearNoon",
+    "night": false,
+    "prompt": "prompts/v3",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "reasoning_summary": "auto",
+    "experiments": {
+      "A": [
+        "US",
+        "A"
+      ],
+      "B": [
+        "US",
+        "B"
+      ],
+      "C": [
+        "CN",
+        "B"
+      ]
+    },
+    "drive_with": "B",
+    "seed": 101,
+    "started": "20261113_185858",
+    "mock": false,
+    "loop_m": 3015
+  },
+  "per_experiment": {
+    "A": {
+      "answers": 8,
+      "asked_now": 4,
+      "reused": 4,
+      "cost_usd": 0.0339,
+      "output1_correct": 8,
+      "output2_scored": 7,
+      "output2_correct": 6,
+      "unsafe": 1,
+      "over_cautious": 0,
+      "contested_disagree": 0,
+      "unscored_cells": 0,
+      "citations": {},
+      "wrong": [
+        "stop 2 single solid yellow line on the left / line: cross_line said allowed, label prohibited"
+      ]
+    },
+    "B": {
+      "answers": 8,
+      "asked_now": 4,
+      "reused": 4,
+      "cost_usd": 0.0457,
+      "output1_correct": 8,
+      "output2_scored": 7,
+      "output2_correct": 7,
+      "unsafe": 0,
+      "over_cautious": 0,
+      "contested_disagree": 1,
+      "unscored_cells": 0,
+      "citations": {
+        "accepted": 8
+      },
+      "wrong": [
+        "stop 6 junction approach: left-turn arrow and the line to the right lane / arrow: u_turn said prohibited, label allowed (contested cell)"
+      ]
+    },
+    "C": {
+      "answers": 8,
+      "asked_now": 4,
+      "reused": 4,
+      "cost_usd": 0.0419,
+      "output1_correct": 8,
+      "output2_scored": 7,
+      "output2_correct": 7,
+      "unsafe": 0,
+      "over_cautious": 0,
+      "contested_disagree": 0,
+      "unscored_cells": 3,
+      "citations": {
+        "accepted": 7,
+        "none_needed": 1
+      },
+      "wrong": []
+    }
+  },
+  "closed_loop": {
+    "stops": 7,
+    "intent_prohibited": 4,
+    "prohibited_intent_blocked": 4,
+    "prohibited_intent_allowed": 0
+  },
+  "cost_usd": 0.1215
+}

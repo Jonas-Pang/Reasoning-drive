@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reasoning Driving · Project</title>
+<link rel="stylesheet" href="/static/demo.css">
+<link rel="stylesheet" href="/static/project.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">Reasoning Driving <span class="muted">· <span data-t="project"></span></span></div>
+  <nav class="seg" id="tabs">
+    <button data-tab="overview" data-t="tab_overview"></button>
+    <button data-tab="results" data-t="tab_results"></button>
+    <button data-tab="regulations" data-t="tab_regulations"></button>
+    <button data-tab="carla" data-t="tab_carla"></button>
+  </nav>
+  <span class="grow"></span>
+  <a href="/" class="small" data-t="link_demo"></a>
+  <a href="/review" class="small" data-t="link_review"></a>
+  <button id="lang-btn"></button>
+</header>
+
+<section class="page" id="p-overview">
+  <div class="grid2">
+    <div class="card"><h3 data-t="ov_settings"></h3><table id="ov-settings"></table>
+      <p class="small muted" data-t="ov_settings_note"></p></div>
+    <div class="card"><h3 data-t="ov_layout"></h3><pre class="tree" id="ov-tree"></pre></div>
+  </div>
+  <div class="card"><h3 data-t="ov_countries"></h3><table id="ov-countries"></table>
+    <p class="small muted" data-t="ov_countries_note"></p></div>
+  <div class="card"><h3 data-t="ov_datasets"></h3><table id="ov-datasets"></table></div>
+</section>
+
+<section class="page hidden" id="p-results">
+  <div class="row">
+    <label class="inline"><span data-t="kind"></span> <select id="r-kind"><option value="" data-t="all"></option></select></label>
+    <span class="muted small" id="r-count"></span>
+    <span class="grow"></span>
+    <span class="muted small" data-t="r_hint"></span>
+  </div>
+  <div class="card scroll"><table id="r-table" class="runs"></table></div>
+  <div id="r-eval"></div>
+</section>
+
+<section class="page hidden" id="p-regulations">
+  <div class="card"><h3 data-t="rg_countries"></h3><table id="rg-countries"></table><div id="rg-problems" class="small"></div></div>
+  <div class="grid2">
+    <div class="card">
+      <h3 data-t="rg_new"></h3>
+      <p class="small muted" data-t="rg_new_note"></p>
+      <div class="row"><label class="inline"><span data-t="rg_pdf"></span> <select id="rg-file"></select></label>
+        <button id="rg-upload-btn" data-t="rg_upload"></button><input type="file" id="rg-upload" accept="application/pdf" hidden></div>
+      <div class="row"><label class="inline"><span data-t="rg_code"></span> <input id="rg-code" size="5" placeholder="UK"></label>
+        <label class="inline"><span data-t="rg_name"></span> <input id="rg-name" size="22" placeholder="the United Kingdom"></label>
+        <label class="inline"><span data-t="rg_side"></span> <select id="rg-side"><option value="right" data-t="right"></option><option value="left" data-t="left"></option></select></label></div>
+      <div class="row"><label class="inline"><span data-t="rg_title"></span> <input id="rg-title" size="40"></label></div>
+      <div class="row"><label class="inline"><span data-t="rg_pages"></span> <input id="rg-first" size="4" placeholder="1"> – <input id="rg-last" size="4"></label>
+        <label class="check small"><input type="checkbox" id="rg-all"> <span data-t="rg_all"></span></label>
+        <label class="check small"><input type="checkbox" id="rg-real"> <span data-t="rg_real"></span></label></div>
+      <div class="row"><button id="rg-estimate" data-t="rg_estimate"></button><button id="rg-extract" class="primary" data-t="rg_extract"></button></div>
+      <div id="rg-est" class="small"></div>
+    </div>
+    <div class="card"><h3 data-t="jobs"></h3><div id="rg-jobs" class="jobs"></div></div>
+  </div>
+  <div class="card"><h3><span data-t="rg_draft"></span> <select id="rg-draft-code"></select>
+    <button id="rg-accept" class="primary" data-t="rg_accept"></button></h3>
+    <div id="rg-draft-log" class="small muted"></div><div class="scroll"><table id="rg-draft"></table></div></div>
+</section>
+
+<section class="page hidden" id="p-carla">
+  <div class="grid2">
+    <div class="card">
+      <h3 data-t="ca_server"></h3><table id="ca-server"></table>
+      <div class="row"><button id="ca-start" data-t="ca_start"></button></div>
+      <div class="row"><label class="inline"><span data-t="ca_route"></span> <select id="ca-route"></select></label>
+        <label class="check small"><input type="checkbox" id="ca-mock" checked> <span data-t="ca_mock"></span></label>
+        <label class="check small"><input type="checkbox" id="ca-preview"> <span data-t="ca_preview"></span></label>
+        <button id="ca-run" class="primary" data-t="ca_run"></button></div>
+      <div id="ca-route-stops" class="small"></div>
+      <p class="small muted" data-t="ca_note"></p>
+    </div>
+    <div class="card"><h3 data-t="jobs"></h3><div id="ca-jobs" class="jobs"></div></div>
+  </div>
+  <div id="ca-runs"></div>
+</section>
+
+<div id="toast" class="toast hidden"></div>
+<script src="/static/project.js"></script>
+</body>
+</html>

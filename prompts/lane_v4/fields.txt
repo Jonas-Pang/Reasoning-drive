@@ -1,0 +1,32 @@
+How to fill in the answer:
+- scene: one or two sentences: the road, what is ahead, where my car is.
+- lane_count: the number of lanes of my direction near the bottom of the photo, or null if it cannot be counted. ego_lane_index: my lane counted from the left among them (1 = leftmost), or null.
+- scene_evidence: "full" if both numbers can be counted; "partial" if one of them is uncertain; "insufficient" if neither can.
+- left_boundary and right_boundary:
+  - observation: what you see on this side, first in Photo 1 and then in Photo 2 (the line next to my car and the line further ahead), written before the attributes.
+  - color: white, yellow, other (such as orange in a work zone), or none (no painted line).
+  - pattern: solid; dashed (broken: long dashes with gaps); dotted (short dashes close together, such as a dotted lane line, a lane-change line, a dense broken edge line or a line extension through an intersection); double_solid; double_dashed; solid_dashed (a solid and a broken line side by side); none (no painted line).
+  - near_line: only for solid_dashed: which of the two lines is nearer my lane, "solid" or "dashed"; otherwise "not_applicable".
+  - curb: "yes" if a raised curb, a barrier or another physical edge forms this side of my lane; otherwise "no".
+  - role: lane_line (between my lane and another lane of my direction); center_line (between my lane and traffic in the opposite direction, including the edges of a two-way left-turn lane); edge_line (the edge of the roadway, or the boundary to a shoulder, a bicycle or non-motorized lane, or parking); special_lane_line (the boundary of a bus, high-occupancy, tidal, reversible or similar special lane); other; unknown.
+  - evidence: "full" if the colour, the pattern and whether there is a curb can all be seen; "partial" if one of them is hidden; "insufficient" if this side cannot be seen.
+- lane_markings: one entry per marking: "observation" (what you see, and in which photo), "marking" (one of the listed values) and "evidence" ("full" if it can be read completely, "partial" if part of it is hidden, "insufficient" if it cannot be read). The values:
+  arrow:<directions> for a lane-use arrow (merge_left or merge_right: my lane ends and its traffic merges; two_way_left: the pair of opposite left-turn arrows of a two-way left-turn lane that my car is in);
+  no_turn:<movement> for a prohibited-movement marking (a yellow arrow with a yellow X);
+  text:only, text:bus (BUS ONLY, 公交), text:hov (HOV, 多乘员), text:stop, text:keep_clear (KEEP CLEAR, DO NOT BLOCK), text:speed_limit, text:other;
+  symbol:hov_diamond, symbol:bike, symbol:other;
+  area:left_turn_waiting (an area marked by two parallel broken lines with left-turn arrows, ahead of my lane and reaching into the intersection), area:two_way_left_turn_lane (a two-way left-turn lane directly to the left of my lane), area:grid (a grid, box or KEEP CLEAR area), area:channelizing (chevrons or diagonal lines);
+  line:stop_line, line:yield_line (yield triangles, or two broken lines with an inverted triangle), line:stop_yield (two solid lines with the character 停), line:crosswalk.
+- cross_check: the answers to the questions of step 4 (close_up first).
+- element_rules: one entry for each boundary and for each marking you listed: "element" (left_boundary, right_boundary, or the marking value), "rule_id" ({CITATION}) and "meaning" (what the rule allows or prohibits for my car, in one sentence).
+- action_reasons: step 6, one short reason per action (the same seven keys as actions).
+- decision_check: step 7 in one sentence.
+- actions: what the markings mean for my car in my lane. The seven actions:
+  - change_left, change_right: leaving my lane across its left or right boundary in the visible stretch (a lane change, overtaking, or moving onto whatever lies beyond: another lane, a shoulder, a curb).
+  - go_straight, turn_left, turn_right, u_turn: the movement out of my lane at its end (the next intersection).
+  - enter_waiting_area: entering, from my lane, a marked place to wait for a left turn: a left-turn waiting area ahead of my lane, or a two-way left-turn lane next to it.
+  Special lanes: my car is an ordinary car (not a bus, occupancy unknown) and the reserved times usually cannot be seen, so a bus, high-occupancy, tidal or similar special lane across a boundary counts as reserved: changing into it is "prohibited"; when my own lane is the special lane (its words or symbols are in my lane), leaving it follows the line type. Which markings govern which actions: a boundary governs only the change action of its side; arrows and prohibited-movement markings in my lane govern only the four movements (an arrow allows the movements it shows); a left-turn waiting area or a two-way left-turn lane governs enter_waiting_area (and turn_left when my car is in a two-way left-turn lane); apart from text:stop and line:stop_yield (which turn the allowed movements into stop_first), words, symbols, grids and lines across the lane govern none of the seven, but belong in the advice.
+  For each action: "allowed" = the rule for what you saw permits it, or only discourages it; "stop_first" = permitted only after a full stop: a STOP word (text:stop) or a stop-and-yield line with the character 停 (line:stop_yield) in my lane turns every movement my lane allows into stop_first; "prohibited" = the rule for what you saw forbids it or restricts it; "not_determined" = the feature that decides it is hidden (only with partial or insufficient evidence); "not_applicable" = nothing in view governs it (a side with no painted line and no curb; for turn_left, turn_right and u_turn: no arrow and no prohibited-movement marking in my lane; no waiting area and no two-way left-turn lane). go_straight with no arrow in my lane is "allowed" (unless my lane ends in a merge or is a two-way left-turn lane): nothing restricts carrying on straight along my lane, and the boundaries do not govern it (a solid line that prohibits a lane change does not prohibit going straight); an arrow in my lane decides it as usual (an arrow that does not show straight ahead prohibits it). With full evidence, every governed action is allowed or prohibited. Markings decide the actions; signs and signals do not change them, but mention them in the advice.
+- advice: one or two sentences for the driver of my car: which lane to use for each movement, whether a lane change is needed or prohibited, where to stop.
+
+Answer only with JSON that matches the schema.

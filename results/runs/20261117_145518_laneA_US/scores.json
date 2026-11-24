@@ -1,0 +1,7248 @@
+{
+  "summary": {
+    "n": 108,
+    "lane": {
+      "correct": 40,
+      "n": 104,
+      "acc": 0.385
+    },
+    "output2": {
+      "correct": 76,
+      "n": 101,
+      "acc": 0.752
+    },
+    "lane_count": {
+      "correct": 61,
+      "n": 101,
+      "acc": 0.604
+    },
+    "ego_index": {
+      "correct": 74,
+      "n": 103,
+      "acc": 0.718
+    },
+    "markings_exact": {
+      "correct": 87,
+      "n": 101,
+      "acc": 0.861
+    },
+    "lane_core": {
+      "correct": 41,
+      "n": 104,
+      "acc": 0.394
+    },
+    "markings_core_exact": {
+      "correct": 91,
+      "n": 101,
+      "acc": 0.901
+    },
+    "failed": 0,
+    "left_boundary": {
+      "correct": 70,
+      "n": 103,
+      "acc": 0.68
+    },
+    "left_color": {
+      "correct": 99,
+      "n": 103,
+      "acc": 0.961
+    },
+    "left_pattern": {
+      "correct": 79,
+      "n": 103,
+      "acc": 0.767
+    },
+    "left_curb": {
+      "correct": 93,
+      "n": 103,
+      "acc": 0.903
+    },
+    "left_role": {
+      "correct": 91,
+      "n": 103,
+      "acc": 0.883
+    },
+    "right_boundary": {
+      "correct": 64,
+      "n": 102,
+      "acc": 0.627
+    },
+    "right_color": {
+      "correct": 102,
+      "n": 102,
+      "acc": 1.0
+    },
+    "right_pattern": {
+      "correct": 82,
+      "n": 102,
+      "acc": 0.804
+    },
+    "right_curb": {
+      "correct": 81,
+      "n": 102,
+      "acc": 0.794
+    },
+    "right_role": {
+      "correct": 76,
+      "n": 102,
+      "acc": 0.745
+    },
+    "both_boundaries": {
+      "correct": 42,
+      "n": 103,
+      "acc": 0.408
+    },
+    "markings_added": 6,
+    "markings_missed": 12,
+    "markings_precision": 0.714,
+    "markings_recall": 0.556,
+    "added_by_token": {
+      "arrow:merge_right": 2,
+      "text:only": 1,
+      "arrow:straight_left": 1,
+      "symbol:bike": 1,
+      "text:bus": 1
+    },
+    "added_transverse": 0,
+    "added_by_evidence": {
+      "full": 6
+    },
+    "missed_by_token": {
+      "line:stop_line": 5,
+      "arrow:straight_right": 2,
+      "text:only": 1,
+      "arrow:straight": 1,
+      "arrow:right": 1,
+      "text:stop": 1,
+      "text:other": 1
+    },
+    "actions": {
+      "change_left": {
+        "n": 93,
+        "correct": 87
+      },
+      "change_right": {
+        "n": 51,
+        "correct": 35
+      },
+      "go_straight": {
+        "n": 9,
+        "correct": 8
+      },
+      "turn_left": {
+        "n": 9,
+        "correct": 6
+      },
+      "turn_right": {
+        "n": 10,
+        "correct": 6
+      },
+      "u_turn": {
+        "n": 9,
+        "correct": 5
+      }
+    },
+    "contested": {
+      "n": 167,
+      "correct": 146
+    },
+    "unsafe_errors": 2,
+    "unsafe_by_action": {
+      "turn_left": 1,
+      "change_right": 1
+    },
+    "over_cautious_errors": 11,
+    "contested_unsafe_errors": 5,
+    "prohibited_recall": {
+      "correct": 58,
+      "n": 67,
+      "acc": 0.866
+    },
+    "extra_decisions": 24,
+    "citations": {},
+    "citation_ids_with_brackets": 0,
+    "inconsistent_answers": 25,
+    "consistency_kinds": {
+      "u_turn decided without an arrow or prohibited-movement marking": 16,
+      "rightmost lane, but a lane line on the right": 4,
+      "leftmost lane, but a lane line on the left": 3,
+      "go_straight, turn_left, turn_right, u_turn decided without an arrow or prohibited-movement marking": 2,
+      "go_straight, turn_right decided without an arrow or prohibited-movement marking": 1,
+      "change_right decided": 1
+    },
+    "boundary_evidence": {
+      "same": 166,
+      "unsupported_guess": 50
+    },
+    "requests": 108,
+    "errors": 0,
+    "readable": {
+      "n": 108,
+      "of": 108
+    },
+    "cached": 0,
+    "usage": {
+      "input_tokens": 375300,
+      "cached_input_tokens": 0,
+      "output_tokens": 70486
+    },
+    "cost_usd": 0.0,
+    "latency_s": {
+      "mean": 13.26,
+      "max": 48.65
+    },
+    "elapsed_s": 599.3
+  },
+  "per_image": {
+    "bdd100k_val__c6dcc1a9-0fa80e62": {
+      "image_id": "bdd100k_val__c6dcc1a9-0fa80e62",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c300fd4b-8ff92c2d": {
+      "image_id": "bdd100k_val__c300fd4b-8ff92c2d",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true,
+          "change_right": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bdf6ab8b-3ebe8356": {
+      "image_id": "bdd100k_val__bdf6ab8b-3ebe8356",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b263f57d-1ccf6e51": {
+      "image_id": "bdd100k_val__b263f57d-1ccf6e51",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": null,
+          "right": null
+        },
+        "role": {},
+        "markings": null,
+        "lane": null,
+        "lane_core": null,
+        "actions": {
+          "change_left": true,
+          "turn_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [
+          "change_right"
+        ],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "insufficient",
+            "full"
+          ],
+          "right": [
+            "insufficient",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c561cb9a-aafc0bad": {
+      "image_id": "bdd100k_val__c561cb9a-aafc0bad",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [],
+          "missed": [
+            "text:only"
+          ],
+          "added_evidence": {},
+          "label": [
+            "arrow:straight",
+            "text:only"
+          ],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": true
+        },
+        "contested": {
+          "change_left": false,
+          "change_right": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [
+          "change_left"
+        ],
+        "prohibited": {
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c4b3ce3d-cdc056ce": {
+      "image_id": "bdd100k_val__c4b3ce3d-cdc056ce",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bfe2b817-505676ef": {
+      "image_id": "bdd100k_val__bfe2b817-505676ef",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c1589305-200e315b": {
+      "image_id": "bdd100k_val__c1589305-200e315b",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [],
+          "missed": [
+            "line:stop_line"
+          ],
+          "added_evidence": {},
+          "label": [
+            "line:crosswalk",
+            "line:stop_line"
+          ],
+          "answer": [
+            "line:crosswalk"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "change_left": false,
+          "change_right": false,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c1627cd8-d8c10968": {
+      "image_id": "bdd100k_val__c1627cd8-d8c10968",
+      "score": {
+        "scene": {
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [],
+          "missed": [
+            "arrow:straight"
+          ],
+          "added_evidence": {},
+          "label": [
+            "arrow:straight",
+            "text:only"
+          ],
+          "answer": [
+            "text:only"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "go_straight": false,
+          "turn_left": false,
+          "turn_right": false,
+          "u_turn": false
+        },
+        "contested": {
+          "change_right": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true,
+          "turn_left": false,
+          "turn_right": false,
+          "u_turn": false
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b91cdc5d-bce994ce": {
+      "image_id": "bdd100k_val__b91cdc5d-bce994ce",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [
+          "leftmost lane, but a lane line on the left"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c94d8213-1f593522": {
+      "image_id": "bdd100k_val__c94d8213-1f593522",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "change_left": false,
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bcbf328d-953430de": {
+      "image_id": "bdd100k_val__bcbf328d-953430de",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:merge_right",
+            "text:only"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:merge_right": "full",
+            "text:only": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:merge_right",
+            "text:only"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": false
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "turn_left",
+          "turn_right",
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "rightmost lane, but a lane line on the right",
+          "go_straight, turn_left, turn_right, u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b306fb3f-f02e46cc": {
+      "image_id": "bdd100k_val__b306fb3f-f02e46cc",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bfa92b30-f12f3535": {
+      "image_id": "bdd100k_val__bfa92b30-f12f3535",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c264943c-5e493c9f": {
+      "image_id": "bdd100k_val__c264943c-5e493c9f",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [
+            "text:other"
+          ],
+          "answer": [
+            "text:other"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": false,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [
+          "change_right"
+        ],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "rightmost lane, but a lane line on the right",
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b8fe9f2b-d63131a3": {
+      "image_id": "bdd100k_val__b8fe9f2b-d63131a3",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__be22a1e1-cbcd82a6": {
+      "image_id": "bdd100k_val__be22a1e1-cbcd82a6",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c0e7271a-a3c8d55f": {
+      "image_id": "bdd100k_val__c0e7271a-a3c8d55f",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bdc0dc52-b4d05890": {
+      "image_id": "bdd100k_val__bdc0dc52-b4d05890",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [],
+          "missed": [
+            "line:stop_line"
+          ],
+          "added_evidence": {},
+          "label": [
+            "line:stop_line"
+          ],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": true,
+        "actions": {
+          "change_left": false,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b5042634-1034573c": {
+      "image_id": "bdd100k_val__b5042634-1034573c",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": null,
+          "right": null
+        },
+        "role": {},
+        "markings": null,
+        "lane": null,
+        "lane_core": null,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "insufficient",
+            "full"
+          ],
+          "right": [
+            "insufficient",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b1f0efd9-e900c6e5": {
+      "image_id": "bdd100k_val__b1f0efd9-e900c6e5",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [
+          "rightmost lane, but a lane line on the right"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b59e50fa-ca034dd0": {
+      "image_id": "bdd100k_val__b59e50fa-ca034dd0",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c1b3582d-b9c87c82": {
+      "image_id": "bdd100k_val__c1b3582d-b9c87c82",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bbfe3b4f-5137ff9f": {
+      "image_id": "bdd100k_val__bbfe3b4f-5137ff9f",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [],
+          "missed": [
+            "line:stop_line"
+          ],
+          "added_evidence": {},
+          "label": [
+            "arrow:straight",
+            "line:crosswalk",
+            "line:stop_line"
+          ],
+          "answer": [
+            "arrow:straight",
+            "line:crosswalk"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": true
+        },
+        "contested": {
+          "change_left": false,
+          "change_right": false
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c31d9531-694298f0": {
+      "image_id": "bdd100k_val__c31d9531-694298f0",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c3bb4925-f78e285a": {
+      "image_id": "bdd100k_val__c3bb4925-f78e285a",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": false,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_left"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c9283177-4ac407c3": {
+      "image_id": "bdd100k_val__c9283177-4ac407c3",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c47fb4ff-92db68d6": {
+      "image_id": "bdd100k_val__c47fb4ff-92db68d6",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__be926190-5293afb9": {
+      "image_id": "bdd100k_val__be926190-5293afb9",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "change_right",
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bbf48d08-b6a11dd8": {
+      "image_id": "bdd100k_val__bbf48d08-b6a11dd8",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b928271b-fe5cc5d1": {
+      "image_id": "bdd100k_val__b928271b-fe5cc5d1",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b5cd5f72-32232751": {
+      "image_id": "bdd100k_val__b5cd5f72-32232751",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:merge_right"
+          ],
+          "missed": [
+            "arrow:right"
+          ],
+          "added_evidence": {
+            "arrow:merge_right": "full"
+          },
+          "label": [
+            "arrow:right"
+          ],
+          "answer": [
+            "arrow:merge_right"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": true
+        },
+        "contested": {
+          "change_left": true,
+          "change_right": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "go_straight": true,
+          "turn_left": true,
+          "u_turn": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [
+          "go_straight, turn_left, turn_right, u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bbf0f5d7-ea2f1cc3": {
+      "image_id": "bdd100k_val__bbf0f5d7-ea2f1cc3",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c909551e-fb24caeb": {
+      "image_id": "bdd100k_val__c909551e-fb24caeb",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b20b69d2-e31380a7": {
+      "image_id": "bdd100k_val__b20b69d2-e31380a7",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bab692c9-4d1f2bdd": {
+      "image_id": "bdd100k_val__bab692c9-4d1f2bdd",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": false,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c07733d0-aebb8786": {
+      "image_id": "bdd100k_val__c07733d0-aebb8786",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b1f4491b-dd8dfed5": {
+      "image_id": "bdd100k_val__b1f4491b-dd8dfed5",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c4e97226-7be7eef5": {
+      "image_id": "bdd100k_val__c4e97226-7be7eef5",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b4542860-0b880bb4": {
+      "image_id": "bdd100k_val__b4542860-0b880bb4",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c121b93f-b2ee73d4": {
+      "image_id": "bdd100k_val__c121b93f-b2ee73d4",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bd656105-ed6f8161": {
+      "image_id": "bdd100k_val__bd656105-ed6f8161",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": null,
+          "right": null
+        },
+        "role": {},
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [
+            "line:crosswalk"
+          ],
+          "answer": [
+            "line:crosswalk"
+          ]
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {},
+        "contested": {
+          "change_left": false,
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [
+          "change_left"
+        ],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "insufficient",
+            "full"
+          ],
+          "right": [
+            "insufficient",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b5661732-3684230b": {
+      "image_id": "bdd100k_val__b5661732-3684230b",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__be60191c-2dea5114": {
+      "image_id": "bdd100k_val__be60191c-2dea5114",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bd8d420d-ec34c634": {
+      "image_id": "bdd100k_val__bd8d420d-ec34c634",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [],
+          "missed": [
+            "arrow:straight_right"
+          ],
+          "added_evidence": {},
+          "label": [
+            "arrow:straight_right"
+          ],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "go_straight": true,
+          "turn_left": false,
+          "turn_right": false,
+          "u_turn": false
+        },
+        "contested": {
+          "change_right": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "turn_left": false,
+          "u_turn": false
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c2021c8c-474a8eda": {
+      "image_id": "bdd100k_val__c2021c8c-474a8eda",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bd65dd37-4c3cdf2d": {
+      "image_id": "bdd100k_val__bd65dd37-4c3cdf2d",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bd338426-4b27de63": {
+      "image_id": "bdd100k_val__bd338426-4b27de63",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c173438f-01b0b013": {
+      "image_id": "bdd100k_val__c173438f-01b0b013",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": null,
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b3060c96-d2391b61": {
+      "image_id": "bdd100k_val__b3060c96-d2391b61",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c308561a-1b698bb4": {
+      "image_id": "bdd100k_val__c308561a-1b698bb4",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": false
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b80018ef-3a620af0": {
+      "image_id": "bdd100k_val__b80018ef-3a620af0",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": null
+        },
+        "role": {
+          "left": true
+        },
+        "markings": null,
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "insufficient",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b2fbf86d-d5de82a4": {
+      "image_id": "bdd100k_val__b2fbf86d-d5de82a4",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [
+          "leftmost lane, but a lane line on the left"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c8a7a62d-e58e7297": {
+      "image_id": "bdd100k_val__c8a7a62d-e58e7297",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [
+            "text:other"
+          ],
+          "answer": [
+            "text:other"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c90c8198-f73aed79": {
+      "image_id": "bdd100k_val__c90c8198-f73aed79",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "change_right",
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c66d2237-f9c0a1ef": {
+      "image_id": "bdd100k_val__c66d2237-f9c0a1ef",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c6ed8102-2bbcbcc2": {
+      "image_id": "bdd100k_val__c6ed8102-2bbcbcc2",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bb8dba97-3537805c": {
+      "image_id": "bdd100k_val__bb8dba97-3537805c",
+      "score": {
+        "scene": {
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__be0a188d-c47bac51": {
+      "image_id": "bdd100k_val__be0a188d-c47bac51",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": null,
+          "right": null
+        },
+        "role": {},
+        "markings": null,
+        "lane": null,
+        "lane_core": null,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "insufficient",
+            "full"
+          ],
+          "right": [
+            "insufficient",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c68f8fd2-61681484": {
+      "image_id": "bdd100k_val__c68f8fd2-61681484",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b4d18d1a-193e24a1": {
+      "image_id": "bdd100k_val__b4d18d1a-193e24a1",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c65c2462-96e8ae92": {
+      "image_id": "bdd100k_val__c65c2462-96e8ae92",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c100db13-71b423e5": {
+      "image_id": "bdd100k_val__c100db13-71b423e5",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c6d77a40-03423c96": {
+      "image_id": "bdd100k_val__c6d77a40-03423c96",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c5588233-b03622f3": {
+      "image_id": "bdd100k_val__c5588233-b03622f3",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__ba2db972-f29458c8": {
+      "image_id": "bdd100k_val__ba2db972-f29458c8",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_right": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bb289fdb-4bc01501": {
+      "image_id": "bdd100k_val__bb289fdb-4bc01501",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bc9b5bfb-51ebcf39": {
+      "image_id": "bdd100k_val__bc9b5bfb-51ebcf39",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c4ee0cc4-b7af9602": {
+      "image_id": "bdd100k_val__c4ee0cc4-b7af9602",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": null,
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b84146a1-a5f588ef": {
+      "image_id": "bdd100k_val__b84146a1-a5f588ef",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c2fb790e-4cd5a630": {
+      "image_id": "bdd100k_val__c2fb790e-4cd5a630",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "change_left": true,
+          "change_right": false,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b7935597-13c4b9dd": {
+      "image_id": "bdd100k_val__b7935597-13c4b9dd",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": false,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c3026ac7-8105e9a9": {
+      "image_id": "bdd100k_val__c3026ac7-8105e9a9",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__ba9f6c98-2a75a096": {
+      "image_id": "bdd100k_val__ba9f6c98-2a75a096",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b5f84825-c97df380": {
+      "image_id": "bdd100k_val__b5f84825-c97df380",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight_left"
+          ],
+          "missed": [
+            "arrow:straight_right",
+            "line:stop_line"
+          ],
+          "added_evidence": {
+            "arrow:straight_left": "full"
+          },
+          "label": [
+            "arrow:straight_right",
+            "line:stop_line"
+          ],
+          "answer": [
+            "arrow:straight_left"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "go_straight": true,
+          "turn_left": false,
+          "turn_right": false,
+          "u_turn": false
+        },
+        "contested": {
+          "change_left": true,
+          "change_right": true
+        },
+        "output2": false,
+        "unsafe": [
+          "turn_left"
+        ],
+        "over_cautious": [
+          "turn_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {
+          "turn_left": false,
+          "u_turn": false
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c85416bd-db975d94": {
+      "image_id": "bdd100k_val__c85416bd-db975d94",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bff4bb8b-152c6105": {
+      "image_id": "bdd100k_val__bff4bb8b-152c6105",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c9b099e4-6ab2e4f4": {
+      "image_id": "bdd100k_val__c9b099e4-6ab2e4f4",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bd354e59-e5a9e8c6": {
+      "image_id": "bdd100k_val__bd354e59-e5a9e8c6",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": false
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_left"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b54c065e-8b13cfe7": {
+      "image_id": "bdd100k_val__b54c065e-8b13cfe7",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b7aa329e-25d68dec": {
+      "image_id": "bdd100k_val__b7aa329e-25d68dec",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c02d18db-f5278de0": {
+      "image_id": "bdd100k_val__c02d18db-f5278de0",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c1b5a91c-9e402e78": {
+      "image_id": "bdd100k_val__c1b5a91c-9e402e78",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c28b60fb-a5e9b955": {
+      "image_id": "bdd100k_val__c28b60fb-a5e9b955",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b9429f07-33ae3ff1": {
+      "image_id": "bdd100k_val__b9429f07-33ae3ff1",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b49d6c0d-457e13b3": {
+      "image_id": "bdd100k_val__b49d6c0d-457e13b3",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "symbol:bike"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "symbol:bike": "full"
+          },
+          "label": [],
+          "answer": [
+            "symbol:bike"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__be839b4c-fba3ea45": {
+      "image_id": "bdd100k_val__be839b4c-fba3ea45",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "text:bus"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "text:bus": "full"
+          },
+          "label": [
+            "line:crosswalk"
+          ],
+          "answer": [
+            "line:crosswalk",
+            "text:bus"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": false
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [
+          "turn_right"
+        ],
+        "citation": null,
+        "consistency": [
+          "go_straight, turn_right decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b65fd3df-87ed965a": {
+      "image_id": "bdd100k_val__b65fd3df-87ed965a",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {},
+        "contested": {
+          "change_left": false,
+          "change_right": false,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__ca146661-7f70d0c4": {
+      "image_id": "bdd100k_val__ca146661-7f70d0c4",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b1c66a42-6f7d68ca": {
+      "image_id": "bdd100k_val__b1c66a42-6f7d68ca",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [
+            "text:other"
+          ],
+          "answer": [
+            "text:other"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "change_right"
+        ],
+        "citation": null,
+        "consistency": [
+          "change_right decided with nothing marked on that side"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c15c29a5-74788f46": {
+      "image_id": "bdd100k_val__c15c29a5-74788f46",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b48c7b5f-800d31b4": {
+      "image_id": "bdd100k_val__b48c7b5f-800d31b4",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": false
+        },
+        "contested": {
+          "change_right": false,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c4057c0c-000a6aaf": {
+      "image_id": "bdd100k_val__c4057c0c-000a6aaf",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [],
+          "missed": [
+            "text:stop"
+          ],
+          "added_evidence": {},
+          "label": [
+            "text:stop"
+          ],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": false
+        },
+        "output2": false,
+        "unsafe": [
+          "change_right"
+        ],
+        "over_cautious": [],
+        "contested_unsafe": [
+          "go_straight"
+        ],
+        "prohibited": {
+          "change_left": true,
+          "change_right": false
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c0efbe92-2ee3e529": {
+      "image_id": "bdd100k_val__c0efbe92-2ee3e529",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bc19c993-c0a0f85f": {
+      "image_id": "bdd100k_val__bc19c993-c0a0f85f",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [],
+          "missed": [
+            "text:other"
+          ],
+          "added_evidence": {},
+          "label": [
+            "text:other"
+          ],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": false,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b577827c-28fc9b0d": {
+      "image_id": "bdd100k_val__b577827c-28fc9b0d",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [
+          "leftmost lane, but a lane line on the left"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c107c2f1-b2b8fff0": {
+      "image_id": "bdd100k_val__c107c2f1-b2b8fff0",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c07733d0-7525eae7": {
+      "image_id": "bdd100k_val__c07733d0-7525eae7",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c6e1c974-906461f4": {
+      "image_id": "bdd100k_val__c6e1c974-906461f4",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [
+            "arrow:straight",
+            "text:only"
+          ],
+          "answer": [
+            "arrow:straight",
+            "text:only"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false,
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": true
+        },
+        "contested": {},
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c6dca574-6e641016": {
+      "image_id": "bdd100k_val__c6dca574-6e641016",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b321c6b6-ab603d42": {
+      "image_id": "bdd100k_val__b321c6b6-ab603d42",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "change_left": true,
+          "change_right": false,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [
+          "rightmost lane, but a lane line on the right"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c8e01103-9ff8595d": {
+      "image_id": "bdd100k_val__c8e01103-9ff8595d",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [
+            "arrow:straight",
+            "line:crosswalk"
+          ],
+          "answer": [
+            "arrow:straight",
+            "line:crosswalk"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": true
+        },
+        "contested": {
+          "change_left": false,
+          "change_right": false
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": true
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c4b3ab99-a4a09eeb": {
+      "image_id": "bdd100k_val__c4b3ab99-a4a09eeb",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "change_left": true,
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c3321660-e6b60390": {
+      "image_id": "bdd100k_val__c3321660-e6b60390",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [],
+          "missed": [
+            "line:stop_line"
+          ],
+          "added_evidence": {},
+          "label": [
+            "arrow:straight",
+            "line:stop_line"
+          ],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "go_straight": true,
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": false
+        },
+        "contested": {
+          "change_left": true,
+          "change_right": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "turn_left": true,
+          "turn_right": true,
+          "u_turn": false
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__b7041acc-6de39959": {
+      "image_id": "bdd100k_val__b7041acc-6de39959",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c90b5398-8d49f2f2": {
+      "image_id": "bdd100k_val__c90b5398-8d49f2f2",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": false,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [
+          "change_left"
+        ],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bd3bd3ab-8e38f822": {
+      "image_id": "bdd100k_val__bd3bd3ab-8e38f822",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": null,
+          "right": null
+        },
+        "role": {},
+        "markings": null,
+        "lane": null,
+        "lane_core": null,
+        "actions": {
+          "change_right": true
+        },
+        "contested": {
+          "change_left": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "insufficient",
+            "full"
+          ],
+          "right": [
+            "insufficient",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__c068a67b-03b6e200": {
+      "image_id": "bdd100k_val__c068a67b-03b6e200",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    }
+  }
+}

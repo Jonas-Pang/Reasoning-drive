@@ -1,0 +1,2636 @@
+# DRAFT passages of Western Australia, Australia (AU-WA) from wa_road_traffic_code_2000.pdf, 2026-11-14 (gpt-6.1-sol).
+# Read every passage against the PDF. verified_quote: false means the original text was not found on its page.
+# Delete what is not a rule for drivers, fix sections and texts, then:  python main.py regulations accept AU-WA
+
+- rule_id: AU-WA-3
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '3'
+  page: 23
+  marking_type: bicycle lane marking
+  element: lane_type
+  text_original: 'bicycle lane means a marked lane, or the part of a marked lane —
+
+    (a) beginning at a “bicycle lane” sign applying to the lane, or a road marking comprising a white bicycle symbol and the
+    word “lane” painted in white; and
+
+    (b) ending at the nearest of the following —
+
+    (i) an “end bicycle lane” sign applying to the lane, or a road marking comprising a white bicycle symbol and the words
+    “end lane” painted in white;
+
+    (ii) an intersection (unless the lane is at the unbroken side of the continuing road at a T-intersection or continued
+    across the intersection by broken lines);
+
+    (iii) if the carriageway ends at a dead end — the end of the carriageway;'
+  text_en: 'bicycle lane means a marked lane, or the part of a marked lane —
+
+    (a) beginning at a “bicycle lane” sign applying to the lane, or a road marking comprising a white bicycle symbol and the
+    word “lane” painted in white; and
+
+    (b) ending at the nearest of the following —
+
+    (i) an “end bicycle lane” sign applying to the lane, or a road marking comprising a white bicycle symbol and the words
+    “end lane” painted in white;
+
+    (ii) an intersection (unless the lane is at the unbroken side of the continuing road at a T-intersection or continued
+    across the intersection by broken lines);
+
+    (iii) if the carriageway ends at a dead end — the end of the carriageway;'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-3-2
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '3'
+  page: 24
+  marking_type: bicycle path road marking
+  element: lane_type
+  text_original: 'bicycle path means a length of path beginning at a “bicycle path” sign or a “bicycle path” road marking
+    and ending at the nearest of the following:
+
+    (a) an “end bicycle path” sign, or an “end bicycle path” road marking;
+
+    (b) a “separated footpath” sign or a “separated footpath” road marking;
+
+    (c) a carriageway;
+
+    (d) the end of the path;'
+  text_en: 'bicycle path means a length of path beginning at a “bicycle path” sign or a “bicycle path” road marking and ending
+    at the nearest of the following:
+
+    (a) an “end bicycle path” sign, or an “end bicycle path” road marking;
+
+    (b) a “separated footpath” sign or a “separated footpath” road marking;
+
+    (c) a carriageway;
+
+    (d) the end of the path;'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-3-3
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '3'
+  page: 26
+  marking_type: bus lane road marking
+  element: lane_type
+  text_original: 'bus lane means a marked lane, or the part of a marked lane of a carriageway —
+
+    (a) beginning at a “bus lane” sign (whether or not there is also a “bus lane” road marking) and ending at the nearest
+    of the following —
+
+    (i) an “end bus lane” sign;
+
+    (ii) a traffic sign that indicates the beginning of another special purpose lane;
+
+    or
+
+    (b) beginning at a “bus lane” road marking (if there is no “bus lane” sign) and ending at the next intersection;'
+  text_en: 'bus lane means a marked lane, or the part of a marked lane of a carriageway —
+
+    (a) beginning at a “bus lane” sign (whether or not there is also a “bus lane” road marking) and ending at the nearest
+    of the following —
+
+    (i) an “end bus lane” sign;
+
+    (ii) a traffic sign that indicates the beginning of another special purpose lane;
+
+    or
+
+    (b) beginning at a “bus lane” road marking (if there is no “bus lane” sign) and ending at the next intersection;'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-3-4
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '3'
+  page: 28
+  marking_type: centre line
+  element: boundary
+  text_original: 'centre, in relation to a carriageway, means a line or a series of lines, marks, or other indications —
+
+    (a) for a two-way carriageway — placed so as to delineate vehicular traffic travelling in different directions; or
+
+    (b) in the absence of any such lines, marks or other indications — the middle of the main, travelled portion of the carriageway;'
+  text_en: 'centre, in relation to a carriageway, means a line or a series of lines, marks, or other indications —
+
+    (a) for a two-way carriageway — placed so as to delineate vehicular traffic travelling in different directions; or
+
+    (b) in the absence of any such lines, marks or other indications — the middle of the main, travelled portion of the carriageway;'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-3-5
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '3'
+  page: 29
+  marking_type: dividing line
+  element: boundary
+  text_original: dividing line means a road marking formed by a line, or 2 parallel lines, whether broken or continuous, or
+    by a series of reflective markers, intended to divide a road lengthways into separate carriageways, to be used by vehicles
+    travelling in opposite directions;
+  text_en: dividing line means a road marking formed by a line, or 2 parallel lines, whether broken or continuous, or by a
+    series of reflective markers, intended to divide a road lengthways into separate carriageways, to be used by vehicles
+    travelling in opposite directions;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-3-6
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '3'
+  page: 49
+  marking_type: painted-island-separated slip lane
+  element: lane_type
+  text_original: slip lane means an area of carriageway for vehicles turning left that is separated, at some point, from other
+    parts of the road by some form of painted island or traffic island;
+  text_en: slip lane means an area of carriageway for vehicles turning left that is separated, at some point, from other parts
+    of the road by some form of painted island or traffic island;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    turn_left: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-3-7
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '3'
+  page: 57
+  marking_type: turning lane markings
+  element: lane_type
+  text_original: turning lane means a portion of a marked lane on a carriageway set aside for turning vehicles by means of
+    road markings or traffic signs;
+  text_en: turning lane means a portion of a marked lane on a carriageway set aside for turning vehicles by means of road
+    markings or traffic signs;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-3-8
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '3'
+  page: 57
+  marking_type: turn line
+  element: boundary
+  text_original: turn line means a road marking at an intersection, consisting of either a broken or continuous line that
+    is designed to indicate how a turn is to be made at that intersection;
+  text_en: turn line means a road marking at an intersection, consisting of either a broken or continuous line that is designed
+    to indicate how a turn is to be made at that intersection;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-8A
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 8A
+  page: 63
+  marking_type: stop line
+  element: transverse
+  text_original: If a driver stops behind a vehicle that has stopped at a stop sign or stop line in accordance with regulation
+    50, 51 or 101, the driver must, after the vehicle has proceeded, stop at the stop sign or stop line in accordance with
+    the regulation.
+  text_en: If a driver stops behind a vehicle that has stopped at a stop sign or stop line in accordance with regulation 50,
+    51 or 101, the driver must, after the vehicle has proceeded, stop at the stop sign or stop line in accordance with the
+    regulation.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-20(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 20(3)
+  page: 78
+  marking_type: bicycle storage area
+  element: area
+  text_original: Despite subregulation (1), if there is space in a bicycle storage area for 2 riders of bicycles or electric
+    rideable devices to be next to each other, the rider on the right may approach and enter the intersection as near as practicable
+    to the right side of the other rider, but only if that other rider approaches and enters the intersection in accordance
+    with this regulation.
+  text_en: Despite subregulation (1), if there is space in a bicycle storage area for 2 riders of bicycles or electric rideable
+    devices to be next to each other, the rider on the right may approach and enter the intersection as near as practicable
+    to the right side of the other rider, but only if that other rider approaches and enters the intersection in accordance
+    with this regulation.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-21(3A)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 21(3A)
+  page: 80
+  marking_type: bicycle storage area
+  element: area
+  text_original: If there is a bicycle storage area before an intersection that extends across one or more marked lanes of
+    a multi-lane carriageway, a rider of a bicycle or electric rideable device turning left must approach and enter the intersection
+    from within the part of the bicycle storage area that is directly in front of the left marked lane, or of a bicycle lane
+    or shoulder that is on the left side of the carriageway.
+  text_en: If there is a bicycle storage area before an intersection that extends across one or more marked lanes of a multi-lane
+    carriageway, a rider of a bicycle or electric rideable device turning left must approach and enter the intersection from
+    within the part of the bicycle storage area that is directly in front of the left marked lane, or of a bicycle lane or
+    shoulder that is on the left side of the carriageway.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    turn_left: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-22(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 22(1)
+  page: 81
+  marking_type: left-turn guide line
+  element: boundary
+  text_original: Subject to subregulations (2) and (3), if a driver is turning left at an intersection and there is a turn
+    line indicating how the turn is to be made from the lane the driver is in, the driver must make the turn as indicated
+    by the turn line.
+  text_en: Subject to subregulations (2) and (3), if a driver is turning left at an intersection and there is a turn line
+    indicating how the turn is to be made from the lane the driver is in, the driver must make the turn as indicated by the
+    turn line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    turn_left: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-22(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 22(2)
+  page: 81
+  marking_type: left-turn guide line
+  element: boundary
+  text_original: Subregulation (1) does not apply to the driver of a public bus at an intersection if the driver is turning,
+    at B lights or a traffic control signal, in accordance with Part 17.
+  text_en: Subregulation (1) does not apply to the driver of a public bus at an intersection if the driver is turning, at
+    B lights or a traffic control signal, in accordance with Part 17.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    turn_left: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-22(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 22(3)
+  page: 81
+  marking_type: left-turn guide line
+  element: boundary
+  text_original: 'A driver may turn left at an intersection in a manner other than that indicated by a turn line if —
+
+    (a) the driver’s vehicle or combination, together with any load or projection, is 7.5 m long, or longer; and
+
+    (b) the rearmost part of the vehicle (or of the combination, if that is the case) displays a “do not overtake turning
+    vehicle” sign; and
+
+    (c) it is not practicable for the driver to turn left in the manner indicated by the turn line; and
+
+    (d) the driver can safely turn left other than by the manner indicated by the turn line.'
+  text_en: 'A driver may turn left at an intersection in a manner other than that indicated by a turn line if —
+
+    (a) the driver’s vehicle or combination, together with any load or projection, is 7.5 m long, or longer; and
+
+    (b) the rearmost part of the vehicle (or of the combination, if that is the case) displays a “do not overtake turning
+    vehicle” sign; and
+
+    (c) it is not practicable for the driver to turn left in the manner indicated by the turn line; and
+
+    (d) the driver can safely turn left other than by the manner indicated by the turn line.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    turn_left: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-24(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 24(1)
+  page: 82
+  marking_type: dividing line
+  element: boundary
+  text_original: 'A driver who is about to make a right turn from a two-way carriageway (other than a multi-lane carriageway)
+    at an intersection must approach and enter the intersection —
+
+    (a) so that the vehicle is to the left of, parallel with, and as near as practicable to, the centre of the carriageway;
+    or
+
+    (b) if the carriageway has a dividing line or median strip — so that the vehicle is to the left of, parallel to, and as
+    near as practicable to, the dividing line or median strip.'
+  text_en: 'A driver who is about to make a right turn from a two-way carriageway (other than a multi-lane carriageway) at
+    an intersection must approach and enter the intersection —
+
+    (a) so that the vehicle is to the left of, parallel with, and as near as practicable to, the centre of the carriageway;
+    or
+
+    (b) if the carriageway has a dividing line or median strip — so that the vehicle is to the left of, parallel to, and as
+    near as practicable to, the dividing line or median strip.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    turn_right: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-24(4)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 24(4)
+  page: 83
+  marking_type: bicycle storage area
+  element: area
+  text_original: Subregulations (1) and (2) also apply to the rider of a bicycle or electric rideable device who approaches
+    and enters an intersection from a bicycle storage area.
+  text_en: Subregulations (1) and (2) also apply to the rider of a bicycle or electric rideable device who approaches and
+    enters an intersection from a bicycle storage area.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-27(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 27(1)
+  page: 87
+  marking_type: right-turn guide line
+  element: boundary
+  text_original: Despite this Part, a driver who is about to make, or is making, a right turn at an intersection where turn
+    lines or signs are so placed as to indicate that a different course from that specified in this regulation is to be travelled,
+    must not turn the vehicle at the intersection otherwise than as indicated by the turn lines or signs.
+  text_en: Despite this Part, a driver who is about to make, or is making, a right turn at an intersection where turn lines
+    or signs are so placed as to indicate that a different course from that specified in this regulation is to be travelled,
+    must not turn the vehicle at the intersection otherwise than as indicated by the turn lines or signs.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    turn_right: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-27(3A)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 27(3A)
+  page: 88
+  marking_type: right-turn guide line exception for public buses
+  element: boundary
+  text_original: Subregulations (1) and (2) do not apply to the driver of a public bus at an intersection if the driver is
+    turning, at B lights or traffic arrows, in accordance with Part 17.
+  text_en: Subregulations (1) and (2) do not apply to the driver of a public bus at an intersection if the driver is turning,
+    at B lights or traffic arrows, in accordance with Part 17.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    turn_right: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-27(3B)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 27(3B)
+  page: 88
+  marking_type: right-turn guide line exception for long vehicles
+  element: boundary
+  text_original: 'A driver may turn right at an intersection in a manner other than that indicated by a turn line if —
+
+    (a) the driver’s vehicle or combination, together with any load or projection, is 7.5 m long, or longer; and
+
+    (b) the rearmost part of the vehicle (or of the combination, if that is the case) displays a “do not overtake turning
+    vehicle” sign; and
+
+    (c) it is not practicable for the driver to turn right in the manner indicated by the turn line; and
+
+    (d) the driver can safely turn right other than by the manner indicated by the turn line.'
+  text_en: 'A driver may turn right at an intersection in a manner other than that indicated by a turn line if —
+
+    (a) the driver’s vehicle or combination, together with any load or projection, is 7.5 m long, or longer; and
+
+    (b) the rearmost part of the vehicle (or of the combination, if that is the case) displays a “do not overtake turning
+    vehicle” sign; and
+
+    (c) it is not practicable for the driver to turn right in the manner indicated by the turn line; and
+
+    (d) the driver can safely turn right other than by the manner indicated by the turn line.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    turn_right: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-28(3)step2
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 28(3) step 2
+  page: 90
+  marking_type: marked foot crossing
+  element: transverse
+  text_original: '2 Move forward —
+
+    (a) keeping as near as practicable to the far left side of the intersection; and
+
+    (b) keeping clear of any marked foot crossing; and
+
+    (c) keeping clear, as far as practicable, of any driver turning left from the left of the intersection,
+
+    until the rider is as near as practicable to the far side of the carriageway that the rider is entering.'
+  text_en: '2 Move forward —
+
+    (a) keeping as near as practicable to the far left side of the intersection; and
+
+    (b) keeping clear of any marked foot crossing; and
+
+    (c) keeping clear, as far as practicable, of any driver turning left from the left of the intersection,
+
+    until the rider is as near as practicable to the far side of the carriageway that the rider is entering.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-WA-28(4)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 28(4)
+  page: 91
+  marking_type: bicycle hook turn storage area
+  element: area
+  text_original: 'If the rider of a bicycle or electric rideable device wants to turn right by making a hook turn at an intersection
+    that has a bicycle hook turn storage area on the left side of the intersection as the rider approaches the intersection,
+    the rider must take the following initial 2 steps instead of the initial 2 steps listed in subregulation (3):
+
+    1 Approach the intersection from the far left side of the carriageway the rider is leaving and enter the intersection
+    by moving into the bicycle hook turn storage area, keeping clear of any marked foot crossing.
+
+    2 Move forward in the bicycle hook turn storage area until the rider is as near as practicable to the far side of the
+    carriageway that the rider is entering.'
+  text_en: 'If the rider of a bicycle or electric rideable device wants to turn right by making a hook turn at an intersection
+    that has a bicycle hook turn storage area on the left side of the intersection as the rider approaches the intersection,
+    the rider must take the following initial 2 steps instead of the initial 2 steps listed in subregulation (3):
+
+    1 Approach the intersection from the far left side of the carriageway the rider is leaving and enter the intersection
+    by moving into the bicycle hook turn storage area, keeping clear of any marked foot crossing.
+
+    2 Move forward in the bicycle hook turn storage area until the rider is as near as practicable to the far side of the
+    carriageway that the rider is entering.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    enter_waiting_area: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-32(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 32(3)
+  page: 94
+  marking_type: dividing line
+  element: boundary
+  text_original: 'A driver making a U turn must commence the U turn —
+
+    (a) if the carriageway where the driver is turning has a dividing line or median strip — from the lane nearest, or as
+    near as practicable, to the dividing line or median strip; or
+
+    (b) in any other case — from the left of the centre of the carriageway.'
+  text_en: 'A driver making a U turn must commence the U turn —
+
+    (a) if the carriageway where the driver is turning has a dividing line or median strip — from the lane nearest, or as
+    near as practicable, to the dividing line or median strip; or
+
+    (b) in any other case — from the left of the centre of the carriageway.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    u_turn: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-33(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 33(3)
+  page: 96
+  marking_type: right-turn lane markings
+  element: lane_marking
+  text_original: Subregulation (2) does not apply where a vehicle is in a marked lane that has a sign alongside or over it
+    or markings on its surface indicating that a right turn must, or may be, made by vehicles in that lane.
+  text_en: Subregulation (2) does not apply where a vehicle is in a marked lane that has a sign alongside or over it or markings
+    on its surface indicating that a right turn must, or may be, made by vehicles in that lane.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    turn_right: allowed
+  verified_quote: true
+  norm_check: words say mandatory (must)
+- rule_id: AU-WA-39A(4)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 39A(4)
+  page: 104
+  marking_type: stop line at traffic-control signal
+  element: transverse
+  text_original: If the traffic-control signal does not display a signal, the driver may proceed straight ahead past the signal
+    and any stop line at or near the signal, as if the traffic-control signal and the stop line were not there.
+  text_en: If the traffic-control signal does not display a signal, the driver may proceed straight ahead past the signal
+    and any stop line at or near the signal, as if the traffic-control signal and the stop line were not there.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-40(1)(a)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 40(1)(a)
+  page: 105
+  marking_type: stop line at red signal
+  element: transverse
+  text_original: 'Except as provided in regulations 42, 43 and 43A, if a traffic-control signal facing a driver displays a
+    circular red signal —
+
+    (a) if there is a stop line at or near the signal, the driver must stop as near as practicable to, but before reaching,
+    the stop line and must not proceed beyond the stop line; or'
+  text_en: 'Except as provided in regulations 42, 43 and 43A, if a traffic-control signal facing a driver displays a circular
+    red signal —
+
+    (a) if there is a stop line at or near the signal, the driver must stop as near as practicable to, but before reaching,
+    the stop line and must not proceed beyond the stop line; or'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-40(1)(c)(ii)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 40(1)(c)(ii)
+  page: 105
+  marking_type: marked foot crossing
+  element: transverse
+  text_original: 'Except as provided in regulations 42, 43 and 43A, if a traffic-control signal facing a driver displays a
+    circular red signal —
+
+    (c) in the absence of a stop line, the driver —
+
+    (ii) must not enter a marked foot crossing.'
+  text_en: 'Except as provided in regulations 42, 43 and 43A, if a traffic-control signal facing a driver displays a circular
+    red signal —
+
+    (c) in the absence of a stop line, the driver —
+
+    (ii) must not enter a marked foot crossing.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: false
+  norm_check: agrees
+- rule_id: AU-WA-40(2)(a)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 40(2)(a)
+  page: 106
+  marking_type: stop line
+  element: transverse
+  text_original: 'If a traffic-control signal facing a driver displays a red arrow signal and the driver is turning in the
+    direction indicated by that arrow —
+
+    (a) if there is a stop line at or near the signal, the driver must stop as near as practicable to, but before reaching
+    the stop line and must not proceed beyond the stop line;'
+  text_en: 'If a traffic-control signal facing a driver displays a red arrow signal and the driver is turning in the direction
+    indicated by that arrow —
+
+    (a) if there is a stop line at or near the signal, the driver must stop as near as practicable to, but before reaching
+    the stop line and must not proceed beyond the stop line;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-40(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 40(3)
+  page: 107
+  marking_type: bicycle storage area stop lines
+  element: transverse
+  text_original: 'If there is a bicycle storage area before any traffic-control signal referred to in subregulation (1) or
+    (2), a reference to the stop line in subregulation (1)(a) or (2)(a) —
+
+    (a) in the case of a driver of a motor vehicle, is a reference to the first stop line that the driver comes to, or came
+    to, in approaching the signal;
+
+    (b) in the case of a rider of a bicycle or electric rideable device, is a reference to the stop line that is nearest to
+    the intersection.'
+  text_en: 'If there is a bicycle storage area before any traffic-control signal referred to in subregulation (1) or (2),
+    a reference to the stop line in subregulation (1)(a) or (2)(a) —
+
+    (a) in the case of a driver of a motor vehicle, is a reference to the first stop line that the driver comes to, or came
+    to, in approaching the signal;
+
+    (b) in the case of a rider of a bicycle or electric rideable device, is a reference to the stop line that is nearest to
+    the intersection.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-41A(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 41A(1)
+  page: 107
+  marking_type: bicycle storage area
+  element: area
+  text_original: If there is a bicycle storage area before a traffic-control signal that is showing a circular red signal,
+    the driver of a motor vehicle must not allow any part of the vehicle to enter the bicycle storage area.
+  text_en: If there is a bicycle storage area before a traffic-control signal that is showing a circular red signal, the driver
+    of a motor vehicle must not allow any part of the vehicle to enter the bicycle storage area.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    enter_waiting_area: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-41A(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 41A(2)
+  page: 108
+  marking_type: bicycle storage area
+  element: area
+  text_original: If there is a bicycle storage area before a traffic-control signal that is showing a red arrow signal, and
+    the driver of a motor vehicle is turning in the direction indicated by that arrow, the driver must not allow any part
+    of the vehicle to enter the bicycle storage area.
+  text_en: If there is a bicycle storage area before a traffic-control signal that is showing a red arrow signal, and the
+    driver of a motor vehicle is turning in the direction indicated by that arrow, the driver must not allow any part of the
+    vehicle to enter the bicycle storage area.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    enter_waiting_area: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-41(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 41(1)
+  page: 108
+  marking_type: stop line
+  element: transverse
+  text_original: Except as provided in regulations 42 and 43A, if a traffic-control signal facing a driver displays a steady
+    circular yellow signal or a yellow arrow, the driver must not proceed beyond the stop line associated with the signal
+    or the stop line of the lane associated with the signal or in the absence of a stop line, at a point adjacent to the nearest
+    appropriate traffic-control signal, unless the driver is so close to the stop line, or traffic-control signal, when the
+    circular yellow signal or yellow arrow first appears, that the driver cannot safely stop the vehicle before passing over
+    the stop line.
+  text_en: Except as provided in regulations 42 and 43A, if a traffic-control signal facing a driver displays a steady circular
+    yellow signal or a yellow arrow, the driver must not proceed beyond the stop line associated with the signal or the stop
+    line of the lane associated with the signal or in the absence of a stop line, at a point adjacent to the nearest appropriate
+    traffic-control signal, unless the driver is so close to the stop line, or traffic-control signal, when the circular yellow
+    signal or yellow arrow first appears, that the driver cannot safely stop the vehicle before passing over the stop line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-41(4)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 41(4)
+  page: 109
+  marking_type: bicycle storage area stop lines
+  element: transverse
+  text_original: 'If there is a bicycle storage area before a traffic-control signal referred to in subregulation (1), a reference
+    to the stop line —
+
+    (a) in the case of a driver of a motor vehicle, is a reference to the first stop line that the driver comes to, or came
+    to, in approaching the signal;
+
+    (b) in the case of a rider of a bicycle or electric rideable device, is a reference to the stop line that is nearest to
+    the intersection.'
+  text_en: 'If there is a bicycle storage area before a traffic-control signal referred to in subregulation (1), a reference
+    to the stop line —
+
+    (a) in the case of a driver of a motor vehicle, is a reference to the first stop line that the driver comes to, or came
+    to, in approaching the signal;
+
+    (b) in the case of a rider of a bicycle or electric rideable device, is a reference to the stop line that is nearest to
+    the intersection.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-46(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 46(3)
+  page: 115
+  marking_type: stop line at non-functioning traffic signals
+  element: transverse
+  text_original: 'Despite subregulations (1) and (2), a driver may only proceed beyond the stop line associated with traffic-control
+    signals facing a driver that do not appear to be functioning, or display flashing yellow signals, or (in the absence of
+    a stop line) beyond a point adjacent to the nearest signals, if the driver —
+
+    (b) does not turn the vehicle contrary to an instruction on a traffic sign at the intersection; and
+
+    (d) complies with any direction by a police officer, if a police officer is in attendance regulating traffic.'
+  text_en: 'Despite subregulations (1) and (2), a driver may only proceed beyond the stop line associated with traffic-control
+    signals facing a driver that do not appear to be functioning, or display flashing yellow signals, or (in the absence of
+    a stop line) beyond a point adjacent to the nearest signals, if the driver —
+
+    (b) does not turn the vehicle contrary to an instruction on a traffic sign at the intersection; and
+
+    (d) complies with any direction by a police officer, if a police officer is in attendance regulating traffic.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: words say permissive (may)
+- rule_id: AU-WA-48
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '48'
+  page: 116
+  marking_type: marked foot crossing with flashing yellow signal
+  element: transverse
+  text_original: 'If a driver is approaching or at a marked foot crossing (except at or near an intersection) with a flashing
+    yellow traffic-control signal at the crossing, the driver must —
+
+    (a) give way to any pedestrian or relevant rider on the crossing; and
+
+    (b) not obstruct any pedestrian or relevant rider on the crossing; and
+
+    (c) not pass a vehicle that is travelling in the same direction as the driver and is stopping, or has stopped, to give
+    way at the crossing.'
+  text_en: 'If a driver is approaching or at a marked foot crossing (except at or near an intersection) with a flashing yellow
+    traffic-control signal at the crossing, the driver must —
+
+    (a) give way to any pedestrian or relevant rider on the crossing; and
+
+    (b) not obstruct any pedestrian or relevant rider on the crossing; and
+
+    (c) not pass a vehicle that is travelling in the same direction as the driver and is stopping, or has stopped, to give
+    way at the crossing.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-49(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 49(1)
+  page: 117
+  marking_type: stop line at twin alternating red lights
+  element: transverse
+  text_original: If a driver is approaching or at a traffic-control signal displaying twin alternating red lights (other than
+    at a level crossing) and there is a stop line at or near the lights and the driver can stop safely before reaching the
+    stop line, the driver must stop as near as practicable to, but before reaching, the stop line.
+  text_en: If a driver is approaching or at a traffic-control signal displaying twin alternating red lights (other than at
+    a level crossing) and there is a stop line at or near the lights and the driver can stop safely before reaching the stop
+    line, the driver must stop as near as practicable to, but before reaching, the stop line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-50(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 50(2)
+  page: 118
+  marking_type: stop line at intersection
+  element: transverse
+  text_original: 'A driver approaching or at an intersection with a “stop” sign or stop line must stop as near as practicable
+    to, but —
+
+    (a) before reaching the stop line; or
+
+    (b) if there is no stop line — before entering the intersection.'
+  text_en: 'A driver approaching or at an intersection with a “stop” sign or stop line must stop as near as practicable to,
+    but —
+
+    (a) before reaching the stop line; or
+
+    (b) if there is no stop line — before entering the intersection.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-50(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 50(3)
+  page: 118
+  marking_type: stop line at intersection
+  element: transverse
+  text_original: 'A driver approaching or at an intersection with a “stop” sign or stop line must give way to a vehicle in,
+    entering or approaching the intersection except —
+
+    (a) an oncoming vehicle turning right at the intersection, if a “stop” sign, stop line, “give way” sign or give way line
+    applies to the driver of the oncoming vehicle; or
+
+    (b) a vehicle turning left at the intersection using a slip lane; or
+
+    (c) a vehicle making a U turn.'
+  text_en: 'A driver approaching or at an intersection with a “stop” sign or stop line must give way to a vehicle in, entering
+    or approaching the intersection except —
+
+    (a) an oncoming vehicle turning right at the intersection, if a “stop” sign, stop line, “give way” sign or give way line
+    applies to the driver of the oncoming vehicle; or
+
+    (b) a vehicle turning left at the intersection using a slip lane; or
+
+    (c) a vehicle making a U turn.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-50(4)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 50(4)
+  page: 119
+  marking_type: stop line at intersection
+  element: transverse
+  text_original: If a driver at an intersection with a “stop” sign or stop line is turning left or right or making a U turn,
+    the driver must also give way to any pedestrian or relevant rider at or near the intersection who is crossing the carriageway,
+    or part of the carriageway, the driver is entering.
+  text_en: If a driver at an intersection with a “stop” sign or stop line is turning left or right or making a U turn, the
+    driver must also give way to any pedestrian or relevant rider at or near the intersection who is crossing the carriageway,
+    or part of the carriageway, the driver is entering.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-50(5)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 50(5)
+  page: 119
+  marking_type: slip lane stop line
+  element: transverse
+  text_original: If a driver at an intersection is turning left using a slip lane with a “stop” sign or stop line, the driver
+    must give way to any pedestrian on the slip lane.
+  text_en: If a driver at an intersection is turning left using a slip lane with a “stop” sign or stop line, the driver must
+    give way to any pedestrian on the slip lane.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-51(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 51(2)
+  page: 120
+  marking_type: stop line
+  element: transverse
+  text_original: 'A driver approaching or at a place with a “stop” sign or stop line must stop as near as practicable to,
+    but —
+
+    (a) before reaching the stop line; or
+
+    (b) if there is no stop line — before entering the intersection.'
+  text_en: 'A driver approaching or at a place with a “stop” sign or stop line must stop as near as practicable to, but —
+
+    (a) before reaching the stop line; or
+
+    (b) if there is no stop line — before entering the intersection.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-51(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 51(3)
+  page: 120
+  marking_type: stop line
+  element: transverse
+  text_original: A driver approaching or at a place with a “stop” sign or stop line must give way to any vehicle or pedestrian
+    at or near the “stop” sign or stop line.
+  text_en: A driver approaching or at a place with a “stop” sign or stop line must give way to any vehicle or pedestrian at
+    or near the “stop” sign or stop line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-52(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 52(1)
+  page: 121
+  marking_type: give way line
+  element: transverse
+  text_original: 'A driver at an intersection with a “give way” sign or give way line must give way to a vehicle in, entering
+    or approaching the intersection except —
+
+    (a) an oncoming vehicle turning right at the intersection, if a “stop” sign, stop line, “give way” sign or give way line
+    applies to the driver of the oncoming vehicle; or
+
+    (b) a vehicle turning left at the intersection using a slip lane; or
+
+    (c) a vehicle making a U turn.'
+  text_en: 'A driver at an intersection with a “give way” sign or give way line must give way to a vehicle in, entering or
+    approaching the intersection except —
+
+    (a) an oncoming vehicle turning right at the intersection, if a “stop” sign, stop line, “give way” sign or give way line
+    applies to the driver of the oncoming vehicle; or
+
+    (b) a vehicle turning left at the intersection using a slip lane; or
+
+    (c) a vehicle making a U turn.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-52(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 52(2)
+  page: 121
+  marking_type: give way line
+  element: transverse
+  text_original: If a driver at an intersection with a “give way” sign or give way line is turning left or right or making
+    a U turn, the driver must give way to any pedestrian or relevant rider at or near the intersection who is crossing the
+    carriageway, or part of the carriageway, the driver is entering.
+  text_en: If a driver at an intersection with a “give way” sign or give way line is turning left or right or making a U turn,
+    the driver must give way to any pedestrian or relevant rider at or near the intersection who is crossing the carriageway,
+    or part of the carriageway, the driver is entering.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-52(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 52(3)
+  page: 122
+  marking_type: slip lane give way line
+  element: transverse
+  text_original: If a driver at an intersection is turning left using a slip lane with a “give way” sign or give way line,
+    the driver must give way to any pedestrian on the slip lane.
+  text_en: If a driver at an intersection is turning left using a slip lane with a “give way” sign or give way line, the driver
+    must give way to any pedestrian on the slip lane.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-54(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 54(2)
+  page: 124
+  marking_type: give way line
+  element: transverse
+  text_original: A driver approaching or at a place with a “give way” sign or give way line must give way to any vehicle or
+    pedestrian at or near the “give way” sign or give way line.
+  text_en: A driver approaching or at a place with a “give way” sign or give way line must give way to any vehicle or pedestrian
+    at or near the “give way” sign or give way line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-61(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 61(1)
+  page: 139
+  marking_type: children’s crossing
+  element: transverse
+  text_original: A driver approaching a children’s crossing must drive at a speed at which the driver can, if necessary, stop
+    safely before the crossing.
+  text_en: A driver approaching a children’s crossing must drive at a speed at which the driver can, if necessary, stop safely
+    before the crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-61(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 61(2)
+  page: 140
+  marking_type: children’s crossing
+  element: transverse
+  text_original: A driver must stop the vehicle before it reaches a children’s crossing, if a “children crossing - stop” sign
+    is displayed to face approaching drivers; and must not permit any portion of the vehicle to enter upon the children’s
+    crossing, while any pedestrian or relevant rider is on it or while the sign is displayed.
+  text_en: A driver must stop the vehicle before it reaches a children’s crossing, if a “children crossing - stop” sign is
+    displayed to face approaching drivers; and must not permit any portion of the vehicle to enter upon the children’s crossing,
+    while any pedestrian or relevant rider is on it or while the sign is displayed.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-61(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 61(3)
+  page: 140
+  marking_type: children’s crossing
+  element: transverse
+  text_original: A driver must not enter upon, or attempt to cross, a children’s crossing if the carriageway beyond it is
+    blocked.
+  text_en: A driver must not enter upon, or attempt to cross, a children’s crossing if the carriageway beyond it is blocked.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-61(4)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 61(4)
+  page: 140
+  marking_type: stop line at children’s crossing
+  element: transverse
+  text_original: Where there is a stop line on the approach side of a children’s crossing, any stop made under the provisions
+    of this regulation, must be made before reaching, and as nearly as practicable to, the stop line.
+  text_en: Where there is a stop line on the approach side of a children’s crossing, any stop made under the provisions of
+    this regulation, must be made before reaching, and as nearly as practicable to, the stop line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-61(5)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 61(5)
+  page: 140
+  marking_type: children’s crossing divided by median strip
+  element: transverse
+  text_original: For the purposes of subregulation (2), if a children’s crossing extends across a road with a median strip,
+    the part of the children’s crossing on each side of the median strip is taken to be a separate children’s crossing.
+  text_en: For the purposes of subregulation (2), if a children’s crossing extends across a road with a median strip, the
+    part of the children’s crossing on each side of the median strip is taken to be a separate children’s crossing.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-62(4)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 62(4)
+  page: 142
+  marking_type: pedestrian crossing
+  element: transverse
+  text_original: A driver must not enter upon, or attempt to cross, a pedestrian crossing if the carriageway beyond it is
+    blocked.
+  text_en: A driver must not enter upon, or attempt to cross, a pedestrian crossing if the carriageway beyond it is blocked.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-62(5)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 62(5)
+  page: 142
+  marking_type: pedestrian crossing
+  element: transverse
+  text_original: 'Despite subregulation (4), a driver may enter upon or attempt to cross a pedestrian crossing if —
+
+    (a) the pedestrian crossing is immediately before an intersection that is not controlled by traffic lights; and
+
+    (b) the pedestrian crossing is not blocked; and
+
+    (c) the driver gives way to any pedestrian or relevant rider on the pedestrian crossing at the time the driver enters
+    upon or attempts to cross the pedestrian crossing.'
+  text_en: 'Despite subregulation (4), a driver may enter upon or attempt to cross a pedestrian crossing if —
+
+    (a) the pedestrian crossing is immediately before an intersection that is not controlled by traffic lights; and
+
+    (b) the pedestrian crossing is not blocked; and
+
+    (c) the driver gives way to any pedestrian or relevant rider on the pedestrian crossing at the time the driver enters
+    upon or attempts to cross the pedestrian crossing.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-62(6)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 62(6)
+  page: 143
+  marking_type: pedestrian crossing
+  element: transverse
+  text_original: If entering a pedestrian crossing under subregulation (5), a driver may remain on that crossing until the
+    intersection immediately after the crossing is safe to enter or cross.
+  text_en: If entering a pedestrian crossing under subregulation (5), a driver may remain on that crossing until the intersection
+    immediately after the crossing is safe to enter or cross.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-63
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '63'
+  page: 143
+  marking_type: children’s crossing or pedestrian crossing
+  element: transverse
+  text_original: A driver approaching a children’s crossing or a pedestrian crossing must not overtake or pass a vehicle that
+    is travelling in the same direction as the driver and is stopping, or has stopped, to give way to a pedestrian or relevant
+    rider at the crossing.
+  text_en: A driver approaching a children’s crossing or a pedestrian crossing must not overtake or pass a vehicle that is
+    travelling in the same direction as the driver and is stopping, or has stopped, to give way to a pedestrian or relevant
+    rider at the crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-66
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '66'
+  page: 145
+  marking_type: painted island
+  element: area
+  text_original: 'A driver entering a turning lane from a painted island must give way to —
+
+    (a) any vehicle in the turning lane; or
+
+    (b) if the turning lane and painted island are nearest to the far left side of the road — any vehicle entering the turning
+    lane from the marked lane, or line of traffic, immediately to the right of the turning lane; or
+
+    (c) if the turning lane and painted island are nearest to the dividing line or median strip on the road or the far right
+    side of the road — any vehicle entering the turning lane from the marked lane, or line of traffic, immediately to the
+    left of the turning lane.'
+  text_en: 'A driver entering a turning lane from a painted island must give way to —
+
+    (a) any vehicle in the turning lane; or
+
+    (b) if the turning lane and painted island are nearest to the far left side of the road — any vehicle entering the turning
+    lane from the marked lane, or line of traffic, immediately to the right of the turning lane; or
+
+    (c) if the turning lane and painted island are nearest to the dividing line or median strip on the road or the far right
+    side of the road — any vehicle entering the turning lane from the marked lane, or line of traffic, immediately to the
+    left of the turning lane.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-73(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 73(1)
+  page: 153
+  marking_type: traffic lane arrows
+  element: lane_marking
+  text_original: 'Subject to subregulation (2), if a driver is driving in a marked lane at an intersection and there are traffic
+    lane arrows applying to the lane, the driver must —
+
+    (a) if the arrows indicate a single direction — drive in that direction; or
+
+    (b) if the arrows indicate 2 or more directions — drive in one of those directions.'
+  text_en: 'Subject to subregulation (2), if a driver is driving in a marked lane at an intersection and there are traffic
+    lane arrows applying to the lane, the driver must —
+
+    (a) if the arrows indicate a single direction — drive in that direction; or
+
+    (b) if the arrows indicate 2 or more directions — drive in one of those directions.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-73(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 73(2)
+  page: 153
+  marking_type: traffic lane arrows — exceptions
+  element: lane_marking
+  text_original: 'Subregulation (1) does not apply to a driver if —
+
+    (a) the intersection is a roundabout; or
+
+    (b) traffic lane arrows indicate a direction to the right (whether or not they also indicate another direction) and the
+    driver is making a U turn at the intersection; or
+
+    (c) a traffic sign indicates that a driver of a particular type of vehicle, or in stated circumstances, may drive in a
+    direction different to that indicated by the traffic lane arrows; or
+
+    (d) the driver is driving in the direction indicated by traffic lane arrows that apply to one or more marked lanes and
+    there is an obstruction in each of those lanes; or
+
+    (e) the driver is turning at an intersection in accordance with regulation 21(2) or 26(2).'
+  text_en: 'Subregulation (1) does not apply to a driver if —
+
+    (a) the intersection is a roundabout; or
+
+    (b) traffic lane arrows indicate a direction to the right (whether or not they also indicate another direction) and the
+    driver is making a U turn at the intersection; or
+
+    (c) a traffic sign indicates that a driver of a particular type of vehicle, or in stated circumstances, may drive in a
+    direction different to that indicated by the traffic lane arrows; or
+
+    (d) the driver is driving in the direction indicated by traffic lane arrows that apply to one or more marked lanes and
+    there is an obstruction in each of those lanes; or
+
+    (e) the driver is turning at an intersection in accordance with regulation 21(2) or 26(2).'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    u_turn: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-73(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 73(3)
+  page: 154
+  marking_type: traffic lane arrows in lane with bicycle storage area
+  element: lane_marking
+  text_original: The existence of a bicycle storage area in a marked lane does not alter a driver’s obligation to comply with
+    subregulation (1).
+  text_en: The existence of a bicycle storage area in a marked lane does not alter a driver’s obligation to comply with subregulation
+    (1).
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-WA-77
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '77'
+  page: 157
+  marking_type: keep clear marking
+  element: area
+  text_original: A driver must not stop on an area of a carriageway marked with a keep clear marking.
+  text_en: A driver must not stop on an area of a carriageway marked with a keep clear marking.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-92(5)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 92(5)
+  page: 174
+  marking_type: roundabout entry traffic lane arrows
+  element: lane_marking
+  text_original: 'Despite subregulations (2) to (4), if a driver is entering a roundabout from a marked lane and there are
+    traffic lane arrows applying to the lane, the driver must —
+
+    (a) if the arrows indicate a single direction — drive in that direction after entering the roundabout; or
+
+    (b) if the arrows indicate 2 or more directions — drive in one of those directions after entering the roundabout.'
+  text_en: 'Despite subregulations (2) to (4), if a driver is entering a roundabout from a marked lane and there are traffic
+    lane arrows applying to the lane, the driver must —
+
+    (a) if the arrows indicate a single direction — drive in that direction after entering the roundabout; or
+
+    (b) if the arrows indicate 2 or more directions — drive in one of those directions after entering the roundabout.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-92(7)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 92(7)
+  page: 174
+  marking_type: roundabout entry traffic lane arrows
+  element: lane_marking
+  text_original: Subregulation (5) does not apply to a rider of a bicycle or an animal if the rider is to leave the roundabout
+    more than half way round it.
+  text_en: Subregulation (5) does not apply to a rider of a bicycle or an animal if the rider is to leave the roundabout more
+    than half way round it.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-116(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 116(1)
+  page: 189
+  marking_type: continuous dividing lines
+  element: boundary
+  text_original: 'Where a carriageway is marked with a dividing line comprising —
+
+    (a) 2 continuous lines; or
+
+    (b) a continuous line on the left of a broken or dotted line; or
+
+    (c) a continuous line,
+
+    a driver must not permit any portion of the vehicle to travel on, over, or to the right of, the dividing line except for
+    the purpose of making a right turn or a U turn, where permissible.'
+  text_en: 'Where a carriageway is marked with a dividing line comprising —
+
+    (a) 2 continuous lines; or
+
+    (b) a continuous line on the left of a broken or dotted line; or
+
+    (c) a continuous line,
+
+    a driver must not permit any portion of the vehicle to travel on, over, or to the right of, the dividing line except for
+    the purpose of making a right turn or a U turn, where permissible.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+    turn_right: allowed
+    u_turn: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-119(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 119(2)
+  page: 192
+  marking_type: painted island
+  element: area
+  text_original: 'A person must not drive a vehicle on or over a painted island unless —
+
+    (a) it is to enter or leave the carriageway; or
+
+    (b) it is to avoid an obstruction, in accordance with regulation 120(4); or
+
+    (c) it is to enter a turning lane that begins immediately after the painted island; or
+
+    (d) it is to comply with regulation 124A(1), in accordance with regulation 124A(5).'
+  text_en: 'A person must not drive a vehicle on or over a painted island unless —
+
+    (a) it is to enter or leave the carriageway; or
+
+    (b) it is to avoid an obstruction, in accordance with regulation 120(4); or
+
+    (c) it is to enter a turning lane that begins immediately after the painted island; or
+
+    (d) it is to comply with regulation 124A(1), in accordance with regulation 124A(5).'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-119(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 119(3)
+  page: 192
+  marking_type: painted island
+  element: area
+  text_original: Despite subregulation (2), a driver must not drive on a painted island for more than 50 m.
+  text_en: Despite subregulation (2), a driver must not drive on a painted island for more than 50 m.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-119(5)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 119(5)
+  page: 193
+  marking_type: painted island
+  element: area
+  text_original: 'Subregulation (2)(a) does not apply in the case of a painted island —
+
+    (a) that separates a carriageway that takes vehicles in one direction from another carriageway that takes vehicles in
+    the same direction at a place where the carriageways merge; or
+
+    (b) that separates one part of a carriageway from other parts of the carriageway to create a slip lane.'
+  text_en: 'Subregulation (2)(a) does not apply in the case of a painted island —
+
+    (a) that separates a carriageway that takes vehicles in one direction from another carriageway that takes vehicles in
+    the same direction at a place where the carriageways merge; or
+
+    (b) that separates one part of a carriageway from other parts of the carriageway to create a slip lane.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-WA-120(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 120(2)
+  page: 195
+  marking_type: dividing line
+  element: boundary
+  text_original: 'A driver on a two-way carriageway with a dividing line may drive to the right of the dividing line to avoid
+    an obstruction if —
+
+    (a) the driver has a clear view of any approaching traffic; and
+
+    (b) it is necessary and reasonable, in all the circumstances, for the driver to drive to the right of the dividing line
+    to avoid the obstruction; and
+
+    (c) the driver can do so safely.'
+  text_en: 'A driver on a two-way carriageway with a dividing line may drive to the right of the dividing line to avoid an
+    obstruction if —
+
+    (a) the driver has a clear view of any approaching traffic; and
+
+    (b) it is necessary and reasonable, in all the circumstances, for the driver to drive to the right of the dividing line
+    to avoid the obstruction; and
+
+    (c) the driver can do so safely.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-120(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 120(3)
+  page: 195
+  marking_type: continuous dividing lines
+  element: boundary
+  text_original: In subregulation (2), if the dividing line is a single continuous dividing line to the left of a broken dividing
+    line, a single continuous dividing line only or 2 parallel continuous dividing lines, the hazard in driving to the right
+    of such a dividing line must be taken into account in deciding whether it is reasonable to drive to the right of the dividing
+    line.
+  text_en: In subregulation (2), if the dividing line is a single continuous dividing line to the left of a broken dividing
+    line, a single continuous dividing line only or 2 parallel continuous dividing lines, the hazard in driving to the right
+    of such a dividing line must be taken into account in deciding whether it is reasonable to drive to the right of the dividing
+    line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-120(4)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 120(4)
+  page: 195
+  marking_type: continuous lines and painted island
+  element: general
+  text_original: 'A driver may drive on a dividing strip, or on or over a single continuous line, or 2 parallel continuous
+    lines, or on or over a painted island, to avoid an obstruction if —
+
+    (a) the driver has a clear view of any approaching traffic; and
+
+    (b) it is necessary and reasonable to drive on the dividing strip or painted island to avoid the obstruction; and
+
+    (c) the driver can do so safely.'
+  text_en: 'A driver may drive on a dividing strip, or on or over a single continuous line, or 2 parallel continuous lines,
+    or on or over a painted island, to avoid an obstruction if —
+
+    (a) the driver has a clear view of any approaching traffic; and
+
+    (b) it is necessary and reasonable to drive on the dividing strip or painted island to avoid the obstruction; and
+
+    (c) the driver can do so safely.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-122(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 122(2)
+  page: 196
+  marking_type: marked lanes travelling in the same direction
+  element: lane_type
+  text_original: Where a carriageway is a one-way carriageway, or has 2 or more marked lanes for vehicles travelling in the
+    same direction, a driver may overtake and pass in another marked lane to the left of a vehicle, if conditions permit him
+    or her to do so with safety.
+  text_en: Where a carriageway is a one-way carriageway, or has 2 or more marked lanes for vehicles travelling in the same
+    direction, a driver may overtake and pass in another marked lane to the left of a vehicle, if conditions permit him or
+    her to do so with safety.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-124A(5)(b)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 124A(5)(b)
+  page: 200
+  marking_type: dividing line
+  element: boundary
+  text_original: 'A driver of a motor vehicle may, if it is necessary in order to comply with subregulation (1), do any of
+    the following —
+
+    (b) if the driver is driving on a two-way carriageway with a dividing line — drive to the right of the dividing line,
+    provided that the driver has a clear view of any approaching traffic and can do so safely;'
+  text_en: 'A driver of a motor vehicle may, if it is necessary in order to comply with subregulation (1), do any of the following
+    —
+
+    (b) if the driver is driving on a two-way carriageway with a dividing line — drive to the right of the dividing line,
+    provided that the driver has a clear view of any approaching traffic and can do so safely;'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-124A(5)(c)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 124A(5)(c)
+  page: 200
+  marking_type: single or double continuous line and painted island
+  element: general
+  text_original: 'A driver of a motor vehicle may, if it is necessary in order to comply with subregulation (1), do any of
+    the following —
+
+    (c) drive on a dividing strip, or on or over a single continuous line or 2 parallel continuous lines, or on or over a
+    painted island, provided that the driver has a clear view of any approaching traffic and can do so safely.'
+  text_en: 'A driver of a motor vehicle may, if it is necessary in order to comply with subregulation (1), do any of the following
+    —
+
+    (c) drive on a dividing strip, or on or over a single continuous line or 2 parallel continuous lines, or on or over a
+    painted island, provided that the driver has a clear view of any approaching traffic and can do so safely.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-126(1),(1A)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 126(1), (1A)
+  page: 201
+  marking_type: marked lane
+  element: lane_type
+  text_original: 'A driver must drive the vehicle as nearly as practicable entirely within a single marked lane or in a single
+    line of traffic and must not move laterally from any such lane or line of traffic until he or she can do so with safety.
+
+    Subregulation (1) does not apply if the driver is the rider of a motor cycle who is lane filtering in accordance with
+    regulation 130B.'
+  text_en: 'A driver must drive the vehicle as nearly as practicable entirely within a single marked lane or in a single line
+    of traffic and must not move laterally from any such lane or line of traffic until he or she can do so with safety.
+
+    Subregulation (1) does not apply if the driver is the rider of a motor cycle who is lane filtering in accordance with
+    regulation 130B.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-126(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 126(2)
+  page: 201
+  marking_type: marked lane
+  element: lane_type
+  text_original: A driver who is moving laterally from any single marked lane (whether or not the lane is ending) or line
+    of traffic must give way to any vehicle travelling in the same direction as the driver in the marked lane or line of traffic
+    into which the driver is moving.
+  text_en: A driver who is moving laterally from any single marked lane (whether or not the lane is ending) or line of traffic
+    must give way to any vehicle travelling in the same direction as the driver in the marked lane or line of traffic into
+    which the driver is moving.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-127(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 127(1)
+  page: 203
+  marking_type: single continuous lane separation line
+  element: boundary
+  text_original: Where a portion of a road is divided longitudinally by single, continuous lines, into 2 or more lanes, a
+    person must not drive a vehicle across any of those lines.
+  text_en: Where a portion of a road is divided longitudinally by single, continuous lines, into 2 or more lanes, a person
+    must not drive a vehicle across any of those lines.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-127(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 127(2)
+  page: 203
+  marking_type: single continuous lane separation line
+  element: boundary
+  text_original: 'The provisions of subregulation (1) do not apply to a driver intending to make a left turn or a right turn,
+    if —
+
+    (a) the driver’s vehicle or combination, together with any load or projection, is 7.5 m long, or longer; and
+
+    (b) the rearmost part of the vehicle (or of the combination, if that is the case) displays a “do not overtake turning
+    vehicle” sign; and
+
+    (c) any part of the vehicle is within 50 m of the nearest point of the intersection; and
+
+    (d) (where a driver intends to turn right) it is not practicable for the driver to turn right from within the right lane;
+    and
+
+    (e) (where a driver intends to turn left) it is not practicable for the driver to turn left from within the left lane;
+    and
+
+    (f) the driver can safely occupy the next marked lane and can safely turn at the intersection by occupying the next marked
+    lane, or both lanes.'
+  text_en: 'The provisions of subregulation (1) do not apply to a driver intending to make a left turn or a right turn, if
+    —
+
+    (a) the driver’s vehicle or combination, together with any load or projection, is 7.5 m long, or longer; and
+
+    (b) the rearmost part of the vehicle (or of the combination, if that is the case) displays a “do not overtake turning
+    vehicle” sign; and
+
+    (c) any part of the vehicle is within 50 m of the nearest point of the intersection; and
+
+    (d) (where a driver intends to turn right) it is not practicable for the driver to turn right from within the right lane;
+    and
+
+    (e) (where a driver intends to turn left) it is not practicable for the driver to turn left from within the left lane;
+    and
+
+    (f) the driver can safely occupy the next marked lane and can safely turn at the intersection by occupying the next marked
+    lane, or both lanes.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+    turn_left: allowed
+    turn_right: allowed
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-WA-127(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 127(3)
+  page: 204
+  marking_type: continuous lane separation line
+  element: boundary
+  text_original: 'The provisions of subregulation (1) do not apply to a driver on a multi-lane carriageway with a continuous
+    line separating the lanes if —
+
+    (a) the driver is avoiding an obstruction; or
+
+    (aa) the driver is driving a motor vehicle and is passing a rideable device (as defined in regulation 124A(1A)) in accordance
+    with regulation 124A(5); or
+
+    (b) the driver is obeying a traffic-control signal applying to the first marked lane; or
+
+    (ba) the driver is the rider of a motor cycle who is lane filtering in accordance with regulation 130B; or
+
+    (c) either of the marked lanes is a special purpose lane in which the driver is permitted to drive and the driver is moving
+    to or from the special purpose lane.'
+  text_en: 'The provisions of subregulation (1) do not apply to a driver on a multi-lane carriageway with a continuous line
+    separating the lanes if —
+
+    (a) the driver is avoiding an obstruction; or
+
+    (aa) the driver is driving a motor vehicle and is passing a rideable device (as defined in regulation 124A(1A)) in accordance
+    with regulation 124A(5); or
+
+    (b) the driver is obeying a traffic-control signal applying to the first marked lane; or
+
+    (ba) the driver is the rider of a motor cycle who is lane filtering in accordance with regulation 130B; or
+
+    (c) either of the marked lanes is a special purpose lane in which the driver is permitted to drive and the driver is moving
+    to or from the special purpose lane.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-129(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 129(1)
+  page: 205
+  marking_type: continuous white edge line
+  element: boundary
+  text_original: A driver must not drive on or over a continuous white edge line on a carriageway unless subregulation (2)
+    or (3) applies to the driver.
+  text_en: A driver must not drive on or over a continuous white edge line on a carriageway unless subregulation (2) or (3)
+    applies to the driver.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-129(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 129(2)
+  page: 205
+  marking_type: continuous white edge line
+  element: boundary
+  text_original: 'A driver may drive on or over a continuous white edge line on a carriageway if the driver is —
+
+    (a) overtaking a vehicle that is turning right, or making a U turn from the centre of the road, and is giving a right
+    change of direction signal; or
+
+    (b) driving a slow-moving vehicle, and it is necessary for the driver to drive on or over the edge line to allow the vehicle
+    to be overtaken or passed by another vehicle; or
+
+    (c) driving a vehicle that is too wide, or too long, to drive on the carriageway without driving on or over the edge line;
+    or
+
+    (d) permitted to drive on or over the edge line under another written law of the State; or
+
+    (e) avoiding an obstruction.'
+  text_en: 'A driver may drive on or over a continuous white edge line on a carriageway if the driver is —
+
+    (a) overtaking a vehicle that is turning right, or making a U turn from the centre of the road, and is giving a right
+    change of direction signal; or
+
+    (b) driving a slow-moving vehicle, and it is necessary for the driver to drive on or over the edge line to allow the vehicle
+    to be overtaken or passed by another vehicle; or
+
+    (c) driving a vehicle that is too wide, or too long, to drive on the carriageway without driving on or over the edge line;
+    or
+
+    (d) permitted to drive on or over the edge line under another written law of the State; or
+
+    (e) avoiding an obstruction.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-129(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 129(3)
+  page: 206
+  marking_type: continuous white edge line
+  element: boundary
+  text_original: 'A driver may drive on or over a continuous white edge line on a carriageway for up to 100 m if the driver
+    is —
+
+    (a) turning at an intersection; or
+
+    (b) entering or leaving the carriageway; or
+
+    (c) entering a part of the road of one kind from a part of the road of another kind (for example, moving to or from a
+    service road, a shoulder of the road, an emergency stopping bay or an emergency stopping lane); or
+
+    (d) stopping at the side of the road (including any shoulder of the road).'
+  text_en: 'A driver may drive on or over a continuous white edge line on a carriageway for up to 100 m if the driver is —
+
+    (a) turning at an intersection; or
+
+    (b) entering or leaving the carriageway; or
+
+    (c) entering a part of the road of one kind from a part of the road of another kind (for example, moving to or from a
+    service road, a shoulder of the road, an emergency stopping bay or an emergency stopping lane); or
+
+    (d) stopping at the side of the road (including any shoulder of the road).'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-129(4)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 129(4)
+  page: 206
+  marking_type: continuous white edge line
+  element: boundary
+  text_original: Subregulation (1) does not apply to the rider of a bicycle, electric rideable device or animal.
+  text_en: Subregulation (1) does not apply to the rider of a bicycle, electric rideable device or animal.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-WA-129(5)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 129(5)
+  page: 206
+  marking_type: continuous white edge line
+  element: boundary
+  text_original: 'For the purposes of this regulation, a driver drives over a continuous white edge line on a carriageway
+    if —
+
+    (a) for a line on the far left side of the carriageway — the driver’s vehicle is wholly or partly to the left of the line;
+    or
+
+    (b) for a line on the far right side of the carriageway — the driver’s vehicle is wholly or partly to the right of the
+    line.'
+  text_en: 'For the purposes of this regulation, a driver drives over a continuous white edge line on a carriageway if —
+
+    (a) for a line on the far left side of the carriageway — the driver’s vehicle is wholly or partly to the left of the line;
+    or
+
+    (b) for a line on the far right side of the carriageway — the driver’s vehicle is wholly or partly to the right of the
+    line.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-132(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 132(1)
+  page: 213
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: The driver of a vehicle, other than a bicycle or electric rideable device, must not drive in a bicycle lane,
+    unless the driver is permitted to do so under this regulation or regulation 136.
+  text_en: The driver of a vehicle, other than a bicycle or electric rideable device, must not drive in a bicycle lane, unless
+    the driver is permitted to do so under this regulation or regulation 136.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-132(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 132(2)
+  page: 213
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: If stopping or parking is permitted at a place in a bicycle lane, the driver of a vehicle other than a bicycle
+    or electric rideable device may drive for up to 50 m in the bicycle lane to stop or park at that place.
+  text_en: If stopping or parking is permitted at a place in a bicycle lane, the driver of a vehicle other than a bicycle
+    or electric rideable device may drive for up to 50 m in the bicycle lane to stop or park at that place.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-132(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 132(3)
+  page: 213
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: The driver of a public bus, or a taxi, may drive in a bicycle lane for up to 50 m if the driver is dropping
+    off, or picking up, passengers.
+  text_en: The driver of a public bus, or a taxi, may drive in a bicycle lane for up to 50 m if the driver is dropping off,
+    or picking up, passengers.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-133
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '133'
+  page: 213
+  marking_type: bus lane
+  element: lane_type
+  text_original: 'A person must not drive a vehicle along or into a bus lane unless —
+
+    (a) the vehicle is a public bus, an emergency vehicle or a special purpose vehicle; or
+
+    (b) the driver is permitted to do so under regulation 136.'
+  text_en: 'A person must not drive a vehicle along or into a bus lane unless —
+
+    (a) the vehicle is a public bus, an emergency vehicle or a special purpose vehicle; or
+
+    (b) the driver is permitted to do so under regulation 136.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-133A(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 133A(1)
+  page: 214
+  marking_type: busway
+  element: lane_type
+  text_original: 'A person must not drive a vehicle along or into a busway unless —
+
+    (a) the vehicle is a public bus, an emergency vehicle or a special purpose vehicle; or
+
+    (b) a taxi, and there is a sign at the beginning of the busway indicating that taxis may enter that busway.'
+  text_en: 'A person must not drive a vehicle along or into a busway unless —
+
+    (a) the vehicle is a public bus, an emergency vehicle or a special purpose vehicle; or
+
+    (b) a taxi, and there is a sign at the beginning of the busway indicating that taxis may enter that busway.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-134
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '134'
+  page: 215
+  marking_type: transit lane
+  element: lane_type
+  text_original: 'A driver must not drive in a transit lane unless —
+
+    (a) the driver is driving —
+
+    (i) a public bus, motor cycle, or taxi; or
+
+    (ii) if the transit lane sign applying to the transit lane is a “transit lane (T2)” sign — a vehicle carrying at least
+    one other person; or
+
+    (iii) if the transit lane sign applying to the transit lane is a “transit lane (T3)” sign — a vehicle carrying at least
+    2 other people;
+
+    or
+
+    (b) the driver is permitted to drive in the transit lane under regulation 136.'
+  text_en: 'A driver must not drive in a transit lane unless —
+
+    (a) the driver is driving —
+
+    (i) a public bus, motor cycle, or taxi; or
+
+    (ii) if the transit lane sign applying to the transit lane is a “transit lane (T2)” sign — a vehicle carrying at least
+    one other person; or
+
+    (iii) if the transit lane sign applying to the transit lane is a “transit lane (T3)” sign — a vehicle carrying at least
+    2 other people;
+
+    or
+
+    (b) the driver is permitted to drive in the transit lane under regulation 136.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-135
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '135'
+  page: 216
+  marking_type: truck lane
+  element: lane_type
+  text_original: The driver of a vehicle other than a truck must not drive in a lane to which a “truck lane” sign applies,
+    unless the driver is permitted to drive in the truck lane under regulation 136.
+  text_en: The driver of a vehicle other than a truck must not drive in a lane to which a “truck lane” sign applies, unless
+    the driver is permitted to drive in the truck lane under regulation 136.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-136(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 136(1)
+  page: 217
+  marking_type: bicycle, bus, transit or truck lane
+  element: lane_type
+  text_original: 'The driver of any vehicle may drive for up to the permitted distance in a bicycle lane, bus lane, transit
+    lane or truck lane if it is necessary for the driver to drive in the lane —
+
+    (a) to enter or leave the carriageway; or
+
+    (b) to enter a part of the carriageway of one kind from a part of the carriageway of another kind (for example, moving
+    to or from a service road, an emergency stopping bay or an emergency stopping lane); or
+
+    (c) to overtake a vehicle that is turning right, or making a U turn from the centre of the road, and is giving a right
+    turn signal; or
+
+    (d) to enter a marked lane, or a line of traffic, from the side of the carriageway.'
+  text_en: 'The driver of any vehicle may drive for up to the permitted distance in a bicycle lane, bus lane, transit lane
+    or truck lane if it is necessary for the driver to drive in the lane —
+
+    (a) to enter or leave the carriageway; or
+
+    (b) to enter a part of the carriageway of one kind from a part of the carriageway of another kind (for example, moving
+    to or from a service road, an emergency stopping bay or an emergency stopping lane); or
+
+    (c) to overtake a vehicle that is turning right, or making a U turn from the centre of the road, and is giving a right
+    turn signal; or
+
+    (d) to enter a marked lane, or a line of traffic, from the side of the carriageway.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-136(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 136(2)
+  page: 217
+  marking_type: bicycle, bus, transit or truck lane
+  element: lane_type
+  text_original: 'The driver of any vehicle may drive in a bicycle lane, bus lane, transit lane or truck lane if —
+
+    (a) it is necessary for the driver to drive in the lane to avoid an obstruction; or
+
+    (b) information on or with a traffic sign applying to the lane indicates that the driver may drive in the lane.'
+  text_en: 'The driver of any vehicle may drive in a bicycle lane, bus lane, transit lane or truck lane if —
+
+    (a) it is necessary for the driver to drive in the lane to avoid an obstruction; or
+
+    (b) information on or with a traffic sign applying to the lane indicates that the driver may drive in the lane.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-136(5)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 136(5)
+  page: 218
+  marking_type: bicycle, bus, transit or truck lane
+  element: lane_type
+  text_original: 'In this regulation —
+
+    permitted distance means —
+
+    (a) for a bicycle lane — 50 m; or
+
+    (b) for any other lane — 100 m.'
+  text_en: 'In this regulation —
+
+    permitted distance means —
+
+    (a) for a bicycle lane — 50 m; or
+
+    (b) for any other lane — 100 m.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-142
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '142'
+  page: 226
+  marking_type: continuous yellow edge line
+  element: boundary
+  text_original: A driver must not stop at the side of a carriageway marked with a continuous yellow edge line.
+  text_en: A driver must not stop at the side of a carriageway marked with a continuous yellow edge line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-145(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 145(1)
+  page: 230
+  marking_type: marked foot crossing
+  element: transverse
+  text_original: A driver must not stop on a marked foot crossing that is not at an intersection, or on the carriageway within
+    10 m before the traffic-control signal pole nearest to the driver at the marked foot crossing and 3 m after the marked
+    foot crossing, unless the person stops the vehicle at a place on a length of carriageway, or in an area, to which a parking
+    control sign applies and the person is permitted to stop at that place under these regulations.
+  text_en: A driver must not stop on a marked foot crossing that is not at an intersection, or on the carriageway within 10
+    m before the traffic-control signal pole nearest to the driver at the marked foot crossing and 3 m after the marked foot
+    crossing, unless the person stops the vehicle at a place on a length of carriageway, or in an area, to which a parking
+    control sign applies and the person is permitted to stop at that place under these regulations.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-145(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 145(2)
+  page: 230
+  marking_type: marked foot crossing
+  element: transverse
+  text_original: A driver must not enter upon, or attempt to cross, a marked foot crossing if the carriageway beyond it is
+    blocked.
+  text_en: A driver must not enter upon, or attempt to cross, a marked foot crossing if the carriageway beyond it is blocked.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-165
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '165'
+  page: 246
+  marking_type: painted island
+  element: area
+  text_original: 'The driver of a vehicle (other than a bicycle, an electric rideable device, an EPT or an animal) must not
+    stop so that any portion of the vehicle is on a path, dividing strip, painted island, or a nature strip adjacent to a
+    length of carriageway in a built-up area, unless —
+
+    (a) the driver stops in an area, to which a parking control sign applies and the driver is permitted to stop at that place
+    under these regulations; or'
+  text_en: 'The driver of a vehicle (other than a bicycle, an electric rideable device, an EPT or an animal) must not stop
+    so that any portion of the vehicle is on a path, dividing strip, painted island, or a nature strip adjacent to a length
+    of carriageway in a built-up area, unless —
+
+    (a) the driver stops in an area, to which a parking control sign applies and the driver is permitted to stop at that place
+    under these regulations; or'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-170
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '170'
+  page: 250
+  marking_type: M/C motorcycle parking marking
+  element: area
+  text_original: 'The driver of a vehicle must not stop on a length of carriageway, or in an area, to which a “motor cycle
+    parking” sign applies, or an area marked “M/C”, unless —
+
+    (a) the vehicle is a motor cycle; or
+
+    (b) the driver is dropping off, or picking up, passengers.'
+  text_en: 'The driver of a vehicle must not stop on a length of carriageway, or in an area, to which a “motor cycle parking”
+    sign applies, or an area marked “M/C”, unless —
+
+    (a) the vehicle is a motor cycle; or
+
+    (b) the driver is dropping off, or picking up, passengers.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-176(9)(a)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 176(9)(a)
+  page: 259
+  marking_type: angle parking road marking
+  element: area
+  text_original: 'This regulation does not apply to —
+
+    (a) the driver of a vehicle if the driver parks on a length of carriageway, or in an area, to which a parking control
+    sign or road marking applies, and information on or with the sign or road marking includes the words ‘angle parking’ or
+    ‘angle’; or'
+  text_en: 'This regulation does not apply to —
+
+    (a) the driver of a vehicle if the driver parks on a length of carriageway, or in an area, to which a parking control
+    sign or road marking applies, and information on or with the sign or road marking includes the words ‘angle parking’ or
+    ‘angle’; or'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-177(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 177(1)
+  page: 260
+  marking_type: parallel parking road marking
+  element: area
+  text_original: This regulation applies to the driver of a vehicle (other than a motor cycle) who parks in a median strip
+    parking area if a parking control sign or road marking applies to the area, and information on or with the sign or road
+    marking indicates that the vehicle must be positioned parallel to the median strip.
+  text_en: This regulation applies to the driver of a vehicle (other than a motor cycle) who parks in a median strip parking
+    area if a parking control sign or road marking applies to the area, and information on or with the sign or road marking
+    indicates that the vehicle must be positioned parallel to the median strip.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-178(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 178(2)
+  page: 260
+  marking_type: 45-degree angle parking road marking
+  element: area
+  text_original: 'If information on or with the parking control sign or road marking indicates that the driver’s vehicle must
+    be positioned at an angle of 45, or does not indicate a particular angle, the driver must position the vehicle —
+
+    (a) so the vehicle is at an angle as near as practicable to 45; and
+
+    (b) if the vehicle is parked on the side of a carriageway — with the rear of the vehicle nearest to traffic in the marked
+    lane or line of traffic next to the part of the carriageway where the driver parks.'
+  text_en: 'If information on or with the parking control sign or road marking indicates that the driver’s vehicle must be
+    positioned at an angle of 45, or does not indicate a particular angle, the driver must position the vehicle —
+
+    (a) so the vehicle is at an angle as near as practicable to 45; and
+
+    (b) if the vehicle is parked on the side of a carriageway — with the rear of the vehicle nearest to traffic in the marked
+    lane or line of traffic next to the part of the carriageway where the driver parks.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-178(3)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 178(3)
+  page: 261
+  marking_type: 90-degree angle parking road marking
+  element: area
+  text_original: 'If information on or with the parking control sign or road marking indicates that the driver’s vehicle must
+    be positioned at an angle of 90, the driver —
+
+    (a) must position the vehicle so the vehicle is at an angle as near as practicable to 90; and
+
+    (b) if the vehicle is parked on the side of a carriageway — may position the vehicle with either the front or rear of
+    the vehicle nearest to traffic in the marked lane or line of traffic next to the part of the carriageway where the driver
+    parks.'
+  text_en: 'If information on or with the parking control sign or road marking indicates that the driver’s vehicle must be
+    positioned at an angle of 90, the driver —
+
+    (a) must position the vehicle so the vehicle is at an angle as near as practicable to 90; and
+
+    (b) if the vehicle is parked on the side of a carriageway — may position the vehicle with either the front or rear of
+    the vehicle nearest to traffic in the marked lane or line of traffic next to the part of the carriageway where the driver
+    parks.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-178(4)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 178(4)
+  page: 262
+  marking_type: 135-degree angle parking marking
+  element: area
+  text_original: If information on or with the parking control sign or road marking indicates that the driver’s vehicle must
+    be positioned at an angle of 135°, the driver must position the vehicle — (a) so the vehicle is at an angle as near as
+    practicable to 135°; and (b) if the vehicle is parked on the side of a carriageway — with the front of the vehicle nearest
+    to traffic in the marked lane or line of traffic next to the part of the carriageway where the driver parks.
+  text_en: If information on or with the parking control sign or road marking indicates that the driver’s vehicle must be
+    positioned at an angle of 135°, the driver must position the vehicle — (a) so the vehicle is at an angle as near as practicable
+    to 135°; and (b) if the vehicle is parked on the side of a carriageway — with the front of the vehicle nearest to traffic
+    in the marked lane or line of traffic next to the part of the carriageway where the driver parks.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-178(5)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 178(5)
+  page: 263
+  marking_type: angle parking marking
+  element: area
+  text_original: If information on or with the parking control sign or road marking indicates that the driver’s vehicle must
+    be positioned at a particular angle, the driver must position the vehicle — (a) so the vehicle is at an angle as near
+    as practicable to the specified angle; and (b) if the vehicle is parked on the side of a carriageway — with the rear of
+    the vehicle nearest to the centre of the carriageway.
+  text_en: If information on or with the parking control sign or road marking indicates that the driver’s vehicle must be
+    positioned at a particular angle, the driver must position the vehicle — (a) so the vehicle is at an angle as near as
+    practicable to the specified angle; and (b) if the vehicle is parked on the side of a carriageway — with the rear of the
+    vehicle nearest to the centre of the carriageway.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-179(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 179(1)
+  page: 263
+  marking_type: parking bay markings
+  element: area
+  text_original: Subject to subregulation (2), a driver parking a vehicle on a length of carriageway, or in an area, on which
+    parking bays are marked (whether or not a “park in bays only” sign applies) must position the vehicle completely within
+    a single bay.
+  text_en: Subject to subregulation (2), a driver parking a vehicle on a length of carriageway, or in an area, on which parking
+    bays are marked (whether or not a “park in bays only” sign applies) must position the vehicle completely within a single
+    bay.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-179(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 179(2)
+  page: 264
+  marking_type: parking bay markings
+  element: area
+  text_original: If a vehicle is too wide or long to fit completely within a single parking bay, the person stopping the vehicle
+    must park the vehicle within the minimum number of parking bays needed to park that vehicle.
+  text_en: If a vehicle is too wide or long to fit completely within a single parking bay, the person stopping the vehicle
+    must park the vehicle within the minimum number of parking bays needed to park that vehicle.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-213
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '213'
+  page: 296
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: Wherever a bicycle lane is provided as part of a carriageway, and is in a reasonable condition for use, a
+    rider of a bicycle or electric rideable device must use that portion of a carriageway and no other.
+  text_en: Wherever a bicycle lane is provided as part of a carriageway, and is in a reasonable condition for use, a rider
+    of a bicycle or electric rideable device must use that portion of a carriageway and no other.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-214
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '214'
+  page: 296
+  marking_type: children’s crossing, marked foot crossing or pedestrian crossing
+  element: transverse
+  text_original: 'The rider of a bicycle or electric rideable device riding across a carriageway, or part of a carriageway,
+    on a children’s crossing, marked foot crossing or pedestrian crossing must —
+
+    (a) enter the crossing from the path connected to the crossing and not from the carriageway; and
+
+    (b) approach and ride on the crossing at a speed not exceeding 10 km/h; and
+
+    (c) keep to the left of the crossing unless it is impracticable to do so; and
+
+    (d) give way to any pedestrians on the crossing.'
+  text_en: 'The rider of a bicycle or electric rideable device riding across a carriageway, or part of a carriageway, on a
+    children’s crossing, marked foot crossing or pedestrian crossing must —
+
+    (a) enter the crossing from the path connected to the crossing and not from the carriageway; and
+
+    (b) approach and ride on the crossing at a speed not exceeding 10 km/h; and
+
+    (c) keep to the left of the crossing unless it is impracticable to do so; and
+
+    (d) give way to any pedestrians on the crossing.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-215A(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 215A(1)
+  page: 297
+  marking_type: bicycle storage area
+  element: area
+  text_original: The rider of a bicycle or electric rideable device approaching a bicycle storage area at an intersection
+    that has traffic-control signals showing a circular red signal or red arrow signal must not enter the bicycle storage
+    area other than from a bicycle lane.
+  text_en: The rider of a bicycle or electric rideable device approaching a bicycle storage area at an intersection that has
+    traffic-control signals showing a circular red signal or red arrow signal must not enter the bicycle storage area other
+    than from a bicycle lane.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    enter_waiting_area: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-215A(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 215A(2)
+  page: 297
+  marking_type: bicycle storage area
+  element: area
+  text_original: Subregulation (1) does not apply if the bicycle storage area does not have a bicycle lane leading into it.
+  text_en: Subregulation (1) does not apply if the bicycle storage area does not have a bicycle lane leading into it.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-215B(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 215B(1)
+  page: 297
+  marking_type: bicycle storage area
+  element: area
+  text_original: 'When entering a bicycle storage area, the rider of a bicycle or electric rideable device must give way to
+    —
+
+    (a) any vehicle that is in the area; and
+
+    (b) if the area is subject to a green or yellow traffic-control signal — any motor vehicle that is entering or about to
+    enter the area, unless the motor vehicle is turning in a direction that is subject to a red traffic arrow; and
+
+    (c) if the area forms part of a lane to which traffic-control signal arrows apply — any motor vehicle that is entering
+    or about to enter the area at a time when those arrows are green or yellow.'
+  text_en: 'When entering a bicycle storage area, the rider of a bicycle or electric rideable device must give way to —
+
+    (a) any vehicle that is in the area; and
+
+    (b) if the area is subject to a green or yellow traffic-control signal — any motor vehicle that is entering or about to
+    enter the area, unless the motor vehicle is turning in a direction that is subject to a red traffic arrow; and
+
+    (c) if the area forms part of a lane to which traffic-control signal arrows apply — any motor vehicle that is entering
+    or about to enter the area at a time when those arrows are green or yellow.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-218(1)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 218(1)
+  page: 299
+  marking_type: no bicycles road marking
+  element: lane_marking
+  text_original: The rider of a bicycle or electric rideable device must not ride on a length of carriageway or path to which
+    a “no bicycles” sign, or a “no bicycles” road marking, applies.
+  text_en: The rider of a bicycle or electric rideable device must not ride on a length of carriageway or path to which a
+    “no bicycles” sign, or a “no bicycles” road marking, applies.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-218(2)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 218(2)
+  page: 299
+  marking_type: no bicycles road marking
+  element: lane_marking
+  text_original: 'A “no bicycles” sign, or a “no bicycles” road marking, applies to a length of carriageway or path beginning
+    at the sign or marking and ending at the nearest of the following:
+
+    (a) a “bicycle path” sign or “bicycle path” road marking;
+
+    (b) a “bicycle lane” sign;
+
+    (c) a “separated footpath” sign or “separated footpath” road marking;
+
+    (d) a “shared path” sign;
+
+    (e) an “end no bicycles” sign;
+
+    (f) the next intersection.'
+  text_en: 'A “no bicycles” sign, or a “no bicycles” road marking, applies to a length of carriageway or path beginning at
+    the sign or marking and ending at the nearest of the following:
+
+    (a) a “bicycle path” sign or “bicycle path” road marking;
+
+    (b) a “bicycle lane” sign;
+
+    (c) a “separated footpath” sign or “separated footpath” road marking;
+
+    (d) a “shared path” sign;
+
+    (e) an “end no bicycles” sign;
+
+    (f) the next intersection.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-247
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '247'
+  page: 341
+  marking_type: stop line at B lights
+  element: transverse
+  text_original: 'Subject to regulation 249, the driver of a public bus approaching or at B lights showing a red B light must
+    stop —
+
+    (a) if there is a stop line at or near the B lights — as near as practicable to, but before reaching, the stop line; or'
+  text_en: 'Subject to regulation 249, the driver of a public bus approaching or at B lights showing a red B light must stop
+    —
+
+    (a) if there is a stop line at or near the B lights — as near as practicable to, but before reaching, the stop line; or'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-248
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: '248'
+  page: 341
+  marking_type: stop line at B lights
+  element: transverse
+  text_original: 'Subject to regulation 249, the driver of a public bus approaching or at B lights showing a yellow B light
+    must stop —
+
+    (a) if there is a stop line at or near the B lights and the driver can stop safely before reaching the stop line — as
+    near as practicable to, but before reaching, the stop line; or'
+  text_en: 'Subject to regulation 249, the driver of a public bus approaching or at B lights showing a yellow B light must
+    stop —
+
+    (a) if there is a stop line at or near the B lights and the driver can stop safely before reaching the stop line — as
+    near as practicable to, but before reaching, the stop line; or'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-WA-273(1)(a)
+  region: AU-WA
+  source: Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+  section: 273(1)(a)
+  page: 363
+  marking_type: stop line
+  element: transverse
+  text_original: 'Where a police officer regulating traffic gives a signal to stop, then —
+
+    (a) a driver approaching the person giving the signal, from the direction towards which the palm of that person’s hand
+    is facing, must stop the vehicle at a stop line, or the edge of the intersection, or at a reasonable distance from that
+    person, and must not drive forward, until given the signal to proceed;'
+  text_en: 'Where a police officer regulating traffic gives a signal to stop, then —
+
+    (a) a driver approaching the person giving the signal, from the direction towards which the palm of that person’s hand
+    is facing, must stop the vehicle at a stop line, or the edge of the intersection, or at a reasonable distance from that
+    person, and must not drive forward, until given the signal to proceed;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees

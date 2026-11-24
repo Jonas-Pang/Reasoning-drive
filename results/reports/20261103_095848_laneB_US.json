@@ -1,0 +1,435 @@
+{
+  "run_id": "20261103_095848_laneB_US",
+  "task": "lane",
+  "test": "B",
+  "region": "US",
+  "prompt": "prompts/lane_v1",
+  "model": "gpt-6.1-sol",
+  "split": "dev",
+  "mock": false,
+  "images": 38,
+  "repeats": 1,
+  "actions": {
+    "cells": 76,
+    "accuracy": 0.829,
+    "prohibited": {
+      "support": 36,
+      "tp": 27,
+      "fp": 3,
+      "fn": 9,
+      "precision": 0.9,
+      "recall": 0.75,
+      "f1": 0.818
+    },
+    "allowed": {
+      "support": 34,
+      "tp": 32,
+      "fp": 4,
+      "fn": 2,
+      "precision": 0.889,
+      "recall": 0.941,
+      "f1": 0.914
+    },
+    "confusion": {
+      "classes": [
+        "allowed",
+        "prohibited",
+        "not_determined",
+        "not_applicable"
+      ],
+      "matrix": [
+        [
+          32,
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          27,
+          6,
+          0
+        ],
+        [
+          1,
+          1,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "rows": "label",
+      "columns": "answer"
+    },
+    "prohibited_recall_by_action": {
+      "change_left": 0.889,
+      "change_right": 0.429,
+      "go_straight": 1.0,
+      "turn_left": 0.667,
+      "turn_right": 0.75,
+      "u_turn": 0.667
+    },
+    "unsafe": 3,
+    "over_cautious": 2,
+    "macro_f1": 0.866
+  },
+  "summary": {
+    "output2": {
+      "correct": 28,
+      "n": 36,
+      "acc": 0.778
+    },
+    "lane": {
+      "correct": 17,
+      "n": 38,
+      "acc": 0.447
+    },
+    "lane_core": {
+      "correct": 21,
+      "n": 38,
+      "acc": 0.553
+    },
+    "both_boundaries": {
+      "correct": 25,
+      "n": 38,
+      "acc": 0.658
+    },
+    "unsafe_errors": 3,
+    "over_cautious_errors": 2,
+    "markings_precision": 0.37,
+    "markings_recall": 0.909,
+    "cost_usd": 0.5302
+  },
+  "boundaries": {
+    "left_color": {
+      "accuracy": 0.921,
+      "n": 38,
+      "macro_f1": 0.945,
+      "per_class": {
+        "none": {
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "white": {
+          "support": 21,
+          "tp": 19,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.95,
+          "recall": 0.905,
+          "f1": 0.927
+        },
+        "yellow": {
+          "support": 16,
+          "tp": 15,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.882,
+          "recall": 0.938,
+          "f1": 0.909
+        }
+      },
+      "confusion": {
+        "classes": [
+          "none",
+          "white",
+          "yellow"
+        ],
+        "matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            19,
+            2
+          ],
+          [
+            0,
+            1,
+            15
+          ]
+        ],
+        "rows": "label",
+        "columns": "answer"
+      }
+    },
+    "left_pattern": {
+      "accuracy": 0.842,
+      "n": 38,
+      "macro_f1": 0.827,
+      "per_class": {
+        "dashed": {
+          "support": 15,
+          "tp": 13,
+          "fp": 2,
+          "fn": 2,
+          "precision": 0.867,
+          "recall": 0.867,
+          "f1": 0.867
+        },
+        "dotted": {
+          "support": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null
+        },
+        "double_solid": {
+          "support": 9,
+          "tp": 8,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.889,
+          "f1": 0.941
+        },
+        "none": {
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.667
+        },
+        "solid": {
+          "support": 13,
+          "tp": 10,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.909,
+          "recall": 0.769,
+          "f1": 0.833
+        }
+      },
+      "confusion": {
+        "classes": [
+          "dashed",
+          "dotted",
+          "double_solid",
+          "none",
+          "solid"
+        ],
+        "matrix": [
+          [
+            13,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            1,
+            10
+          ]
+        ],
+        "rows": "label",
+        "columns": "answer"
+      }
+    },
+    "right_color": {
+      "accuracy": 0.921,
+      "n": 38,
+      "macro_f1": 0.874,
+      "per_class": {
+        "none": {
+          "support": 3,
+          "tp": 3,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.667
+        },
+        "white": {
+          "support": 34,
+          "tp": 31,
+          "fp": 0,
+          "fn": 3,
+          "precision": 1.0,
+          "recall": 0.912,
+          "f1": 0.954
+        },
+        "yellow": {
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "confusion": {
+        "classes": [
+          "none",
+          "white",
+          "yellow"
+        ],
+        "matrix": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            31,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "rows": "label",
+        "columns": "answer"
+      }
+    },
+    "right_pattern": {
+      "accuracy": 0.842,
+      "n": 38,
+      "macro_f1": 0.61,
+      "per_class": {
+        "dashed": {
+          "support": 13,
+          "tp": 11,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.846,
+          "f1": 0.917
+        },
+        "dotted": {
+          "support": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null
+        },
+        "none": {
+          "support": 3,
+          "tp": 3,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.429,
+          "recall": 1.0,
+          "f1": 0.6
+        },
+        "solid": {
+          "support": 21,
+          "tp": 18,
+          "fp": 0,
+          "fn": 3,
+          "precision": 1.0,
+          "recall": 0.857,
+          "f1": 0.923
+        },
+        "solid_dashed": {
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        }
+      },
+      "confusion": {
+        "classes": [
+          "dashed",
+          "dotted",
+          "none",
+          "solid",
+          "solid_dashed"
+        ],
+        "matrix": [
+          [
+            11,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            18,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "rows": "label",
+        "columns": "answer"
+      }
+    }
+  },
+  "markings": {
+    "precision": 0.37,
+    "recall": 0.909,
+    "f1": 0.526
+  }
+}

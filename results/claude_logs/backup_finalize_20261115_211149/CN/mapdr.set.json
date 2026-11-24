@@ -1,0 +1,40 @@
+{
+  "trip_id": "mapdr",
+  "set_id": "mapdr",
+  "kind": "images",
+  "registered_utc": "2026-11-15T03:26:31Z",
+  "annotators_required": 2,
+  "split": "hash",
+  "quota": {
+    "dev": {
+      "solid": 6,
+      "dashed": 6,
+      "yellow": 6,
+      "arrow": 6,
+      "degraded": 0
+    },
+    "test": {
+      "solid": 30,
+      "dashed": 30,
+      "yellow": 30,
+      "arrow": 30,
+      "degraded": 30
+    }
+  },
+  "time_of_day": "",
+  "weather": "",
+  "dataset": "MapDR-mini",
+  "region": "CN",
+  "source_root": "mapdr",
+  "license": "MapDR-mini (Amap / Xi'an Jiaotong University, CVPR 2025), front-view clips from several Chinese cities, 2024, with lane-level rules; CC BY-NC-SA 4.0",
+  "split_unit": "folder (the frames of one folder form one clip)",
+  "index": {
+    "built_utc": "2026-11-15T03:26:31Z",
+    "images": 6902,
+    "dev_pool": 734,
+    "test_pool": 6168,
+    "hints": {}
+  },
+  "tool_version": "1.3",
+  "updated_utc": "2026-11-15T03:26:31Z"
+}

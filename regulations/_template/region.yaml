@@ -1,0 +1,30 @@
+# Template of one country. Copy this folder to regulations/<CODE>/ (for example regulations/UK/) and fill it in,
+# or let the extractor fill it from the standard's PDF:
+#   python main.py regulations extract --pdf regulations/inbox/<file>.pdf --code UK --name "the United Kingdom" --driving-side left
+# The extractor writes passages_draft.yaml; after reading it, `python main.py regulations accept UK` makes it passages_lane.yaml.
+
+code: XX                        # short code, also the "region" value of every passage
+name: Countryland               # "This photo was taken in <name>"
+name_zh: ""
+driving_side: right             # right or left
+
+standard:
+  title: ""                     # full title and edition of the marking standard
+  language: en                  # en, zh or both: which passage text the model gets
+  source_pdf: ""                # where the PDF is kept (data/ is not in git)
+  licence: ""
+
+passages:
+  marking: passages_marking.yaml
+  lane: [passages_marking.yaml, passages_lane.yaml]
+
+# norm_words (optional): the words that give a passage its force in this standard, if the defaults of its language
+# (reasoning_drive/regulations/norms.py: en, zh, ja) do not fit. Regular expressions; the strongest level found wins.
+# norm_words:
+#   mandatory: ['\bshall\b', '\bmust\b']
+#   recommended: ['\bshould\b']
+#   permissive: ['\bmay\b']
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

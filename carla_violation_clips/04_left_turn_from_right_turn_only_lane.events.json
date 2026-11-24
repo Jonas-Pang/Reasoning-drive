@@ -1,0 +1,11 @@
+[
+ {
+  "t": 11.3,
+  "action": "turn_left",
+  "truth": {
+   "US": "prohibited",
+   "CN": "prohibited"
+  },
+  "note": "turn left from the right-turn arrow lane"
+ }
+]

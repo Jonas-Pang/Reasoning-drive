@@ -1,0 +1,45 @@
+{
+  "pdf": "uk_highway_code_road_markings.html, uk_highway_code_103-158.html, uk_tsrgd_2016_schedule_9.html",
+  "file_sha256": "4499db738e99694054a5da2532f05216a501845e2a0fc786d97390fcd5c90599",
+  "code": "UK",
+  "document": "",
+  "pages": 19,
+  "pages_read": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "pages_same_as_reference": [],
+  "reference": "",
+  "requests": 4,
+  "mock": false,
+  "passages": 94,
+  "verified_quotes": 38,
+  "errors": [],
+  "usage": {
+    "input_tokens": 15701,
+    "output_tokens": 9865
+  },
+  "cost_usd": 0.2301,
+  "draft": "D:\\Project\\Reasoning_Drive\\regulations\\UK\\passages_draft.yaml",
+  "region_file": "D:\\Project\\Reasoning_Drive\\regulations\\UK\\region.yaml",
+  "time_utc": "2026-11-14T20:33:41Z",
+  "documents": {
+    "hc_markings": 33,
+    "uk_highway_code_103-158": 22,
+    "tsrgd": 39
+  }
+}

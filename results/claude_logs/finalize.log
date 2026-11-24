@@ -1,0 +1,8 @@
+=== 20261115_211149   datasets root: F:\数据集
+CN mapdr: {'prefix removed': 152, 'draft -> done': 80, 'left as draft': 69}
+CN mapdr lane status after merge: {'kept': 69, 'waiting': 101}
+US bdd100k_val: {'prefix removed': 114, 'draft -> done': 78, 'left as draft': 44}
+US bdd100k_val lane status after merge: {'done': 37, 'waiting': 89, 'kept': 44}
+CN: 101 model-produced finished labels, 20 drawn for the spot-check
+US: 89 model-produced finished labels, 18 drawn for the spot-check
+provenance rows 340, drafts for review 113, spot-check 38   (backup: results\claude_logs\backup_finalize_20261115_211149)

@@ -1,0 +1,20 @@
+21:10:56 JP covla: 10/143 scenes, 30 frames
+21:12:29 JP covla: 20/143 scenes, 60 frames
+21:13:46 JP covla: 30/143 scenes, 88 frames
+21:16:05 JP covla: 40/143 scenes, 116 frames
+21:17:08 JP covla: 50/143 scenes, 146 frames
+21:17:48 JP covla: 60/143 scenes, 176 frames
+21:18:26 JP covla: 70/143 scenes, 206 frames
+21:19:05 JP covla: 80/143 scenes, 239 frames
+21:19:52 JP covla: 90/143 scenes, 269 frames
+21:20:13 JP covla: 100/143 scenes, 299 frames
+21:20:31 JP covla: 110/143 scenes, 325 frames
+21:21:39 JP covla: 120/143 scenes, 351 frames
+21:22:14 JP covla: 130/143 scenes, 381 frames
+21:23:27 JP covla: 140/143 scenes, 409 frames
+21:23:34 JP covla: 418 of 418 candidate frames in F:\数据集\covla
+21:23:34 SG: reading v1.0-trainval01_keyframes.tgz (4.53 GB)
+21:24:15 SG nuscenes_sg: 119 of 797 candidate frames, 150 extra frames, in F:\数据集\nuscenes_sg
+21:24:16 IN: reading idd_mm_primary.zip (6.98 GB)
+21:24:23 IN idd: 561 of 561 candidate frames, 0 extra frames, in F:\数据集\idd
+21:24:23 Finished

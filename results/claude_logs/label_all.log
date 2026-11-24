@@ -1,0 +1,44 @@
+=== 2026-11-15 21:46:32  datasets root F:\数据集
+[CN] Labeling tool for 'mapdr' is running at http://127.0.0.1:8765/
+[CN] Everything is saved as you go. Press Ctrl+C here to stop.
+[US] Labeling tool for 'bdd100k_val' is running at http://127.0.0.1:8766/
+[US] Everything is saved as you go. Press Ctrl+C here to stop.
+Backends: {'CN': 8765, 'US': 8766}
+One labeling window for China and the US: http://127.0.0.1:8770/   (lane page only: http://127.0.0.1:8770/lanes/)
+Close this window to stop.
+=== 2026-11-16 20:40:54  datasets root F:\数据集
+=== 2026-11-16 20:40:56  datasets root F:\数据集
+[IN] Labeling tool for 'idd' is running at http://127.0.0.1:8768/
+[IN] Everything is saved as you go. Press Ctrl+C here to stop.
+[UK] Labeling tool for 'lingoqa' is running at http://127.0.0.1:8767/
+[UK] Everything is saved as you go. Press Ctrl+C here to stop.
+[IN] Labeling tool for 'idd' is running at http://127.0.0.1:8768/
+[IN] Everything is saved as you go. Press Ctrl+C here to stop.
+[UK] Labeling tool for 'lingoqa' is running at http://127.0.0.1:8767/
+[UK] Everything is saved as you go. Press Ctrl+C here to stop.
+[CN] Labeling tool for 'mapdr' is running at http://127.0.0.1:8765/
+[CN] Everything is saved as you go. Press Ctrl+C here to stop.
+[US] Labeling tool for 'bdd100k_val' is running at http://127.0.0.1:8766/
+[US] Everything is saved as you go. Press Ctrl+C here to stop.
+Backends: {'IN': 8768, 'UK': 8767, 'CN': 8765, 'US': 8766}
+One labeling window for 中国 MapDR + 美国 BDD100K + 英国 LingoQA + 印度 IDD: http://127.0.0.1:8770/   (lane page only: http://127.0.0.1:8770/lanes/)
+Close this window to stop.
+[CN] Labeling tool for 'mapdr' is running at http://127.0.0.1:8765/
+[CN] Everything is saved as you go. Press Ctrl+C here to stop.
+[US] Labeling tool for 'bdd100k_val' is running at http://127.0.0.1:8766/
+[US] Everything is saved as you go. Press Ctrl+C here to stop.
+Backends: {'IN': 8768, 'UK': 8767, 'CN': 8765, 'US': 8766}
+One labeling window for 中国 MapDR + 美国 BDD100K + 英国 LingoQA + 印度 IDD: http://127.0.0.1:8770/   (lane page only: http://127.0.0.1:8770/lanes/)
+Close this window to stop.
+=== 2026-11-16 21:45:37  datasets root F:\数据集
+[CN] Labeling tool for 'mapdr' is running at http://127.0.0.1:8765/
+[CN] Everything is saved as you go. Press Ctrl+C here to stop.
+[IN] Labeling tool for 'idd' is running at http://127.0.0.1:8768/
+[IN] Everything is saved as you go. Press Ctrl+C here to stop.
+[UK] Labeling tool for 'lingoqa' is running at http://127.0.0.1:8767/
+[UK] Everything is saved as you go. Press Ctrl+C here to stop.
+[US] Labeling tool for 'bdd100k_val' is running at http://127.0.0.1:8766/
+[US] Everything is saved as you go. Press Ctrl+C here to stop.
+Backends: {'CN': 8765, 'IN': 8768, 'UK': 8767, 'US': 8766}
+One labeling window for 中国 MapDR + 美国 BDD100K + 英国 LingoQA + 印度 IDD: http://127.0.0.1:8780/   (lane page only: http://127.0.0.1:8780/lanes/)
+Close this window to stop.

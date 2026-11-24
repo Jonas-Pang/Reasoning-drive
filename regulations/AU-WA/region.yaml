@@ -1,0 +1,38 @@
+# Western Australia, Australia (AU-WA). Western Australia has its own Road Traffic Code 2000 (based on the national rules but numbered differently).
+# Documents are downloaded and read by:
+#   python main.py regulations fetch AU-WA
+#   python main.py regulations extract-all AU-WA --real
+#   python main.py regulations accept AU-WA        (after reading passages_draft.yaml)
+
+code: AU-WA
+name: "Western Australia, Australia"
+name_zh: "西澳大利亚州（澳大利亚）"
+driving_side: left
+status: draft                   # planned -> draft (extracted) -> in use (accepted)
+
+standard:
+  title: "Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)"
+  language: en
+  source_url: https://www.legislation.wa.gov.au/legislation/prod/filestore.nsf/FileURL/mrdoc_48332.htm/%24FILE/Road%20Traffic%20Code%202000%20-%20%5B05-y0-00%5D.html
+  source_pdf: regulations/inbox/AU-WA/wa_road_traffic_code_2000
+  licence: "not checked yet: see the register's copyright page"
+
+documents:
+  - tag: rules
+    title: "Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)"
+    urls:
+      - {url: "https://www.legislation.wa.gov.au/legislation/statutes.nsf/RedirectURL?OpenAgent&query=mrdoc_49388.pdf", type: pdf}
+      - {url: "https://www.legislation.wa.gov.au/legislation/prod/filestore.nsf/FileURL/mrdoc_48332.htm/%24FILE/Road%20Traffic%20Code%202000%20-%20%5B05-y0-00%5D.html", type: html}
+    find: {page: "https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_s257_currencies.html", pattern: "href=[\"']([^\"']*mrdoc_\\d+\\.pdf[^\"']*)[\"']", type: pdf}
+    file: regulations/inbox/AU-WA/wa_road_traffic_code_2000          # suffix (.pdf/.html/.rtf) = the type obtained
+    keywords: ["dividing line", "lane line", "marked lane", "turn line", "traffic lane arrow", "lane arrow", "edge line", "painted island", "continuous line", "broken line", "keep clear", "stop line", "give way line", "hook turn", "transit lane", "bus lane", "tram lane", "truck lane", "bicycle lane", "special purpose lane", "changing lanes", "change lanes", "turning lane", "slip lane", "median strip", "line of traffic", "merge", "overtak", "keep left", "u-turn", "carriageway"]
+    min_hits: 2
+    # first PDF in the register's version table = the current version; WA numbers its regulations differently, so no parent
+
+passages:
+  marking: passages_lane.yaml
+  lane: [passages_lane.yaml]
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

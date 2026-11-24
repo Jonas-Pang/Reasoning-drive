@@ -1,0 +1,49 @@
+carla_Town03_lane_change_mirrored | lane | Test A | gpt-6.1-sol
+---------------------------------------------------------------
+Step 1  Scene           A two-way urban road runs beneath an elevated structure in Japan. My car is in the
+                        rightmost of two lanes traveling in this direction; no intersection or lane ending is
+                        clearly visible ahead. (lanes 2, mine 2, full)
+Step 2  Left            A single continuous solid white line separates my lane from another lane traveling in
+                        the same direction on the left; there is no curb at this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           Two parallel solid yellow lines separate my lane from opposing traffic on the right;
+                        there is no curb at this boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: Two same-direction lanes and ego lane index 2 agree with a lane divider on
+                        the left and the center line on the right. | roles: The white lane divider and double
+                        yellow center line fit their observed roles in Japan. | markings: No arrows, words,
+                        symbols, transverse lines or waiting areas are visible in my lane. | unseen: No
+                        intersection layout or markings beyond the readable road stretch have been inferred. |
+                        result: consistent
+Step 5  Rule            left_boundary: In Japan, a solid white same-direction lane divider does not itself
+                        prohibit changing lanes across it, provided the maneuver is safe.
+Step 5  Rule            right_boundary: The solid yellow center marking prohibits crossing into the opposing
+                        side for overtaking, so it does not permit the rightward lane-change maneuver
+                        considered here.
+Step 6  change_left     allowed: The solid white lane divider permits a safe lane change into the adjacent
+                        same-direction lane.
+Step 6  change_right    prohibited: The double solid yellow center line prohibits crossing into opposing
+                        traffic for this lane-change or overtaking maneuver.
+Step 6  go_straight     not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_left       not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_right      not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  u_turn          not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  enter_waiting_areanot_applicable: No left-turn waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         consistent
+Advice                  You may move into the lane on the left when safe; do not cross the yellow center lines
+                        to overtake. No visible turn arrows or stop line determine intersection movements or a
+                        stopping position.
+Model's summary         **Clarifying lane rules in Japan**  I need to identify lane rules in Japan. A solid
+                        white lane divider means crossing is allowed, while a double yellow line indicates
+                        overtaking is prohibited. It seems that the yellow center lines typically restrict
+                        crossing for overtaking as well. The left line looks solid and continuous. I shouldn't
+                        provide additional patterns or schemas here. I’ll keep this clear and concise.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4424, out 851, 13.42 s

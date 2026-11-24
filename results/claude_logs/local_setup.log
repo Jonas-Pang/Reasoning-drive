@@ -1,0 +1,24 @@
+=== 2026/11/16 ÷‹“ª 13:00:54.60 
+--- graphics card 
+name, memory.total [MiB], driver_version
+NVIDIA GeForce RTX 2060, 6144 MiB, 517.00
+--- free space (GB) C: and D: 
+C: 29.4
+D: 116.3
+--- downloading OllamaSetup.exe 
+--- ollama: D:\Ollama\ollama.exe 
+ollama version is 0.40.16
+--- OLLAMA_MODELS=D:\Ollama\models 
+--- pull qwen3.5:9b 
+pull qwen3.5:9b FAILED 
+--- pull gemma4:12b 
+pull gemma4:12b FAILED 
+--- pull qwen3.5:4b 
+pull qwen3.5:4b FAILED 
+--- models 
+2026/11/16 13:15:15 WARN Failed to rotate log older=C:\Users\24287\AppData\Local\Ollama\app-1.log newer=C:\Users\24287\AppData\Local\Ollama\app.log error="rename C:\\Users\\24287\\AppData\\Local\\Ollama\\app.log C:\\Users\\24287\\AppData\\Local\\Ollama\\app-1.log: The process cannot access the file because it is being used by another process."
+time=2026-11-16T13:15:15.691-05:00 level=INFO source=app_windows.go:281 msg="starting Ollama" app=D:\Ollama version=0.40.16 OS=Windows/10.0.26200
+time=2026-11-16T13:15:15.691-05:00 level=INFO source=eventloop.go:310 msg="existing instance found, not focusing due to startHidden"
+time=2026-11-16T13:15:15.691-05:00 level=INFO source=app_windows.go:79 msg="existing instance found, exiting"
+Error: timed out waiting for server to start
+--- model folder 

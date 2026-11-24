@@ -1,0 +1,2944 @@
+# DRAFT passages of the Australian Capital Territory, Australia (AU-ACT) from act_road_rules_regulation_2017.pdf, 2026-11-14 (gpt-6.1-sol).
+# Read every passage against the PDF. verified_quote: false means the original text was not found on its page.
+# Delete what is not a rule for drivers, fix sections and texts, then:  python main.py regulations accept AU-ACT
+
+- rule_id: AU-ACT-28(2A)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 28 (2A)
+  page: 37
+  marking_type: bicycle storage area
+  element: area
+  text_original: If there is a bicycle storage area before an intersection that extends across 1 or more marked lanes of a
+    multi -lane road, the rider of a bicycle turning left must approach and enter the intersection from within the part of
+    the bicycle storage area that is directly in front of the left marked lane or of a bicycle lane that is on the l eft side
+    of the road.
+  text_en: If there is a bicycle storage area before an intersection that extends across 1 or more marked lanes of a multi
+    -lane road, the rider of a bicycle turning left must approach and enter the intersection from within the part of the bicycle
+    storage area that is directly in front of the left marked lane or of a bicycle lane that is on the l eft side of the road.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    turn_left: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-29(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 29 (1)
+  page: 38
+  marking_type: left-turn guide line
+  element: boundary
+  text_original: 'If a driver is turning left at an intersection and there is a turn line indicating how the turn is required
+    to be made, the driver must make the turn as indicated by the turn line unless—
+
+    (a) the driver is turning, at B lights or traffic arrows, in accordance with division 17.2 (Public buses); or
+
+    (b) subsection (2) applies to the driver.'
+  text_en: 'If a driver is turning left at an intersection and there is a turn line indicating how the turn is required to
+    be made, the driver must make the turn as indicated by the turn line unless—
+
+    (a) the driver is turning, at B lights or traffic arrows, in accordance with division 17.2 (Public buses); or
+
+    (b) subsection (2) applies to the driver.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    turn_left: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-29(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 29 (2)
+  page: 38
+  marking_type: left-turn guide line
+  element: boundary
+  text_original: 'A driver may turn left at an intersection other than as indicated by a turn line if—
+
+    (a) the driver’s vehicle, together with any load or projection, is 7.5m long, or longer; and
+
+    (b) the vehicle displays a do not overtake turning vehicle sign; and
+
+    (c) it is not practicable for the driver to turn left as indicated by the turn line; and
+
+    (d) the driver can safely turn left other than as indicated by the turn line.'
+  text_en: 'A driver may turn left at an intersection other than as indicated by a turn line if—
+
+    (a) the driver’s vehicle, together with any load or projection, is 7.5m long, or longer; and
+
+    (b) the vehicle displays a do not overtake turning vehicle sign; and
+
+    (c) it is not practicable for the driver to turn left as indicated by the turn line; and
+
+    (d) the driver can safely turn left other than as indicated by the turn line.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    turn_left: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-31(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 31 (2)
+  page: 39
+  marking_type: dividing line
+  element: boundary
+  text_original: If the road has a dividing line or median strip, the driver must approach and enter the intersection from
+    the left of, parallel to, and as near as practicable to, the dividing line or median strip.
+  text_en: If the road has a dividing line or median strip, the driver must approach and enter the intersection from the left
+    of, parallel to, and as near as practicable to, the dividing line or median strip.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-31(4A)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 31 (4A)
+  page: 40
+  marking_type: bicycle storage area
+  element: area
+  text_original: Subsections (2) to (4) also apply to the rider of a bicycle who approaches and enters an intersection from
+    a bicycle storage area.
+  text_en: Subsections (2) to (4) also apply to the rider of a bicycle who approaches and enters an intersection from a bicycle
+    storage area.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-31(4B)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 31 (4B)
+  page: 40
+  marking_type: bicycle storage area
+  element: area
+  text_original: Despite subsections (2) to (4), if there is space in a bicycle storage area for 2 riders of bicycles to be
+    next to each other, the rider on the left may approach and enter the intersection as near as practicable to the left side
+    of the other rider, but on ly if that other rider approaches and enters the intersection in accordance with this section.
+  text_en: Despite subsections (2) to (4), if there is space in a bicycle storage area for 2 riders of bicycles to be next
+    to each other, the rider on the left may approach and enter the intersection as near as practicable to the left side of
+    the other rider, but on ly if that other rider approaches and enters the intersection in accordance with this section.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-32(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 32 (1)
+  page: 41
+  marking_type: marked right lane
+  element: lane_type
+  text_original: 'A driver turning right at an intersection from a multi -lane road must approach and enter the intersection
+    from within the right lane unless—
+
+    (a) the driver is required or permitted to approach and enter the intersection from within another marked lane in accordance
+    with—
+
+    (i) section 89 (1) (Right turn sign); or
+
+    (ii) section 92 (Traffic lane arrows); or
+
+    (iii) section 159 (Marked lane required to be used by particular kind of vehicle); or
+
+    (b) the driver is turning, at B lights or traffic arrows, in accordance with division 17.2 (Public buses); or
+
+    (c) subsection (2) applies to the driver.'
+  text_en: 'A driver turning right at an intersection from a multi -lane road must approach and enter the intersection from
+    within the right lane unless—
+
+    (a) the driver is required or permitted to approach and enter the intersection from within another marked lane in accordance
+    with—
+
+    (i) section 89 (1) (Right turn sign); or
+
+    (ii) section 92 (Traffic lane arrows); or
+
+    (iii) section 159 (Marked lane required to be used by particular kind of vehicle); or
+
+    (b) the driver is turning, at B lights or traffic arrows, in accordance with division 17.2 (Public buses); or
+
+    (c) subsection (2) applies to the driver.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    turn_right: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-32(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 32 (2)
+  page: 42
+  marking_type: marked lane next to right lane
+  element: lane_type
+  text_original: 'A driver may approach and enter the intersection from the marked lane next to the right lane as well as,
+    or instead of, the right lane if—
+
+    (a) the driver’s vehicle, together with any load or projection, is 7.5m long, or longer; and
+
+    (b) the vehicle displays a do not overtake turning vehicle sign; and
+
+    (c) any part of the vehicle is within 50m of the nearest point of the intersection; and
+
+    (d) it is not practicable for the driver to turn right from within the right lane; and
+
+    (e) the driver can safely occupy the next marked lane and can safely turn right at the intersection by occupying the next
+    marked lane, or both lanes.'
+  text_en: 'A driver may approach and enter the intersection from the marked lane next to the right lane as well as, or instead
+    of, the right lane if—
+
+    (a) the driver’s vehicle, together with any load or projection, is 7.5m long, or longer; and
+
+    (b) the vehicle displays a do not overtake turning vehicle sign; and
+
+    (c) any part of the vehicle is within 50m of the nearest point of the intersection; and
+
+    (d) it is not practicable for the driver to turn right from within the right lane; and
+
+    (e) the driver can safely occupy the next marked lane and can safely turn right at the intersection by occupying the next
+    marked lane, or both lanes.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    turn_right: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-33(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 33 (2)
+  page: 43
+  marking_type: right-turn guide line
+  element: boundary
+  text_original: If there is a turn line indicating how the turn is required to be made, the driver must make the turn as
+    indicated by the turn line.
+  text_en: If there is a turn line indicating how the turn is required to be made, the driver must make the turn as indicated
+    by the turn line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-33(4)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 33 (4)
+  page: 45
+  marking_type: right-turn guide line
+  element: boundary
+  text_original: 'A driver may turn right other than as indicated by a turn line if—
+
+    (a) the driver’s vehicle, together with any load or projection, is 7.5m long, or longer; and
+
+    (b) the vehicle displays a do not overtake turning vehicle sign; and
+
+    (c) it is not practicable for the driver to turn right as indicated by the turn line; and
+
+    (d) the driver can safely make the turn other than as indicated by the turn line.'
+  text_en: 'A driver may turn right other than as indicated by a turn line if—
+
+    (a) the driver’s vehicle, together with any load or projection, is 7.5m long, or longer; and
+
+    (b) the vehicle displays a do not overtake turning vehicle sign; and
+
+    (c) it is not practicable for the driver to turn right as indicated by the turn line; and
+
+    (d) the driver can safely make the turn other than as indicated by the turn line.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    turn_right: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-34(2)step2
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 34 (2) step 2
+  page: 46
+  marking_type: marked foot crossing
+  element: transverse
+  text_original: Move forward, keeping as near as practicable to the left of the intersection and clear of any marked foot
+    crossing, until the driver is as near as practicable to the far side of the road that the driver is entering.
+  text_en: Move forward, keeping as near as practicable to the left of the intersection and clear of any marked foot crossing,
+    until the driver is as near as practicable to the far side of the road that the driver is entering.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-ACT-35(3)step2
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 35 (3) step 2
+  page: 47
+  marking_type: marked foot crossing
+  element: transverse
+  text_original: 'Move forward—
+
+    (a) keeping as near as practicable to the far left side of the intersection; and
+
+    (b) keeping clear of any marked foot crossing; and
+
+    (c) keeping clear, as far as practicable, of any driver turning left from the left of the intersection;
+
+    until the rider is as near as practicable to the far side of the road that the rider is entering.'
+  text_en: 'Move forward—
+
+    (a) keeping as near as practicable to the far left side of the intersection; and
+
+    (b) keeping clear of any marked foot crossing; and
+
+    (c) keeping clear, as far as practicable, of any driver turning left from the left of the intersection;
+
+    until the rider is as near as practicable to the far side of the road that the rider is entering.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-ACT-35(4)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 35 (4)
+  page: 48
+  marking_type: bicycle hook turn storage area
+  element: area
+  text_original: 'To make a hook turn under this section at an intersection that has a bicycle hook turn storage area on the
+    left side of the intersection as the rider approaches the intersection, the rider must take the following initial 2 steps
+    instead of the initial 2 steps listed in subsection (3):
+
+    1 Approach the intersection from the far left side of the road the rider is leaving and enter the intersection by moving
+    into the bicycle hook turn storage area, keeping clear of any marked foot crossing.
+
+    2 Move forward in the bicycle hook turn storage area until the rider is as near as practicable to the far side of the
+    road that the rider is entering.'
+  text_en: 'To make a hook turn under this section at an intersection that has a bicycle hook turn storage area on the left
+    side of the intersection as the rider approaches the intersection, the rider must take the following initial 2 steps instead
+    of the initial 2 steps listed in subsection (3):
+
+    1 Approach the intersection from the far left side of the road the rider is leaving and enter the intersection by moving
+    into the bicycle hook turn storage area, keeping clear of any marked foot crossing.
+
+    2 Move forward in the bicycle hook turn storage area until the rider is as near as practicable to the far side of the
+    road that the rider is entering.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    enter_waiting_area: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-56(1)(a)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 56 (1) (a)
+  page: 59
+  marking_type: stop line at red traffic light
+  element: transverse
+  text_original: 'A driver approaching or at traffic lights showing a red traffic light must stop—
+
+    (a) if there is a stop line at or near the traffic lights —as near as practicable to, but before reaching, the stop line;'
+  text_en: 'A driver approaching or at traffic lights showing a red traffic light must stop—
+
+    (a) if there is a stop line at or near the traffic lights —as near as practicable to, but before reaching, the stop line;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-56(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 56 (1)
+  page: 59
+  marking_type: stop line at red traffic light
+  element: transverse
+  text_original: and must not proceed past the stop line, stop here on red signal sign or nearest or only traffic lights until
+    the traffic lights show a green or flashing yellow traffic light or no traffic light.
+  text_en: and must not proceed past the stop line, stop here on red signal sign or nearest or only traffic lights until the
+    traffic lights show a green or flashing yellow traffic light or no traffic light.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-56(2)(a)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 56 (2) (a)
+  page: 60
+  marking_type: stop line at red traffic arrow
+  element: transverse
+  text_original: 'A driver approaching or at traffic arrows showing a red traffic arrow who is turning in the direction indicated
+    by the arrow must stop—
+
+    (a) if there is a stop line at or near the traffic arrows —as near as practicable to, but before reaching, the stop line;'
+  text_en: 'A driver approaching or at traffic arrows showing a red traffic arrow who is turning in the direction indicated
+    by the arrow must stop—
+
+    (a) if there is a stop line at or near the traffic arrows —as near as practicable to, but before reaching, the stop line;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-56(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 56 (2)
+  page: 61
+  marking_type: stop line at red traffic arrow
+  element: transverse
+  text_original: and must not proceed past the stop line, stop here on red arrow sign or nearest or only traffic arrows until
+    the traffic arrows show a green or flashing yellow traffic arrow or no traffic arrow.
+  text_en: and must not proceed past the stop line, stop here on red arrow sign or nearest or only traffic arrows until the
+    traffic arrows show a green or flashing yellow traffic arrow or no traffic arrow.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-56(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 56 (3)
+  page: 61
+  marking_type: bicycle storage area stop lines
+  element: transverse
+  text_original: 'If there is a bicycle storage area before any traffic lights referred to in subsection (1) or (2), a reference
+    to the stop line in subsection (1) (a) or (2) (a)—
+
+    (a) in the case of the driver of a motor vehicle—is a reference to the first stop line that the driver comes, or came,
+    to in approaching the lights; or
+
+    (b) in the case of the rider of a bicycle —is a reference to the stop line that is nearest to the intersection.'
+  text_en: 'If there is a bicycle storage area before any traffic lights referred to in subsection (1) or (2), a reference
+    to the stop line in subsection (1) (a) or (2) (a)—
+
+    (a) in the case of the driver of a motor vehicle—is a reference to the first stop line that the driver comes, or came,
+    to in approaching the lights; or
+
+    (b) in the case of the rider of a bicycle —is a reference to the stop line that is nearest to the intersection.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-57(1)(a)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 57 (1) (a)
+  page: 61
+  marking_type: stop line at yellow traffic light
+  element: transverse
+  text_original: 'A driver approaching or at traffic lights showing a yellow traffic light must stop—
+
+    (a) if there is a stop line at or near the traffic lights and the driver can stop safely before reaching the stop line
+    —as near as practicable to, but before reaching, the stop line;'
+  text_en: 'A driver approaching or at traffic lights showing a yellow traffic light must stop—
+
+    (a) if there is a stop line at or near the traffic lights and the driver can stop safely before reaching the stop line
+    —as near as practicable to, but before reaching, the stop line;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-57(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 57 (1)
+  page: 62
+  marking_type: stop line at yellow traffic light
+  element: transverse
+  text_original: and must not proceed past the stop line or nearest or only traffic lights, or into the intersection, until
+    the traffic lights show a green or flashing yellow traffic light or no traffic light.
+  text_en: and must not proceed past the stop line or nearest or only traffic lights, or into the intersection, until the
+    traffic lights show a green or flashing yellow traffic light or no traffic light.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-57(2)(a)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 57 (2) (a)
+  page: 62
+  marking_type: stop line at yellow traffic arrow
+  element: transverse
+  text_original: 'A driver approaching or at traffic arrows showing a yellow traffic arrow who is turning in the direction
+    indicated by the arrow must stop—
+
+    (a) if there is a stop line at or near the traffic arrows and the driver can stop safely before reaching the stop line
+    —as near as practicable to, but before reaching, the stop line;'
+  text_en: 'A driver approaching or at traffic arrows showing a yellow traffic arrow who is turning in the direction indicated
+    by the arrow must stop—
+
+    (a) if there is a stop line at or near the traffic arrows and the driver can stop safely before reaching the stop line
+    —as near as practicable to, but before reaching, the stop line;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-57(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 57 (2)
+  page: 62
+  marking_type: stop line at yellow traffic arrow
+  element: transverse
+  text_original: and must not proceed past the stop line or nearest or only traffic arrows, or into the intersection, until
+    the traffic arrows show a green or flashing yellow traffic arrow or no traffic arrow.
+  text_en: and must not proceed past the stop line or nearest or only traffic arrows, or into the intersection, until the
+    traffic arrows show a green or flashing yellow traffic arrow or no traffic arrow.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-65(1)–(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 65 (1)–(2)
+  page: 69
+  marking_type: marked foot crossing with flashing yellow traffic light
+  element: transverse
+  text_original: '(1) This section applies to a driver approaching or at a marked foot crossing (except at or near an intersection)
+    with a flashing yellow traffic light at the crossing.
+
+    (2) The driver must—
+
+    (a) give way to any pedestrian on or entering the crossing; and
+
+    (b) not obstruct any pedestrian on the crossing; and
+
+    (c) not overtake or pass a vehicle that is travelling in the same direction as the driver and is stopping, or has stopped,
+    to give way at the crossing; and
+
+    (d) give way to any bicycle rider on or entering the crossing; and
+
+    (e) not obstruct any bicycle rider on or entering the crossing.'
+  text_en: '(1) This section applies to a driver approaching or at a marked foot crossing (except at or near an intersection)
+    with a flashing yellow traffic light at the crossing.
+
+    (2) The driver must—
+
+    (a) give way to any pedestrian on or entering the crossing; and
+
+    (b) not obstruct any pedestrian on the crossing; and
+
+    (c) not overtake or pass a vehicle that is travelling in the same direction as the driver and is stopping, or has stopped,
+    to give way at the crossing; and
+
+    (d) give way to any bicycle rider on or entering the crossing; and
+
+    (e) not obstruct any bicycle rider on or entering the crossing.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-65(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 65 (3)
+  page: 70
+  marking_type: marked foot crossing with flashing yellow traffic light
+  element: transverse
+  text_original: (3) If there is no pedestrian or bicycle rider on the crossing, and no other vehicle travelling in the same
+    direction as the driver that is stopping, or has stopped, to give way at the crossing, the driver may proceed through
+    the crossing.
+  text_en: (3) If there is no pedestrian or bicycle rider on the crossing, and no other vehicle travelling in the same direction
+    as the driver that is stopping, or has stopped, to give way at the crossing, the driver may proceed through the crossing.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-66(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 66 (2)
+  page: 70
+  marking_type: stop line at twin red lights
+  element: transverse
+  text_original: (2) If there is a stop line at or near the lights and the driver can stop safely before reaching the stop
+    line, the driver must stop as near as practicable to, but before reaching, the stop line.
+  text_en: (2) If there is a stop line at or near the lights and the driver can stop safely before reaching the stop line,
+    the driver must stop as near as practicable to, but before reaching, the stop line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-67(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 67 (1)
+  page: 71
+  marking_type: stop line at intersection without traffic lights
+  element: transverse
+  text_original: (1) A driver at an intersection with a stop sign or stop line, but without traffic lights, must stop and
+    give way in accordance with this section.
+  text_en: (1) A driver at an intersection with a stop sign or stop line, but without traffic lights, must stop and give way
+    in accordance with this section.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-67(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 67 (2)
+  page: 71
+  marking_type: stop line at intersection without traffic lights
+  element: transverse
+  text_original: '(2) The driver must stop as near as practicable to, but before reaching—
+
+    (a) the stop line; or
+
+    (b) if there is no stop line—the intersection.'
+  text_en: '(2) The driver must stop as near as practicable to, but before reaching—
+
+    (a) the stop line; or
+
+    (b) if there is no stop line—the intersection.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-67(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 67 (3)
+  page: 71
+  marking_type: stop line at intersection without traffic lights
+  element: transverse
+  text_original: '(3) The driver must give way to a vehicle in, entering or approaching the intersection except—
+
+    (a) an oncoming vehicle turning right at the intersection if a stop sign, stop line, give way sign or give way line applies
+    to the driver of the oncoming vehicle; or
+
+    (b) a vehicle turning left at the intersection using a slip lane; or
+
+    (c) a vehicle making a U-turn.'
+  text_en: '(3) The driver must give way to a vehicle in, entering or approaching the intersection except—
+
+    (a) an oncoming vehicle turning right at the intersection if a stop sign, stop line, give way sign or give way line applies
+    to the driver of the oncoming vehicle; or
+
+    (b) a vehicle turning left at the intersection using a slip lane; or
+
+    (c) a vehicle making a U-turn.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-67(4)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 67 (4)
+  page: 71
+  marking_type: stop line at intersection without traffic lights
+  element: transverse
+  text_original: (4) If the driver is turning left or right or making a U-turn, the driver must also give way to any pedestrian
+    at or near the intersection who is crossing the road, or part of the road, the driver is entering.
+  text_en: (4) If the driver is turning left or right or making a U-turn, the driver must also give way to any pedestrian
+    at or near the intersection who is crossing the road, or part of the road, the driver is entering.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-68(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 68 (1)
+  page: 74
+  marking_type: stop line
+  element: transverse
+  text_original: 'A driver approaching or at a place with a stop sign or stop line must stop and give way in accordance with
+    this section, unless the place is—
+
+    (a) an intersection; or
+
+    (b) a children’s crossing; or
+
+    (c) an area of a road that is not a children’s crossing only because it does not have—
+
+    (i) children crossing flags; or
+
+    (ii) children’s crossing signs and twin yellow lights; or
+
+    (d) a level crossing; or
+
+    (e) a place with twin red lights.'
+  text_en: 'A driver approaching or at a place with a stop sign or stop line must stop and give way in accordance with this
+    section, unless the place is—
+
+    (a) an intersection; or
+
+    (b) a children’s crossing; or
+
+    (c) an area of a road that is not a children’s crossing only because it does not have—
+
+    (i) children crossing flags; or
+
+    (ii) children’s crossing signs and twin yellow lights; or
+
+    (d) a level crossing; or
+
+    (e) a place with twin red lights.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-68(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 68 (2)
+  page: 74
+  marking_type: stop line
+  element: transverse
+  text_original: 'The driver must stop as near as practicable to, but before reaching—
+
+    (a) the stop line; or
+
+    (b) if there is no stop line—the stop sign.'
+  text_en: 'The driver must stop as near as practicable to, but before reaching—
+
+    (a) the stop line; or
+
+    (b) if there is no stop line—the stop sign.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-68(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 68 (3)
+  page: 75
+  marking_type: stop line
+  element: transverse
+  text_original: The driver must give way to any vehicle or pedestrian at or near the stop line or stop sign.
+  text_en: The driver must give way to any vehicle or pedestrian at or near the stop line or stop sign.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-69(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 69 (1)
+  page: 76
+  marking_type: give way line
+  element: transverse
+  text_original: A driver at an intersection (except a roundabout) with a give way sign or give way line must give way in
+    accordance with this section.
+  text_en: A driver at an intersection (except a roundabout) with a give way sign or give way line must give way in accordance
+    with this section.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-69(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 69 (2)
+  page: 76
+  marking_type: give way line
+  element: transverse
+  text_original: 'Unless the driver is turning left using a slip lane, the driver must give way to a vehicle in, entering
+    or approaching the intersection except—
+
+    (a) an oncoming vehicle turning right at the intersection if a stop sign, stop line, give way sign or give way line applies
+    to the driver of the oncoming vehicle; or
+
+    (b) a vehicle turning left at the intersection using a slip lane; or
+
+    (c) a vehicle making a U-turn.'
+  text_en: 'Unless the driver is turning left using a slip lane, the driver must give way to a vehicle in, entering or approaching
+    the intersection except—
+
+    (a) an oncoming vehicle turning right at the intersection if a stop sign, stop line, give way sign or give way line applies
+    to the driver of the oncoming vehicle; or
+
+    (b) a vehicle turning left at the intersection using a slip lane; or
+
+    (c) a vehicle making a U-turn.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-69(2A)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 69 (2A)
+  page: 76
+  marking_type: give way line
+  element: transverse
+  text_original: 'If the driver is turning left using a slip lane, the driver must give way to—
+
+    (a) any vehicle on the road the driver is entering, or turning right at the intersection into the road the driver is entering
+    (except a vehicle making a U-turn at the intersection); and
+
+    (b) any other vehicle or pedestrian on the slip lane.'
+  text_en: 'If the driver is turning left using a slip lane, the driver must give way to—
+
+    (a) any vehicle on the road the driver is entering, or turning right at the intersection into the road the driver is entering
+    (except a vehicle making a U-turn at the intersection); and
+
+    (b) any other vehicle or pedestrian on the slip lane.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-69(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 69 (3)
+  page: 76
+  marking_type: give way line
+  element: transverse
+  text_original: If the driver is turning left or right or making a U-turn, the driver must also give way to any pedestrian
+    at or near the intersection who is crossing the road, or part of the road, the driver is entering.
+  text_en: If the driver is turning left or right or making a U-turn, the driver must also give way to any pedestrian at or
+    near the intersection who is crossing the road, or part of the road, the driver is entering.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-71(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 71 (1)
+  page: 80
+  marking_type: give way line
+  element: transverse
+  text_original: A driver approaching or at a place (except an intersection, bridge or length of narrow road, level crossing,
+    or a place with twin red lights) with a give way sign or give way line must give way in accordance with this section.
+  text_en: A driver approaching or at a place (except an intersection, bridge or length of narrow road, level crossing, or
+    a place with twin red lights) with a give way sign or give way line must give way in accordance with this section.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-71(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 71 (2)
+  page: 81
+  marking_type: give way line
+  element: transverse
+  text_original: The driver must give way to any vehicle or pedestrian at or near the give way sign or give way line.
+  text_en: The driver must give way to any vehicle or pedestrian at or near the give way sign or give way line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-76(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 76 (1)
+  page: 96
+  marking_type: tram tracks marked by a broken or continuous yellow line
+  element: boundary
+  text_original: A driver must not move into the path of an approaching tram travelling in a tram lane, or on tram tracks
+    marked along the left side of the tracks by a broken or continuous yellow line parallel to the tracks.
+  text_en: A driver must not move into the path of an approaching tram travelling in a tram lane, or on tram tracks marked
+    along the left side of the tracks by a broken or continuous yellow line parallel to the tracks.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-76(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 76 (2)
+  page: 96
+  marking_type: tram tracks marked by a broken or continuous yellow line
+  element: boundary
+  text_original: If a driver is in the path of an approaching tram travelling in a tram lane, or on tram tracks marked along
+    the left side of the tracks by a broken or continuous yellow line parallel to the tracks, the driver must move out of
+    the path of the tram as soon as the driver can do so safely.
+  text_en: If a driver is in the path of an approaching tram travelling in a tram lane, or on tram tracks marked along the
+    left side of the tracks by a broken or continuous yellow line parallel to the tracks, the driver must move out of the
+    path of the tram as soon as the driver can do so safely.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-80(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 80 (1)
+  page: 98
+  marking_type: children’s crossing
+  element: transverse
+  text_original: A driver approaching a children’s crossing must drive at a speed at which the driver can, if necessary, stop
+    safely before the crossing.
+  text_en: A driver approaching a children’s crossing must drive at a speed at which the driver can, if necessary, stop safely
+    before the crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-80(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 80 (2)
+  page: 98
+  marking_type: stop line at a children’s crossing
+  element: transverse
+  text_original: 'A driver approaching or at a children’s crossing must stop as near as practicable to, but before reaching,
+    the stop line at the crossing if—
+
+    (a) a hand-held stop sign is displayed at the crossing; or
+
+    (b) a pedestrian or bicycle rider is on or entering the crossing.'
+  text_en: 'A driver approaching or at a children’s crossing must stop as near as practicable to, but before reaching, the
+    stop line at the crossing if—
+
+    (a) a hand-held stop sign is displayed at the crossing; or
+
+    (b) a pedestrian or bicycle rider is on or entering the crossing.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-80(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 80 (3)
+  page: 99
+  marking_type: children’s crossing
+  element: transverse
+  text_original: 'If a driver stops at a children’s crossing for a hand-held stop sign, the driver must not proceed until
+    there is no pedestrian or bicycle rider on or entering the crossing and the holder of the sign—
+
+    (a) no longer displays the sign towards the driver; or
+
+    (b) otherwise indicates that the driver may proceed.'
+  text_en: 'If a driver stops at a children’s crossing for a hand-held stop sign, the driver must not proceed until there
+    is no pedestrian or bicycle rider on or entering the crossing and the holder of the sign—
+
+    (a) no longer displays the sign towards the driver; or
+
+    (b) otherwise indicates that the driver may proceed.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-80(4)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 80 (4)
+  page: 99
+  marking_type: children’s crossing
+  element: transverse
+  text_original: If a driver stops at a children ’s crossing for a pedestrian or bicycle rider, the driver must not proceed
+    until there is no pedestrian or bicycle rider on or entering the crossing.
+  text_en: If a driver stops at a children ’s crossing for a pedestrian or bicycle rider, the driver must not proceed until
+    there is no pedestrian or bicycle rider on or entering the crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-80Example1
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 80 Example 1
+  page: 100
+  marking_type: children’s crossing stop line
+  element: transverse
+  text_original: In this example, the driver must stop at the stop line because there are pedestrians on the children’s crossing.
+  text_en: In this example, the driver must stop at the stop line because there are pedestrians on the children’s crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-82
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: '82'
+  page: 103
+  marking_type: children’s crossing or pedestrian crossing
+  element: transverse
+  text_original: A driver approaching a children ’s crossing, or pedestrian crossing, must not overtake or pass a vehicle
+    that is travelling in the same direction as the driver and is stopping, or has stopped, to give way to a pedestrian, or
+    bicycle rider, on or entering the crossing.
+  text_en: A driver approaching a children ’s crossing, or pedestrian crossing, must not overtake or pass a vehicle that is
+    travelling in the same direction as the driver and is stopping, or has stopped, to give way to a pedestrian, or bicycle
+    rider, on or entering the crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-85
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: '85'
+  page: 105
+  marking_type: painted island
+  element: area
+  text_original: 'A driver entering a turning lane from a painted island must give way to—
+
+    (a) any vehicle in the turning lane; or
+
+    (b) if the turning lane and painted island are nearest to the far left side of the road—any vehicle entering the turning
+    lane from the marked lane, or line of traffic, immediately to the right of the turning lane; or
+
+    (c) if the turning lane and painted island are nearest to the dividing line or median strip on the road or the far right
+    side of the road—any vehicle entering the turning lane from the marked lane, or line of traffic, immediately to the left
+    of the turning lane.'
+  text_en: 'A driver entering a turning lane from a painted island must give way to—
+
+    (a) any vehicle in the turning lane; or
+
+    (b) if the turning lane and painted island are nearest to the far left side of the road—any vehicle entering the turning
+    lane from the marked lane, or line of traffic, immediately to the right of the turning lane; or
+
+    (c) if the turning lane and painted island are nearest to the dividing line or median strip on the road or the far right
+    side of the road—any vehicle entering the turning lane from the marked lane, or line of traffic, immediately to the left
+    of the turning lane.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-86(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 86 (1)
+  page: 107
+  marking_type: median turning bay
+  element: lane_type
+  text_original: A driver entering a median turning bay must give way to any oncoming vehicle already in the turning bay.
+  text_en: A driver entering a median turning bay must give way to any oncoming vehicle already in the turning bay.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-86(2)(b)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 86 (2) (b)
+  page: 107
+  marking_type: median turning bay arrows
+  element: lane_marking
+  text_original: where traffic lane arrows applying to the lane indicate that vehicles travelling in opposite directions must
+    turn right.
+  text_en: where traffic lane arrows applying to the lane indicate that vehicles travelling in opposite directions must turn
+    right.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+    turn_left: prohibited
+    turn_right: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-92(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 92 (1)
+  page: 110
+  marking_type: traffic lane arrows
+  element: lane_marking
+  text_original: 'If a driver is driving in a marked lane at an intersection (except a roundabout) and there are traffic lane
+    arrows applying to the lane, the driver must—
+
+    (a) if the arrows indicate a single direction—drive in that direction; or
+
+    (b) if the arrows indicate 2 or more directions—drive in 1 of those directions.'
+  text_en: 'If a driver is driving in a marked lane at an intersection (except a roundabout) and there are traffic lane arrows
+    applying to the lane, the driver must—
+
+    (a) if the arrows indicate a single direction—drive in that direction; or
+
+    (b) if the arrows indicate 2 or more directions—drive in 1 of those directions.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-92(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 92 (2)
+  page: 110
+  marking_type: traffic lane arrows exceptions
+  element: lane_marking
+  text_original: 'However, this section does not apply to a driver if—
+
+    (a) the arrows indicate a direction to the right (whether or not they also indicate another direction) at an intersection
+    and the driver is making a U-turn at the intersection; or
+
+    (b) a traffic sign indicates that the driver may drive in a direction different to that indicated by the traffic lane
+    arrows; or
+
+    (c) the driver is driving in the direction indicated by traffic lane arrows that apply to 1 or more marked lanes and there
+    is an obstruction in each of those lanes; or
+
+    (d) the driver is turning at an intersection in accordance with section 28 (2) (Starting left turn from multi -lane road)
+    or section 32 (2) (Starting right turn from multi-lane road).'
+  text_en: 'However, this section does not apply to a driver if—
+
+    (a) the arrows indicate a direction to the right (whether or not they also indicate another direction) at an intersection
+    and the driver is making a U-turn at the intersection; or
+
+    (b) a traffic sign indicates that the driver may drive in a direction different to that indicated by the traffic lane
+    arrows; or
+
+    (c) the driver is driving in the direction indicated by traffic lane arrows that apply to 1 or more marked lanes and there
+    is an obstruction in each of those lanes; or
+
+    (d) the driver is turning at an intersection in accordance with section 28 (2) (Starting left turn from multi -lane road)
+    or section 32 (2) (Starting right turn from multi-lane road).'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    u_turn: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-92(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 92 (3)
+  page: 111
+  marking_type: traffic lane arrows and bicycle storage area
+  element: lane_marking
+  text_original: The existence of a bicycle storage area in a marked lane does not alter a driver’s obligation to comply with
+    this section.
+  text_en: The existence of a bicycle storage area in a marked lane does not alter a driver’s obligation to comply with this
+    section.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-96(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 96 (1)
+  page: 113
+  marking_type: keep clear marking
+  element: area
+  text_original: A driver must not stop on an area of a road marked with a keep clear marking.
+  text_en: A driver must not stop on an area of a road marked with a keep clear marking.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-111(5)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 111 (5)
+  page: 124
+  marking_type: roundabout traffic lane arrows
+  element: lane_marking
+  text_original: 'Despite subsections (2) to (4), if the driver is entering the roundabout from a marked lane and there are
+    traffic lane arrows applying to the lane, the driver must—
+
+    (a) if the arrows indicate a single direction—drive in that direction after entering the roundabout; or
+
+    (b) if the arrows indicate 2 or more directions—drive in 1 of those directions after entering the roundabout.'
+  text_en: 'Despite subsections (2) to (4), if the driver is entering the roundabout from a marked lane and there are traffic
+    lane arrows applying to the lane, the driver must—
+
+    (a) if the arrows indicate a single direction—drive in that direction after entering the roundabout; or
+
+    (b) if the arrows indicate 2 or more directions—drive in 1 of those directions after entering the roundabout.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-116
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: '116'
+  page: 129
+  marking_type: roundabout traffic lane arrows
+  element: lane_marking
+  text_original: 'If a driver is driving in a marked lane in a roundabout and there are traffic lane arrows applying to the
+    lane, the driver must—
+
+    (a) if the arrows indicate a single direction—drive in or leave the roundabout in that direction; or
+
+    (b) if the arrows indicate 2 or more directions—drive in or leave the roundabout in 1 of those directions.'
+  text_en: 'If a driver is driving in a marked lane in a roundabout and there are traffic lane arrows applying to the lane,
+    the driver must—
+
+    (a) if the arrows indicate a single direction—drive in or leave the roundabout in that direction; or
+
+    (b) if the arrows indicate 2 or more directions—drive in or leave the roundabout in 1 of those directions.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-120(1A)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 120 (1A)
+  page: 132
+  marking_type: level crossing cross-hatched markings
+  element: area
+  text_original: A reference to a level crossing in this section includes a reference to any area adjacent to the crossing
+    that is denoted by painted cross-hatched road markings.
+  text_en: A reference to a level crossing in this section includes a reference to any area adjacent to the crossing that
+    is denoted by painted cross-hatched road markings.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-121
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: '121'
+  page: 132
+  marking_type: level crossing stop line
+  element: transverse
+  text_original: 'A driver at a level crossing with a stop sign must—
+
+    (a) stop as near as practicable to, but before reaching, the stop line or, if there is no stop line, as near as practicable
+    to, but before reaching, the stop sign; and
+
+    (b) give way to any train or tram on, approaching or entering the crossing.'
+  text_en: 'A driver at a level crossing with a stop sign must—
+
+    (a) stop as near as practicable to, but before reaching, the stop line or, if there is no stop line, as near as practicable
+    to, but before reaching, the stop sign; and
+
+    (b) give way to any train or tram on, approaching or entering the crossing.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-122
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: '122'
+  page: 133
+  marking_type: level crossing give way line
+  element: transverse
+  text_original: A driver at a level crossing with a give way sign or give way line must give way to any train or tram on,
+    approaching or entering the crossing.
+  text_en: A driver at a level crossing with a give way sign or give way line must give way to any train or tram on, approaching
+    or entering the crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-131(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 131 (1)
+  page: 138
+  marking_type: marking requiring passage to the left of an oncoming vehicle
+  element: general
+  text_original: 'A driver must drive to the left of any oncoming vehicle unless—
+
+    (a) the driver is turning right at an intersection; and
+
+    (b) the driver is passing an oncoming vehicle turning right at the intersection; and
+
+    (c) there is no traffic sign or road marking indicating that the driver must pass to the left of the oncoming vehicle.'
+  text_en: 'A driver must drive to the left of any oncoming vehicle unless—
+
+    (a) the driver is turning right at an intersection; and
+
+    (b) the driver is passing an oncoming vehicle turning right at the intersection; and
+
+    (c) there is no traffic sign or road marking indicating that the driver must pass to the left of the oncoming vehicle.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-132(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 132 (2)
+  page: 141
+  marking_type: dividing line
+  element: boundary
+  text_original: A driver on a road with a dividing line must drive to the left of the dividing line, except as permitted
+    under section 134 (Exceptions to keeping to left of dividing line) or section 139 (2).
+  text_en: A driver on a road with a dividing line must drive to the left of the dividing line, except as permitted under
+    section 134 (Exceptions to keeping to left of dividing line) or section 139 (2).
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-132(2A)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 132 (2A)
+  page: 142
+  marking_type: continuous dividing lines
+  element: boundary
+  text_original: A driver on a road with a single continuous dividing line, a single continuous dividing line to the left
+    of a broken dividing line or 2 parallel continuous dividing lines must not drive across the dividing lines to perform
+    a U-turn.
+  text_en: A driver on a road with a single continuous dividing line, a single continuous dividing line to the left of a broken
+    dividing line or 2 parallel continuous dividing lines must not drive across the dividing lines to perform a U-turn.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+    u_turn: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-134(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 134 (2)
+  page: 144
+  marking_type: broken dividing lines or broken line left of continuous dividing line
+  element: boundary
+  text_original: 'If the dividing line is a single broken dividing line only, or a broken dividing line to the left of a single
+    continuous dividing line, or 2 parallel broken dividing lines, the driver may drive to the right of the dividing line—
+
+    (a) to overtake another driver; or
+
+    (b) to perform a U-turn, unless another provision would prohibit the driver performing the U-turn.'
+  text_en: 'If the dividing line is a single broken dividing line only, or a broken dividing line to the left of a single
+    continuous dividing line, or 2 parallel broken dividing lines, the driver may drive to the right of the dividing line—
+
+    (a) to overtake another driver; or
+
+    (b) to perform a U-turn, unless another provision would prohibit the driver performing the U-turn.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+    u_turn: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-134(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 134 (3)
+  page: 145
+  marking_type: single dividing line, solid-and-broken dividing lines or double broken dividing lines
+  element: boundary
+  text_original: 'If the dividing line is a single continuous or broken dividing line, or a broken dividing line to the left
+    or right of a single continuous dividing line, or 2 parallel broken dividing lines, the driver may drive to the right
+    of the dividing line—
+
+    (a) to enter or leave the road; or
+
+    (b) to enter a part of the road of 1 kind from a part of the road of another kind (for example, moving to or from a service
+    road or emergency stopping lane); or
+
+    (c) to park in angle parking on the opposite side of the road provided that the driver does not need to perform a U-turn
+    to reach the parking area.'
+  text_en: 'If the dividing line is a single continuous or broken dividing line, or a broken dividing line to the left or
+    right of a single continuous dividing line, or 2 parallel broken dividing lines, the driver may drive to the right of
+    the dividing line—
+
+    (a) to enter or leave the road; or
+
+    (b) to enter a part of the road of 1 kind from a part of the road of another kind (for example, moving to or from a service
+    road or emergency stopping lane); or
+
+    (c) to park in angle parking on the opposite side of the road provided that the driver does not need to perform a U-turn
+    to reach the parking area.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-137(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 137 (2)
+  page: 150
+  marking_type: continuous lines bordering dividing strip
+  element: area
+  text_original: 'A driver may drive on a dividing strip that is at the same level as the road, and marked at each side by
+    a continuous line—
+
+    (a) to enter or leave the road; or
+
+    (b) to enter or leave an area on the dividing strip to which a parking control sign applies if the driver is permitted
+    to park in the area.'
+  text_en: 'A driver may drive on a dividing strip that is at the same level as the road, and marked at each side by a continuous
+    line—
+
+    (a) to enter or leave the road; or
+
+    (b) to enter or leave an area on the dividing strip to which a parking control sign applies if the driver is permitted
+    to park in the area.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-138(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 138 (1)
+  page: 151
+  marking_type: continuous lines bordering painted island
+  element: area
+  text_original: A driver must not drive on or over a single continuous line, or 2 parallel continuous lines, along a side
+    of or surrounding a painted island, except as permitted under this section or section 139 (4).
+  text_en: A driver must not drive on or over a single continuous line, or 2 parallel continuous lines, along a side of or
+    surrounding a painted island, except as permitted under this section or section 139 (4).
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-138(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 138 (2)
+  page: 151
+  marking_type: single continuous line bordering painted island
+  element: area
+  text_original: 'A driver may drive on or over a single continuous line along the side of or surrounding a painted island
+    for up to 50m—
+
+    (a) to enter or leave the road; or
+
+    (b) to enter a turning lane that begins immediately after the painted island; or
+
+    (c) to enter a part of the road of 1 kind from a part of the road of another kind (for example, moving to or from a service
+    road or emergency stopping lane); or
+
+    (d) to park in angle parking on the opposite side of the road provided that the driver does not need to perform a U-turn
+    to reach the parking area.'
+  text_en: 'A driver may drive on or over a single continuous line along the side of or surrounding a painted island for up
+    to 50m—
+
+    (a) to enter or leave the road; or
+
+    (b) to enter a turning lane that begins immediately after the painted island; or
+
+    (c) to enter a part of the road of 1 kind from a part of the road of another kind (for example, moving to or from a service
+    road or emergency stopping lane); or
+
+    (d) to park in angle parking on the opposite side of the road provided that the driver does not need to perform a U-turn
+    to reach the parking area.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+    u_turn: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-138(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 138 (3)
+  page: 152
+  marking_type: painted island at merge or slip lane
+  element: area
+  text_original: 'Subsection (2) (a) does not apply in the case of a painted island—
+
+    (a) that separates a road that takes vehicles in 1 direction from another road that takes vehicles in the same direction
+    at a place where the roads merge; or
+
+    (b) that separates 1 part of a road from other parts of the road to create a slip lane.'
+  text_en: 'Subsection (2) (a) does not apply in the case of a painted island—
+
+    (a) that separates a road that takes vehicles in 1 direction from another road that takes vehicles in the same direction
+    at a place where the roads merge; or
+
+    (b) that separates 1 part of a road from other parts of the road to create a slip lane.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-ACT-139(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 139 (2)
+  page: 153
+  marking_type: dividing line
+  element: boundary
+  text_original: 'A driver on a road with a dividing line may drive to the right of the dividing line to avoid an obstruction
+    if—
+
+    (a) the driver has a clear view of any approaching traffic; and
+
+    (b) it is necessary and reasonable, in all the circumstances, for the driver to drive to the right of the dividing line
+    to avoid the obstruction; and
+
+    (c) the driver can do so safely.'
+  text_en: 'A driver on a road with a dividing line may drive to the right of the dividing line to avoid an obstruction if—
+
+    (a) the driver has a clear view of any approaching traffic; and
+
+    (b) it is necessary and reasonable, in all the circumstances, for the driver to drive to the right of the dividing line
+    to avoid the obstruction; and
+
+    (c) the driver can do so safely.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-139(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 139 (3)
+  page: 153
+  marking_type: continuous dividing lines
+  element: boundary
+  text_original: For subsection (2), if the dividing line is a single continuous dividing line to the left of a broken dividing
+    line, a single continuous dividing line only or 2 parallel continuous dividing lines, the hazard in driving to the right
+    of such a dividing line must be taken into account in deciding whether it is reasonable to drive to the right of the dividing
+    line.
+  text_en: For subsection (2), if the dividing line is a single continuous dividing line to the left of a broken dividing
+    line, a single continuous dividing line only or 2 parallel continuous dividing lines, the hazard in driving to the right
+    of such a dividing line must be taken into account in deciding whether it is reasonable to drive to the right of the dividing
+    line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-139(4)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 139 (4)
+  page: 153
+  marking_type: continuous lines bordering painted island
+  element: area
+  text_original: 'A driver may drive on a dividing strip, or on or over a single continuous line, or 2 parallel continuous
+    lines, along a side of or surrounding a painted island, to avoid an obstruction if—
+
+    (a) the driver has a clear view of any approaching traffic; and
+
+    (b) it is necessary and reasonable to drive on the dividing strip or painted island to avoid the obstruction; and
+
+    (c) the driver can do so safely.'
+  text_en: 'A driver may drive on a dividing strip, or on or over a single continuous line, or 2 parallel continuous lines,
+    along a side of or surrounding a painted island, to avoid an obstruction if—
+
+    (a) the driver has a clear view of any approaching traffic; and
+
+    (b) it is necessary and reasonable to drive on the dividing strip or painted island to avoid the obstruction; and
+
+    (c) the driver can do so safely.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-146(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 146 (1)
+  page: 157
+  marking_type: marked lane
+  element: lane_type
+  text_original: 'A driver on a multi-lane road must drive so the driver’s vehicle is completely in a marked lane, unless
+    the driver is—
+
+    (a) entering a part of the road of 1 kind from a part of the road of another kind (for example, moving to or from a service
+    road or a shoulder of the road); or
+
+    (b) entering or leaving the road; or
+
+    (c) moving from 1 marked lane to another marked lane; or
+
+    (d) avoiding an obstruction; or
+
+    (e) obeying a traffic control device applying to the marked lane; or
+
+    (ea) lane filtering in accordance with section 151A; or
+
+    (f) permitted to drive in more than 1 marked lane under another provision of this regulation.'
+  text_en: 'A driver on a multi-lane road must drive so the driver’s vehicle is completely in a marked lane, unless the driver
+    is—
+
+    (a) entering a part of the road of 1 kind from a part of the road of another kind (for example, moving to or from a service
+    road or a shoulder of the road); or
+
+    (b) entering or leaving the road; or
+
+    (c) moving from 1 marked lane to another marked lane; or
+
+    (d) avoiding an obstruction; or
+
+    (e) obeying a traffic control device applying to the marked lane; or
+
+    (ea) lane filtering in accordance with section 151A; or
+
+    (f) permitted to drive in more than 1 marked lane under another provision of this regulation.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-147
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: '147'
+  page: 158
+  marking_type: continuous line separating lanes
+  element: boundary
+  text_original: 'A driver on a multi-lane road must not move from 1 marked lane to another marked lane by crossing a continuous
+    line separating the lanes unless—
+
+    (a) the driver is avoiding an obstruction; or
+
+    (b) the driver is obeying a traffic control device applying to the first marked lane; or
+
+    (c) the driver is permitted to drive in both marked lanes under another provision of this regulation; or
+
+    (d) either of the marked lanes is a special purpose lane in which the driver is permitted to drive under this regulation
+    and the driver is moving to or from the special purpose lane; or
+
+    (e) either of the marked lanes is a special purpose lane during specified times only and the driver—
+
+    (i) is moving to or from that lane outside of the times during which it is a special purpose lane; and
+
+    (ii) is permitted to drive in that lane outside of the times during which it is a special purpose lane under this regulation;
+    or
+
+    (f) the driver is lane filtering in accordance with section 151A.'
+  text_en: 'A driver on a multi-lane road must not move from 1 marked lane to another marked lane by crossing a continuous
+    line separating the lanes unless—
+
+    (a) the driver is avoiding an obstruction; or
+
+    (b) the driver is obeying a traffic control device applying to the first marked lane; or
+
+    (c) the driver is permitted to drive in both marked lanes under another provision of this regulation; or
+
+    (d) either of the marked lanes is a special purpose lane in which the driver is permitted to drive under this regulation
+    and the driver is moving to or from the special purpose lane; or
+
+    (e) either of the marked lanes is a special purpose lane during specified times only and the driver—
+
+    (i) is moving to or from that lane outside of the times during which it is a special purpose lane; and
+
+    (ii) is permitted to drive in that lane outside of the times during which it is a special purpose lane under this regulation;
+    or
+
+    (f) the driver is lane filtering in accordance with section 151A.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-148(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 148 (1)
+  page: 159
+  marking_type: marked lane
+  element: lane_type
+  text_original: A driver who is moving from 1 marked lane (whether or not the lane is ending) to another marked lane must
+    give way to any vehicle travelling in the same direction as the driver in the marked lane to which the driver is moving.
+  text_en: A driver who is moving from 1 marked lane (whether or not the lane is ending) to another marked lane must give
+    way to any vehicle travelling in the same direction as the driver in the marked lane to which the driver is moving.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-150(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 150 (1)
+  page: 162
+  marking_type: continuous white edge line
+  element: boundary
+  text_original: A driver must not drive on or over a continuous white edge line on a road unless subsection (1A) or (1B)
+    applies to the driver.
+  text_en: A driver must not drive on or over a continuous white edge line on a road unless subsection (1A) or (1B) applies
+    to the driver.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-150(1A)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 150 (1A)
+  page: 162
+  marking_type: continuous white edge line
+  element: boundary
+  text_original: 'A driver may drive on or over a continuous white edge line on a road if the driver is—
+
+    (a) overtaking a vehicle that is turning right, or making a U-turn from the centre of the road, and is giving a right
+    change of direction signal; or
+
+    (b) driving a slow-moving vehicle, and it is necessary for the driver to drive on or over the edge line to allow the vehicle
+    to be overtaken or passed by another vehicle; or
+
+    (c) driving a vehicle that is too wide, or too long, to drive on the road without driving on or over the edge line; or
+
+    (d) avoiding an obstruction.'
+  text_en: 'A driver may drive on or over a continuous white edge line on a road if the driver is—
+
+    (a) overtaking a vehicle that is turning right, or making a U-turn from the centre of the road, and is giving a right
+    change of direction signal; or
+
+    (b) driving a slow-moving vehicle, and it is necessary for the driver to drive on or over the edge line to allow the vehicle
+    to be overtaken or passed by another vehicle; or
+
+    (c) driving a vehicle that is too wide, or too long, to drive on the road without driving on or over the edge line; or
+
+    (d) avoiding an obstruction.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-150(1B)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 150 (1B)
+  page: 163
+  marking_type: continuous white edge line
+  element: boundary
+  text_original: 'A driver may drive on or over a continuous white edge line on a road for up to 100m if the driver is—
+
+    (a) turning at an intersection; or
+
+    (b) entering or leaving the road; or
+
+    (c) entering a part of the road of 1 kind from a part of the road of another kind (for example, moving to or from a service
+    road, a shoulder of the road or an emergency stopping lane); or
+
+    (d) stopping at the side of the road (including any shoulder of the road).'
+  text_en: 'A driver may drive on or over a continuous white edge line on a road for up to 100m if the driver is—
+
+    (a) turning at an intersection; or
+
+    (b) entering or leaving the road; or
+
+    (c) entering a part of the road of 1 kind from a part of the road of another kind (for example, moving to or from a service
+    road, a shoulder of the road or an emergency stopping lane); or
+
+    (d) stopping at the side of the road (including any shoulder of the road).'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-150(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 150 (2)
+  page: 163
+  marking_type: continuous white edge line
+  element: boundary
+  text_original: This section does not apply to the rider of a bicycle or animal.
+  text_en: This section does not apply to the rider of a bicycle or animal.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-150(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 150 (3)
+  page: 163
+  marking_type: continuous white edge line
+  element: boundary
+  text_original: 'For this section, a driver drives over a continuous white edge line on a road if—
+
+    (a) for a line on the far left side of the road—the driver’s vehicle is wholly or partly to the left of the line; or
+
+    (b) for a line on the far right side of the road—the driver’s vehicle is wholly or partly to the right of the line.'
+  text_en: 'For this section, a driver drives over a continuous white edge line on a road if—
+
+    (a) for a line on the far left side of the road—the driver’s vehicle is wholly or partly to the left of the line; or
+
+    (b) for a line on the far right side of the road—the driver’s vehicle is wholly or partly to the right of the line.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-153(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 153 (1)
+  page: 168
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: A driver (except the rider of a bicycle) must not drive in a bicycle lane, unless the driver is permitted
+    to drive in the bicycle lane under this section or section 158 (Exceptions to driving in special purpose lane etc).
+  text_en: A driver (except the rider of a bicycle) must not drive in a bicycle lane, unless the driver is permitted to drive
+    in the bicycle lane under this section or section 158 (Exceptions to driving in special purpose lane etc).
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-153(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 153 (2)
+  page: 168
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: If stopping or parking is permitted at a place in a bicycle lane under this regulation, a driver may drive
+    for up to 50m in the bicycle lane to stop or park at that place.
+  text_en: If stopping or parking is permitted at a place in a bicycle lane under this regulation, a driver may drive for
+    up to 50m in the bicycle lane to stop or park at that place.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-153(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 153 (3)
+  page: 168
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: 'A driver may drive for up to 50m in a bicycle lane if the driver is—
+
+    (a) driving a public bus, public minibus, taxi, rideshare vehicle or hire car; and
+
+    (b) dropping off or picking up passengers.'
+  text_en: 'A driver may drive for up to 50m in a bicycle lane if the driver is—
+
+    (a) driving a public bus, public minibus, taxi, rideshare vehicle or hire car; and
+
+    (b) dropping off or picking up passengers.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-153(4)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 153 (4)
+  page: 168
+  marking_type: bicycle lane start and end markings
+  element: lane_type
+  text_original: 'bicycle lane means a marked lane, or the part of a marked lane—
+
+    (a) beginning at a bicycle lane sign applying to the lane, or a road marking comprising both a white bicycle symbol and
+    the word lane painted in white; and
+
+    (b) ending at the nearest of the following:
+
+    (i) an end bicycle lane sign applying to the lane, or a road marking comprising both a white bicycle symbol and the words
+    end lane painted in white;
+
+    (ii) an intersection (unless the lane is at the unbroken side of the continuing road at a T-intersection or continued
+    across the intersection by broken lines);
+
+    (iii) if the road ends at a dead end—the end of the road.'
+  text_en: 'bicycle lane means a marked lane, or the part of a marked lane—
+
+    (a) beginning at a bicycle lane sign applying to the lane, or a road marking comprising both a white bicycle symbol and
+    the word lane painted in white; and
+
+    (b) ending at the nearest of the following:
+
+    (i) an end bicycle lane sign applying to the lane, or a road marking comprising both a white bicycle symbol and the words
+    end lane painted in white;
+
+    (ii) an intersection (unless the lane is at the unbroken side of the continuing road at a T-intersection or continued
+    across the intersection by broken lines);
+
+    (iii) if the road ends at a dead end—the end of the road.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-154(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 154 (1)
+  page: 169
+  marking_type: bus lane
+  element: lane_type
+  text_original: A driver (except the driver of a public bus) must not drive in a bus lane, unless the driver is permitted
+    to drive in the bus lane under section 158 (Exceptions to driving in special purpose lane etc).
+  text_en: A driver (except the driver of a public bus) must not drive in a bus lane, unless the driver is permitted to drive
+    in the bus lane under section 158 (Exceptions to driving in special purpose lane etc).
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-154(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 154 (2)
+  page: 169
+  marking_type: bus lane marking
+  element: lane_type
+  text_original: 'bus lane means a marked lane, or the part of a marked lane—
+
+    (a) beginning at a bus lane sign (whether or not there is also a bus lane road marking) and ending at the nearest of the
+    following:
+
+    (i) an end bus lane sign;
+
+    (ii) a traffic sign that indicates the beginning of another special purpose lane; or
+
+    (b) beginning at a bus lane road marking (if there is no bus lane sign) and ending at the next intersection.'
+  text_en: 'bus lane means a marked lane, or the part of a marked lane—
+
+    (a) beginning at a bus lane sign (whether or not there is also a bus lane road marking) and ending at the nearest of the
+    following:
+
+    (i) an end bus lane sign;
+
+    (ii) a traffic sign that indicates the beginning of another special purpose lane; or
+
+    (b) beginning at a bus lane road marking (if there is no bus lane sign) and ending at the next intersection.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-154(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 154 (3)
+  page: 169
+  marking_type: BL, bus lane or bus only marking
+  element: lane_marking
+  text_original: 'bus lane road marking means a road marking consisting of—
+
+    (a) the letters ‘BL’; or
+
+    (b) the words ‘bus lane’; or
+
+    (c) the words ‘bus only’.'
+  text_en: 'bus lane road marking means a road marking consisting of—
+
+    (a) the letters ‘BL’; or
+
+    (b) the words ‘bus lane’; or
+
+    (c) the words ‘bus only’.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-155(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 155 (1)
+  page: 170
+  marking_type: tram lane
+  element: lane_type
+  text_original: A driver (except the driver of a tram, tram recovery vehicle or public bus) must not drive in a tram lane,
+    unless the driver is permitted to drive in the tram lane under this section or section 158 (Exceptions to driving in special
+    purpose lane etc).
+  text_en: A driver (except the driver of a tram, tram recovery vehicle or public bus) must not drive in a tram lane, unless
+    the driver is permitted to drive in the tram lane under this section or section 158 (Exceptions to driving in special
+    purpose lane etc).
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-155(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 155 (2)
+  page: 170
+  marking_type: tram lane
+  element: lane_type
+  text_original: A driver may drive in a tram lane if the driver is driving a truck and it is necessary for the driver to
+    drive in the tram lane to reach a place to drop off or pick up passengers or goods.
+  text_en: A driver may drive in a tram lane if the driver is driving a truck and it is necessary for the driver to drive
+    in the tram lane to reach a place to drop off or pick up passengers or goods.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-155(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 155 (3)
+  page: 170
+  marking_type: continuous yellow tram lane line
+  element: boundary
+  text_original: 'tram lane means a part of a road with tram tracks that—
+
+    (a) is between a tram lane sign and an end tram lane sign; and
+
+    (b) is marked along the left side of the tracks (when facing the direction of travel of a tram on the tracks) by a continuous
+    yellow line parallel to the tracks.'
+  text_en: 'tram lane means a part of a road with tram tracks that—
+
+    (a) is between a tram lane sign and an end tram lane sign; and
+
+    (b) is marked along the left side of the tracks (when facing the direction of travel of a tram on the tracks) by a continuous
+    yellow line parallel to the tracks.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-155A(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 155A (1)
+  page: 171
+  marking_type: tramway
+  element: lane_type
+  text_original: A driver (except the driver of a tram, tram recovery vehicle or public bus) must not drive in a tramway,
+    unless the driver is permitted to drive in the tramway under subsection (2).
+  text_en: A driver (except the driver of a tram, tram recovery vehicle or public bus) must not drive in a tramway, unless
+    the driver is permitted to drive in the tramway under subsection (2).
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-155A(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 155A (2)
+  page: 171
+  marking_type: tramway
+  element: lane_type
+  text_original: 'A driver may drive in a tramway if—
+
+    (a) it is necessary for the driver to drive in the tramway to avoid an obstruction; and
+
+    (b) when driving in the tramway, the driver does not move into the path of an approaching tram or public bus travelling
+    in the tramway.'
+  text_en: 'A driver may drive in a tramway if—
+
+    (a) it is necessary for the driver to drive in the tramway to avoid an obstruction; and
+
+    (b) when driving in the tramway, the driver does not move into the path of an approaching tram or public bus travelling
+    in the tramway.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-155A(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 155A (3)
+  page: 171
+  marking_type: double continuous yellow tramway lines
+  element: boundary
+  text_original: 'tramway means a part of a road with tram tracks that—
+
+    (a) is between a tramway sign and an end tramway sign; and
+
+    (b) is marked along the left side of the tracks (when facing the direction of travel of a tram on the tracks) by either—
+
+    (i) 2 continuous yellow lines parallel to the tracks; or
+
+    (ii) a structure (for example, a dividing strip, pedestrian refuge, traffic island, row of bollards or separation kerb),
+    whether or not the structure is also being used to indicate a safety zone;
+
+    but does include any part of the road where vehicles are permitted to cross the tramway.'
+  text_en: 'tramway means a part of a road with tram tracks that—
+
+    (a) is between a tramway sign and an end tramway sign; and
+
+    (b) is marked along the left side of the tracks (when facing the direction of travel of a tram on the tracks) by either—
+
+    (i) 2 continuous yellow lines parallel to the tracks; or
+
+    (ii) a structure (for example, a dividing strip, pedestrian refuge, traffic island, row of bollards or separation kerb),
+    whether or not the structure is also being used to indicate a safety zone;
+
+    but does include any part of the road where vehicles are permitted to cross the tramway.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say permissive (are permitted)
+- rule_id: AU-ACT-155A(4)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 155A (4)
+  page: 172
+  marking_type: double continuous yellow tramway lines
+  element: boundary
+  text_original: For subsection (3) (b) (i), a line is to be considered to be continuous despite any break in it that is designed
+    to permit vehicles to cross the tramway.
+  text_en: For subsection (3) (b) (i), a line is to be considered to be continuous despite any break in it that is designed
+    to permit vehicles to cross the tramway.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-156(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 156 (1)
+  page: 173
+  marking_type: transit lane
+  element: lane_type
+  text_original: 'A driver must not drive in a transit lane unless—
+
+    (a) the driver is driving—
+
+    (i) a public bus, public minibus, motorbike, taxi, hire car or tram; or
+
+    (ii) if the transit lane sign applying to the transit lane is a transit lane (T2) sign—a vehicle carrying at least 1 other
+    person; or
+
+    (iii) if the transit lane sign applying to the transit lane is a transit lane (T3) sign—a vehicle carrying at least 2
+    other people; or
+
+    (b) the driver is permitted to drive in the transit lane under section 158 (Exceptions to driving in special purpose lane
+    etc).'
+  text_en: 'A driver must not drive in a transit lane unless—
+
+    (a) the driver is driving—
+
+    (i) a public bus, public minibus, motorbike, taxi, hire car or tram; or
+
+    (ii) if the transit lane sign applying to the transit lane is a transit lane (T2) sign—a vehicle carrying at least 1 other
+    person; or
+
+    (iii) if the transit lane sign applying to the transit lane is a transit lane (T3) sign—a vehicle carrying at least 2
+    other people; or
+
+    (b) the driver is permitted to drive in the transit lane under section 158 (Exceptions to driving in special purpose lane
+    etc).'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-157(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 157 (1)
+  page: 173
+  marking_type: truck lane
+  element: lane_type
+  text_original: A driver (except the driver of a truck) must not drive in a truck lane, unless the driver is permitted to
+    drive in the truck lane under section 158.
+  text_en: A driver (except the driver of a truck) must not drive in a truck lane, unless the driver is permitted to drive
+    in the truck lane under section 158.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-158(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 158 (1)
+  page: 174
+  marking_type: special purpose lane
+  element: lane_type
+  text_original: 'The driver of any vehicle may drive for up to the permitted distance in a bicycle lane, bus lane, tram lane,
+    transit lane or truck lane if it is necessary for the driver to drive in the lane—
+
+    (a) to enter or leave the road; or
+
+    (b) to enter a part of the road of 1 kind from a part of the road of another kind (for example, moving to or from a service
+    road, the shoulder of the road or an emergency stopping lane); or
+
+    (c) to overtake a vehicle that is turning right, or making a U-turn from the centre of the road, and is giving a right
+    change of direction signal; or
+
+    (d) to enter a marked lane, or part of the road where there is room for a line of traffic (other than motorbikes, bicycles,
+    motorised wheelchairs or animals), from the side of the road.'
+  text_en: 'The driver of any vehicle may drive for up to the permitted distance in a bicycle lane, bus lane, tram lane, transit
+    lane or truck lane if it is necessary for the driver to drive in the lane—
+
+    (a) to enter or leave the road; or
+
+    (b) to enter a part of the road of 1 kind from a part of the road of another kind (for example, moving to or from a service
+    road, the shoulder of the road or an emergency stopping lane); or
+
+    (c) to overtake a vehicle that is turning right, or making a U-turn from the centre of the road, and is giving a right
+    change of direction signal; or
+
+    (d) to enter a marked lane, or part of the road where there is room for a line of traffic (other than motorbikes, bicycles,
+    motorised wheelchairs or animals), from the side of the road.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-158(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 158 (2)
+  page: 174
+  marking_type: special purpose lane
+  element: lane_type
+  text_original: 'The driver of any vehicle may drive in a bicycle lane, bus lane, tram lane, transit lane or truck lane if—
+
+    (a) it is necessary for the driver to drive in the lane to avoid an obstruction; or
+
+    (b) information on or with a traffic sign applying to the lane indicates that the driver may drive in the lane.'
+  text_en: 'The driver of any vehicle may drive in a bicycle lane, bus lane, tram lane, transit lane or truck lane if—
+
+    (a) it is necessary for the driver to drive in the lane to avoid an obstruction; or
+
+    (b) information on or with a traffic sign applying to the lane indicates that the driver may drive in the lane.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-158(2A)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 158 (2A)
+  page: 174
+  marking_type: bus lane
+  element: lane_type
+  text_original: 'The driver of any of the following vehicles may drive in a bus lane:
+
+    (a) a taxi;
+
+    (b) a hire car;
+
+    (c) a demand responsive service vehicle;
+
+    (d) a motorbike.'
+  text_en: 'The driver of any of the following vehicles may drive in a bus lane:
+
+    (a) a taxi;
+
+    (b) a hire car;
+
+    (c) a demand responsive service vehicle;
+
+    (d) a motorbike.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-158(4)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 158 (4)
+  page: 175
+  marking_type: special purpose lane
+  element: lane_type
+  text_original: 'In this section:
+
+    permitted distance means—
+
+    (a) for a bicycle lane or tram lane—50m; or
+
+    (b) for any other lane—100m.'
+  text_en: 'In this section:
+
+    permitted distance means—
+
+    (a) for a bicycle lane or tram lane—50m; or
+
+    (b) for any other lane—100m.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-159(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 159 (1)
+  page: 175
+  marking_type: lane designated for a particular vehicle kind
+  element: lane_type
+  text_original: 'If information on or with a traffic sign applying to a length of road indicates that a vehicle of a particular
+    kind must drive in a particular marked lane, a driver driving a vehicle of that kind on the length of road must drive
+    in the indicated lane, unless the driver is—
+
+    (a) avoiding an obstruction; or
+
+    (b) obeying a traffic control device applying to the indicated lane; or
+
+    (c) permitted to drive in the indicated lane and also another marked lane under another provision of this regulation;
+    or
+
+    (d) intending to turn off the road or to make a U-turn, and in order to do so safely without disrupting other vehicles
+    on the road it is necessary to position the vehicle in another lane before starting the turn, or to make the turn.'
+  text_en: 'If information on or with a traffic sign applying to a length of road indicates that a vehicle of a particular
+    kind must drive in a particular marked lane, a driver driving a vehicle of that kind on the length of road must drive
+    in the indicated lane, unless the driver is—
+
+    (a) avoiding an obstruction; or
+
+    (b) obeying a traffic control device applying to the indicated lane; or
+
+    (c) permitted to drive in the indicated lane and also another marked lane under another provision of this regulation;
+    or
+
+    (d) intending to turn off the road or to make a U-turn, and in order to do so safely without disrupting other vehicles
+    on the road it is necessary to position the vehicle in another lane before starting the turn, or to make the turn.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-160(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 160 (2)
+  page: 177
+  marking_type: road marking permitting passing a tram
+  element: general
+  text_original: The driver must not drive past, or overtake, a tram to the right of the tram, unless the driver is permitted
+    to do so by a traffic sign or road marking.
+  text_en: The driver must not drive past, or overtake, a tram to the right of the tram, unless the driver is permitted to
+    do so by a traffic sign or road marking.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-164C
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 164C
+  page: 182
+  marking_type: dividing lines, continuous lines, parallel lines and painted islands
+  element: general
+  text_original: '(1) The driver of a motor vehicle passing the rider of a bicycle that is travelling in the same direction
+    as the driver may make a permitted manoeuvre to pass the rider if—
+
+    (a) the driver has a clear view of any approaching traffic; and
+
+    (b) the permitted manoeuvre is necessary to comply with section 164B; and
+
+    (c) the driver can do so safely.
+
+    (2) In this section:
+
+    permitted manoeuvre means—
+
+    (a) if the driver is driving on a two-way road without a dividing line or median strip—drive to the right of the centre
+    of the road; or
+
+    (b) if the driver is driving on a road with a dividing line —drive to the right of the dividing line; or
+
+    (c) drive on a dividing strip that is at the same level as the road; or
+
+    (d) drive on or over a single continuous line; or
+
+    (e) drive on or over 2 parallel lines; or
+
+    (f) drive along a side, or surrounding, of a painted island.'
+  text_en: '(1) The driver of a motor vehicle passing the rider of a bicycle that is travelling in the same direction as the
+    driver may make a permitted manoeuvre to pass the rider if—
+
+    (a) the driver has a clear view of any approaching traffic; and
+
+    (b) the permitted manoeuvre is necessary to comply with section 164B; and
+
+    (c) the driver can do so safely.
+
+    (2) In this section:
+
+    permitted manoeuvre means—
+
+    (a) if the driver is driving on a two-way road without a dividing line or median strip—drive to the right of the centre
+    of the road; or
+
+    (b) if the driver is driving on a road with a dividing line —drive to the right of the dividing line; or
+
+    (c) drive on a dividing strip that is at the same level as the road; or
+
+    (d) drive on or over a single continuous line; or
+
+    (e) drive on or over 2 parallel lines; or
+
+    (f) drive along a side, or surrounding, of a painted island.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-169
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: '169'
+  page: 186
+  marking_type: continuous yellow edge line
+  element: boundary
+  text_original: A driver must not stop at the side of a road marked with a continuous yellow edge line.
+  text_en: A driver must not stop at the side of a road marked with a continuous yellow edge line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-178
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: '178'
+  page: 195
+  marking_type: emergency stopping lane
+  element: lane_type
+  text_original: 'A driver (except the rider of a bicycle) must not stop in an emergency stopping lane unless—
+
+    (a) the condition of the driver, a passenger or the driver’s vehicle, or any other factor, makes it necessary or desirable
+    for the driver to stop in the emergency stopping lane in the interests of safety; and
+
+    (b) the driver stops for no longer than is necessary in the circumstances.'
+  text_en: 'A driver (except the rider of a bicycle) must not stop in an emergency stopping lane unless—
+
+    (a) the condition of the driver, a passenger or the driver’s vehicle, or any other factor, makes it necessary or desirable
+    for the driver to stop in the emergency stopping lane in the interests of safety; and
+
+    (b) the driver stops for no longer than is necessary in the circumstances.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-187(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 187 (1)
+  page: 200
+  marking_type: bus lane, transit lane or truck lane
+  element: lane_type
+  text_original: 'A driver must not stop in a bus lane, transit lane or truck lane unless the driver—
+
+    (a) is driving a public bus, public minibus, taxi or hire car an d is dropping off or picking up passengers; and
+
+    (b) is permitted to drive in the lane under this regulation.'
+  text_en: 'A driver must not stop in a bus lane, transit lane or truck lane unless the driver—
+
+    (a) is driving a public bus, public minibus, taxi or hire car an d is dropping off or picking up passengers; and
+
+    (b) is permitted to drive in the lane under this regulation.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-187(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 187 (2)
+  page: 200
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: 'A driver must not stop in a bicycle lane unless the driver—
+
+    (a) is driving a public bus, public minibus, taxi or hire car; and
+
+    (b) is dropping off or picking up passengers; and
+
+    (c) is permitted to drive in the lane under this regulation.'
+  text_en: 'A driver must not stop in a bicycle lane unless the driver—
+
+    (a) is driving a public bus, public minibus, taxi or hire car; and
+
+    (b) is dropping off or picking up passengers; and
+
+    (c) is permitted to drive in the lane under this regulation.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-187(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 187 (3)
+  page: 200
+  marking_type: tram lane or tramway
+  element: lane_type
+  text_original: A driver (except the driver of a tram, a tram recovery vehicle or a public bus) must not stop in a tram lane,
+    a tramway or on tram tracks.
+  text_en: A driver (except the driver of a tram, a tram recovery vehicle or a public bus) must not stop in a tram lane, a
+    tramway or on tram tracks.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-208(6)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 208 (6)
+  page: 222
+  marking_type: continuous dividing line
+  element: boundary
+  text_original: If the road has a continuous dividing line or a dividing strip, the driver must position the vehicle at least
+    3m from the continuous dividing line or dividing strip, unless otherwise indicated by information on or with a parking
+    control sign.
+  text_en: If the road has a continuous dividing line or a dividing strip, the driver must position the vehicle at least 3m
+    from the continuous dividing line or dividing strip, unless otherwise indicated by information on or with a parking control
+    sign.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-211(2)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 211 (2)
+  page: 232
+  marking_type: parking bay
+  element: area
+  text_original: The driver must position the driver’s vehicle completely within a single parking bay, unless the vehicle
+    is too wide or long to fit completely within the bay.
+  text_en: The driver must position the driver’s vehicle completely within a single parking bay, unless the vehicle is too
+    wide or long to fit completely within the bay.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-211(3)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 211 (3)
+  page: 232
+  marking_type: parking bay
+  element: area
+  text_original: If the vehicle is too wide or long to fit completely within a single parking bay, the driver must park the
+    driver’s vehicle within the minimum number of parking bays needed to park the vehicle.
+  text_en: If the vehicle is too wide or long to fit completely within a single parking bay, the driver must park the driver’s
+    vehicle within the minimum number of parking bays needed to park the vehicle.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-247(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 247 (1)
+  page: 287
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: The rider of a bicycle riding on a length of road with a bicycle lane designed for bicycles travelling in
+    the same direction as the rider must ride in the bicycle lane unless it is impracticable to do so.
+  text_en: The rider of a bicycle riding on a length of road with a bicycle lane designed for bicycles travelling in the same
+    direction as the rider must ride in the bicycle lane unless it is impracticable to do so.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-247A
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 247A
+  page: 287
+  marking_type: bicycle storage area
+  element: area
+  text_original: The rider of a bicycle approaching a bicycle storage area at an intersection that has traffic lights or traffic
+    arrows showing a red traffic light or red arrow must not enter the bicycle storage area other than from a bicycle lane,
+    unless the rider is not required to ride in the bicycle lane under this regulation.
+  text_en: The rider of a bicycle approaching a bicycle storage area at an intersection that has traffic lights or traffic
+    arrows showing a red traffic light or red arrow must not enter the bicycle storage area other than from a bicycle lane,
+    unless the rider is not required to ride in the bicycle lane under this regulation.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    enter_waiting_area: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-247B(1)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 247B (1)
+  page: 287
+  marking_type: bicycle storage area
+  element: area
+  text_original: 'The rider of a bicycle must, when entering a bicycle storage area, give way to—
+
+    (a) any vehicle that is in the area; and
+
+    (b) if the area is before any green or yellow traffic lights, any motor vehicle that is entering or about to enter the
+    area, unless the motor vehicle is turning in a direction that is subject to a red traffic arrow; and
+
+    (c) if the area forms part of a lane to which traffic arrows apply, any motor vehicle that is entering or about to enter
+    the area at a time when those arrows are green or yellow.'
+  text_en: 'The rider of a bicycle must, when entering a bicycle storage area, give way to—
+
+    (a) any vehicle that is in the area; and
+
+    (b) if the area is before any green or yellow traffic lights, any motor vehicle that is entering or about to enter the
+    area, unless the motor vehicle is turning in a direction that is subject to a red traffic arrow; and
+
+    (c) if the area forms part of a lane to which traffic arrows apply, any motor vehicle that is entering or about to enter
+    the area at a time when those arrows are green or yellow.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-274
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: '274'
+  page: 317
+  marking_type: stop line
+  element: transverse
+  text_original: 'The driver of a tram approaching or at T lights showing a red T light must stop—
+
+    (a) if there is a stop line at or near the T lights—as near as practicable to, but before reaching, the stop line; or
+
+    (b) if there is no stop line at or near the T lights—as near as practicable to, but before reaching, the nearest or only
+    T lights.'
+  text_en: 'The driver of a tram approaching or at T lights showing a red T light must stop—
+
+    (a) if there is a stop line at or near the T lights—as near as practicable to, but before reaching, the stop line; or
+
+    (b) if there is no stop line at or near the T lights—as near as practicable to, but before reaching, the nearest or only
+    T lights.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-275
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: '275'
+  page: 318
+  marking_type: stop line
+  element: transverse
+  text_original: 'The driver of a tram approaching or at T lights showing a yellow T light must stop—
+
+    (a) if there is a stop line at or near the T lights and the driver can stop safely before reaching the stop line—as near
+    as practicable to, but before reaching, the stop line; or
+
+    (b) if there is no stop line at or near the T lights and the driver can stop safely before reaching the T lights—as near
+    as practicable to, but before reaching, the nearest or only T lights.'
+  text_en: 'The driver of a tram approaching or at T lights showing a yellow T light must stop—
+
+    (a) if there is a stop line at or near the T lights and the driver can stop safely before reaching the stop line—as near
+    as practicable to, but before reaching, the stop line; or
+
+    (b) if there is no stop line at or near the T lights and the driver can stop safely before reaching the T lights—as near
+    as practicable to, but before reaching, the nearest or only T lights.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-281(a)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 281 (a)
+  page: 320
+  marking_type: stop line at B lights
+  element: transverse
+  text_original: 'The driver of a public bus approaching or at B lights showing a red B light must stop—
+
+    (a) if there is a stop line at or near the B lights—as near as practicable to, but before reaching, the stop line; or'
+  text_en: 'The driver of a public bus approaching or at B lights showing a red B light must stop—
+
+    (a) if there is a stop line at or near the B lights—as near as practicable to, but before reaching, the stop line; or'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-282(a)
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 282 (a)
+  page: 321
+  marking_type: stop line at B lights
+  element: transverse
+  text_original: 'The driver of a public bus approaching or at B lights showing a yellow B light must stop—
+
+    (a) if there is a stop line at or near the B lights and the driver can stop safely before reaching the stop line—as near
+    as practicable to, but before reaching, the stop line; or'
+  text_en: 'The driver of a public bus approaching or at B lights showing a yellow B light must stop—
+
+    (a) if there is a stop line at or near the B lights and the driver can stop safely before reaching the stop line—as near
+    as practicable to, but before reaching, the stop line; or'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-352Example
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: 352 Example
+  page: 386
+  marking_type: stop line
+  element: transverse
+  text_original: If a driver stops behind a vehicle that has stopped at a stop sign or stop line in accordance with s 67,
+    s 68 or s 121, the driver must, after the vehicle has proceeded, stop at the stop sign or stop line in accordance with
+    the section.
+  text_en: If a driver stops behind a vehicle that has stopped at a stop sign or stop line in accordance with s 67, s 68 or
+    s 121, the driver must, after the vehicle has proceeded, stop at the stop sign or stop line in accordance with the section.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-Dictionary
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: Dictionary
+  page: 444
+  marking_type: left traffic lane arrows
+  element: lane_marking
+  text_original: left traffic lane arrows means traffic lane arrows applying to a marked lane that indicate only a direction
+    to the left.
+  text_en: left traffic lane arrows means traffic lane arrows applying to a marked lane that indicate only a direction to
+    the left.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    turn_left: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-Dictionary-2
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: Dictionary
+  page: 446
+  marking_type: marked lane
+  element: lane_type
+  text_original: marked lane means an area of a road marked by continuous or broken lines, or rows of studs or markers, on
+    the road surface that is designed for use by a single line of vehicles.
+  text_en: marked lane means an area of a road marked by continuous or broken lines, or rows of studs or markers, on the road
+    surface that is designed for use by a single line of vehicles.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-Dictionary-3
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: Dictionary
+  page: 448
+  marking_type: multi-lane road
+  element: lane_type
+  text_original: 'multi-lane road, for a driver, means a one-way road, or a two-way road, with 2 or more marked lanes (except
+    bicycle lanes) that are—
+
+    (a) on the side of the dividing line or median strip where the driver is driving; and
+
+    (b) for the use of vehicles travelling in the same direction.'
+  text_en: 'multi-lane road, for a driver, means a one-way road, or a two-way road, with 2 or more marked lanes (except bicycle
+    lanes) that are—
+
+    (a) on the side of the dividing line or median strip where the driver is driving; and
+
+    (b) for the use of vehicles travelling in the same direction.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-Dictionary-4
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: Dictionary
+  page: 448
+  marking_type: one-way road marked lanes
+  element: lane_type
+  text_original: one-way road means a road with 1 or more marked lanes, all of which are for the use of vehicles travelling
+    in the same direction.
+  text_en: one-way road means a road with 1 or more marked lanes, all of which are for the use of vehicles travelling in the
+    same direction.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-Dictionary-5
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: Dictionary
+  page: 454
+  marking_type: right traffic lane arrows
+  element: lane_marking
+  text_original: right traffic lane arrows means traffic lane arrows applying to a marked lane that indicate only a direction
+    to the right.
+  text_en: right traffic lane arrows means traffic lane arrows applying to a marked lane that indicate only a direction to
+    the right.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    turn_right: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-Dictionary-6
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: Dictionary
+  page: 455
+  marking_type: edge line
+  element: boundary
+  text_original: 'shoulder, of a road—
+
+    (a) includes any part of the road that is not designed to be used by motor vehicles in travelling along the road, and
+    includes—
+
+    (i) for a kerbed road—any part of the kerb; and
+
+    (ii) for a sealed road—any unsealed part of the road, and any sealed part of the road outside an edge line on the road;
+    but
+
+    (b) does not include a bicycle path, footpath or shared path.'
+  text_en: 'shoulder, of a road—
+
+    (a) includes any part of the road that is not designed to be used by motor vehicles in travelling along the road, and
+    includes—
+
+    (i) for a kerbed road—any part of the kerb; and
+
+    (ii) for a sealed road—any unsealed part of the road, and any sealed part of the road outside an edge line on the road;
+    but
+
+    (b) does not include a bicycle path, footpath or shared path.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-Dictionary-7
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: Dictionary
+  page: 455
+  marking_type: slip lane separated by painted island
+  element: lane_type
+  text_original: slip lane means an area of road for vehicles turning left that is separated, at some point, from other parts
+    of the road by a painted island or traffic island, but not by a median strip.
+  text_en: slip lane means an area of road for vehicles turning left that is separated, at some point, from other parts of
+    the road by a painted island or traffic island, but not by a median strip.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    turn_left: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-Dictionary-8
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: Dictionary
+  page: 457
+  marking_type: traffic lane arrows
+  element: lane_marking
+  text_original: traffic lane arrows means a traffic sign, road marking or device that displays arrows indicating 1 or more
+    directions and is designed to apply to 1 or more marked lanes, but does not include traffic arrows.
+  text_en: traffic lane arrows means a traffic sign, road marking or device that displays arrows indicating 1 or more directions
+    and is designed to apply to 1 or more marked lanes, but does not include traffic arrows.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-ACT-Dictionary-9
+  region: AU-ACT
+  source: Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+  section: Dictionary
+  page: 460
+  marking_type: U-turn traffic lane arrows
+  element: lane_marking
+  text_original: U-turn traffic lane arrows means traffic lane arrows applying to a marked lane that indicate only a U-turn
+    direction.
+  text_en: U-turn traffic lane arrows means traffic lane arrows applying to a marked lane that indicate only a U-turn direction.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees

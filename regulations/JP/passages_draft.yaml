@@ -1,0 +1,347 @@
+# DRAFT passages of Japan (JP) from jp_335M50004002003.xml, 2026-11-14 (gpt-6.1-sol).
+# Read every passage against the PDF. verified_quote: false means the original text was not found on its page.
+# Delete what is not a rule for drivers, fix sections and texts, then:  python main.py regulations accept JP
+
+- rule_id: JP-附則８
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 附則 ８
+  page: 2
+  marking_type: Games-related vehicles exclusive lane
+  element: lane_type
+  text_original: 交通法第二十条第二項の道路標示により、車両通行帯の設けられた道路において、大会関係車両その他公安委員会が指定する自動車が通行しなければならない車両通行帯（以下この項において「大会関係車両等専用通行帯」という。）を指定し、かつ、他の車両（小型特殊自動車、原動機付自転車及び軽車両を除く。）が通行しなければならない車両通行帯として大会関係車両等専用通行帯以外の車両通行帯を指定すること。
+  text_en: To designate, by road markings under Article 20, paragraph 2 of the Road Traffic Act, on roads provided with vehicular
+    lanes, the vehicular lane in which Games-related vehicles and other motor vehicles designated by the Public Safety Commission
+    must travel (hereinafter in this paragraph referred to as the “exclusive lane for Games-related vehicles, etc.”), and
+    to designate lanes other than that exclusive lane as the vehicular lanes in which other vehicles (excluding small special
+    motor vehicles, motorized bicycles and light vehicles) must travel.
+  text_en_is_translation: true
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-附則８-2
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 附則 ８
+  page: 2
+  marking_type: Games-related vehicles priority lane
+  element: lane_type
+  text_original: 交通法第二十条の二第一項の道路標示により、路線バス等の優先通行帯（公安委員会が道路交通法施行令第十条の規定により大会関係車両を指定した場合に限る。以下この項において同じ。）であることを表示すること。
+  text_en: To indicate, by road markings under Article 20-2, paragraph 1 of the Road Traffic Act, that the lane is a priority
+    lane for route buses, etc. (only where the Public Safety Commission has designated Games-related vehicles pursuant to
+    Article 10 of the Order for Enforcement of the Road Traffic Act; hereinafter the same applies in this paragraph).
+  text_en_is_translation: true
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第五進行方向（２０４）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第五 進行方向（２０４）
+  page: 25
+  marking_type: direction arrow
+  element: lane_marking
+  text_original: 車両が進行することができる方向であること。
+  text_en: Indicates a direction in which vehicles may proceed.
+  text_en_is_translation: true
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say permissive (ことができる)
+- rule_id: JP-別表第五中央線（２０５）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第五 中央線（２０５）
+  page: 25
+  marking_type: centre line
+  element: boundary
+  text_original: 道路の中央であること又は交通法第十七条第四項の道路標示による中央線であること。
+  text_en: Indicates the centre of the road or a centre line designated by a road marking under Article 17, paragraph 4 of
+    the Road Traffic Act.
+  text_en_is_translation: true
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第五車線境界線（２０６）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第五 車線境界線（２０６）
+  page: 25
+  marking_type: lane boundary line
+  element: boundary
+  text_original: 四車線以上の道路の区間内の車線の境界であること。
+  text_en: Indicates the boundary between lanes on a section of road with four or more lanes.
+  text_en_is_translation: true
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第五安全地帯（２０７）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第五 安全地帯（２０７）
+  page: 25
+  marking_type: safety zone
+  element: area
+  text_original: 交通法第二条第一項第六号に規定する安全地帯（島状の施設のものを除く。以下この項において同じ。）であること。
+  text_en: Indicates a safety zone as prescribed in Article 2, paragraph 1, item 6 of the Road Traffic Act (excluding island-type
+    facilities; the same applies hereinafter in this item).
+  text_en_is_translation: true
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第五安全地帯又は路上障害物に接近（２０８）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第五 安全地帯又は路上障害物に接近（２０８）
+  page: 25
+  marking_type: safety zone or road obstruction approach marking
+  element: lane_marking
+  text_original: 安全地帯又は路上障害物に接近しつつあること。
+  text_en: Indicates that a safety zone or road obstruction is being approached.
+  text_en_is_translation: true
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第五導流帯（２０８の２）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第五 導流帯（２０８の２）
+  page: 25
+  marking_type: channelizing area
+  element: area
+  text_original: 車両の安全かつ円滑な走行を誘導するために設けられた場所であること。
+  text_en: Indicates an area provided to guide vehicles safely and smoothly.
+  text_en_is_translation: true
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第五路面電車停留場（２０９）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第五 路面電車停留場（２０９）
+  page: 25
+  marking_type: tram stop marking
+  element: area
+  text_original: 路面電車の停留場であること。
+  text_en: Indicates a tram stop.
+  text_en_is_translation: true
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第五横断歩道又は自転車横断帯あり（２１０）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第五 横断歩道又は自転車横断帯あり（２１０）
+  page: 25
+  marking_type: pedestrian or bicycle crossing ahead marking
+  element: lane_marking
+  text_original: 前方に横断歩道又は自転車横断帯があること。
+  text_en: Indicates a pedestrian crossing or bicycle crossing ahead.
+  text_en_is_translation: true
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第五前方優先道路（２１１）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第五 前方優先道路（２１１）
+  page: 25
+  marking_type: priority road ahead marking
+  element: lane_marking
+  text_original: 当該道路と交差する前方の道路が交通法第三十六条第二項に規定する優先道路であること。
+  text_en: Indicates that the road intersecting this road ahead is a priority road as prescribed in Article 36, paragraph
+    2 of the Road Traffic Act.
+  text_en_is_translation: true
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第五備考一
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第五 備考 一
+  page: 25
+  marking_type: maximum speed marking
+  element: lane_marking
+  text_original: 「最高速度」を表示する規制標示であつて当該規制標示によつて示される速度が四十キロメートル毎時を超えるものの特定 牽 けん 引自動車に対して表示する意味については、最高速度につき四十キロメートル毎時を指定することを示すものとする。
+  text_en: For specified towing motor vehicles, a regulatory marking indicating a maximum speed exceeding 40 kilometres per
+    hour shall mean that the maximum speed is designated as 40 kilometres per hour.
+  text_en_is_translation: true
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第五備考二
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第五 備考 二
+  page: 25
+  marking_type: specified small motorized bicycle and ordinary bicycle sidewalk marking
+  element: area
+  text_original: 「特例特定小型原動機付自転車・普通自転車歩道通行可」及び「特例特定小型原動機付自転車・普通自転車の歩道通行部分」を表示する規制標示のうち、「特例特定原付を除く」の文字が表示されているものの意味については、特例特定小型原動機付自転車が当該規制標示が表示する交通の規制の対象となる車両でないことを示すものとする。
+  text_en: For regulatory markings indicating sidewalk use permitted for special-exception specified small motorized bicycles
+    and ordinary bicycles, or the portion of sidewalk for those vehicles, markings bearing the words “excluding special-exception
+    specified motorized bicycles” shall indicate that special-exception specified small motorized bicycles are not vehicles
+    subject to the traffic regulation indicated by that marking.
+  text_en_is_translation: true
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第六転回禁止（１０１）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第六 転回禁止（１０１）
+  page: 25
+  marking_type: timed no U-turn marking
+  element: lane_marking
+  text_original: 図示の「８―２０」は、車両の転回を禁止する時間が八時から二十時までであることを示す。
+  text_en: The illustrated “8–20” indicates that vehicle U-turns are prohibited from 08:00 to 20:00.
+  text_en_is_translation: true
+  norm: informative
+  actions_stated:
+    u_turn: prohibited
+  verified_quote: true
+  norm_check: words say mandatory (禁止)
+- rule_id: JP-別表第六進路変更禁止（１０２の２）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第六 進路変更禁止（１０２の２）
+  page: 25
+  marking_type: no lane change marking
+  element: boundary
+  text_original: 図示のＡの車両通行帯を通行する車両がＢの車両通行帯を通行すること及びＢの車両通行帯を通行する車両がＡの車両通行帯を通行することを禁止することを示す。
+  text_en: Indicates that vehicles travelling in illustrated lane A are prohibited from travelling in lane B, and vehicles
+    travelling in lane B are prohibited from travelling in lane A.
+  text_en_is_translation: true
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第六進路変更禁止（１０２の２）-2
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第六 進路変更禁止（１０２の２）
+  page: 25
+  marking_type: one-way no lane change marking
+  element: boundary
+  text_original: 図示のＢの車両通行帯を通行する車両がＡの車両通行帯を通行することを禁止することを示す。
+  text_en: Indicates that vehicles travelling in illustrated lane B are prohibited from travelling in lane A.
+  text_en_is_translation: true
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第六車両通行区分（１０９の３）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第六 車両通行区分（１０９の３）
+  page: 25
+  marking_type: vehicle lane allocation text
+  element: lane_type
+  text_original: 図示の文字は、通行区分を指定された車両通行帯及び車両の種類を示す。
+  text_en: The illustrated text indicates the lanes and vehicle types for which lane allocation is designated.
+  text_en_is_translation: true
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第六専用通行帯（１０９の６）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第六 専用通行帯（１０９の６）
+  page: 25
+  marking_type: exclusive lane text
+  element: lane_type
+  text_original: 図示の文字は、専用通行帯を通行しなければならない車両の種類を示す。
+  text_en: The illustrated text indicates the types of vehicles that must use the exclusive lane.
+  text_en_is_translation: true
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第六右左折の方法（１１１）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第六 右左折の方法（１１１）
+  page: 25
+  marking_type: right-turn path marking
+  element: lane_marking
+  text_original: 右折するときに矢印の示す方向により中央の標示に沿つた部分を通行しなければならないことを示す。
+  text_en: Indicates that, when turning right, vehicles must travel along the central marking in the direction shown by the
+    arrow.
+  text_en_is_translation: true
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第六右左折の方法（１１１）-2
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第六 右左折の方法（１１１）
+  page: 25
+  marking_type: turning guide broken line
+  element: boundary
+  text_original: 左折又は右折をするときに矢印の示す方向により破線に沿つた部分を通行しなければならないことを示す。
+  text_en: Indicates that, when turning left or right, vehicles must travel along the broken line in the direction shown by
+    the arrow.
+  text_en_is_translation: true
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第六右左折の方法（１１１）-3
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第六 右左折の方法（１１１）
+  page: 25
+  marking_type: turn destination lane marking
+  element: lane_marking
+  text_original: 左折又は右折をした後に通行する車両通行帯に入るように左折又は右折することを示す。
+  text_en: Indicates that a left or right turn is to be made so as to enter the lane to be used after the turn.
+  text_en_is_translation: true
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第六環状交差点における左折等の方法（１１１の２）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第六 環状交差点における左折等の方法（１１１の２）
+  page: 25
+  marking_type: roundabout guide marking
+  element: boundary
+  text_original: 左折若しくは右折し、又は直進若しくは転回するときに矢印の示す方向により破線に沿つた部分を通行しなければならないことを示す。
+  text_en: Indicates that, when turning left or right, proceeding straight or making a U-turn, vehicles must travel along
+    the broken line in the direction shown by the arrow.
+  text_en_is_translation: true
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: JP-別表第六備考一（七）
+  region: JP
+  source: 道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+  section: 別表第六 備考 一（七）
+  page: 26
+  marking_type: no crossing to the right for overtaking marking
+  element: boundary
+  text_original: 「追越しのための右側部分はみ出し通行禁止」を表示する規制標示で一の（一）又は（二）の様式のものは、「中央線」を表示する指示標示を兼ねるものとする。
+  text_en: Regulatory markings indicating prohibition of encroaching onto the right-hand portion for overtaking, in format
+    1 (a) or (b), shall also serve as centre-line indication markings.
+  text_en_is_translation: true
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees

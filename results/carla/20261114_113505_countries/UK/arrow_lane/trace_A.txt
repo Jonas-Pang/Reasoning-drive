@@ -1,0 +1,43 @@
+carla_Town03_arrow_lane_mirrored | lane | Test A | gpt-6.1-sol
+--------------------------------------------------------------
+Step 1  Scene           An urban road approaches a junction beneath an elevated structure. Two approach lanes
+                        are visible, and my car is in the right-hand lane. (lanes 2, mine 2, full)
+Step 2  Left            A single solid white line separates my lane from the adjacent approach lane on the
+                        left; no curb lies along this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           A single solid white line runs beside the raised right-hand pavement curb, with no
+                        traffic lane beyond it.
+                        white solid, curb yes, edge_line, evidence full
+Step 3  Markings        arrow:right (full): A white lane-use arrow ahead has a shaft bending right and a
+                        single right-pointing arrowhead.
+Step 4  Cross-check     position: The lane line on the left and roadway edge on the right agree with my lane
+                        being the second and rightmost of two approach lanes. | roles: The white dividing line
+                        fits a same-direction lane boundary, and the white line alongside the pavement fits a
+                        roadway edge. | markings: The right-turn arrow agrees with the right-hand approach-
+                        lane position; no conflicting guidance marking is visible in my lane. | unseen: No
+                        stop or give-way line is clearly readable at the distant junction, so none is
+                        reported. | result: consistent
+Step 5  Rule            left_boundary: In the UK, a solid white lane divider discourages changing lanes on
+                        this approach, so crossing it is not treated as an absolute prohibition.
+Step 5  Rule            right_boundary: The pavement curb marks a physical roadway limit and must not be
+                        crossed for ordinary driving.
+Step 5  Rule            arrow:right: The right-turn lane arrow directs traffic in this lane to turn right
+                        rather than proceed straight, turn left or make a U-turn.
+Step 6  change_left     allowed: The solid white lane divider discourages changing lanes but does not impose
+                        an absolute prohibition.
+Step 6  change_right    prohibited: The raised pavement curb prohibits an ordinary driving movement across the
+                        right boundary.
+Step 6  go_straight     prohibited: The right-only arrow does not permit straight-ahead movement from this
+                        lane.
+Step 6  turn_left       prohibited: The right-only arrow does not permit a left turn from this lane.
+Step 6  turn_right      allowed: The right-pointing lane arrow permits a right turn.
+Step 6  u_turn          prohibited: The right-only arrow does not designate a U-turn movement.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         consistent
+Advice                  Remain in this lane for a right turn and keep clear of the right-hand curb. Avoid
+                        changing across the solid lane divider; check junction controls and other traffic
+                        before turning.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:right'], missed []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4426, out 940, 15.77 s

@@ -1,0 +1,450 @@
+{
+  "run_id": "20261114_004918_laneB_CN",
+  "task": "lane",
+  "test": "B",
+  "region": "CN",
+  "prompt": "prompts/lane_v2",
+  "model": "gpt-6.1-sol",
+  "split": "dev",
+  "mock": false,
+  "images": 68,
+  "repeats": 1,
+  "actions": {
+    "cells": 208,
+    "accuracy": 0.87,
+    "prohibited": {
+      "support": 128,
+      "tp": 112,
+      "fp": 6,
+      "fn": 16,
+      "precision": 0.949,
+      "recall": 0.875,
+      "f1": 0.911
+    },
+    "allowed": {
+      "support": 77,
+      "tp": 69,
+      "fp": 2,
+      "fn": 8,
+      "precision": 0.972,
+      "recall": 0.896,
+      "f1": 0.932
+    },
+    "confusion": {
+      "classes": [
+        "allowed",
+        "prohibited",
+        "not_determined",
+        "not_applicable"
+      ],
+      "matrix": [
+        [
+          69,
+          3,
+          5,
+          0
+        ],
+        [
+          2,
+          112,
+          14,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "rows": "label",
+      "columns": "answer"
+    },
+    "prohibited_recall_by_action": {
+      "change_left": 0.974,
+      "change_right": 0.902,
+      "go_straight": 0.333,
+      "turn_left": 0.812,
+      "turn_right": 0.786,
+      "u_turn": 0.812
+    },
+    "unsafe": 2,
+    "over_cautious": 8,
+    "macro_f1": 0.921
+  },
+  "summary": {
+    "output2": {
+      "correct": 55,
+      "n": 68,
+      "acc": 0.809
+    },
+    "lane": {
+      "correct": 33,
+      "n": 68,
+      "acc": 0.485
+    },
+    "lane_core": {
+      "correct": 37,
+      "n": 68,
+      "acc": 0.544
+    },
+    "both_boundaries": {
+      "correct": 41,
+      "n": 68,
+      "acc": 0.603
+    },
+    "unsafe_errors": 2,
+    "over_cautious_errors": 8,
+    "markings_precision": 0.441,
+    "markings_recall": 0.833,
+    "cost_usd": 0.9154
+  },
+  "boundaries": {
+    "left_color": {
+      "accuracy": 0.897,
+      "n": 68,
+      "macro_f1": 0.845,
+      "per_class": {
+        "none": {
+          "support": 0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null
+        },
+        "white": {
+          "support": 61,
+          "tp": 55,
+          "fp": 1,
+          "fn": 6,
+          "precision": 0.982,
+          "recall": 0.902,
+          "f1": 0.94
+        },
+        "yellow": {
+          "support": 7,
+          "tp": 6,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.667,
+          "recall": 0.857,
+          "f1": 0.75
+        }
+      },
+      "confusion": {
+        "classes": [
+          "none",
+          "white",
+          "yellow"
+        ],
+        "matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            55,
+            3
+          ],
+          [
+            0,
+            1,
+            6
+          ]
+        ],
+        "rows": "label",
+        "columns": "answer"
+      }
+    },
+    "left_pattern": {
+      "accuracy": 0.868,
+      "n": 68,
+      "macro_f1": 0.462,
+      "per_class": {
+        "dashed": {
+          "support": 29,
+          "tp": 27,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.964,
+          "recall": 0.931,
+          "f1": 0.947
+        },
+        "double_solid": {
+          "support": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "none": {
+          "support": 0,
+          "tp": 0,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null
+        },
+        "solid": {
+          "support": 37,
+          "tp": 32,
+          "fp": 2,
+          "fn": 5,
+          "precision": 0.941,
+          "recall": 0.865,
+          "f1": 0.901
+        },
+        "solid_dashed": {
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        }
+      },
+      "confusion": {
+        "classes": [
+          "dashed",
+          "double_solid",
+          "none",
+          "solid",
+          "solid_dashed"
+        ],
+        "matrix": [
+          [
+            27,
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            4,
+            32,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rows": "label",
+        "columns": "answer"
+      }
+    },
+    "right_color": {
+      "accuracy": 0.956,
+      "n": 68,
+      "macro_f1": 0.977,
+      "per_class": {
+        "none": {
+          "support": 0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null
+        },
+        "white": {
+          "support": 68,
+          "tp": 65,
+          "fp": 0,
+          "fn": 3,
+          "precision": 1.0,
+          "recall": 0.956,
+          "f1": 0.977
+        }
+      },
+      "confusion": {
+        "classes": [
+          "none",
+          "white"
+        ],
+        "matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            65
+          ]
+        ],
+        "rows": "label",
+        "columns": "answer"
+      }
+    },
+    "right_pattern": {
+      "accuracy": 0.853,
+      "n": 68,
+      "macro_f1": 0.695,
+      "per_class": {
+        "dashed": {
+          "support": 26,
+          "tp": 23,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.885,
+          "recall": 0.885,
+          "f1": 0.885
+        },
+        "double_solid": {
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "none": {
+          "support": 0,
+          "tp": 0,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null
+        },
+        "solid": {
+          "support": 40,
+          "tp": 34,
+          "fp": 2,
+          "fn": 6,
+          "precision": 0.944,
+          "recall": 0.85,
+          "f1": 0.895
+        },
+        "solid_dashed": {
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        }
+      },
+      "confusion": {
+        "classes": [
+          "dashed",
+          "double_solid",
+          "none",
+          "solid",
+          "solid_dashed"
+        ],
+        "matrix": [
+          [
+            23,
+            0,
+            1,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            4,
+            34,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rows": "label",
+        "columns": "answer"
+      }
+    }
+  },
+  "markings": {
+    "precision": 0.441,
+    "recall": 0.833,
+    "f1": 0.577
+  },
+  "subsets": {
+    "L1": {
+      "n": 13,
+      "correct": 13,
+      "unsafe": 0,
+      "accuracy": 1.0
+    },
+    "L2": {
+      "n": 38,
+      "correct": 30,
+      "unsafe": 2,
+      "accuracy": 0.789
+    },
+    "L3": {
+      "n": 17,
+      "correct": 12,
+      "unsafe": 0,
+      "accuracy": 0.706
+    },
+    "rule-sensitive": {
+      "n": 17,
+      "correct": 14,
+      "unsafe": 0,
+      "accuracy": 0.824
+    },
+    "not rule-sensitive": {
+      "n": 51,
+      "correct": 41,
+      "unsafe": 2,
+      "accuracy": 0.804
+    }
+  }
+}

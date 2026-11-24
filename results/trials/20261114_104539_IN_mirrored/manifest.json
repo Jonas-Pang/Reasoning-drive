@@ -1,0 +1,56 @@
+{
+  "kind": "lane_try",
+  "region": "IN",
+  "region_name": "India",
+  "driving_side": "left",
+  "draft_passages": true,
+  "passages": 31,
+  "mirrored": true,
+  "tests": [
+    "A",
+    "B"
+  ],
+  "mock": false,
+  "prompt_dir": "prompts/lane_v2",
+  "settings": {
+    "provider": "openai",
+    "base_url": "https://api.openai.com/v1",
+    "api_key_env": "OPENAI_API_KEY",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "reasoning_summary": null,
+    "temperature": null,
+    "image_detail": "high",
+    "max_output_tokens": 2000,
+    "instruction_role": "developer",
+    "store": false,
+    "timeout_s": 90,
+    "max_retries": 4,
+    "parallel": 5,
+    "price_per_million_tokens": {
+      "gpt-6.1-sol": {
+        "input": 2.0,
+        "cached_input": 0.1,
+        "output": 10.0
+      },
+      "gpt-6-sol": {
+        "input": 2.0,
+        "cached_input": 0.2,
+        "output": 10.0
+      }
+    },
+    "api_key_set": true,
+    "api_key_hint": "…594A"
+  },
+  "sources": [
+    "D:\\Project\\Reasoning_Drive\\results\\carla\\20261113_185858_route1\\frames\\02.png",
+    "D:\\Project\\Reasoning_Drive\\results\\carla\\20261113_185858_route1\\frames\\05.png",
+    "D:\\Project\\Reasoning_Drive\\results\\carla\\20261113_185858_route1\\frames\\06.png"
+  ],
+  "requests": 6,
+  "errors": 0,
+  "cached": 0,
+  "cost_usd": 0.0825,
+  "time": "20261114_104539",
+  "version": "0.1"
+}

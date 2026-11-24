@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "map": "Town10HD_Opt",
+    "weather": "ClearNoon",
+    "region": "US",
+    "prompt": "prompts/v3",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "seed": 6216,
+    "tests": [
+      "A",
+      "B"
+    ],
+    "started": "20261113_020404",
+    "spacing_ticks": 120,
+    "tempt": 0.3
+  },
+  "mock": false,
+  "drive_with": "B",
+  "per_test": {
+    "A": {
+      "requests": 6,
+      "answered": 6,
+      "errors": 0,
+      "marking_type_correct": 6,
+      "cross_line_correct": 6,
+      "unsafe": 0,
+      "over_cautious": 0,
+      "agrees_with_carla_flag": 5,
+      "mean_latency_s": 5.69,
+      "tokens_in": 15504,
+      "tokens_out": 1700,
+      "cost_usd": 0.048,
+      "by_marking_type": {
+        "white_dashed": {
+          "n": 3,
+          "type_ok": 3,
+          "cross_ok": 3
+        },
+        "white_solid": {
+          "n": 1,
+          "type_ok": 1,
+          "cross_ok": 1
+        },
+        "yellow_double_solid": {
+          "n": 2,
+          "type_ok": 2,
+          "cross_ok": 2
+        }
+      }
+    },
+    "B": {
+      "requests": 6,
+      "answered": 6,
+      "errors": 0,
+      "marking_type_correct": 6,
+      "cross_line_correct": 6,
+      "unsafe": 0,
+      "over_cautious": 0,
+      "agrees_with_carla_flag": 5,
+      "mean_latency_s": 4.5,
+      "tokens_in": 25122,
+      "tokens_out": 1752,
+      "cost_usd": 0.0678,
+      "by_marking_type": {
+        "white_dashed": {
+          "n": 3,
+          "type_ok": 3,
+          "cross_ok": 3
+        },
+        "white_solid": {
+          "n": 1,
+          "type_ok": 1,
+          "cross_ok": 1
+        },
+        "yellow_double_solid": {
+          "n": 2,
+          "type_ok": 2,
+          "cross_ok": 2
+        }
+      }
+    }
+  },
+  "a_vs_b_cross_line": {
+    "pairs": 6,
+    "both_right": 6,
+    "only_A_right": 0,
+    "only_B_right": 0,
+    "both_wrong": 0
+  },
+  "closed_loop": {
+    "decision_points": 3,
+    "lane_change_wanted_with_lane_available": 2,
+    "system_allowed": 2,
+    "lane_changes_executed": 2,
+    "lane_changes_completed": 1,
+    "blocked_although_allowed_by_rules": 0,
+    "allowed_although_prohibited_by_rules": 0,
+    "wanted_to_cross_a_prohibited_line": 1,
+    "blocked_prohibited_crossings": 1,
+    "lines_crossed": {
+      "white_dashed": 4
+    },
+    "prohibited_lines_crossed": 0
+  }
+}

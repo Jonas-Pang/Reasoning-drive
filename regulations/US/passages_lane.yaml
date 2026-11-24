@@ -1,0 +1,307 @@
+# MUTCD 11th Edition (December 2023), Part 3: passages added for the lane-level task.
+# The passages of passages_marking.json stay as they are (they belong to the saved single-marking runs);
+# the lane task uses both files. "element" says which part of a lane the passage is about:
+# boundary (a line or curb beside the lane), lane_marking (arrows, words, symbols inside the lane),
+# lane_type (the lane as a whole), transverse (lines across the lane), area (a marked area).
+# Text is quoted from the source. Cross-references in brackets, such as (see Section 3B.09) or sign codes
+# such as (R1-1), are left out; "..." marks any other text that is left out.
+
+- rule_id: US-3A.04-01-DE
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3A.04 ¶01 D–E
+  page: 538
+  element: boundary
+  marking_type: dotted line (general)
+  text_en: "D. A dotted lane line provides warning of a downstream change in lane function. E. A dotted line used as a lane line or edge line extension guides vehicles through an intersection, a taper area, or an interchange ramp area."
+  text_en_is_translation: false
+
+- rule_id: US-3A.04-04
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3A.04 ¶04
+  page: 538
+  element: boundary
+  marking_type: wide line (general)
+  text_en: "The width of the line indicates the degree of emphasis."
+  text_en_is_translation: false
+
+- rule_id: US-3B.04-01
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.04 ¶01–02
+  page: 543
+  element: boundary
+  marking_type: reversible lane (broken double yellow)
+  text_en: "If reversible lanes are used, the lane line pavement markings on each side of reversible lanes shall consist of a normal width broken double yellow line to delineate the edge of a lane in which the direction of travel is reversed from time to time, such that each of these markings serve as the center line markings of the roadway during some period. Signs, lane-use control signals, or both shall be used to supplement reversible lane pavement markings."
+  text_en_is_translation: false
+
+- rule_id: US-3B.05-02
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.05 ¶02
+  page: 543
+  element: lane_marking
+  marking_type: two-way left-turn lane (arrows)
+  text_en: "White two-way left-turn lane-use arrows should be used at or just downstream from the beginning of a two-way left-turn lane."
+  text_en_is_translation: false
+
+- rule_id: US-3B.05-07
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.05 ¶06–07
+  page: 546
+  element: lane_type
+  marking_type: two-way left-turn lane (end)
+  text_en: "Two-way left-turn lane markings should not extend to intersections. Two-way left-turn lanes may be transitioned to mandatory left-turn lanes ... or painted median islands where they approach an intersection."
+  text_en_is_translation: false
+
+- rule_id: US-3B.06-08
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.06 ¶08
+  page: 548
+  element: boundary
+  marking_type: solid white lane line (other uses)
+  text_en: "Solid white lane line markings may be used: A. On approaches to intersections to separate contiguous through lanes. B. To separate through traffic lanes from auxiliary lanes, such as an added uphill truck lane. C. On approaches to crosswalks across multi-lane roadways."
+  text_en_is_translation: false
+
+- rule_id: US-3B.07-01
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.07 ¶01
+  page: 548
+  element: boundary
+  marking_type: dotted white lane line (non-continuing lane)
+  text_en: "A normal width dotted white line marking shall be used as the lane line to separate a through lane that continues beyond the interchange or intersection from an adjacent deceleration or acceleration lane."
+  text_en_is_translation: false
+
+- rule_id: US-3B.07-07
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.07 ¶07 A, E
+  page: 553
+  element: boundary
+  marking_type: wide dotted white lane line (lane drop)
+  text_en: "A wide dotted white lane line shall be used: A. As a lane drop marking in advance of lane drops at exit ramps to distinguish a lane drop from a normal exit ramp ... E. As a lane drop marking in advance of lane drops at intersections to distinguish a lane drop from an intersection through lane."
+  text_en_is_translation: false
+
+- rule_id: US-3B.08-01-03
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.08 ¶01, ¶03
+  page: 553
+  element: boundary
+  marking_type: channelizing line (wide or double solid white)
+  text_en: "Channelizing lines are used to form neutral areas where traffic traveling in the same general direction is permitted on both sides including entrance and exit ramps, access and egress points to and from managed lanes, toll-plaza bypasses, and left-turn lanes separated from through lanes. ... A channelizing line shall be a solid wide or double solid white line."
+  text_en_is_translation: false
+
+- rule_id: US-3B.09-01-02
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.09 ¶01–02
+  page: 562
+  element: boundary
+  marking_type: edge line (right, solid white)
+  text_en: "If used, edge line pavement markings shall delineate the right or left edges of a roadway. ... Right edge line pavement markings, if used, shall consist of a normal width solid white line to delineate the right-hand edge of the roadway."
+  text_en_is_translation: false
+
+- rule_id: US-3B.11-03
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.11 ¶03–04
+  page: 563
+  element: boundary
+  marking_type: dotted line extension (intersection)
+  text_en: "Where highway design or reduced visibility conditions make it desirable to provide control or to guide vehicles through an intersection or interchange ... dotted lane line extension markings ... should be used to extend longitudinal line markings through an intersection or interchange area. Where greater restriction is preferred, solid lane lines or channelizing lines should be extended into or continued through intersections."
+  text_en_is_translation: false
+
+- rule_id: US-3B.11-05
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.11 ¶05, ¶07
+  page: 563
+  element: boundary
+  marking_type: center line and edge line extensions (intersection)
+  text_en: "Extensions of center lines through intersections shall be dotted lines. ... Solid lines shall not be used to extend edge lines into or through intersections except through that part of an intersection with no intersecting approach."
+  text_en_is_translation: false
+
+- rule_id: US-3B.12-04
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.12 ¶01, ¶04
+  page: 566
+  element: lane_type
+  marking_type: lane reduction
+  text_en: "A lane-reduction is where the number of through lanes is reduced at a location that is not at an interchange or intersection ... Lane-reduction transitions shall include the following elements: A. A no-passing zone to prohibit passing in the direction of the convergence and through the transition area except where not applicable such as one-way streets, expressways, and freeways; and B. An edge line in the direction of the convergence and through the transition area ..."
+  text_en_is_translation: false
+
+- rule_id: US-3B.19-01-02
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.19 ¶01–02, ¶04
+  page: 573
+  element: transverse
+  marking_type: stop line
+  text_en: "Stop lines may be used to indicate the point behind which vehicles are required to stop in compliance with a STOP sign ... or some other traffic control device that requires vehicles to stop, except YIELD signs that are not associated with passive grade crossings. Stop lines shall consist of solid white lines extending across approach lanes to indicate the point at which the stop is intended or required to be made. Stop lines should be used to indicate the point behind which vehicles are required to stop in compliance with a traffic control signal."
+  text_en_is_translation: false
+
+- rule_id: US-3B.19-10
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.19 ¶10
+  page: 573
+  element: transverse
+  marking_type: yield line
+  text_en: "Yield lines shall consist of a row of solid white isosceles triangles pointing toward approaching vehicles extending across approach lanes to indicate the point at which the yield is intended or required to be made."
+  text_en_is_translation: false
+
+- rule_id: US-3B.20-01
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.20 ¶01, ¶04
+  page: 575
+  element: lane_marking
+  marking_type: word, symbol and arrow markings (general)
+  text_en: "Word, symbol, and arrow markings on the pavement are used for the purpose of regulating, warning, or guiding traffic. These pavement markings can be helpful to road users in some locations by supplementing signs and providing additional emphasis for important regulatory, warning, or guidance messages ... Word, symbol, and arrow markings shall be white, except as otherwise provided in this Section."
+  text_en_is_translation: false
+
+- rule_id: US-3B.21-04
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.21 ¶04–05, ¶08
+  page: 576
+  element: lane_marking
+  marking_type: ONLY word marking
+  text_en: "Where through lanes approaching an intersection become mandatory turn lanes, ONLY word pavement markings should be used in addition to signs and the required lane-use arrow markings. The ONLY word marking may be used to supplement the lane-use arrow markings in lanes that are designated for the exclusive use of a single movement such as turn bays. The ONLY word marking shall not be used in a lane that is shared by more than one movement."
+  text_en_is_translation: false
+
+- rule_id: US-3B.23-03
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.23 ¶03
+  page: 578
+  element: lane_marking
+  marking_type: lane-use arrow (exclusive turn lane)
+  text_en: "Lane-use arrow markings should be used in lanes and turn bays designated for the exclusive use of a turning movement ... Lane-use arrow markings should also be used in lanes from which movements are allowed that are contrary to the normal rules of the road."
+  text_en_is_translation: false
+
+- rule_id: US-3B.23-09
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.23 ¶09
+  page: 578
+  element: lane_marking
+  marking_type: lane-use arrow with ONLY (mandatory turn lane)
+  text_en: "Where through lanes approaching an intersection become mandatory turn lanes, ONLY word markings should be used in addition to signs and the required turn lane-use arrow markings. These signs and markings should be placed well in advance of the turn and should be repeated as necessary to provide the through motorist advance notification to vacate the lane prior to reaching a point where roadway geometrics or a queue of waiting vehicles forces the motorist to make an unintended turn."
+  text_en_is_translation: false
+
+- rule_id: US-FIG-3B-21
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: Figure 3B-21
+  page: 579
+  element: lane_marking
+  marking_type: lane-use arrow (types)
+  text_en: "Figure 3B-21. Examples of Standard Arrows for Pavement Markings. A, Through lane-use arrow; B, Turn lane-use arrow; C, Turn and through lane-use arrow; D, U-Turn lane-use arrow; E, U-Turn and through lane-use arrow; F, Curved-stem lane-use arrows; G, Wrong-way arrow; H, Wrong-way arrow using retroreflective raised pavement markers; I, Lane-reduction arrow. Match arrow(s) with desired lane use configuration."
+  text_en_is_translation: false
+
+- rule_id: US-3B.24-02
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.24 ¶02
+  page: 578
+  element: lane_marking
+  marking_type: wrong-way arrow
+  text_en: "The wrong-way arrow markings ... may be placed near the downstream terminus of a ramp ... or at other locations where lane-use arrows are not appropriate, to indicate the correct direction of traffic flow and to discourage drivers from traveling in the wrong direction."
+  text_en_is_translation: false
+
+- rule_id: US-3B.25-01
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.25 ¶01
+  page: 578
+  element: area
+  marking_type: chevron or diagonal markings
+  text_en: "Chevron or diagonal markings are used to discourage travel on certain paved areas, such as shoulders, neutral areas, and flush median islands."
+  text_en_is_translation: false
+
+- rule_id: US-3B.26-01
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.26 ¶01–02
+  page: 581
+  element: area
+  marking_type: do not block intersection
+  text_en: "Do Not Block Intersection markings may be used to mark the edges of an intersection area that is in close proximity to a signalized intersection, railroad crossing, or other nearby traffic control that might cause vehicles to stop within the intersection and impede other traffic entering the intersection. ... If used, Do Not Block Intersection markings shall consist of one of the following alternatives: A. Wide solid white lines that outline the intersection area that vehicles must not block; B. Wide solid white lines that outline the intersection area that vehicles must not block and a white word message such as DO NOT BLOCK or KEEP CLEAR; C. Wide solid white lines that outline the intersection area that vehicles must not block and white cross-hatching within the intersection area; or D. A white word message, such as DO NOT BLOCK or KEEP CLEAR, within the intersection area that vehicles must not block."
+  text_en_is_translation: false
+
+- rule_id: US-3E.01-01
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3E.01 ¶01
+  page: 606
+  element: lane_type
+  marking_type: preferential lane
+  text_en: "Preferential lanes are established for one or more of a wide variety of special uses, including, but not limited to, high-occupancy vehicle (HOV) lanes, electronic toll collection (ETC) lanes, price-managed lanes, bus only lanes, taxi only lanes, and light rail transit only lanes."
+  text_en_is_translation: false
+
+- rule_id: US-3E.03-02
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3E.03 ¶02, ¶07
+  page: 608
+  element: lane_marking
+  marking_type: preferential lane word and symbol markings
+  text_en: "When a preferential lane is established, the preferential lane shall be marked with one or more of the following word or symbol markings for the preferential lane use specified: A. HOV lane: white lines formed in a diamond-shaped symbol or the word message HOV ... C. Price-managed lane: the word marking EXPRESS or EXPRESS LANE(S). D. Bus only lane or bus stop: the word marking BUS ONLY or BUS STOP. E. Taxi only lane or taxi stand: the word marking TAXI ONLY or TAXI STAND. F. Light rail transit lane: the word marking LRT ONLY ... All preferential lane word and symbol markings shall be white and shall be positioned laterally in the approximate center of the preferential lane."
+  text_en_is_translation: false
+
+- rule_id: US-3H.07-01
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3H.07 ¶01, ¶03
+  page: 626
+  element: lane_type
+  marking_type: red-colored pavement (transit lane)
+  text_en: "Red-colored pavement is used to enhance the conspicuity of locations, station stops, or travel lanes in the roadway exclusively reserved for vehicles of public transit systems ... If used, red-colored pavement shall be applied only in lanes, areas, or locations where general-purpose traffic is not allowed to use, queue, wait, idle, or otherwise occupy the lane, area, or location where red-colored pavement is used."
+  text_en_is_translation: false
+
+- rule_id: US-3B.12-14
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.12 ¶14, ¶16
+  page: 566
+  element: lane_marking
+  marking_type: lane-reduction arrow
+  text_en: "Where a lane-reduction transition occurs on a roadway with a speed limit of less than 45 mph, lane-reduction arrow markings may be used. ... A dotted white line may be used between the point where the broken white lane line is terminated to the point where the transition taper begins."
+  text_en_is_translation: false
+
+- rule_id: US-3B.18-01-04
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.18 ¶01, ¶04
+  page: 572
+  element: boundary
+  marking_type: curb markings
+  text_en: "Except as provided in Paragraph 4 of this Section, since yellow and white curb markings are frequently used for curb delineation and visibility, parking regulations should be established through the installation of standard signs ... Curb markings without word markings or signs may be used to convey a general prohibition by statute of parking within a specified distance of a STOP sign, YIELD sign, driveway, fire hydrant, or crosswalk."
+  text_en_is_translation: false
+
+- rule_id: US-3B.09-07
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3B.09 ¶07
+  page: 562
+  element: boundary
+  marking_type: edge line at intersections
+  text_en: "Edge line markings should not be continued through intersections, except for the following situations: A. Dotted edge line extensions ..., or B. Through that part of an intersection with no intersection approach (such as the far side of a T-intersection)."
+  text_en_is_translation: false
+
+- rule_id: US-3H.04-02-03
+  region: US
+  source: MUTCD 11th Edition (Dec 2023), Part 3
+  section: 3H.04 ¶01–03
+  page: 623
+  element: area
+  marking_type: yellow-colored pavement
+  text_en: "Yellow-colored pavement is used to enhance the conspicuity of areas separating traffic traveling in opposite directions of travel and the left-hand edge of the roadway. If used, yellow-colored pavement shall be limited to: A. Flush or raised median islands separating traffic flows in opposite directions, B. Left-hand shoulders of divided highways, and C. Left-hand shoulders of one-way streets or ramps. Yellow-colored pavement shall not be incorporated into elements of the roadway that function as reversible lanes or two-way left-turn lanes."
+  text_en_is_translation: false

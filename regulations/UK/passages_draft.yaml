@@ -1,0 +1,1691 @@
+# DRAFT passages of the United Kingdom (UK): the drafts of 3 documents (hc_markings, highway_code, tsrgd) in drafts/, merged. Edit those files, not this one; each extraction writes this file again.
+# Then:  python main.py regulations accept UK
+
+- rule_id: UK-HC_MARKINGS-p1
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 1
+  marking_type: stop line at signals or police control
+  element: transverse
+  text_original: Stop line at signals or police control
+  text_en: Stop line at signals or police control
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p1-2
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 1
+  marking_type: stop line at Stop sign
+  element: transverse
+  text_original: Stop line at ‘Stop’ sign
+  text_en: Stop line at ‘Stop’ sign
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p1-3
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 1
+  marking_type: pedestrian stop line at level crossing
+  element: transverse
+  text_original: Stop line for pedestrians at a level crossing
+  text_en: Stop line for pedestrians at a level crossing
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p1-4
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 1
+  marking_type: give-way marking
+  element: transverse
+  text_original: Give way to traffic on major road (can also be used at mini roundabouts)
+  text_en: Give way to traffic on major road (can also be used at mini roundabouts)
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p1-5
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 1
+  marking_type: roundabout give-way marking
+  element: transverse
+  text_original: Give way to traffic from the right at a roundabout
+  text_en: Give way to traffic from the right at a roundabout
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p1-6
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 1
+  marking_type: mini-roundabout give-way marking
+  element: transverse
+  text_original: Give way to traffic from the right at a mini-roundabout
+  text_en: Give way to traffic from the right at a mini-roundabout
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p2
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: yellow waiting restriction lines
+  element: boundary
+  text_original: Waiting restrictions indicated by yellow lines apply to the carriageway, pavement and verge. You may stop
+    to load or unload (unless there are also loading restrictions as described below) or while passengers board or alight.
+  text_en: Waiting restrictions indicated by yellow lines apply to the carriageway, pavement and verge. You may stop to load
+    or unload (unless there are also loading restrictions as described below) or while passengers board or alight.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p2-2
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: double yellow lines
+  element: boundary
+  text_original: Double yellow lines mean no waiting at any time, unless there are signs that specifically indicate seasonal
+    restrictions.
+  text_en: Double yellow lines mean no waiting at any time, unless there are signs that specifically indicate seasonal restrictions.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p2-3
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: waiting restriction markings
+  element: boundary
+  text_original: The times at which the restrictions apply for other road markings are shown on nearby plates or on entry
+    signs to controlled parking zones. If no days are shown on the signs, the restrictions are in force every day including
+    Sundays and Bank Holidays.
+  text_en: The times at which the restrictions apply for other road markings are shown on nearby plates or on entry signs
+    to controlled parking zones. If no days are shown on the signs, the restrictions are in force every day including Sundays
+    and Bank Holidays.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p2-4
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: white parking bay markings
+  element: area
+  text_original: White bay markings and upright signs (see below) indicate where parking is allowed.
+  text_en: White bay markings and upright signs (see below) indicate where parking is allowed.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p2-5
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: no-waiting marking
+  element: boundary
+  text_original: No waiting at any time
+  text_en: No waiting at any time
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p2-6
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: timed no-waiting marking
+  element: boundary
+  text_original: No waiting during times shown on sign
+  text_en: No waiting during times shown on sign
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p2-7
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: limited waiting bay
+  element: area
+  text_original: Waiting is limited to the duration specified during the days and times shown
+  text_en: Waiting is limited to the duration specified during the days and times shown
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p2-8
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: Red Route red lines
+  element: boundary
+  text_original: The double and single red lines used on Red Routes indicate that stopping to park, load/unload or to board
+    and alight from a vehicle (except for a licensed taxi or if you hold a Blue Badge) is prohibited. The red lines apply
+    to the carriageway, pavement and verge.
+  text_en: The double and single red lines used on Red Routes indicate that stopping to park, load/unload or to board and
+    alight from a vehicle (except for a licensed taxi or if you hold a Blue Badge) is prohibited. The red lines apply to the
+    carriageway, pavement and verge.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p2-9
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: Red Route double red line
+  element: boundary
+  text_original: The times that the red line prohibitions apply are shown on nearby signs, but the double red line ALWAYS
+    means no stopping at any time.
+  text_en: The times that the red line prohibitions apply are shown on nearby signs, but the double red line ALWAYS means
+    no stopping at any time.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p2-10
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: Red Route stopping box
+  element: area
+  text_original: On Red Routes you may stop to park, load/unload in specially marked boxes and adjacent signs specify the
+    times and purposes and duration allowed.
+  text_en: On Red Routes you may stop to park, load/unload in specially marked boxes and adjacent signs specify the times
+    and purposes and duration allowed.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p2-11
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: Red Route red box
+  element: area
+  text_original: A box MARKED IN RED indicates that it may only be available for the purpose specified for part of the day
+    (eg between busy peak periods).
+  text_en: A box MARKED IN RED indicates that it may only be available for the purpose specified for part of the day (eg between
+    busy peak periods).
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say permissive (may)
+- rule_id: UK-HC_MARKINGS-p2-12
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: Red Route white box
+  element: area
+  text_original: A box MARKED IN WHITE means that it is available throughout the day.
+  text_en: A box MARKED IN WHITE means that it is available throughout the day.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p2-13
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: no-stopping marking
+  element: boundary
+  text_original: No stopping at any time
+  text_en: No stopping at any time
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p2-14
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: timed no-stopping marking
+  element: boundary
+  text_original: No stopping during times shown on sign
+  text_en: No stopping during times shown on sign
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p2-15
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: limited parking box
+  element: area
+  text_original: Parking is limited to the duration specified during the days and times shown
+  text_en: Parking is limited to the duration specified during the days and times shown
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p2-16
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: loading-only box
+  element: area
+  text_original: Only loading may take place at the times shown for up to a maximum duration of 20 mins
+  text_en: Only loading may take place at the times shown for up to a maximum duration of 20 mins
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say permissive (may)
+- rule_id: UK-HC_MARKINGS-p2-17
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: yellow loading restriction marks
+  element: boundary
+  text_original: Yellow marks on the kerb or at the edge of the carriageway indicate that loading or unloading is prohibited
+    at the times shown on the nearby black and white plates. You may stop while passengers board or alight.
+  text_en: Yellow marks on the kerb or at the edge of the carriageway indicate that loading or unloading is prohibited at
+    the times shown on the nearby black and white plates. You may stop while passengers board or alight.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p2-18
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: yellow loading restriction marks
+  element: boundary
+  text_original: If no days are indicated on the signs the restrictions are in force every day including Sundays and Bank
+    Holidays.
+  text_en: If no days are indicated on the signs the restrictions are in force every day including Sundays and Bank Holidays.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p2-19
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: Loading Only bay
+  element: area
+  text_original: Lengths of road reserved for vehicles loading and unloading are indicated by a white ‘bay’ marking with the
+    words ‘Loading Only’ and a sign with the white on blue ‘trolley’ symbol.
+  text_en: Lengths of road reserved for vehicles loading and unloading are indicated by a white ‘bay’ marking with the words
+    ‘Loading Only’ and a sign with the white on blue ‘trolley’ symbol.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p2-20
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: Loading Only bay
+  element: area
+  text_original: If no times or days are shown it may be used at any time. Vehicles may not park here if they are not loading
+    or unloading.
+  text_en: If no times or days are shown it may be used at any time. Vehicles may not park here if they are not loading or
+    unloading.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p2-21
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: no-loading marking
+  element: boundary
+  text_original: No loading or unloading at any time
+  text_en: No loading or unloading at any time
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p3
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 3
+  marking_type: timed no-loading marking
+  element: boundary
+  text_original: No loading or unloading at the times shown
+  text_en: No loading or unloading at the times shown
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p3-2
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 3
+  marking_type: entrance keep-clear marking
+  element: area
+  text_original: Keep entrance clear of stationary vehicles, even if picking up or setting down children
+  text_en: Keep entrance clear of stationary vehicles, even if picking up or setting down children
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p3-3
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 3
+  marking_type: give-way warning marking
+  element: lane_marking
+  text_original: Warning of ‘Give Way’ just ahead
+  text_en: Warning of ‘Give Way’ just ahead
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p3-4
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 3
+  marking_type: reserved parking space
+  element: area
+  text_original: Parking space reserved for vehicles named
+  text_en: Parking space reserved for vehicles named
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-HC_MARKINGS-p3-5
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 3
+  marking_type: keep-clear marking
+  element: area
+  text_original: Do not block that part of the carriageway indicated
+  text_en: Do not block that part of the carriageway indicated
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-HC_MARKINGS-p3-6
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 3
+  marking_type: traffic lane indication
+  element: lane_marking
+  text_original: Indication of traffic lanes
+  text_en: Indication of traffic lanes
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule127
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 127
+  page: 6
+  marking_type: broken white centre line
+  element: boundary
+  text_original: A broken white line. This marks the centre of the road. When this line lengthens and the gaps shorten, it
+    means that there is a hazard ahead. Do not cross it unless you can see the road is clear and wish to overtake or turn
+    off.
+  text_en: A broken white line. This marks the centre of the road. When this line lengthens and the gaps shorten, it means
+    that there is a hazard ahead. Do not cross it unless you can see the road is clear and wish to overtake or turn off.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-Rule128
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 128
+  page: 6
+  marking_type: double white lines, nearer line broken
+  element: boundary
+  text_original: Double white lines where the line nearer to you is broken. This means you may cross the lines to overtake
+    if it is safe, provided you can complete the manoeuvre before reaching a solid white line on your side.
+  text_en: Double white lines where the line nearer to you is broken. This means you may cross the lines to overtake if it
+    is safe, provided you can complete the manoeuvre before reaching a solid white line on your side.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule128-2
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 128
+  page: 6
+  marking_type: white direction arrows
+  element: lane_marking
+  text_original: White direction arrows on the road indicate that you need to get back onto your side of the road.
+  text_en: White direction arrows on the road indicate that you need to get back onto your side of the road.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule129
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 129
+  page: 6
+  marking_type: double white lines, nearer line solid
+  element: boundary
+  text_original: Double white lines where the line nearer to you is solid. This means you MUST NOT cross or straddle it unless
+    it is safe and you need to enter adjoining premises or a side road. You may cross the line if necessary, provided the
+    road is clear, to pass a stationary vehicle, or overtake a pedal cycle, horse or road maintenance vehicle, if they are
+    travelling at 10 mph (16 km/h) or less.
+  text_en: Double white lines where the line nearer to you is solid. This means you MUST NOT cross or straddle it unless it
+    is safe and you need to enter adjoining premises or a side road. You may cross the line if necessary, provided the road
+    is clear, to pass a stationary vehicle, or overtake a pedal cycle, horse or road maintenance vehicle, if they are travelling
+    at 10 mph (16 km/h) or less.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule130
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 130
+  page: 6
+  marking_type: white diagonal stripes or chevrons
+  element: area
+  text_original: Areas of white diagonal stripes or chevrons painted on the road. These are to separate traffic lanes or to
+    protect traffic turning right.
+  text_en: Areas of white diagonal stripes or chevrons painted on the road. These are to separate traffic lanes or to protect
+    traffic turning right.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule130-2
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 130
+  page: 6
+  marking_type: hatched area bordered by broken white line
+  element: area
+  text_original: If the area is bordered by a broken white line, you should not enter the area unless it is necessary and
+    you can see that it is safe to do so.
+  text_en: If the area is bordered by a broken white line, you should not enter the area unless it is necessary and you can
+    see that it is safe to do so.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule130-3
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 130
+  page: 6
+  marking_type: chevron area bordered by solid white lines
+  element: area
+  text_original: If the area is marked with chevrons and bordered by solid white lines you MUST NOT enter it except in an
+    emergency.
+  text_en: If the area is marked with chevrons and bordered by solid white lines you MUST NOT enter it except in an emergency.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule131
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 131
+  page: 7
+  marking_type: short broken white lane dividers
+  element: boundary
+  text_original: Lane dividers. These are short, broken white lines which are used on wide carriageways to divide them into
+    lanes. You should keep between them.
+  text_en: Lane dividers. These are short, broken white lines which are used on wide carriageways to divide them into lanes.
+    You should keep between them.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule134
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 134
+  page: 7
+  marking_type: lane direction markings
+  element: general
+  text_original: You should follow the signs and road markings and get into the lane as directed.
+  text_en: You should follow the signs and road markings and get into the lane as directed.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule136
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 136
+  page: 7
+  marking_type: lane-use markings on single carriageway
+  element: lane_type
+  text_original: Where a single carriageway has four or more lanes, use only the lanes that signs or markings indicate.
+  text_en: Where a single carriageway has four or more lanes, use only the lanes that signs or markings indicate.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-Rule140
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 140
+  page: 7
+  marking_type: solid white cycle lane line
+  element: lane_type
+  text_original: You MUST NOT drive or park in a cycle lane marked by a solid white line during its times of operation.
+  text_en: You MUST NOT drive or park in a cycle lane marked by a solid white line during its times of operation.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule140-2
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 140
+  page: 7
+  marking_type: broken white cycle lane line
+  element: lane_type
+  text_original: Do not drive or park in a cycle lane marked by a broken white line unless it is unavoidable.
+  text_en: Do not drive or park in a cycle lane marked by a broken white line unless it is unavoidable.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-Rule140-3
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 140
+  page: 7
+  marking_type: cycle lane
+  element: lane_type
+  text_original: You MUST NOT park in any cycle lane whilst waiting restrictions apply.
+  text_en: You MUST NOT park in any cycle lane whilst waiting restrictions apply.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-p8
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: ''
+  page: 8
+  marking_type: cycle lane
+  element: lane_type
+  text_original: You should give way to any cyclists in a cycle lane, including when they are approaching from behind you
+    – do not cut across them when you are turning or when you are changing lane (see Rule H3 ). Be prepared to stop and wait
+    for a safe gap in the flow of cyclists before crossing the cycle lane.
+  text_en: You should give way to any cyclists in a cycle lane, including when they are approaching from behind you – do not
+    cut across them when you are turning or when you are changing lane (see Rule H3 ). Be prepared to stop and wait for a
+    safe gap in the flow of cyclists before crossing the cycle lane.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-p8-2
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: ''
+  page: 8
+  marking_type: cycle lane
+  element: lane_type
+  text_original: Bear in mind that cyclists are not obliged to use cycle lanes or cycle tracks.
+  text_en: Bear in mind that cyclists are not obliged to use cycle lanes or cycle tracks.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule141
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 141
+  page: 8
+  marking_type: bus lane
+  element: lane_type
+  text_original: Bus lanes. These are shown by road markings and signs that indicate which (if any) other vehicles are permitted
+    to use the bus lane.
+  text_en: Bus lanes. These are shown by road markings and signs that indicate which (if any) other vehicles are permitted
+    to use the bus lane.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say permissive (are permitted)
+- rule_id: UK-Rule141-2
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 141
+  page: 8
+  marking_type: bus lane
+  element: lane_type
+  text_original: Unless otherwise indicated, you should not drive in a bus lane during its period of operation.
+  text_en: Unless otherwise indicated, you should not drive in a bus lane during its period of operation.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule141-3
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 141
+  page: 8
+  marking_type: bus lane
+  element: lane_type
+  text_original: You may enter a bus lane to stop, to load or unload where this is not prohibited.
+  text_en: You may enter a bus lane to stop, to load or unload where this is not prohibited.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule142
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 142
+  page: 8
+  marking_type: designated vehicle lane
+  element: lane_type
+  text_original: High-occupancy vehicle lanes and other designated vehicle lanes. Lanes may be restricted for use by particular
+    types of vehicle; these restrictions may apply some or all of the time. The operating times and vehicle types will be
+    indicated on the accompanying traffic signs.
+  text_en: High-occupancy vehicle lanes and other designated vehicle lanes. Lanes may be restricted for use by particular
+    types of vehicle; these restrictions may apply some or all of the time. The operating times and vehicle types will be
+    indicated on the accompanying traffic signs.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say permissive (may)
+- rule_id: UK-Rule142-2
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 142
+  page: 8
+  marking_type: designated vehicle lane
+  element: lane_type
+  text_original: You MUST NOT drive in such lanes during their times of operation unless signs indicate that your vehicle
+    is permitted (see ‘ Traffic signs ’).
+  text_en: You MUST NOT drive in such lanes during their times of operation unless signs indicate that your vehicle is permitted
+    (see ‘ Traffic signs ’).
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule142-3
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 142
+  page: 8
+  marking_type: designated vehicle lane
+  element: lane_type
+  text_original: Vehicles permitted to use designated lanes may or may not include cycles, buses, taxis, licensed private
+    hire vehicles, motorcycles, heavy goods vehicles (HGVs) and high-occupancy vehicles (HOVs).
+  text_en: Vehicles permitted to use designated lanes may or may not include cycles, buses, taxis, licensed private hire vehicles,
+    motorcycles, heavy goods vehicles (HGVs) and high-occupancy vehicles (HOVs).
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say mandatory (may not)
+- rule_id: UK-Rule142-4
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 142
+  page: 8
+  marking_type: high-occupancy vehicle lane
+  element: lane_type
+  text_original: 'Where HOV lanes are in operation, they MUST ONLY be used by
+
+
+    vehicles containing at least the minimum number of people indicated on the traffic signs
+
+
+    any other vehicles, such as buses and motorcycles, as indicated on signs prior to the start of the lane, irrespective
+    of the number of occupants.'
+  text_en: 'Where HOV lanes are in operation, they MUST ONLY be used by
+
+
+    vehicles containing at least the minimum number of people indicated on the traffic signs
+
+
+    any other vehicles, such as buses and motorcycles, as indicated on signs prior to the start of the lane, irrespective
+    of the number of occupants.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item1
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 1
+  page: 4
+  marking_type: stop line
+  element: transverse
+  text_original: Vehicular traffic must not proceed beyond the line when required to stop by the stop sign
+  text_en: Vehicular traffic must not proceed beyond the line when required to stop by the stop sign
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item3
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 3
+  page: 4
+  marking_type: give-way line
+  element: transverse
+  text_original: Vehicular traffic must give way in accordance with the requirements in paragraph 7 of Part 7
+  text_en: Vehicular traffic must give way in accordance with the requirements in paragraph 7 of Part 7
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item6
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 6
+  page: 4
+  marking_type: roundabout give-way line
+  element: transverse
+  text_original: Vehicular traffic approaching a roundabout with a small central island or approaching a junction indicated
+    by the marking shown in item 5 of this sign table should give way at, or immediately beyond, the line to traffic circulating
+    on the carriageway of the roundabout
+  text_en: Vehicular traffic approaching a roundabout with a small central island or approaching a junction indicated by the
+    marking shown in item 5 of this sign table should give way at, or immediately beyond, the line to traffic circulating
+    on the carriageway of the roundabout
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item7
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 7
+  page: 4
+  marking_type: mandatory cycle lane boundary or segregated route divider
+  element: boundary
+  text_original: Boundary of a mandatory cycle lane or division of a route into that part reserved for pedal cycles [ F3 and
+    electric scooters being used in a trial ] and that part reserved for pedestrians conveying the requirements at paragraph
+    12 of Part 7
+  text_en: Boundary of a mandatory cycle lane or division of a route into that part reserved for pedal cycles [ F3 and electric
+    scooters being used in a trial ] and that part reserved for pedestrians conveying the requirements at paragraph 12 of
+    Part 7
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item8
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 8
+  page: 4
+  marking_type: segregated cycle and pedestrian route divider
+  element: boundary
+  text_original: Division of a route into that part reserved for pedal cycles [ F3 and electric scooters being used in a trial
+    ] and that part reserved for pedestrians
+  text_en: Division of a route into that part reserved for pedal cycles [ F3 and electric scooters being used in a trial ]
+    and that part reserved for pedestrians
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item9
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 9
+  page: 4
+  marking_type: cycle give-way line
+  element: transverse
+  text_original: Cyclists [ F6 and drivers of electric scooters being used in a trial ] must give way in accordance with the
+    requirements prescribed in paragraph 8 of Part 7
+  text_en: Cyclists [ F6 and drivers of electric scooters being used in a trial ] must give way in accordance with the requirements
+    prescribed in paragraph 8 of Part 7
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item11
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 11
+  page: 5
+  marking_type: bus or designated lane boundary
+  element: boundary
+  text_original: Boundary of a bus lane or other designated lane used by motor vehicles
+  text_en: Boundary of a bus lane or other designated lane used by motor vehicles
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item12
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 12
+  page: 5
+  marking_type: nearside designated lane end direction marking
+  element: lane_marking
+  text_original: Direction of possible traffic movements at the end of a nearside with-flow bus lane or other designated lane,
+    or where there is an intermediate discontinuation of the lane on the approach to a junction
+  text_en: Direction of possible traffic movements at the end of a nearside with-flow bus lane or other designated lane, or
+    where there is an intermediate discontinuation of the lane on the approach to a junction
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item13
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 13
+  page: 5
+  marking_type: offside designated lane end direction marking
+  element: lane_marking
+  text_original: Direction of possible traffic movements at the end of an off side with-flow bus lane or other designated
+    lane, or where there is an intermediate discontinuation of the lane on the approach to a junction
+  text_en: Direction of possible traffic movements at the end of an off side with-flow bus lane or other designated lane,
+    or where there is an intermediate discontinuation of the lane on the approach to a junction
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item14
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 14
+  page: 5
+  marking_type: bus lane marking
+  element: lane_type
+  text_original: Traffic lane reserved for buses and other vehicles as indicated on the sign at item 8 or 10 in the sign table
+    in Part 4
+  text_en: Traffic lane reserved for buses and other vehicles as indicated on the sign at item 8 or 10 in the sign table in
+    Part 4
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item15
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 15
+  page: 5
+  marking_type: bus-only access marking
+  element: lane_type
+  text_original: Road or part of a road with access permitted only for buses and other vehicles when so indicated by any of
+    the signs at items 10, 33 to 35 and 37 to 40 in the sign table in Part 2 of Schedule 3
+  text_en: Road or part of a road with access permitted only for buses and other vehicles when so indicated by any of the
+    signs at items 10, 33 to 35 and 37 to 40 in the sign table in Part 2 of Schedule 3
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-TSRGD-Part6,item16
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 16
+  page: 5
+  marking_type: tram-only access marking
+  element: lane_type
+  text_original: Road or part of a road with access permitted only for tramcars
+  text_en: Road or part of a road with access permitted only for tramcars
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-TSRGD-Part6,item17
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 17
+  page: 5
+  marking_type: no-entry marking
+  element: lane_marking
+  text_original: No entry for vehicular traffic
+  text_en: No entry for vehicular traffic
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-TSRGD-Part6,item18
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 18
+  page: 5
+  marking_type: play street entry restriction marking
+  element: lane_marking
+  text_original: Entry by vehicular traffic to a play street restricted
+  text_en: Entry by vehicular traffic to a play street restricted
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-TSRGD-Part6,item19
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 19
+  page: 5
+  marking_type: mandatory left-turn marking
+  element: lane_marking
+  text_original: Vehicular traffic must turn left
+  text_en: Vehicular traffic must turn left
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+    turn_left: allowed
+    turn_right: prohibited
+    u_turn: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item20
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 20
+  page: 5
+  marking_type: ahead-only marking
+  element: lane_marking
+  text_original: Vehicular traffic must only proceed ahead
+  text_en: Vehicular traffic must only proceed ahead
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: allowed
+    turn_left: prohibited
+    turn_right: prohibited
+    u_turn: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item21
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 21
+  page: 5
+  marking_type: mandatory right-turn marking
+  element: lane_marking
+  text_original: Vehicular traffic must turn right
+  text_en: Vehicular traffic must turn right
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+    turn_left: prohibited
+    turn_right: allowed
+    u_turn: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item22
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 22
+  page: 5
+  marking_type: traffic separation area
+  element: area
+  text_original: Division of traffic lanes on a length of carriageway, or between the main carriageway and slip road, of a
+    motorway or all-purpose dual carriageway road, or part of the carriageway between two lanes at a roundabout which vehicular
+    traffic must not enter except in emergency
+  text_en: Division of traffic lanes on a length of carriageway, or between the main carriageway and slip road, of a motorway
+    or all-purpose dual carriageway road, or part of the carriageway between two lanes at a roundabout which vehicular traffic
+    must not enter except in emergency
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item24
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 24
+  page: 5
+  marking_type: traffic lane dividing lines
+  element: boundary
+  text_original: Division of traffic lanes on a length indicating to vehicular traffic the requirements in paragraph 9 of
+    Part 7 and used in the circumstances for which the signs at items 17 to 20 in the Part 2 sign table in Schedule 11 are
+    used
+  text_en: Division of traffic lanes on a length indicating to vehicular traffic the requirements in paragraph 9 of Part 7
+    and used in the circumstances for which the signs at items 17 to 20 in the Part 2 sign table in Schedule 11 are used
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-Part6,item26
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: Part 6, item 26
+  page: 5
+  marking_type: level crossing keep-clear area
+  element: area
+  text_original: Area of carriageway, subject to two-way traffic, at a level crossing which vehicles must not enter in a manner
+    which then causes any part of the vehicle to remain at rest within the marked area due to the presence of stationary vehicles
+  text_en: Area of carriageway, subject to two-way traffic, at a level crossing which vehicles must not enter in a manner
+    which then causes any part of the vehicle to remain at rest within the marked area due to the presence of stationary vehicles
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-3
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: '3'
+  page: 7
+  marking_type: give way line
+  element: transverse
+  text_original: Subject to paragraph 4, the requirements conveyed to vehicular traffic on roads by a give way sign are that
+    no vehicle is to cross the transverse line nearer to the major road at the side of which that line is placed, or if that
+    line is not clearly visible, enter that major road, so as to be likely to endanger any person, or to cause the driver
+    of another vehicle to change its speed or course in order to avoid an accident.
+  text_en: Subject to paragraph 4, the requirements conveyed to vehicular traffic on roads by a give way sign are that no
+    vehicle is to cross the transverse line nearer to the major road at the side of which that line is placed, or if that
+    line is not clearly visible, enter that major road, so as to be likely to endanger any person, or to cause the driver
+    of another vehicle to change its speed or course in order to avoid an accident.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-TSRGD-4
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: '4'
+  page: 7
+  marking_type: level crossing give way line
+  element: transverse
+  text_original: The requirements conveyed to vehicular traffic on roads by a give way sign when placed in combination with
+    the sign are that no vehicle must cross the transverse line nearer to the level crossing at the side of which that line
+    is placed, or if that line is not clearly visible, enter that level crossing, so as to be likely to endanger the driver
+    of, or any passenger in, any railway vehicle or tramcar or to cause that driver to change the speed of his or her vehicle
+    in order to avoid an accident.
+  text_en: The requirements conveyed to vehicular traffic on roads by a give way sign when placed in combination with the
+    sign are that no vehicle must cross the transverse line nearer to the level crossing at the side of which that line is
+    placed, or if that line is not clearly visible, enter that level crossing, so as to be likely to endanger the driver of,
+    or any passenger in, any railway vehicle or tramcar or to cause that driver to change the speed of his or her vehicle
+    in order to avoid an accident.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-5(1)(a)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 5(1)(a)
+  page: 7
+  marking_type: junction give way marking
+  element: transverse
+  text_original: 'a vehicle entering the junction must give priority to vehicles coming from the right—
+
+    (i) at the transverse road marking;
+
+    (ii) at the transverse road marking; or
+
+    (iii) if a marking is not for the time being visible, at the junction;'
+  text_en: 'a vehicle entering the junction must give priority to vehicles coming from the right—
+
+    (i) at the transverse road marking;
+
+    (ii) at the transverse road marking; or
+
+    (iii) if a marking is not for the time being visible, at the junction;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: false
+  norm_check: agrees
+- rule_id: UK-TSRGD-5(1)(b)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 5(1)(b)
+  page: 7
+  marking_type: mini-roundabout white circle
+  element: area
+  text_original: a vehicle proceeding through the junction must keep to the left of the white circle at the centre of the
+    marking (“the diagram 1003.4 marking”), unless the size of the vehicle or the layout of the junction makes it impracticable
+    to do so;
+  text_en: a vehicle proceeding through the junction must keep to the left of the white circle at the centre of the marking
+    (“the diagram 1003.4 marking”), unless the size of the vehicle or the layout of the junction makes it impracticable to
+    do so;
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-5(1)(c)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 5(1)(c)
+  page: 7
+  marking_type: mini-roundabout marking
+  element: area
+  text_original: no vehicle is to proceed past the diagram 1003.4 marking in a manner, or at a time, likely to endanger any
+    person, or to cause the driver of another vehicle to change its speed or course in order to avoid an accident.
+  text_en: no vehicle is to proceed past the diagram 1003.4 marking in a manner, or at a time, likely to endanger any person,
+    or to cause the driver of another vehicle to change its speed or course in order to avoid an accident.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-TSRGD-7(a)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 7(a)
+  page: 8
+  marking_type: give way line
+  element: transverse
+  text_original: except as provided in paragraphs (b) to (d), that no vehicle may proceed past the transverse line which is
+    the nearer to the major road into that road in a manner or at a time likely to endanger the driver of, or any passenger
+    in, a vehicle on the major road or to cause the driver of such a vehicle to change its speed or course in order to avoid
+    an accident;
+  text_en: except as provided in paragraphs (b) to (d), that no vehicle may proceed past the transverse line which is the
+    nearer to the major road into that road in a manner or at a time likely to endanger the driver of, or any passenger in,
+    a vehicle on the major road or to cause the driver of such a vehicle to change its speed or course in order to avoid an
+    accident;
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: words say permissive (may)
+- rule_id: UK-TSRGD-7(b)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 7(b)
+  page: 8
+  marking_type: level crossing give way lines
+  element: transverse
+  text_original: where the transverse lines are placed at a level crossing, that no vehicle may proceed past such one of those
+    lines as is the nearer the level crossing in a manner or at a time likely to endanger the driver of, or any passenger
+    in, a railway vehicle or tramcar, or to cause that driver to change the speed of his or her vehicle in order to avoid
+    an accident;
+  text_en: where the transverse lines are placed at a level crossing, that no vehicle may proceed past such one of those lines
+    as is the nearer the level crossing in a manner or at a time likely to endanger the driver of, or any passenger in, a
+    railway vehicle or tramcar, or to cause that driver to change the speed of his or her vehicle in order to avoid an accident;
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: words say permissive (may)
+- rule_id: UK-TSRGD-7(c)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 7(c)
+  page: 8
+  marking_type: road narrowing give way lines
+  element: transverse
+  text_original: where the transverse lines are placed in advance of a point in the road where the width of the carriageway
+    narrows significantly, that no vehicle may proceed past such one of those lines as is nearer to the point of narrowing
+    in a manner or at a time likely to endanger the driver of, or any passenger in, a vehicle that is proceeding in the opposite
+    direction to the first-mentioned vehicle, or cause the driver of such a vehicle to change its speed or course in order
+    to avoid an accident;
+  text_en: where the transverse lines are placed in advance of a point in the road where the width of the carriageway narrows
+    significantly, that no vehicle may proceed past such one of those lines as is nearer to the point of narrowing in a manner
+    or at a time likely to endanger the driver of, or any passenger in, a vehicle that is proceeding in the opposite direction
+    to the first-mentioned vehicle, or cause the driver of such a vehicle to change its speed or course in order to avoid
+    an accident;
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: words say permissive (may)
+- rule_id: UK-TSRGD-7(d)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 7(d)
+  page: 9
+  marking_type: cycle track give way lines
+  element: transverse
+  text_original: where the transverse lines are placed in advance of a length of the carriageway of the road where a cycle
+    track crosses the road along a route parallel to the transverse lines, that no vehicle may proceed past such one of those
+    lines as is the nearer the cycle track, in a manner or at a time likely to endanger any cyclist [ F7 , or driver of an
+    electric scooter being used in a trial, ] proceeding along the cycle track or to cause such a cyclist [ F8 or driver ]
+    to change speed or course in order to avoid an accident [ F9 ; and for the purposes of this paragraph a reference to “a
+    cycle track” includes a reference to a way that would be a cycle track but for it being accessible, under a temporary
+    statutory provision, by electric scooters being used in a trial ] .
+  text_en: where the transverse lines are placed in advance of a length of the carriageway of the road where a cycle track
+    crosses the road along a route parallel to the transverse lines, that no vehicle may proceed past such one of those lines
+    as is the nearer the cycle track, in a manner or at a time likely to endanger any cyclist [ F7 , or driver of an electric
+    scooter being used in a trial, ] proceeding along the cycle track or to cause such a cyclist [ F8 or driver ] to change
+    speed or course in order to avoid an accident [ F9 ; and for the purposes of this paragraph a reference to “a cycle track”
+    includes a reference to a way that would be a cycle track but for it being accessible, under a temporary statutory provision,
+    by electric scooters being used in a trial ] .
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: words say permissive (may)
+- rule_id: UK-TSRGD-8
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: '8'
+  page: 9
+  marking_type: cycle and trial electric scooter give way line
+  element: transverse
+  text_original: A cycle [ F11 or electric scooter being used in a trial ] must not be ridden across the transverse line in
+    a manner or at a time that is likely to endanger any person, or to cause the driver of another vehicle to change its speed
+    or course in order to avoid an accident.
+  text_en: A cycle [ F11 or electric scooter being used in a trial ] must not be ridden across the transverse line in a manner
+    or at a time that is likely to endanger any person, or to cause the driver of another vehicle to change its speed or course
+    in order to avoid an accident.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-9(1)(a)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 9(1)(a)
+  page: 9
+  marking_type: no stopping or crossing white line marking
+  element: boundary
+  text_original: subject to sub-paragraphs (2) to (4), no vehicle is to stop on any length of road along which the marking
+    has been placed at any point between the ends of the marking;
+  text_en: subject to sub-paragraphs (2) to (4), no vehicle is to stop on any length of road along which the marking has been
+    placed at any point between the ends of the marking;
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-TSRGD-10
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: '10'
+  page: 11
+  marking_type: broken line beside continuous line
+  element: boundary
+  text_original: The warning conveyed to vehicular traffic on roads by the road marking is that no vehicle while travelling
+    next to a broken line placed on the left of a continuous line, as viewed in the direction of travel of the vehicle, should
+    cross or straddle the first-mentioned line unless it is seen by the driver of the vehicle to be safe to do so.
+  text_en: The warning conveyed to vehicular traffic on roads by the road marking is that no vehicle while travelling next
+    to a broken line placed on the left of a continuous line, as viewed in the direction of travel of the vehicle, should
+    cross or straddle the first-mentioned line unless it is seen by the driver of the vehicle to be safe to do so.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-11(1)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 11(1)
+  page: 11
+  marking_type: yellow box junction marking
+  element: area
+  text_original: Subject to sub-paragraphs (2), (3) and (4), the yellow criss-cross marking conveys the prohibition that a
+    person must not cause a vehicle to enter the box junction so that the vehicle has to stop within the box junction due
+    to the presence of stationary vehicles.
+  text_en: Subject to sub-paragraphs (2), (3) and (4), the yellow criss-cross marking conveys the prohibition that a person
+    must not cause a vehicle to enter the box junction so that the vehicle has to stop within the box junction due to the
+    presence of stationary vehicles.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-11(2)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 11(2)
+  page: 12
+  marking_type: box junction
+  element: area
+  text_original: Subject to sub-paragraph (4) the marking when placed as a box junction within sub-paragraph (6)(c) of the
+    definition of that expression conveys the prohibition that a person must not cause a vehicle to enter the box junction
+    so that the vehicle has to stop within the box junction due to the presence of oncoming vehicles or other stationary vehicles
+    beyond the box junction.
+  text_en: Subject to sub-paragraph (4) the marking when placed as a box junction within sub-paragraph (6)(c) of the definition
+    of that expression conveys the prohibition that a person must not cause a vehicle to enter the box junction so that the
+    vehicle has to stop within the box junction due to the presence of oncoming vehicles or other stationary vehicles beyond
+    the box junction.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-11(3)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 11(3)
+  page: 12
+  marking_type: box junction
+  element: area
+  text_original: 'The prohibition in sub-paragraph (1) does not, in respect of a box junction within sub-paragraph (6)(a)
+    of the definition of that expression, apply to a person who—
+
+    (a) causes a vehicle to enter the box junction for the purpose of turning right; and
+
+    (b) stops the vehicle within the box junction for so long as the vehicle is prevented from completing the right turn by
+    an oncoming vehicle or other vehicle which is stationary whilst waiting to complete a right turn.'
+  text_en: 'The prohibition in sub-paragraph (1) does not, in respect of a box junction within sub-paragraph (6)(a) of the
+    definition of that expression, apply to a person who—
+
+    (a) causes a vehicle to enter the box junction for the purpose of turning right; and
+
+    (b) stops the vehicle within the box junction for so long as the vehicle is prevented from completing the right turn by
+    an oncoming vehicle or other vehicle which is stationary whilst waiting to complete a right turn.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    turn_right: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-11(4)–(5)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 11(4)–(5)
+  page: 12
+  marking_type: box junction
+  element: area
+  text_original: 'When a vehicle is being used for at least one of the purposes mentioned at sub-paragraph (5) and the observance
+    of the prohibition in sub-paragraph (1) or (2) would be likely to hinder the use of that vehicle for that purpose, then
+    that prohibition does not apply to the driver of the vehicle.
+
+    The purposes are—
+
+    (a) fire and rescue authority;
+
+    (b) Scottish Fire and Rescue Service;
+
+    (c) ambulance;
+
+    (d) providing a response to an emergency at the request of an NHS ambulance service;
+
+    (e) bomb or explosive disposal;
+
+    (f) special forces;
+
+    (g) police; and
+
+    (h) National Crime Agency.'
+  text_en: 'When a vehicle is being used for at least one of the purposes mentioned at sub-paragraph (5) and the observance
+    of the prohibition in sub-paragraph (1) or (2) would be likely to hinder the use of that vehicle for that purpose, then
+    that prohibition does not apply to the driver of the vehicle.
+
+    The purposes are—
+
+    (a) fire and rescue authority;
+
+    (b) Scottish Fire and Rescue Service;
+
+    (c) ambulance;
+
+    (d) providing a response to an emergency at the request of an NHS ambulance service;
+
+    (e) bomb or explosive disposal;
+
+    (f) special forces;
+
+    (g) police; and
+
+    (h) National Crime Agency.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-11(7)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 11(7)
+  page: 12
+  marking_type: box junction
+  element: area
+  text_original: A reference in this paragraph (however expressed) to a vehicle which is stationary or stops within a box
+    junction includes a vehicle which is stationary whilst part of it is within the box junction.
+  text_en: A reference in this paragraph (however expressed) to a vehicle which is stationary or stops within a box junction
+    includes a vehicle which is stationary whilst part of it is within the box junction.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-12(2)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 12(2)
+  page: 12
+  marking_type: mandatory with-flow cycle lane
+  element: lane_type
+  text_original: Subject to sub-paragraphs (3) to (5), the marking conveys the requirement that a vehicle, other than a pedal
+    cycle [ F17 or an electric scooter being used in a trial ] , must not be driven, or ridden, in the cycle lane during the
+    cycle lane’s hours of operation (which may be all the time).
+  text_en: Subject to sub-paragraphs (3) to (5), the marking conveys the requirement that a vehicle, other than a pedal cycle
+    [ F17 or an electric scooter being used in a trial ] , must not be driven, or ridden, in the cycle lane during the cycle
+    lane’s hours of operation (which may be all the time).
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-TSRGD-12(3)
+  region: UK
+  source: 'The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance'
+  document: tsrgd
+  section: 12(3)
+  page: 13
+  marking_type: mandatory with-flow cycle lane boundary
+  element: boundary
+  text_original: 'Sub-paragraph (2) does not prohibit a vehicle from crossing into the part of the carriageway reserved for
+    pedal cycles [ F18 and electric scooters being used in a trial ] , or straddling the marking, if it is safe and necessary
+    to do so—
+
+    (a) in order to pass a stationary vehicle;
+
+    (b) to enable the vehicle to enter, from the side of the road on which it is proceeding, land or premises adjacent to
+    the length of road on which the line is placed, or another road joining that road;
+
+    (c) due to circumstances outside the control of the driver;
+
+    (d) in order to avoid an accident; or
+
+    (e) for the purpose of complying with any direction of a constable in uniform or a traffic warden.'
+  text_en: 'Sub-paragraph (2) does not prohibit a vehicle from crossing into the part of the carriageway reserved for pedal
+    cycles [ F18 and electric scooters being used in a trial ] , or straddling the marking, if it is safe and necessary to
+    do so—
+
+    (a) in order to pass a stationary vehicle;
+
+    (b) to enable the vehicle to enter, from the side of the road on which it is proceeding, land or premises adjacent to
+    the length of road on which the line is placed, or another road joining that road;
+
+    (c) due to circumstances outside the control of the driver;
+
+    (d) in order to avoid an accident; or
+
+    (e) for the purpose of complying with any direction of a constable in uniform or a traffic warden.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees

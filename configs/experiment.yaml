@@ -1,0 +1,42 @@
+# Settings of one experiment: which test, which country, which prompt, which images.
+# The model is set in configs/api.yaml, the countries in regulations/<CODE>/region.yaml, the simulation in configs/carla.yaml.
+# Edit this file, or use the settings dialog of the web page (python main.py web).
+
+experiment:
+  region: US            # whose images and rules are used: a folder name under regulations/ (US, CN, ...)
+  use_rules: no         # no = Test A (image only); yes = Test B (image + the region's rule passages)
+  prompt: v4            # prompt folder under prompts/ (v4 is the selected version; v1 to v3 are kept for the saved runs)
+  split: dev            # dev, test or any
+  repeats: 1            # each image is asked this many times; the majority answer is scored
+  limit: 0              # number of images, 0 = all
+  marking_types: []     # only these marking types, [] = all
+  order_seed: 6216      # fixed random order of the images
+  mock: true            # true = made-up answers without calling the API (free); false = real API calls
+
+lane:                           # the lane-level task (python main.py lane ...): my whole lane, one request per image
+  prompt: lane_v1               # prompt folder under prompts/
+  max_output_tokens: 6000       # the lane answer is longer; includes the hidden reasoning tokens
+  control_region: {CN: US, US: CN, UK: IN, IN: UK}   # Test C: whose passages each region gets (fixed, so a new country does not change it); UK and IN both keep left
+
+data:
+  datasets_root: ""             # folder that holds the labeling workspaces; usually set as DATASETS_ROOT in .env
+  workspaces:                   # labeling workspaces (made with python main.py label) whose final labels are used
+    - UF
+    - bdd100k
+    - culane
+    - mapdr_ws                  # China, MapDR-mini (CVPR 2025): the new Chinese images, labeled from scratch
+    - lingoqa_ws                # United Kingdom, LingoQA (Wayve, London): small pilot, 2026-11-16
+    - idd_ws                    # India, IDD Multimodal (IIIT Hyderabad): small pilot, 2026-11-16
+  send_to_api:                  # collections whose images may be sent to the API (licence basis: docs/permission_requests.md)
+    - own_video
+    - bdd100k
+    - culane
+    - mapdr                     # CC BY-NC-SA 4.0: non-commercial research; inference is use, not redistribution
+    # - lingoqa                 # UK pilot: add after the owner has read the LingoQA terms (github.com/wayveai/LingoQA)
+    # - idd                     # India pilot: add after the owner has read the IDD terms (idd.insaan.iiit.ac.in)
+
+image:                          # how the target box is drawn on the copy sent to the model
+  box_color_rgb: [0, 229, 255]
+  box_width: 3
+  box_margin: 6
+  jpeg_quality: 92

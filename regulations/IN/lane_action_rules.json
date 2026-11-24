@@ -1,0 +1,253 @@
+{
+ "_comment": "Lane rule table of India (left-hand traffic), written by Claude on 2026-11-16 from the accepted passages (Motor Vehicles (Driving) Regulations, 2017). IRC:35 (the road-marking code) is not in the pack. Used only to prefill the labeling tool; never used to score.",
+ "boundary": [
+  {
+   "when": {
+    "curb": "yes"
+   },
+   "change": "prohibited",
+   "rule_ids": [],
+   "contested": true,
+   "note": "A kerb is the physical edge of the carriageway (project convention, as for CN and US)."
+  },
+  {
+   "when": {
+    "pattern": "none"
+   },
+   "change": "not_applicable",
+   "rule_ids": []
+  },
+  {
+   "when": {
+    "role": "special_lane_line"
+   },
+   "change": "",
+   "rule_ids": [
+    "IN-6(3)"
+   ],
+   "note": "Lane marked for a class of vehicles or a special purpose: no other vehicle shall be driven in it (prohibited, project convention)."
+  },
+  {
+   "when": {
+    "pattern": "dashed"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "IN-6(1)"
+   ],
+   "note": "Change lanes only after giving a proper signal."
+  },
+  {
+   "when": {
+    "pattern": "dotted"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "IN-6(1)"
+   ]
+  },
+  {
+   "when": {
+    "pattern": "solid_dashed",
+    "near_line": "dashed"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "IN-6(7)"
+   ]
+  },
+  {
+   "when": {
+    "pattern": "solid_dashed",
+    "near_line": "solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "IN-6(6)",
+    "IN-14(5)(c)"
+   ]
+  },
+  {
+   "when": {
+    "pattern": "double_solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "IN-6(6)",
+    "IN-14(5)(c)"
+   ]
+  },
+  {
+   "when": {
+    "pattern": "solid",
+    "role": "edge_line"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "IN-6(6)"
+   ],
+   "note": "The driver shall not drive on or over a single longitudinal solid line."
+  },
+  {
+   "when": {
+    "pattern": "solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "IN-6(4)",
+    "IN-6(6)",
+    "IN-14(5)(c)"
+   ],
+   "note": "A yellow or white solid line shall not be crossed."
+  },
+  {
+   "when": {
+    "pattern": "double_dashed"
+   },
+   "change": "",
+   "rule_ids": []
+  }
+ ],
+ "markings": {
+  "arrow:straight": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "prohibited",
+    "turn_right": "prohibited",
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "IN-6(5)"
+   ]
+  },
+  "arrow:left": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "allowed",
+    "turn_right": "prohibited",
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "IN-6(5)",
+    "IN-8(1)(c)"
+   ]
+  },
+  "arrow:right": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "prohibited",
+    "turn_right": "allowed",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "IN-6(5)",
+    "IN-8(2)(c)"
+   ],
+   "note": "Left-hand traffic: a U-turn is made from the right-hand side of the road, like a right turn. A right arrow does not by itself prohibit a U-turn; decide per image (labeling convention, contested). U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17).",
+   "contested": []
+  },
+  "arrow:straight_left": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "allowed",
+    "turn_right": "prohibited",
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "IN-6(5)"
+   ]
+  },
+  "arrow:straight_right": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "prohibited",
+    "turn_right": "allowed",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "IN-6(5)"
+   ],
+   "note": "Left-hand traffic: a U-turn is made from the right-hand side of the road, like a right turn. A right arrow does not by itself prohibit a U-turn; decide per image (labeling convention, contested). U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17).",
+   "contested": []
+  },
+  "arrow:left_right": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "allowed",
+    "turn_right": "allowed",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "IN-6(5)"
+   ],
+   "note": "Left-hand traffic: a U-turn is made from the right-hand side of the road, like a right turn. A right arrow does not by itself prohibit a U-turn; decide per image (labeling convention, contested). U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17).",
+   "contested": []
+  },
+  "arrow:u_turn": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "prohibited",
+    "turn_right": "prohibited",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "IN-6(5)"
+   ]
+  },
+  "arrow:merge_left": {
+   "actions": {},
+   "rule_ids": [
+    "IN-6(5)"
+   ],
+   "note": "Merge arrow: my lane ends ahead; the advice is to merge. The change actions come from the boundaries."
+  },
+  "arrow:merge_right": {
+   "actions": {},
+   "rule_ids": [
+    "IN-6(5)"
+   ],
+   "note": "Merge arrow: my lane ends ahead; the advice is to merge. The change actions come from the boundaries."
+  },
+  "text:bus": {
+   "actions": {},
+   "rule_ids": [
+    "IN-6(3)",
+    "IN-22.(2)(h)"
+   ]
+  },
+  "area:grid": {
+   "actions": {},
+   "rule_ids": [
+    "IN-22.(1)viii"
+   ],
+   "note": "Yellow box: do not stop in it (advice)."
+  },
+  "area:channelizing": {
+   "actions": {},
+   "rule_ids": [
+    "IN-6(6)"
+   ],
+   "note": "Painted traffic island: do not drive on it."
+  },
+  "line:stop_line": {
+   "actions": {},
+   "rule_ids": [
+    "IN-7(1)(a)",
+    "IN-12(1)(a)"
+   ]
+  },
+  "line:yield_line": {
+   "actions": {},
+   "rule_ids": [
+    "IN-7(3)"
+   ]
+  },
+  "line:crosswalk": {
+   "actions": {},
+   "rule_ids": [
+    "IN-8(2)(e)",
+    "IN-14(5)(e)"
+   ]
+  }
+ }
+}

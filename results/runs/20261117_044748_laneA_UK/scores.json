@@ -1,0 +1,495 @@
+{
+  "summary": {
+    "n": 5,
+    "lane": {
+      "correct": 0,
+      "n": 5,
+      "acc": 0.0
+    },
+    "output2": {
+      "correct": 0,
+      "n": 3,
+      "acc": 0.0
+    },
+    "lane_count": {
+      "correct": 2,
+      "n": 5,
+      "acc": 0.4
+    },
+    "ego_index": {
+      "correct": 5,
+      "n": 5,
+      "acc": 1.0
+    },
+    "markings_exact": {
+      "correct": 4,
+      "n": 5,
+      "acc": 0.8
+    },
+    "lane_core": {
+      "correct": 0,
+      "n": 5,
+      "acc": 0.0
+    },
+    "markings_core_exact": {
+      "correct": 4,
+      "n": 5,
+      "acc": 0.8
+    },
+    "failed": 0,
+    "left_boundary": {
+      "correct": 0,
+      "n": 5,
+      "acc": 0.0
+    },
+    "left_color": {
+      "correct": 0,
+      "n": 5,
+      "acc": 0.0
+    },
+    "left_pattern": {
+      "correct": 1,
+      "n": 5,
+      "acc": 0.2
+    },
+    "left_curb": {
+      "correct": 0,
+      "n": 5,
+      "acc": 0.0
+    },
+    "left_role": {
+      "correct": 1,
+      "n": 5,
+      "acc": 0.2
+    },
+    "right_boundary": {
+      "correct": 1,
+      "n": 4,
+      "acc": 0.25
+    },
+    "right_color": {
+      "correct": 2,
+      "n": 4,
+      "acc": 0.5
+    },
+    "right_pattern": {
+      "correct": 1,
+      "n": 4,
+      "acc": 0.25
+    },
+    "right_curb": {
+      "correct": 3,
+      "n": 4,
+      "acc": 0.75
+    },
+    "right_role": {
+      "correct": 1,
+      "n": 4,
+      "acc": 0.25
+    },
+    "both_boundaries": {
+      "correct": 0,
+      "n": 5,
+      "acc": 0.0
+    },
+    "markings_added": 1,
+    "markings_missed": 0,
+    "markings_precision": 0.75,
+    "markings_recall": 1.0,
+    "added_by_token": {
+      "no_turn:right": 1
+    },
+    "added_transverse": 0,
+    "added_by_evidence": {
+      "insufficient": 1
+    },
+    "missed_by_token": {},
+    "actions": {
+      "change_right": {
+        "n": 3,
+        "correct": 0
+      }
+    },
+    "contested": {
+      "n": 11,
+      "correct": 8
+    },
+    "unsafe_errors": 0,
+    "unsafe_by_action": {},
+    "over_cautious_errors": 1,
+    "contested_unsafe_errors": 0,
+    "prohibited_recall": {
+      "correct": 0,
+      "n": 0,
+      "acc": null
+    },
+    "extra_decisions": 2,
+    "citations": {},
+    "citation_ids_with_brackets": 0,
+    "inconsistent_answers": 5,
+    "consistency_kinds": {
+      "leftmost lane, but a lane line on the left": 4,
+      "rightmost lane, but a lane line on the right": 1
+    },
+    "boundary_evidence": {
+      "over_withholding": 1,
+      "unsupported_guess": 4,
+      "same": 5
+    },
+    "requests": 5,
+    "errors": 0,
+    "readable": {
+      "n": 5,
+      "of": 5
+    },
+    "cached": 5,
+    "usage": {
+      "input_tokens": 0,
+      "cached_input_tokens": 0,
+      "output_tokens": 0
+    },
+    "cost_usd": 0.0,
+    "latency_s": {},
+    "elapsed_s": 0.1
+  },
+  "per_image": {
+    "lingoqa__train_27ca312fb6ce3cb70036e317c6c758ba_2": {
+      "image_id": "lingoqa__train_27ca312fb6ce3cb70036e317c6c758ba_2",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          },
+          "right": null
+        },
+        "role": {
+          "left": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": false,
+          "go_straight": false
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [
+          "rightmost lane, but a lane line on the right"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "insufficient"
+          ],
+          "right": [
+            "insufficient",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_e12d585d1cf304230d7d39744f0797cd_0": {
+      "image_id": "lingoqa__train_e12d585d1cf304230d7d39744f0797cd_0",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "no_turn:right"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "no_turn:right": "insufficient"
+          },
+          "label": [],
+          "answer": [
+            "no_turn:right"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": false,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [
+          "turn_right"
+        ],
+        "citation": null,
+        "consistency": [
+          "leftmost lane, but a lane line on the left"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_d21bf5635928983657b67b4aa8a13fac_0": {
+      "image_id": "lingoqa__train_d21bf5635928983657b67b4aa8a13fac_0",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "change_left": true,
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [
+          "leftmost lane, but a lane line on the left"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_f2b37a8b7f23380de3834e8165fd2620_1": {
+      "image_id": "lingoqa__train_f2b37a8b7f23380de3834e8165fd2620_1",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [
+            "text:other"
+          ],
+          "answer": [
+            "text:other"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "change_left": true,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [
+          "change_right"
+        ],
+        "citation": null,
+        "consistency": [
+          "leftmost lane, but a lane line on the left"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_dde41275b6a47da6fe2992ae2f1b7673_1": {
+      "image_id": "lingoqa__train_dde41275b6a47da6fe2992ae2f1b7673_1",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [
+            "line:stop_line",
+            "symbol:bike"
+          ],
+          "answer": [
+            "line:stop_line",
+            "symbol:bike"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": true,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [
+          "leftmost lane, but a lane line on the left"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    }
+  }
+}

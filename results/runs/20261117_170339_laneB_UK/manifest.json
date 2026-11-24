@@ -1,0 +1,259 @@
+{
+  "run_id": "20261117_170339_laneB_UK",
+  "task": "lane",
+  "created_utc": "2026-11-17T22:03:40Z",
+  "tool": "reasoning_drive 0.1",
+  "git_commit": "",
+  "code_sha": "24ec8c4b41c9cd98",
+  "marking_code_sha": "7368702812425cd7",
+  "test": "B",
+  "region": "UK",
+  "mock": false,
+  "use_cache": true,
+  "repeats": 1,
+  "n_items": 48,
+  "rules_region": "UK",
+  "settings": {
+    "base_url": "http://127.0.0.1:11434",
+    "model": "gemma4:31b",
+    "reasoning_effort": null,
+    "temperature": 0,
+    "image_detail": null,
+    "max_output_tokens": 6000,
+    "instruction_role": "developer",
+    "store": false,
+    "provider": "ollama",
+    "think": false,
+    "num_ctx": 16384,
+    "seed": 6216,
+    "num_thread": 2,
+    "quantization": "Q4_K_M",
+    "model_digest": "17ba34c06c801ba22f6047bab21ced9429c6d43e0e42ecf339b0f3e5a61e8d97",
+    "parameter_size": "30.7B",
+    "engine": "ollama 0.33.0"
+  },
+  "prompt_hashes": {
+    "instructions": "469e2571303c91de",
+    "user_text": "4f2c52fb578ad983",
+    "schema": "dbc85933833401a6",
+    "shared_parts": "bea9df4668cf1b8f",
+    "rules_file": "1e4a5e326132656d",
+    "prompt_dir": "prompts/lane_v4"
+  },
+  "label_sets": {
+    "lingoqa": "7b4d47ab2d54d0a7"
+  },
+  "split": "test",
+  "split_version": 2,
+  "protocol": {
+    "frozen": true,
+    "matches": true,
+    "frozen_utc": "2026-11-17T17:43:19Z"
+  },
+  "again": false,
+  "items": [
+    "lingoqa__train_8b4478ffa676fe11532a753aaa84bad9_3",
+    "lingoqa__evaluation_images_val_8acfd91fc5488115f4a96cfb9901b35c_2",
+    "lingoqa__train_2fbe08dff3dad5e735cda2ccbca737d3_2",
+    "lingoqa__train_1c248b91fcec1954ff5503505d99c727_1",
+    "lingoqa__train_762eb6ccbf33e80e3c600aefbd51d0a9_2",
+    "lingoqa__train_dd7bd3bab81865ff4917d1b3a2162372_2",
+    "lingoqa__evaluation_images_val_ce3084593e16b501a27dbbef7b2aa653_2",
+    "lingoqa__evaluation_images_val_01dbcf4b079b49b6ca34c0475492380c_2",
+    "lingoqa__train_be3bc3f2632c3e8246ed7e87f9174829_1",
+    "lingoqa__evaluation_images_val_f376bb31c1f1f01cb9aa5c2887800ab1_2",
+    "lingoqa__train_b72ec4fa519e91678efc0ed0f506772f_3",
+    "lingoqa__evaluation_images_val_88005f114b4afb9e1c9e30c022a1ff6d_2",
+    "lingoqa__train_6e75a948a141d9d4c61555dcd4a5647c_1",
+    "lingoqa__evaluation_images_val_45b587bf54ee9db25085eb483cac242e_2",
+    "lingoqa__train_a6d4392c47e82bcb0f97dd4430f37484_3",
+    "lingoqa__train_b1c4ab69f9c1c6bbf7dbfdf1fd160bf7_0",
+    "lingoqa__evaluation_images_val_e99f7824f2219b27f6bddc184eb505c1_2",
+    "lingoqa__train_74be6bb80c7b66a911cef6cb3c999227_0",
+    "lingoqa__train_5b8bca960f1f1db0ab958d3f0468491e_0",
+    "lingoqa__train_39b0fb645812ec9da3cbf9a64e3e2b12_0",
+    "lingoqa__train_9a9318bc560cdeb5fa6fe82739d6e31a_1",
+    "lingoqa__train_4fea456d82bfafd9161a364928d30234_0",
+    "lingoqa__train_95c9eedfeefe6164b2047d3818abf472_2",
+    "lingoqa__train_3c118fd985ea813c22cb8f98dc969354_3",
+    "lingoqa__evaluation_images_val_590371e02b04e7d99853064a97ed3fe1_2",
+    "lingoqa__train_3973acbe0b3b5883aad991111ac25658_1",
+    "lingoqa__evaluation_images_val_fee75bebc1fae19b92ee5fd77e6eecb7_2",
+    "lingoqa__evaluation_images_val_6522f0c917af4a0d8deb045e07cba594_2",
+    "lingoqa__evaluation_images_val_2a3e08c04123f3cb76368ec6f2800ae6_2",
+    "lingoqa__evaluation_images_val_8127f3b506fa0146a795f0085bb60cd3_2",
+    "lingoqa__train_97b78557b9103ec9b3b5dce23c33e5f6_0",
+    "lingoqa__train_a7fef42c584e5d3b67be7e244e35cd21_0",
+    "lingoqa__train_70a63438f4f5c50ef21f29cc45d849ab_0",
+    "lingoqa__evaluation_images_val_b458631e4e946fe134f09a9e979d6347_2",
+    "lingoqa__train_1c5078b108792bcad84aacafb7edf52d_0",
+    "lingoqa__train_1869901e085ad9bfb1081f4efa101c93_2",
+    "lingoqa__evaluation_images_val_97a2a11eb970cb429cf1cf8457123fab_2",
+    "lingoqa__train_158fe8e268d93d340d564184b41ac65e_3",
+    "lingoqa__evaluation_images_val_a395b347e02d4f0bf9d69da3ebd52ea4_2",
+    "lingoqa__evaluation_images_val_192ddf6ced03be1ea37e716d960eb1d4_2",
+    "lingoqa__evaluation_images_val_a55026aa4029fd3db4f6738006a50675_2",
+    "lingoqa__train_3510c0055b143081d71aa4122da19639_0",
+    "lingoqa__train_8afed745d85e70b5320d331336bfa686_1",
+    "lingoqa__evaluation_images_val_d082bdc55d81a79652063c87996514aa_2",
+    "lingoqa__evaluation_images_val_6fcc62c8231450608cddba5a8e4193cd_2",
+    "lingoqa__train_94ed4692ec2e63b4d6c6c74e18bebf9a_2",
+    "lingoqa__train_1d19421a315491db945049675540d325_3",
+    "lingoqa__evaluation_images_val_04c64714f8a1bf28da156721ed7eff32_2"
+  ],
+  "config": {
+    "version": "3",
+    "mock": false,
+    "api": {
+      "provider": "ollama",
+      "base_url": "http://127.0.0.1:11434",
+      "api_key_env": "OPENAI_API_KEY",
+      "model": "gemma4:31b",
+      "reasoning_effort": null,
+      "temperature": 0,
+      "image_detail": null,
+      "max_output_tokens": 2000,
+      "instruction_role": "developer",
+      "store": false,
+      "timeout_s": 900,
+      "max_retries": 2,
+      "parallel": 3,
+      "price_per_million_tokens": {
+        "gemma4:31b": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "seed": 6216,
+      "num_ctx": 16384,
+      "think": false,
+      "num_thread": 2,
+      "protocol_file": "configs/lane_protocol__hpg_gemma4_31b__v4.json",
+      "profile": "hpg_gemma4_31b",
+      "connect_url": "http://127.0.0.1:11434",
+      "engine": "ollama 0.33.0",
+      "model_digest": "17ba34c06c801ba22f6047bab21ced9429c6d43e0e42ecf339b0f3e5a61e8d97",
+      "parameter_size": "30.7B",
+      "quantization": "Q4_K_M",
+      "api_key_set": false
+    },
+    "run": {
+      "test": "A",
+      "region": "CN",
+      "split": "dev",
+      "repeats": 1,
+      "limit": 0,
+      "marking_types": [],
+      "order_seed": 6216
+    },
+    "datasets_root": "",
+    "workspaces": [
+      "UF",
+      "bdd100k",
+      "culane",
+      "mapdr_ws",
+      "lingoqa_ws",
+      "idd_ws"
+    ],
+    "data_policy": {
+      "send_to_api": [
+        "own_video",
+        "bdd100k",
+        "culane",
+        "mapdr",
+        "lingoqa",
+        "idd"
+      ]
+    },
+    "prompt": {
+      "dir": "prompts/v4",
+      "box_color_rgb": [
+        0,
+        229,
+        255
+      ],
+      "box_width": 3,
+      "box_margin": 6,
+      "jpeg_quality": 92,
+      "restrict_rule_ids_in_schema": false
+    },
+    "regions": {
+      "CN": {
+        "name": "China",
+        "name_zh": "中国",
+        "rule_region": "CN",
+        "rule_text": "text_en",
+        "rules_title": "GB 5768.3-2025 Road traffic signs and markings, Part 3: Road traffic markings (English translation by the project)",
+        "rules_file": "regulations/CN/passages_marking.json",
+        "driving_side": "right",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/CN/passages_marking.json",
+          "regulations/CN/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "CN"
+        ]
+      },
+      "IN": {
+        "name": "India",
+        "name_zh": "印度",
+        "rule_region": "IN",
+        "rule_text": "text_en",
+        "rules_title": "The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))",
+        "rules_file": "regulations/IN/passages_lane.yaml",
+        "driving_side": "left",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/IN/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "IN"
+        ]
+      },
+      "UK": {
+        "name": "the United Kingdom",
+        "name_zh": "英国",
+        "rule_region": "UK",
+        "rule_text": "text_en",
+        "rules_title": "The Highway Code (rules 127-143 and Road markings) and the Traffic Signs Regulations and General Directions 2016, Schedule 9 Part 6 (regulatory road markings) and Schedule 11 Part 4 (advisory road markings)",
+        "rules_file": "regulations/UK/passages_lane.yaml",
+        "driving_side": "left",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/UK/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "UK"
+        ]
+      },
+      "US": {
+        "name": "the United States",
+        "name_zh": "美国",
+        "rule_region": "US",
+        "rule_text": "text_en",
+        "rules_title": "MUTCD 11th Edition (December 2023), Part 3 Markings",
+        "rules_file": "regulations/US/passages_marking.json",
+        "driving_side": "right",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/US/passages_marking.json",
+          "regulations/US/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "US"
+        ]
+      }
+    },
+    "lane": {
+      "prompt_dir": "prompts/lane_v4",
+      "max_output_tokens": 6000,
+      "control_region": {
+        "CN": "US",
+        "US": "CN",
+        "UK": "IN",
+        "IN": "UK"
+      }
+    }
+  }
+}

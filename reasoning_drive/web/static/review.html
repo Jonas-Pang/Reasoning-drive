@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reasoning Driving Review</title>
+<link rel="stylesheet" href="/static/demo.css">
+<link rel="stylesheet" href="/static/review.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">Reasoning Driving <span class="muted">· <span data-t="title"></span></span></div>
+  <label class="inline"><span data-t="region"></span> <select id="region"></select></label>
+  <label class="check"><input type="checkbox" id="only-open"> <span data-t="only_open"></span></label>
+  <label class="inline"><span data-t="reviewer"></span> <input id="reviewer" size="10" maxlength="40"></label>
+  <span id="count" class="pill"></span>
+  <span class="grow"></span>
+  <a href="/" class="small muted" data-t="back"></a>
+  <button id="lang-btn"></button>
+</header>
+<div class="rv">
+  <section class="rv-main">
+    <p class="small muted" data-t="intro"></p>
+    <div class="imgwrap"><img id="img" alt=""></div>
+    <div class="meta small muted" id="meta"></div>
+    <h2 id="question"></h2>
+    <p class="small muted" id="hint"></p>
+    <div id="options" class="rv-options"></div>
+    <div class="row">
+      <button id="prev">←</button>
+      <button id="next">→</button>
+      <span class="muted small" data-t="keys"></span>
+      <span id="msg" class="msg"></span>
+    </div>
+  </section>
+  <aside class="rv-side">
+    <div class="card"><h3 data-t="progress"></h3><div class="progress"><div id="bar"></div></div><p class="small" id="progress-text"></p>
+      <div id="kinds"></div></div>
+    <div class="card"><h3 data-t="effect"></h3><p class="small muted" data-t="effect_help"></p><div id="effect"></div>
+      <button id="effect-btn" data-t="effect_btn"></button></div>
+    <div class="card"><h3 data-t="list"></h3><ul id="list"></ul></div>
+  </aside>
+</div>
+<script src="/static/review.js"></script>
+</body>
+</html>

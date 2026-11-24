@@ -1,0 +1,44 @@
+carla_Town03_arrow_lane | lane | Test A | gpt-6.1-sol
+-----------------------------------------------------
+Step 1  Scene           An urban street approaches a cross street beneath an elevated structure. My car is in
+                        the left of two visible lanes traveling in this direction. (lanes 2, mine 1, full)
+Step 2  Left            A continuous white line runs along the left side of my lane beside a raised curb and
+                        sidewalk; no traffic lane lies between it and the curb.
+                        white solid, curb yes, edge_line, evidence full
+Step 2  Right           A continuous white line separates my lane from another lane to the right.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        arrow:left (full): A white arrow ahead has a bent shaft and a single head pointing
+                        left.
+Step 4  Cross-check     position: The left roadway edge and right lane divider agree with my lane being the
+                        leftmost of two lanes. | roles: The white edge line beside the curb and the solid
+                        white same-direction lane divider fit their assigned roles. | markings: The left-turn
+                        arrow is consistent with a leftmost turn lane; no conflicting guidance marking is
+                        visible. | unseen: No stop line, waiting area, or additional arrow is clearly visible,
+                        and none is inferred. | result: consistent
+Step 5  Rule            left_boundary: The raised curb forms a roadway edge that my car must not cross to
+                        leave the lane.
+Step 5  Rule            right_boundary: In the United States, a single solid white lane divider discourages
+                        but does not by itself prohibit crossing into the adjacent lane when safe.
+Step 5  Rule            arrow:left: The left-turn lane-use arrow requires a left turn from this lane rather
+                        than proceeding straight, turning right, or making a U-turn.
+Step 6  change_left     prohibited: The raised curb prohibits leaving the roadway across the left boundary.
+Step 6  change_right    allowed: The single solid white lane divider discourages, but does not itself
+                        prohibit, a safe lane change.
+Step 6  go_straight     prohibited: The left-only arrow does not permit proceeding straight.
+Step 6  turn_left       allowed: The left-turn arrow permits a left turn.
+Step 6  turn_right      prohibited: The left-only arrow does not permit a right turn.
+Step 6  u_turn          prohibited: The left-only arrow does not designate a U-turn movement.
+Step 6  enter_waiting_areanot_applicable: No waiting area or adjacent two-way left-turn lane is visible.
+Step 7  Reflect         consistent
+Advice                  Remain in this lane for a left turn; do not proceed straight or turn right from it.
+                        Crossing the solid white divider is discouraged, and the adjacent lane's permitted
+                        movements must be checked before using it.
+Model's summary         **Generating image description**  I'm thinking about creating a quick image that
+                        features a left arrow. It seems like there are two lanes divided by a solid white
+                        line. Also, there's a white curb on the left edge. I wonder if this might depict a
+                        T-intersection where the road ends, leading to a cross street. I should note that
+                        there doesn't appear to be a discernible stop line. It looks like I need to output
+                        this without any specific pattern or schema.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:left'], missed []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4426, out 868, 12.44 s

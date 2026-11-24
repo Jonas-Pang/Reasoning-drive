@@ -1,0 +1,128 @@
+{
+ "_comment": "lane_v5 (Claude, 2026-11-17): lane_v4's Photo 2 plus Photo 3 (left part) and Photo 4 (right part) of the road just ahead, 1.5x larger.",
+ "text": "Photo 2: a close-up of the road just ahead of my car, cut from Photo 1 and shown larger.",
+ "default_box": [
+  0.1,
+  0.48,
+  0.9,
+  0.84
+ ],
+ "boxes": {
+  "MapDR-mini": [
+   0.1,
+   0.47,
+   0.9,
+   0.8
+  ],
+  "BDD100K": [
+   0.1,
+   0.5,
+   0.9,
+   0.85
+  ],
+  "LingoQA": [
+   0.1,
+   0.48,
+   0.9,
+   0.82
+  ],
+  "IDD": [
+   0.1,
+   0.5,
+   0.9,
+   0.97
+  ],
+  "CULane": [
+   0.1,
+   0.5,
+   0.9,
+   0.95
+  ]
+ },
+ "more": [
+  {
+   "text": "Photo 3: the left part of the road just ahead of my car, cut from Photo 1 and shown larger.",
+   "scale": 1.5,
+   "default_box": [
+    0.0,
+    0.52,
+    0.55,
+    0.84
+   ],
+   "boxes": {
+    "MapDR-mini": [
+     0.0,
+     0.52,
+     0.55,
+     0.8
+    ],
+    "BDD100K": [
+     0.0,
+     0.55,
+     0.55,
+     0.85
+    ],
+    "LingoQA": [
+     0.0,
+     0.52,
+     0.55,
+     0.82
+    ],
+    "IDD": [
+     0.0,
+     0.55,
+     0.55,
+     0.97
+    ],
+    "CULane": [
+     0.0,
+     0.55,
+     0.55,
+     0.95
+    ]
+   }
+  },
+  {
+   "text": "Photo 4: the right part of the road just ahead of my car, cut from Photo 1 and shown larger.",
+   "scale": 1.5,
+   "default_box": [
+    0.45,
+    0.52,
+    1.0,
+    0.84
+   ],
+   "boxes": {
+    "MapDR-mini": [
+     0.45,
+     0.52,
+     1.0,
+     0.8
+    ],
+    "BDD100K": [
+     0.45,
+     0.55,
+     1.0,
+     0.85
+    ],
+    "LingoQA": [
+     0.45,
+     0.52,
+     1.0,
+     0.82
+    ],
+    "IDD": [
+     0.45,
+     0.55,
+     1.0,
+     0.97
+    ],
+    "CULane": [
+     0.45,
+     0.55,
+     1.0,
+     0.95
+    ]
+   }
+  }
+ ]
+}

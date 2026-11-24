@@ -1,0 +1,235 @@
+{
+  "folders": [
+    {
+      "name": "Reasoning_Drive",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "~/.venvs/reasoning_drive/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "terminal.integrated.cwd": "${workspaceFolder:Reasoning_Drive}",
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/._*": true,
+      "**/.DS_Store": true,
+      "_archive": true,
+      "**/*.pyc": true
+    },
+    "search.exclude": {
+      "results/runs": true,
+      "results/carla": true,
+      "regulations/inbox": true
+    },
+    "files.watcherExclude": {
+      "results/**": true,
+      "regulations/inbox/**": true
+    },
+    "files.associations": {
+      "*.yml": "yaml",
+      "Dockerfile": "dockerfile"
+    },
+    "markdown.preview.breaks": true,
+    "workbench.startupEditor": "none",
+    "markdown.preview.openMarkdownLinks": "inEditor"
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "options": {
+      "cwd": "${workspaceFolder}"
+    },
+    "tasks": [
+      {
+        "label": "0 · Setup: Python environment + packages + self-test (once)",
+        "type": "shell",
+        "command": "bash scripts/setup_mac.sh",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "clear": true
+        },
+        "detail": "creates ~/.venvs/reasoning_drive, installs requirements.txt, runs main.py selftest"
+      },
+      {
+        "label": "1 · Self-test (no API, no CARLA)",
+        "type": "shell",
+        "command": "bash scripts/rd.sh selftest",
+        "problemMatcher": [],
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "clear": true
+        }
+      },
+      {
+        "label": "2 · Lane advisor (offline: saved answers, no key) → http://localhost:8770/app",
+        "type": "shell",
+        "command": "bash scripts/rd.sh web --api nav_gemma4_31b_bf16 --lane-prompt lane_v4c --real",
+        "isBackground": true,
+        "problemMatcher": {
+          "owner": "rd",
+          "pattern": {
+            "regexp": "^x^"
+          },
+          "background": {
+            "activeBegins": true,
+            "beginsPattern": ".",
+            "endsPattern": "running at"
+          }
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "clear": true
+        },
+        "detail": "choose 'Saved answer (offline)' on the page; 'Live model' needs NAVIGATOR_API_KEY in .env"
+      },
+      {
+        "label": "3 · Lane advisor with mock answers (no key, no network)",
+        "type": "shell",
+        "command": "bash scripts/rd.sh web --api nav_gemma4_31b_bf16 --lane-prompt lane_v4c --mock",
+        "isBackground": true,
+        "problemMatcher": {
+          "owner": "rd",
+          "pattern": {
+            "regexp": "^x^"
+          },
+          "background": {
+            "activeBegins": true,
+            "beginsPattern": ".",
+            "endsPattern": "running at"
+          }
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "clear": true
+        }
+      },
+      {
+        "label": "4 · Feedback: replay the test set as simulated reviewer feedback",
+        "type": "shell",
+        "command": "bash scripts/rd.sh --script scripts/replay_feedback.py --test B --clear",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "clear": true
+        },
+        "detail": "writes results/app/predictions.jsonl and results/app/feedback.csv (source = simulated_reviewer)"
+      },
+      {
+        "label": "5 · Feedback: analysis report",
+        "type": "shell",
+        "command": "bash scripts/rd.sh --script scripts/feedback_report.py",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "clear": true
+        },
+        "detail": "writes results/app/feedback_report.md"
+      },
+      {
+        "label": "6 · Results: table of every saved run",
+        "type": "shell",
+        "command": "bash scripts/rd.sh results --kind lane",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "clear": true
+        }
+      },
+      {
+        "label": "D0 · Docker demo, one command: start everything, send traffic + feedback, open the pages",
+        "type": "shell",
+        "command": "bash scripts/deploy_demo.sh",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "clear": true
+        },
+        "detail": "needs Docker Desktop running and GRAFANA_ADMIN_PASSWORD in .env"
+      },
+      {
+        "label": "D1 · Docker: build and start app + Prometheus + Grafana",
+        "type": "shell",
+        "command": "bash scripts/docker_build.sh && docker compose up --no-build",
+        "isBackground": true,
+        "problemMatcher": {
+          "owner": "docker",
+          "pattern": {
+            "regexp": "^x^"
+          },
+          "background": {
+            "activeBegins": true,
+            "beginsPattern": ".",
+            "endsPattern": "running at|Started|healthy"
+          }
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "clear": true
+        },
+        "detail": "needs Docker Desktop and GRAFANA_ADMIN_PASSWORD in .env; app :8770/app, Grafana :3000, Prometheus :9090"
+      },
+      {
+        "label": "D1b · Send demo traffic + reviewer feedback to the running app",
+        "type": "shell",
+        "command": "bash scripts/rd.sh --script scripts/demo_traffic.py --per-region 40",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "clear": true
+        }
+      },
+      {
+        "label": "D2 · Docker: status",
+        "type": "shell",
+        "command": "docker compose ps",
+        "problemMatcher": []
+      },
+      {
+        "label": "D3 · Docker: logs of the app",
+        "type": "shell",
+        "command": "docker compose logs -f demo",
+        "isBackground": true,
+        "problemMatcher": []
+      },
+      {
+        "label": "D4 · Docker: self-test inside the image",
+        "type": "shell",
+        "command": "docker compose run --rm demo python main.py selftest",
+        "problemMatcher": []
+      },
+      {
+        "label": "D5 · Docker: stop (data volumes are kept)",
+        "type": "shell",
+        "command": "docker compose down",
+        "problemMatcher": []
+      },
+      {
+        "label": "Open: lane advisor, Grafana, Prometheus in the browser",
+        "type": "shell",
+        "command": "open http://localhost:8770/app http://localhost:3000 http://localhost:9090",
+        "problemMatcher": []
+      }
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-azuretools.vscode-docker",
+      "redhat.vscode-yaml"
+    ]
+  }
+}

@@ -1,0 +1,562 @@
+rel,collection,items,categories,lane_words
+primary/d0/leftCamImgs/0000101.jpg,idd,1,perception,lane markings
+primary/d0/leftCamImgs/0000108.jpg,idd,1,perception,lane markings
+primary/d0/leftCamImgs/0000115.jpg,idd,1,perception,lane markings
+primary/d0/leftCamImgs/0000358.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000365.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000372.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000379.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0000386.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0000393.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0000450.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000457.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000464.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000535.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000542.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000549.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000621.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000628.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000635.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000642.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000649.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000656.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0000673.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0000680.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0000687.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0000778.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0000785.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0000792.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0000813.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0000820.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0000827.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0000872.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0000879.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0000886.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0000961.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0000968.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0000975.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0001008.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0001015.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0001022.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0001029.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0001036.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0001043.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0001156.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0001163.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0001170.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0001191.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0001198.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0001205.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0001569.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0001576.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0001583.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0001693.jpg,idd,2,planning;prediction,dashed;lane change;lane markings;overtak
+primary/d0/leftCamImgs/0001700.jpg,idd,2,planning;prediction,dashed;lane change;lane markings;overtak
+primary/d0/leftCamImgs/0001707.jpg,idd,2,planning;prediction,dashed;lane change;lane markings;overtak
+primary/d0/leftCamImgs/0001831.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0001838.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0001845.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0001873.jpg,idd,1,planning,lane markings
+primary/d0/leftCamImgs/0001880.jpg,idd,1,planning,lane markings
+primary/d0/leftCamImgs/0001887.jpg,idd,1,planning,lane markings
+primary/d0/leftCamImgs/0001907.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0001914.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0001921.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0001928.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0001935.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0001942.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0001971.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0001978.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0001985.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002044.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002051.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002058.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002074.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002081.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002088.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002111.jpg,idd,2,perception;planning,lane change;lane markings;overtak
+primary/d0/leftCamImgs/0002118.jpg,idd,2,perception;planning,lane change;lane markings;overtak
+primary/d0/leftCamImgs/0002125.jpg,idd,2,perception;planning,lane change;lane markings;overtak
+primary/d0/leftCamImgs/0002168.jpg,idd,1,planning,dashed;overtak
+primary/d0/leftCamImgs/0002175.jpg,idd,1,planning,dashed;overtak
+primary/d0/leftCamImgs/0002182.jpg,idd,1,planning,dashed;overtak
+primary/d0/leftCamImgs/0002232.jpg,idd,1,planning,lane markings;overtak
+primary/d0/leftCamImgs/0002239.jpg,idd,1,planning,lane markings;overtak
+primary/d0/leftCamImgs/0002246.jpg,idd,1,planning,lane markings;overtak
+primary/d0/leftCamImgs/0002283.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0002290.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0002297.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0002310.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0002317.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0002324.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0002333.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002340.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002347.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002378.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002385.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002392.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002403.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0002410.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0002417.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0002471.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0002478.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0002485.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0002507.jpg,idd,2,planning;region,overtak
+primary/d0/leftCamImgs/0002514.jpg,idd,2,planning;region,overtak
+primary/d0/leftCamImgs/0002521.jpg,idd,2,planning;region,overtak
+primary/d0/leftCamImgs/0002539.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002546.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002553.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002563.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0002570.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0002577.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0002585.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0002592.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0002599.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0002626.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0002633.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0002640.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0002702.jpg,idd,1,perception,lane markings
+primary/d0/leftCamImgs/0002709.jpg,idd,1,perception,lane markings
+primary/d0/leftCamImgs/0002716.jpg,idd,1,perception,lane markings
+primary/d0/leftCamImgs/0002747.jpg,idd,3,planning;prediction;region,overtak;turn arrow
+primary/d0/leftCamImgs/0002754.jpg,idd,3,planning;prediction;region,overtak;turn arrow
+primary/d0/leftCamImgs/0002761.jpg,idd,3,planning;prediction;region,overtak;turn arrow
+primary/d0/leftCamImgs/0002785.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0002792.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0002799.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0002921.jpg,idd,2,planning;region,overtak;road marking
+primary/d0/leftCamImgs/0002928.jpg,idd,2,planning;region,overtak;road marking
+primary/d0/leftCamImgs/0002935.jpg,idd,2,planning;region,overtak;road marking
+primary/d0/leftCamImgs/0002966.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002973.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0002980.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0003063.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0003070.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0003077.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0003208.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0003215.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0003222.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0003238.jpg,idd,2,planning;prediction,overtak
+primary/d0/leftCamImgs/0003245.jpg,idd,2,planning;prediction,overtak
+primary/d0/leftCamImgs/0003252.jpg,idd,2,planning;prediction,overtak
+primary/d0/leftCamImgs/0003377.jpg,idd,1,perception,chevron
+primary/d0/leftCamImgs/0003384.jpg,idd,1,perception,chevron
+primary/d0/leftCamImgs/0003391.jpg,idd,1,perception,chevron
+primary/d0/leftCamImgs/0003605.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0003612.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0003619.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0003676.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0003683.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0003690.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0003804.jpg,idd,1,prediction,overtak;road marking
+primary/d0/leftCamImgs/0003811.jpg,idd,1,prediction,overtak;road marking
+primary/d0/leftCamImgs/0003818.jpg,idd,1,prediction,overtak;road marking
+primary/d0/leftCamImgs/0003850.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0003857.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0003864.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0003871.jpg,idd,2,perception;prediction,lane markings;overtak
+primary/d0/leftCamImgs/0003878.jpg,idd,2,perception;prediction,lane markings;overtak
+primary/d0/leftCamImgs/0003885.jpg,idd,2,perception;prediction,lane markings;overtak
+primary/d0/leftCamImgs/0003956.jpg,idd,1,perception,lane markings;road marking
+primary/d0/leftCamImgs/0003963.jpg,idd,1,perception,lane markings;road marking
+primary/d0/leftCamImgs/0003970.jpg,idd,1,perception,lane markings;road marking
+primary/d0/leftCamImgs/0003980.jpg,idd,2,perception;planning,overtak;road marking
+primary/d0/leftCamImgs/0003987.jpg,idd,2,perception;planning,overtak;road marking
+primary/d0/leftCamImgs/0003994.jpg,idd,2,perception;planning,overtak;road marking
+primary/d0/leftCamImgs/0004071.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0004078.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0004085.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0004117.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0004124.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0004131.jpg,idd,1,region,overtak
+primary/d0/leftCamImgs/0004141.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0004148.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0004155.jpg,idd,1,prediction,overtak
+primary/d0/leftCamImgs/0004176.jpg,idd,2,planning;prediction,overtak
+primary/d0/leftCamImgs/0004183.jpg,idd,2,planning;prediction,overtak
+primary/d0/leftCamImgs/0004190.jpg,idd,2,planning;prediction,overtak
+primary/d0/leftCamImgs/0004205.jpg,idd,2,perception;planning,lane change;lane markings;overtak;road marking
+primary/d0/leftCamImgs/0004212.jpg,idd,2,perception;planning,lane change;lane markings;overtak;road marking
+primary/d0/leftCamImgs/0004219.jpg,idd,2,perception;planning,lane change;lane markings;overtak;road marking
+primary/d0/leftCamImgs/0004255.jpg,idd,2,planning;prediction,overtak
+primary/d0/leftCamImgs/0004262.jpg,idd,2,planning;prediction,overtak
+primary/d0/leftCamImgs/0004269.jpg,idd,2,planning;prediction,overtak
+primary/d0/leftCamImgs/0004282.jpg,idd,2,planning;prediction,lane markings;overtak
+primary/d0/leftCamImgs/0004289.jpg,idd,2,planning;prediction,lane markings;overtak
+primary/d0/leftCamImgs/0004296.jpg,idd,2,planning;prediction,lane markings;overtak
+primary/d0/leftCamImgs/0004306.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0004313.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0004320.jpg,idd,1,planning,lane change;overtak
+primary/d0/leftCamImgs/0004338.jpg,idd,2,planning;prediction,lane markings;overtak
+primary/d0/leftCamImgs/0004345.jpg,idd,2,planning;prediction,lane markings;overtak
+primary/d0/leftCamImgs/0004352.jpg,idd,2,planning;prediction,lane markings;overtak
+primary/d0/leftCamImgs/0004361.jpg,idd,2,planning;prediction,overtak;road marking
+primary/d0/leftCamImgs/0004368.jpg,idd,2,planning;prediction,overtak;road marking
+primary/d0/leftCamImgs/0004375.jpg,idd,2,planning;prediction,overtak;road marking
+primary/d0/leftCamImgs/0004502.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0004509.jpg,idd,1,planning,overtak
+primary/d0/leftCamImgs/0004516.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000065.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000072.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000079.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000151.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0000158.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0000165.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0000179.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000186.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000193.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000270.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0000277.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0000284.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0000327.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0000334.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0000341.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0000522.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000529.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000536.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000565.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000572.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000579.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000588.jpg,idd,1,perception,dashed
+primary/d1/leftCamImgs/0000595.jpg,idd,1,perception,dashed
+primary/d1/leftCamImgs/0000602.jpg,idd,1,perception,dashed
+primary/d1/leftCamImgs/0000631.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0000638.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0000645.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0000690.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000697.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000704.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0000772.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0000779.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0000786.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0000807.jpg,idd,2,prediction;region,overtak
+primary/d1/leftCamImgs/0000814.jpg,idd,2,prediction;region,overtak
+primary/d1/leftCamImgs/0000821.jpg,idd,2,prediction;region,overtak
+primary/d1/leftCamImgs/0000835.jpg,idd,1,prediction,lane change;overtak
+primary/d1/leftCamImgs/0000842.jpg,idd,1,prediction,lane change;overtak
+primary/d1/leftCamImgs/0000849.jpg,idd,1,prediction,lane change;overtak
+primary/d1/leftCamImgs/0001063.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001070.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001077.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001127.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0001134.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0001141.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0001155.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001162.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001169.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001214.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001221.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001228.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001274.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0001281.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0001288.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0001426.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001433.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001440.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001571.jpg,idd,1,perception,overtak
+primary/d1/leftCamImgs/0001578.jpg,idd,1,perception,overtak
+primary/d1/leftCamImgs/0001585.jpg,idd,1,perception,overtak
+primary/d1/leftCamImgs/0001601.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0001608.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0001615.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0001640.jpg,idd,2,prediction;region,overtak
+primary/d1/leftCamImgs/0001647.jpg,idd,2,prediction;region,overtak
+primary/d1/leftCamImgs/0001654.jpg,idd,2,prediction;region,overtak
+primary/d1/leftCamImgs/0001665.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001672.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001679.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001727.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001734.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001741.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0001868.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0001875.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0001882.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0002041.jpg,idd,2,planning;prediction,lane marking;overtak
+primary/d1/leftCamImgs/0002048.jpg,idd,2,planning;prediction,lane marking;overtak
+primary/d1/leftCamImgs/0002055.jpg,idd,2,planning;prediction,lane marking;overtak
+primary/d1/leftCamImgs/0002111.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002118.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002125.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002158.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002165.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002172.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002218.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0002225.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0002232.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0002243.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002250.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002257.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002268.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002275.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002282.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002322.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002329.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002336.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002357.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0002364.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0002371.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0002422.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002429.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002436.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002443.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0002450.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0002457.jpg,idd,1,region,overtak
+primary/d1/leftCamImgs/0002551.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0002558.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0002565.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0002586.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0002593.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0002600.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0002608.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002615.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002622.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002630.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0002637.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0002644.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0002715.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0002722.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0002729.jpg,idd,2,planning;prediction,overtak
+primary/d1/leftCamImgs/0002781.jpg,idd,1,perception,overtak
+primary/d1/leftCamImgs/0002788.jpg,idd,1,perception,overtak
+primary/d1/leftCamImgs/0002795.jpg,idd,1,perception,overtak
+primary/d1/leftCamImgs/0002878.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0002885.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0002892.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0002906.jpg,idd,1,prediction,cross lane
+primary/d1/leftCamImgs/0002913.jpg,idd,1,prediction,cross lane
+primary/d1/leftCamImgs/0002920.jpg,idd,1,prediction,cross lane
+primary/d1/leftCamImgs/0002932.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002939.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0002946.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0003015.jpg,idd,1,prediction,turn arrow
+primary/d1/leftCamImgs/0003022.jpg,idd,1,prediction,turn arrow
+primary/d1/leftCamImgs/0003029.jpg,idd,1,prediction,turn arrow
+primary/d1/leftCamImgs/0003093.jpg,idd,2,planning;region,overtak
+primary/d1/leftCamImgs/0003100.jpg,idd,2,planning;region,overtak
+primary/d1/leftCamImgs/0003107.jpg,idd,2,planning;region,overtak
+primary/d1/leftCamImgs/0003114.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0003121.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0003128.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0003174.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0003181.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0003188.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0003208.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0003215.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0003222.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0003269.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0003276.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0003283.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0003305.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0003312.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0003319.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0003343.jpg,idd,2,planning;region,overtak
+primary/d1/leftCamImgs/0003350.jpg,idd,2,planning;region,overtak
+primary/d1/leftCamImgs/0003357.jpg,idd,2,planning;region,overtak
+primary/d1/leftCamImgs/0003386.jpg,idd,2,planning;region,overtak
+primary/d1/leftCamImgs/0003393.jpg,idd,2,planning;region,overtak
+primary/d1/leftCamImgs/0003400.jpg,idd,2,planning;region,overtak
+primary/d1/leftCamImgs/0003582.jpg,idd,2,planning;region,overtak
+primary/d1/leftCamImgs/0003589.jpg,idd,2,planning;region,overtak
+primary/d1/leftCamImgs/0003596.jpg,idd,2,planning;region,overtak
+primary/d1/leftCamImgs/0003693.jpg,idd,2,perception;prediction,overtak;road marking
+primary/d1/leftCamImgs/0003700.jpg,idd,2,perception;prediction,overtak;road marking
+primary/d1/leftCamImgs/0003707.jpg,idd,2,perception;prediction,overtak;road marking
+primary/d1/leftCamImgs/0003730.jpg,idd,1,planning,dashed;lane markings
+primary/d1/leftCamImgs/0003737.jpg,idd,1,planning,dashed;lane markings
+primary/d1/leftCamImgs/0003744.jpg,idd,1,planning,dashed;lane markings
+primary/d1/leftCamImgs/0003772.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0003779.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0003786.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0003795.jpg,idd,2,planning;prediction,lane marking;overtak;road marking
+primary/d1/leftCamImgs/0003802.jpg,idd,2,planning;prediction,lane marking;overtak;road marking
+primary/d1/leftCamImgs/0003809.jpg,idd,2,planning;prediction,lane marking;overtak;road marking
+primary/d1/leftCamImgs/0003877.jpg,idd,1,planning,lane markings;overtak
+primary/d1/leftCamImgs/0003884.jpg,idd,1,planning,lane markings;overtak
+primary/d1/leftCamImgs/0003891.jpg,idd,1,planning,lane markings;overtak
+primary/d1/leftCamImgs/0003995.jpg,idd,1,planning,lane markings;overtak
+primary/d1/leftCamImgs/0004002.jpg,idd,1,planning,lane markings;overtak
+primary/d1/leftCamImgs/0004009.jpg,idd,1,planning,lane markings;overtak
+primary/d1/leftCamImgs/0004016.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0004023.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0004030.jpg,idd,1,prediction,overtak
+primary/d1/leftCamImgs/0004045.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0004052.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0004059.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0004070.jpg,idd,2,perception;prediction,overtak;road marking
+primary/d1/leftCamImgs/0004077.jpg,idd,2,perception;prediction,overtak;road marking
+primary/d1/leftCamImgs/0004084.jpg,idd,2,perception;prediction,overtak;road marking
+primary/d1/leftCamImgs/0004102.jpg,idd,1,planning,overtak;road marking
+primary/d1/leftCamImgs/0004109.jpg,idd,1,planning,overtak;road marking
+primary/d1/leftCamImgs/0004116.jpg,idd,1,planning,overtak;road marking
+primary/d1/leftCamImgs/0004294.jpg,idd,2,prediction;region,lane change;overtak
+primary/d1/leftCamImgs/0004301.jpg,idd,2,prediction;region,lane change;overtak
+primary/d1/leftCamImgs/0004308.jpg,idd,2,prediction;region,lane change;overtak
+primary/d1/leftCamImgs/0004333.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0004340.jpg,idd,1,planning,overtak
+primary/d1/leftCamImgs/0004347.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0000305.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0000312.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0000319.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0000595.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0000602.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0000609.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0001842.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0001849.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0001856.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0001878.jpg,idd,1,perception,lane markings
+primary/d2/leftCamImgs/0001885.jpg,idd,1,perception,lane markings
+primary/d2/leftCamImgs/0001892.jpg,idd,1,perception,lane markings
+primary/d2/leftCamImgs/0001935.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0001942.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0001949.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0002023.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0002030.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0002037.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0002073.jpg,idd,1,planning,center line
+primary/d2/leftCamImgs/0002080.jpg,idd,1,planning,center line
+primary/d2/leftCamImgs/0002087.jpg,idd,1,planning,center line
+primary/d2/leftCamImgs/0002178.jpg,idd,1,planning,double solid;overtak
+primary/d2/leftCamImgs/0002185.jpg,idd,1,planning,double solid;overtak
+primary/d2/leftCamImgs/0002192.jpg,idd,1,planning,double solid;overtak
+primary/d2/leftCamImgs/0002247.jpg,idd,1,prediction,stop line
+primary/d2/leftCamImgs/0002254.jpg,idd,1,prediction,stop line
+primary/d2/leftCamImgs/0002261.jpg,idd,1,prediction,stop line
+primary/d2/leftCamImgs/0002382.jpg,idd,2,planning;prediction,lane markings;overtak
+primary/d2/leftCamImgs/0002389.jpg,idd,2,planning;prediction,lane markings;overtak
+primary/d2/leftCamImgs/0002396.jpg,idd,2,planning;prediction,lane markings;overtak
+primary/d2/leftCamImgs/0002423.jpg,idd,3,planning;prediction;region,overtak
+primary/d2/leftCamImgs/0002430.jpg,idd,3,planning;prediction;region,overtak
+primary/d2/leftCamImgs/0002437.jpg,idd,3,planning;prediction;region,overtak
+primary/d2/leftCamImgs/0002502.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0002509.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0002516.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0002589.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0002596.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0002603.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0002654.jpg,idd,2,planning;region,overtak
+primary/d2/leftCamImgs/0002661.jpg,idd,2,planning;region,overtak
+primary/d2/leftCamImgs/0002668.jpg,idd,2,planning;region,overtak
+primary/d2/leftCamImgs/0002675.jpg,idd,2,planning;region,lane markings;overtak
+primary/d2/leftCamImgs/0002682.jpg,idd,2,planning;region,lane markings;overtak
+primary/d2/leftCamImgs/0002689.jpg,idd,2,planning;region,lane markings;overtak
+primary/d2/leftCamImgs/0002696.jpg,idd,2,planning;prediction,overtak
+primary/d2/leftCamImgs/0002703.jpg,idd,2,planning;prediction,overtak
+primary/d2/leftCamImgs/0002710.jpg,idd,2,planning;prediction,overtak
+primary/d2/leftCamImgs/0002735.jpg,idd,2,planning;prediction,lane change;overtak
+primary/d2/leftCamImgs/0002742.jpg,idd,2,planning;prediction,lane change;overtak
+primary/d2/leftCamImgs/0002749.jpg,idd,2,planning;prediction,lane change;overtak
+primary/d2/leftCamImgs/0002857.jpg,idd,1,planning,lane markings;overtak
+primary/d2/leftCamImgs/0002864.jpg,idd,1,planning,lane markings;overtak
+primary/d2/leftCamImgs/0002871.jpg,idd,1,planning,lane markings;overtak
+primary/d2/leftCamImgs/0002887.jpg,idd,1,perception,road marking
+primary/d2/leftCamImgs/0002894.jpg,idd,1,perception,road marking
+primary/d2/leftCamImgs/0002901.jpg,idd,1,perception,road marking
+primary/d2/leftCamImgs/0002954.jpg,idd,1,planning,overtak;road marking
+primary/d2/leftCamImgs/0002961.jpg,idd,1,planning,overtak;road marking
+primary/d2/leftCamImgs/0002968.jpg,idd,1,planning,overtak;road marking
+primary/d2/leftCamImgs/0003079.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003086.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003093.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003101.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003108.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003115.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003122.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0003129.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0003136.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0003178.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0003185.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0003192.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0003355.jpg,idd,1,planning,lane change;lane line;overtak
+primary/d2/leftCamImgs/0003362.jpg,idd,1,planning,lane change;lane line;overtak
+primary/d2/leftCamImgs/0003369.jpg,idd,1,planning,lane change;lane line;overtak
+primary/d2/leftCamImgs/0003405.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003412.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003419.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003438.jpg,idd,2,perception;planning,chevron;overtak
+primary/d2/leftCamImgs/0003445.jpg,idd,2,perception;planning,chevron;overtak
+primary/d2/leftCamImgs/0003452.jpg,idd,2,perception;planning,chevron;overtak
+primary/d2/leftCamImgs/0003465.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0003472.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0003479.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0003491.jpg,idd,1,planning,lane markings;overtak
+primary/d2/leftCamImgs/0003498.jpg,idd,1,planning,lane markings;overtak
+primary/d2/leftCamImgs/0003505.jpg,idd,1,planning,lane markings;overtak
+primary/d2/leftCamImgs/0003568.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003575.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003582.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003622.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0003629.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0003636.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0003666.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0003673.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0003680.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0003699.jpg,idd,2,planning;prediction,overtak
+primary/d2/leftCamImgs/0003706.jpg,idd,2,planning;prediction,overtak
+primary/d2/leftCamImgs/0003713.jpg,idd,2,planning;prediction,overtak
+primary/d2/leftCamImgs/0003723.jpg,idd,1,perception,lane markings
+primary/d2/leftCamImgs/0003730.jpg,idd,1,perception,lane markings
+primary/d2/leftCamImgs/0003737.jpg,idd,1,perception,lane markings
+primary/d2/leftCamImgs/0003744.jpg,idd,2,prediction;region,overtak
+primary/d2/leftCamImgs/0003751.jpg,idd,2,prediction;region,overtak
+primary/d2/leftCamImgs/0003758.jpg,idd,2,prediction;region,overtak
+primary/d2/leftCamImgs/0003767.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003774.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003781.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003900.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003907.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003914.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0003936.jpg,idd,2,perception;planning,overtak;road marking
+primary/d2/leftCamImgs/0003943.jpg,idd,2,perception;planning,overtak;road marking
+primary/d2/leftCamImgs/0003950.jpg,idd,2,perception;planning,overtak;road marking
+primary/d2/leftCamImgs/0003991.jpg,idd,1,planning,dashed;overtak
+primary/d2/leftCamImgs/0003998.jpg,idd,1,planning,dashed;overtak
+primary/d2/leftCamImgs/0004005.jpg,idd,1,planning,dashed;overtak
+primary/d2/leftCamImgs/0004039.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0004046.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0004053.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0004081.jpg,idd,1,perception,cross lane
+primary/d2/leftCamImgs/0004088.jpg,idd,1,perception,cross lane
+primary/d2/leftCamImgs/0004095.jpg,idd,1,perception,cross lane
+primary/d2/leftCamImgs/0004112.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0004119.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0004126.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0004162.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0004169.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0004176.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0004273.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0004280.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0004287.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0004302.jpg,idd,1,prediction,turn arrow
+primary/d2/leftCamImgs/0004309.jpg,idd,1,prediction,turn arrow
+primary/d2/leftCamImgs/0004316.jpg,idd,1,prediction,turn arrow
+primary/d2/leftCamImgs/0004323.jpg,idd,1,prediction,lane change;overtak
+primary/d2/leftCamImgs/0004330.jpg,idd,1,prediction,lane change;overtak
+primary/d2/leftCamImgs/0004337.jpg,idd,1,prediction,lane change;overtak
+primary/d2/leftCamImgs/0004345.jpg,idd,1,perception,lane markings;road marking
+primary/d2/leftCamImgs/0004352.jpg,idd,1,perception,lane markings;road marking
+primary/d2/leftCamImgs/0004359.jpg,idd,1,perception,lane markings;road marking
+primary/d2/leftCamImgs/0004470.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0004477.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0004484.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0004495.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0004502.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0004509.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0004517.jpg,idd,1,planning,dashed;overtak
+primary/d2/leftCamImgs/0004524.jpg,idd,1,planning,dashed;overtak
+primary/d2/leftCamImgs/0004531.jpg,idd,1,planning,dashed;overtak
+primary/d2/leftCamImgs/0004547.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0004554.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0004561.jpg,idd,1,planning,overtak
+primary/d2/leftCamImgs/0004577.jpg,idd,1,prediction,lane markings;overtak
+primary/d2/leftCamImgs/0004584.jpg,idd,1,prediction,lane markings;overtak
+primary/d2/leftCamImgs/0004591.jpg,idd,1,prediction,lane markings;overtak
+primary/d2/leftCamImgs/0004598.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0004605.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0004612.jpg,idd,1,prediction,overtak
+primary/d2/leftCamImgs/0004620.jpg,idd,1,planning,center line;dashed;overtak
+primary/d2/leftCamImgs/0004627.jpg,idd,1,planning,center line;dashed;overtak
+primary/d2/leftCamImgs/0004634.jpg,idd,1,planning,center line;dashed;overtak
+primary/d2/leftCamImgs/0004641.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0004648.jpg,idd,1,region,overtak
+primary/d2/leftCamImgs/0004655.jpg,idd,1,region,overtak

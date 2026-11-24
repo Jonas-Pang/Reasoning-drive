@@ -1,0 +1,348 @@
+# GB 5768.3-2025 (Road traffic signs and markings, Part 3: Road traffic markings): passages added for the lane-level task.
+# The passages of passages_marking.json stay as they are (they belong to the saved single-marking runs);
+# the lane task uses both files. "element" says which part of a lane the passage is about:
+# general, boundary (a line or curb beside the lane), lane_marking (arrows, words, symbols inside the lane),
+# lane_type (the lane as a whole), transverse (lines across the lane), area (a marked area).
+# text_zh is quoted from the standard; "……" marks left-out text (mostly dimensions and figure references).
+# text_en is our translation of text_zh. Pages are the printed page numbers of the standard.
+
+- rule_id: CN-4.1.3
+  region: CN
+  source: GB 5768.3-2025
+  section: 4.1.3
+  page: 1
+  element: general
+  marking_type: markings, signs and signals (priority)
+  text_zh: "道路交通标线与标志、信号灯配合设置时，不应产生歧义。如果有不一致时，应以信号灯优先，其次是标志。"
+  text_en: "When road markings are used together with signs and traffic signals, they shall not create ambiguity. Where they disagree, the traffic signal takes priority, followed by the sign."
+  text_en_is_translation: true
+
+- rule_id: CN-4.2.3-a
+  region: CN
+  source: GB 5768.3-2025
+  section: 4.2.3 a)
+  page: 2
+  element: boundary
+  marking_type: lines on curbs (general)
+  text_zh: "道路交通标线按形态分为以下四类。a) 线条：路面、缘石或立面上的实线或虚线。"
+  text_en: "By form, road markings fall into four classes. a) Lines: solid or broken lines on the pavement, on curbs or on vertical surfaces."
+  text_en_is_translation: true
+
+- rule_id: CN-4.3.2-c
+  region: CN
+  source: GB 5768.3-2025
+  section: 4.3.2 c)
+  page: 2
+  element: general
+  marking_type: orange marking (work zone)
+  text_zh: "c) 橙色标线：作业区临时性指引。"
+  text_en: "c) Orange markings: temporary guidance in work zones."
+  text_en_is_translation: true
+
+- rule_id: CN-5.3.1-2
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.3.1, 5.3.2
+  page: 4
+  element: boundary
+  marking_type: tidal lane line (double broken yellow)
+  text_zh: "潮汐车道线，用以指示潮汐车道，设置于潮汐车道的两侧。路段上潮汐车道内除特殊情况外，禁止车辆左转或掉头。潮汐车道线为两条并列的黄色虚线……"
+  text_en: "The tidal lane line marks a tidal (reversible) lane and is placed on both sides of it. Within a tidal lane on a road section, vehicles are prohibited from turning left or making a U-turn except in special cases. The tidal lane line consists of two parallel broken yellow lines ..."
+  text_en_is_translation: true
+
+- rule_id: CN-5.4.1
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.4.1
+  page: 5
+  element: boundary
+  marking_type: edge line (definition)
+  text_zh: "车行道边缘线，用以指示机动车道、非机动车道的边缘或划分机动车道与非机动车道的分界。划分机动车道与非机动车道的分界时，也称为机非分界线；指示道路或路面边缘时，也称为道路边缘线。"
+  text_en: "The carriageway edge line marks the edge of motor vehicle lanes or non-motorized vehicle lanes, or the boundary between motor vehicle lanes and non-motorized vehicle lanes. As the boundary between motor and non-motorized lanes it is also called the motor/non-motor separation line; marking the edge of the road or pavement it is also called the road edge line."
+  text_en_is_translation: true
+
+- rule_id: CN-5.4.2
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.4.2
+  page: 5
+  element: boundary
+  marking_type: edge line (forms, dense broken line)
+  text_zh: "车行道边缘线包括实线、虚线、虚实线等形式。……车行道边缘虚线的线段长度60cm、间隔30cm（也称为“密虚线”）……车行道边缘线不宜占车道宽度。"
+  text_en: "Carriageway edge lines take the forms of solid, broken and broken-solid lines. ... The broken edge line has 60 cm segments and 30 cm gaps (also called a \"dense broken line\") ... Edge lines should not take up lane width."
+  text_en_is_translation: true
+
+- rule_id: CN-5.4.3
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.4.3
+  page: 5
+  element: boundary
+  marking_type: edge line (colour, right white, left yellow)
+  text_zh: "设置于行车方向右侧的车行道边缘线应为白色，设置于行车方向左侧的车行道边缘线应为黄色，同向机非分界线应为白色。设置于双向通行的单车道道路两侧的车行道边缘线应均为白色。"
+  text_en: "An edge line on the right side of the direction of travel shall be white, and an edge line on the left side of the direction of travel shall be yellow; a motor/non-motor separation line between traffic in the same direction shall be white. On a single-lane two-way road, the edge lines on both sides shall be white."
+  text_en_is_translation: true
+
+- rule_id: CN-5.4.5
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.4.5
+  page: 6
+  element: boundary
+  marking_type: curb or separation instead of edge line
+  text_zh: "需要划分非机动车道且非机动车道与机动车道之间无隔离设施时，应设置机非分界线。道路有照明，或非机动车道与机动车道或人行道之间存在物理隔离设施、路缘石或不同路面高程及其他道路线形轮廓清晰明确时，一般不施划对应位置的非机动车道边缘线、道路边缘线。"
+  text_en: "Where a non-motorized lane is needed and there is no separating facility between it and the motor vehicle lanes, a motor/non-motor separation line shall be provided. Where the road is lit, or where a physical separation, a curb, a change in pavement level or another clear outline exists between the non-motorized lane and the motor vehicle lanes or the sidewalk, the corresponding non-motorized lane edge line or road edge line is generally not marked."
+  text_en_is_translation: true
+
+- rule_id: CN-5.4.6
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.4.6
+  page: 6
+  element: boundary
+  marking_type: broken edge line (openings, roadside parking)
+  text_zh: "路侧开口、路边可以停车的路段，车行道边缘线根据需要设置为车行道边缘虚线……"
+  text_en: "At roadside openings and on sections where roadside parking is allowed, the edge line is a broken edge line as needed ..."
+  text_en_is_translation: true
+
+- rule_id: CN-5.4.7
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.4.7
+  page: 6
+  element: boundary
+  marking_type: edge line (emergency stopping lane)
+  text_zh: "紧急停车带处的车行道边缘线应为实线。注：故障及救援车辆使用紧急停车带时，可以越过实线。"
+  text_en: "The edge line at an emergency stopping lane shall be solid. Note: broken-down and rescue vehicles may cross the solid line when using the emergency stopping lane."
+  text_en_is_translation: true
+
+- rule_id: CN-5.5.1-3
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.5.1, 5.5.2, 5.5.3
+  page: 7
+  element: area
+  marking_type: left-turn waiting area
+  text_zh: "左弯待转区线，用以指示左转车辆可以提前进入等待左转的区域。左弯待转区线为两条平行的虚线……左侧黄色车行道边缘线延长的虚线为黄色，其他位置的虚线为白色。左弯待转区线前端应施划停止线。……在待转区内应施划白色左转弯导向箭头……左弯待转区线一般在设有左转方向指示信号灯且设置有左转弯车道时使用，设于左转弯车道前端，伸入交叉口内。"
+  text_en: "The left-turn waiting area line marks an area that left-turning vehicles may enter in advance to wait for the left turn. It consists of two parallel broken lines ... the broken line extending the yellow left edge line is yellow, and the other broken line is white. A stop line shall be marked at the front end of the waiting area. ... White left-turn guide arrows shall be marked inside the waiting area ... The left-turn waiting area line is generally used where there is a left-turn arrow signal and a left-turn lane; it is placed at the front end of the left-turn lane and extends into the intersection."
+  text_en_is_translation: true
+
+- rule_id: CN-5.6.1-2
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.6.1, 5.6.2
+  page: 7
+  element: boundary
+  marking_type: intersection guide line (broken line inside intersection)
+  text_zh: "路口导向线，用以引导车辆行驶和转向，设置在平面交叉口内。路口导向线为圆曲虚线或直虚线……颜色与连接的车行道分界线颜色相同……"
+  text_en: "The intersection guide line guides vehicles straight on and through turns and is placed inside an at-grade intersection. It is a curved or straight broken line ... in the same colour as the lane line it connects to ..."
+  text_en_is_translation: true
+
+- rule_id: CN-5.7.1-2
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.7.1, 5.7.2
+  page: 8
+  element: boundary
+  marking_type: lane-change line (short broken white, 1-1 line)
+  text_zh: "换道线，用以指示前方车道功能变化可能需要变换车道。设置在增加转弯车道、直行车道变为转弯车道以及车道数变少等可能需要变换车道的位置。换道线为白色虚线，线段长度1m、间隔1m（也称为“1-1线”）……"
+  text_en: "The lane-change line indicates that the lane function changes ahead and a lane change may be needed. It is placed where a turn lane is added, where a through lane becomes a turn lane, where the number of lanes is reduced, and at other places where a lane change may be needed. It is a broken white line with 1 m segments and 1 m gaps (also called a \"1-1 line\") ..."
+  text_en_is_translation: true
+
+- rule_id: CN-5.13.2
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.13.2
+  page: 27
+  element: lane_marking
+  marking_type: guide arrow (where used)
+  text_zh: "在行驶方向受限制的交叉口进口道、车道数减少路段的缩减车道内、设有转弯车道的交叉口或路段、畸形交叉口应设置导向箭头。"
+  text_en: "Guide arrows shall be marked on intersection approaches where the direction of travel is restricted, in the lane being dropped where the number of lanes is reduced, at intersections or road sections with turn lanes, and at irregular intersections."
+  text_en_is_translation: true
+
+- rule_id: CN-5.13.5-6
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.13.5, 5.13.6
+  page: 32
+  element: lane_marking
+  marking_type: guide arrow (colour, combinations, repeated sets)
+  text_zh: "导向箭头的颜色为白色，根据实际车道导向需要设置。组合使用时不宜超过2种方向。交叉口进口道如设置导向箭头，宜至少设置两组。距交叉口最近的第一组导向箭头宜在距停止线1m~5m处，第二组应在导向车道的起始位置……"
+  text_en: "Guide arrows are white and are marked according to the actual direction of each lane. A combined arrow should not show more than two directions. Where guide arrows are used on an intersection approach, at least two sets should be marked: the set nearest the intersection 1 m to 5 m before the stop line, and the second set at the start of the guide lane ..."
+  text_en_is_translation: true
+
+- rule_id: CN-5.14.1
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.14.1
+  page: 34
+  element: lane_marking
+  marking_type: text marking (colour, reading order)
+  text_zh: "路面文字标记一般为白色。沿车辆行驶方向由近及远竖向排列……也可由左向右横向排列，横向排列时一个信息应1行，且不应超过3个汉字。"
+  text_en: "Pavement text markings are generally white. They are arranged vertically and read from near to far along the direction of travel ... or horizontally from left to right; when horizontal, one message takes one line of no more than three Chinese characters."
+  text_en_is_translation: true
+
+- rule_id: CN-5.14.2
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.14.2
+  page: 35
+  element: lane_marking
+  marking_type: speed limit marking
+  text_zh: "路面限速标记用以表示车辆行驶的限制车速，设置在需要限制车辆最高行驶速度的车道起点和其他适当位置。表示最高限速值数字的颜色为黄色，可单独使用。表示最低限速值数字的颜色为白色，应和最高限速值数字同时使用。"
+  text_en: "Pavement speed limit markings show the speed limit of a lane and are placed at the start of the lane and at other suitable places where the maximum speed is limited. Maximum speed numbers are yellow and may be used alone; minimum speed numbers are white and shall be used together with the maximum speed numbers."
+  text_en_is_translation: true
+
+- rule_id: CN-5.15.1-2
+  region: CN
+  source: GB 5768.3-2025
+  section: 5.15.1, 5.15.2
+  page: 36
+  element: lane_marking
+  marking_type: non-motorized vehicle symbol
+  text_zh: "路面图形标记为白色。……非机动车路面标记，施划于道路或车道的起点、道路或车道中或非机动车停车位内，表示非机动车通行或停放空间……"
+  text_en: "Pavement symbol markings are white. ... The non-motorized vehicle symbol is marked at the start of a road or lane, within a road or lane, or in a non-motorized vehicle parking space, and shows space for non-motorized vehicles to travel or park ..."
+  text_en_is_translation: true
+
+- rule_id: CN-6.2.2
+  region: CN
+  source: GB 5768.3-2025
+  section: 6.2.2
+  page: 44
+  element: boundary
+  marking_type: solid white lane line (where used)
+  text_zh: "设于交通繁杂而同向有多条车行道的弯道坡道、车行道宽度渐变路段、交叉口驶入段、接近人行横道线的路段或其他需要禁止跨越的路段。……"
+  text_en: "[The no-crossing lane line] is placed on curves and grades with heavy traffic and several lanes in the same direction, on sections where the carriageway width changes, on intersection approaches, on sections approaching a pedestrian crossing, and on other sections where crossing must be prohibited. ..."
+  text_en_is_translation: true
+
+- rule_id: CN-6.3.1
+  region: CN
+  source: GB 5768.3-2025
+  section: 6.3.1
+  page: 46
+  element: boundary
+  marking_type: no-parking line (yellow on curb, double white on pavement)
+  text_zh: "禁止车辆停放线，用以表示禁止路边停放车辆。禁止车辆停放线为黄色实线，施划于道路缘石正面及顶面，表示禁止停放的范围。……无缘石或无法施划于缘石上时，可施划在路面上。路面上的禁止车辆停放线为白色双实线，起止两端用白色短线表示。"
+  text_en: "The no-parking line shows that roadside parking is prohibited. It is a solid yellow line painted on the face and top of the curb and shows the extent where parking is prohibited. ... Where there is no curb, or the line cannot be painted on the curb, it may be marked on the pavement; on the pavement it is a double solid white line with short white lines at both ends."
+  text_en_is_translation: true
+
+- rule_id: CN-6.4.1-2
+  region: CN
+  source: GB 5768.3-2025
+  section: 6.4.1, 6.4.2
+  page: 48
+  element: transverse
+  marking_type: stop line
+  text_zh: "停止线，用以表示车辆让行、等候放行等情况下的停车位置。停止线为白色实线。……"
+  text_en: "The stop line marks where vehicles stop when yielding or waiting to proceed. It is a solid white line. ..."
+  text_en_is_translation: true
+
+- rule_id: CN-6.5.1.1-2
+  region: CN
+  source: GB 5768.3-2025
+  section: 6.5.1.1, 6.5.1.2
+  page: 48
+  element: transverse
+  marking_type: stop-and-yield line (two solid lines and 停)
+  text_zh: "停车让行线，表示车辆在进入路口前应完全停止，确认安全后，方可通行。……停车让行线为两条平行实线和一个“停”字，颜色为白色。……"
+  text_en: "The stop-and-yield line means that vehicles shall stop completely before entering the intersection and may proceed only after making sure it is safe. ... It consists of two parallel solid lines and the character \"停\" (stop), in white. ..."
+  text_en_is_translation: true
+
+- rule_id: CN-6.5.2.1-2
+  region: CN
+  source: GB 5768.3-2025
+  section: 6.5.2.1, 6.5.2.2
+  page: 49
+  element: transverse
+  marking_type: slow-and-yield line (two broken lines and inverted triangle)
+  text_zh: "减速让行线，表示车辆在进入路口前应慢行或停车，确认安全后，方可通行。……减速让行线为两条平行虚线和一个倒三角形，颜色为白色。……"
+  text_en: "The slow-and-yield line means that vehicles shall slow down or stop before entering the intersection and may proceed only after making sure it is safe. ... It consists of two parallel broken lines and an inverted triangle, in white. ..."
+  text_en_is_translation: true
+
+- rule_id: CN-6.6.1-3
+  region: CN
+  source: GB 5768.3-2025
+  section: 6.6.1, 6.6.3
+  page: 51
+  element: area
+  marking_type: channelizing lines (chevron or diagonal infill)
+  text_zh: "导流线，用以表示车辆需按规定的路径行驶，不可以压线或越线行驶。……分隔同向交通的导流线颜色为白色，分隔对向交通的导流线颜色为黄色。导流线由轮廓线和填充线组成，轮廓线为单实线，填充线可分为V型线和斜纹线两种。……"
+  text_en: "Channelizing lines show that vehicles must follow the set path and may not drive on or across the lines. ... Channelizing lines separating traffic in the same direction are white; those separating opposing traffic are yellow. They consist of an outline and infill lines; the outline is a single solid line and the infill is either chevron (V-shaped) lines or diagonal lines. ..."
+  text_en_is_translation: true
+
+- rule_id: CN-6.8.1-2
+  region: CN
+  source: GB 5768.3-2025
+  section: 6.8.1, 6.8.2
+  page: 53
+  element: area
+  marking_type: grid (box) marking
+  text_zh: "网状线，用以表示禁止以任何原因停车的区域。设置于因上游车辆排队导致堵塞但需要紧急出入的交叉口、接入口。网状线颜色为白色。……"
+  text_en: "The grid marking shows an area where stopping for any reason is prohibited. It is placed at intersections and accesses that need emergency entry and exit but can be blocked by queues from upstream. It is white. ..."
+  text_en_is_translation: true
+
+- rule_id: CN-6.9.1
+  region: CN
+  source: GB 5768.3-2025
+  section: 6.9.1
+  page: 54
+  element: lane_type
+  marking_type: bus lane (5-1 broken white line and 公交)
+  text_zh: "公交车专用车道线，用以表示除公交车外其他车辆不应进入该车道，由白色虚线及白色文字组成。白色虚线的线段长度5m、间隔1m（也称为“5-1线”）……白色文字为“公交”或“快速公交”。该车道为限时段专用车道时，标注专用时间。……公交专用车道线应与公交专用车道标志、快速公交系统（BRT）专用车道标志配合设置。"
+  text_en: "The bus lane line shows that vehicles other than buses shall not enter the lane. It consists of a broken white line and white text. The broken line has 5 m segments and 1 m gaps (also called a \"5-1 line\") ... The text is \"公交\" (bus) or \"快速公交\" (bus rapid transit). Where the lane is reserved only at certain times, the times are marked. ... The bus lane line shall be used with bus lane or BRT lane signs."
+  text_en_is_translation: true
+
+- rule_id: CN-6.9.2
+  region: CN
+  source: GB 5768.3-2025
+  section: 6.9.2
+  page: 55
+  element: lane_type
+  marking_type: high-occupancy vehicle lane (5-1 broken white line and 多乘员)
+  text_zh: "多乘员车专用车道线，用以表示除多乘员车辆外其他车辆不应进入该车道，由白色虚线及白色文字组成。……白色文字为“多乘员”，也可施划人数规定。该车道为限时段专用车道时，应标注专用时间。……"
+  text_en: "The high-occupancy vehicle lane line shows that vehicles other than high-occupancy vehicles shall not enter the lane. It consists of a broken white line and white text. ... The text is \"多乘员\" (multiple occupants), and the minimum number of occupants may also be marked. Where the lane is reserved only at certain times, the times shall be marked. ..."
+  text_en_is_translation: true
+
+- rule_id: CN-6.10.1-4-V
+  region: CN
+  source: GB 5768.3-2025
+  section: 6.10.1, 6.10.4
+  page: 56
+  element: boundary
+  marking_type: variable guide lane line
+  text_zh: "……可变导向车道线，用以表示导向方向随需要可变的导向车道的位置。设置于路口驶入段。……施划了可变导向车道线的导向车道内不应设置导向箭头。可变导向车道线应与可变的车道行驶方向标志配合使用。……"
+  text_en: "... The variable guide lane line marks a guide lane whose direction can change as needed; it is placed on intersection approaches. ... No guide arrows shall be marked in a guide lane that has variable guide lane lines. Variable guide lane lines shall be used with variable lane-direction signs. ..."
+  text_en_is_translation: true
+
+- rule_id: CN-6.11.1-2
+  region: CN
+  source: GB 5768.3-2025
+  section: 6.11.1, 6.11.2
+  page: 58
+  element: lane_marking
+  marking_type: no U-turn / no turn marking (yellow arrow and yellow X)
+  text_zh: "禁止掉头、禁止转弯标记用于禁止车辆掉头、转弯的路口或区间。由黄色导向箭头和黄色叉形标记左右组合而成，黄色叉形标记位于左侧，如本车道为限时禁止掉头、禁止转弯车道，应在禁止掉头、禁止转弯标记下附加禁止掉头、禁止转弯时间段的黄色文字。"
+  text_en: "No U-turn and no turn markings are used at intersections or on sections where U-turns or turns are prohibited. They combine a yellow guide arrow with a yellow X placed on its left. If the prohibition in the lane applies only at certain times, yellow text giving the times shall be added below the marking."
+  text_en_is_translation: true
+
+- rule_id: CN-6.12.1-2
+  region: CN
+  source: GB 5768.3-2025
+  section: 6.12.1, 6.12.2
+  page: 60
+  element: boundary
+  marking_type: entrance and exit lines (wide broken 3-3 line)
+  text_zh: "出入口标线，用以为驶入或驶出车辆安全交汇提供引导。出入口标线由白色粗虚线（也称为“3-3线”）、粗实线、边缘线和V型线组成……其中粗虚线用以提示驾驶人注意车道选择，设置于主线车道与出入口连接部之间、主线车道与直出车道之间、主线车道与合流车道并行路段等处，驾驶人可驶入或驶出主线的位置。"
+  text_en: "Entrance and exit lines guide vehicles entering or leaving so that they merge safely. They consist of a wide broken white line (also called a \"3-3 line\"), a wide solid line, an edge line and chevron (V-shaped) lines ... The wide broken line reminds drivers to choose their lane; it is placed between the main line and the ramp connection, between the main line and a direct exit lane, and along sections where the main line runs beside a merging lane, that is, where drivers may enter or leave the main line."
+  text_en_is_translation: true
+
+- rule_id: CN-7.1.1
+  region: CN
+  source: GB 5768.3-2025
+  section: 7.1.1
+  page: 61
+  element: lane_type
+  marking_type: width transition (lane reduction)
+  text_zh: "路面（车行道）宽度渐变段标线，用以警告驾驶人路面宽度或车道数变化，需谨慎行车。"
+  text_en: "Carriageway width transition markings warn drivers that the road width or the number of lanes changes, so they must drive with care."
+  text_en_is_translation: true

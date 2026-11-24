@@ -1,0 +1,316 @@
+{
+  "summary": {
+    "n": 2,
+    "lane": {
+      "correct": 1,
+      "n": 2,
+      "acc": 0.5
+    },
+    "output2": {
+      "correct": 0,
+      "n": 2,
+      "acc": 0.0
+    },
+    "lane_count": {
+      "correct": 2,
+      "n": 2,
+      "acc": 1.0
+    },
+    "ego_index": {
+      "correct": 2,
+      "n": 2,
+      "acc": 1.0
+    },
+    "markings_exact": {
+      "correct": 2,
+      "n": 2,
+      "acc": 1.0
+    },
+    "lane_core": {
+      "correct": 1,
+      "n": 2,
+      "acc": 0.5
+    },
+    "markings_core_exact": {
+      "correct": 2,
+      "n": 2,
+      "acc": 1.0
+    },
+    "failed": 0,
+    "left_boundary": {
+      "correct": 2,
+      "n": 2,
+      "acc": 1.0
+    },
+    "left_color": {
+      "correct": 2,
+      "n": 2,
+      "acc": 1.0
+    },
+    "left_pattern": {
+      "correct": 2,
+      "n": 2,
+      "acc": 1.0
+    },
+    "left_curb": {
+      "correct": 2,
+      "n": 2,
+      "acc": 1.0
+    },
+    "left_role": {
+      "correct": 2,
+      "n": 2,
+      "acc": 1.0
+    },
+    "right_boundary": {
+      "correct": 1,
+      "n": 2,
+      "acc": 0.5
+    },
+    "right_color": {
+      "correct": 1,
+      "n": 2,
+      "acc": 0.5
+    },
+    "right_pattern": {
+      "correct": 1,
+      "n": 2,
+      "acc": 0.5
+    },
+    "right_curb": {
+      "correct": 1,
+      "n": 2,
+      "acc": 0.5
+    },
+    "right_role": {
+      "correct": 1,
+      "n": 2,
+      "acc": 0.5
+    },
+    "both_boundaries": {
+      "correct": 1,
+      "n": 2,
+      "acc": 0.5
+    },
+    "markings_added": 0,
+    "markings_missed": 0,
+    "markings_precision": 1.0,
+    "markings_recall": 1.0,
+    "added_by_token": {},
+    "added_transverse": 0,
+    "added_by_evidence": {},
+    "missed_by_token": {},
+    "actions": {
+      "change_left": {
+        "n": 1,
+        "correct": 1
+      },
+      "change_right": {
+        "n": 1,
+        "correct": 0
+      },
+      "go_straight": {
+        "n": 1,
+        "correct": 1
+      },
+      "turn_left": {
+        "n": 1,
+        "correct": 0
+      },
+      "turn_right": {
+        "n": 1,
+        "correct": 0
+      },
+      "u_turn": {
+        "n": 1,
+        "correct": 0
+      }
+    },
+    "contested": {
+      "n": 3,
+      "correct": 1
+    },
+    "unsafe_errors": 0,
+    "unsafe_by_action": {},
+    "over_cautious_errors": 0,
+    "contested_unsafe_errors": 0,
+    "prohibited_recall": {
+      "correct": 1,
+      "n": 4,
+      "acc": 0.25
+    },
+    "extra_decisions": 1,
+    "citations": {},
+    "citation_ids_with_brackets": 0,
+    "inconsistent_answers": 1,
+    "consistency_kinds": {
+      "u_turn decided without an arrow or prohibited-movement marking": 1
+    },
+    "boundary_evidence": {
+      "same": 4
+    },
+    "requests": 2,
+    "errors": 0,
+    "readable": {
+      "n": 2,
+      "of": 2
+    },
+    "cached": 0,
+    "usage": {
+      "input_tokens": 6952,
+      "cached_input_tokens": 0,
+      "output_tokens": 1662
+    },
+    "cost_usd": 0.0,
+    "latency_s": {
+      "mean": 47.28,
+      "max": 65.26
+    },
+    "elapsed_s": 94.8
+  },
+  "per_image": {
+    "bdd100k_val__c588eb5e-dfd59d8e": {
+      "image_id": "bdd100k_val__c588eb5e-dfd59d8e",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "citation": null,
+        "consistency": [
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "bdd100k_val__bd026bc5-9418706c": {
+      "image_id": "bdd100k_val__bd026bc5-9418706c",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [
+            "arrow:straight"
+          ],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "go_straight": true,
+          "turn_left": false,
+          "turn_right": false,
+          "u_turn": false
+        },
+        "contested": {
+          "change_left": false,
+          "change_right": false
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "turn_left": false,
+          "turn_right": false,
+          "u_turn": false
+        },
+        "extra_decisions": [],
+        "citation": null,
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+Step 1/2: workspace F:\数据集\bdd100k, images D:\Project\Reasning_Drive\data\extracted\bdd100k\mirror\val ...
+Note: the dataset folder changed from /Volumes/T9/Project/Reasning_Drive/data/extracted/bdd100k/mirror/val to D:\Project\Reasning_Drive\data\extracted\bdd100k\mirror\val.
+Candidate index already there (10000 images). Use --rebuild-index to read the dataset again.
+Updated bdd100k_val: 10000 images (1022 in the development pool, 8978 in the test pool).
+  labels: D:\Project\Reasoning_Drive\datasets\US\bdd100k
+  picked images, packages, results: F:\数据集\bdd100k
+Next: python main.py label --data "F:\数据集\bdd100k" label
+
+Step 2/2: opening the labeling tool at http://127.0.0.1:8766 (port 8766, so it can run next to the China tool on 8765; close this window to stop it) ...
+Step 1/2: workspace F:\数据集\bdd100k, images F:\Project\Reasning_Drive\data\extracted\bdd100k\mirror\val ...
+Candidate index already there (10000 images). Use --rebuild-index to read the dataset again.
+Updated bdd100k_val: 10000 images (1022 in the development pool, 8978 in the test pool).
+  labels: F:\Project\Reasoning_Drive\datasets\US\bdd100k
+  picked images, packages, results: F:\数据集\bdd100k
+Next: python main.py label --data "F:\数据集\bdd100k" label
+
+Step 2/2: opening the labeling tool at http://127.0.0.1:8766 (port 8766, so it can run next to the China tool on 8765; close this window to stop it) ...
+Step 1/2: workspace F:\数据集\bdd100k, images F:\Project\Reasning_Drive\data\extracted\bdd100k\mirror\val ...
+Candidate index already there (10000 images). Use --rebuild-index to read the dataset again.
+Updated bdd100k_val: 10000 images (1022 in the development pool, 8978 in the test pool).
+  labels: F:\Project\Reasoning_Drive\datasets\US\bdd100k
+  picked images, packages, results: F:\数据集\bdd100k
+Next: python main.py label --data "F:\数据集\bdd100k" label
+
+Step 2/2: opening the labeling tool at http://127.0.0.1:8766 (port 8766, so it can run next to the China tool on 8765; close this window to stop it) ...

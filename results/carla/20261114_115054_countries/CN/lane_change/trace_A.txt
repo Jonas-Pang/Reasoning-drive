@@ -1,0 +1,45 @@
+carla_Town03_lane_change | lane | Test A | gpt-6.1-sol
+------------------------------------------------------
+Step 1  Scene           An urban two-way road runs beneath an elevated structure, with no clearly visible
+                        intersection or lane ending ahead. My car is in the leftmost of two lanes traveling in
+                        its direction. (lanes 2, mine 1, full)
+Step 2  Left            Two continuous yellow lines form the left boundary, with opposing-direction roadway
+                        beyond and no curb at this boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 2  Right           A continuous white line forms the right boundary, with another same-direction lane
+                        beyond; the sidewalk curb is farther right, not at this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: The yellow center line on the left and a lane line on the right agree with
+                        my lane being lane 1 of two same-direction lanes. | roles: The double solid yellow
+                        lines fit an opposing-traffic separation, and the solid white line fits a same-
+                        direction lane boundary. | markings: No arrows, words, symbols, transverse lines, or
+                        waiting areas are visible in my lane. | unseen: No distant intersection layout or
+                        hidden lane-use marking has been inferred. | result: consistent
+Step 5  Rule            left_boundary: In China, a double solid yellow center line prohibits crossing into the
+                        opposing roadway.
+Step 5  Rule            right_boundary: In China, a solid white lane-dividing line prohibits crossing it to
+                        change lanes.
+Step 6  change_left     prohibited: The double solid yellow center line prohibits crossing the left boundary.
+Step 6  change_right    prohibited: The solid white lane line prohibits crossing the right boundary.
+Step 6  go_straight     not_applicable: No visible lane-use marking governs this action.
+Step 6  turn_left       not_applicable: No visible lane-use marking governs this action.
+Step 6  turn_right      not_applicable: No visible lane-use marking governs this action.
+Step 6  u_turn          not_applicable: No visible lane-use marking governs this action at a lane end; the
+                        center line governs crossing the left boundary instead.
+Step 6  enter_waiting_areanot_applicable: No left-turn waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         consistent: both boundary-crossing actions are prohibited, while no visible marking
+                        governs intersection movements or waiting-area entry.
+Advice                  Stay between the double yellow center line and solid white lane line; do not cross
+                        either in the visible stretch. No turn-lane guidance or stopping line is visible, so
+                        reassess lane choice and stopping requirements as the road ahead becomes clearer.
+Model's summary         **Assessing lane markings**  I need to figure out the right lane's solid line versus
+                        the edge. It looks like there's a right boundary with a solid white lane and then a
+                        thin curb edge. There’s a left double yellow solid line too, but no arrows. I see two
+                        lanes in total, and the right lane has a solid continuous white line. The output
+                        schema shouldn’t have a pattern field, so I’ll keep that in mind while processing
+                        this!
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4424, out 840, 14.7 s

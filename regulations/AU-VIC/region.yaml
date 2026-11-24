@@ -1,0 +1,38 @@
+# Victoria, Australia (AU-VIC). Its road rules copy the Australian Road Rules (AU) with local changes: only pages that differ from the model law are read.
+# Documents are downloaded and read by:
+#   python main.py regulations fetch AU-VIC
+#   python main.py regulations extract-all AU-VIC --real
+#   python main.py regulations accept AU-VIC        (after reading passages_draft.yaml)
+
+code: AU-VIC
+name: "Victoria, Australia"
+name_zh: "维多利亚州（澳大利亚）"
+driving_side: left
+parent: AU                      # takes AU's passages; its own passages (what it changed) override them by rule number
+status: draft                   # planned -> draft (extracted) -> in use (accepted)
+
+standard:
+  title: "Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)"
+  language: en
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf
+  source_pdf: regulations/inbox/AU-VIC/vic_road_safety_road_rules_2017
+  licence: "not checked yet: see the register's copyright page"
+
+documents:
+  - tag: rules
+    title: "Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)"
+    urls:
+      - {url: "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf", type: pdf}
+    find: {page: "https://www.legislation.vic.gov.au/in-force/statutory-rules/road-safety-road-rules-2017", pattern: "href=\"([^\"]+authorised\\.pdf)\"", type: pdf}
+    file: regulations/inbox/AU-VIC/vic_road_safety_road_rules_2017          # suffix (.pdf/.html/.rtf) = the type obtained
+    keywords: ["dividing line", "lane line", "marked lane", "turn line", "traffic lane arrow", "lane arrow", "edge line", "painted island", "continuous line", "broken line", "keep clear", "stop line", "give way line", "hook turn", "transit lane", "bus lane", "tram lane", "truck lane", "bicycle lane", "special purpose lane", "changing lanes", "change lanes", "turning lane", "slip lane", "median strip", "line of traffic", "merge", "overtak", "keep left", "u-turn"]
+    min_hits: 2
+    same_as: AU:arr            # pages copied word for word from it are not sent
+
+passages:
+  marking: passages_lane.yaml
+  lane: [passages_lane.yaml]
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

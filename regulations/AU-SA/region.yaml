@@ -1,0 +1,38 @@
+# South Australia, Australia (AU-SA). Its road rules copy the Australian Road Rules (AU) with local changes: only pages that differ from the model law are read.
+# Documents are downloaded and read by:
+#   python main.py regulations fetch AU-SA
+#   python main.py regulations extract-all AU-SA --real
+#   python main.py regulations accept AU-SA        (after reading passages_draft.yaml)
+
+code: AU-SA
+name: "South Australia, Australia"
+name_zh: "南澳大利亚州（澳大利亚）"
+driving_side: left
+parent: AU                      # takes AU's passages; its own passages (what it changed) override them by rule number
+status: draft                   # planned -> draft (extracted) -> in use (accepted)
+
+standard:
+  title: "Australian Road Rules (SA), current version"
+  language: en
+  source_url: https://www.legislation.sa.gov.au/_legislation-documents/lz/c/r/australian-road-rules/current/2014.205.auth.pdf
+  source_pdf: regulations/inbox/AU-SA/sa_australian_road_rules
+  licence: "not checked yet: see the register's copyright page"
+
+documents:
+  - tag: rules
+    title: "Australian Road Rules (SA), current version"
+    urls:
+      - {url: "https://www.legislation.sa.gov.au/_legislation-documents/lz/c/r/australian-road-rules/current/2014.205.auth.pdf", type: pdf}
+      - {url: "https://www.legislation.sa.gov.au/_legislation-documents/lz/c/r/australian-road-rules/current/2014.205.un.rtf", type: rtf}
+    file: regulations/inbox/AU-SA/sa_australian_road_rules          # suffix (.pdf/.html/.rtf) = the type obtained
+    keywords: ["dividing line", "lane line", "marked lane", "turn line", "traffic lane arrow", "lane arrow", "edge line", "painted island", "continuous line", "broken line", "keep clear", "stop line", "give way line", "hook turn", "transit lane", "bus lane", "tram lane", "truck lane", "bicycle lane", "special purpose lane", "changing lanes", "change lanes", "turning lane", "slip lane", "median strip", "line of traffic", "merge", "overtak", "keep left", "u-turn"]
+    min_hits: 2
+    same_as: AU:arr            # pages copied word for word from it are not sent
+
+passages:
+  marking: passages_lane.yaml
+  lane: [passages_lane.yaml]
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

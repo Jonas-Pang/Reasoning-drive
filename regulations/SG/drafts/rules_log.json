@@ -1,0 +1,35 @@
+{
+  "pdf": "sg_road_traffic_rules_r20.html",
+  "file_sha256": "baf807a457f91586424ea92335bd20f71904a11150489fb3827e6142da82a8f4",
+  "code": "SG",
+  "document": "rules",
+  "pages": 12,
+  "pages_read": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12
+  ],
+  "pages_same_as_reference": [],
+  "reference": "",
+  "requests": 3,
+  "mock": false,
+  "passages": 13,
+  "verified_quotes": 12,
+  "errors": [],
+  "usage": {
+    "input_tokens": 11105,
+    "output_tokens": 3561
+  },
+  "cost_usd": 0.0578,
+  "draft": "D:\\Project\\Reasoning_Drive\\regulations\\SG\\passages_draft.yaml",
+  "region_file": "D:\\Project\\Reasoning_Drive\\regulations\\SG\\region.yaml",
+  "time_utc": "2026-11-14T20:31:54Z"
+}

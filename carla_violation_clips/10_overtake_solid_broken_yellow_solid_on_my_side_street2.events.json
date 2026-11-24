@@ -1,0 +1,11 @@
+[
+ {
+  "t": 5.8,
+  "action": "change_left",
+  "truth": {
+   "US": "prohibited",
+   "CN": "prohibited"
+  },
+  "note": "overtook across the yellow_solid_dashed centre line in the opposite lane and came back"
+ }
+]

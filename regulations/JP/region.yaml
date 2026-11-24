@@ -1,0 +1,26 @@
+# Japan (JP). The rule text is read into passages by the extractor; until it is accepted the country is listed
+# but not used by any run until then:
+#   python main.py regulations extract --pdf regulations/inbox/jp_335M50004002003.xml --code JP --name "Japan" --driving-side left --language ja --title "道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）" --real
+#   python main.py regulations accept JP
+# The text comes from the e-Gov law API as XML; the meanings of lane lines and road markings are in its tables (別表第五, 別表第六).
+
+code: JP
+name: Japan
+name_zh: 日本
+driving_side: left
+status: draft                   # planned -> draft (extracted) -> in use (accepted)
+
+standard:
+  title: "道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）"
+  language: ja
+  source_url: https://laws.e-gov.go.jp/law/335M50004002003
+  source_pdf: regulations/inbox/jp_335M50004002003.xml
+  licence: "Japanese laws and orders are not protected by copyright (Copyright Act, Article 13)"
+
+passages:
+  marking: passages_lane.yaml
+  lane: [passages_lane.yaml]
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

@@ -1,0 +1,8 @@
+=== 20261115_173715 
+datasets\CN\culane\culane_test.lane_annotations.csv: 68 rows, 50 changed {'done': 50}
+datasets\CN\culane\culane_test.lanes.csv: 68 rows, 50 changed {'done': 50}
+datasets\CN\mapdr\mapdr.lane_annotations.csv: 167 rows, 139 changed {'draft': 139}
+datasets\CN\mapdr\mapdr.lanes.csv: 169 rows, 0 changed 
+datasets\US\bdd100k\bdd100k_val.lane_annotations.csv: 170 rows, 152 changed {'draft': 120, 'done': 32}; stop_first in 1: bdd100k_val__c4057c0c-000a6aaf
+datasets\US\bdd100k\bdd100k_val.lanes.csv: 170 rows, 32 changed {'done': 32}
+Total changed: 423   (backup: results\claude_logs\backup_straight_20261115_173715)

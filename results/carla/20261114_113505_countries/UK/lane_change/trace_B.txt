@@ -1,0 +1,48 @@
+carla_Town03_lane_change_mirrored | lane | Test B | gpt-6.1-sol
+---------------------------------------------------------------
+Step 1  Scene           An urban road runs beneath an elevated structure, with two lanes in each direction and
+                        no clearly visible intersection ahead. My car is in the right-hand lane of the left-
+                        hand carriageway. (lanes 2, mine 2, full)
+Step 2  Left            A continuous single white line separates my lane from another lane on the left; no
+                        curb forms this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           Two continuous yellow lines separate my lane from the opposing carriageway on the
+                        right; neither line has visible gaps, and there is no curb.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: The lane line on the left and centre boundary on the right agree with my
+                        lane being the second and rightmost of two lanes in my direction. | roles: The
+                        positions support the assigned roles, but the solid white lane divider and double
+                        yellow centre boundary do not match the broken white lane dividers and white centre
+                        markings described in the supplied UK passages. | markings: There are no visible
+                        arrows, words, symbols, transverse lines or waiting areas in my lane. | unseen: No
+                        hidden markings or intersection movements have been inferred; the distant continuation
+                        is not clearly resolved. | result: The observations are internally consistent, but the
+                        boundary designs are not covered by the supplied UK marking rules.
+Step 5  Rule            left_boundary: No supplied passage establishes the crossing restriction for this solid
+                        white ordinary lane divider; UK-Rule131 describes broken white dividers instead.
+Step 5  Rule            right_boundary: No supplied passage establishes the crossing restriction for a double
+                        yellow centre boundary; the supplied double-centre-line rules concern white lines.
+Step 6  change_left     not_determined: The solid white divider is visible, but its crossing permission is not
+                        established by the supplied rules.
+Step 6  change_right    not_determined: The double yellow centre boundary is visible, but its crossing
+                        permission is not established by the supplied UK rules.
+Step 6  go_straight     not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_left       not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_right      not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  u_turn          not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  enter_waiting_areanot_applicable: No left-turn waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         Neither boundary-crossing permission can be established without inventing a rule for
+                        these nonmatching markings; movement actions have no visible governing markings.
+Advice                  Stay within the current lane rather than assuming either solid boundary may be
+                        crossed, especially the yellow boundary beside opposing traffic. No visible arrows
+                        establish turning lanes, and no stop line is visible.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation none_needed, contradictions ['change_left
+                        not_determined with full evidence', 'change_right not_determined with full evidence']
+Tokens                  in 6305, out 1015, 18.85 s

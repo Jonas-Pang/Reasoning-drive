@@ -1,0 +1,167 @@
+# Other models for the lane tests, chosen with  --api <profile>  (python main.py lane run ... --api local_qwen35_9b).
+# Added by Claude, 2026-11-16. configs/api.yaml (gpt-6.1-sol) stays the default and is not changed by these.
+#
+# Local models run on this computer with Ollama (https://ollama.com): no key, no cost, nothing is sent out.
+# Download a model once with  ollama pull <name>  (scripts\claude_local_setup.bat does it for the three below; Ollama
+# and the models are on D:, D:\Ollama and D:\Ollama\models).
+# The three models (newest small open models that run on a 6 GB RTX 2060, chosen 2026-11-16):
+#   qwen3.5:9b  Qwen3.5-9B, Alibaba, March 2026        gemma4:12b  Gemma 4 12B, Google, June 2026
+#   qwen3.5:4b  Qwen3.5-4B, Alibaba, March 2026 (the same family, smaller: does size change the effect of the rules?)
+# Each profile has its own frozen protocol (protocol_file), so the test images of a local model are frozen and run
+# separately from gpt-6.1-sol. The same settings for every test (A, B, C, D, R) of a profile: change nothing between them.
+#
+# Keys: name (Ollama model tag), base_url, temperature (0 = the same answer every time; the answer length limit is
+# lane.max_output_tokens of experiment.yaml, as for gpt-6.1-sol),
+# num_ctx (context window; the prompt with the rule passages is about 7-9k tokens plus the image), think (the model's
+# thinking mode; off for all three so that they are comparable and fast), quantization (recorded with every result),
+# timeout_s (one answer on a 6 GB graphics card can take minutes), parallel (1: one request at a time on one GPU).
+
+profiles:
+  local_qwen35_9b:
+    provider: ollama
+    base_url: http://127.0.0.1:11434
+    name: qwen3.5:9b
+    quantization: ollama default (Q4_K_M)
+    temperature: 0
+    seed: 6216
+    reasoning_effort: null
+    image_detail: null
+    num_ctx: 16384
+    think: false
+    timeout_s: 900
+    max_retries: 2
+    parallel: 3
+    protocol_file: configs/lane_protocol__local_qwen35_9b.json
+
+  local_gemma4_12b:
+    provider: ollama
+    base_url: http://127.0.0.1:11434
+    name: gemma4:12b
+    quantization: ollama default (Q4_K_M)
+    temperature: 0
+    seed: 6216
+    reasoning_effort: null
+    image_detail: null
+    num_ctx: 16384
+    think: false
+    timeout_s: 900
+    max_retries: 2
+    parallel: 3
+    protocol_file: configs/lane_protocol__local_gemma4_12b.json
+
+  local_qwen35_4b:
+    provider: ollama
+    base_url: http://127.0.0.1:11434
+    name: qwen3.5:4b
+    quantization: ollama default (Q4_K_M)
+    temperature: 0
+    seed: 6216
+    reasoning_effort: null
+    image_detail: null
+    num_ctx: 16384
+    think: false
+    timeout_s: 900
+    max_retries: 2
+    parallel: 3
+    protocol_file: configs/lane_protocol__local_qwen35_4b.json
+
+# ---- HiPerGator (UF), added 2026-11-16 -------------------------------------------------------------------------------
+# The same Ollama models on a HiPerGator GPU (hpg/run_lane.sbatch starts Ollama there). Own profiles and protocols:
+# another machine and Ollama version than the laptop. UF policy: no models from countries of concern on UF computing
+# resources (https://docs.rc.ufl.edu/software/apps/ollama), so only Google's Gemma 4 here, no Qwen.
+#   gemma4:e4b (small)   gemma4:12b (medium)   gemma4:31b (large, about 20 GB: B200 or a 24 GB L4)
+  hpg_gemma4_e4b:
+    provider: ollama
+    base_url: http://127.0.0.1:11434
+    name: gemma4:e4b
+    temperature: 0
+    seed: 6216
+    reasoning_effort: null
+    image_detail: null
+    num_ctx: 16384
+    think: false
+    timeout_s: 600
+    max_retries: 2
+    parallel: 3
+    num_thread: 2          # the course QoS gives 2 cores per user; Ollama would otherwise start 128 threads
+    protocol_file: configs/lane_protocol__hpg_gemma4_e4b.json
+
+  hpg_gemma4_12b:
+    provider: ollama
+    base_url: http://127.0.0.1:11434
+    name: gemma4:12b
+    temperature: 0
+    seed: 6216
+    reasoning_effort: null
+    image_detail: null
+    num_ctx: 16384
+    think: false
+    timeout_s: 600
+    max_retries: 2
+    parallel: 3
+    num_thread: 2          # the course QoS gives 2 cores per user; Ollama would otherwise start 128 threads
+    protocol_file: configs/lane_protocol__hpg_gemma4_12b.json
+
+  hpg_gemma4_31b:
+    provider: ollama
+    base_url: http://127.0.0.1:11434
+    name: gemma4:31b
+    temperature: 0
+    seed: 6216
+    reasoning_effort: null
+    image_detail: null
+    num_ctx: 16384
+    think: false
+    timeout_s: 900
+    max_retries: 2
+    parallel: 3
+    num_thread: 2          # the course QoS gives 2 cores per user; Ollama would otherwise start 128 threads
+    protocol_file: configs/lane_protocol__hpg_gemma4_31b.json
+
+# ---- Llama 4 Scout (Meta, 109B total / 17B active MoE, text+image), added by Claude 2026-11-17 --------------------
+  hpg_llama4_scout:
+    provider: ollama
+    base_url: http://127.0.0.1:11434
+    name: llama4:scout
+    temperature: 0
+    seed: 6216
+    reasoning_effort: null
+    image_detail: null
+    num_ctx: 16384
+    think: false
+    timeout_s: 900
+    max_retries: 2
+    parallel: 3
+    num_thread: 2
+    protocol_file: configs/lane_protocol__hpg_llama4_scout.json
+
+# ---- UF NaviGator Toolkit (LiteLLM gateway on HiPerGator), added by Claude 2026-11-17 ---------------------------------
+# OpenAI-compatible chat completions; the key is the owner's NaviGator virtual key in .env as NAVIGATOR_API_KEY
+# (key name reasoning-drive-lane, $20 cap). Models hosted by UF (local to UF, not cloud).
+  nav_muse_glimmer_30b:
+    provider: openai_chat
+    base_url: https://api.navigator.ai.ufl.edu/v1
+    api_key_env: NAVIGATOR_API_KEY
+    name: meta-muse-glimmer-30b
+    temperature: 0
+    seed: 6216
+    reasoning_effort: null
+    image_detail: null
+    timeout_s: 600
+    max_retries: 3
+    parallel: 4
+    protocol_file: configs/lane_protocol__nav_muse_glimmer_30b.json
+
+  nav_gemma4_31b_bf16:
+    provider: openai_chat
+    base_url: https://api.navigator.ai.ufl.edu/v1
+    api_key_env: NAVIGATOR_API_KEY
+    name: gemma-4-31b-it
+    temperature: 0
+    seed: 6216
+    reasoning_effort: null
+    image_detail: null
+    timeout_s: 600
+    max_retries: 3
+    parallel: 4
+    protocol_file: configs/lane_protocol__nav_gemma4_31b_bf16.json

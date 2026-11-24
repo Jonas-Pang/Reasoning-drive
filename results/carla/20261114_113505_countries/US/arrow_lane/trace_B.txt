@@ -1,0 +1,50 @@
+carla_Town03_arrow_lane | lane | Test B | gpt-6.1-sol
+-----------------------------------------------------
+Step 1  Scene           An urban street approaches an intersection beneath an elevated structure. My car is in
+                        the leftmost of two visible same-direction lanes. (lanes 2, mine 1, full)
+Step 2  Left            A single solid white line runs along the left side of my lane, with a narrow paved
+                        margin, a raised curb and sidewalk beyond.
+                        white solid, curb yes, edge_line, evidence full
+Step 2  Right           A single solid white line separates my lane from another traffic lane on the right.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        arrow:left (full): A white bent-stem arrow has one arrowhead pointing left.
+Step 4  Cross-check     position: Two lanes and ego position 1 agree with a roadway edge on the left and a
+                        same-direction lane line on the right. | roles: The solid white right lane line fits
+                        its role. The left line is visibly white despite being at the left roadway edge; its
+                        color is not changed to yellow by inference. | markings: The left-only arrow is
+                        compatible with a leftmost turn lane separated from the adjacent lane by a solid white
+                        line. | unseen: No stop line, additional arrow, word marking or waiting area is
+                        clearly visible; none is inferred. | result: consistent
+Step 5  Rule            left_boundary: The supplied passages do not specifically authorize crossing this white
+                        left edge or a raised curb; the physical curb defines a roadway limit that my car must
+                        not cross.
+Step 5  Rule            right_boundary: The single solid white lane line discourages changing right but does
+                        not prohibit it. [US-3B.06-05-06] "Where crossing the lane line markings with care is
+                        not discouraged or prohibited, the lane line markings shall consist of a normal width
+                        broken white line. Wher"
+Step 5  Rule            arrow:left: The left-only lane-use arrow permits a left turn and excludes straight,
+                        right-turn and U-turn movements from this lane. [US-3B.23-01] "Lane-use arrow markings
+                        are used to indicate the mandatory or permissible movements in certain lanes and in
+                        two-way left-turn lanes."
+Step 6  change_left     prohibited: The raised curb at the left roadway edge prevents leaving the lane to the
+                        left.
+Step 6  change_right    allowed: US-3B.06-05-06 only discourages crossing the single solid white lane line.
+Step 6  go_straight     prohibited: The left-only arrow does not include a straight movement.
+Step 6  turn_left       allowed: The left-only arrow permits turning left under US-3B.23-01.
+Step 6  turn_right      prohibited: The left-only arrow does not include a right turn.
+Step 6  u_turn          prohibited: The arrow shows a left turn, not a U-turn.
+Step 6  enter_waiting_areanot_applicable: No marked waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         consistent
+Advice                  Use this lane for a left turn. For another movement, leave this lane safely before the
+                        intersection; crossing the right solid white line is discouraged, and the adjacent
+                        lane's permitted movements must be checked.
+Model's summary         **Identifying road markings**  I need to identify the left arrow, which appears with
+                        its stem bent to the right. There’s a one-way lane with a solid white edge at the left
+                        curb, and a narrow gap beside it. On the right, there's a solid white lane line
+                        marking two lanes. I can't see any stops, and I have to respond without including any
+                        patterns or observations that don’t fit the schema.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:left'], missed []), actions None, unsafe [], citation in_pack_not_accepted,
+                        contradictions []
+Tokens                  in 9598, out 940, 13.45 s

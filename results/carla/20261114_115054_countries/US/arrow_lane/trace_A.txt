@@ -1,0 +1,42 @@
+carla_Town03_arrow_lane | lane | Test A | gpt-6.1-sol
+-----------------------------------------------------
+Step 1  Scene           An urban street approaches an intersection beneath an elevated structure. My car is in
+                        the left lane of two visible lanes traveling in the same direction. (lanes 2, mine 1,
+                        full)
+Step 2  Left            A single solid white line runs along the left side of my lane beside a raised curb and
+                        sidewalk.
+                        white solid, curb yes, edge_line, evidence full
+Step 2  Right           A single continuous white line separates my lane from another traffic lane on the
+                        right.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        arrow:left (full): A white arrow has a shaft bending left and a single left-pointing
+                        arrowhead.
+Step 4  Cross-check     position: The left roadway edge and the lane divider on the right agree with my car
+                        occupying lane 1 of 2. | roles: The white edge line beside the curb and the white
+                        divider between same-direction lanes fit their assigned roles. | markings: The left-
+                        turn arrow is consistent with the leftmost lane; no conflicting word, arrow, or
+                        waiting-area marking is visible. | unseen: No hidden markings or boundary attributes
+                        have been inferred; no stop line or crosswalk is visibly identifiable. | result:
+                        consistent
+Step 5  Rule            left_boundary: The raised curb forms the roadway edge and prohibits driving out of the
+                        lane across this side onto the sidewalk.
+Step 5  Rule            right_boundary: In the United States, a single solid white lane divider discourages,
+                        but does not by itself prohibit, changing lanes across it.
+Step 5  Rule            arrow:left: The left-only lane-use arrow directs traffic in this lane to turn left
+                        rather than proceed straight, turn right, or make a U-turn.
+Step 6  change_left     prohibited: The raised curb prohibits leaving the roadway across the left boundary.
+Step 6  change_right    allowed: The single solid white lane divider discourages crossing but does not itself
+                        prohibit it.
+Step 6  go_straight     prohibited: The left-only arrow does not permit a straight movement from this lane.
+Step 6  turn_left       allowed: The left-pointing lane-use arrow permits a left turn.
+Step 6  turn_right      prohibited: The left-only arrow does not permit a right turn from this lane.
+Step 6  u_turn          prohibited: The left-only arrow does not designate a U-turn movement.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         consistent
+Advice                  Use this lane for a left turn; for another movement, select an appropriately marked
+                        lane before the intersection. Crossing the solid white divider is discouraged, so
+                        change lanes only if necessary and safe; do not cross the left curb.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:left'], missed []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4426, out 973, 17.95 s

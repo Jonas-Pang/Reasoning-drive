@@ -1,0 +1,10 @@
+# Dashboards loaded from files (deploy/grafana/dashboards, mounted at /etc/grafana/dashboards).
+apiVersion: 1
+providers:
+  - name: reasoning-driving
+    folder: Reasoning Driving
+    type: file
+    disableDeletion: true
+    allowUiUpdates: false
+    options:
+      path: /etc/grafana/dashboards

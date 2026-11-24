@@ -1,0 +1,1 @@
+5. Rules (field "element_rules"): for each boundary and each marking you listed, find the rule passage below that applies to it (the passages are the traffic rules of the region where the photo was taken), and say in one sentence what it allows or prohibits for my car. Use the passages, not memory; if no passage covers an element, say so and decide from the definitions below.

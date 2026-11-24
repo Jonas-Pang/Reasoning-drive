@@ -1,0 +1,49 @@
+# Singapore (SG). Road markings are prescribed by the Road Traffic (Traffic Signs) Rules; the Highway Code and the Road
+# Traffic Rules say how drivers use lanes. All three are read from Singapore Statutes Online (whole-document view):
+#   python main.py regulations fetch SG
+#   python main.py regulations extract-all SG --real
+#   python main.py regulations accept SG        (after reading passages_draft.yaml)
+
+code: SG
+name: Singapore
+name_zh: 新加坡
+driving_side: left
+status: planned                 # planned -> draft (extracted) -> in use (accepted)
+
+standard:
+  title: "Road Traffic (Traffic Signs) Rules (R 33), Highway Code (R 11), Road Traffic Rules (R 20), under the Road Traffic Act 1961"
+  language: en
+  source_url: https://sso.agc.gov.sg/SL/RTA1961-R33
+  source_pdf: regulations/inbox/SG/sg_traffic_signs_rules_r33
+  licence: "not checked yet: see Singapore Statutes Online terms of use"
+
+documents:
+  - tag: signs
+    title: "Road Traffic (Traffic Signs) Rules (R 33)"
+    urls:
+      - {url: "https://sso.agc.gov.sg/SL/RTA1961-R33?WholeDoc=1", type: html}
+    find: {page: "https://sso.agc.gov.sg/SL/RTA1961-R33?WholeDoc=1", pattern: "\"(/SL/RTA1961-R33\\?DocDate=\\d+(?:&amp;ValidDate=\\d+)?&amp;ViewType=Pdf[^\"]*)\"", type: pdf}
+    prefer_find: true            # the PDF of the current version (the web page loads most of the text only in a browser)
+    file: regulations/inbox/SG/sg_traffic_signs_rules_r33          # suffix = the type obtained
+  - tag: highway_code
+    title: "Highway Code (R 11)"
+    urls:
+      - {url: "https://sso.agc.gov.sg/SL/RTA1961-R11?WholeDoc=1", type: html}
+    find: {page: "https://sso.agc.gov.sg/SL/RTA1961-R11?WholeDoc=1", pattern: "\"(/SL/RTA1961-R11\\?DocDate=\\d+(?:&amp;ValidDate=\\d+)?&amp;ViewType=Pdf[^\"]*)\"", type: pdf}
+    prefer_find: true            # the PDF of the current version (the web page loads most of the text only in a browser)
+    file: regulations/inbox/SG/sg_highway_code_r11
+  - tag: rules
+    title: "Road Traffic Rules (R 20)"
+    urls:
+      - {url: "https://sso.agc.gov.sg/SL/RTA1961-R20?WholeDoc=1", type: html}
+    find: {page: "https://sso.agc.gov.sg/SL/RTA1961-R20?WholeDoc=1", pattern: "\"(/SL/RTA1961-R20\\?DocDate=\\d+(?:&amp;ValidDate=\\d+)?&amp;ViewType=Pdf[^\"]*)\"", type: pdf}
+    prefer_find: true            # the PDF of the current version (the web page loads most of the text only in a browser)
+    file: regulations/inbox/SG/sg_road_traffic_rules_r20
+
+passages:
+  marking: passages_lane.yaml
+  lane: [passages_lane.yaml]
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

@@ -1,0 +1,45 @@
+carla_Town03_lane_change | lane | Test A | gpt-6.1-sol
+------------------------------------------------------
+Step 1  Scene           An urban two-way street runs beneath an elevated structure. My car is in the leftmost
+                        of two visible lanes in its direction; the distant intersection or road termination is
+                        not clearly resolved. (lanes 2, mine 1, full)
+Step 2  Left            Two continuous yellow lines separate my lane from opposing traffic on the left; no
+                        curb borders this boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 2  Right           A continuous white line separates my lane from another paved lane in the same
+                        direction on the right; the sidewalk curb is beyond that adjacent lane.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: Two same-direction lanes and ego lane index 1 agree with a center line on
+                        the left and a lane divider on the right. | roles: Double solid yellow fits an
+                        opposing-traffic center line, and solid white fits a same-direction lane divider. |
+                        markings: No guidance arrows, words, symbols, waiting areas, or transverse markings
+                        are visible in my lane. | unseen: No distant intersection layout or hidden lane-use
+                        marking has been inferred. | result: consistent
+Step 5  Rule            left_boundary: The double solid yellow center line prohibits crossing into opposing
+                        traffic to change lanes or pass.
+Step 5  Rule            right_boundary: A single solid white lane divider discourages, but does not generally
+                        prohibit, changing lanes across it when safe.
+Step 6  change_left     prohibited: The double solid yellow center line prohibits crossing left for a lane
+                        change or passing.
+Step 6  change_right    allowed: The single solid white lane divider discourages rather than prohibits a safe
+                        lane change.
+Step 6  go_straight     not_applicable: No visible marking governs this action.
+Step 6  turn_left       not_applicable: No visible marking governs this action.
+Step 6  turn_right      not_applicable: No visible marking governs this action.
+Step 6  u_turn          not_applicable: No visible marking governs this action.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         consistent
+Advice                  Stay right of the double yellow lines and avoid unnecessary changes across the solid
+                        white divider; move right only when safe. No visible arrows establish intersection
+                        movements, so verify the upcoming layout and controls before choosing a turn.
+Model's summary         **Analyzing lane markings**  I need to assess the lane situation carefully. There's a
+                        solid white line likely separating two lanes going the same direction, with a white
+                        edge at the curb. I'll classify the solid white line as one that discourages crossing.
+                        There are no arrows present, and the scene at the distant end is unclear. I want to
+                        ensure that I accurately count the lanes and observe the boundaries without relying on
+                        any specific patterns.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4426, out 810, 13.2 s

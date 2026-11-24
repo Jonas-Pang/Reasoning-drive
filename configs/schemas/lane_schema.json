@@ -1,0 +1,182 @@
+{
+  "_comment": "Allowed values of the lane-level task (Milestone 5): the ego lane as a whole, both of its boundaries and the guidance markings inside it. The labeling tool (lane mode) and the answer schema of prompts/lane_v1 read this file. Values describe what can be seen; what they mean comes from the rule passages. Directions are seen from my car, looking forward.",
+  "version": "lane-1",
+  "sides": [
+    "left",
+    "right"
+  ],
+  "boundary": {
+    "color": [
+      "white",
+      "yellow",
+      "other",
+      "none"
+    ],
+    "pattern": [
+      "solid",
+      "dashed",
+      "dotted",
+      "double_solid",
+      "double_dashed",
+      "solid_dashed",
+      "none",
+      "zigzag"
+    ],
+    "near_line": [
+      "solid",
+      "dashed",
+      "not_applicable"
+    ],
+    "curb": [
+      "yes",
+      "no"
+    ],
+    "role": [
+      "lane_line",
+      "center_line",
+      "edge_line",
+      "special_lane_line",
+      "other",
+      "unknown"
+    ]
+  },
+  "evidence": [
+    "full",
+    "partial",
+    "insufficient"
+  ],
+  "marking_tokens": [
+    "arrow:straight",
+    "arrow:left",
+    "arrow:right",
+    "arrow:straight_left",
+    "arrow:straight_right",
+    "arrow:left_right",
+    "arrow:u_turn",
+    "arrow:left_u_turn",
+    "arrow:straight_u_turn",
+    "arrow:merge_left",
+    "arrow:merge_right",
+    "arrow:two_way_left",
+    "no_turn:u_turn",
+    "no_turn:left",
+    "no_turn:right",
+    "text:only",
+    "text:bus",
+    "text:hov",
+    "text:stop",
+    "text:keep_clear",
+    "text:speed_limit",
+    "text:other",
+    "symbol:hov_diamond",
+    "symbol:bike",
+    "symbol:other",
+    "area:left_turn_waiting",
+    "area:two_way_left_turn_lane",
+    "area:grid",
+    "area:channelizing",
+    "line:stop_line",
+    "line:yield_line",
+    "line:stop_yield",
+    "line:crosswalk"
+  ],
+  "marking_groups": {
+    "arrow": "lane-use arrow painted in my lane (two_way_left = the pair of opposite left-turn arrows of a two-way left-turn lane)",
+    "no_turn": "a prohibited-movement marking in my lane (China: yellow arrow with a yellow X)",
+    "text": "words painted in my lane (ONLY, BUS ONLY or 公交, HOV or 多乘员, STOP, KEEP CLEAR, a speed number, other words)",
+    "symbol": "a symbol painted in my lane (HOV diamond, bicycle symbol, other)",
+    "area": "a marked area my lane leads into, borders or contains (China: left-turn waiting area ahead of my lane; United States: two-way left-turn lane directly to the left of my lane; grid or box; chevron or diagonal channelizing area)",
+    "line": "a line across my lane (stop line, yield line, China stop-and-yield line with the character 停, crosswalk)"
+  },
+  "movement_arrows": {
+    "arrow:straight": [
+      "go_straight"
+    ],
+    "arrow:left": [
+      "turn_left"
+    ],
+    "arrow:right": [
+      "turn_right"
+    ],
+    "arrow:straight_left": [
+      "go_straight",
+      "turn_left"
+    ],
+    "arrow:straight_right": [
+      "go_straight",
+      "turn_right"
+    ],
+    "arrow:left_right": [
+      "turn_left",
+      "turn_right"
+    ],
+    "arrow:u_turn": [
+      "u_turn"
+    ],
+    "arrow:left_u_turn": [
+      "turn_left",
+      "u_turn"
+    ],
+    "arrow:straight_u_turn": [
+      "go_straight",
+      "u_turn"
+    ]
+  },
+  "no_turn": {
+    "no_turn:u_turn": "u_turn",
+    "no_turn:left": "turn_left",
+    "no_turn:right": "turn_right"
+  },
+  "actions": [
+    "change_left",
+    "change_right",
+    "go_straight",
+    "turn_left",
+    "turn_right",
+    "u_turn",
+    "enter_waiting_area"
+  ],
+  "action_groups": {
+    "change": [
+      "change_left",
+      "change_right"
+    ],
+    "movement": [
+      "go_straight",
+      "turn_left",
+      "turn_right",
+      "u_turn"
+    ],
+    "waiting": [
+      "enter_waiting_area"
+    ]
+  },
+  "action_values": [
+    "allowed",
+    "stop_first",
+    "prohibited",
+    "not_determined",
+    "not_applicable"
+  ],
+  "stop_tokens": [
+    "text:stop",
+    "line:stop_yield"
+  ],
+  "_stop_first": "stop_first = allowed only after a full stop (a STOP word or the China stop-and-yield line with 停 in my lane): every movement the lane allows becomes stop_first.",
+  "lane_status": [
+    "kept",
+    "waiting",
+    "conflict",
+    "done",
+    "excluded"
+  ],
+  "region_only_patterns": {
+    "zigzag": {
+      "regions": [
+        "UK"
+      ],
+      "text": "zig-zag lines",
+      "_comment": "2026-11-17 (owner): a UK marking; named only in the UK prompt and answer schema"
+    }
+  }
+}

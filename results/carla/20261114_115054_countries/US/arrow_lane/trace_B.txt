@@ -1,0 +1,48 @@
+carla_Town03_arrow_lane | lane | Test B | gpt-6.1-sol
+-----------------------------------------------------
+Step 1  Scene           An urban street approaches an intersection beneath an elevated structure. My car is in
+                        the left of two visible same-direction lanes, with a left-turn arrow ahead. (lanes 2,
+                        mine 1, full)
+Step 2  Left            A continuous solid white line runs beside the raised left curb, with a sidewalk and
+                        buildings beyond.
+                        white solid, curb yes, edge_line, evidence full
+Step 2  Right           A single solid white line separates my lane from another traffic lane on the right.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        arrow:left (full): A white bent arrow has a single head pointing left.
+Step 4  Cross-check     position: The left roadway edge and right lane divider agree with my lane being lane 1
+                        of 2. | roles: The white right lane divider fits separation of same-direction traffic.
+                        The left edge paint visibly appears white, which is atypical for a left roadway edge
+                        under the supplied US rules; it has not been relabeled yellow. | markings: The left-
+                        turn arrow is compatible with the leftmost lane; no conflicting words, arrows, or
+                        waiting-area markings are visible. | unseen: No stop line, crosswalk, or waiting area
+                        has been inferred from the intersection context. | result: Consistent observations,
+                        with an atypical white left-edge marking.
+Step 5  Rule            left_boundary: No supplied passage governs crossing this raised curb; as a physical
+                        roadway boundary, it is not a traversable lane-change route.
+Step 5  Rule            right_boundary: The single solid white lane line discourages crossing but does not
+                        prohibit a careful lane change. [US-3B.06-05-06] "Where crossing the lane line
+                        markings with care is not discouraged or prohibited, the lane line markings shall
+                        consist of a normal width broken white line. Wher"
+Step 5  Rule            arrow:left: The left-only lane-use arrow permits a left turn and excludes straight,
+                        right-turn, and U-turn movements from this lane. [US-3B.23-01] "Lane-use arrow
+                        markings are used to indicate the mandatory or permissible movements in certain lanes
+                        and in two-way left-turn lanes."
+Step 6  change_left     prohibited: The raised curb physically bounds the lane; crossing it is not a lane-
+                        change route.
+Step 6  change_right    allowed: US-3B.06-05-06 discourages, but does not prohibit, crossing the single solid
+                        white lane divider.
+Step 6  go_straight     prohibited: The left-only arrow does not show a straight movement.
+Step 6  turn_left       allowed: The left-turn arrow permits this movement under US-3B.23-01.
+Step 6  turn_right      prohibited: The left-only arrow does not show a right turn.
+Step 6  u_turn          prohibited: The left-only arrow does not show a U-turn.
+Step 6  enter_waiting_areanot_applicable: No marked waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         Consistent: the solid white lane divider only discourages crossing, the curb blocks
+                        leftward departure, and the arrow governs intersection movements only.
+Advice                  Use this lane for the marked left turn. For another movement, select an appropriately
+                        marked lane beforehand; crossing the solid white divider is discouraged, and the
+                        adjacent lane's permitted movements must be checked.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:left'], missed []), actions None, unsafe [], citation in_pack_not_accepted,
+                        contradictions []
+Tokens                  in 9598, out 1046, 17.52 s

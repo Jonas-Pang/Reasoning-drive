@@ -1,0 +1,5 @@
+{
+  "_comment": "Region rule table (Milestone 3, 6.1). Used ONLY to prefill the action columns and accepted rule IDs in the labeling tool, so labels stay consistent. It is never used to check or correct model answers. Every prefilled value can be changed in the tool. An empty string means the tool will not guess: the labeler must choose. Keys: marking_type, marking_type|dashed_side, or arrow|arrow_type. Default when the rules are silent (fixed before any model is run): a longitudinal line allows an action unless a passage prohibits it ('discouraged' is not 'prohibited'); an arrow allows the movements it shows and prohibits the others. 'contested' lists cells whose value comes from a project convention rather than from a passage's own words (US: single solid white line crossing; U-turn from a lane with a left-type arrow); the evaluation reports them separately from the main score.",
+  "version": "1",
+  "partial_evidence": "When the expected evidence is partial or insufficient, every action that would be allowed or prohibited is prefilled as not_determined instead."
+}

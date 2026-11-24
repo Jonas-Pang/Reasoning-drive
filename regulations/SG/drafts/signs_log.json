@@ -1,0 +1,37 @@
+{
+  "pdf": "sg_traffic_signs_rules_r33.html",
+  "file_sha256": "6356ddf310659c1613e9a7ebfd08809e7dfc7aec057297c1076360cf0deaec68",
+  "code": "SG",
+  "document": "signs",
+  "pages": 15,
+  "pages_read": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "pages_same_as_reference": [],
+  "reference": "",
+  "requests": 4,
+  "mock": false,
+  "passages": 25,
+  "verified_quotes": 25,
+  "errors": [],
+  "usage": {
+    "input_tokens": 13627,
+    "output_tokens": 6620
+  },
+  "cost_usd": 0.0935,
+  "draft": "D:\\Project\\Reasoning_Drive\\regulations\\SG\\passages_draft.yaml",
+  "region_file": "D:\\Project\\Reasoning_Drive\\regulations\\SG\\region.yaml",
+  "time_utc": "2026-11-14T20:31:12Z"
+}

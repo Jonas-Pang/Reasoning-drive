@@ -1,0 +1,2389 @@
+{
+  "summary": {
+    "n": 25,
+    "lane": {
+      "correct": 1,
+      "n": 25,
+      "acc": 0.04
+    },
+    "output2": {
+      "correct": 7,
+      "n": 21,
+      "acc": 0.333
+    },
+    "lane_count": {
+      "correct": 12,
+      "n": 22,
+      "acc": 0.545
+    },
+    "ego_index": {
+      "correct": 8,
+      "n": 22,
+      "acc": 0.364
+    },
+    "markings_exact": {
+      "correct": 1,
+      "n": 25,
+      "acc": 0.04
+    },
+    "lane_core": {
+      "correct": 2,
+      "n": 25,
+      "acc": 0.08
+    },
+    "markings_core_exact": {
+      "correct": 4,
+      "n": 25,
+      "acc": 0.16
+    },
+    "failed": 0,
+    "left_boundary": {
+      "correct": 12,
+      "n": 25,
+      "acc": 0.48
+    },
+    "left_color": {
+      "correct": 20,
+      "n": 25,
+      "acc": 0.8
+    },
+    "left_pattern": {
+      "correct": 16,
+      "n": 25,
+      "acc": 0.64
+    },
+    "left_curb": {
+      "correct": 23,
+      "n": 25,
+      "acc": 0.92
+    },
+    "left_role": {
+      "correct": 14,
+      "n": 25,
+      "acc": 0.56
+    },
+    "right_boundary": {
+      "correct": 7,
+      "n": 25,
+      "acc": 0.28
+    },
+    "right_color": {
+      "correct": 19,
+      "n": 25,
+      "acc": 0.76
+    },
+    "right_pattern": {
+      "correct": 11,
+      "n": 25,
+      "acc": 0.44
+    },
+    "right_curb": {
+      "correct": 21,
+      "n": 25,
+      "acc": 0.84
+    },
+    "right_role": {
+      "correct": 13,
+      "n": 25,
+      "acc": 0.52
+    },
+    "both_boundaries": {
+      "correct": 6,
+      "n": 25,
+      "acc": 0.24
+    },
+    "markings_added": 88,
+    "markings_missed": 8,
+    "markings_precision": 0.033,
+    "markings_recall": 0.273,
+    "added_by_token": {
+      "arrow:straight": 17,
+      "line:stop_line": 11,
+      "area:left_turn_waiting": 8,
+      "area:two_way_left_turn_lane": 8,
+      "line:stop_yield": 8,
+      "line:yield_line": 8,
+      "text:stop": 6,
+      "text:keep_clear": 3,
+      "arrow:left": 2,
+      "area:grid": 2,
+      "arrow:straight_left": 2,
+      "arrow:right": 1,
+      "text:other": 1,
+      "area:channelizing": 1,
+      "line:crosswalk": 1,
+      "no_turn:left": 1,
+      "symbol:bike": 1,
+      "symbol:hov_diamond": 1,
+      "symbol:other": 1,
+      "text:bus": 1,
+      "text:hov": 1,
+      "text:only": 1,
+      "text:speed_limit": 1,
+      "arrow:straight_u_turn": 1
+    },
+    "added_transverse": 28,
+    "added_by_evidence": {
+      "insufficient": 62,
+      "full": 26
+    },
+    "missed_by_token": {
+      "line:crosswalk": 3,
+      "line:stop_line": 2,
+      "text:bus": 1,
+      "symbol:other": 1,
+      "text:other": 1
+    },
+    "actions": {
+      "change_left": {
+        "n": 21,
+        "correct": 16
+      },
+      "change_right": {
+        "n": 21,
+        "correct": 10
+      },
+      "go_straight": {
+        "n": 3,
+        "correct": 3
+      },
+      "turn_left": {
+        "n": 3,
+        "correct": 0
+      },
+      "turn_right": {
+        "n": 3,
+        "correct": 0
+      },
+      "u_turn": {
+        "n": 3,
+        "correct": 0
+      }
+    },
+    "contested": {
+      "n": 28,
+      "correct": 24
+    },
+    "unsafe_errors": 4,
+    "unsafe_by_action": {
+      "change_left": 3,
+      "turn_left": 1
+    },
+    "over_cautious_errors": 11,
+    "contested_unsafe_errors": 1,
+    "prohibited_recall": {
+      "correct": 15,
+      "n": 27,
+      "acc": 0.556
+    },
+    "extra_decisions": 4,
+    "citations": {
+      "in_pack_not_accepted": 9,
+      "unlisted": 6,
+      "accepted": 10
+    },
+    "citation_ids_with_brackets": 64,
+    "inconsistent_answers": 8,
+    "consistency_kinds": {
+      "go_straight allowed without the stop that the STOP or 停 marking in my lane requires": 8,
+      "go_straight decided from an arrow that cannot be read": 7,
+      "leftmost lane, but a lane line on the left": 1
+    },
+    "boundary_evidence": {
+      "same": 39,
+      "unsupported_guess": 11
+    },
+    "requests": 25,
+    "errors": 0,
+    "readable": {
+      "n": 25,
+      "of": 25
+    },
+    "cached": 0,
+    "usage": {
+      "input_tokens": 189875,
+      "cached_input_tokens": 0,
+      "output_tokens": 19385
+    },
+    "cost_usd": 0.0,
+    "latency_s": {
+      "mean": 21.59,
+      "max": 59.78
+    },
+    "elapsed_s": 198.8
+  },
+  "per_image": {
+    "mapdr__Non_MotorizedLane_9f3c0c0a6ff4481488b410e657356dff_1711069393822514000": {
+      "image_id": "mapdr__Non_MotorizedLane_9f3c0c0a6ff4481488b410e657356dff_1711069393822514000",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:left",
+            "arrow:right",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line",
+            "text:keep_clear",
+            "text:stop"
+          ],
+          "missed": [
+            "line:crosswalk"
+          ],
+          "added_evidence": {
+            "area:left_turn_waiting": "insufficient",
+            "area:two_way_left_turn_lane": "insufficient",
+            "arrow:left": "insufficient",
+            "arrow:right": "insufficient",
+            "arrow:straight": "insufficient",
+            "line:stop_line": "insufficient",
+            "line:stop_yield": "insufficient",
+            "line:yield_line": "insufficient",
+            "text:keep_clear": "insufficient",
+            "text:stop": "insufficient"
+          },
+          "label": [
+            "line:crosswalk"
+          ],
+          "answer": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:left",
+            "arrow:right",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line",
+            "text:keep_clear",
+            "text:stop"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [
+          "change_left",
+          "change_right"
+        ],
+        "cite_format_fixed": 2,
+        "cited": [
+          "CN-6.2.1"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [
+          "go_straight decided from an arrow that cannot be read",
+          "go_straight allowed without the stop that the STOP or 停 marking in my lane requires"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__EmergencyLane_9ee796aad4664b568e71213ba4ffa24c_1711153752673414000": {
+      "image_id": "mapdr__EmergencyLane_9ee796aad4664b568e71213ba4ffa24c_1711153752673414000",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "text:other"
+          ],
+          "missed": [
+            "text:bus"
+          ],
+          "added_evidence": {
+            "text:other": "full"
+          },
+          "label": [
+            "text:bus"
+          ],
+          "answer": [
+            "text:other"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "change_left": false,
+          "change_right": false,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 2,
+        "cited": [
+          "CN-5.4.3",
+          "CN-6.2.1"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__EmergencyLane_987cbcf5032841918cc3253559eba301_1710574770200029000": {
+      "image_id": "mapdr__EmergencyLane_987cbcf5032841918cc3253559eba301_1710574770200029000",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": false,
+            "pattern": true,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "area:channelizing",
+            "area:grid",
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:crosswalk",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line",
+            "no_turn:left",
+            "symbol:bike",
+            "symbol:hov_diamond",
+            "symbol:other",
+            "text:bus",
+            "text:hov",
+            "text:keep_clear",
+            "text:only",
+            "text:speed_limit",
+            "text:stop"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "area:channelizing": "insufficient",
+            "area:grid": "insufficient",
+            "area:left_turn_waiting": "insufficient",
+            "area:two_way_left_turn_lane": "insufficient",
+            "arrow:straight": "insufficient",
+            "line:crosswalk": "insufficient",
+            "line:stop_line": "insufficient",
+            "line:stop_yield": "insufficient",
+            "line:yield_line": "insufficient",
+            "no_turn:left": "insufficient",
+            "symbol:bike": "insufficient",
+            "symbol:hov_diamond": "insufficient",
+            "symbol:other": "insufficient",
+            "text:bus": "insufficient",
+            "text:hov": "insufficient",
+            "text:keep_clear": "insufficient",
+            "text:only": "insufficient",
+            "text:speed_limit": "insufficient",
+            "text:stop": "insufficient"
+          },
+          "label": [],
+          "answer": [
+            "area:channelizing",
+            "area:grid",
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:crosswalk",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line",
+            "no_turn:left",
+            "symbol:bike",
+            "symbol:hov_diamond",
+            "symbol:other",
+            "text:bus",
+            "text:hov",
+            "text:keep_clear",
+            "text:only",
+            "text:speed_limit",
+            "text:stop"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": false,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_left"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 2,
+        "cited": [
+          "CN-6.1.4",
+          "CN-6.2.1"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [
+          "go_straight decided from an arrow that cannot be read",
+          "go_straight allowed without the stop that the STOP or 停 marking in my lane requires"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__MultiLane_450e61de53db4b5a846882736f260709_1710126711598183000": {
+      "image_id": "mapdr__MultiLane_450e61de53db4b5a846882736f260709_1710126711598183000",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "area:left_turn_waiting": "insufficient",
+            "area:two_way_left_turn_lane": "insufficient",
+            "arrow:straight": "insufficient",
+            "line:stop_line": "insufficient",
+            "line:stop_yield": "insufficient",
+            "line:yield_line": "insufficient"
+          },
+          "label": [],
+          "answer": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true,
+          "change_right": true
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 2,
+        "cited": [
+          "CN-5.4.3",
+          "CN-6.2.1",
+          "null"
+        ],
+        "citation": "unlisted",
+        "consistency": [
+          "leftmost lane, but a lane line on the left",
+          "go_straight decided from an arrow that cannot be read",
+          "go_straight allowed without the stop that the STOP or 停 marking in my lane requires"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__BusLane_156dfc0abe354cfbab4b501631382d4d_1709433609117850000": {
+      "image_id": "mapdr__BusLane_156dfc0abe354cfbab4b501631382d4d_1709433609117850000",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_right": true
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 3,
+        "cited": [
+          "CN-5.13.1",
+          "CN-5.2.1-2",
+          "CN-5.4.3"
+        ],
+        "citation": "accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__EmergencyLane_9ee796aad4664b568e71213ba4ffa24c_1711153748406702000": {
+      "image_id": "mapdr__EmergencyLane_9ee796aad4664b568e71213ba4ffa24c_1711153748406702000",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight_u_turn"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight_u_turn": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:straight_u_turn"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "change_left": true,
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [
+          "u_turn"
+        ],
+        "cite_format_fixed": 3,
+        "cited": [
+          "CN-5.13.1] [informative] GB 5768.3-2025, section 5.13.1, 表1, page 27",
+          "CN-6.1.4] [mandatory] GB 5768.3-2025, section 6.1.4, page 44",
+          "CN-6.2.1] [mandatory] GB 5768.3-2025, section 6.2.1, page 44"
+        ],
+        "citation": "unlisted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__SpeedLimitedLane_28031b5893a24e9f81f64237ed68d8bf_1709684738352944000": {
+      "image_id": "mapdr__SpeedLimitedLane_28031b5893a24e9f81f64237ed68d8bf_1709684738352944000",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "area:left_turn_waiting": "insufficient",
+            "area:two_way_left_turn_lane": "insufficient",
+            "arrow:straight": "insufficient",
+            "line:stop_line": "insufficient",
+            "line:stop_yield": "insufficient",
+            "line:yield_line": "insufficient"
+          },
+          "label": [],
+          "answer": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true,
+          "change_right": true
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 2,
+        "cited": [
+          "CN-6.2.1"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [
+          "go_straight decided from an arrow that cannot be read",
+          "go_straight allowed without the stop that the STOP or 停 marking in my lane requires"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__VariableDirectionLane_8c224bff3a284f00be33f7f361c9060c_1712187254288664000": {
+      "image_id": "mapdr__VariableDirectionLane_8c224bff3a284f00be33f7f361c9060c_1712187254288664000",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line",
+            "text:stop"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "area:left_turn_waiting": "insufficient",
+            "area:two_way_left_turn_lane": "insufficient",
+            "arrow:straight": "insufficient",
+            "line:stop_line": "insufficient",
+            "line:stop_yield": "insufficient",
+            "line:yield_line": "insufficient",
+            "text:stop": "insufficient"
+          },
+          "label": [],
+          "answer": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line",
+            "text:stop"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 2,
+        "cited": [
+          "CN-5.2.1-2",
+          "CN-6.2.1"
+        ],
+        "citation": "accepted",
+        "consistency": [
+          "go_straight decided from an arrow that cannot be read",
+          "go_straight allowed without the stop that the STOP or 停 marking in my lane requires"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__MultiLane_93e985a80fd04226af8647ea2004d077_1711261263869749000": {
+      "image_id": "mapdr__MultiLane_93e985a80fd04226af8647ea2004d077_1711261263869749000",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": false,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [
+          "change_left"
+        ],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": false
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 3,
+        "cited": [
+          "CN-5.13.1",
+          "CN-5.2.1-2",
+          "CN-5.4.3"
+        ],
+        "citation": "accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__VehicleLane_99899d036da944ceb41404c3ec3c9fa9_1710733702898064000": {
+      "image_id": "mapdr__VehicleLane_99899d036da944ceb41404c3ec3c9fa9_1710733702898064000",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [
+            "arrow:straight"
+          ],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true,
+          "go_straight": true,
+          "turn_left": false,
+          "turn_right": false,
+          "u_turn": false
+        },
+        "contested": {},
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "turn_left": false,
+          "turn_right": false,
+          "u_turn": false
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 3,
+        "cited": [
+          "CN-5.13.1",
+          "CN-5.2.1-2"
+        ],
+        "citation": "accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__MultiLane_78d5ff12c78548088813ddb4467d0945_1711414356487925000": {
+      "image_id": "mapdr__MultiLane_78d5ff12c78548088813ddb4467d0945_1711414356487925000",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": false,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [
+            "line:stop_line"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "line:stop_line": "full"
+          },
+          "label": [],
+          "answer": [
+            "line:stop_line"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true,
+          "change_right": true
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 2,
+        "cited": [
+          "CN-6.2.1"
+        ],
+        "citation": "accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__Non_MotorizedLane_9f3c0c0a6ff4481488b410e657356dff_1711069399955886000": {
+      "image_id": "mapdr__Non_MotorizedLane_9f3c0c0a6ff4481488b410e657356dff_1711069399955886000",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": true,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:left",
+            "arrow:straight",
+            "arrow:straight_left"
+          ],
+          "missed": [
+            "symbol:other"
+          ],
+          "added_evidence": {
+            "arrow:left": "full",
+            "arrow:straight": "full",
+            "arrow:straight_left": "full"
+          },
+          "label": [
+            "symbol:other"
+          ],
+          "answer": [
+            "arrow:left",
+            "arrow:straight",
+            "arrow:straight_left"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": false
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "turn_left"
+        ],
+        "cite_format_fixed": 3,
+        "cited": [
+          "CN-5.13.1",
+          "CN-6.2.1"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__VariableDirectionLane_6b9fe861b6c9413cbaabfb6f9af02b89_1711423450109557000": {
+      "image_id": "mapdr__VariableDirectionLane_6b9fe861b6c9413cbaabfb6f9af02b89_1711423450109557000",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [],
+          "missed": [
+            "line:crosswalk",
+            "line:stop_line"
+          ],
+          "added_evidence": {},
+          "label": [
+            "arrow:straight",
+            "line:crosswalk",
+            "line:stop_line"
+          ],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": false,
+          "change_right": true,
+          "go_straight": true,
+          "turn_left": false,
+          "turn_right": false,
+          "u_turn": false
+        },
+        "contested": {},
+        "output2": false,
+        "unsafe": [
+          "change_left"
+        ],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": false,
+          "change_right": true,
+          "turn_left": false,
+          "turn_right": false,
+          "u_turn": false
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 3,
+        "cited": [
+          "CN-5.13.1",
+          "CN-5.2.1-2",
+          "CN-6.2.1"
+        ],
+        "citation": "accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__VehicleLane_3153623906844b34850b0d88037cd764_1711423473888839000": {
+      "image_id": "mapdr__VehicleLane_3153623906844b34850b0d88037cd764_1711423473888839000",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 3,
+        "cited": [
+          "CN-5.13.1] [informative] GB 5768.3-2025, section 5.13.1, 表1, page 27",
+          "CN-6.1.1] [mandatory] GB 5768.3-2025, section 6.1.1, page 41",
+          "CN-6.2.1] [mandatory] GB 5768.3-2025, section 6.2.1, page 44"
+        ],
+        "citation": "unlisted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__VariableDirectionLane_c002a63d8292458fb36fb00aca153f97_1709777167709286000": {
+      "image_id": "mapdr__VariableDirectionLane_c002a63d8292458fb36fb00aca153f97_1709777167709286000",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight_left"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight_left": "full"
+          },
+          "label": [
+            "arrow:straight"
+          ],
+          "answer": [
+            "arrow:straight",
+            "arrow:straight_left"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false,
+          "go_straight": true,
+          "turn_left": false,
+          "turn_right": false,
+          "u_turn": false
+        },
+        "contested": {},
+        "output2": false,
+        "unsafe": [
+          "turn_left"
+        ],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {
+          "turn_left": false,
+          "turn_right": false,
+          "u_turn": false
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 4,
+        "cited": [
+          "CN-5.13.1",
+          "CN-5.2.1-2",
+          "CN-5.4.3"
+        ],
+        "citation": "accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__VariableDirectionLane_8c224bff3a284f00be33f7f361c9060c_1712187253488645000": {
+      "image_id": "mapdr__VariableDirectionLane_8c224bff3a284f00be33f7f361c9060c_1712187253488645000",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [
+            "line:stop_line"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "line:stop_line": "full"
+          },
+          "label": [],
+          "answer": [
+            "line:stop_line"
+          ]
+        },
+        "lane": false,
+        "lane_core": true,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 2,
+        "cited": [
+          "CN-5.2.1-2"
+        ],
+        "citation": "accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__VariableDirectionLane_6b9fe861b6c9413cbaabfb6f9af02b89_1711423450909576000": {
+      "image_id": "mapdr__VariableDirectionLane_6b9fe861b6c9413cbaabfb6f9af02b89_1711423450909576000",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": false,
+            "pattern": true,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "area:grid"
+          ],
+          "missed": [
+            "line:crosswalk",
+            "line:stop_line"
+          ],
+          "added_evidence": {
+            "area:grid": "full"
+          },
+          "label": [
+            "line:crosswalk",
+            "line:stop_line"
+          ],
+          "answer": [
+            "area:grid"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": false,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [
+          "change_left"
+        ],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": false,
+          "change_right": true
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 3,
+        "cited": [
+          "CN-5.2.1-2",
+          "CN-6.1.4",
+          "CN-6.8.1-2"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__BusLane_156dfc0abe354cfbab4b501631382d4d_1709433612851257000": {
+      "image_id": "mapdr__BusLane_156dfc0abe354cfbab4b501631382d4d_1709433612851257000",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line",
+            "text:stop"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "area:left_turn_waiting": "insufficient",
+            "area:two_way_left_turn_lane": "insufficient",
+            "arrow:straight": "insufficient",
+            "line:stop_line": "insufficient",
+            "line:stop_yield": "insufficient",
+            "line:yield_line": "insufficient",
+            "text:stop": "insufficient"
+          },
+          "label": [],
+          "answer": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line",
+            "text:stop"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_right": true
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 2,
+        "cited": [
+          "CN-5.2.1-2",
+          "CN-5.4.3",
+          "null"
+        ],
+        "citation": "unlisted",
+        "consistency": [
+          "go_straight decided from an arrow that cannot be read",
+          "go_straight allowed without the stop that the STOP or 停 marking in my lane requires"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__SpeedLimitedLane_63bab9ca228d43e696bb51f0409b6cc8_1710727788941398000": {
+      "image_id": "mapdr__SpeedLimitedLane_63bab9ca228d43e696bb51f0409b6cc8_1710727788941398000",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": true,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 3,
+        "cited": [
+          "CN-5.13.1] [informative] GB 5768.3-2025, section 5.13.1, 表1, page 27",
+          "CN-5.4.3] [mandatory] GB 5768.3-2025, section 5.4.3, page 5",
+          "CN-6.1.1] [mandatory] GB 5768.3-2025, section 6.1.1, page 41"
+        ],
+        "citation": "unlisted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__VehicleLane_52cd1b9fb40d468e90e5a0b8ae9f57d7_1710391616984525000": {
+      "image_id": "mapdr__VehicleLane_52cd1b9fb40d468e90e5a0b8ae9f57d7_1710391616984525000",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight"
+          ],
+          "missed": [
+            "text:other"
+          ],
+          "added_evidence": {
+            "arrow:straight": "full"
+          },
+          "label": [
+            "text:other"
+          ],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 3,
+        "cited": [
+          "CN-5.13.1",
+          "CN-5.2.1-2",
+          "CN-5.4.3"
+        ],
+        "citation": "accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__VehicleLane_1b2c4e0578804ec38753f760c633b6ab_1710549573412872000": {
+      "image_id": "mapdr__VehicleLane_1b2c4e0578804ec38753f760c633b6ab_1710549573412872000",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": false,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_left"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 3,
+        "cited": [
+          "CN-5.13.1",
+          "CN-6.2.1"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__SpeedLimitedLane_92c36838dd5a494a9d590f908034be91_1709945751995536000": {
+      "image_id": "mapdr__SpeedLimitedLane_92c36838dd5a494a9d590f908034be91_1709945751995536000",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line",
+            "text:keep_clear",
+            "text:stop"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "area:left_turn_waiting": "full",
+            "area:two_way_left_turn_lane": "full",
+            "arrow:straight": "full",
+            "line:stop_line": "full",
+            "line:stop_yield": "full",
+            "line:yield_line": "full",
+            "text:keep_clear": "full",
+            "text:stop": "full"
+          },
+          "label": [],
+          "answer": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line",
+            "text:keep_clear",
+            "text:stop"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 2,
+        "cited": [
+          "CN-6.2.1"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [
+          "go_straight allowed without the stop that the STOP or 停 marking in my lane requires"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__VehicleLane_52cd1b9fb40d468e90e5a0b8ae9f57d7_1710391619384567000": {
+      "image_id": "mapdr__VehicleLane_52cd1b9fb40d468e90e5a0b8ae9f57d7_1710391619384567000",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight",
+            "line:stop_line"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight": "full",
+            "line:stop_line": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:straight",
+            "line:stop_line"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 2,
+        "cited": [
+          "CN-5.2.1-2"
+        ],
+        "citation": "accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__VariableDirectionLane_8c224bff3a284f00be33f7f361c9060c_1712187255355347000": {
+      "image_id": "mapdr__VariableDirectionLane_8c224bff3a284f00be33f7f361c9060c_1712187255355347000",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "change_left": false,
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [
+          "change_left"
+        ],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 3,
+        "cited": [
+          "CN-5.13.1",
+          "CN-5.2.1-2"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "mapdr__MultiLane_93e985a80fd04226af8647ea2004d077_1711261270536469000": {
+      "image_id": "mapdr__MultiLane_93e985a80fd04226af8647ea2004d077_1711261270536469000",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line",
+            "text:stop"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "area:left_turn_waiting": "insufficient",
+            "area:two_way_left_turn_lane": "insufficient",
+            "arrow:straight": "insufficient",
+            "line:stop_line": "insufficient",
+            "line:stop_yield": "insufficient",
+            "line:yield_line": "insufficient",
+            "text:stop": "insufficient"
+          },
+          "label": [],
+          "answer": [
+            "area:left_turn_waiting",
+            "area:two_way_left_turn_lane",
+            "arrow:straight",
+            "line:stop_line",
+            "line:stop_yield",
+            "line:yield_line",
+            "text:stop"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 2,
+        "cited": [
+          "CN-5.4.3] [mandatory] GB 5768.3-2025, section 5.4.3, page 5",
+          "CN-6.2.1] [mandatory] GB 5768.3-2025, section 6.2.1, page 44"
+        ],
+        "citation": "unlisted",
+        "consistency": [
+          "go_straight decided from an arrow that cannot be read",
+          "go_straight allowed without the stop that the STOP or 停 marking in my lane requires"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    }
+  }
+}

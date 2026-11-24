@@ -1,0 +1,367 @@
+# DRAFT passages of the Northern Territory, Australia (AU-NT) from nt_australian_road_rules.pdf, 2026-11-14 (gpt-6.1-sol).
+# Read every passage against the PDF. verified_quote: false means the original text was not found on its page.
+# Delete what is not a rule for drivers, fix sections and texts, then:  python main.py regulations accept AU-NT
+
+- rule_id: AU-NT-2
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: '2'
+  page: 45
+  marking_type: bicycle hook turn storage area
+  element: area
+  text_original: Move forward in the bicycle hook turn storage area until the rider is as near as practicable to the far side
+    of the road that the rider is entering.
+  text_en: Move forward in the bicycle hook turn storage area until the rider is as near as practicable to the far side of
+    the road that the rider is entering.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-NT-65(1)–(2)
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: 65(1)–(2)
+  page: 68
+  marking_type: marked foot crossing with flashing yellow traffic light
+  element: transverse
+  text_original: '(1) This rule applies to a driver approaching or at a marked foot crossing (except at or near an intersection)
+    with a flashing yellow traffic light at the crossing.
+
+    (2) The driver must:
+
+    (a) give way to any pedestrian on or entering the crossing; and
+
+    (b) not obstruct any pedestrian on the crossing; and
+
+    (c) not overtake or pass a vehicle that is travelling in the same direction as the driver and is stopping, or has stopped,
+    to give way at the crossing; and
+
+    (d) give way to any bicycle rider on or entering the crossing.'
+  text_en: '(1) This rule applies to a driver approaching or at a marked foot crossing (except at or near an intersection)
+    with a flashing yellow traffic light at the crossing.
+
+    (2) The driver must:
+
+    (a) give way to any pedestrian on or entering the crossing; and
+
+    (b) not obstruct any pedestrian on the crossing; and
+
+    (c) not overtake or pass a vehicle that is travelling in the same direction as the driver and is stopping, or has stopped,
+    to give way at the crossing; and
+
+    (d) give way to any bicycle rider on or entering the crossing.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-NT-(2)
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: (2)
+  page: 71
+  marking_type: stop line
+  element: transverse
+  text_original: 'The driver must stop as near as practicable to, but before reaching:
+
+    (a) the stop line; or
+
+    (b) if there is no stop line – the intersection.'
+  text_en: 'The driver must stop as near as practicable to, but before reaching:
+
+    (a) the stop line; or
+
+    (b) if there is no stop line – the intersection.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-NT-(3)
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: (3)
+  page: 71
+  marking_type: stop line
+  element: transverse
+  text_original: 'The driver must give way to a vehicle in, entering or approaching the intersection except:
+
+    (a) an oncoming vehicle turning right at the intersection if a stop sign, stop line, give way sign or give way line applies
+    to the driver of the oncoming vehicle; or
+
+    (b) a vehicle turning left at the intersection using a slip lane; or
+
+    (c) a vehicle making a U-turn.'
+  text_en: 'The driver must give way to a vehicle in, entering or approaching the intersection except:
+
+    (a) an oncoming vehicle turning right at the intersection if a stop sign, stop line, give way sign or give way line applies
+    to the driver of the oncoming vehicle; or
+
+    (b) a vehicle turning left at the intersection using a slip lane; or
+
+    (c) a vehicle making a U-turn.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-NT-(4)
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: (4)
+  page: 71
+  marking_type: stop line
+  element: transverse
+  text_original: If the driver is turning left or right or making a U -turn, the driver must also give way to any pedestrian
+    at or near the intersec tion who is crossing the road, or part of the road, the driver is entering.
+  text_en: If the driver is turning left or right or making a U -turn, the driver must also give way to any pedestrian at
+    or near the intersec tion who is crossing the road, or part of the road, the driver is entering.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-NT-(6)
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: (6)
+  page: 94
+  marking_type: children's crossing markings
+  element: transverse
+  text_original: 'A children''s crossing is an area of a road:
+
+    (a) at a place with stop lines marked on the road, and:
+
+    (i) children crossing flags; or
+
+    (ii) children''s crossing signs and twin yellow lights; and
+
+    (b) indicated by:
+
+    (i) 2 red and white posts erected on each side of the road; or
+
+    (ii) 2 parallel continuous or broken lines on the road surface from one side of the road completely or partly across the
+    road; and
+
+    (c) extending across the road between the posts or lines.'
+  text_en: 'A children''s crossing is an area of a road:
+
+    (a) at a place with stop lines marked on the road, and:
+
+    (i) children crossing flags; or
+
+    (ii) children''s crossing signs and twin yellow lights; and
+
+    (b) indicated by:
+
+    (i) 2 red and white posts erected on each side of the road; or
+
+    (ii) 2 parallel continuous or broken lines on the road surface from one side of the road completely or partly across the
+    road; and
+
+    (c) extending across the road between the posts or lines.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-NT-Example1
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: Example 1
+  page: 144
+  marking_type: broken dividing line
+  element: boundary
+  text_original: Driving to the right of the centre of the road permitted – overtaking on a road with a broken dividing line
+    only
+  text_en: Driving to the right of the centre of the road permitted – overtaking on a road with a broken dividing line only
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-NT-Example2
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: Example 2
+  page: 144
+  marking_type: broken dividing line to the left of a continuous dividing line
+  element: boundary
+  text_original: Driving to the right of the centre of the road permitted – overtaking on a road with a broken dividing line
+    to the left of a single continuous dividing line
+  text_en: Driving to the right of the centre of the road permitted – overtaking on a road with a broken dividing line to
+    the left of a single continuous dividing line
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-NT-Example2A
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: Example 2A
+  page: 144
+  marking_type: single continuous dividing line
+  element: boundary
+  text_original: Driving across a single continuous dividing line is permitted to enter or leave the road
+  text_en: Driving across a single continuous dividing line is permitted to enter or leave the road
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-NT-Example2B
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: Example 2B
+  page: 144
+  marking_type: single continuous dividing line
+  element: boundary
+  text_original: Driving across a single continuous dividing line is permitted to leave the road to enter a road-related area
+  text_en: Driving across a single continuous dividing line is permitted to leave the road to enter a road-related area
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-NT-Example2C
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: Example 2C
+  page: 144
+  marking_type: continuous dividing line to the left of a broken dividing line
+  element: boundary
+  text_original: Driving across a single continuous dividing line to the left of a broken dividing line is permitted to enter
+    or leave the road
+  text_en: Driving across a single continuous dividing line to the left of a broken dividing line is permitted to enter or
+    leave the road
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-NT-147(1)
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: 147(1)
+  page: 156
+  marking_type: continuous lane line
+  element: boundary
+  text_original: 'A driver on a multi -lane road must not move from one marked lane to another marked lane by crossing a continuous
+    line separating the lanes unless:
+
+    (a) the driver is avoiding an obstruction; or
+
+    (b) the driver is obeying a traffic control device applying to the first marked lane; or
+
+    (c) the driver is permitted to drive in both marked lanes under another provision of the Australian Road Rules or under
+    another law of this jurisdiction; or
+
+    (d) either of the marked lanes is a special purpose lane in which the driver is permitted to drive under the Australian
+    Road Rules and the driver is moving to or from the special purpose lane; or
+
+    (e) either of the marked lanes is a special purpose lane during specified times only and the driver:
+
+    (i) is moving to or from that lane outside of the times during which it is a special purpose lane; and
+
+    (ii) is permitted to drive in that lane outside of the times during which it is a special purpose lane under the Australian
+    Road Rules; or
+
+    (f) the driver is lane filtering in accordance with rule 151A.'
+  text_en: 'A driver on a multi -lane road must not move from one marked lane to another marked lane by crossing a continuous
+    line separating the lanes unless:
+
+    (a) the driver is avoiding an obstruction; or
+
+    (b) the driver is obeying a traffic control device applying to the first marked lane; or
+
+    (c) the driver is permitted to drive in both marked lanes under another provision of the Australian Road Rules or under
+    another law of this jurisdiction; or
+
+    (d) either of the marked lanes is a special purpose lane in which the driver is permitted to drive under the Australian
+    Road Rules and the driver is moving to or from the special purpose lane; or
+
+    (e) either of the marked lanes is a special purpose lane during specified times only and the driver:
+
+    (i) is moving to or from that lane outside of the times during which it is a special purpose lane; and
+
+    (ii) is permitted to drive in that lane outside of the times during which it is a special purpose lane under the Australian
+    Road Rules; or
+
+    (f) the driver is lane filtering in accordance with rule 151A.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-NT-148(1)
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: 148(1)
+  page: 157
+  marking_type: marked lane
+  element: lane_type
+  text_original: A driver who is moving from one marked lane (whether or not the lane is ending) to another marked lane must
+    give way to any vehicle travelling in the same direction as the driver in the marked lane to which the driver is moving.
+  text_en: A driver who is moving from one marked lane (whether or not the lane is ending) to another marked lane must give
+    way to any vehicle travelling in the same direction as the driver in the marked lane to which the driver is moving.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-NT-169
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: '169'
+  page: 184
+  marking_type: continuous yellow edge line
+  element: boundary
+  text_original: A driver must not stop at the side of a road marked with a continuous yellow edge line.
+  text_en: A driver must not stop at the side of a road marked with a continuous yellow edge line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-NT-203B(1)
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: 203B(1)
+  page: 214
+  marking_type: electric-powered vehicle parking marking
+  element: area
+  text_original: A driver of a vehicle that is not an electric-powered vehicle must not stop in a parking area for electric-powered
+    vehicles.
+  text_en: A driver of a vehicle that is not an electric-powered vehicle must not stop in a parking area for electric-powered
+    vehicles.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-NT-203B(2)(c)
+  region: AU-NT
+  source: Traffic Regulations 1999 (NT), Australian Road Rules, current version
+  section: 203B(2)(c)
+  page: 214
+  marking_type: electric-powered vehicle parking marking
+  element: area
+  text_original: 'A parking area for electric-powered vehicles is a length or area of a road:
+
+    (c) indicated by a road marking that consists of, or includes, an electric-powered vehicle symbol.'
+  text_en: 'A parking area for electric-powered vehicles is a length or area of a road:
+
+    (c) indicated by a road marking that consists of, or includes, an electric-powered vehicle symbol.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees

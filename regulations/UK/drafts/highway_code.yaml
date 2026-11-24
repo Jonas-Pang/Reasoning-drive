@@ -1,0 +1,365 @@
+# DRAFT passages of the United Kingdom (UK) from uk_highway_code_103-158.html, 2026-11-14 (gpt-6.1-sol).
+# Read every passage against the PDF. verified_quote: false means the original text was not found on its page.
+# Delete what is not a rule for drivers, fix sections and texts, then:  python main.py regulations accept UK
+
+- rule_id: UK-Rule127
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 127
+  page: 6
+  marking_type: broken white centre line
+  element: boundary
+  text_original: A broken white line. This marks the centre of the road. When this line lengthens and the gaps shorten, it
+    means that there is a hazard ahead. Do not cross it unless you can see the road is clear and wish to overtake or turn
+    off.
+  text_en: A broken white line. This marks the centre of the road. When this line lengthens and the gaps shorten, it means
+    that there is a hazard ahead. Do not cross it unless you can see the road is clear and wish to overtake or turn off.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-Rule128
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 128
+  page: 6
+  marking_type: double white lines, nearer line broken
+  element: boundary
+  text_original: Double white lines where the line nearer to you is broken. This means you may cross the lines to overtake
+    if it is safe, provided you can complete the manoeuvre before reaching a solid white line on your side.
+  text_en: Double white lines where the line nearer to you is broken. This means you may cross the lines to overtake if it
+    is safe, provided you can complete the manoeuvre before reaching a solid white line on your side.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule128-2
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 128
+  page: 6
+  marking_type: white direction arrows
+  element: lane_marking
+  text_original: White direction arrows on the road indicate that you need to get back onto your side of the road.
+  text_en: White direction arrows on the road indicate that you need to get back onto your side of the road.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule129
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 129
+  page: 6
+  marking_type: double white lines, nearer line solid
+  element: boundary
+  text_original: Double white lines where the line nearer to you is solid. This means you MUST NOT cross or straddle it unless
+    it is safe and you need to enter adjoining premises or a side road. You may cross the line if necessary, provided the
+    road is clear, to pass a stationary vehicle, or overtake a pedal cycle, horse or road maintenance vehicle, if they are
+    travelling at 10 mph (16 km/h) or less.
+  text_en: Double white lines where the line nearer to you is solid. This means you MUST NOT cross or straddle it unless it
+    is safe and you need to enter adjoining premises or a side road. You may cross the line if necessary, provided the road
+    is clear, to pass a stationary vehicle, or overtake a pedal cycle, horse or road maintenance vehicle, if they are travelling
+    at 10 mph (16 km/h) or less.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule130
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 130
+  page: 6
+  marking_type: white diagonal stripes or chevrons
+  element: area
+  text_original: Areas of white diagonal stripes or chevrons painted on the road. These are to separate traffic lanes or to
+    protect traffic turning right.
+  text_en: Areas of white diagonal stripes or chevrons painted on the road. These are to separate traffic lanes or to protect
+    traffic turning right.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule130-2
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 130
+  page: 6
+  marking_type: hatched area bordered by broken white line
+  element: area
+  text_original: If the area is bordered by a broken white line, you should not enter the area unless it is necessary and
+    you can see that it is safe to do so.
+  text_en: If the area is bordered by a broken white line, you should not enter the area unless it is necessary and you can
+    see that it is safe to do so.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule130-3
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 130
+  page: 6
+  marking_type: chevron area bordered by solid white lines
+  element: area
+  text_original: If the area is marked with chevrons and bordered by solid white lines you MUST NOT enter it except in an
+    emergency.
+  text_en: If the area is marked with chevrons and bordered by solid white lines you MUST NOT enter it except in an emergency.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule131
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 131
+  page: 7
+  marking_type: short broken white lane dividers
+  element: boundary
+  text_original: Lane dividers. These are short, broken white lines which are used on wide carriageways to divide them into
+    lanes. You should keep between them.
+  text_en: Lane dividers. These are short, broken white lines which are used on wide carriageways to divide them into lanes.
+    You should keep between them.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule134
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 134
+  page: 7
+  marking_type: lane direction markings
+  element: general
+  text_original: You should follow the signs and road markings and get into the lane as directed.
+  text_en: You should follow the signs and road markings and get into the lane as directed.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule136
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 136
+  page: 7
+  marking_type: lane-use markings on single carriageway
+  element: lane_type
+  text_original: Where a single carriageway has four or more lanes, use only the lanes that signs or markings indicate.
+  text_en: Where a single carriageway has four or more lanes, use only the lanes that signs or markings indicate.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-Rule140
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 140
+  page: 7
+  marking_type: solid white cycle lane line
+  element: lane_type
+  text_original: You MUST NOT drive or park in a cycle lane marked by a solid white line during its times of operation.
+  text_en: You MUST NOT drive or park in a cycle lane marked by a solid white line during its times of operation.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule140-2
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 140
+  page: 7
+  marking_type: broken white cycle lane line
+  element: lane_type
+  text_original: Do not drive or park in a cycle lane marked by a broken white line unless it is unavoidable.
+  text_en: Do not drive or park in a cycle lane marked by a broken white line unless it is unavoidable.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-Rule140-3
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 140
+  page: 7
+  marking_type: cycle lane
+  element: lane_type
+  text_original: You MUST NOT park in any cycle lane whilst waiting restrictions apply.
+  text_en: You MUST NOT park in any cycle lane whilst waiting restrictions apply.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-p8
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: ''
+  page: 8
+  marking_type: cycle lane
+  element: lane_type
+  text_original: You should give way to any cyclists in a cycle lane, including when they are approaching from behind you
+    – do not cut across them when you are turning or when you are changing lane (see Rule H3 ). Be prepared to stop and wait
+    for a safe gap in the flow of cyclists before crossing the cycle lane.
+  text_en: You should give way to any cyclists in a cycle lane, including when they are approaching from behind you – do not
+    cut across them when you are turning or when you are changing lane (see Rule H3 ). Be prepared to stop and wait for a
+    safe gap in the flow of cyclists before crossing the cycle lane.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-p8-2
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: ''
+  page: 8
+  marking_type: cycle lane
+  element: lane_type
+  text_original: Bear in mind that cyclists are not obliged to use cycle lanes or cycle tracks.
+  text_en: Bear in mind that cyclists are not obliged to use cycle lanes or cycle tracks.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule141
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 141
+  page: 8
+  marking_type: bus lane
+  element: lane_type
+  text_original: Bus lanes. These are shown by road markings and signs that indicate which (if any) other vehicles are permitted
+    to use the bus lane.
+  text_en: Bus lanes. These are shown by road markings and signs that indicate which (if any) other vehicles are permitted
+    to use the bus lane.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say permissive (are permitted)
+- rule_id: UK-Rule141-2
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 141
+  page: 8
+  marking_type: bus lane
+  element: lane_type
+  text_original: Unless otherwise indicated, you should not drive in a bus lane during its period of operation.
+  text_en: Unless otherwise indicated, you should not drive in a bus lane during its period of operation.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule141-3
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 141
+  page: 8
+  marking_type: bus lane
+  element: lane_type
+  text_original: You may enter a bus lane to stop, to load or unload where this is not prohibited.
+  text_en: You may enter a bus lane to stop, to load or unload where this is not prohibited.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule142
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 142
+  page: 8
+  marking_type: designated vehicle lane
+  element: lane_type
+  text_original: High-occupancy vehicle lanes and other designated vehicle lanes. Lanes may be restricted for use by particular
+    types of vehicle; these restrictions may apply some or all of the time. The operating times and vehicle types will be
+    indicated on the accompanying traffic signs.
+  text_en: High-occupancy vehicle lanes and other designated vehicle lanes. Lanes may be restricted for use by particular
+    types of vehicle; these restrictions may apply some or all of the time. The operating times and vehicle types will be
+    indicated on the accompanying traffic signs.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say permissive (may)
+- rule_id: UK-Rule142-2
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 142
+  page: 8
+  marking_type: designated vehicle lane
+  element: lane_type
+  text_original: You MUST NOT drive in such lanes during their times of operation unless signs indicate that your vehicle
+    is permitted (see ‘ Traffic signs ’).
+  text_en: You MUST NOT drive in such lanes during their times of operation unless signs indicate that your vehicle is permitted
+    (see ‘ Traffic signs ’).
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-Rule142-3
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 142
+  page: 8
+  marking_type: designated vehicle lane
+  element: lane_type
+  text_original: Vehicles permitted to use designated lanes may or may not include cycles, buses, taxis, licensed private
+    hire vehicles, motorcycles, heavy goods vehicles (HGVs) and high-occupancy vehicles (HOVs).
+  text_en: Vehicles permitted to use designated lanes may or may not include cycles, buses, taxis, licensed private hire vehicles,
+    motorcycles, heavy goods vehicles (HGVs) and high-occupancy vehicles (HOVs).
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say mandatory (may not)
+- rule_id: UK-Rule142-4
+  region: UK
+  source: The Highway Code, rules 103-158 (incl. 127-132 lines and lane markings)
+  section: Rule 142
+  page: 8
+  marking_type: high-occupancy vehicle lane
+  element: lane_type
+  text_original: 'Where HOV lanes are in operation, they MUST ONLY be used by
+
+
+    vehicles containing at least the minimum number of people indicated on the traffic signs
+
+
+    any other vehicles, such as buses and motorcycles, as indicated on signs prior to the start of the lane, irrespective
+    of the number of occupants.'
+  text_en: 'Where HOV lanes are in operation, they MUST ONLY be used by
+
+
+    vehicles containing at least the minimum number of people indicated on the traffic signs
+
+
+    any other vehicles, such as buses and motorcycles, as indicated on signs prior to the start of the lane, irrespective
+    of the number of occupants.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees

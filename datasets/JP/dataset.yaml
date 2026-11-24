@@ -1,0 +1,21 @@
+# Images and labels of Japan (see datasets/US/dataset.yaml for the fields). The image sources are the ones
+# GeoDrive-Bench uses for this country; download them from their pages (each has its own terms), then:
+#   python main.py label --data <root>/covla images init covla --source <the unpacked dataset>
+
+region: JP
+collections:
+  - name: covla
+    kind: images
+    reader: folder              # any folder of images; the frames of one sub-folder form one clip
+    dataset_name: CoVLA
+    source: "CoVLA-Dataset (Turing Inc., WACV 2025): academic and non-commercial use only, by its licence agreement"
+    download: https://huggingface.co/datasets/turing-motors/CoVLA-Dataset
+    default_source: data/extracted/CoVLA-Dataset
+    candidates: datasets/JP/candidates_geodrive.csv   # frames with lane markings in GeoDrive-Bench (label geodrive)
+    access: licence form        # Hugging Face: accept the CoVLA licence with your own account, then put HF_TOKEN in .env
+    access_note: "open https://huggingface.co/datasets/turing-motors/CoVLA-Dataset, sign in, accept the conditions (academic, non-commercial); then a read token in .env as HF_TOKEN"
+
+split:
+  rule: 'sha1("6216:" + clip) mod 10 = 0 -> dev, else test'
+  per_marking_type: {dev: 6, test: 30}
+  degraded_test: 30

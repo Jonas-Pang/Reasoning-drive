@@ -1,0 +1,39 @@
+{
+  "pdf": "jp_335M50004002003.xml",
+  "code": "JP",
+  "pages": 26,
+  "pages_read": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21,
+    22,
+    25,
+    26
+  ],
+  "requests": 5,
+  "mock": false,
+  "passages": 23,
+  "verified_quotes": 23,
+  "errors": [],
+  "usage": {
+    "input_tokens": 48052,
+    "output_tokens": 4631
+  },
+  "cost_usd": 0.1424,
+  "draft": "D:\\Project\\Reasoning_Drive\\regulations\\JP\\passages_draft.yaml",
+  "region_file": "D:\\Project\\Reasoning_Drive\\regulations\\JP\\region.yaml",
+  "time_utc": "2026-11-14T15:38:05Z"
+}

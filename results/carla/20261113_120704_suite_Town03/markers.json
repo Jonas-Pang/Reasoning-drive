@@ -1,0 +1,44 @@
+[
+ {
+  "case": "arrow_left",
+  "start": 0,
+  "ask": 44,
+  "answered": 103,
+  "end": 446
+ },
+ {
+  "case": "arrow_right",
+  "start": 446,
+  "ask": 489,
+  "answered": 556,
+  "end": 834
+ },
+ {
+  "case": "yellow_double",
+  "start": 834,
+  "ask": 858,
+  "answered": 896,
+  "end": 961
+ },
+ {
+  "case": "yellow_solid",
+  "start": 961,
+  "ask": 984,
+  "answered": 1067,
+  "end": 1200
+ },
+ {
+  "case": "white_dashed",
+  "start": 1200,
+  "ask": 1223,
+  "answered": 1262,
+  "end": 1327
+ },
+ {
+  "case": "roundabout",
+  "start": 1327,
+  "ask": 1350,
+  "answered": 1392,
+  "end": 1457
+ }
+]

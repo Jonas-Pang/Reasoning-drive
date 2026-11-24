@@ -1,0 +1,115 @@
+{
+  "frozen_utc": "2026-11-17T17:53:30Z",
+  "git_commit": "",
+  "note": "lane_v3 + zigzag for the UK only (owner 2026-11-17); used for the UK images added on 2026-11-17; the earlier test runs keep their own frozen protocol",
+  "files": {
+    "prompts/lane_v3/README.md": "65e9c26cf1c390cf",
+    "prompts/lane_v3/citation_A.txt": "39d57891f25f3857",
+    "prompts/lane_v3/citation_B.txt": "20932d132ae40750",
+    "prompts/lane_v3/fields.txt": "22ab4057ba0f5fdd",
+    "prompts/lane_v3/passage_line.txt": "bf0873ed2b50f7d2",
+    "prompts/lane_v3/procedure.txt": "d5bd7de88f206b8c",
+    "prompts/lane_v3/role.txt": "ee6dc77519c3a20e",
+    "prompts/lane_v3/rules_header.txt": "cd54994f3b1eb176",
+    "prompts/lane_v3/rules_step_A.txt": "f04fe439219d483b",
+    "prompts/lane_v3/rules_step_B.txt": "0726a1f68ac04c58",
+    "prompts/lane_v3/user.txt": "af93305a4361d6c0",
+    "prompts/lane_v3/user_D.txt": "5f28756473ca983a",
+    "reasoning_drive/agent/lane.py": "1634dc212c870879",
+    "reasoning_drive/evaluation/lane_scoring.py": "c244e8ba1320ff82",
+    "reasoning_drive/labeling/lanes.py": "eebfd3847c40cdab",
+    "configs/schemas/lane_schema.json": "a1d772be86243480",
+    "regulations/_common/lane_action_rules.json": "2aa94c6d3277700c",
+    "regulations/CN/lane_action_rules.json": "854edc1aa83e91a8",
+    "regulations/IN/lane_action_rules.json": "64fcfa451d90ba86",
+    "regulations/UK/lane_action_rules.json": "4ba5d9a14c82797c",
+    "regulations/US/lane_action_rules.json": "0691942ff6fd8824",
+    "regulations/CN/passages_marking.json": "7fb4757074227763",
+    "regulations/CN/passages_lane.yaml": "a876c488ae68a5fb",
+    "regulations/IN/passages_lane.yaml": "daebc70c53cb40ca",
+    "regulations/UK/passages_lane.yaml": "e0976312e55c39d5",
+    "regulations/US/passages_marking.json": "4fb48f3989d5bce1",
+    "regulations/US/passages_lane.yaml": "fdc6b557c2a68241"
+  },
+  "settings": {
+    "base_url": "http://127.0.0.1:11434",
+    "model": "gemma4:e4b",
+    "reasoning_effort": null,
+    "temperature": 0,
+    "image_detail": null,
+    "max_output_tokens": 6000,
+    "instruction_role": "developer",
+    "store": false,
+    "provider": "ollama",
+    "think": false,
+    "num_ctx": 16384,
+    "seed": 6216,
+    "num_thread": 2,
+    "quantization": "Q4_K_M",
+    "model_digest": "dc35e8d9c6061baa6f0fa870975ab6932e2542b579b13ea0f199fa4bb7300c9c",
+    "parameter_size": "7.5B",
+    "engine": "ollama 0.33.0"
+  },
+  "prompts": {
+    "A_CN": {
+      "instructions": "eea4bfe819dd0eb5",
+      "user_text": "844caccafa8ca66b",
+      "schema": "84e99a1356d325aa"
+    },
+    "B_CN": {
+      "instructions": "2fb70f1bf092a46f",
+      "user_text": "844caccafa8ca66b",
+      "schema": "84e99a1356d325aa"
+    },
+    "C_CN": {
+      "instructions": "67027f33a25dd8c0",
+      "user_text": "844caccafa8ca66b",
+      "schema": "84e99a1356d325aa"
+    },
+    "A_IN": {
+      "instructions": "eea4bfe819dd0eb5",
+      "user_text": "e0909b806b48fb42",
+      "schema": "84e99a1356d325aa"
+    },
+    "B_IN": {
+      "instructions": "eb89d342a9736ab3",
+      "user_text": "e0909b806b48fb42",
+      "schema": "84e99a1356d325aa"
+    },
+    "C_IN": {
+      "instructions": "7a32c35599c4df8a",
+      "user_text": "e0909b806b48fb42",
+      "schema": "84e99a1356d325aa"
+    },
+    "A_UK": {
+      "instructions": "fbdebb4a83d4257b",
+      "user_text": "4f2c52fb578ad983",
+      "schema": "534c68be0b1f5a52"
+    },
+    "B_UK": {
+      "instructions": "f88b0a6e65fee48f",
+      "user_text": "4f2c52fb578ad983",
+      "schema": "534c68be0b1f5a52"
+    },
+    "C_UK": {
+      "instructions": "2a3a734281d2a206",
+      "user_text": "4f2c52fb578ad983",
+      "schema": "534c68be0b1f5a52"
+    },
+    "A_US": {
+      "instructions": "eea4bfe819dd0eb5",
+      "user_text": "74e5823acc8c746f",
+      "schema": "84e99a1356d325aa"
+    },
+    "B_US": {
+      "instructions": "67027f33a25dd8c0",
+      "user_text": "74e5823acc8c746f",
+      "schema": "84e99a1356d325aa"
+    },
+    "C_US": {
+      "instructions": "2fb70f1bf092a46f",
+      "user_text": "74e5823acc8c746f",
+      "schema": "84e99a1356d325aa"
+    }
+  }
+}

@@ -1,14 +1,21 @@
-flowchart LR
-  subgraph Data["Data (not AI)"]
-    V[Own dash-cam video] --> T[video_tool: keep frames, target box,<br/>2 independent labels, adjudication]
-    D[BDD100K / CULane] --> T
-    T --> L[labels, split, saved checks]
+flowchart TB
+  subgraph Data["Data and labels (not AI)"]
+    direction LR
+    V[Own dash-cam video] --> T["video_tool: keep frames; single-marking labels with a target box<br/>or lane labels: both boundaries, markings in the lane, actions;<br/>2 independent labels, adjudication"]
+    D["BDD100K / CULane picks<br/>(BDD100K lane annotation suggests the boundaries)"] --> T
+    T --> L[labels, split, saved separation checks]
   end
-  subgraph Request["One request (lane_reasoner)"]
-    L --> I[copy of the image with the cyan box]
-    P[prompts/v2: task, steps, definitions] --> Q
-    R[rule passages of the region<br/>Test B only] --> Q
-    I --> Q[OpenAI Responses API<br/>strict JSON schema]
+  subgraph Request["One request per image (lane_reasoner)"]
+    direction LR
+    G[data policy: only collections<br/>in send_to_api] --> I["image: copy with the cyan box (single marking)<br/>or plain copy (lane task)"]
+    P["prompts/v4 or prompts/lane_v1:<br/>role, procedure, field definitions"] --> Q
+    R["rule passages of the region<br/>(Test B only)"] --> Q
+    I --> Q[OpenAI Responses API<br/>gpt-6.1-sol, strict JSON schema]
+    Q --> F[answer fields in order: observe, cross-check,<br/>rule per element, reason per action, reflect, actions]
   end
-  Q --> S[scoring vs labels: outputs 1 and 2,<br/>unsafe errors, citations, consistency]
-  S --> O[runs/, notebook, demo]
+  Y[config/experiment.yaml<br/>config/experiments.yaml] -.-> Request
+  L --> G
+  F --> S[parser and scoring against the labels: lane identified, lane actions,<br/>Output 1 and 2, unsafe errors, markings added, citations, consistency]
+  S --> O[runs/run_id: manifest, answers, scores, trace<br/>experiment tables, demo page]
+  classDef ai fill:#ffe8c2,stroke:#b8741a,color:#000
+  class Q,F ai

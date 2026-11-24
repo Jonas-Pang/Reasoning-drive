@@ -1,0 +1,50 @@
+carla_Town03_lane_change | lane | Test B | gpt-6.1-sol
+------------------------------------------------------
+Step 1  Scene           An urban two-way road runs beneath an elevated structure, with two visible lanes in
+                        this direction. My car is in the leftmost lane; no intersection or lane ending is
+                        clearly visible ahead. (lanes 2, mine 1, full)
+Step 2  Left            Two parallel solid yellow lines run along the left of my lane, with opposing-direction
+                        roadway beyond and no curb at this boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 2  Right           A single solid white line separates my lane from another paved lane on the right; the
+                        sidewalk curb is farther right, not at this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: The center line on the left places my car in the leftmost lane of its
+                        direction, and the white lane line on the right agrees with a second lane to the
+                        right. | roles: Double solid yellow fits separation of opposing traffic; solid white
+                        fits separation of same-direction lanes. | markings: No arrows, words, symbols, marked
+                        areas, or transverse lines are visible in my lane. | unseen: No intersection layout or
+                        distant lane-use marking has been inferred. | result: consistent
+Step 5  Rule            left_boundary: The double solid yellow center line is a two-direction no-passing
+                        marking, prohibiting crossing left to pass opposing-direction traffic. [US-3B.01-06]
+                        "Except where a reversible lane or a two-way left-turn lane is present, the center
+                        line markings on undivided two-way roadways with four or more lanes for moving"
+Step 5  Rule            right_boundary: The solid white lane line discourages crossing into the adjacent lane
+                        but does not prohibit it. [US-3B.06-05-06] "Where crossing the lane line markings with
+                        care is not discouraged or prohibited, the lane line markings shall consist of a
+                        normal width broken white line. Wher"
+Step 6  change_left     prohibited: The double solid yellow center line prohibits crossing left for passing
+                        under US-3B.01-06.
+Step 6  change_right    allowed: The solid white lane line discourages, rather than prohibits, crossing under
+                        US-3B.06-05-06.
+Step 6  go_straight     not_applicable: No visible lane-use marking governs this movement.
+Step 6  turn_left       not_applicable: No visible lane-use marking governs this movement.
+Step 6  turn_right      not_applicable: No visible lane-use marking governs this movement.
+Step 6  u_turn          not_applicable: No visible lane-use or prohibited-movement marking governs this
+                        movement.
+Step 6  enter_waiting_areanot_applicable: No left-turn waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         consistent
+Advice                  Stay to the right of the double yellow center line. Crossing the solid white line to
+                        the right is discouraged but not prohibited by this marking; check that the adjacent
+                        lane is clear and usable before moving over.
+Model's summary         **Determining lane choices**  I need to decide between using the right lane and a
+                        parking lane. There’s a solid white line indicating a wide lane near the curb, which
+                        likely suggests it’s a parking area. Both sides have symmetrical outer lanes with
+                        solid separators, and it seems I’m on the leftmost lane going right. I’ll opt for
+                        using two full lanes since it seems more appropriate, even though there are no clear
+                        markings. Just need to be cautious!
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation in_pack_not_accepted, contradictions []
+Tokens                  in 9598, out 890, 14.35 s

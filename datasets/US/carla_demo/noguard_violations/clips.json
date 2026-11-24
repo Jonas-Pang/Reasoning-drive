@@ -1,0 +1,348 @@
+[
+ {
+  "clip": "01_overtake_double_solid_yellow_street1.mp4",
+  "run": "20261118_193111_violations_noguard",
+  "stop": 1,
+  "label": "double solid yellow centre line",
+  "kind": "line",
+  "marking": "yellow_double_solid",
+  "arrow_type": "",
+  "intent": "overtake across the centre line",
+  "executed": "overtook across the yellow_double_solid centre line in the opposite lane and came back",
+  "rules": {
+   "US": "prohibited",
+   "CN": "prohibited"
+  },
+  "map_verdict": {
+   "US": "violation",
+   "CN": "violation"
+  },
+  "source_t": [
+   0.0,
+   37.85
+  ],
+  "action_t": [
+   14.1,
+   22.75
+  ],
+  "action_in_clip_s": [
+   7.0,
+   11.4
+  ],
+  "clip_s": 18.9,
+  "old_name": "01_overtake_across_yellow_double_solid.mp4",
+  "scene_cn": "越双黄实线超车（街道 1）"
+ },
+ {
+  "clip": "02_overtake_double_solid_yellow_street2.mp4",
+  "run": "20261118_193111_violations_noguard",
+  "stop": 2,
+  "label": "double solid yellow centre line (a third street)",
+  "kind": "line",
+  "marking": "yellow_double_solid",
+  "arrow_type": "",
+  "intent": "overtake across the centre line",
+  "executed": "overtook across the yellow_double_solid centre line in the opposite lane and came back",
+  "rules": {
+   "US": "prohibited",
+   "CN": "prohibited"
+  },
+  "map_verdict": {
+   "US": "violation",
+   "CN": "violation"
+  },
+  "source_t": [
+   23.75,
+   55.15
+  ],
+  "action_t": [
+   39.85,
+   50.15
+  ],
+  "action_in_clip_s": [
+   8.1,
+   13.2
+  ],
+  "clip_s": 15.7,
+  "old_name": "02_overtake_across_yellow_double_solid.mp4",
+  "scene_cn": "越双黄实线超车（街道 2）"
+ },
+ {
+  "clip": "03_overtake_double_solid_yellow_street3.mp4",
+  "run": "20261118_193111_violations_noguard",
+  "stop": 3,
+  "label": "double solid yellow centre line (another street)",
+  "kind": "line",
+  "marking": "yellow_double_solid",
+  "arrow_type": "",
+  "intent": "overtake across the centre line",
+  "executed": "overtook across the yellow_double_solid centre line in the opposite lane and came back",
+  "rules": {
+   "US": "prohibited",
+   "CN": "prohibited"
+  },
+  "map_verdict": {
+   "US": "violation",
+   "CN": "violation"
+  },
+  "source_t": [
+   51.15,
+   90.35
+  ],
+  "action_t": [
+   57.15,
+   68.75
+  ],
+  "action_in_clip_s": [
+   3.0,
+   8.8
+  ],
+  "clip_s": 19.6,
+  "old_name": "03_overtake_across_yellow_double_solid.mp4",
+  "scene_cn": "越双黄实线超车（街道 3）"
+ },
+ {
+  "clip": "04_left_turn_from_right_turn_only_lane.mp4",
+  "run": "20261118_193111_violations_noguard",
+  "stop": 4,
+  "label": "right-turn arrow",
+  "kind": "arrow",
+  "marking": "arrow",
+  "arrow_type": "right",
+  "intent": "turn_left",
+  "executed": "turn left from the right-turn arrow lane",
+  "rules": {
+   "US": "prohibited",
+   "CN": "prohibited"
+  },
+  "map_verdict": {
+   "US": "violation",
+   "CN": "violation"
+  },
+  "source_t": [
+   69.75,
+   109.75
+  ],
+  "action_t": [
+   92.35,
+   102.5
+  ],
+  "action_in_clip_s": [
+   11.3,
+   16.4
+  ],
+  "clip_s": 20.0,
+  "old_name": "04_turn_left_from_right_turn_lane.mp4",
+  "scene_cn": "右转专用道上直接左转"
+ },
+ {
+  "clip": "05_overtake_solid_broken_yellow_solid_on_my_side_street1.mp4",
+  "run": "20261118_193111_violations_noguard",
+  "stop": 5,
+  "label": "solid + broken yellow centre line (solid on my side)",
+  "kind": "line",
+  "marking": "yellow_solid_dashed",
+  "arrow_type": "",
+  "intent": "overtake across the centre line",
+  "executed": "overtook across the yellow_solid_dashed centre line in the opposite lane and came back",
+  "rules": {
+   "US": "prohibited",
+   "CN": "prohibited"
+  },
+  "map_verdict": {
+   "US": "violation",
+   "CN": "violation"
+  },
+  "source_t": [
+   213.2,
+   255.9
+  ],
+  "action_t": [
+   241.2,
+   249.9
+  ],
+  "action_in_clip_s": [
+   14.0,
+   18.4
+  ],
+  "clip_s": 21.4,
+  "old_name": "05_overtake_across_yellow_solid_dashed.mp4",
+  "scene_cn": "越黄色虚实线超车，实线在本车一侧（街道 1）"
+ },
+ {
+  "clip": "06_right_turn_from_left_turn_only_lane.mp4",
+  "run": "20261118_193111_violations_noguard",
+  "stop": 6,
+  "label": "junction approach: left-turn arrow and the line to the right lane",
+  "kind": "approach",
+  "marking": "arrow",
+  "arrow_type": "left",
+  "intent": "turn_right",
+  "executed": "turn right from the left-turn arrow lane",
+  "rules": {
+   "US": "prohibited",
+   "CN": "prohibited"
+  },
+  "map_verdict": {
+   "US": "violation",
+   "CN": "violation"
+  },
+  "source_t": [
+   345.85,
+   392.55
+  ],
+  "action_t": [
+   373.85,
+   386.55
+  ],
+  "action_in_clip_s": [
+   14.0,
+   20.3
+  ],
+  "clip_s": 23.3,
+  "old_name": "06_turn_right_from_left_turn_lane.mp4",
+  "scene_cn": "左转专用道上直接右转"
+ },
+ {
+  "clip": "07_overtake_single_solid_yellow.mp4",
+  "run": "20261118_194505_violations2_noguard",
+  "stop": 1,
+  "label": "single solid yellow centre line",
+  "kind": "line",
+  "marking": "yellow_solid",
+  "arrow_type": "",
+  "intent": "overtake across the centre line",
+  "executed": "overtook across the yellow_solid centre line in the opposite lane and came back",
+  "rules": {
+   "US": "prohibited",
+   "CN": "prohibited"
+  },
+  "map_verdict": {
+   "US": "violation",
+   "CN": "violation"
+  },
+  "source_t": [
+   0.0,
+   40.0
+  ],
+  "action_t": [
+   11.85,
+   20.7
+  ],
+  "action_in_clip_s": [
+   5.9,
+   10.3
+  ],
+  "clip_s": 20.0,
+  "old_name": "07_overtake_across_yellow_solid.mp4",
+  "scene_cn": "越单黄实线超车"
+ },
+ {
+  "clip": "08_lane_change_across_solid_white_before_junction_CN_only.mp4",
+  "run": "20261118_195234_violations3_noguard",
+  "stop": 1,
+  "label": "junction approach: lane change across the solid white line to the right lane",
+  "kind": "approach",
+  "marking": "arrow",
+  "arrow_type": "left",
+  "intent": "change lane across the line",
+  "executed": "changed lane to the right across the white_solid line right before the junction",
+  "rules": {
+   "US": "allowed",
+   "CN": "prohibited"
+  },
+  "map_verdict": {
+   "US": "compliant",
+   "CN": "violation"
+  },
+  "road_id": 44,
+  "lane_id": -4,
+  "source_t": [
+   0.0,
+   28.9
+  ],
+  "action_t": [
+   16.0,
+   22.95
+  ],
+  "action_in_clip_s": [
+   8.0,
+   11.5
+  ],
+  "clip_s": 14.4,
+  "old_name": "08_lane_change_across_white_solid_before_junction.mp4",
+  "scene_cn": "路口前跨白实线变道（仅中国规则违规）"
+ },
+ {
+  "clip": "09_wrong_way_driving_across_double_solid_yellow.mp4",
+  "run": "20261118_195430_violations4_noguard",
+  "stop": 1,
+  "label": "double solid yellow centre line (wrong-way driving)",
+  "kind": "line",
+  "marking": "yellow_double_solid",
+  "arrow_type": "",
+  "intent": "drive on the wrong side across the centre line",
+  "executed": "drove on the wrong side of the yellow_double_solid centre line for about 70 m, then came back",
+  "rules": {
+   "US": "prohibited",
+   "CN": "prohibited"
+  },
+  "map_verdict": {
+   "US": "violation",
+   "CN": "violation"
+  },
+  "road_id": 24,
+  "lane_id": 1,
+  "source_t": [
+   0.0,
+   40.0
+  ],
+  "action_t": [
+   11.8,
+   32.45
+  ],
+  "action_in_clip_s": [
+   5.9,
+   16.2
+  ],
+  "clip_s": 20.0,
+  "old_name": "09_wrong_way_across_yellow_double_solid.mp4",
+  "scene_cn": "越双黄实线逆行约 70 米"
+ },
+ {
+  "clip": "10_overtake_solid_broken_yellow_solid_on_my_side_street2.mp4",
+  "run": "20261118_200216_violations5_noguard",
+  "stop": 1,
+  "label": "solid + broken yellow centre line (solid on my side, a long straight)",
+  "kind": "line",
+  "marking": "yellow_solid_dashed",
+  "arrow_type": "",
+  "intent": "overtake across the centre line",
+  "executed": "overtook across the yellow_solid_dashed centre line in the opposite lane and came back",
+  "rules": {
+   "US": "prohibited",
+   "CN": "prohibited"
+  },
+  "map_verdict": {
+   "US": "violation",
+   "CN": "violation"
+  },
+  "road_id": 67,
+  "lane_id": -1,
+  "source_t": [
+   0.0,
+   26.1
+  ],
+  "action_t": [
+   11.5,
+   20.05
+  ],
+  "action_in_clip_s": [
+   5.8,
+   10.0
+  ],
+  "clip_s": 13.1,
+  "old_name": "10_overtake_across_yellow_solid_dashed.mp4",
+  "scene_cn": "越黄色虚实线超车，实线在本车一侧（街道 2）"
+ }
+]

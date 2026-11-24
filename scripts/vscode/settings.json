@@ -1,0 +1,9 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/python.exe",
+  "python.terminal.activateEnvironment": true,
+  "terminal.integrated.env.windows": { "PYTHONIOENCODING": "utf-8" },
+  "files.exclude": { "**/__pycache__": true, ".venv": true },
+  "search.exclude": { "results/runs/**/results.jsonl": true, "results/runs/cache": true, "notebooks/*.ipynb": true },
+  "files.associations": { "*.yaml": "yaml" },
+  "yaml.schemas": {}
+}

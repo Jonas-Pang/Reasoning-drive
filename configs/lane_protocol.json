@@ -1,0 +1,72 @@
+{
+  "frozen_utc": "2026-11-16T05:37:45Z",
+  "git_commit": "",
+  "note": "owner decision 2026-11-16: prompt lane_v3 frozen after the development runs (CN MapDR, US BDD100K)",
+  "files": {
+    "prompts\\lane_v3\\citation_A.txt": "39d57891f25f3857",
+    "prompts\\lane_v3\\citation_B.txt": "20932d132ae40750",
+    "prompts\\lane_v3\\fields.txt": "22ab4057ba0f5fdd",
+    "prompts\\lane_v3\\passage_line.txt": "bf0873ed2b50f7d2",
+    "prompts\\lane_v3\\procedure.txt": "d5bd7de88f206b8c",
+    "prompts\\lane_v3\\README.md": "65e9c26cf1c390cf",
+    "prompts\\lane_v3\\role.txt": "ee6dc77519c3a20e",
+    "prompts\\lane_v3\\rules_header.txt": "cd54994f3b1eb176",
+    "prompts\\lane_v3\\rules_step_A.txt": "f04fe439219d483b",
+    "prompts\\lane_v3\\rules_step_B.txt": "0726a1f68ac04c58",
+    "prompts\\lane_v3\\user.txt": "af93305a4361d6c0",
+    "prompts\\lane_v3\\user_D.txt": "5f28756473ca983a",
+    "reasoning_drive/agent/lane.py": "d0610084c8745f04",
+    "reasoning_drive/evaluation/lane_scoring.py": "c244e8ba1320ff82",
+    "reasoning_drive/labeling/lanes.py": "eebfd3847c40cdab",
+    "configs/schemas/lane_schema.json": "d482d9c9f64a4b42",
+    "regulations/_common/lane_action_rules.json": "2aa94c6d3277700c",
+    "regulations/CN/lane_action_rules.json": "854edc1aa83e91a8",
+    "regulations/US/lane_action_rules.json": "0691942ff6fd8824",
+    "regulations\\CN\\passages_marking.json": "7fb4757074227763",
+    "regulations\\CN\\passages_lane.yaml": "a876c488ae68a5fb",
+    "regulations\\US\\passages_marking.json": "4fb48f3989d5bce1",
+    "regulations\\US\\passages_lane.yaml": "fdc6b557c2a68241"
+  },
+  "settings": {
+    "base_url": "https://api.openai.com/v1",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "temperature": null,
+    "image_detail": "high",
+    "max_output_tokens": 6000,
+    "instruction_role": "developer",
+    "store": false
+  },
+  "prompts": {
+    "A_CN": {
+      "instructions": "eea4bfe819dd0eb5",
+      "user_text": "844caccafa8ca66b",
+      "schema": "84e99a1356d325aa"
+    },
+    "B_CN": {
+      "instructions": "2fb70f1bf092a46f",
+      "user_text": "844caccafa8ca66b",
+      "schema": "84e99a1356d325aa"
+    },
+    "C_CN": {
+      "instructions": "67027f33a25dd8c0",
+      "user_text": "844caccafa8ca66b",
+      "schema": "84e99a1356d325aa"
+    },
+    "A_US": {
+      "instructions": "eea4bfe819dd0eb5",
+      "user_text": "74e5823acc8c746f",
+      "schema": "84e99a1356d325aa"
+    },
+    "B_US": {
+      "instructions": "67027f33a25dd8c0",
+      "user_text": "74e5823acc8c746f",
+      "schema": "84e99a1356d325aa"
+    },
+    "C_US": {
+      "instructions": "2fb70f1bf092a46f",
+      "user_text": "74e5823acc8c746f",
+      "schema": "84e99a1356d325aa"
+    }
+  }
+}

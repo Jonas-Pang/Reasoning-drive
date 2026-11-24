@@ -1,0 +1,27 @@
+{
+  "pdf": "uk_highway_code_103-158.html",
+  "code": "UK",
+  "pages": 12,
+  "pages_read": [
+    1,
+    2,
+    6,
+    7,
+    8,
+    10,
+    11
+  ],
+  "requests": 2,
+  "mock": false,
+  "passages": 22,
+  "verified_quotes": 22,
+  "errors": [],
+  "usage": {
+    "input_tokens": 6394,
+    "output_tokens": 4030
+  },
+  "cost_usd": 0.0531,
+  "draft": "D:\\Project\\Reasoning_Drive\\regulations\\UK\\passages_draft.yaml",
+  "region_file": "D:\\Project\\Reasoning_Drive\\regulations\\UK\\region.yaml",
+  "time_utc": "2026-11-14T05:40:41Z"
+}

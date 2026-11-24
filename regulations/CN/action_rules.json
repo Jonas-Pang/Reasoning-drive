@@ -1,0 +1,280 @@
+{
+  "white_dashed": {
+    "actions": {
+      "cross_line": "allowed",
+      "go_straight": "not_applicable",
+      "turn_left": "not_applicable",
+      "turn_right": "not_applicable",
+      "u_turn": "not_applicable",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-4.2.2-a",
+      "CN-5.2.1-2",
+      "CN-5.2.3"
+    ]
+  },
+  "white_solid": {
+    "actions": {
+      "cross_line": "prohibited",
+      "go_straight": "not_applicable",
+      "turn_left": "not_applicable",
+      "turn_right": "not_applicable",
+      "u_turn": "not_applicable",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-4.2.2-a",
+      "CN-6.2.1",
+      "CN-6.10.1-2"
+    ]
+  },
+  "white_double_solid": {
+    "actions": {
+      "cross_line": "prohibited",
+      "go_straight": "not_applicable",
+      "turn_left": "not_applicable",
+      "turn_right": "not_applicable",
+      "u_turn": "not_applicable",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-4.2.2-a"
+    ],
+    "note": "No passage in the rule file is specific to double solid white lines; check GB 5768.3 before accepting.",
+    "note_zh": "规则文件里没有专门针对双白实线的条文，请先核对 GB 5768.3。"
+  },
+  "yellow_dashed": {
+    "actions": {
+      "cross_line": "allowed",
+      "go_straight": "not_applicable",
+      "turn_left": "not_applicable",
+      "turn_right": "not_applicable",
+      "u_turn": "not_applicable",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-4.3.2",
+      "CN-5.1.1",
+      "CN-5.1.2"
+    ]
+  },
+  "yellow_solid": {
+    "actions": {
+      "cross_line": "prohibited",
+      "go_straight": "not_applicable",
+      "turn_left": "not_applicable",
+      "turn_right": "not_applicable",
+      "u_turn": "not_applicable",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-6.1.1",
+      "CN-6.1.4"
+    ]
+  },
+  "yellow_double_solid": {
+    "actions": {
+      "cross_line": "prohibited",
+      "go_straight": "not_applicable",
+      "turn_left": "not_applicable",
+      "turn_right": "not_applicable",
+      "u_turn": "not_applicable",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-6.1.1",
+      "CN-6.1.2"
+    ]
+  },
+  "yellow_solid_dashed|ego_side": {
+    "actions": {
+      "cross_line": "allowed",
+      "go_straight": "not_applicable",
+      "turn_left": "not_applicable",
+      "turn_right": "not_applicable",
+      "u_turn": "not_applicable",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-4.2.2-a",
+      "CN-6.1.3"
+    ]
+  },
+  "yellow_solid_dashed|far_side": {
+    "actions": {
+      "cross_line": "prohibited",
+      "go_straight": "not_applicable",
+      "turn_left": "not_applicable",
+      "turn_right": "not_applicable",
+      "u_turn": "not_applicable",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-4.2.2-a",
+      "CN-6.1.3"
+    ]
+  },
+  "two_way_left_turn_lane": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": [],
+    "note": "Not a GB 5768.3-2025 marking in the rule file; leave for review.",
+    "note_zh": "规则文件里没有对应的 GB 5768.3-2025 标线，请交给负责人复核。"
+  },
+  "arrow|straight": {
+    "actions": {
+      "cross_line": "not_applicable",
+      "go_straight": "allowed",
+      "turn_left": "prohibited",
+      "turn_right": "prohibited",
+      "u_turn": "prohibited",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-5.13.1"
+    ]
+  },
+  "arrow|left": {
+    "actions": {
+      "cross_line": "not_applicable",
+      "go_straight": "prohibited",
+      "turn_left": "allowed",
+      "turn_right": "prohibited",
+      "u_turn": "",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-5.13.1"
+    ],
+    "note": "A left arrow does not by itself prohibit a U-turn; Chinese law allows a U-turn where left turns are allowed unless a sign or marking prohibits it. Decide in the labeling guide.",
+    "note_zh": "左转箭头本身并不禁止掉头；按中国法规，允许左转的地方可以掉头，除非有标志或标线禁止。请按标注约定选择。"
+  },
+  "arrow|right": {
+    "actions": {
+      "cross_line": "not_applicable",
+      "go_straight": "prohibited",
+      "turn_left": "prohibited",
+      "turn_right": "allowed",
+      "u_turn": "prohibited",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-5.13.1"
+    ]
+  },
+  "arrow|straight_left": {
+    "actions": {
+      "cross_line": "not_applicable",
+      "go_straight": "allowed",
+      "turn_left": "allowed",
+      "turn_right": "prohibited",
+      "u_turn": "",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-5.13.1"
+    ],
+    "note": "A left arrow does not by itself prohibit a U-turn; Chinese law allows a U-turn where left turns are allowed unless a sign or marking prohibits it. Decide in the labeling guide.",
+    "note_zh": "左转箭头本身并不禁止掉头；按中国法规，允许左转的地方可以掉头，除非有标志或标线禁止。请按标注约定选择。"
+  },
+  "arrow|straight_right": {
+    "actions": {
+      "cross_line": "not_applicable",
+      "go_straight": "allowed",
+      "turn_left": "prohibited",
+      "turn_right": "allowed",
+      "u_turn": "prohibited",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-5.13.1"
+    ]
+  },
+  "arrow|left_right": {
+    "actions": {
+      "cross_line": "not_applicable",
+      "go_straight": "prohibited",
+      "turn_left": "allowed",
+      "turn_right": "allowed",
+      "u_turn": "",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-5.13.1"
+    ],
+    "note": "A left arrow does not by itself prohibit a U-turn; Chinese law allows a U-turn where left turns are allowed unless a sign or marking prohibits it. Decide in the labeling guide.",
+    "note_zh": "左转箭头本身并不禁止掉头；按中国法规，允许左转的地方可以掉头，除非有标志或标线禁止。请按标注约定选择。"
+  },
+  "arrow|u_turn": {
+    "actions": {
+      "cross_line": "not_applicable",
+      "go_straight": "prohibited",
+      "turn_left": "prohibited",
+      "turn_right": "prohibited",
+      "u_turn": "allowed",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-5.13.1"
+    ]
+  },
+  "arrow|left_u_turn": {
+    "actions": {
+      "cross_line": "not_applicable",
+      "go_straight": "prohibited",
+      "turn_left": "allowed",
+      "turn_right": "prohibited",
+      "u_turn": "allowed",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-5.13.1"
+    ]
+  },
+  "arrow|straight_u_turn": {
+    "actions": {
+      "cross_line": "not_applicable",
+      "go_straight": "allowed",
+      "turn_left": "prohibited",
+      "turn_right": "prohibited",
+      "u_turn": "allowed",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [
+      "CN-5.13.1"
+    ]
+  },
+  "other": {
+    "actions": {
+      "cross_line": "not_applicable",
+      "go_straight": "not_applicable",
+      "turn_left": "not_applicable",
+      "turn_right": "not_applicable",
+      "u_turn": "not_applicable",
+      "enter_center_lane_to_wait": "not_applicable"
+    },
+    "rule_ids": [],
+    "note": "Crosswalks, stop lines, curbs and other markings: no action is scored.",
+    "note_zh": "人行横道、停止线、路缘等其他标线：不评判任何动作。"
+  },
+  "none_visible": {
+    "actions": {
+      "cross_line": "not_determined",
+      "go_straight": "not_determined",
+      "turn_left": "not_determined",
+      "turn_right": "not_determined",
+      "u_turn": "not_determined",
+      "enter_center_lane_to_wait": "not_determined"
+    },
+    "rule_ids": [],
+    "note": "No usable evidence (V0): nothing can be decided.",
+    "note_zh": "没有可用证据（V0）：任何动作都无法确定。"
+  }
+}

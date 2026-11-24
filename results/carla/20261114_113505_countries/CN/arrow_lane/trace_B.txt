@@ -1,0 +1,51 @@
+carla_Town03_arrow_lane | lane | Test B | gpt-6.1-sol
+-----------------------------------------------------
+Step 1  Scene           An urban road approaches an intersection beneath an elevated structure. My car is in
+                        the left of two visible approach lanes. (lanes 2, mine 1, full)
+Step 2  Left            A continuous white line runs along the left side of my lane, with a narrow paved
+                        margin and a raised sidewalk curb beyond it.
+                        white solid, curb yes, edge_line, evidence full
+Step 2  Right           A continuous white line separates my lane from another paved traffic lane on the
+                        right.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        arrow:left (full): A white bent arrow has a single head pointing left; no straight-
+                        ahead head is visible.
+Step 4  Cross-check     position: The left roadway edge and the lane divider on the right agree with my lane
+                        being the leftmost of two lanes. | roles: The solid white right divider fits a no-
+                        crossing lane line. The left line visibly marks the curbside roadway edge, although
+                        its white paint does not match the yellow left-edge colour prescribed by CN-5.4.3; its
+                        colour is reported as seen. | markings: The left-only arrow is compatible with an
+                        intersection approach lane bounded by a solid divider. No marked waiting area is
+                        visible. | unseen: No stop line, additional arrow head, or waiting area has been
+                        inferred from the distant intersection pavement. | result: The observations are
+                        internally consistent; the visible left-edge colour differs from the prescribed
+                        colour.
+Step 5  Rule            left_boundary: Crossing this solid longitudinal edge line is normally prohibited,
+                        except in a safe emergency. [CN-4.2.2-a] "Longitudinal markings, set along the
+                        direction of travel, take these forms: a solid line means crossing is normally
+                        prohibited, and may be crossed in an emergen"
+Step 5  Rule            right_boundary: The solid white lane divider prohibits my car from crossing into the
+                        lane on the right. [CN-6.2.1] "The no-crossing lane line separates vehicles travelling
+                        in the same direction and prohibits vehicles on the solid-line side from crossing. It
+                        has two forms: sin"
+Step 5  Rule            arrow:left: The single left-turn arrow permits a left turn and restricts this lane to
+                        that indicated movement. [CN-5.13.1] "Guide arrows indicate the direction of travel
+                        for vehicles. (Table 1 meanings: straight ahead; straight or left; left; straight or
+                        right; right; U-turn; straigh"
+Step 6  change_left     prohibited: The solid left boundary normally prohibits crossing under CN-4.2.2-a.
+Step 6  change_right    prohibited: The solid white lane divider prohibits crossing under CN-6.2.1.
+Step 6  go_straight     prohibited: The left-only arrow does not indicate straight travel under CN-5.13.1.
+Step 6  turn_left       allowed: The left arrow indicates and permits this movement under CN-5.13.1.
+Step 6  turn_right      prohibited: The left-only arrow does not indicate a right turn under CN-5.13.1.
+Step 6  u_turn          prohibited: The left-only arrow does not show a U-turn head under CN-5.13.1.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         Consistent: boundary decisions concern crossing only, the arrow governs intersection
+                        movements, and no waiting-area permission is inferred.
+Advice                  Remain in this lane for a left turn and do not cross either solid boundary in normal
+                        driving. For another movement, use an appropriately marked lane reached where changing
+                        lanes is permitted; no stop line is clearly identifiable here.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:left'], missed []), actions None, unsafe [], citation in_pack_not_accepted,
+                        contradictions []
+Tokens                  in 8794, out 1034, 15.72 s

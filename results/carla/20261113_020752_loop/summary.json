@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "map": "Town10HD_Opt",
+    "weather": "ClearNoon",
+    "region": "US",
+    "prompt": "prompts/v3",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "seed": 6216,
+    "tests": [
+      "A",
+      "B"
+    ],
+    "started": "20261113_020752",
+    "spacing_ticks": 120,
+    "tempt": 0.3
+  },
+  "mock": false,
+  "drive_with": "B",
+  "per_test": {
+    "A": {
+      "requests": 40,
+      "answered": 40,
+      "errors": 0,
+      "marking_type_correct": 40,
+      "cross_line_correct": 37,
+      "unsafe": 2,
+      "over_cautious": 1,
+      "agrees_with_carla_flag": 29,
+      "mean_latency_s": 4.77,
+      "tokens_in": 103360,
+      "tokens_out": 11524,
+      "cost_usd": 0.322,
+      "by_marking_type": {
+        "white_dashed": {
+          "n": 20,
+          "type_ok": 20,
+          "cross_ok": 19
+        },
+        "white_solid": {
+          "n": 8,
+          "type_ok": 8,
+          "cross_ok": 8
+        },
+        "yellow_double_solid": {
+          "n": 10,
+          "type_ok": 10,
+          "cross_ok": 10
+        },
+        "yellow_solid": {
+          "n": 2,
+          "type_ok": 2,
+          "cross_ok": 0
+        }
+      }
+    },
+    "B": {
+      "requests": 40,
+      "answered": 40,
+      "errors": 0,
+      "marking_type_correct": 40,
+      "cross_line_correct": 40,
+      "unsafe": 0,
+      "over_cautious": 0,
+      "agrees_with_carla_flag": 32,
+      "mean_latency_s": 4.45,
+      "tokens_in": 167480,
+      "tokens_out": 11929,
+      "cost_usd": 0.4543,
+      "by_marking_type": {
+        "white_dashed": {
+          "n": 20,
+          "type_ok": 20,
+          "cross_ok": 20
+        },
+        "white_solid": {
+          "n": 8,
+          "type_ok": 8,
+          "cross_ok": 8
+        },
+        "yellow_double_solid": {
+          "n": 10,
+          "type_ok": 10,
+          "cross_ok": 10
+        },
+        "yellow_solid": {
+          "n": 2,
+          "type_ok": 2,
+          "cross_ok": 2
+        }
+      }
+    }
+  },
+  "a_vs_b_cross_line": {
+    "pairs": 40,
+    "both_right": 37,
+    "only_A_right": 0,
+    "only_B_right": 3,
+    "both_wrong": 0
+  },
+  "closed_loop": {
+    "decision_points": 20,
+    "lane_change_wanted_with_lane_available": 13,
+    "system_allowed": 13,
+    "lane_changes_executed": 13,
+    "lane_changes_completed": 6,
+    "blocked_although_allowed_by_rules": 0,
+    "allowed_although_prohibited_by_rules": 0,
+    "wanted_to_cross_a_prohibited_line": 5,
+    "blocked_prohibited_crossings": 5,
+    "lines_crossed": {
+      "white_dashed": 32
+    },
+    "prohibited_lines_crossed": 0
+  }
+}

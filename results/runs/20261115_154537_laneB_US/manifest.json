@@ -1,0 +1,162 @@
+{
+  "run_id": "20261115_154537_laneB_US",
+  "task": "lane",
+  "created_utc": "2026-11-15T20:45:37Z",
+  "tool": "reasoning_drive 0.1",
+  "git_commit": "",
+  "code_sha": "ac53517a1fd1f028",
+  "marking_code_sha": "c73ddcb056048d5d",
+  "test": "B",
+  "region": "US",
+  "mock": false,
+  "use_cache": true,
+  "repeats": 1,
+  "n_items": 2,
+  "rules_region": "US",
+  "settings": {
+    "base_url": "https://api.openai.com/v1",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "temperature": null,
+    "image_detail": "high",
+    "max_output_tokens": 6000,
+    "instruction_role": "developer",
+    "store": false
+  },
+  "prompt_hashes": {
+    "instructions": "7db3ca5a58f923f3",
+    "user_text": "74e5823acc8c746f",
+    "schema": "4bece1e7f7a80036",
+    "shared_parts": "493225d9bd380ac6",
+    "rules_file": "2029650fa895a286",
+    "prompt_dir": "prompts/lane_v2"
+  },
+  "label_sets": {
+    "bdd100k": "cdefe21f1ddf5d90"
+  },
+  "split": "dev",
+  "split_version": 2,
+  "protocol": {
+    "frozen": false,
+    "matches": false,
+    "frozen_utc": null
+  },
+  "again": false,
+  "items": [
+    "bdd100k_val__c588eb5e-dfd59d8e",
+    "bdd100k_val__bd026bc5-9418706c"
+  ],
+  "config": {
+    "version": "3",
+    "mock": false,
+    "api": {
+      "provider": "openai",
+      "base_url": "https://api.openai.com/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "reasoning_summary": null,
+      "temperature": null,
+      "image_detail": "high",
+      "max_output_tokens": 2000,
+      "instruction_role": "developer",
+      "store": false,
+      "timeout_s": 90,
+      "max_retries": 4,
+      "parallel": 5,
+      "price_per_million_tokens": {
+        "gpt-6.1-sol": {
+          "input": 2.0,
+          "cached_input": 0.1,
+          "output": 10.0
+        },
+        "gpt-6-sol": {
+          "input": 2.0,
+          "cached_input": 0.2,
+          "output": 10.0
+        }
+      },
+      "api_key_set": true
+    },
+    "run": {
+      "test": "B",
+      "region": "US",
+      "split": "dev",
+      "repeats": 1,
+      "limit": 0,
+      "marking_types": [],
+      "order_seed": 6216
+    },
+    "datasets_root": "",
+    "workspaces": [
+      "UF",
+      "bdd100k",
+      "culane",
+      "mapdr_ws"
+    ],
+    "data_policy": {
+      "send_to_api": [
+        "own_video",
+        "bdd100k",
+        "culane",
+        "mapdr"
+      ]
+    },
+    "prompt": {
+      "dir": "prompts/v4",
+      "box_color_rgb": [
+        0,
+        229,
+        255
+      ],
+      "box_width": 3,
+      "box_margin": 6,
+      "jpeg_quality": 92,
+      "restrict_rule_ids_in_schema": false
+    },
+    "regions": {
+      "CN": {
+        "name": "China",
+        "name_zh": "中国",
+        "rule_region": "CN",
+        "rule_text": "text_en",
+        "rules_title": "GB 5768.3-2025 Road traffic signs and markings, Part 3: Road traffic markings (English translation by the project)",
+        "rules_file": "regulations/CN/passages_marking.json",
+        "driving_side": "right",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/CN/passages_marking.json",
+          "regulations/CN/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "CN"
+        ]
+      },
+      "US": {
+        "name": "the United States",
+        "name_zh": "美国",
+        "rule_region": "US",
+        "rule_text": "text_en",
+        "rules_title": "MUTCD 11th Edition (December 2023), Part 3 Markings",
+        "rules_file": "regulations/US/passages_marking.json",
+        "driving_side": "right",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/US/passages_marking.json",
+          "regulations/US/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "US"
+        ]
+      }
+    },
+    "lane": {
+      "prompt_dir": "prompts/lane_v2",
+      "max_output_tokens": 6000,
+      "control_region": {
+        "CN": "US",
+        "US": "CN"
+      }
+    }
+  }
+}

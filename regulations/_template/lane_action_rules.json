@@ -1,0 +1,74 @@
+{
+  "boundary": [
+    {
+      "when": {
+        "curb": "yes"
+      },
+      "change": "",
+      "rule_ids": [],
+      "note": "what the country's rule says about a curb"
+    },
+    {
+      "when": {
+        "color": "white",
+        "pattern": "solid"
+      },
+      "change": "",
+      "rule_ids": []
+    },
+    {
+      "when": {
+        "color": "white",
+        "pattern": "dashed"
+      },
+      "change": "",
+      "rule_ids": []
+    },
+    {
+      "when": {
+        "color": "yellow",
+        "pattern": "double_solid"
+      },
+      "change": "",
+      "rule_ids": []
+    }
+  ],
+  "markings": {
+    "arrow:straight": {
+      "actions": {
+        "go_straight": "",
+        "turn_left": "",
+        "turn_right": "",
+        "u_turn": ""
+      },
+      "rule_ids": []
+    },
+    "arrow:left": {
+      "actions": {
+        "go_straight": "",
+        "turn_left": "",
+        "turn_right": "",
+        "u_turn": ""
+      },
+      "rule_ids": []
+    },
+    "arrow:right": {
+      "actions": {
+        "go_straight": "",
+        "turn_left": "",
+        "turn_right": "",
+        "u_turn": ""
+      },
+      "rule_ids": []
+    },
+    "arrow:straight_left": {
+      "actions": {
+        "go_straight": "",
+        "turn_left": "",
+        "turn_right": "",
+        "u_turn": ""
+      },
+      "rule_ids": []
+    }
+  }
+}

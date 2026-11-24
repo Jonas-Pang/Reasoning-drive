@@ -1,0 +1,43 @@
+carla_Town03_arrow_lane_mirrored | lane | Test A | gpt-6.1-sol
+--------------------------------------------------------------
+Step 1  Scene           An urban road approaches an apparent T-intersection in Japan. My car is in the right-
+                        hand lane of two approach lanes. (lanes 2, mine 2, full)
+Step 2  Left            A continuous white solid line separates my lane from the adjacent approach lane on the
+                        left; no curb forms this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           A continuous white solid line runs beside a narrow roadside strip and a raised
+                        sidewalk curb on the right.
+                        white solid, curb yes, edge_line, evidence full
+Step 3  Markings        arrow:right (full): A white lane-use arrow ahead has a bent shaft and a single
+                        arrowhead pointing right.
+Step 4  Cross-check     position: Two approach lanes and position 2 agree with an adjacent same-direction lane
+                        on the left and a roadway edge on the right. | roles: The white solid divider fits a
+                        same-direction lane boundary, and the white roadside line and curb fit the right
+                        roadway edge. | markings: The right-turn arrow is consistent with the right-hand
+                        approach lane; no conflicting readable marking is visible in my lane. | unseen: No
+                        yellow paint or broken pattern is inferred. Distant details at the intersection,
+                        including any stop line, are not sufficiently distinct to identify. | result:
+                        consistent
+Step 5  Rule            left_boundary: In Japan, a white solid same-direction lane divider does not itself
+                        prohibit changing lanes, provided the maneuver is otherwise lawful and safe.
+Step 5  Rule            right_boundary: The roadside edge and raised sidewalk curb are not an available
+                        traffic lane and prohibit driving across this boundary onto the sidewalk.
+Step 5  Rule            arrow:right: The right-turn lane-use arrow requires a right turn from this lane,
+                        excluding straight, left-turn and U-turn movements.
+Step 6  change_left     allowed: The white solid same-direction lane divider does not itself prohibit a safe,
+                        otherwise lawful lane change in Japan.
+Step 6  change_right    prohibited: The right boundary leads to a raised sidewalk curb, not another traffic
+                        lane.
+Step 6  go_straight     prohibited: The right-only arrow excludes proceeding straight.
+Step 6  turn_left       prohibited: The right-only arrow excludes turning left.
+Step 6  turn_right      allowed: The lane-use arrow expressly permits a right turn.
+Step 6  u_turn          prohibited: The right-only arrow does not permit a U-turn.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         consistent
+Advice                  Stay in this lane to turn right; for another movement, select an appropriately marked
+                        lane before the intersection when safe and lawful. Do not cross onto the right
+                        sidewalk, and check intersection controls and any stop line as they become clear.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:right'], missed []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4424, out 1002, 19.57 s

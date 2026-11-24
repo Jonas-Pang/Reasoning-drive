@@ -1,0 +1,1005 @@
+{
+  "summary": {
+    "n": 11,
+    "lane": {
+      "correct": 0,
+      "n": 11,
+      "acc": 0.0
+    },
+    "output2": {
+      "correct": 0,
+      "n": 11,
+      "acc": 0.0
+    },
+    "lane_count": {
+      "correct": 0,
+      "n": 9,
+      "acc": 0.0
+    },
+    "ego_index": {
+      "correct": 2,
+      "n": 9,
+      "acc": 0.222
+    },
+    "markings_exact": {
+      "correct": 1,
+      "n": 11,
+      "acc": 0.091
+    },
+    "lane_core": {
+      "correct": 0,
+      "n": 11,
+      "acc": 0.0
+    },
+    "markings_core_exact": {
+      "correct": 5,
+      "n": 11,
+      "acc": 0.455
+    },
+    "failed": 0,
+    "left_boundary": {
+      "correct": 2,
+      "n": 11,
+      "acc": 0.182
+    },
+    "left_color": {
+      "correct": 4,
+      "n": 11,
+      "acc": 0.364
+    },
+    "left_pattern": {
+      "correct": 4,
+      "n": 11,
+      "acc": 0.364
+    },
+    "left_curb": {
+      "correct": 5,
+      "n": 11,
+      "acc": 0.455
+    },
+    "left_role": {
+      "correct": 1,
+      "n": 11,
+      "acc": 0.091
+    },
+    "right_boundary": {
+      "correct": 0,
+      "n": 10,
+      "acc": 0.0
+    },
+    "right_color": {
+      "correct": 10,
+      "n": 10,
+      "acc": 1.0
+    },
+    "right_pattern": {
+      "correct": 0,
+      "n": 10,
+      "acc": 0.0
+    },
+    "right_curb": {
+      "correct": 7,
+      "n": 10,
+      "acc": 0.7
+    },
+    "right_role": {
+      "correct": 1,
+      "n": 10,
+      "acc": 0.1
+    },
+    "both_boundaries": {
+      "correct": 0,
+      "n": 11,
+      "acc": 0.0
+    },
+    "markings_added": 10,
+    "markings_missed": 1,
+    "markings_precision": 0.091,
+    "markings_recall": 0.5,
+    "added_by_token": {
+      "arrow:straight": 5,
+      "line:stop_line": 3,
+      "line:stop_yield": 1,
+      "symbol:bike": 1
+    },
+    "added_transverse": 4,
+    "added_by_evidence": {
+      "insufficient": 3,
+      "full": 7
+    },
+    "missed_by_token": {
+      "text:other": 1
+    },
+    "actions": {
+      "change_left": {
+        "n": 1,
+        "correct": 1
+      },
+      "change_right": {
+        "n": 11,
+        "correct": 0
+      }
+    },
+    "contested": {
+      "n": 21,
+      "correct": 18
+    },
+    "unsafe_errors": 0,
+    "unsafe_by_action": {},
+    "over_cautious_errors": 8,
+    "contested_unsafe_errors": 1,
+    "prohibited_recall": {
+      "correct": 0,
+      "n": 0,
+      "acc": null
+    },
+    "extra_decisions": 3,
+    "citations": {
+      "unlisted": 1,
+      "in_pack_not_accepted": 7,
+      "accepted": 3
+    },
+    "citation_ids_with_brackets": 1,
+    "inconsistent_answers": 2,
+    "consistency_kinds": {
+      "leftmost lane, but a lane line on the left": 1,
+      "go_straight allowed without the stop that the STOP or 停 marking in my lane requires": 1
+    },
+    "boundary_evidence": {
+      "same": 18,
+      "unsupported_guess": 4
+    },
+    "requests": 11,
+    "errors": 0,
+    "readable": {
+      "n": 11,
+      "of": 11
+    },
+    "cached": 0,
+    "usage": {
+      "input_tokens": 150084,
+      "cached_input_tokens": 0,
+      "output_tokens": 7687
+    },
+    "cost_usd": 0.0,
+    "latency_s": {
+      "mean": 9.3,
+      "max": 15.31
+    },
+    "elapsed_s": 49.2
+  },
+  "per_image": {
+    "lingoqa__train_2fbe08dff3dad5e735cda2ccbca737d3_2": {
+      "image_id": "lingoqa__train_2fbe08dff3dad5e735cda2ccbca737d3_2",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [
+            "area:grid"
+          ],
+          "answer": [
+            "area:grid"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": true,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 1,
+        "cited": [
+          "UK-Rule131",
+          "UK-TSRGD-11(1"
+        ],
+        "citation": "unlisted",
+        "consistency": [
+          "leftmost lane, but a lane line on the left"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_1c248b91fcec1954ff5503505d99c727_1": {
+      "image_id": "lingoqa__train_1c248b91fcec1954ff5503505d99c727_1",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [
+            "line:stop_line"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "line:stop_line": "insufficient"
+          },
+          "label": [],
+          "answer": [
+            "line:stop_line"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": true,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule131",
+          "UK-TSRGD-S11P4-item11"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_74be6bb80c7b66a911cef6cb3c999227_0": {
+      "image_id": "lingoqa__train_74be6bb80c7b66a911cef6cb3c999227_0",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": true,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule131",
+          "UK-TSRGD-Part6,item20"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_39b0fb645812ec9da3cbf9a64e3e2b12_0": {
+      "image_id": "lingoqa__train_39b0fb645812ec9da3cbf9a64e3e2b12_0",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [
+            "line:stop_yield"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "line:stop_yield": "insufficient"
+          },
+          "label": [],
+          "answer": [
+            "line:stop_yield"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": true,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule131",
+          "UK-TSRGD-S11P4-item11"
+        ],
+        "citation": "accepted",
+        "consistency": [
+          "go_straight allowed without the stop that the STOP or 停 marking in my lane requires"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_97b78557b9103ec9b3b5dce23c33e5f6_0": {
+      "image_id": "lingoqa__train_97b78557b9103ec9b3b5dce23c33e5f6_0",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight"
+          ],
+          "missed": [
+            "text:other"
+          ],
+          "added_evidence": {
+            "arrow:straight": "full"
+          },
+          "label": [
+            "text:other"
+          ],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": true,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [
+          "turn_left",
+          "turn_right",
+          "u_turn"
+        ],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule131",
+          "UK-Rule140",
+          "UK-TSRGD-Part6,item20"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_4fea456d82bfafd9161a364928d30234_0": {
+      "image_id": "lingoqa__train_4fea456d82bfafd9161a364928d30234_0",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [
+            "line:stop_line"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "line:stop_line": "insufficient"
+          },
+          "label": [],
+          "answer": [
+            "line:stop_line"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule127",
+          "UK-Rule131"
+        ],
+        "citation": "accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_1c5078b108792bcad84aacafb7edf52d_0": {
+      "image_id": "lingoqa__train_1c5078b108792bcad84aacafb7edf52d_0",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": null
+        },
+        "role": {
+          "left": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [
+            "line:stop_line"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "line:stop_line": "full"
+          },
+          "label": [],
+          "answer": [
+            "line:stop_line"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": false,
+          "go_straight": false
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule131",
+          "UK-TSRGD-S11P4-item11"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "insufficient",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_70a63438f4f5c50ef21f29cc45d849ab_0": {
+      "image_id": "lingoqa__train_70a63438f4f5c50ef21f29cc45d849ab_0",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": true,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule131",
+          "UK-TSRGD-Part6,item20"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_a7fef42c584e5d3b67be7e244e35cd21_0": {
+      "image_id": "lingoqa__train_a7fef42c584e5d3b67be7e244e35cd21_0",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": true,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule141",
+          "UK-TSRGD-Part6,item20",
+          "UK-TSRGD-S11P4-item11"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_3510c0055b143081d71aa4122da19639_0": {
+      "image_id": "lingoqa__train_3510c0055b143081d71aa4122da19639_0",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "symbol:bike"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "symbol:bike": "full"
+          },
+          "label": [],
+          "answer": [
+            "symbol:bike"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": true,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule131"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "lingoqa__train_1869901e085ad9bfb1081f4efa101c93_2": {
+      "image_id": "lingoqa__train_1869901e085ad9bfb1081f4efa101c93_2",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": false
+        },
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": false,
+          "added": [
+            "arrow:straight"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "arrow:straight": "full"
+          },
+          "label": [],
+          "answer": [
+            "arrow:straight"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_right": false
+        },
+        "contested": {
+          "change_left": false,
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [
+          "change_right"
+        ],
+        "contested_unsafe": [
+          "change_left"
+        ],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule127",
+          "UK-TSRGD-Part6,item20",
+          "UK-TSRGD-S11P4-item11"
+        ],
+        "citation": "accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    }
+  }
+}

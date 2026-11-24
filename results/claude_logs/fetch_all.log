@@ -1,0 +1,278 @@
+==== start 2026/11/14 ���� 16:25:41.43 
+==== [1] regulations fetch AU,AU-NSW 
+truststore: using the Windows certificate store
+AU:arr: downloaded 5.3 MB from https://pcc.gov.au/uniform/Australian-Road-Rules-9June2023.pdf
+AU-NSW:rules: FAILED — https://legislation.nsw.gov.au/view/pdf/inforce/current/sl-2014-0758: HTTPError: HTTP Error 403: Forbidden | https://legislation.nsw.gov.au/view/whole/html/inforce/current/sl-2014-0758: HTTPError: HTTP Error 403: Forbidden
+1 of 2 documents are in regulations/inbox/ (log: regulations/inbox/sources_log.json).
+==== [2] regulations extract-all AU and states 
+truststore: using the Windows certificate store
+australian_road_rules_2023-06-09.pdf: 358 pages, 191 with lane-marking words, 36 requests, about $0.8082 (model gpt-6.1-sol)
+  pages 3-6: 0 passages
+  pages 7-16: 0 passages
+  pages 21-34: 3 passages
+  pages 35-41: 7 passages
+  pages 42-47: 2 passages
+  pages 48-54: 5 passages
+  pages 55-60: 3 passages
+  pages 61-66: 11 passages
+  pages 67-73: 2 passages
+  pages 74-81: 2 passages
+  pages 82-89: 10 passages
+  pages 90-96: 4 passages
+  pages 97-107: 4 passages
+  pages 108-113: 4 passages
+  pages 114-121: 3 passages
+  pages 122-127: 7 passages
+  pages 128-133: 9 passages
+  pages 134-138: 9 passages
+  pages 139-144: 11 passages
+  pages 145-150: 13 passages
+  pages 151-159: 2 passages
+  pages 166-184: 6 passages
+  pages 190-197: 3 passages
+  pages 199-217: 2 passages
+  pages 221-235: 4 passages
+  pages 249-257: 4 passages
+  pages 267-279: 0 passages
+  pages 280-286: 0 passages
+  pages 287-291: 0 passages
+  pages 292-299: 0 passages
+  pages 301-309: 1 passages
+  pages 311-323: 0 passages
+  pages 324-342: 2 passages
+  pages 344-347: 3 passages
+  pages 348-354: 3 passages
+  pages 355-357: 4 passages
+Draft: D:\Project\Reasoning_Drive\regulations\AU\passages_draft.yaml (142 passages, 142 quotes found on their page). Read it, then: python main.py regulations accept AU
+AU:arr: 142 passages, $0.6338 (total $0.6338)
+4 pages are the same as australian_road_rules_2023-06-09.pdf and are not sent; 202 pages differ.
+act_road_rules_regulation_2017.pdf: 473 pages, 202 with lane-marking words, 34 requests, about $0.7198 (model gpt-6.1-sol)
+  pages 5-10: 0 passages
+  pages 11-36: 0 passages
+  pages 37-42: 8 passages
+  pages 43-48: 6 passages
+  pages 49-55: 0 passages
+  pages 59-65: 10 passages
+  pages 66-72: 7 passages
+  pages 73-78: 7 passages
+  pages 79-84: 2 passages
+  pages 85-90: 0 passages
+  pages 91-98: 4 passages
+  pages 99-106: 6 passages
+  pages 107-112: 5 passages
+  pages 113-124: 2 passages
+  pages 125-133: 4 passages
+  pages 134-141: 2 passages
+  pages 142-147: 3 passages
+  pages 148-153: 7 passages
+  pages 154-160: 3 passages
+  pages 161-166: 5 passages
+  pages 167-172: 14 passages
+  pages 173-179: 8 passages
+  pages 182-200: 6 passages
+  pages 214-232: 3 passages
+  pages 253-318: 5 passages
+  pages 320-352: 2 passages
+  pages 354-366: 0 passages
+  pages 368-381: 0 passages
+  pages 382-396: 1 passages
+  pages 399-412: 0 passages
+  pages 414-433: 0 passages
+  pages 438-445: 1 passages
+  pages 446-456: 6 passages
+  pages 457-466: 2 passages
+Draft: D:\Project\Reasoning_Drive\regulations\AU-ACT\passages_draft.yaml (126 passages, 126 quotes found on their page). Read it, then: python main.py regulations accept AU-ACT
+AU-ACT:rules: 126 passages, $0.5649 (total $1.1987)
+AU-NSW:rules: not downloaded (python main.py regulations fetch AU-NSW)
+164 pages are the same as australian_road_rules_2023-06-09.pdf and are not sent; 67 pages differ.
+nt_australian_road_rules.pdf: 414 pages, 67 with lane-marking words, 13 requests, about $0.2721 (model gpt-6.1-sol)
+  pages 2-5: 0 passages
+  pages 6-8: 0 passages
+  pages 9-15: 0 passages
+  pages 31-68: 2 passages
+  pages 71-82: 3 passages
+  pages 83-98: 1 passages
+  pages 100-144: 5 passages
+  pages 154-201: 3 passages
+  pages 202-310: 2 passages
+  pages 312-358: 0 passages
+  pages 360-368: 0 passages
+  pages 369-384: 0 passages
+  pages 387-390: 0 passages
+Draft: D:\Project\Reasoning_Drive\regulations\AU-NT\passages_draft.yaml (16 passages, 16 quotes found on their page). Read it, then: python main.py regulations accept AU-NT
+AU-NT:rules: 16 passages, $0.1067 (total $1.3054)
+5 pages are the same as australian_road_rules_2023-06-09.pdf and are not sent; 190 pages differ.
+qld_road_rules_2009.pdf: 434 pages, 190 with lane-marking words, 33 requests, about $0.7004 (model gpt-6.1-sol)
+  pages 4-8: 0 passages
+  pages 9-12: 0 passages
+  pages 17-39: 3 passages
+  pages 42-47: 5 passages
+  pages 48-53: 5 passages
+  pages 54-65: 6 passages
+  pages 67-73: 6 passages
+  pages 75-81: 8 passages
+  pages 82-88: 0 passages
+  pages 90-97: 3 passages
+  pages 98-106: 8 passages
+  pages 107-112: 3 passages
+  pages 113-129: 2 passages
+  pages 130-137: 3 passages
+  pages 138-145: 4 passages
+  pages 146-151: 14 passages
+  pages 152-157: 9 passages
+  pages 158-163: 2 passages
+  pages 164-169: 7 passages
+  pages 171-176: 12 passages
+  pages 177-183: 6 passages
+  pages 184-192: 2 passages
+  pages 200-226: 0 passages
+  pages 227-265: 4 passages
+  pages 276-311: 4 passages
+  pages 313-336: 0 passages
+  pages 338-351: 0 passages
+  pages 352-375: 0 passages
+  pages 376-390: 0 passages
+  pages 392-412: 0 passages
+  pages 417-423: 3 passages
+  pages 424-430: 4 passages
+  pages 432-433: 3 passages
+Draft: D:\Project\Reasoning_Drive\regulations\AU-QLD\passages_draft.yaml (123 passages, 123 quotes found on their page). Read it, then: python main.py regulations accept AU-QLD
+AU-QLD:rules: 123 passages, $0.5505 (total $1.8559)
+147 pages are the same as australian_road_rules_2023-06-09.pdf and are not sent; 64 pages differ.
+sa_australian_road_rules.pdf: 381 pages, 64 with lane-marking words, 11 requests, about $0.2374 (model gpt-6.1-sol)
+  pages 34-63: 3 passages
+  pages 69-123: 8 passages
+  pages 129-140: 7 passages
+  pages 147-161: 10 passages
+  pages 163-193: 5 passages
+  pages 197-242: 6 passages
+  pages 245-291: 2 passages
+  pages 317-324: 0 passages
+  pages 325-334: 0 passages
+  pages 336-352: 0 passages
+  pages 355-366: 2 passages
+Draft: D:\Project\Reasoning_Drive\regulations\AU-SA\passages_draft.yaml (42 passages, 42 quotes found on their page). Read it, then: python main.py regulations accept AU-SA
+AU-SA:rules: 42 passages, $0.1669 (total $2.0228)
+12 pages are the same as australian_road_rules_2023-06-09.pdf and are not sent; 129 pages differ.
+tas_road_rules_2019.html: 222 pages, 129 with lane-marking words, 33 requests, about $0.7592 (model gpt-6.1-sol)
+  pages 2-9: 3 passages
+  pages 11-16: 6 passages
+  pages 18-22: 6 passages
+  pages 23-26: 2 passages
+  pages 27-30: 18 passages
+  pages 31-34: 2 passages
+  pages 35-38: 2 passages
+  pages 39-42: 8 passages
+  pages 43-46: 5 passages
+  pages 47-50: 5 passages
+  pages 53-56: 2 passages
+  pages 57-61: 3 passages
+  pages 62-66: 7 passages
+  pages 67-70: 7 passages
+  pages 71-74: 11 passages
+  pages 75-78: 13 passages
+  pages 79-82: 10 passages
+  pages 83-90: 1 passages
+  pages 91-97: 6 passages
+  pages 100-105: 3 passages
+  pages 106-111: 8 passages
+  pages 119-130: 2 passages
+  pages 133-151: 4 passages
+  pages 152-161: 2 passages
+  pages 162-166: 0 passages
+  pages 168-172: 0 passages
+  pages 174-178: 0 passages
+  pages 182-191: 3 passages
+  pages 194-199: 0 passages
+  pages 200-203: 1 passages
+  pages 204-207: 3 passages
+  pages 210-218: 5 passages
+  pages 219-219: 0 passages
+Draft: D:\Project\Reasoning_Drive\regulations\AU-TAS\passages_draft.yaml (143 passages, 142 quotes found on their page). Read it, then: python main.py regulations accept AU-TAS
+AU-TAS:rules: 143 passages, $0.6276 (total $2.6504)
+94 pages are the same as australian_road_rules_2023-06-09.pdf and are not sent; 161 pages differ.
+vic_road_safety_road_rules_2017.pdf: 625 pages, 161 with lane-marking words, 27 requests, about $0.5734 (model gpt-6.1-sol)
+  pages 2-7: 0 passages
+  pages 8-39: 0 passages
+  pages 41-51: 4 passages
+  pages 52-59: 2 passages
+  pages 61-75: 2 passages
+  pages 76-89: 6 passages
+  pages 90-98: 8 passages
+  pages 99-108: 0 passages
+  pages 109-116: 0 passages
+  pages 117-123: 2 passages
+  pages 124-135: 7 passages
+  pages 139-146: 0 passages
+  pages 150-173: 1 passages
+  pages 179-192: 6 passages
+  pages 193-206: 2 passages
+  pages 207-218: 7 passages
+  pages 219-225: 5 passages
+  pages 229-260: 5 passages
+  pages 269-297: 6 passages
+  pages 301-368: 0 passages
+  pages 370-437: 4 passages
+  pages 445-479: 0 passages
+  pages 482-538: 1 passages
+  pages 540-553: 0 passages
+  pages 561-581: 1 passages
+  pages 583-599: 3 passages
+  pages 601-607: 4 passages
+Draft: D:\Project\Reasoning_Drive\regulations\AU-VIC\passages_draft.yaml (73 passages, 73 quotes found on their page). Read it, then: python main.py regulations accept AU-VIC
+AU-VIC:rules: 73 passages, $0.3684 (total $3.0188)
+7 extracted, 0 done before, 0 errors; cost $3.0188. Read the drafts, then: python main.py regulations accept <CODE>
+==== [3] data fetch CN,UK 
+truststore: using the Windows certificate store
+UK lingoqa: 488 candidate frames, 488 missing
+  action/images.zip: {'archive_bytes': 57072793178, 'members': 146978, 'matched': 0, 'written': 0, 'requests': 5}
+    50 frames written
+    100 frames written
+    150 frames written
+    200 frames written
+    250 frames written
+    300 frames written
+    350 frames written
+    400 frames written
+    450 frames written
+  scenery/images.zip: {'archive_bytes': 8273918069, 'members': 21050, 'matched': 488, 'written': 488, 'requests': 387}
+  action/train.parquet: {'file': 'F:\\数据集\\lingoqa\\raw\\action\\train.parquet', 'bytes': 21515131, 'sha256': 'b6dcc29b62fd7b6dfa46ca2ea312424e966a96b22fdc0db705498d29caefbdab'}
+  scenery/train.parquet: {'file': 'F:\\数据集\\lingoqa\\raw\\scenery\\train.parquet', 'bytes': 12204937, 'sha256': '68fcc9acb6bd99bed0bbc641a57bab77b862fb3fb00055ee1874015511ccd8ee'}
+  evaluation/images.zip: {'file': 'F:\\数据集\\lingoqa\\raw\\evaluation\\images.zip', 'bytes': 232101697, 'sha256': '343703b0194ba26eb20a6c5678f62963be037ac45ba742e5e095dd4a4b5aee5e', 'extracted': True}
+  evaluation/val.parquet: {'file': 'F:\\数据集\\lingoqa\\raw\\evaluation\\val.parquet', 'bytes': 73927, 'sha256': '435461a8a8038ad8d2a8fe98388f40530978149e60e7beaaa41174088fe53caf'}
+UK lingoqa: 488 of 488 candidate frames in F:\数据集\lingoqa
+truststore: using the Windows certificate store
+CN once: 333 candidate frames, 333 missing
+    train_cam01.tar: 1.22 / 1.52 GB
+  train_cam01.tar: {'file': 'F:\\数据集\\once\\raw\\train_cam01.tar', 'bytes': 1518520320, 'sha256': '1501f2e38b6b2eba5520b96cc7852601ad679e2c92b2a9ac580ff82a39edd5f3', 'matched': 17, 'written': 17}
+  val_cam01.tar: {'file': 'F:\\数据集\\once\\raw\\val_cam01.tar', 'bytes': 698173440, 'sha256': '57b47d35c61a17876e00809300d48409645382237bd6996c10e65cae314eb028', 'matched': 0, 'written': 0}
+    test_cam01.tar: 1.21 / 1.84 GB
+  test_cam01.tar: {'file': 'F:\\数据集\\once\\raw\\test_cam01.tar', 'bytes': 1843599360, 'sha256': 'ff4964e2eacf4e085abb95329077740751086394959ef8ccbd6b3b3fc4d60e8e', 'matched': 0, 'written': 0}
+CN once: 17 of 333 candidate frames in F:\数据集\once
+==== [4] data status 
+truststore: using the Windows certificate store
+CN  once           17/333  candidate frames  download: python main.py data fetch CN
+IN  idd             0/561  candidate frames  registration: register at https://idd.insaan.iiit.ac.in/ and download IDD Multimodal (primary, leftCamImgs) yourself; then point --source at it
+JP  covla           0/418  candidate frames  licence form: open https://huggingface.co/datasets/turing-motors/CoVLA-Dataset, sign in, accept the conditions (academic, non-commercial); then a read token in .env as HF_TOKEN
+SG  nuscenes_sg     0/797  candidate frames  registration: register at https://www.nuscenes.org/sign-up, accept the terms, download the trainval CAM_FRONT keyframes (samples/CAM_FRONT); then point --source at it
+UK  lingoqa       488/488  candidate frames  download: python main.py data fetch UK
+US  waymo           0/134  candidate frames  registration: sign in at https://waymo.com/open/ with a Google account and accept the licence; the frames GeoDrive-Bench uses come from its camera data
+==== [5] regulations list 
+truststore: using the Windows certificate store
+AU   Australia              left     0 passages  rule tables: - -  DRAFT waiting  [draft]  Australian Road Rules (national model law), version of 9 June 2023
+AU-ACT the Australian Capital Territory, Australia left     0 passages  rule tables: - -  DRAFT waiting  [draft]  Road Transport (Road Rules) Regulation 2017 (ACT), current republication
+AU-NSW New South Wales, Australia left     0 passages  rule tables: - -  [planned]  Road Rules 2014 (NSW), current version
+AU-NT the Northern Territory, Australia left     0 passages  rule tables: - -  DRAFT waiting  [draft]  Traffic Regulations 1999 (NT), Australian Road Rules, current version
+AU-QLD Queensland, Australia  left     0 passages  rule tables: - -  DRAFT waiting  [draft]  Transport Operations (Road Use Management—Road Rules) Regulation 2009 (Qld), current version
+AU-SA South Australia, Australia left     0 passages  rule tables: - -  DRAFT waiting  [draft]  Australian Road Rules (SA), current version
+AU-TAS Tasmania, Australia    left     0 passages  rule tables: - -  DRAFT waiting  [draft]  Road Rules 2019 (Tas), current version
+AU-VIC Victoria, Australia    left     0 passages  rule tables: - -  DRAFT waiting  [draft]  Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+AU-WA Western Australia, Australia left     0 passages  rule tables: - -  DRAFT waiting  [draft]  Road Traffic Code 2000 (WA), version 05-aa0-00 (14 May 2026)
+CN   China                  right   45 passages  rule tables: marking lane  [in use]  GB 5768.3-2025 Road traffic signs and markings, Part 3: Road traffic markings (English translation by the project)
+IN   India                  left     0 passages  rule tables: - -  DRAFT waiting  [draft]  The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+JP   Japan                  left     0 passages  rule tables: - -  DRAFT waiting  [draft]  道路標識、区画線及び道路標示に関する命令（昭和三十五年総理府・建設省令第三号）
+SG   Singapore              left     0 passages  rule tables: - -  DRAFT waiting  [planned]  Road Traffic (Traffic Signs) Rules (R 33), Highway Code (R 11), Road Traffic Rules (R 20), under the Road Traffic Act 1961
+UK   the United Kingdom     left     0 passages  rule tables: - -  DRAFT waiting  [draft]  The Highway Code, rules 127-132 (Lines and lane markings on the road) and rules 133-143 (Multi-lane carriageways)
+UK-NI Northern Ireland, the United Kingdom left     0 passages  rule tables: - -  DRAFT waiting  [draft]  The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+US   the United States      right   46 passages  rule tables: marking lane  [in use]  MUTCD 11th Edition (December 2023), Part 3 Markings
+==== Finished 2026/11/14 ���� 17:15:26.80 

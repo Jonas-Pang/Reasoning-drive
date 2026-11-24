@@ -1,0 +1,48 @@
+carla_Town03_arrow_lane_mirrored | lane | Test B | gpt-6.1-sol
+--------------------------------------------------------------
+Step 1  Scene           An urban road approaches a junction beneath an overhead structure. My car is in the
+                        right-hand lane, with a right-turn arrow ahead; the far side of the junction is less
+                        distinct. (lanes 2, mine 2, full)
+Step 2  Left            A white broken line, with a long foreground dash and a gap before the next visible
+                        dash, separates my lane from the paved lane on the left; there is no curb along this
+                        divider.
+                        white dashed, curb no, lane_line, evidence full
+Step 2  Right           A single solid white line runs beside a raised pavement curb on the right, with
+                        buildings and a footway beyond.
+                        white solid, curb yes, edge_line, evidence full
+Step 3  Markings        arrow:right (full): A white arrow ahead has a bent shaft ending in a single right-
+                        pointing head.
+Step 4  Cross-check     position: The lane divider on the left and roadway edge on the right agree with my car
+                        occupying the rightmost of two lanes. | roles: The broken white divider fits a lane
+                        line; the solid white line beside the pavement fits a roadway edge. | markings: The
+                        single right-turn arrow is consistent with a right-hand approach lane; no conflicting
+                        word, arrow or waiting area is visible. | unseen: No stop line or additional distant
+                        marking can be confidently identified, and none is asserted. | result: consistent
+Step 5  Rule            left_boundary: The broken white lane divider recommends keeping within the lane but
+                        does not prohibit a safe lane change to the left. [UK-Rule131] "Lane dividers. These
+                        are short, broken white lines which are used on wide carriageways to divide them into
+                        lanes. You should keep between them."
+Step 5  Rule            right_boundary: No supplied passage specifically governs this ordinary edge line or
+                        curb; the raised physical edge is not an available lane-change route.
+Step 5  Rule            arrow:right: Follow the lane direction marking; under the lane-use arrow definition,
+                        this arrow permits a right turn rather than straight ahead, left or a U-turn. [UK-
+                        Rule134] "You should follow the signs and road markings and get into the lane as
+                        directed."
+Step 6  change_left     allowed: The broken white lane divider is governed by UK-Rule131, which recommends
+                        staying between dividers without prohibiting crossing.
+Step 6  change_right    prohibited: The raised curb forms the right boundary and is not a drivable lane-change
+                        route.
+Step 6  go_straight     prohibited: The single right-turn lane-use arrow does not include straight ahead.
+Step 6  turn_left       prohibited: The single right-turn lane-use arrow does not include a left turn.
+Step 6  turn_right      allowed: The visible right-turn arrow permits this movement.
+Step 6  u_turn          prohibited: The right-turn arrow does not include a U-turn.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         consistent
+Advice                  Use this lane for the marked right turn and do not move onto the right-hand pavement.
+                        For another movement, change left only if safe and check that lane's guidance; no
+                        definite stop line is identifiable here.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:right'], missed []), actions None, unsafe [], citation in_pack_not_accepted,
+                        contradictions []
+Tokens                  in 6305, out 1011, 18.22 s

@@ -1,0 +1,1 @@
+This photo was taken in {region_name}, where traffic keeps to the {driving_side}. Interpret my lane.

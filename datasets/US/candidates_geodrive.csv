@@ -1,0 +1,135 @@
+rel,collection,items,categories,lane_words
+train/09c15e52bcfb74a01a21e746c4b8125d/133_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/09c15e52bcfb74a01a21e746c4b8125d/138_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/09c15e52bcfb74a01a21e746c4b8125d/143_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/0c48b1491f151d6460b4e565a7e3deef/039_CAM_JOINT.jpg,waymo,1,planning,double solid;lane change;overtak
+train/10fa32ccd61d791a8bd8b33fcae2189c/205_CAM_JOINT.jpg,waymo,1,prediction,turn arrow
+train/10fa32ccd61d791a8bd8b33fcae2189c/210_CAM_JOINT.jpg,waymo,1,prediction,turn arrow
+train/10fa32ccd61d791a8bd8b33fcae2189c/215_CAM_JOINT.jpg,waymo,1,prediction,turn arrow
+train/1812536b3fda9a8a8ab7f6e8fb1c7fda/199_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/1812536b3fda9a8a8ab7f6e8fb1c7fda/204_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/1812536b3fda9a8a8ab7f6e8fb1c7fda/209_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/1d7c0f5b0a95b13950c8c9e66cd3f546/107_CAM_JOINT.jpg,waymo,1,planning,dashed
+train/1d7c0f5b0a95b13950c8c9e66cd3f546/112_CAM_JOINT.jpg,waymo,1,planning,dashed
+train/1d7c0f5b0a95b13950c8c9e66cd3f546/117_CAM_JOINT.jpg,waymo,1,planning,dashed
+train/2043417c3c6d05961f7aac8e886fe8ef/212_CAM_JOINT.jpg,waymo,1,planning,lane change;lane markings;overtak
+train/2043417c3c6d05961f7aac8e886fe8ef/217_CAM_JOINT.jpg,waymo,1,planning,lane change;lane markings;overtak
+train/2043417c3c6d05961f7aac8e886fe8ef/222_CAM_JOINT.jpg,waymo,1,planning,lane change;lane markings;overtak
+train/20b9eb9f36d6d6f4764e0b8bc5488909/173_CAM_JOINT.jpg,waymo,1,planning,lane change;overtak
+train/20b9eb9f36d6d6f4764e0b8bc5488909/178_CAM_JOINT.jpg,waymo,1,planning,lane change;overtak
+train/20b9eb9f36d6d6f4764e0b8bc5488909/183_CAM_JOINT.jpg,waymo,1,planning,lane change;overtak
+train/25247b4f76114340220f0152999e1beb/029_CAM_JOINT.jpg,waymo,1,planning,lane change;overtak
+train/2ffb582fe772ccb7539a7801ad3034e2/081_CAM_JOINT.jpg,waymo,1,prediction,double yellow;overtak
+train/2ffb582fe772ccb7539a7801ad3034e2/086_CAM_JOINT.jpg,waymo,1,prediction,double yellow;overtak
+train/2ffb582fe772ccb7539a7801ad3034e2/091_CAM_JOINT.jpg,waymo,1,prediction,double yellow;overtak
+train/31f7b999608bfbe741b736a6bd8f0a66/094_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/31f7b999608bfbe741b736a6bd8f0a66/099_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/31f7b999608bfbe741b736a6bd8f0a66/104_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/31f7b999608bfbe741b736a6bd8f0a66/159_CAM_JOINT.jpg,waymo,1,planning,turn arrow
+train/31f7b999608bfbe741b736a6bd8f0a66/164_CAM_JOINT.jpg,waymo,1,planning,turn arrow
+train/31f7b999608bfbe741b736a6bd8f0a66/169_CAM_JOINT.jpg,waymo,1,planning,turn arrow
+train/32749a4129c9a35856fbe9270a1f07c8/042_CAM_JOINT.jpg,waymo,1,planning,center line;overtak
+train/32749a4129c9a35856fbe9270a1f07c8/047_CAM_JOINT.jpg,waymo,1,planning,center line;overtak
+train/32749a4129c9a35856fbe9270a1f07c8/052_CAM_JOINT.jpg,waymo,1,planning,center line;overtak
+train/3550f1da3fe4914d15ec7aeb999fb60a/217_CAM_JOINT.jpg,waymo,2,planning;prediction,center line;overtak;turn arrow
+train/3550f1da3fe4914d15ec7aeb999fb60a/222_CAM_JOINT.jpg,waymo,2,planning;prediction,center line;overtak;turn arrow
+train/3550f1da3fe4914d15ec7aeb999fb60a/227_CAM_JOINT.jpg,waymo,2,planning;prediction,center line;overtak;turn arrow
+train/3b7ebdf01c9a624d679011973eeb7f49/155_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/3b7ebdf01c9a624d679011973eeb7f49/160_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/3b7ebdf01c9a624d679011973eeb7f49/165_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/3cac1ce268b0f297d916677489b0b0ec/031_CAM_JOINT.jpg,waymo,1,planning,turn arrow
+train/3d998d6cebac60243a63ecb4bf2baf2e/216_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/3d998d6cebac60243a63ecb4bf2baf2e/221_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/3d998d6cebac60243a63ecb4bf2baf2e/226_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/3f925a82865891707c3022e7536c9163/098_CAM_JOINT.jpg,waymo,1,planning,double solid;lane change
+train/3f925a82865891707c3022e7536c9163/103_CAM_JOINT.jpg,waymo,1,planning,double solid;lane change
+train/3f925a82865891707c3022e7536c9163/108_CAM_JOINT.jpg,waymo,1,planning,double solid;lane change
+train/3f925a82865891707c3022e7536c9163/193_CAM_JOINT.jpg,waymo,1,prediction,overtak
+train/3f925a82865891707c3022e7536c9163/198_CAM_JOINT.jpg,waymo,1,prediction,overtak
+train/3f925a82865891707c3022e7536c9163/203_CAM_JOINT.jpg,waymo,1,prediction,overtak
+train/746a543769d5d8a0e2cf2324d08396cb/118_CAM_JOINT.jpg,waymo,1,planning,lane change;overtak
+train/746a543769d5d8a0e2cf2324d08396cb/123_CAM_JOINT.jpg,waymo,1,planning,lane change;overtak
+train/746a543769d5d8a0e2cf2324d08396cb/128_CAM_JOINT.jpg,waymo,1,planning,lane change;overtak
+train/746a543769d5d8a0e2cf2324d08396cb/200_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/746a543769d5d8a0e2cf2324d08396cb/205_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/746a543769d5d8a0e2cf2324d08396cb/210_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/7ad3d4b31e4b9c308cbc0123bb37f87b/058_CAM_JOINT.jpg,waymo,1,prediction,lane markings
+train/7ad3d4b31e4b9c308cbc0123bb37f87b/063_CAM_JOINT.jpg,waymo,1,prediction,lane markings
+train/7ad3d4b31e4b9c308cbc0123bb37f87b/068_CAM_JOINT.jpg,waymo,1,prediction,lane markings
+train/875cee1bc3d724c6eea0e5f726b03e58/198_CAM_JOINT.jpg,waymo,2,perception;planning,dashed;lane change;lane markings;overtak;turn arrow
+train/875cee1bc3d724c6eea0e5f726b03e58/203_CAM_JOINT.jpg,waymo,2,perception;planning,dashed;lane change;lane markings;overtak;turn arrow
+train/875cee1bc3d724c6eea0e5f726b03e58/208_CAM_JOINT.jpg,waymo,2,perception;planning,dashed;lane change;lane markings;overtak;turn arrow
+train/8cbf4298c1b71ea37b3e35c04b707a7b/129_CAM_JOINT.jpg,waymo,1,planning,lane change
+train/8cbf4298c1b71ea37b3e35c04b707a7b/134_CAM_JOINT.jpg,waymo,1,planning,lane change
+train/8cbf4298c1b71ea37b3e35c04b707a7b/139_CAM_JOINT.jpg,waymo,1,planning,lane change
+train/8e3c3e2e983b46611a624067398b4c95/214_CAM_JOINT.jpg,waymo,1,planning,lane change;overtak
+train/8e3c3e2e983b46611a624067398b4c95/219_CAM_JOINT.jpg,waymo,1,planning,lane change;overtak
+train/8e3c3e2e983b46611a624067398b4c95/224_CAM_JOINT.jpg,waymo,1,planning,lane change;overtak
+train/9129e559b46a6201c526aa0a34942454/213_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/9129e559b46a6201c526aa0a34942454/218_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/9129e559b46a6201c526aa0a34942454/223_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/959030398c3807e58ff0bd04f1ee83b5/035_CAM_JOINT.jpg,waymo,1,planning,lane arrow
+train/9998ae40779047458598c3150c3859e6/217_CAM_JOINT.jpg,waymo,1,prediction,road marking
+train/9998ae40779047458598c3150c3859e6/222_CAM_JOINT.jpg,waymo,1,prediction,road marking
+train/9998ae40779047458598c3150c3859e6/227_CAM_JOINT.jpg,waymo,1,prediction,road marking
+train/9a92b60b3be25155a1b5b9923b86f4d0/147_CAM_JOINT.jpg,waymo,1,perception,dashed
+train/9a92b60b3be25155a1b5b9923b86f4d0/152_CAM_JOINT.jpg,waymo,1,perception,dashed
+train/9a92b60b3be25155a1b5b9923b86f4d0/157_CAM_JOINT.jpg,waymo,1,perception,dashed
+train/9b82f9c66ed4ee734f2c883e8dba3049/197_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/9b82f9c66ed4ee734f2c883e8dba3049/202_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/9b82f9c66ed4ee734f2c883e8dba3049/207_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/a53554f5c755e76af5f4a77acd5853ac/057_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/a53554f5c755e76af5f4a77acd5853ac/062_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/a53554f5c755e76af5f4a77acd5853ac/067_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/a592a1e4ce0911a0defda98a53b549fe/149_CAM_JOINT.jpg,waymo,1,prediction,road marking
+train/a592a1e4ce0911a0defda98a53b549fe/154_CAM_JOINT.jpg,waymo,1,prediction,road marking
+train/a592a1e4ce0911a0defda98a53b549fe/159_CAM_JOINT.jpg,waymo,1,prediction,road marking
+train/a6b75c5c9059d7ca0288a14fcdb0f504/213_CAM_JOINT.jpg,waymo,1,planning,dashed
+train/a6b75c5c9059d7ca0288a14fcdb0f504/218_CAM_JOINT.jpg,waymo,1,planning,dashed
+train/a6b75c5c9059d7ca0288a14fcdb0f504/223_CAM_JOINT.jpg,waymo,1,planning,dashed
+train/b45deb9cfab22ac761cdb58beec13784/102_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/b45deb9cfab22ac761cdb58beec13784/107_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/b45deb9cfab22ac761cdb58beec13784/112_CAM_JOINT.jpg,waymo,1,planning,overtak
+train/b7809634e9e5b79defa9336572fef620/201_CAM_JOINT.jpg,waymo,2,planning;prediction,double yellow;lane change;overtak
+train/b7809634e9e5b79defa9336572fef620/206_CAM_JOINT.jpg,waymo,2,planning;prediction,double yellow;lane change;overtak
+train/b7809634e9e5b79defa9336572fef620/211_CAM_JOINT.jpg,waymo,2,planning;prediction,double yellow;lane change;overtak
+train/b7f27692a540399e77c98c7034b68056/009_CAM_JOINT.jpg,waymo,1,prediction,turn arrow
+train/b84d416e992bcbbf41450860d1cac01c/058_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/b84d416e992bcbbf41450860d1cac01c/063_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/b84d416e992bcbbf41450860d1cac01c/068_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/b85e1d056c25eef736b428d6a56c3338/172_CAM_JOINT.jpg,waymo,1,planning,dashed;lane change;overtak
+train/b85e1d056c25eef736b428d6a56c3338/177_CAM_JOINT.jpg,waymo,1,planning,dashed;lane change;overtak
+train/b85e1d056c25eef736b428d6a56c3338/182_CAM_JOINT.jpg,waymo,1,planning,dashed;lane change;overtak
+train/c35a59ce6782bc67d15d7089627a48a1/214_CAM_JOINT.jpg,waymo,1,prediction,overtak
+train/c35a59ce6782bc67d15d7089627a48a1/219_CAM_JOINT.jpg,waymo,1,prediction,overtak
+train/c35a59ce6782bc67d15d7089627a48a1/224_CAM_JOINT.jpg,waymo,1,prediction,overtak
+train/c5fe7ce6fbd912f519737e45b7fbfbb7/030_CAM_JOINT.jpg,waymo,1,planning,turn arrow
+train/c6e0a7ff5f95ef5e69cc9b790d177166/035_CAM_JOINT.jpg,waymo,1,planning,lane change
+train/c6e0a7ff5f95ef5e69cc9b790d177166/040_CAM_JOINT.jpg,waymo,1,planning,lane change
+train/c6e0a7ff5f95ef5e69cc9b790d177166/045_CAM_JOINT.jpg,waymo,1,planning,lane change
+train/cbf26d3d1f79e82aaadccc1de8035892/116_CAM_JOINT.jpg,waymo,1,perception,turn arrow
+train/cbf26d3d1f79e82aaadccc1de8035892/121_CAM_JOINT.jpg,waymo,1,perception,turn arrow
+train/cbf26d3d1f79e82aaadccc1de8035892/126_CAM_JOINT.jpg,waymo,1,perception,turn arrow
+train/cf84f705f1954e62880a0ce641fdb361/037_CAM_JOINT.jpg,waymo,1,perception,turn arrow
+train/de5200e091f690269a040fe4a99b041b/037_CAM_JOINT.jpg,waymo,2,perception;planning,solid white;turn arrow
+train/e081a869bcb3478ab06e61cdc9539376/038_CAM_JOINT.jpg,waymo,2,planning;prediction,lane change;overtak
+train/e081a869bcb3478ab06e61cdc9539376/043_CAM_JOINT.jpg,waymo,2,planning;prediction,lane change;overtak
+train/e081a869bcb3478ab06e61cdc9539376/048_CAM_JOINT.jpg,waymo,2,planning;prediction,lane change;overtak
+train/e0dd247c92d566815695c62e8e8f17d2/063_CAM_JOINT.jpg,waymo,1,prediction,overtak
+train/e0dd247c92d566815695c62e8e8f17d2/068_CAM_JOINT.jpg,waymo,1,prediction,overtak
+train/e0dd247c92d566815695c62e8e8f17d2/073_CAM_JOINT.jpg,waymo,1,prediction,overtak
+train/ef234de08b3b558f26331892e2d49802/114_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/ef234de08b3b558f26331892e2d49802/119_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/ef234de08b3b558f26331892e2d49802/124_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/efd68ee6e7bd15d706a245a91467d30e/145_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/efd68ee6e7bd15d706a245a91467d30e/150_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/efd68ee6e7bd15d706a245a91467d30e/155_CAM_JOINT.jpg,waymo,1,planning,lane markings
+train/f338e5b5fc9732c0d541bbc315250106/134_CAM_JOINT.jpg,waymo,1,prediction,turn arrow
+train/f338e5b5fc9732c0d541bbc315250106/139_CAM_JOINT.jpg,waymo,1,prediction,turn arrow
+train/f338e5b5fc9732c0d541bbc315250106/144_CAM_JOINT.jpg,waymo,1,prediction,turn arrow
+train/fcd4b67a36c2c197ac04fe32a4807201/093_CAM_JOINT.jpg,waymo,1,planning,road marking
+train/fcd4b67a36c2c197ac04fe32a4807201/098_CAM_JOINT.jpg,waymo,1,planning,road marking
+train/fcd4b67a36c2c197ac04fe32a4807201/103_CAM_JOINT.jpg,waymo,1,planning,road marking
+train/fe8294523a58dcaa33d361811a438293/147_CAM_JOINT.jpg,waymo,1,planning,turn arrow
+train/fe8294523a58dcaa33d361811a438293/152_CAM_JOINT.jpg,waymo,1,planning,turn arrow
+train/fe8294523a58dcaa33d361811a438293/157_CAM_JOINT.jpg,waymo,1,planning,turn arrow

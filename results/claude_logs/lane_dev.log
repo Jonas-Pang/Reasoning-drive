@@ -1,0 +1,46 @@
+
+$ main.py lane items --region US --split dev
+truststore: using the Windows certificate store
+0 images with a final lane label for region US
+
+$ main.py lane run --test A --region US --split dev --prompt lane_v2 --real
+truststore: using the Windows certificate store
+Error: No final lane labels for region US in the configured workspaces (label lanes with: python main.py label --data <workspace> lanes).
+[exit 1]
+
+$ main.py lane run --test B --region US --split dev --prompt lane_v2 --real
+truststore: using the Windows certificate store
+Error: No final lane labels for region US in the configured workspaces (label lanes with: python main.py label --data <workspace> lanes).
+[exit 1]
+
+$ main.py lane run --test C --region US --split dev --prompt lane_v2 --real
+truststore: using the Windows certificate store
+Error: No final lane labels for region US in the configured workspaces (label lanes with: python main.py label --data <workspace> lanes).
+[exit 1]
+
+$ main.py lane runs
+truststore: using the Windows certificate store
+20261114_010650_laneR_US               Test R US n=38 lane=0.316 actions=0.528 unsafe=4 $0.5835
+20261114_010242_laneR_CN               Test R CN n=68 lane=0.544 actions=0.868 unsafe=1 $1.1224
+20261114_005949_laneD_US               Test D US n=38 lane=0.447 actions=0.75 unsafe=3 $0.5174
+20261114_005514_laneD_CN               Test D CN n=68 lane=0.471 actions=0.765 unsafe=4 $0.8987
+20261114_005301_laneB_US               Test B US n=38 lane=0.447 actions=0.806 unsafe=3 $0.5261
+20261114_004918_laneB_CN               Test B CN n=68 lane=0.485 actions=0.809 unsafe=2 $0.9154
+20261114_004006_laneR_US               Test R US n=38 lane=None actions=None unsafe=None $None
+20261114_004004_laneR_CN               Test R CN n=68 lane=None actions=None unsafe=None $None
+20261114_004003_laneD_US               Test D US n=38 lane=None actions=None unsafe=None $None
+20261114_004002_laneD_CN               Test D CN n=68 lane=None actions=None unsafe=None $None
+20261114_004001_laneB_US               Test B US n=38 lane=None actions=None unsafe=None $None
+20261114_003959_laneB_CN               Test B CN n=68 lane=None actions=None unsafe=None $None
+20261105_075052_laneB_US               Test B US n=38 lane=0.395 actions=0.833 unsafe=3 $0.5245
+20261105_075052_laneA_US               Test A US n=38 lane=0.5 actions=0.75 unsafe=5 $0.4772
+20261105_074605_laneB_CN               Test B CN n=68 lane=0.471 actions=0.853 unsafe=2 $0.8987
+20261105_074605_laneA_CN               Test A CN n=68 lane=0.544 actions=0.838 unsafe=2 $0.86
+20261105_074059_laneC_US               Test C US n=38 lane=0.553 actions=0.806 unsafe=2 $0.5215
+20261105_074059_laneC_CN               Test C CN n=68 lane=0.485 actions=0.456 unsafe=40 $0.9752
+20261103_095848_laneB_US               Test B US n=38 lane=0.447 actions=0.778 unsafe=3 $0.5302
+20261103_095848_laneA_US               Test A US n=38 lane=0.447 actions=0.75 unsafe=5 $0.4819
+20261103_034158_laneB_CN               Test B CN n=68 lane=0.485 actions=0.853 unsafe=2 $0.9385
+20261103_034158_laneA_CN               Test A CN n=68 lane=0.5 actions=0.838 unsafe=2 $0.8561
+
+ALL DONE

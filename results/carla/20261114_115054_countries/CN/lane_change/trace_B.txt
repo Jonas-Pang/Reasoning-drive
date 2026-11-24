@@ -1,0 +1,48 @@
+carla_Town03_lane_change | lane | Test B | gpt-6.1-sol
+------------------------------------------------------
+Step 1  Scene           A two-way urban road runs beneath an elevated structure, with two visible lanes in
+                        this direction. My car is in the leftmost lane; no intersection or lane ending is
+                        clearly visible ahead. (lanes 2, mine 1, full)
+Step 2  Left            Two parallel solid yellow lines separate my lane from the opposing carriageway; there
+                        is no curb at this boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 2  Right           A continuous solid white line separates my lane from another lane travelling in the
+                        same direction; the roadside curb lies beyond that adjacent lane.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: The centre line on the left and a lane line on the right agree with my lane
+                        being lane 1 of 2 in this direction. | roles: The double solid yellow centre line and
+                        solid white same-direction lane divider fit their assigned roles. | markings: No
+                        arrows, words, symbols, transverse lines or marked waiting areas are visible in my
+                        lane. | unseen: No distant intersection layout or hidden lane-use marking has been
+                        inferred. | result: consistent
+Step 5  Rule            left_boundary: The double solid yellow centre line prohibits my car from crossing to
+                        the left. [CN-6.1.2] "A double solid yellow line prohibits vehicles in both directions
+                        from crossing. It is generally used on roads with two or more motor-vehicle lanes in
+                        one direct"
+Step 5  Rule            right_boundary: The solid white lane line prohibits my car from crossing into the lane
+                        on the right. [CN-6.2.1] "The no-crossing lane line separates vehicles travelling in
+                        the same direction and prohibits vehicles on the solid-line side from crossing. It has
+                        two forms: sin"
+Step 6  change_left     prohibited: The double solid yellow centre line prohibits crossing under CN-6.1.2.
+Step 6  change_right    prohibited: The solid white lane line prohibits crossing under CN-6.2.1.
+Step 6  go_straight     not_applicable: No visible arrow or prohibited-movement marking governs this action.
+Step 6  turn_left       not_applicable: No visible arrow or prohibited-movement marking governs this action.
+Step 6  turn_right      not_applicable: No visible arrow or prohibited-movement marking governs this action.
+Step 6  u_turn          not_applicable: No visible arrow or prohibited-movement marking governs this action at
+                        a lane end.
+Step 6  enter_waiting_areanot_applicable: No left-turn waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         consistent
+Advice                  Remain between the double yellow centre line and the solid white lane divider; do not
+                        change lanes across either boundary. No visible markings establish movements at the
+                        next intersection, so reassess when its lane guidance becomes visible.
+Model's summary         **Creating JSON schema**  I need to generate a clear and concise full JSON for a road
+                        layout. It has two lanes going in the same direction, with a solid white divider and
+                        an outer white curb. On the left, there’s a double yellow line, but no additional
+                        markings. It looks like there are two lanes without any straight portion, and the
+                        schema shouldn't include any patterns—I'll need to omit any descriptive elements that
+                        aren’t allowed.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation in_pack_not_accepted, contradictions []
+Tokens                  in 8794, out 813, 11.09 s

@@ -1,0 +1,55 @@
+carla_Town03_arrow_lane | lane | Test B | gpt-6.1-sol
+-----------------------------------------------------
+Step 1  Scene           An urban road approaches an intersection beneath an elevated structure. Two lanes are
+                        visible in this direction, and my car is in the leftmost lane. (lanes 2, mine 1, full)
+Step 2  Left            A single solid white line runs along the left side of my lane, with a raised curb and
+                        sidewalk immediately beyond it.
+                        white solid, curb yes, edge_line, evidence full
+Step 2  Right           A single solid white line separates my lane from another lane on the right.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        arrow:left (full): A white arrow ahead has a bent shaft and a single arrowhead
+                        pointing left.
+Step 4  Cross-check     position: The left roadway edge and right lane separator agree with my lane being the
+                        first of two same-direction lanes. | roles: The solid white right boundary fits an
+                        intersection approach lane separator. The left boundary visibly has white paint beside
+                        a curb; its colour differs from the usual yellow left edge specified in the supplied
+                        rules, but it is not a centre line. | markings: The left-turn arrow is consistent with
+                        a leftmost approach lane bounded by a solid lane separator. | unseen: No stop line or
+                        waiting area can be confidently identified at the distant intersection; none is
+                        inferred. | result: consistent
+Step 5  Rule            left_boundary: The solid longitudinal edge line normally prohibits crossing to the
+                        left, except in a safe emergency. [CN-4.2.2-a] "Longitudinal markings, set along the
+                        direction of travel, take these forms: a solid line means crossing is normally
+                        prohibited, and may be crossed in an emergen"
+Step 5  Rule            right_boundary: The solid white lane line prohibits crossing into the lane on the
+                        right. [CN-6.2.1] "The no-crossing lane line separates vehicles travelling in the same
+                        direction and prohibits vehicles on the solid-line side from crossing. It has two
+                        forms: sin"
+Step 5  Rule            arrow:left: The left-only guide arrow permits a left turn and excludes straight,
+                        right-turn and U-turn movements from this lane. [CN-5.13.1] "Guide arrows indicate the
+                        direction of travel for vehicles. (Table 1 meanings: straight ahead; straight or left;
+                        left; straight or right; right; U-turn; straigh"
+Step 6  change_left     prohibited: The solid left boundary normally prohibits crossing under CN-4.2.2-a; a
+                        raised curb also lies beyond it.
+Step 6  change_right    prohibited: The solid white lane separator prohibits crossing under CN-6.2.1.
+Step 6  go_straight     prohibited: The left-only arrow does not permit straight travel under CN-5.13.1.
+Step 6  turn_left       allowed: The left arrow indicates a permitted left turn under CN-5.13.1.
+Step 6  turn_right      prohibited: The left-only arrow excludes a right turn under CN-5.13.1.
+Step 6  u_turn          prohibited: The arrow shows left only, not a U-turn, under CN-5.13.1.
+Step 6  enter_waiting_areanot_determined: The distant intersection surface is insufficiently clear to
+                          determine whether a marked waiting area lies ahead.
+Step 7  Reflect         consistent
+Advice                  Remain in this lane for a left turn and do not cross either solid boundary. For
+                        another movement, select an appropriately marked lane before the solid-line approach;
+                        confirm intersection controls and any stop line or waiting area as they become
+                        visible.
+Model's summary         **Evaluating road markings**  I need to assess the road situation concisely. There are
+                        two lanes, with the left having a white edge curb and a solid white line on the right.
+                        The arrow on the left is clear. I’m questioning where the stop line is; at y376, it
+                        seems like there’s a horizontal line that may indicate the crossroad edge, but it’s
+                        not definite. I confirm there are two lanes, and the left curb is indeed a white solid
+                        edge.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:left'], missed []), actions None, unsafe [], citation in_pack_not_accepted,
+                        contradictions []
+Tokens                  in 8794, out 973, 14.61 s

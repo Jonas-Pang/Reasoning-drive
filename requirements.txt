@@ -15,7 +15,9 @@ gdown==5.2.0
 pypdf==5.1.0
 # Reads DATA_DIR and the API key from a local .env file
 python-dotenv==1.0.1
-# Settings file config/experiment.yaml
+# Settings files configs/*.yaml, regulations/*/region.yaml, datasets/*/dataset.yaml
 PyYAML==6.0.2
-# Own dash-cam videos: decoding, frame saving, blurring (video_tool/)
+# Own dash-cam videos: decoding, frame saving, blurring (reasoning_drive/labeling/)
 opencv-python-headless==4.10.0.84
+# Metrics of the demo page for Prometheus (python main.py web, /metrics; the Docker image installs deploy/requirements-docker.lock)
+prometheus-client==0.26.0

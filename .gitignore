@@ -8,10 +8,14 @@ data/
 # Secrets
 .env
 
-# Answer cache, mock runs and old runs
-runs/cache/
-runs/*_mock/
-runs/archive/
+# Answer cache, mock runs and generated files
+results/runs/cache/
+results/runs/*_mock/
+results/runs/archive/
+results/carla/*_mock/
+results/carla/*_preview*/
+results/carla/*/live_view.mp4
+*.mp4
 
 # Python and notebook clutter
 .venv/
@@ -28,3 +32,11 @@ __pycache__/
 .fseventsd
 Thumbs.db
 desktop.ini
+regulations/inbox/*
+!regulations/inbox/.gitkeep
+
+# Final submission (2026-11-23): keep generated simulator frames and sample photos out of Git
+results/carla/**/*.jpg
+results/carla/**/*.png
+results/trials/*/images/
+*.before_*

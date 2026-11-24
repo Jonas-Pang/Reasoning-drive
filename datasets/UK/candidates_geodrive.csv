@@ -1,0 +1,489 @@
+rel,collection,items,categories,lane_words
+train/01717bcbf6d6a09abaccb237ad2accc3/0.jpg,lingoqa,1,planning,dashed;overtak
+train/04104f24e06ff8dea76f18111fe17195/1.jpg,lingoqa,1,planning,box junction
+train/073404a1fed07cfc5805fb88ae0a4185/2.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/073404a1fed07cfc5805fb88ae0a4185/3.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/073404a1fed07cfc5805fb88ae0a4185/4.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/076cad056990631afb7259c33bf15a71/1.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/076cad056990631afb7259c33bf15a71/2.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/076cad056990631afb7259c33bf15a71/3.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/0820cb91a4cbe8e5d3e11d0e862ccf7e/1.jpg,lingoqa,1,region,box junction
+train/090dc4f60295f95b64c33b9a29181fd6/1.jpg,lingoqa,1,region,box junction
+train/0aadef06acce49b3b7febebf8d31e7c5/2.jpg,lingoqa,1,region,bus lane;double yellow
+train/0aadef06acce49b3b7febebf8d31e7c5/3.jpg,lingoqa,1,region,bus lane;double yellow
+train/0aadef06acce49b3b7febebf8d31e7c5/4.jpg,lingoqa,1,region,bus lane;double yellow
+train/0bf1f396ce83e99426f99b2208c4ad1e/0.jpg,lingoqa,1,planning,box junction
+train/0ce0b8122650098478e78399944693fe/0.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/0ce8221f4625edd6290aa7eb1227cfb8/0.jpg,lingoqa,2,planning;region,bus lane;double yellow;overtak
+train/10c5c6761ec863f576bebff154e9015d/0.jpg,lingoqa,1,planning,overtak
+train/10c5c6761ec863f576bebff154e9015d/1.jpg,lingoqa,1,planning,overtak
+train/10c5c6761ec863f576bebff154e9015d/2.jpg,lingoqa,1,planning,overtak
+train/10c927378f43be72ccfa980c3b279cbf/0.jpg,lingoqa,1,planning,lane change;overtak
+train/10c927378f43be72ccfa980c3b279cbf/1.jpg,lingoqa,1,planning,lane change;overtak
+train/10c927378f43be72ccfa980c3b279cbf/2.jpg,lingoqa,1,planning,lane change;overtak
+train/1143a031fc372badcb55c771c9d819da/1.jpg,lingoqa,1,prediction,overtak
+train/13c9d631e0406ff8899d4f79e15f1bf2/2.jpg,lingoqa,1,perception,solid white
+train/13c9d631e0406ff8899d4f79e15f1bf2/3.jpg,lingoqa,1,perception,solid white
+train/13c9d631e0406ff8899d4f79e15f1bf2/4.jpg,lingoqa,1,perception,solid white
+train/14c2f6d5c2cfc95041ae850390b86595/0.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/14c2f6d5c2cfc95041ae850390b86595/1.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/14c2f6d5c2cfc95041ae850390b86595/2.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/156ef80931e9ab79d837cd7fea45782f/0.jpg,lingoqa,1,region,overtak
+train/158fe8e268d93d340d564184b41ac65e/2.jpg,lingoqa,1,planning,bus lane
+train/158fe8e268d93d340d564184b41ac65e/3.jpg,lingoqa,1,planning,bus lane
+train/158fe8e268d93d340d564184b41ac65e/4.jpg,lingoqa,1,planning,bus lane
+train/1869901e085ad9bfb1081f4efa101c93/2.jpg,lingoqa,1,planning,overtak
+train/1869901e085ad9bfb1081f4efa101c93/3.jpg,lingoqa,1,planning,overtak
+train/1869901e085ad9bfb1081f4efa101c93/4.jpg,lingoqa,1,planning,overtak
+train/19395e9841fa3c4111926efc17d8a1a7/1.jpg,lingoqa,1,region,overtak;yellow line
+train/1b041afb2c8b7f7345c46ffbf626b90b/0.jpg,lingoqa,1,region,box junction
+train/1c208a824c4f2584e33f254e56e9e816/0.jpg,lingoqa,1,planning,overtak
+train/1c248b91fcec1954ff5503505d99c727/1.jpg,lingoqa,1,region,overtak
+train/1c5078b108792bcad84aacafb7edf52d/0.jpg,lingoqa,1,planning,lane change
+train/1c5078b108792bcad84aacafb7edf52d/1.jpg,lingoqa,1,planning,lane change
+train/1c5078b108792bcad84aacafb7edf52d/2.jpg,lingoqa,1,planning,lane change
+train/1d19421a315491db945049675540d325/2.jpg,lingoqa,2,perception;prediction,bus lane;overtak
+train/1d19421a315491db945049675540d325/3.jpg,lingoqa,2,perception;prediction,bus lane;overtak
+train/1d19421a315491db945049675540d325/4.jpg,lingoqa,2,perception;prediction,bus lane;overtak
+train/1d351abaa5ef46224d6eedf565811c17/0.jpg,lingoqa,1,region,overtak
+train/1e92bf2a9cdbff04711f3dff8ca85a04/0.jpg,lingoqa,2,planning;region,overtak;road marking;yellow line
+train/1e92bf2a9cdbff04711f3dff8ca85a04/1.jpg,lingoqa,2,planning;region,overtak;road marking;yellow line
+train/1e92bf2a9cdbff04711f3dff8ca85a04/2.jpg,lingoqa,2,planning;region,overtak;road marking;yellow line
+train/1ef3a875f5ddd03199581fbdccaf4885/0.jpg,lingoqa,1,region,overtak
+train/1ef3a875f5ddd03199581fbdccaf4885/1.jpg,lingoqa,1,region,overtak
+train/1ef3a875f5ddd03199581fbdccaf4885/2.jpg,lingoqa,1,region,overtak
+train/1f3fca0d163e8fab4b7e49377507d266/1.jpg,lingoqa,1,planning,box junction
+train/20d909b35c65d5e984997896de483967/0.jpg,lingoqa,1,planning,box junction
+train/22229010e71f13ebca6f60a16ceed14c/1.jpg,lingoqa,1,prediction,stop line
+train/22229010e71f13ebca6f60a16ceed14c/2.jpg,lingoqa,1,prediction,stop line
+train/22229010e71f13ebca6f60a16ceed14c/3.jpg,lingoqa,1,prediction,stop line
+train/25a016a4ace14e741fd271310baf1e46/1.jpg,lingoqa,1,planning,overtak
+train/25a016a4ace14e741fd271310baf1e46/2.jpg,lingoqa,1,planning,overtak
+train/25a016a4ace14e741fd271310baf1e46/3.jpg,lingoqa,1,planning,overtak
+train/27ca312fb6ce3cb70036e317c6c758ba/1.jpg,lingoqa,1,planning,overtak
+train/27ca312fb6ce3cb70036e317c6c758ba/2.jpg,lingoqa,1,planning,overtak
+train/27ca312fb6ce3cb70036e317c6c758ba/3.jpg,lingoqa,1,planning,overtak
+train/287b014e764cca26392bacc0072c0531/2.jpg,lingoqa,1,planning,overtak
+train/287b014e764cca26392bacc0072c0531/3.jpg,lingoqa,1,planning,overtak
+train/287b014e764cca26392bacc0072c0531/4.jpg,lingoqa,1,planning,overtak
+train/2a9f814bd97b07c168441cf56b2f5b6b/2.jpg,lingoqa,1,planning,lane change;overtak
+train/2a9f814bd97b07c168441cf56b2f5b6b/3.jpg,lingoqa,1,planning,lane change;overtak
+train/2a9f814bd97b07c168441cf56b2f5b6b/4.jpg,lingoqa,1,planning,lane change;overtak
+train/2b9207180dd39192823e6f7a380715af/2.jpg,lingoqa,1,prediction,overtak
+train/2b9207180dd39192823e6f7a380715af/3.jpg,lingoqa,1,prediction,overtak
+train/2b9207180dd39192823e6f7a380715af/4.jpg,lingoqa,1,prediction,overtak
+train/2c09f351a788d8818f02f19a677803fc/0.jpg,lingoqa,1,region,box junction
+train/2fbe08dff3dad5e735cda2ccbca737d3/2.jpg,lingoqa,1,region,box junction
+train/2fbe08dff3dad5e735cda2ccbca737d3/3.jpg,lingoqa,1,region,box junction
+train/2fbe08dff3dad5e735cda2ccbca737d3/4.jpg,lingoqa,1,region,box junction
+train/3102897dbd37a5d16c5261d34936f270/1.jpg,lingoqa,1,planning,box junction
+train/33c8e5a07ba49eea015c0c30880ee4f7/1.jpg,lingoqa,1,planning,lane change;road marking
+train/33c8e5a07ba49eea015c0c30880ee4f7/2.jpg,lingoqa,1,planning,lane change;road marking
+train/33c8e5a07ba49eea015c0c30880ee4f7/3.jpg,lingoqa,1,planning,lane change;road marking
+train/3510c0055b143081d71aa4122da19639/0.jpg,lingoqa,1,planning,overtak
+train/36e9a4739cb18ed91d7f91c069b9dbf2/1.jpg,lingoqa,1,planning,overtak
+train/37b51798f590577314d90442558a389d/1.jpg,lingoqa,1,planning,center line;lane change;overtak
+train/3973acbe0b3b5883aad991111ac25658/0.jpg,lingoqa,2,planning;region,box junction;lane markings
+train/3973acbe0b3b5883aad991111ac25658/1.jpg,lingoqa,2,planning;region,box junction;lane markings
+train/3973acbe0b3b5883aad991111ac25658/2.jpg,lingoqa,2,planning;region,box junction;lane markings
+train/39a70d685ddae01fb80c58dcaf697bc0/1.jpg,lingoqa,1,planning,center line;overtak
+train/39b0fb645812ec9da3cbf9a64e3e2b12/0.jpg,lingoqa,1,planning,overtak
+train/3ac8cde03245bff6a5af1385badee50f/2.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/3ac8cde03245bff6a5af1385badee50f/3.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/3ac8cde03245bff6a5af1385badee50f/4.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/3b1b4f170a845448274484a518e1b32a/0.jpg,lingoqa,1,planning,double solid;overtak
+train/3b1b4f170a845448274484a518e1b32a/1.jpg,lingoqa,1,planning,double solid;overtak
+train/3b1b4f170a845448274484a518e1b32a/2.jpg,lingoqa,1,planning,double solid;overtak
+train/3b2d93a149e4e363a0eb54c068ceeb46/1.jpg,lingoqa,1,planning,double yellow;lane change;overtak
+train/3b30b5dd858ed01dc8424c1c16b0a3f4/0.jpg,lingoqa,2,planning;region,box junction;give way line;road marking;solid white;solid yellow;stop line;white line
+train/3bc0e880037d6b8d0db47de577488b1d/2.jpg,lingoqa,1,planning,box junction
+train/3bc0e880037d6b8d0db47de577488b1d/3.jpg,lingoqa,1,planning,box junction
+train/3bc0e880037d6b8d0db47de577488b1d/4.jpg,lingoqa,1,planning,box junction
+train/3bc7068c5fd26cd29e03c30572ea5003/2.jpg,lingoqa,1,prediction,overtak
+train/3bc7068c5fd26cd29e03c30572ea5003/3.jpg,lingoqa,1,prediction,overtak
+train/3bc7068c5fd26cd29e03c30572ea5003/4.jpg,lingoqa,1,prediction,overtak
+train/3c118fd985ea813c22cb8f98dc969354/2.jpg,lingoqa,1,planning,overtak
+train/3c118fd985ea813c22cb8f98dc969354/3.jpg,lingoqa,1,planning,overtak
+train/3c118fd985ea813c22cb8f98dc969354/4.jpg,lingoqa,1,planning,overtak
+train/3cc54b5c87991a03b6113189c115dbdf/0.jpg,lingoqa,1,planning,overtak
+train/41c8265685c2c4e5e28fa09c710edf81/1.jpg,lingoqa,1,planning,overtak
+train/425d9e1ba32e67f461f76525132373ab/0.jpg,lingoqa,1,planning,lane change;lane markings;overtak;stop line
+train/430e1660bae270eb692eca83434c9dce/2.jpg,lingoqa,1,planning,turn arrow
+train/430e1660bae270eb692eca83434c9dce/3.jpg,lingoqa,1,planning,turn arrow
+train/430e1660bae270eb692eca83434c9dce/4.jpg,lingoqa,1,planning,turn arrow
+train/4404c638dc718d9db52a3a4f60632a1b/1.jpg,lingoqa,1,region,box junction
+train/44261117dace219299724f4f3cc45b43/0.jpg,lingoqa,1,planning,box junction
+train/442f8d365bbb934f067876d6e41d90d2/1.jpg,lingoqa,1,planning,overtak
+train/442f8d365bbb934f067876d6e41d90d2/2.jpg,lingoqa,1,planning,overtak
+train/442f8d365bbb934f067876d6e41d90d2/3.jpg,lingoqa,1,planning,overtak
+train/4472a8f5e4d769391de31bbc59e84784/0.jpg,lingoqa,2,planning;prediction,overtak
+train/454788b135ca6007e2fbbb72c855bd7e/0.jpg,lingoqa,1,region,overtak;yellow line
+train/47b2fd1606d7095947378c680b47fb70/0.jpg,lingoqa,2,planning;prediction,lane markings;overtak
+train/492b134026359136b97a277b1b76fec0/1.jpg,lingoqa,1,region,box junction
+train/4c69f987a09778efabccfd66cb189fdb/1.jpg,lingoqa,1,planning,overtak
+train/4c69f987a09778efabccfd66cb189fdb/2.jpg,lingoqa,1,planning,overtak
+train/4c69f987a09778efabccfd66cb189fdb/3.jpg,lingoqa,1,planning,overtak
+train/4d37478f6d56def5e0fae2e653a1f241/0.jpg,lingoqa,1,planning,turn arrow
+train/4f01eafd4b5c5271cfe89a2ef401a11b/1.jpg,lingoqa,1,region,bus lane;double yellow
+train/4f01eafd4b5c5271cfe89a2ef401a11b/2.jpg,lingoqa,1,region,bus lane;double yellow
+train/4f01eafd4b5c5271cfe89a2ef401a11b/3.jpg,lingoqa,1,region,bus lane;double yellow
+train/4fd8c0c2571ae31016f88a9d59487c89/0.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/4fea456d82bfafd9161a364928d30234/0.jpg,lingoqa,1,perception,bus lane
+train/4fea456d82bfafd9161a364928d30234/1.jpg,lingoqa,1,perception,bus lane
+train/4fea456d82bfafd9161a364928d30234/2.jpg,lingoqa,1,perception,bus lane
+train/5074b74e8ebe55f3af35750d0f3b0dfc/2.jpg,lingoqa,1,planning,overtak
+train/5074b74e8ebe55f3af35750d0f3b0dfc/3.jpg,lingoqa,1,planning,overtak
+train/5074b74e8ebe55f3af35750d0f3b0dfc/4.jpg,lingoqa,1,planning,overtak
+train/527f7172178e2e7f60c7661e55fcdbfa/0.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/528c15c8f91a314457bf24d9159a9a00/1.jpg,lingoqa,1,planning,overtak
+train/5478eb6eb3cba3c5185a3e52fd53125a/0.jpg,lingoqa,1,planning,overtak
+train/54a0dd9cd9619b308f52616736f852d9/2.jpg,lingoqa,2,planning;region,overtak;yellow line
+train/54a0dd9cd9619b308f52616736f852d9/3.jpg,lingoqa,2,planning;region,overtak;yellow line
+train/54a0dd9cd9619b308f52616736f852d9/4.jpg,lingoqa,2,planning;region,overtak;yellow line
+train/54aeaaecf3effb0fe6b6a57f278aab3b/2.jpg,lingoqa,1,planning,overtak
+train/54aeaaecf3effb0fe6b6a57f278aab3b/3.jpg,lingoqa,1,planning,overtak
+train/54aeaaecf3effb0fe6b6a57f278aab3b/4.jpg,lingoqa,1,planning,overtak
+train/5a01795ca8a820d00033d5de98f483f5/1.jpg,lingoqa,3,perception;planning;region,chevron;overtak
+train/5ae8d7d908ada041d2b0e6fc3afbc734/0.jpg,lingoqa,1,planning,overtak
+train/5ae8d7d908ada041d2b0e6fc3afbc734/1.jpg,lingoqa,1,planning,overtak
+train/5ae8d7d908ada041d2b0e6fc3afbc734/2.jpg,lingoqa,1,planning,overtak
+train/5b77596a8146158d4ff60f519e4328cf/0.jpg,lingoqa,1,planning,dashed;lane change;overtak
+train/5b77596a8146158d4ff60f519e4328cf/1.jpg,lingoqa,1,planning,dashed;lane change;overtak
+train/5b77596a8146158d4ff60f519e4328cf/2.jpg,lingoqa,1,planning,dashed;lane change;overtak
+train/5b8bca960f1f1db0ab958d3f0468491e/0.jpg,lingoqa,1,planning,overtak;solid white
+train/5c3f1fdcc2df6059f267afac6f5c0d09/1.jpg,lingoqa,1,region,overtak
+train/5c3f1fdcc2df6059f267afac6f5c0d09/2.jpg,lingoqa,1,region,overtak
+train/5c3f1fdcc2df6059f267afac6f5c0d09/3.jpg,lingoqa,1,region,overtak
+train/5ca802d98e2abf3115a413dec325680d/1.jpg,lingoqa,1,region,bus lane;double yellow
+train/5ca802d98e2abf3115a413dec325680d/2.jpg,lingoqa,1,region,bus lane;double yellow
+train/5ca802d98e2abf3115a413dec325680d/3.jpg,lingoqa,1,region,bus lane;double yellow
+train/5db99ed3d51a4eb50f522c39be003789/1.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/5deb29f07e3262ef97a6196241f44bb9/0.jpg,lingoqa,2,planning;region,lane change;overtak;solid white
+train/5deb29f07e3262ef97a6196241f44bb9/1.jpg,lingoqa,2,planning;region,lane change;overtak;solid white
+train/5deb29f07e3262ef97a6196241f44bb9/2.jpg,lingoqa,2,planning;region,lane change;overtak;solid white
+train/5fe048d57cc9fe156d6e1b1db96b1bf7/1.jpg,lingoqa,1,perception,center line;dashed;double white
+train/607b3184fb4454e700130d0c55d7d47e/2.jpg,lingoqa,1,planning,box junction
+train/607b3184fb4454e700130d0c55d7d47e/3.jpg,lingoqa,1,planning,box junction
+train/607b3184fb4454e700130d0c55d7d47e/4.jpg,lingoqa,1,planning,box junction
+train/60b190eaa8723376842c829637a6ca60/0.jpg,lingoqa,1,planning,lane change
+train/631aa257381f4980235b4e7ae3d1695a/1.jpg,lingoqa,1,planning,lane markings
+train/631aa257381f4980235b4e7ae3d1695a/2.jpg,lingoqa,1,planning,lane markings
+train/631aa257381f4980235b4e7ae3d1695a/3.jpg,lingoqa,1,planning,lane markings
+train/63d8bbd3591acebef280c514aa1acd07/1.jpg,lingoqa,1,planning,overtak
+train/63d8bbd3591acebef280c514aa1acd07/2.jpg,lingoqa,1,planning,overtak
+train/63d8bbd3591acebef280c514aa1acd07/3.jpg,lingoqa,1,planning,overtak
+train/65dc1a40c8cf653e9c719f9a899541b1/1.jpg,lingoqa,2,planning;region,overtak
+train/65dc1a40c8cf653e9c719f9a899541b1/2.jpg,lingoqa,2,planning;region,overtak
+train/65dc1a40c8cf653e9c719f9a899541b1/3.jpg,lingoqa,2,planning;region,overtak
+train/669285a5b33c35337642d23d43d64171/2.jpg,lingoqa,1,planning,lane change;overtak;solid white
+train/669285a5b33c35337642d23d43d64171/3.jpg,lingoqa,1,planning,lane change;overtak;solid white
+train/669285a5b33c35337642d23d43d64171/4.jpg,lingoqa,1,planning,lane change;overtak;solid white
+train/66aea1eaf3ba977e0ec701c69ed075a6/1.jpg,lingoqa,1,perception,center line;dashed;double solid;white line
+train/68c5d9614c57935e400e25afcb902af8/1.jpg,lingoqa,2,planning;region,box junction;lane change;overtak
+train/68c5d9614c57935e400e25afcb902af8/2.jpg,lingoqa,2,planning;region,box junction;lane change;overtak
+train/68c5d9614c57935e400e25afcb902af8/3.jpg,lingoqa,2,planning;region,box junction;lane change;overtak
+train/68db2e0d801dd2ced9768dd3b8b84abd/1.jpg,lingoqa,2,planning;prediction,overtak;solid white
+train/68db2e0d801dd2ced9768dd3b8b84abd/2.jpg,lingoqa,2,planning;prediction,overtak;solid white
+train/68db2e0d801dd2ced9768dd3b8b84abd/3.jpg,lingoqa,2,planning;prediction,overtak;solid white
+train/68deeb8ce1952ecdc5e385eaf26b0c75/0.jpg,lingoqa,1,planning,overtak
+train/68deeb8ce1952ecdc5e385eaf26b0c75/1.jpg,lingoqa,1,planning,overtak
+train/68deeb8ce1952ecdc5e385eaf26b0c75/2.jpg,lingoqa,1,planning,overtak
+train/691d79b52072b8051a69d04ed739ff7e/2.jpg,lingoqa,1,planning,box junction
+train/691d79b52072b8051a69d04ed739ff7e/3.jpg,lingoqa,1,planning,box junction
+train/691d79b52072b8051a69d04ed739ff7e/4.jpg,lingoqa,1,planning,box junction
+train/6a179048ec42104bc547d08d576e68e0/0.jpg,lingoqa,1,planning,turn arrow
+train/6a179048ec42104bc547d08d576e68e0/1.jpg,lingoqa,1,planning,turn arrow
+train/6a179048ec42104bc547d08d576e68e0/2.jpg,lingoqa,1,planning,turn arrow
+train/6a942aad27a7fe7979265b947af39ec1/2.jpg,lingoqa,1,planning,overtak
+train/6a942aad27a7fe7979265b947af39ec1/3.jpg,lingoqa,1,planning,overtak
+train/6a942aad27a7fe7979265b947af39ec1/4.jpg,lingoqa,1,planning,overtak
+train/6b4bea03167259ae2d9cd97b040ebd5f/0.jpg,lingoqa,1,planning,overtak
+train/6c22f97c3a0b1ff8475b715b549fee25/1.jpg,lingoqa,1,planning,overtak
+train/6e75a948a141d9d4c61555dcd4a5647c/0.jpg,lingoqa,1,planning,overtak
+train/6e75a948a141d9d4c61555dcd4a5647c/1.jpg,lingoqa,1,planning,overtak
+train/6e75a948a141d9d4c61555dcd4a5647c/2.jpg,lingoqa,1,planning,overtak
+train/6ff1a4712c585cab8bf797685a74e239/0.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/703377641320855689eabf80ff19fd2d/0.jpg,lingoqa,1,region,overtak;yellow line
+train/703377641320855689eabf80ff19fd2d/1.jpg,lingoqa,1,region,overtak;yellow line
+train/703377641320855689eabf80ff19fd2d/2.jpg,lingoqa,1,region,overtak;yellow line
+train/70a63438f4f5c50ef21f29cc45d849ab/0.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/70a63438f4f5c50ef21f29cc45d849ab/1.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/70a63438f4f5c50ef21f29cc45d849ab/2.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/725601710c92744d76f89d16d289e9d4/0.jpg,lingoqa,1,region,box junction
+train/727b3b02c42ec9ff844db2e4d95692e5/0.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/727b3b02c42ec9ff844db2e4d95692e5/1.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/727b3b02c42ec9ff844db2e4d95692e5/2.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/73273ad5fa8de0b4cc8644691abc680d/0.jpg,lingoqa,1,perception,solid white
+train/73273ad5fa8de0b4cc8644691abc680d/1.jpg,lingoqa,1,perception,solid white
+train/73273ad5fa8de0b4cc8644691abc680d/2.jpg,lingoqa,1,perception,solid white
+train/7334de749c69e364303d53895fcaea47/1.jpg,lingoqa,1,region,overtak
+train/74793c3e06df16e7c920ce1cb5320ab6/1.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/74be6bb80c7b66a911cef6cb3c999227/0.jpg,lingoqa,1,planning,overtak
+train/762eb6ccbf33e80e3c600aefbd51d0a9/1.jpg,lingoqa,1,region,box junction
+train/762eb6ccbf33e80e3c600aefbd51d0a9/2.jpg,lingoqa,1,region,box junction
+train/762eb6ccbf33e80e3c600aefbd51d0a9/3.jpg,lingoqa,1,region,box junction
+train/78d9af273c8dd32e3df061d98898c6fa/1.jpg,lingoqa,1,region,overtak
+train/78d9af273c8dd32e3df061d98898c6fa/2.jpg,lingoqa,1,region,overtak
+train/78d9af273c8dd32e3df061d98898c6fa/3.jpg,lingoqa,1,region,overtak
+train/7b2efb163fbd35195afd707b86b49403/2.jpg,lingoqa,1,planning,stop line
+train/7b2efb163fbd35195afd707b86b49403/3.jpg,lingoqa,1,planning,stop line
+train/7b2efb163fbd35195afd707b86b49403/4.jpg,lingoqa,1,planning,stop line
+train/7c06e308fef33e376ae4412b32fe4af8/0.jpg,lingoqa,1,region,bus lane;double yellow
+train/7d1347f1a3f3ad7da0ccbb4c778bbb6d/2.jpg,lingoqa,1,region,overtak;yellow line
+train/7d1347f1a3f3ad7da0ccbb4c778bbb6d/3.jpg,lingoqa,1,region,overtak;yellow line
+train/7d1347f1a3f3ad7da0ccbb4c778bbb6d/4.jpg,lingoqa,1,region,overtak;yellow line
+train/7d4bbe273d22613c97769c7b5bd1337f/0.jpg,lingoqa,1,planning,box junction
+train/7e5d1d329dee2509b2042de15570588f/1.jpg,lingoqa,1,prediction,overtak
+train/7fdfb2dea2f2fb87c531a63fe915292d/1.jpg,lingoqa,1,planning,overtak
+train/7fdfb2dea2f2fb87c531a63fe915292d/2.jpg,lingoqa,1,planning,overtak
+train/7fdfb2dea2f2fb87c531a63fe915292d/3.jpg,lingoqa,1,planning,overtak
+train/801cf2eb69ee762b027ec3a99fe2b018/0.jpg,lingoqa,1,planning,box junction
+train/801cf2eb69ee762b027ec3a99fe2b018/1.jpg,lingoqa,1,planning,box junction
+train/801cf2eb69ee762b027ec3a99fe2b018/2.jpg,lingoqa,1,planning,box junction
+train/8338515598982e3a0c49ef91a9aa2b5a/2.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/8338515598982e3a0c49ef91a9aa2b5a/3.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/8338515598982e3a0c49ef91a9aa2b5a/4.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/84909f44c41f64302c1279cd46adb7d5/1.jpg,lingoqa,1,region,overtak;yellow line
+train/84909f44c41f64302c1279cd46adb7d5/2.jpg,lingoqa,1,region,overtak;yellow line
+train/84909f44c41f64302c1279cd46adb7d5/3.jpg,lingoqa,1,region,overtak;yellow line
+train/8495aa8cbbfa1e7d6a6f44719999b432/0.jpg,lingoqa,1,planning,overtak
+train/84bad31fea61c121c423aa71978d0c16/2.jpg,lingoqa,1,planning,overtak
+train/84bad31fea61c121c423aa71978d0c16/3.jpg,lingoqa,1,planning,overtak
+train/84bad31fea61c121c423aa71978d0c16/4.jpg,lingoqa,1,planning,overtak
+train/84dae6e8e40552adb5b8e1c4fae21347/1.jpg,lingoqa,1,planning,lane arrow
+train/84dae6e8e40552adb5b8e1c4fae21347/2.jpg,lingoqa,1,planning,lane arrow
+train/84dae6e8e40552adb5b8e1c4fae21347/3.jpg,lingoqa,1,planning,lane arrow
+train/85e687a949cab3d53c946389defcd52d/0.jpg,lingoqa,1,planning,center line;dashed;overtak
+train/861da76e340d75c572afb7495fa2358e/0.jpg,lingoqa,1,region,bus lane;double yellow
+train/861da76e340d75c572afb7495fa2358e/1.jpg,lingoqa,1,region,bus lane;double yellow
+train/861da76e340d75c572afb7495fa2358e/2.jpg,lingoqa,1,region,bus lane;double yellow
+train/86700d2c589f7a3e7ba77ddb71c4019a/1.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/8912992ffa7b1356fb2bc532c73f4ba6/0.jpg,lingoqa,1,planning,box junction
+train/8a22cf1c4eb0299cd71e74c1b5ab535b/0.jpg,lingoqa,1,planning,overtak
+train/8afed745d85e70b5320d331336bfa686/1.jpg,lingoqa,1,perception,bus lane
+train/8b4478ffa676fe11532a753aaa84bad9/2.jpg,lingoqa,1,planning,overtak
+train/8b4478ffa676fe11532a753aaa84bad9/3.jpg,lingoqa,1,planning,overtak
+train/8b4478ffa676fe11532a753aaa84bad9/4.jpg,lingoqa,1,planning,overtak
+train/8c22e98072a110fa309b654ffb17e2d3/2.jpg,lingoqa,1,perception,road marking
+train/8c22e98072a110fa309b654ffb17e2d3/3.jpg,lingoqa,1,perception,road marking
+train/8c22e98072a110fa309b654ffb17e2d3/4.jpg,lingoqa,1,perception,road marking
+train/8c8e8229e4a0f41e6e3e555ed03e8711/1.jpg,lingoqa,1,planning,turn arrow
+train/8caed8c777330a3775d584bb67236e12/1.jpg,lingoqa,1,planning,box junction
+train/8caed8c777330a3775d584bb67236e12/2.jpg,lingoqa,1,planning,box junction
+train/8caed8c777330a3775d584bb67236e12/3.jpg,lingoqa,1,planning,box junction
+train/8d03346c30e936bd3e147ea7950bbf95/0.jpg,lingoqa,1,region,overtak;yellow line
+train/8d03346c30e936bd3e147ea7950bbf95/1.jpg,lingoqa,1,region,overtak;yellow line
+train/8d03346c30e936bd3e147ea7950bbf95/2.jpg,lingoqa,1,region,overtak;yellow line
+train/8dae19b8260a88bb2bfbb1e143978deb/1.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/8f2337d80412a5e00f6dfd792f79be22/0.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/91238a28b83b1f36458609e9722f28ff/0.jpg,lingoqa,1,planning,double yellow;lane change;overtak
+train/92c661ae1c8f8e93e42018c7c102392a/0.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/92c661ae1c8f8e93e42018c7c102392a/1.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/92c661ae1c8f8e93e42018c7c102392a/2.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/94ed4692ec2e63b4d6c6c74e18bebf9a/1.jpg,lingoqa,1,planning,lane arrow
+train/94ed4692ec2e63b4d6c6c74e18bebf9a/2.jpg,lingoqa,1,planning,lane arrow
+train/94ed4692ec2e63b4d6c6c74e18bebf9a/3.jpg,lingoqa,1,planning,lane arrow
+train/9537f23d66c81c0160cbbafabe9d11ea/1.jpg,lingoqa,1,planning,lane change;overtak
+train/95c9eedfeefe6164b2047d3818abf472/1.jpg,lingoqa,1,region,overtak
+train/95c9eedfeefe6164b2047d3818abf472/2.jpg,lingoqa,1,region,overtak
+train/95c9eedfeefe6164b2047d3818abf472/3.jpg,lingoqa,1,region,overtak
+train/96186cabe2f827e5a674ea4510f0dbf0/0.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/96186cabe2f827e5a674ea4510f0dbf0/1.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/96186cabe2f827e5a674ea4510f0dbf0/2.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/9752721016ff5bd0c7e761c708ca3e10/2.jpg,lingoqa,2,planning;region,overtak;stop line;white line;zig-zag
+train/9752721016ff5bd0c7e761c708ca3e10/3.jpg,lingoqa,2,planning;region,overtak;stop line;white line;zig-zag
+train/9752721016ff5bd0c7e761c708ca3e10/4.jpg,lingoqa,2,planning;region,overtak;stop line;white line;zig-zag
+train/97b78557b9103ec9b3b5dce23c33e5f6/0.jpg,lingoqa,1,region,overtak;yellow line
+train/97b78557b9103ec9b3b5dce23c33e5f6/2.jpg,lingoqa,1,prediction,road marking
+train/97b78557b9103ec9b3b5dce23c33e5f6/3.jpg,lingoqa,1,prediction,road marking
+train/97b78557b9103ec9b3b5dce23c33e5f6/4.jpg,lingoqa,1,prediction,road marking
+train/98c7aa0959abaf235ca41b51fd447985/1.jpg,lingoqa,1,planning,overtak;solid white
+train/9a9318bc560cdeb5fa6fe82739d6e31a/1.jpg,lingoqa,1,planning,lane change;overtak
+train/9acc4540b20e3f2937e7b177a5ad46d6/0.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/9b02cea2e7b76e314415931f74f01ac7/2.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/9b02cea2e7b76e314415931f74f01ac7/3.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/9b02cea2e7b76e314415931f74f01ac7/4.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/9d5c7bde8cce124ad75ab4eac6cbdbe7/2.jpg,lingoqa,1,planning,overtak
+train/9d5c7bde8cce124ad75ab4eac6cbdbe7/3.jpg,lingoqa,1,planning,overtak
+train/9d5c7bde8cce124ad75ab4eac6cbdbe7/4.jpg,lingoqa,1,planning,overtak
+train/a160d01e5cc9042a06e58e719a0e97aa/1.jpg,lingoqa,1,planning,lane change;overtak
+train/a36655d95828b0a91ee633766fba4929/1.jpg,lingoqa,1,region,bus lane;double yellow
+train/a36655d95828b0a91ee633766fba4929/2.jpg,lingoqa,1,region,bus lane;double yellow
+train/a36655d95828b0a91ee633766fba4929/3.jpg,lingoqa,1,region,bus lane;double yellow
+train/a3fbae74a92f16ef84ed15f436994289/0.jpg,lingoqa,1,region,overtak;yellow line
+train/a3fbae74a92f16ef84ed15f436994289/1.jpg,lingoqa,1,region,overtak;yellow line
+train/a3fbae74a92f16ef84ed15f436994289/2.jpg,lingoqa,1,region,overtak;yellow line
+train/a599bd2d38b589f9cf1c063555a7e398/2.jpg,lingoqa,1,planning,box junction
+train/a599bd2d38b589f9cf1c063555a7e398/3.jpg,lingoqa,1,planning,box junction
+train/a599bd2d38b589f9cf1c063555a7e398/4.jpg,lingoqa,1,planning,box junction
+train/a6d4392c47e82bcb0f97dd4430f37484/2.jpg,lingoqa,1,prediction,overtak
+train/a6d4392c47e82bcb0f97dd4430f37484/3.jpg,lingoqa,1,prediction,overtak
+train/a6d4392c47e82bcb0f97dd4430f37484/4.jpg,lingoqa,1,prediction,overtak
+train/a7fef42c584e5d3b67be7e244e35cd21/0.jpg,lingoqa,1,planning,overtak
+train/a7fef42c584e5d3b67be7e244e35cd21/2.jpg,lingoqa,1,prediction,overtak
+train/a7fef42c584e5d3b67be7e244e35cd21/3.jpg,lingoqa,1,prediction,overtak
+train/a7fef42c584e5d3b67be7e244e35cd21/4.jpg,lingoqa,1,prediction,overtak
+train/a83490d4c2d4b4aa36dda4989e69afae/2.jpg,lingoqa,1,prediction,overtak
+train/a83490d4c2d4b4aa36dda4989e69afae/3.jpg,lingoqa,1,prediction,overtak
+train/a83490d4c2d4b4aa36dda4989e69afae/4.jpg,lingoqa,1,prediction,overtak
+train/a8ac38abb9a1a293ea85971d5e9a7f99/1.jpg,lingoqa,1,planning,turn arrow
+train/aa925660bc266c642e9e3912f51bdfb1/1.jpg,lingoqa,1,planning,overtak
+train/ac8230bca66e3c6a2744ebbca647dee0/0.jpg,lingoqa,1,region,bus lane;double yellow
+train/ac8230bca66e3c6a2744ebbca647dee0/1.jpg,lingoqa,1,region,bus lane;double yellow
+train/ac8230bca66e3c6a2744ebbca647dee0/2.jpg,lingoqa,1,region,bus lane;double yellow
+train/adebd5675f386110b84abfd351f079ef/2.jpg,lingoqa,1,planning,overtak
+train/adebd5675f386110b84abfd351f079ef/3.jpg,lingoqa,1,planning,overtak
+train/adebd5675f386110b84abfd351f079ef/4.jpg,lingoqa,1,planning,overtak
+train/aedf9b0cddde80838bbe1e8c6059d597/0.jpg,lingoqa,1,planning,center line;dashed;lane change;overtak
+train/aedf9b0cddde80838bbe1e8c6059d597/1.jpg,lingoqa,1,planning,center line;dashed;lane change;overtak
+train/aedf9b0cddde80838bbe1e8c6059d597/2.jpg,lingoqa,1,planning,center line;dashed;lane change;overtak
+train/af707144be5d893d07fd881bdbfda0d8/0.jpg,lingoqa,1,planning,double solid;overtak
+train/b1c4ab69f9c1c6bbf7dbfdf1fd160bf7/0.jpg,lingoqa,1,planning,overtak
+train/b1f514cc36efbda70b53e03381ea99ab/2.jpg,lingoqa,2,planning;region,overtak;white line;zig-zag
+train/b1f514cc36efbda70b53e03381ea99ab/3.jpg,lingoqa,2,planning;region,overtak;white line;zig-zag
+train/b1f514cc36efbda70b53e03381ea99ab/4.jpg,lingoqa,2,planning;region,overtak;white line;zig-zag
+train/b23f603f9ed0c66d416a7b6ce1f01030/0.jpg,lingoqa,1,planning,turn arrow
+train/b23f603f9ed0c66d416a7b6ce1f01030/1.jpg,lingoqa,1,planning,turn arrow
+train/b23f603f9ed0c66d416a7b6ce1f01030/2.jpg,lingoqa,1,planning,turn arrow
+train/b72ec4fa519e91678efc0ed0f506772f/2.jpg,lingoqa,1,planning,overtak
+train/b72ec4fa519e91678efc0ed0f506772f/3.jpg,lingoqa,1,planning,overtak
+train/b72ec4fa519e91678efc0ed0f506772f/4.jpg,lingoqa,1,planning,overtak
+train/b76be42482d3f440c4d19947af817abd/2.jpg,lingoqa,1,region,bus lane;double yellow
+train/b76be42482d3f440c4d19947af817abd/3.jpg,lingoqa,1,region,bus lane;double yellow
+train/b76be42482d3f440c4d19947af817abd/4.jpg,lingoqa,1,region,bus lane;double yellow
+train/b936a08f95b0147eee5ae622f4cc7cf7/0.jpg,lingoqa,1,planning,center line
+train/b94fc18778b16ad2d3ea8578aa3cd3c0/2.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/b94fc18778b16ad2d3ea8578aa3cd3c0/3.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/b94fc18778b16ad2d3ea8578aa3cd3c0/4.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/bbbb8090123881fbb5ec88eb45b656ae/0.jpg,lingoqa,1,prediction,overtak
+train/bbbb8090123881fbb5ec88eb45b656ae/1.jpg,lingoqa,1,prediction,overtak
+train/bbbb8090123881fbb5ec88eb45b656ae/2.jpg,lingoqa,1,prediction,overtak
+train/be3bc3f2632c3e8246ed7e87f9174829/1.jpg,lingoqa,1,region,overtak
+train/bf2bf0b062cac80e96aa0dfbdd7e16b6/0.jpg,lingoqa,1,region,bus lane;double yellow
+train/c02fb04c0c18542e81a8744645c3005b/2.jpg,lingoqa,1,prediction,stop line
+train/c02fb04c0c18542e81a8744645c3005b/3.jpg,lingoqa,1,prediction,stop line
+train/c02fb04c0c18542e81a8744645c3005b/4.jpg,lingoqa,1,prediction,stop line
+train/c189e0ab9145898fedd4d27e910cc336/1.jpg,lingoqa,1,planning,overtak
+train/c207d9b791a8b17d7ed5057173d4d7ab/0.jpg,lingoqa,1,region,bus lane;double yellow
+train/c21c52d78d67f67089079a38e3674faf/1.jpg,lingoqa,1,prediction,overtak
+train/c21c52d78d67f67089079a38e3674faf/2.jpg,lingoqa,1,prediction,overtak
+train/c21c52d78d67f67089079a38e3674faf/3.jpg,lingoqa,1,prediction,overtak
+train/c250c69270ae9118adf551392bb91bec/1.jpg,lingoqa,1,planning,overtak
+train/c3d039ed104c1f4f043e7b324ddb5f33/2.jpg,lingoqa,1,planning,box junction
+train/c3d039ed104c1f4f043e7b324ddb5f33/3.jpg,lingoqa,1,planning,box junction
+train/c3d039ed104c1f4f043e7b324ddb5f33/4.jpg,lingoqa,1,planning,box junction
+train/c4070a5e3f3a677e934d58366cb3a16e/0.jpg,lingoqa,1,planning,double solid;lane change;overtak
+train/c4e20f8fdcff6e192cd1bcd7d86d3d1f/0.jpg,lingoqa,2,planning,lane markings;road marking
+train/c5f1e51f7aed99a653980492d6286d9d/1.jpg,lingoqa,1,planning,overtak
+train/c5f1e51f7aed99a653980492d6286d9d/2.jpg,lingoqa,1,planning,overtak
+train/c5f1e51f7aed99a653980492d6286d9d/3.jpg,lingoqa,1,planning,overtak
+train/c67763f53b97a9b0d136bd20a3fb7e37/1.jpg,lingoqa,1,planning,overtak
+train/c77286f1656c52d1b701f94373e51df2/0.jpg,lingoqa,1,region,overtak;yellow line
+train/c78f0cebbcd0439ece67b0c5e6d12acd/2.jpg,lingoqa,1,region,overtak;yellow line
+train/c78f0cebbcd0439ece67b0c5e6d12acd/3.jpg,lingoqa,1,region,overtak;yellow line
+train/c78f0cebbcd0439ece67b0c5e6d12acd/4.jpg,lingoqa,1,region,overtak;yellow line
+train/c7d42887ffa61c1780bef8e792d940f4/1.jpg,lingoqa,1,region,overtak;white line;zig-zag
+train/ca8a6dd1a17e028f6dc02ade6523317b/1.jpg,lingoqa,1,planning,overtak
+train/cdaa57d0ba70c48c3cf664b901e7d1f8/1.jpg,lingoqa,1,prediction,overtak
+train/cdaa57d0ba70c48c3cf664b901e7d1f8/2.jpg,lingoqa,1,prediction,overtak
+train/cdaa57d0ba70c48c3cf664b901e7d1f8/3.jpg,lingoqa,1,prediction,overtak
+train/d11ccc96a592ef63a7499340e980eff6/0.jpg,lingoqa,1,planning,turn arrow
+train/d1742a91c1be2bc95aa7f35a59386728/0.jpg,lingoqa,1,region,bus lane;double yellow
+train/d1742a91c1be2bc95aa7f35a59386728/1.jpg,lingoqa,1,region,bus lane;double yellow
+train/d1742a91c1be2bc95aa7f35a59386728/2.jpg,lingoqa,1,region,bus lane;double yellow
+train/d17827cea2c64d285b35eaffe3cc24d4/0.jpg,lingoqa,1,region,overtak
+train/d17827cea2c64d285b35eaffe3cc24d4/1.jpg,lingoqa,1,region,overtak
+train/d17827cea2c64d285b35eaffe3cc24d4/2.jpg,lingoqa,1,region,overtak
+train/d21bf5635928983657b67b4aa8a13fac/0.jpg,lingoqa,1,planning,lane change;lane markings
+train/d25c21fba4012f64eed2c81017f152cc/2.jpg,lingoqa,1,planning,lane change;lane markings;overtak
+train/d25c21fba4012f64eed2c81017f152cc/3.jpg,lingoqa,1,planning,lane change;lane markings;overtak
+train/d25c21fba4012f64eed2c81017f152cc/4.jpg,lingoqa,1,planning,lane change;lane markings;overtak
+train/d4c93248bbacd7b34e1560faeebbc609/1.jpg,lingoqa,3,perception;planning;prediction,center line;dashed;double solid;overtak;white line
+train/d4c93248bbacd7b34e1560faeebbc609/2.jpg,lingoqa,3,perception;planning;prediction,center line;dashed;double solid;overtak;white line
+train/d4c93248bbacd7b34e1560faeebbc609/3.jpg,lingoqa,3,perception;planning;prediction,center line;dashed;double solid;overtak;white line
+train/d5f543773e8b86c06598f65fc252a1f2/1.jpg,lingoqa,1,region,overtak;yellow line
+train/d5f543773e8b86c06598f65fc252a1f2/2.jpg,lingoqa,1,region,overtak;yellow line
+train/d5f543773e8b86c06598f65fc252a1f2/3.jpg,lingoqa,1,region,overtak;yellow line
+train/d69e0ad56b896f97d4eb42796309f6d5/0.jpg,lingoqa,1,planning,double yellow;lane change;overtak
+train/d6f84e34ddf67237df63072372eb6596/2.jpg,lingoqa,1,planning,overtak
+train/d6f84e34ddf67237df63072372eb6596/3.jpg,lingoqa,1,planning,overtak
+train/d6f84e34ddf67237df63072372eb6596/4.jpg,lingoqa,1,planning,overtak
+train/d7030abaddedb83e5f2900d4b3c3b577/1.jpg,lingoqa,1,planning,lane change;overtak
+train/d7030abaddedb83e5f2900d4b3c3b577/2.jpg,lingoqa,1,planning,lane change;overtak
+train/d7030abaddedb83e5f2900d4b3c3b577/3.jpg,lingoqa,1,planning,lane change;overtak
+train/d7287035e65ed2a58716eae77c3dd49f/0.jpg,lingoqa,1,region,bus lane;double yellow
+train/d81d2824c403bb5cda8694dfba2fbea6/1.jpg,lingoqa,1,region,give way line;road marking;solid white;solid yellow;white line
+train/d9abff3aa646f902802b22f957a10498/1.jpg,lingoqa,1,region,box junction
+train/da584f94cac0e8a41bd0f52730389180/0.jpg,lingoqa,1,region,box junction
+train/da584f94cac0e8a41bd0f52730389180/1.jpg,lingoqa,1,region,box junction
+train/da584f94cac0e8a41bd0f52730389180/2.jpg,lingoqa,1,region,box junction
+train/dac35d3eb349569f6a9ede9f73e581fd/1.jpg,lingoqa,1,planning,lane change;overtak;solid white
+train/dd7bd3bab81865ff4917d1b3a2162372/1.jpg,lingoqa,1,planning,overtak
+train/dd7bd3bab81865ff4917d1b3a2162372/2.jpg,lingoqa,1,planning,overtak
+train/dd7bd3bab81865ff4917d1b3a2162372/3.jpg,lingoqa,1,planning,overtak
+train/dde41275b6a47da6fe2992ae2f1b7673/0.jpg,lingoqa,1,prediction,stop line
+train/dde41275b6a47da6fe2992ae2f1b7673/1.jpg,lingoqa,1,prediction,stop line
+train/dde41275b6a47da6fe2992ae2f1b7673/2.jpg,lingoqa,1,prediction,stop line
+train/df286907d9238c5ff5acdf5e315a4aa5/2.jpg,lingoqa,1,perception,bus lane;road marking
+train/df286907d9238c5ff5acdf5e315a4aa5/3.jpg,lingoqa,1,perception,bus lane;road marking
+train/df286907d9238c5ff5acdf5e315a4aa5/4.jpg,lingoqa,1,perception,bus lane;road marking
+train/e0b3b51abefa2478a7a13edb958e8f33/0.jpg,lingoqa,1,planning,overtak
+train/e0b3b51abefa2478a7a13edb958e8f33/1.jpg,lingoqa,1,planning,overtak
+train/e0b3b51abefa2478a7a13edb958e8f33/2.jpg,lingoqa,1,planning,overtak
+train/e0cf1cf9a8a95850e54cf26fcee9d409/2.jpg,lingoqa,1,region,box junction
+train/e0cf1cf9a8a95850e54cf26fcee9d409/3.jpg,lingoqa,1,region,box junction
+train/e0cf1cf9a8a95850e54cf26fcee9d409/4.jpg,lingoqa,1,region,box junction
+train/e11c5eaf826d4453f7279c6ae601ff46/2.jpg,lingoqa,1,planning,double solid;lane change;road marking;turn arrow
+train/e11c5eaf826d4453f7279c6ae601ff46/3.jpg,lingoqa,1,planning,double solid;lane change;road marking;turn arrow
+train/e11c5eaf826d4453f7279c6ae601ff46/4.jpg,lingoqa,1,planning,double solid;lane change;road marking;turn arrow
+train/e12d585d1cf304230d7d39744f0797cd/0.jpg,lingoqa,1,planning,dashed;lane markings;white line
+train/e21ae1b8b505ec43bb702d9c85b4b86a/1.jpg,lingoqa,1,planning,center line;overtak
+train/e21ae1b8b505ec43bb702d9c85b4b86a/2.jpg,lingoqa,1,planning,center line;overtak
+train/e21ae1b8b505ec43bb702d9c85b4b86a/3.jpg,lingoqa,1,planning,center line;overtak
+train/e2b55e4b50b8ce56539a819fce3d1981/2.jpg,lingoqa,1,planning,box junction
+train/e2b55e4b50b8ce56539a819fce3d1981/3.jpg,lingoqa,1,planning,box junction
+train/e2b55e4b50b8ce56539a819fce3d1981/4.jpg,lingoqa,1,planning,box junction
+train/e701d9b82973c7a05e08af56209dfcb3/2.jpg,lingoqa,1,region,overtak
+train/e701d9b82973c7a05e08af56209dfcb3/3.jpg,lingoqa,1,region,overtak
+train/e701d9b82973c7a05e08af56209dfcb3/4.jpg,lingoqa,1,region,overtak
+train/e8848216721474448db75face344d2c7/1.jpg,lingoqa,1,planning,stop line
+train/e8deddb1a78b84bd6194ad149c454e8d/0.jpg,lingoqa,1,planning,overtak
+train/e8deddb1a78b84bd6194ad149c454e8d/1.jpg,lingoqa,1,planning,overtak
+train/e8deddb1a78b84bd6194ad149c454e8d/2.jpg,lingoqa,1,planning,overtak
+train/eb91da434693389b8d11eb56bfecf54f/0.jpg,lingoqa,1,planning,overtak
+train/ec703f9de2a4597912e0c57d0fe7e76d/0.jpg,lingoqa,1,planning,stop line
+train/eec63054a8d405ef8162a780276359dc/0.jpg,lingoqa,1,perception,solid white
+train/eec63054a8d405ef8162a780276359dc/1.jpg,lingoqa,1,perception,solid white
+train/eec63054a8d405ef8162a780276359dc/2.jpg,lingoqa,1,perception,solid white
+train/ef20d9dbb69d905a243bac93b2b3fece/0.jpg,lingoqa,2,planning;region,bus lane;double yellow;lane arrow
+train/f0842ba411536be6155aa3f39ee09e50/2.jpg,lingoqa,1,planning,overtak
+train/f0842ba411536be6155aa3f39ee09e50/3.jpg,lingoqa,1,planning,overtak
+train/f0842ba411536be6155aa3f39ee09e50/4.jpg,lingoqa,1,planning,overtak
+train/f1c39007139b911e126c4eaa688eba7d/0.jpg,lingoqa,1,perception,solid white
+train/f1c39007139b911e126c4eaa688eba7d/1.jpg,lingoqa,1,perception,solid white
+train/f1c39007139b911e126c4eaa688eba7d/2.jpg,lingoqa,1,perception,solid white
+train/f2b37a8b7f23380de3834e8165fd2620/0.jpg,lingoqa,1,planning,overtak
+train/f2b37a8b7f23380de3834e8165fd2620/1.jpg,lingoqa,1,planning,overtak
+train/f2b37a8b7f23380de3834e8165fd2620/2.jpg,lingoqa,1,planning,overtak
+train/f355ff0d541e3235c3ee69a567f2a9d0/1.jpg,lingoqa,1,region,overtak;yellow line
+train/f40caebd5975814df106174dd75e987a/0.jpg,lingoqa,1,planning,overtak
+train/f40caebd5975814df106174dd75e987a/2.jpg,lingoqa,1,planning,bus lane;center line;dashed;overtak
+train/f40caebd5975814df106174dd75e987a/3.jpg,lingoqa,1,planning,bus lane;center line;dashed;overtak
+train/f40caebd5975814df106174dd75e987a/4.jpg,lingoqa,1,planning,bus lane;center line;dashed;overtak
+train/f4995cf348de38b71c1dc5a4136b92fc/1.jpg,lingoqa,1,planning,overtak
+train/f5d644c190287b62a6ae748b424922c8/1.jpg,lingoqa,1,planning,box junction
+train/f5d644c190287b62a6ae748b424922c8/2.jpg,lingoqa,1,planning,box junction
+train/f5d644c190287b62a6ae748b424922c8/3.jpg,lingoqa,1,planning,box junction
+train/f6a57adb4608693659df1f342cfc4c91/0.jpg,lingoqa,1,perception,cross line
+train/f6a57adb4608693659df1f342cfc4c91/1.jpg,lingoqa,1,perception,cross line
+train/f6a57adb4608693659df1f342cfc4c91/2.jpg,lingoqa,1,perception,cross line
+train/f71984fcbf52006c76ddbcad6c6c5f7b/0.jpg,lingoqa,1,planning,overtak
+train/f929e09d4ff92f7e5947caa6690d4bee/2.jpg,lingoqa,1,prediction,lane change
+train/f929e09d4ff92f7e5947caa6690d4bee/3.jpg,lingoqa,1,prediction,lane change
+train/f929e09d4ff92f7e5947caa6690d4bee/4.jpg,lingoqa,1,prediction,lane change
+train/fa7c6a7e88e66a6ce9dcb67a7f30a05e/1.jpg,lingoqa,1,planning,overtak
+train/fcaaeda4aeaedef4c3cb2f3f13928a64/1.jpg,lingoqa,2,prediction;region,overtak;white line;zig-zag
+train/fd76d7f93e8fe418ceea528ac0a8646e/0.jpg,lingoqa,1,planning,overtak
+train/fda9e10e43a66e41b461cf4ceb6f5af6/0.jpg,lingoqa,1,planning,lane arrow
+train/fda9e10e43a66e41b461cf4ceb6f5af6/1.jpg,lingoqa,1,planning,lane arrow
+train/fda9e10e43a66e41b461cf4ceb6f5af6/2.jpg,lingoqa,1,planning,lane arrow

@@ -1,0 +1,779 @@
+{
+  "summary": {
+    "n": 9,
+    "lane": {
+      "correct": 6,
+      "n": 9,
+      "acc": 0.667
+    },
+    "output2": {
+      "correct": 2,
+      "n": 6,
+      "acc": 0.333
+    },
+    "lane_count": {
+      "correct": 3,
+      "n": 5,
+      "acc": 0.6
+    },
+    "ego_index": {
+      "correct": 5,
+      "n": 5,
+      "acc": 1.0
+    },
+    "markings_exact": {
+      "correct": 9,
+      "n": 9,
+      "acc": 1.0
+    },
+    "lane_core": {
+      "correct": 6,
+      "n": 9,
+      "acc": 0.667
+    },
+    "markings_core_exact": {
+      "correct": 9,
+      "n": 9,
+      "acc": 1.0
+    },
+    "failed": 0,
+    "left_boundary": {
+      "correct": 7,
+      "n": 9,
+      "acc": 0.778
+    },
+    "left_color": {
+      "correct": 8,
+      "n": 9,
+      "acc": 0.889
+    },
+    "left_pattern": {
+      "correct": 8,
+      "n": 9,
+      "acc": 0.889
+    },
+    "left_curb": {
+      "correct": 8,
+      "n": 9,
+      "acc": 0.889
+    },
+    "left_role": {
+      "correct": 5,
+      "n": 9,
+      "acc": 0.556
+    },
+    "right_boundary": {
+      "correct": 7,
+      "n": 8,
+      "acc": 0.875
+    },
+    "right_color": {
+      "correct": 7,
+      "n": 8,
+      "acc": 0.875
+    },
+    "right_pattern": {
+      "correct": 7,
+      "n": 8,
+      "acc": 0.875
+    },
+    "right_curb": {
+      "correct": 8,
+      "n": 8,
+      "acc": 1.0
+    },
+    "right_role": {
+      "correct": 4,
+      "n": 8,
+      "acc": 0.5
+    },
+    "both_boundaries": {
+      "correct": 6,
+      "n": 9,
+      "acc": 0.667
+    },
+    "markings_added": 0,
+    "markings_missed": 0,
+    "markings_precision": null,
+    "markings_recall": null,
+    "added_by_token": {},
+    "added_transverse": 0,
+    "added_by_evidence": {},
+    "missed_by_token": {},
+    "actions": {
+      "change_left": {
+        "n": 6,
+        "correct": 2
+      },
+      "change_right": {
+        "n": 5,
+        "correct": 4
+      }
+    },
+    "contested": {
+      "n": 12,
+      "correct": 11
+    },
+    "unsafe_errors": 2,
+    "unsafe_by_action": {
+      "change_left": 2
+    },
+    "over_cautious_errors": 0,
+    "contested_unsafe_errors": 0,
+    "prohibited_recall": {
+      "correct": 2,
+      "n": 4,
+      "acc": 0.5
+    },
+    "extra_decisions": 7,
+    "citations": {
+      "none": 1,
+      "in_pack_not_accepted": 5,
+      "unlisted": 3
+    },
+    "citation_ids_with_brackets": 2,
+    "inconsistent_answers": 4,
+    "consistency_kinds": {
+      "change_left decided": 4,
+      "turn_right, u_turn decided without an arrow or prohibited-movement marking": 1,
+      "u_turn decided without an arrow or prohibited-movement marking": 1
+    },
+    "boundary_evidence": {
+      "unsupported_guess": 7,
+      "same": 11
+    },
+    "requests": 9,
+    "errors": 0,
+    "readable": {
+      "n": 9,
+      "of": 9
+    },
+    "cached": 0,
+    "usage": {
+      "input_tokens": 131076,
+      "cached_input_tokens": 0,
+      "output_tokens": 7339
+    },
+    "cost_usd": 0.0,
+    "latency_s": {
+      "mean": 33.48,
+      "max": 50.78
+    },
+    "elapsed_s": 123.5
+  },
+  "per_image": {
+    "idd__primary_d0_leftCamImgs_0004255": {
+      "image_id": "idd__primary_d0_leftCamImgs_0004255",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": null
+        },
+        "role": {
+          "left": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": false,
+          "change_right": false
+        },
+        "contested": {
+          "go_straight": false
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [],
+        "citation": "none",
+        "consistency": [
+          "change_left decided with nothing marked on that side"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "insufficient",
+            "full"
+          ]
+        }
+      }
+    },
+    "idd__primary_d0_leftCamImgs_0001907": {
+      "image_id": "idd__primary_d0_leftCamImgs_0001907",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": false,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [
+          "change_left"
+        ],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": false
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule127",
+          "UK-TSRGD-S11P4-item11"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "idd__primary_d0_leftCamImgs_0000778": {
+      "image_id": "idd__primary_d0_leftCamImgs_0000778",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "change_right"
+        ],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-TSRGD-S11P4-item11"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "idd__primary_d0_leftCamImgs_0004361": {
+      "image_id": "idd__primary_d0_leftCamImgs_0004361",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": false,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule131",
+          "UK-TSRGD-S11P4-item11"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "idd__primary_d2_leftCamImgs_0003438": {
+      "image_id": "idd__primary_d2_leftCamImgs_0003438",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {},
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [
+          "change_left"
+        ],
+        "cite_format_fixed": 0,
+        "cited": [
+          "null"
+        ],
+        "citation": "unlisted",
+        "consistency": [
+          "change_left decided with nothing marked on that side"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "idd__primary_d2_leftCamImgs_0002423": {
+      "image_id": "idd__primary_d2_leftCamImgs_0002423",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {},
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [
+          "change_left",
+          "turn_right",
+          "u_turn"
+        ],
+        "cite_format_fixed": 0,
+        "cited": [
+          "null"
+        ],
+        "citation": "unlisted",
+        "consistency": [
+          "change_left decided with nothing marked on that side",
+          "turn_right, u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "idd__primary_d0_leftCamImgs_0002563": {
+      "image_id": "idd__primary_d0_leftCamImgs_0002563",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {},
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [
+          "change_left",
+          "u_turn"
+        ],
+        "cite_format_fixed": 0,
+        "cited": [
+          "null"
+        ],
+        "citation": "unlisted",
+        "consistency": [
+          "change_left decided with nothing marked on that side",
+          "u_turn decided without an arrow or prohibited-movement marking"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "idd__primary_d2_leftCamImgs_0001842": {
+      "image_id": "idd__primary_d2_leftCamImgs_0001842",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": false
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule131",
+          "UK-TSRGD-S11P4-item11"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "idd__primary_d0_leftCamImgs_0002074": {
+      "image_id": "idd__primary_d0_leftCamImgs_0002074",
+      "score": {
+        "scene": {
+          "lane_count": true,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          }
+        },
+        "role": {
+          "left": true,
+          "right": true
+        },
+        "markings": {
+          "exact": true,
+          "core_exact": true,
+          "added": [],
+          "missed": [],
+          "added_evidence": {},
+          "label": [],
+          "answer": []
+        },
+        "lane": true,
+        "lane_core": true,
+        "actions": {
+          "change_left": false,
+          "change_right": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": false,
+        "unsafe": [
+          "change_left"
+        ],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": false
+        },
+        "extra_decisions": [],
+        "cite_format_fixed": 2,
+        "cited": [
+          "UK-Rule127",
+          "UK-TSRGD-S11P4-item11"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    }
+  }
+}

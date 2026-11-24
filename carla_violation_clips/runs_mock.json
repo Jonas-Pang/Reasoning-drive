@@ -1,0 +1,53 @@
+[
+ {
+  "clip": "04_left_turn_from_right_turn_only_lane.mp4",
+  "rules": "US",
+  "state": "done",
+  "error": "",
+  "frames": 21,
+  "segments": 3,
+  "action": "turn_left",
+  "at_s": 11.3,
+  "evidence_s": 10.3,
+  "truth": "prohibited",
+  "system_said": "not_applicable",
+  "fault": "perception_layer",
+  "problems": 1,
+  "seconds": 18.2,
+  "job_id": "40a66ff27691"
+ },
+ {
+  "clip": "08_lane_change_across_solid_white_before_junction_CN_only.mp4",
+  "rules": "US",
+  "state": "done",
+  "error": "",
+  "frames": 16,
+  "segments": 1,
+  "action": "change_right",
+  "at_s": 8.0,
+  "evidence_s": 7.0,
+  "truth": "allowed",
+  "system_said": "not_applicable",
+  "fault": "compliant",
+  "problems": 0,
+  "seconds": 12.1,
+  "job_id": "4cff26b24297"
+ },
+ {
+  "clip": "08_lane_change_across_solid_white_before_junction_CN_only.mp4",
+  "rules": "CN",
+  "state": "done",
+  "error": "",
+  "frames": 16,
+  "segments": 1,
+  "action": "change_right",
+  "at_s": 8.0,
+  "evidence_s": 7.0,
+  "truth": "prohibited",
+  "system_said": "not_applicable",
+  "fault": "perception_layer",
+  "problems": 1,
+  "seconds": 14.1,
+  "job_id": "f054b7cd0592"
+ }
+]

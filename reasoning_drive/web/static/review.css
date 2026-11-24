@@ -1,0 +1,19 @@
+.rv { display: grid; grid-template-columns: minmax(420px, 1fr) 380px; height: calc(100% - 52px); }
+.rv-main { padding: 10px 16px; overflow-y: auto; min-width: 0; }
+.rv-main h2 { font-size: 17px; margin: 10px 0 4px; }
+.rv-main .imgwrap { text-align: center; } .rv-main .imgwrap img { max-height: 56vh; width: auto; max-width: 100%; margin: 0 auto; object-fit: contain; }
+.rv-side { border-left: 1px solid var(--line); background: var(--panel); padding: 10px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
+.rv-options { display: flex; flex-direction: column; gap: 8px; margin: 10px 0; max-width: 720px; }
+.rv-options button { text-align: left; padding: 9px 12px; font-size: 14px; display: flex; gap: 10px; align-items: center; }
+.rv-options button .k { color: var(--muted); font-size: 12px; min-width: 18px; }
+.rv-options button.chosen { border-color: var(--accent); background: #16324a; }
+.rv-options button.cannot { color: var(--muted); }
+#bar { height: 100%; width: 0; background: var(--accent); transition: width .3s; }
+#list { list-style: none; margin: 0; padding: 0; max-height: 40vh; overflow-y: auto; font-size: 12px; }
+#list li { padding: 3px 4px; border-radius: 4px; cursor: pointer; display: flex; gap: 6px; }
+#list li:hover { background: var(--panel2); } #list li.sel { background: var(--panel2); outline: 1px solid var(--accent); }
+#list li .d { width: 14px; flex: none; } #list li.done .d::before { content: "✓"; color: var(--ok); }
+#effect table { width: 100%; border-collapse: collapse; font-size: 12px; }
+#effect td, #effect th { border-bottom: 1px solid var(--line); padding: 3px 4px; text-align: left; }
+#effect th { color: var(--muted); font-weight: 600; }
+@media (max-width: 900px) { .rv { grid-template-columns: 1fr; height: auto; } .rv-side { border-left: none; } }

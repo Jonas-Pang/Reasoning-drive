@@ -1,0 +1,6 @@
+#### Standard
+{title}
+#### Country
+{name} ({code}), traffic drives on the {driving_side}
+#### Pages
+{pages}

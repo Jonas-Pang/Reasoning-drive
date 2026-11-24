@@ -1,0 +1,334 @@
+rel,collection,items,categories,lane_words
+data/000121/cam01/1616617746000.jpg,once,2,planning;region,lane change;overtak
+data/000121/cam01/1616617767000.jpg,once,1,region,overtak
+data/000121/cam01/1616617767500.jpg,once,1,region,overtak
+data/000121/cam01/1616617768000.jpg,once,1,region,overtak
+data/000121/cam01/1616617780000.jpg,once,1,planning,dashed;lane change
+data/000121/cam01/1616617888000.jpg,once,1,prediction,overtak
+data/000121/cam01/1616617930000.jpg,once,1,planning,lane change
+data/000121/cam01/1616617933000.jpg,once,1,prediction,cross lane
+data/000121/cam01/1616617933500.jpg,once,1,prediction,cross lane
+data/000121/cam01/1616617934000.jpg,once,1,prediction,cross lane
+data/000121/cam01/1616618061000.jpg,once,1,planning,turn arrow
+data/000121/cam01/1616618061500.jpg,once,1,planning,turn arrow
+data/000121/cam01/1616618062000.jpg,once,1,planning,turn arrow
+data/000121/cam01/1616618066000.jpg,once,1,region,stop line
+data/000121/cam01/1616618104000.jpg,once,1,region,stop line
+data/000121/cam01/1616618160000.jpg,once,1,planning,lane change
+data/000121/cam01/1616618396000.jpg,once,1,planning,turn arrow
+data/000346/cam01/1619414480000.jpg,once,1,planning,turn arrow
+data/000346/cam01/1619414641000.jpg,once,1,planning,turn arrow
+data/000346/cam01/1619414641500.jpg,once,1,planning,turn arrow
+data/000346/cam01/1619414642000.jpg,once,1,planning,turn arrow
+data/000346/cam01/1619414763000.jpg,once,1,planning,lane change;turn arrow
+data/000346/cam01/1619414763500.jpg,once,1,planning,lane change;turn arrow
+data/000346/cam01/1619414764000.jpg,once,1,planning,lane change;turn arrow
+data/000367/cam01/1619476582000.jpg,once,1,planning,dashed;overtak;road marking
+data/000367/cam01/1619476626000.jpg,once,1,region,stop line
+data/000367/cam01/1619476657000.jpg,once,1,planning,dashed;lane change
+data/000367/cam01/1619476657500.jpg,once,1,planning,dashed;lane change
+data/000367/cam01/1619476658000.jpg,once,1,planning,dashed;lane change
+data/000367/cam01/1619476683000.jpg,once,1,planning,lane markings;overtak
+data/000367/cam01/1619476683500.jpg,once,1,planning,lane markings;overtak
+data/000367/cam01/1619476684000.jpg,once,1,planning,lane markings;overtak
+data/000367/cam01/1619476693000.jpg,once,1,region,overtak
+data/000367/cam01/1619476693500.jpg,once,1,region,overtak
+data/000367/cam01/1619476694000.jpg,once,1,region,overtak
+data/000367/cam01/1619476701000.jpg,once,1,planning,lane change;lane markings
+data/000367/cam01/1619476701500.jpg,once,1,planning,lane change;lane markings
+data/000367/cam01/1619476702000.jpg,once,1,planning,lane change;lane markings
+data/000367/cam01/1619476747000.jpg,once,1,region,stop line
+data/000367/cam01/1619476747500.jpg,once,1,region,stop line
+data/000367/cam01/1619476748000.jpg,once,1,region,stop line
+data/000367/cam01/1619476751000.jpg,once,1,planning,lane change
+data/000367/cam01/1619476751500.jpg,once,1,planning,lane change
+data/000367/cam01/1619476752000.jpg,once,1,planning,lane change
+data/000367/cam01/1619476757000.jpg,once,1,planning,lane change
+data/000367/cam01/1619476757500.jpg,once,1,planning,lane change
+data/000367/cam01/1619476758000.jpg,once,1,planning,lane change
+data/000367/cam01/1619476776000.jpg,once,1,region,overtak
+data/000367/cam01/1619476779000.jpg,once,1,region,overtak
+data/000367/cam01/1619476779500.jpg,once,1,region,overtak
+data/000367/cam01/1619476780000.jpg,once,1,region,overtak
+data/000367/cam01/1619476831000.jpg,once,1,planning,lane change
+data/000367/cam01/1619476831500.jpg,once,1,planning,lane change
+data/000367/cam01/1619476832000.jpg,once,1,planning,lane change
+data/000367/cam01/1619476986000.jpg,once,1,planning,lane change
+data/000367/cam01/1619477015000.jpg,once,1,planning,overtak
+data/000367/cam01/1619477015500.jpg,once,1,planning,overtak
+data/000367/cam01/1619477016000.jpg,once,1,planning,overtak
+data/000367/cam01/1619477063000.jpg,once,1,prediction,lane change
+data/000367/cam01/1619477063500.jpg,once,1,prediction,lane change
+data/000367/cam01/1619477064000.jpg,once,1,prediction,lane change
+data/000367/cam01/1619477095000.jpg,once,1,planning,lane markings
+data/000367/cam01/1619477095500.jpg,once,1,planning,lane markings
+data/000367/cam01/1619477096000.jpg,once,1,planning,lane markings
+data/000367/cam01/1619477136000.jpg,once,2,planning;prediction,dashed;lane change;lane markings;overtak
+data/000367/cam01/1619477156000.jpg,once,2,planning;region,lane change;lane markings;stop line
+data/000367/cam01/1619477181000.jpg,once,1,prediction,lane change
+data/000367/cam01/1619477181500.jpg,once,1,prediction,lane change
+data/000367/cam01/1619477182000.jpg,once,1,prediction,lane change
+data/000367/cam01/1619477191000.jpg,once,1,planning,lane change
+data/000367/cam01/1619477191500.jpg,once,1,planning,lane change
+data/000367/cam01/1619477192000.jpg,once,1,planning,lane change
+data/000377/cam01/1619499991000.jpg,once,1,region,overtak
+data/000377/cam01/1619499991500.jpg,once,1,region,overtak
+data/000377/cam01/1619499992000.jpg,once,1,region,overtak
+data/000378/cam01/1619501003000.jpg,once,1,region,stop line
+data/000378/cam01/1619501003500.jpg,once,1,region,stop line
+data/000378/cam01/1619501004000.jpg,once,1,region,stop line
+data/000378/cam01/1619501014000.jpg,once,1,planning,dashed;overtak
+data/000393/cam01/1619581515000.jpg,once,1,region,overtak
+data/000393/cam01/1619581515500.jpg,once,1,region,overtak
+data/000393/cam01/1619581516000.jpg,once,1,region,overtak
+data/000393/cam01/1619581772000.jpg,once,1,region,stop line
+data/000393/cam01/1619581777000.jpg,once,1,region,stop line
+data/000393/cam01/1619581777500.jpg,once,1,region,stop line
+data/000393/cam01/1619581778000.jpg,once,1,region,stop line
+data/000393/cam01/1619581812000.jpg,once,1,prediction,lane markings
+data/000393/cam01/1619581823000.jpg,once,1,region,overtak
+data/000393/cam01/1619581823500.jpg,once,1,region,overtak
+data/000393/cam01/1619581824000.jpg,once,1,region,overtak
+data/000393/cam01/1619581910000.jpg,once,1,planning,lane arrow
+data/000393/cam01/1619581948000.jpg,once,1,planning,turn arrow
+data/000393/cam01/1619582482000.jpg,once,1,region,overtak
+data/000393/cam01/1619582786000.jpg,once,1,planning,lane markings
+data/000393/cam01/1619582792000.jpg,once,1,region,stop line
+data/000404/cam01/1619589727000.jpg,once,2,planning;prediction,stop line;turn arrow
+data/000404/cam01/1619589727500.jpg,once,2,planning;prediction,stop line;turn arrow
+data/000404/cam01/1619589728000.jpg,once,2,planning;prediction,stop line;turn arrow
+data/000405/cam01/1619589918000.jpg,once,1,planning,lane change
+data/000409/cam01/1619624183000.jpg,once,1,region,stop line
+data/000409/cam01/1619624183500.jpg,once,1,region,stop line
+data/000409/cam01/1619624184000.jpg,once,1,region,stop line
+data/000409/cam01/1619624197000.jpg,once,1,region,stop line
+data/000409/cam01/1619624197500.jpg,once,1,region,stop line
+data/000409/cam01/1619624198000.jpg,once,1,region,stop line
+data/000410/cam01/1619624526000.jpg,once,1,planning,center line
+data/000410/cam01/1619624546000.jpg,once,2,planning;region,lane change;lane markings;stop line
+data/000410/cam01/1619624552000.jpg,once,1,prediction,overtak
+data/000410/cam01/1619624607000.jpg,once,2,planning;region,lane markings;stop line
+data/000410/cam01/1619624607500.jpg,once,2,planning;region,lane markings;stop line
+data/000410/cam01/1619624608000.jpg,once,2,planning;region,lane markings;stop line
+data/000410/cam01/1619624619000.jpg,once,1,planning,lane change
+data/000410/cam01/1619624619500.jpg,once,1,planning,lane change
+data/000410/cam01/1619624620000.jpg,once,1,planning,lane change
+data/000410/cam01/1619624723000.jpg,once,1,prediction,lane markings
+data/000410/cam01/1619624723500.jpg,once,1,prediction,lane markings
+data/000410/cam01/1619624724000.jpg,once,1,prediction,lane markings
+data/000414/cam01/1619626577000.jpg,once,2,planning;region,lane change;overtak
+data/000414/cam01/1619626577500.jpg,once,2,planning;region,lane change;overtak
+data/000414/cam01/1619626578000.jpg,once,2,planning;region,lane change;overtak
+data/000414/cam01/1619626589000.jpg,once,1,planning,lane markings
+data/000414/cam01/1619626589500.jpg,once,1,planning,lane markings
+data/000414/cam01/1619626590000.jpg,once,1,planning,lane markings
+data/000414/cam01/1619626598000.jpg,once,1,planning,lane markings
+data/000414/cam01/1619626639000.jpg,once,1,planning,turn arrow
+data/000414/cam01/1619626639500.jpg,once,1,planning,turn arrow
+data/000414/cam01/1619626640000.jpg,once,1,planning,turn arrow
+data/000414/cam01/1619626667000.jpg,once,2,planning;region,lane change;overtak;stop line
+data/000414/cam01/1619626667500.jpg,once,2,planning;region,lane change;overtak;stop line
+data/000414/cam01/1619626668000.jpg,once,2,planning;region,lane change;overtak;stop line
+data/000414/cam01/1619626673000.jpg,once,1,planning,lane change
+data/000414/cam01/1619626673500.jpg,once,1,planning,lane change
+data/000414/cam01/1619626674000.jpg,once,1,planning,lane change
+data/000414/cam01/1619626681000.jpg,once,1,planning,center line;dashed;lane change;lane markings
+data/000414/cam01/1619626681500.jpg,once,1,planning,center line;dashed;lane change;lane markings
+data/000414/cam01/1619626682000.jpg,once,1,planning,center line;dashed;lane change;lane markings
+data/000414/cam01/1619626797000.jpg,once,1,prediction,overtak
+data/000414/cam01/1619626797500.jpg,once,1,prediction,overtak
+data/000414/cam01/1619626798000.jpg,once,1,prediction,overtak
+data/000414/cam01/1619626811000.jpg,once,1,prediction,lane change
+data/000414/cam01/1619626811500.jpg,once,1,prediction,lane change
+data/000414/cam01/1619626812000.jpg,once,1,prediction,lane change
+data/000414/cam01/1619626849000.jpg,once,2,planning;region,lane change;overtak
+data/000414/cam01/1619626849500.jpg,once,2,planning;region,lane change;overtak
+data/000414/cam01/1619626850000.jpg,once,2,planning;region,lane change;overtak
+data/000414/cam01/1619626873000.jpg,once,1,prediction,overtak
+data/000414/cam01/1619626873500.jpg,once,1,prediction,overtak
+data/000414/cam01/1619626874000.jpg,once,1,prediction,overtak
+data/000414/cam01/1619626897000.jpg,once,1,planning,lane change;overtak
+data/000414/cam01/1619626897500.jpg,once,1,planning,lane change;overtak
+data/000414/cam01/1619626898000.jpg,once,1,planning,lane change;overtak
+data/000414/cam01/1619626929000.jpg,once,2,planning;region,overtak;turn arrow
+data/000414/cam01/1619626929500.jpg,once,2,planning;region,overtak;turn arrow
+data/000414/cam01/1619626930000.jpg,once,2,planning;region,overtak;turn arrow
+data/000414/cam01/1619626975000.jpg,once,1,planning,lane change
+data/000414/cam01/1619626975500.jpg,once,1,planning,lane change
+data/000414/cam01/1619626976000.jpg,once,1,planning,lane change
+data/000414/cam01/1619627005000.jpg,once,1,prediction,overtak
+data/000414/cam01/1619627005500.jpg,once,1,prediction,overtak
+data/000414/cam01/1619627006000.jpg,once,1,prediction,overtak
+data/000414/cam01/1619627116000.jpg,once,1,region,stop line
+data/000414/cam01/1619627129000.jpg,once,1,planning,dashed;lane change
+data/000414/cam01/1619627129500.jpg,once,1,planning,dashed;lane change
+data/000414/cam01/1619627130000.jpg,once,1,planning,dashed;lane change
+data/000414/cam01/1619627163000.jpg,once,1,planning,lane markings
+data/000414/cam01/1619627163500.jpg,once,1,planning,lane markings
+data/000414/cam01/1619627164000.jpg,once,1,planning,lane markings
+data/000414/cam01/1619627187000.jpg,once,1,planning,lane change
+data/000414/cam01/1619627187500.jpg,once,1,planning,lane change
+data/000414/cam01/1619627188000.jpg,once,1,planning,lane change
+data/000414/cam01/1619627293000.jpg,once,1,planning,lane change;lane divider
+data/000414/cam01/1619627293500.jpg,once,1,planning,lane change;lane divider
+data/000414/cam01/1619627294000.jpg,once,1,planning,lane change;lane divider
+data/000414/cam01/1619627313000.jpg,once,1,planning,lane markings
+data/000414/cam01/1619627313500.jpg,once,1,planning,lane markings
+data/000414/cam01/1619627314000.jpg,once,1,planning,lane markings
+data/000414/cam01/1619627477000.jpg,once,1,planning,lane arrow
+data/000414/cam01/1619627477500.jpg,once,1,planning,lane arrow
+data/000414/cam01/1619627478000.jpg,once,1,planning,lane arrow
+data/000414/cam01/1619627512000.jpg,once,1,planning,turn arrow
+data/000414/cam01/1619627555000.jpg,once,1,planning,lane change
+data/000414/cam01/1619627555500.jpg,once,1,planning,lane change
+data/000414/cam01/1619627556000.jpg,once,1,planning,lane change
+data/000414/cam01/1619627565000.jpg,once,1,planning,lane change
+data/000414/cam01/1619627565500.jpg,once,1,planning,lane change
+data/000414/cam01/1619627566000.jpg,once,1,planning,lane change
+data/000414/cam01/1619627574000.jpg,once,2,planning;prediction,lane change;overtak
+data/000414/cam01/1619627577000.jpg,once,1,planning,overtak
+data/000414/cam01/1619627577500.jpg,once,1,planning,overtak
+data/000414/cam01/1619627578000.jpg,once,1,planning,overtak
+data/000414/cam01/1619627639000.jpg,once,1,planning,lane change;overtak
+data/000414/cam01/1619627639500.jpg,once,1,planning,lane change;overtak
+data/000414/cam01/1619627640000.jpg,once,1,planning,lane change;overtak
+data/000414/cam01/1619627738000.jpg,once,1,planning,lane change;turn arrow
+data/000414/cam01/1619627840000.jpg,once,1,planning,lane change
+data/000414/cam01/1619627851000.jpg,once,1,planning,bus lane
+data/000414/cam01/1619627851500.jpg,once,1,planning,bus lane
+data/000414/cam01/1619627852000.jpg,once,1,planning,bus lane
+data/000414/cam01/1619627918000.jpg,once,1,planning,lane markings;turn arrow
+data/000414/cam01/1619628023000.jpg,once,1,planning,lane change;overtak
+data/000414/cam01/1619628023500.jpg,once,1,planning,lane change;overtak
+data/000414/cam01/1619628024000.jpg,once,1,planning,lane change;overtak
+data/000414/cam01/1619628029000.jpg,once,1,region,overtak
+data/000414/cam01/1619628029500.jpg,once,1,region,overtak
+data/000414/cam01/1619628030000.jpg,once,1,region,overtak
+data/000414/cam01/1619628047000.jpg,once,1,planning,lane change;overtak
+data/000414/cam01/1619628047500.jpg,once,1,planning,lane change;overtak
+data/000414/cam01/1619628048000.jpg,once,1,planning,lane change;overtak
+data/000414/cam01/1619628162000.jpg,once,1,region,overtak
+data/000422/cam01/1619636136000.jpg,once,1,planning,lane change
+data/000422/cam01/1619636329000.jpg,once,2,planning;region,lane change;overtak;turn arrow
+data/000422/cam01/1619636329500.jpg,once,2,planning;region,lane change;overtak;turn arrow
+data/000422/cam01/1619636330000.jpg,once,2,planning;region,lane change;overtak;turn arrow
+data/000422/cam01/1619636337000.jpg,once,1,planning,road marking
+data/000422/cam01/1619636337500.jpg,once,1,planning,road marking
+data/000422/cam01/1619636338000.jpg,once,1,planning,road marking
+data/000422/cam01/1619636412000.jpg,once,1,planning,lane change
+data/000422/cam01/1619636466000.jpg,once,1,planning,lane arrow
+data/000422/cam01/1619636670000.jpg,once,1,planning,dashed;lane change
+data/000422/cam01/1619636758000.jpg,once,1,planning,lane change
+data/000436/cam01/1619663740000.jpg,once,1,planning,dashed;lane change
+data/000436/cam01/1619664253000.jpg,once,1,prediction,overtak
+data/000436/cam01/1619664253500.jpg,once,1,prediction,overtak
+data/000436/cam01/1619664254000.jpg,once,1,prediction,overtak
+data/000436/cam01/1619664264000.jpg,once,2,planning;region,lane change;lane markings;overtak
+data/000436/cam01/1619664501000.jpg,once,1,region,stop line
+data/000436/cam01/1619664501500.jpg,once,1,region,stop line
+data/000436/cam01/1619664502000.jpg,once,1,region,stop line
+data/000436/cam01/1619664515000.jpg,once,1,region,overtak
+data/000436/cam01/1619664515500.jpg,once,1,region,overtak
+data/000436/cam01/1619664516000.jpg,once,1,region,overtak
+data/000437/cam01/1619665072000.jpg,once,1,planning,turn arrow
+data/000437/cam01/1619665112000.jpg,once,1,region,stop line
+data/000437/cam01/1619665248000.jpg,once,1,region,overtak
+data/000442/cam01/1619673199000.jpg,once,1,prediction,lane change
+data/000442/cam01/1619673199500.jpg,once,1,prediction,lane change
+data/000442/cam01/1619673200000.jpg,once,1,prediction,lane change
+data/000442/cam01/1619673449000.jpg,once,1,planning,lane change
+data/000442/cam01/1619673449500.jpg,once,1,planning,lane change
+data/000442/cam01/1619673450000.jpg,once,1,planning,lane change
+data/000442/cam01/1619673837000.jpg,once,1,planning,lane change
+data/000442/cam01/1619673837500.jpg,once,1,planning,lane change
+data/000442/cam01/1619673838000.jpg,once,1,planning,lane change
+data/000442/cam01/1619673868000.jpg,once,1,prediction,lane change
+data/000456/cam01/1619719645000.jpg,once,1,planning,turn arrow
+data/000456/cam01/1619719645500.jpg,once,1,planning,turn arrow
+data/000456/cam01/1619719646000.jpg,once,1,planning,turn arrow
+data/000456/cam01/1619719696000.jpg,once,2,planning;region,stop line;turn arrow
+data/000456/cam01/1619719714000.jpg,once,1,planning,lane change
+data/000456/cam01/1619719718000.jpg,once,1,planning,dashed;lane change
+data/000456/cam01/1619719752000.jpg,once,1,planning,dashed;lane change
+data/000456/cam01/1619719775000.jpg,once,1,prediction,dashed
+data/000456/cam01/1619719775500.jpg,once,1,prediction,dashed
+data/000456/cam01/1619719776000.jpg,once,1,prediction,dashed
+data/000456/cam01/1619719779000.jpg,once,1,planning,dashed
+data/000456/cam01/1619719779500.jpg,once,1,planning,dashed
+data/000456/cam01/1619719780000.jpg,once,1,planning,dashed
+data/000456/cam01/1619719793000.jpg,once,1,region,overtak
+data/000456/cam01/1619719793500.jpg,once,1,region,overtak
+data/000456/cam01/1619719794000.jpg,once,1,region,overtak
+data/000456/cam01/1619719798000.jpg,once,1,planning,lane change
+data/000456/cam01/1619719824000.jpg,once,1,planning,lane change
+data/000456/cam01/1619719836000.jpg,once,1,planning,overtak
+data/000456/cam01/1619719921000.jpg,once,1,planning,turn arrow
+data/000456/cam01/1619719921500.jpg,once,1,planning,turn arrow
+data/000456/cam01/1619719922000.jpg,once,1,planning,turn arrow
+data/000456/cam01/1619719948000.jpg,once,1,prediction,stop line
+data/000456/cam01/1619720048000.jpg,once,1,region,stop line
+data/000458/cam01/1619720613000.jpg,once,2,planning;region,overtak;turn arrow
+data/000458/cam01/1619720613500.jpg,once,2,planning;region,overtak;turn arrow
+data/000458/cam01/1619720614000.jpg,once,2,planning;region,overtak;turn arrow
+data/000458/cam01/1619720618000.jpg,once,2,planning;region,overtak;turn arrow
+data/000458/cam01/1619720630000.jpg,once,1,planning,turn arrow
+data/000458/cam01/1619720643000.jpg,once,1,region,stop line
+data/000458/cam01/1619720643500.jpg,once,1,region,stop line
+data/000458/cam01/1619720644000.jpg,once,1,region,stop line
+data/000458/cam01/1619720655000.jpg,once,1,planning,lane change;lane markings
+data/000458/cam01/1619720655500.jpg,once,1,planning,lane change;lane markings
+data/000458/cam01/1619720656000.jpg,once,1,planning,lane change;lane markings
+data/000458/cam01/1619720723000.jpg,once,1,prediction,lane change;lane markings;overtak
+data/000458/cam01/1619720723500.jpg,once,1,prediction,lane change;lane markings;overtak
+data/000458/cam01/1619720724000.jpg,once,1,prediction,lane change;lane markings;overtak
+data/000458/cam01/1619720734000.jpg,once,1,planning,lane change
+data/000458/cam01/1619720738000.jpg,once,1,planning,dashed;lane change
+data/000458/cam01/1619720742000.jpg,once,1,prediction,lane markings
+data/000458/cam01/1619720745000.jpg,once,1,region,stop line
+data/000458/cam01/1619720745500.jpg,once,1,region,stop line
+data/000458/cam01/1619720746000.jpg,once,1,region,stop line
+data/000458/cam01/1619720770000.jpg,once,1,prediction,overtak
+data/000458/cam01/1619720787000.jpg,once,1,region,overtak
+data/000458/cam01/1619720787500.jpg,once,1,region,overtak
+data/000458/cam01/1619720788000.jpg,once,1,region,overtak
+data/000458/cam01/1619720824000.jpg,once,1,planning,turn arrow
+data/000460/cam01/1619756286000.jpg,once,1,region,stop line
+data/000460/cam01/1619756298000.jpg,once,1,planning,turn arrow
+data/000460/cam01/1619756410000.jpg,once,1,planning,lane change
+data/000460/cam01/1619756530000.jpg,once,1,perception,overtak;stop line
+data/000460/cam01/1619756534000.jpg,once,1,region,stop line
+data/000460/cam01/1619756668000.jpg,once,1,planning,turn arrow
+data/000460/cam01/1619756693000.jpg,once,1,region,overtak
+data/000460/cam01/1619756693500.jpg,once,1,region,overtak
+data/000460/cam01/1619756694000.jpg,once,1,region,overtak
+data/000460/cam01/1619756711000.jpg,once,2,planning;prediction,lane change;overtak
+data/000460/cam01/1619756711500.jpg,once,2,planning;prediction,lane change;overtak
+data/000460/cam01/1619756712000.jpg,once,2,planning;prediction,lane change;overtak
+data/000460/cam01/1619756721000.jpg,once,1,prediction,overtak;road marking
+data/000460/cam01/1619756721500.jpg,once,1,prediction,overtak;road marking
+data/000460/cam01/1619756722000.jpg,once,1,prediction,overtak;road marking
+data/000460/cam01/1619756818000.jpg,once,1,planning,lane change
+data/000460/cam01/1619756858000.jpg,once,1,planning,bus lane
+data/000460/cam01/1619756946000.jpg,once,1,planning,lane change;lane markings
+data/000460/cam01/1619756968000.jpg,once,1,region,stop line
+data/000460/cam01/1619757010000.jpg,once,1,planning,lane markings
+data/000460/cam01/1619757316000.jpg,once,1,planning,turn arrow
+data/000460/cam01/1619757333000.jpg,once,1,region,overtak
+data/000460/cam01/1619757333500.jpg,once,1,region,overtak
+data/000460/cam01/1619757334000.jpg,once,1,region,overtak
+data/000460/cam01/1619757404000.jpg,once,1,planning,lane markings
+data/000461/cam01/1619758028000.jpg,once,1,prediction,lane markings
+data/000461/cam01/1619758220000.jpg,once,1,region,overtak
+data/000461/cam01/1619758235000.jpg,once,1,planning,overtak
+data/000461/cam01/1619758235500.jpg,once,1,planning,overtak
+data/000461/cam01/1619758236000.jpg,once,1,planning,overtak
+data/000461/cam01/1619758378000.jpg,once,2,perception;region,lane markings;stop line
+data/000461/cam01/1619758386000.jpg,once,1,region,overtak
+data/000467/cam01/1619763459000.jpg,once,2,perception;prediction,dashed;double solid;overtak;white line;yellow line
+data/000467/cam01/1619763459500.jpg,once,2,perception;prediction,dashed;double solid;overtak;white line;yellow line
+data/000467/cam01/1619763460000.jpg,once,2,perception;prediction,dashed;double solid;overtak;white line;yellow line
+data/000467/cam01/1619763598000.jpg,once,1,prediction,stop line
+data/000467/cam01/1619763776000.jpg,once,2,perception;region,stop line
+data/000467/cam01/1619764350000.jpg,once,1,region,stop line
+data/000467/cam01/1619764440000.jpg,once,1,planning,dashed;lane change;overtak
+data/000467/cam01/1619764444000.jpg,once,1,region,overtak

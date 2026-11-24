@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lane Rule Advisor · Reasoning Driving</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="logo">◆</span> Lane Rule Advisor <span class="sub">Reasoning Driving</span></div>
+  <nav class="tabs" id="tabs">
+    <button data-tab="analyze" class="on">Analyze</button>
+    <button data-tab="video">Video</button>
+    <button data-tab="apikey">Your API key</button>
+    <button data-tab="feedback">Feedback</button>
+    <button data-tab="monitor">Monitor</button>
+  </nav>
+  <span class="grow"></span>
+  <span class="pill" id="model-pill">…</span>
+  <a class="small" href="/" title="Research console (prompts, batch runs, run comparison)">Research console</a>
+</header>
+
+<main>
+<!-- ============================================================ Analyze -->
+<section id="tab-analyze" class="tab">
+  <div class="cols">
+    <div class="card input">
+      <h3>1 · Photo</h3>
+      <label>Region
+        <select id="region"><option value="US">United States</option><option value="CN">China</option><option value="UK">United Kingdom</option><option value="IN">India</option></select>
+      </label>
+      <div class="seg" id="src-seg"><button data-src="example" class="on">Test-set example</button><button data-src="upload">Upload a photo</button></div>
+      <div id="src-example"><select id="example"></select><div class="hint" id="ex-count"></div></div>
+      <div id="src-upload" class="hidden">
+        <input type="file" id="file" accept="image/jpeg,image/png,image/webp">
+        <div class="hint">JPEG / PNG / WebP, 160–4096 px a side, at most 10 MB. The photo is re-encoded without metadata (no GPS) and deleted when the service stops.</div>
+      </div>
+      <div class="imgbox"><img id="img" alt=""></div>
+      <h3>2 · Options</h3>
+      <label>Traffic rules given to the model
+        <select id="rules"></select>
+      </label>
+      <label>Model
+        <select id="model"></select>
+      </label>
+      <div class="hint" id="mode-hint"></div>
+      <button class="primary big" id="go">Analyze lane</button>
+      <div class="msg" id="msg"></div>
+    </div>
+
+    <div class="card output" id="out">
+      <div class="empty">Pick a photo and press <b>Analyze lane</b>.<br>
+        The system reads the two lines of your lane, applies the local rules and says which of 7 actions are allowed.
+        A verification step checks the answer against the rule table before it is shown.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ Video -->
+<section id="tab-video" class="tab hidden">
+  <div class="cols">
+    <div class="card input">
+      <h3>1 · Video</h3>
+      <input type="file" id="v-file" accept="video/mp4,video/quicktime,video/x-msvideo,.mp4,.mov,.avi,.mkv">
+      <div class="hint">MP4 / MOV / AVI, at most 500 MB and 5 minutes. The video, its frames and the annotated videos stay on this
+        computer until the service stops or you press “Delete”; the same upload can be analysed again with other rules or another model.</div>
+      <div class="msg" id="v-info"></div>
+      <video id="v-player" controls muted class="hidden"></video>
+      <h3>2 · Road and rules</h3>
+      <label>The road is in
+        <select id="v-region"><option value="US">United States</option><option value="CN">China</option><option value="UK">United Kingdom</option><option value="IN">India</option></select>
+      </label>
+      <label>Traffic rules given to the model <select id="v-rules"></select></label>
+      <label>Model <select id="v-model"></select></label>
+      <h3>3 · What the car does (optional)</h3>
+      <label>Navigation intent at the end of the clip (not shown to the model)
+        <select id="v-intent"><option value="">— none —</option></select>
+      </label>
+      <label>Event file of executed manoeuvres (CARLA log, JSON / JSONL)
+        <input type="file" id="v-events" accept=".json,.jsonl,.txt,application/json">
+      </label>
+      <details><summary class="small">Sampling</summary>
+        <label>One frame every <input type="number" id="v-every" value="1" min="0.25" step="0.25" style="width:70px"> s of video</label>
+        <label>At most <input type="number" id="v-max" value="20" min="2" max="40" style="width:70px"> frames</label>
+      </details>
+      <button class="primary big" id="v-go" disabled>Analyze video</button>
+      <div class="progress hidden" id="v-prog"><span></span></div>
+      <div class="msg" id="v-msg"></div>
+    </div>
+    <div class="card output" id="v-out">
+      <div class="empty">Upload a dash-cam or simulator clip.<br>
+        The system takes frames from it, reads the two lines of the lane in each frame, applies the chosen rules, merges
+        frames with the same lines into segments and shows what the car may do along the clip.<br>
+        With a navigation intent it checks the intended manoeuvre at the end of the clip; with an event file it checks every
+        executed manoeuvre and, if the file gives the ground truth, says whether perception or decision was at fault.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ Your API key -->
+<section id="tab-apikey" class="tab hidden">
+  <div class="cols">
+    <div class="card input">
+      <h3>Use your own API key</h3>
+      <label>Provider
+        <select id="k-provider">
+          <option value="openai">OpenAI (Responses API)</option>
+          <option value="navigator">UF NaviGator (LiteLLM, OpenAI-compatible)</option>
+          <option value="custom">Other OpenAI-compatible service</option>
+        </select>
+      </label>
+      <label>Base URL <input id="k-base" type="text" spellcheck="false"></label>
+      <label>Model <input id="k-model" type="text" spellcheck="false"></label>
+      <label>API key <input id="k-key" type="password" autocomplete="off" spellcheck="false" placeholder="paste your key here"></label>
+      <div class="row"><button type="button" id="k-check">Check key (free)</button><span class="grow"></span><button type="button" class="primary" id="k-use">Use this key</button></div>
+      <div class="msg" id="k-msg"></div>
+      <div class="banner ok hidden" id="k-state"></div>
+      <div class="row"><button type="button" id="k-forget" class="hidden">Forget my key</button></div>
+    </div>
+    <div class="card">
+      <h3>How your key is handled</h3>
+      <ol class="loop">
+        <li>It is sent once to this service and kept <b>in its memory only</b>, for this browser tab.</li>
+        <li>It is <b>never written</b> to a file, the prediction log, the metrics or the results; the page shows only its last 4 characters.</li>
+        <li>Requests go from this service straight to the provider you chose; the costs go to your account.</li>
+        <li>It is forgotten when you press <b>Forget my key</b> or the service stops.</li>
+      </ol>
+      <h3>After you press “Use this key”</h3>
+      <p class="hint">The Model lists on <b>Analyze</b> and <b>Video</b> get “Your key · model”, already selected. Upload your own photo or video and press Analyze.
+        Test-set photos only take a model whose prompt and settings were frozen for the test (the evaluation rule); use an upload with a new model.</p>
+      <h3>Where to get a key</h3>
+      <p class="hint"><b>OpenAI:</b> platform.openai.com → API keys. <b>UF NaviGator:</b> Virtual Keys → Create New Key, with Team = navigator-toolkit (otherwise 401).
+        <b>Other:</b> any service with an OpenAI-style <code>/chat/completions</code> that accepts images and JSON-schema answers.</p>
+      <p class="hint">“Check key” only asks the provider’s free model list (<code>/models</code>); it uses no tokens.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ Feedback -->
+<section id="tab-feedback" class="tab hidden">
+  <div class="cols">
+    <div class="card">
+      <h3>Feedback on the last answer</h3>
+      <div id="fb-target" class="hint">No answer yet: analyze a photo first.</div>
+      <form id="fb-form" class="hidden">
+        <div class="fb-row"><span>Overall</span>
+          <div class="seg" data-name="rating"><button type="button" data-v="good">👍 Good</button><button type="button" data-v="bad">👎 Bad</button></div></div>
+        <h4>Lines</h4>
+        <div id="fb-lines"></div>
+        <h4>Actions</h4>
+        <div id="fb-actions"></div>
+        <h4>Comment</h4>
+        <textarea id="fb-comment" rows="3" maxlength="500" placeholder="e.g. the right line is solid near the junction, so changing right is not allowed"></textarea>
+        <div class="row"><button type="button" id="fb-clear">Clear</button><span class="grow"></span><button type="submit" class="primary">Submit feedback</button></div>
+        <div class="msg" id="fb-msg"></div>
+      </form>
+    </div>
+    <div class="card">
+      <h3>How feedback is used</h3>
+      <ol class="loop">
+        <li><b>Logged</b> to <code>results/app/feedback.csv</code> and counted in Prometheus (<code>app_feedback_*</code>).</li>
+        <li><b>Analysed</b> weekly: wrong-rate per action and region (frequency) and comment themes (e.g. solid vs dashed, bus lanes) — <code>scripts/feedback_report.py</code>.</li>
+        <li><b>Triaged</b>: answers marked wrong go to the label-review queue; a confirmed error becomes a test case.</li>
+        <li><b>Acted on</b>: a recurring theme changes the prompt (v3 → v4 → v4c came from this loop) or the rule table, then the frozen test set is re-run before release.</li>
+      </ol>
+      <h3>Recent comments</h3>
+      <div id="fb-recent" class="hint">—</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ Monitor -->
+<section id="tab-monitor" class="tab hidden">
+  <div class="kpis" id="kpis"></div>
+  <div class="cols">
+    <div class="card"><h3>Users say "wrong", per action</h3><div id="bars"></div><div class="hint">right + wrong verdicts only; unsure is left out</div></div>
+    <div class="card"><h3>Comment themes</h3><div id="themes"></div>
+      <h3>Dashboards</h3>
+      <p class="hint">Live charts and alert rules: <a id="lnk-grafana" target="_blank">Grafana</a> (dashboard “Lane advisor – monitoring”) · raw metrics: <a id="lnk-prom" target="_blank">Prometheus</a> · <a href="/metrics" target="_blank">/metrics</a></p>
+      <p class="hint">Alerts: rule agreement below 0.85 · more than 30 % of feedback “bad” · 90th-percentile latency above 60 s · model errors.</p>
+    </div>
+  </div>
+</section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

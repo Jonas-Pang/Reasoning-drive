@@ -1,0 +1,51 @@
+carla_Town03_lane_change_mirrored | lane | Test A | gpt-6.1-sol
+---------------------------------------------------------------
+Step 1  Scene           An urban two-way road runs beneath an elevated structure. My car is in the right-hand
+                        of two lanes on the left side of the apparent road centre; the distant junction layout
+                        is unclear. (lanes 2, mine 2, full)
+Step 2  Left            A continuous solid white line separates my lane from another lane to the left, with no
+                        curb along this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           Two continuous parallel yellow lines run along the right of my lane, with roadway
+                        beyond and no curb at the lines.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: Two lanes in my direction and position 2 agree with an adjacent lane on the
+                        left and the apparent centre of the road on the right. | roles: The solid white lane
+                        separator is plausible in the UK, but yellow double lines at the apparent road centre
+                        are atypical: UK double yellow lines normally indicate waiting restrictions rather
+                        than an opposing-traffic crossing prohibition. | markings: No arrows, words, symbols,
+                        transverse lines or waiting areas are visible in my lane. | unseen: No distant
+                        junction movements or hidden markings have been inferred; the unusual yellow centre
+                        marking is described by its visible colour rather than treated as white. | result:
+                        consistent
+Step 5  Rule            left_boundary: A solid white lane separator discourages changing lanes unnecessarily,
+                        but does not by itself impose the prohibition associated with double white centre
+                        lines.
+Step 5  Rule            right_boundary: Under UK conventions, double yellow lines indicate no waiting rather
+                        than a prohibition on crossing, so their colour and pattern alone do not prohibit
+                        crossing this boundary.
+Step 6  change_left     allowed: The solid white lane separator discourages unnecessary changes but does not
+                        itself prohibit crossing.
+Step 6  change_right    allowed: The visible double yellow lines do not impose the UK double-white-line
+                        crossing prohibition; this is not permission to drive into opposing traffic.
+Step 6  go_straight     not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_left       not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_right      not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  u_turn          not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         Consistent: boundary-crossing assessments concern only the visible markings, and no
+                        junction movement is inferred from them.
+Advice                  Keep left unless overtaking, moving into the left lane only when safe and avoiding
+                        unnecessary crossing of its solid separator. The yellow centre markings are unusual
+                        for the UK: do not interpret their crossing assessment as permission to enter opposing
+                        traffic, and wait for clearer junction guidance before choosing a turn.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation None, contradictions ['change_right allowed
+                        across a double solid line']
+Tokens                  in 4426, out 984, 18.42 s

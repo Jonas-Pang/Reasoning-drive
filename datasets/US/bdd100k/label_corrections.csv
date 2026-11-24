@@ -1,0 +1,56 @@
+time_utc,round,region,image_id,field,old,new,basis
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__b5046f1e-b1ef44b9,markings,,text:only,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__b7719f1d-e6e580dd,right_pattern,dashed,dotted,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__b775af1c-bb5afbe3,markings,arrow:right,arrow:right;line:stop_line,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__bd026bc5-9418706c,markings,arrow:straight,arrow:straight;line:stop_line,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__bf6315ee-a77e1bb2,left_pattern,solid,dashed,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__bf6711ef-76e408aa,markings,text:only,arrow:straight;text:only,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__bf6711ef-76e408aa,act_go_straight,not_determined,allowed,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__bf6711ef-76e408aa,act_turn_left,not_applicable,prohibited,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__bf6711ef-76e408aa,act_turn_right,not_applicable,prohibited,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__bf6711ef-76e408aa,act_u_turn,not_applicable,prohibited,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__c39dc2ff-6976d19d,markings,arrow:left;text:only,arrow:left;line:stop_line;text:only,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__c4b77809-63fd577c,markings,line:stop_line,line:stop_line;text:stop,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__c4b77809-63fd577c,act_go_straight,not_determined,stop_first,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__c4d25f00-3b1d8669,markings,line:crosswalk,line:crosswalk;line:stop_line,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__c4e92086-e1b8324f,right_color,white,none,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__c4e92086-e1b8324f,right_pattern,solid,none,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__c4e92086-e1b8324f,right_curb,no,yes,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__c4e92086-e1b8324f,right_role,lane_line,edge_line,photo check; flagged by model answers
+2026-11-17T06:25:13Z,round1_gpt_flags,US,bdd100k_val__c4e92086-e1b8324f,act_change_right,allowed,prohibited,photo check; flagged by model answers
+2026-11-17T23:10:00Z,round3_rulecheck,US,bdd100k_val__c4057c0c-000a6aaf,act_change_right,prohibited,allowed,rule-table cross-check of the label (its own lines/markings vs its actions); photo check by Claude: right is a white dashed lane line (markings only)
+2026-11-17T23:10:00Z,round3_rulecheck,US,bdd100k_val__b263f57d-1ccf6e51,act_turn_right,allowed,not_applicable,rule-table cross-check of the label (its own lines/markings vs its actions); photo check by Claude: no arrow in my lane (project convention)
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__fe194677-e2d2ac8c,act_change_left,not_determined,prohibited,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__fe194677-e2d2ac8c,act_change_right,not_determined,prohibited,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__b9db357e-cd30a8ae,act_change_right,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__be4cbd00-97fec78b,act_turn_left,not_determined,prohibited,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__be4cbd00-97fec78b,act_turn_right,not_determined,prohibited,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__be4cbd00-97fec78b,act_u_turn,not_determined,prohibited,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__c7c042ec-4986a853,act_turn_left,not_determined,prohibited,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__c7c042ec-4986a853,act_u_turn,not_determined,prohibited,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__c561cb9a-aafc0bad,act_change_left,prohibited,allowed,"owner convention: US single white solid lane line, crossing discouraged but allowed"
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__bbfe3b4f-5137ff9f,act_change_left,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__bbfe3b4f-5137ff9f,act_change_right,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__bc19c993-c0a0f85f,act_change_left,not_determined,prohibited,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__bc19c993-c0a0f85f,act_change_right,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__c1589305-200e315b,act_change_left,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__c1589305-200e315b,act_change_right,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__c8a7a62d-e58e7297,act_change_right,not_determined,prohibited,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__b306fb3f-f02e46cc,act_change_right,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__b9429f07-33ae3ff1,act_change_right,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__b3060c96-d2391b61,act_change_right,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__bd354e59-e5a9e8c6,act_change_right,prohibited,allowed,"owner convention: US single white solid lane line, crossing discouraged but allowed"
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__c6dca574-6e641016,act_change_right,not_determined,prohibited,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__bdc0dc52-b4d05890,act_change_left,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__bdc0dc52-b4d05890,act_change_right,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__c308561a-1b698bb4,act_change_left,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__c94d8213-1f593522,act_change_left,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__b48c7b5f-800d31b4,act_change_left,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__c8e01103-9ff8595d,act_change_left,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:22:11Z,round4_owner_conventions,US,bdd100k_val__c8e01103-9ff8595d,act_change_right,not_determined,allowed,owner convention: no not_determined; rule table on the label's own attributes
+2026-11-17T23:23:13Z,round4b_rulecheck,US,bdd100k_val__bd656105-ed6f8161,act_change_left,prohibited,allowed,owner convention: US single white solid lane line crossing discouraged but allowed
+2026-11-17T23:23:13Z,round4b_rulecheck,US,bdd100k_val__bc9b5bfb-51ebcf39,act_change_right,prohibited,allowed,owner convention: US single white solid lane line crossing discouraged but allowed
+2026-11-17T23:23:13Z,round4b_rulecheck,US,bdd100k_val__b775af1c-bb5afbe3,act_change_left,prohibited,allowed,owner convention: US single white solid lane line crossing discouraged but allowed
+2026-11-17T23:23:13Z,round4b_rulecheck,US,bdd100k_val__b775af1c-bb5afbe3,act_change_right,prohibited,allowed,owner convention: US single white solid lane line crossing discouraged but allowed
+2026-11-17T23:45:46Z,round4d_owner,US,bdd100k_val__b5046f1e-b1ef44b9,right_role,lane_line,special_lane_line,photo (Claude): the right lane carries a BUS ONLY marking; owner: special lanes taken as restricted
+2026-11-17T23:45:46Z,round4d_owner,US,bdd100k_val__c4057c0c-000a6aaf,act_change_left,prohibited,allowed,owner: a single broken yellow centre line on a two-lane road permits crossing

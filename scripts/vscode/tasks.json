@@ -1,0 +1,771 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Setup: create .venv and install the packages (Windows)",
+      "type": "shell",
+      "command": "scripts\\setup_windows.bat",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "detail": "once: Python 3.11 + requirements.txt in .venv, then the self-test"
+    },
+    {
+      "label": "Self-test (no API, no CARLA)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "selftest"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Web page: start and open in the browser",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "web"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": {
+        "owner": "rd",
+        "pattern": {
+          "regexp": "^x^"
+        },
+        "background": {
+          "activeBegins": true,
+          "beginsPattern": ".",
+          "endsPattern": "running at"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "detail": "http://localhost:8770 (demo), /project (whole project), /review",
+      "isBackground": true
+    },
+    {
+      "label": "Results: every saved run",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "results"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Evaluate a run",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "evaluate",
+        "${input:runId}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "detail": "precision, recall, F1, confusion matrices -> results/reports/"
+    },
+    {
+      "label": "Evaluate: two runs side by side",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "evaluate",
+        "${input:runId}",
+        "${input:runId2}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Lane run on the development images (real API)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "lane",
+        "run",
+        "--test",
+        "${input:laneTest}",
+        "--region",
+        "${input:region}",
+        "--split",
+        "dev",
+        "--prompt",
+        "${input:lanePrompt}",
+        "--real"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "detail": "costs money: about $0.5 to $1 per test and region"
+    },
+    {
+      "label": "Lane run Test R (passages chosen from a Test A run, real API)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "lane",
+        "run",
+        "--test",
+        "R",
+        "--region",
+        "${input:region}",
+        "--split",
+        "dev",
+        "--prompt",
+        "${input:lanePrompt}",
+        "--from",
+        "${input:runId}",
+        "--real"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Lane run (mock, free)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "lane",
+        "run",
+        "--test",
+        "${input:laneTest}",
+        "--region",
+        "${input:region}",
+        "--split",
+        "dev",
+        "--prompt",
+        "${input:lanePrompt}",
+        "--mock"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Lane: composition level and rule sensitivity of every label",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "lane",
+        "difficulty"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Lane: the exact prompt",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "lane",
+        "prompt",
+        "--test",
+        "${input:laneTest}",
+        "--region",
+        "${input:region}",
+        "--prompt",
+        "${input:lanePrompt}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Regulations: list the countries",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "regulations",
+        "list"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Regulations: check the files",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "regulations",
+        "check"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Regulations: force of each passage (norms)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "regulations",
+        "norms",
+        "${input:code}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Regulations: extract a standard (mock, free)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "regulations",
+        "extract",
+        "--pdf",
+        "${input:docPath}",
+        "--code",
+        "${input:code}",
+        "--name",
+        "${input:countryName}",
+        "--driving-side",
+        "${input:side}",
+        "--language",
+        "${input:language}",
+        "--title",
+        "${input:title}",
+        "--mock"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Regulations: extract a standard (real API)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "regulations",
+        "extract",
+        "--pdf",
+        "${input:docPath}",
+        "--code",
+        "${input:code}",
+        "--name",
+        "${input:countryName}",
+        "--driving-side",
+        "${input:side}",
+        "--language",
+        "${input:language}",
+        "--title",
+        "${input:title}",
+        "--real"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Regulations: accept the draft",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "regulations",
+        "accept",
+        "${input:code}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "CARLA: list the routes",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "carla",
+        "routes"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "CARLA: drive a route (CARLA must be running)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "carla",
+        "route",
+        "${input:route}",
+        "--record"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "detail": "uses the Python of configs/carla.yaml (server.python) when this one has no carla package"
+    },
+    {
+      "label": "CARLA: replay video of a run",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "main.py",
+        "carla",
+        "video",
+        "${input:carlaRun}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "Label: MapDR (China) - build the candidate index (once)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "scripts/label_ws.py",
+        "mapdr_ws",
+        "images",
+        "init",
+        "mapdr",
+        "--source",
+        "{root}/mapdr"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "detail": "workspace DATASETS_ROOT/mapdr_ws, images in DATASETS_ROOT/mapdr; run once after the download"
+    },
+    {
+      "label": "Label: China (MapDR) - one click, http://127.0.0.1:8765",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-u", "scripts/label_mapdr.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "panel": "dedicated", "reveal": "always" }
+    },
+    {
+      "label": "Label: US (BDD100K) - one click, http://127.0.0.1:8766",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-u", "scripts/label_bdd.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "panel": "dedicated", "reveal": "always" }
+    },
+    {
+      "label": "Label: open the labeling tool (pick images, lane labels, disagreements, helpers)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "scripts/label_ws.py",
+        "${input:workspace}",
+        "label"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "detail": "opens http://127.0.0.1:8765 in the browser; stop with Ctrl+C in the terminal"
+    },
+    {
+      "label": "Label: lane page only (label my lane)",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "scripts/label_ws.py",
+        "${input:workspace}",
+        "lanes"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "detail": "opens http://127.0.0.1:8766"
+    },
+    {
+      "label": "Label: counts and agreement between annotators",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "scripts/label_ws.py",
+        "${input:workspace}",
+        "lanes-status"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "detail": "per status and Fleiss kappa per field"
+    },
+    {
+      "label": "Label: export the final labels of a workspace",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "scripts/label_ws.py",
+        "${input:workspace}",
+        "export"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "detail": "checks labels, writes datasets/<CODE>/<collection>/"
+    },
+    {
+      "label": "Label: combine every workspace into datasets/splits/",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "scripts/label_ws.py",
+        "--combine",
+        "UF",
+        "bdd100k",
+        "culane",
+        "mapdr_ws"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "detail": "the next split version for the model runs"
+    },
+    {
+      "label": "Docker: build and start (web page, Prometheus, Grafana)",
+      "type": "shell",
+      "command": "docker",
+      "args": [
+        "compose",
+        "up",
+        "--build",
+        "-d"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "detail": "then http://localhost:8770/project, Grafana http://localhost:3000"
+    },
+    {
+      "label": "Docker: self-test inside the image",
+      "type": "shell",
+      "command": "docker",
+      "args": [
+        "compose",
+        "run",
+        "--rm",
+        "demo",
+        "python",
+        "main.py",
+        "selftest"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: status",
+      "type": "shell",
+      "command": "docker",
+      "args": [
+        "compose",
+        "ps"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: stop",
+      "type": "shell",
+      "command": "docker",
+      "args": [
+        "compose",
+        "down"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "workspace",
+      "type": "pickString",
+      "description": "labeling workspace (folder under DATASETS_ROOT)",
+      "options": ["mapdr_ws", "bdd100k", "culane", "UF"],
+      "default": "mapdr_ws"
+    },
+    {
+      "id": "runId",
+      "type": "promptString",
+      "description": "run ID (folder name in results/runs/, e.g. 20261105_074605_laneB_CN)"
+    },
+    {
+      "id": "runId2",
+      "type": "promptString",
+      "description": "second run ID"
+    },
+    {
+      "id": "laneTest",
+      "type": "pickString",
+      "description": "test",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "default": "B"
+    },
+    {
+      "id": "region",
+      "type": "pickString",
+      "description": "region",
+      "options": [
+        "CN",
+        "US"
+      ],
+      "default": "CN"
+    },
+    {
+      "id": "lanePrompt",
+      "type": "pickString",
+      "description": "lane prompt folder",
+      "options": [
+        "lane_v2",
+        "lane_v1"
+      ],
+      "default": "lane_v2"
+    },
+    {
+      "id": "code",
+      "type": "promptString",
+      "description": "country code (e.g. UK, JP, IN)",
+      "default": "UK"
+    },
+    {
+      "id": "countryName",
+      "type": "promptString",
+      "description": "country name as it goes into the prompt",
+      "default": "the United Kingdom"
+    },
+    {
+      "id": "side",
+      "type": "pickString",
+      "description": "driving side",
+      "options": [
+        "left",
+        "right"
+      ],
+      "default": "left"
+    },
+    {
+      "id": "language",
+      "type": "pickString",
+      "description": "language of the standard",
+      "options": [
+        "en",
+        "zh",
+        "ja"
+      ],
+      "default": "en"
+    },
+    {
+      "id": "title",
+      "type": "promptString",
+      "description": "title and edition of the standard"
+    },
+    {
+      "id": "docPath",
+      "type": "promptString",
+      "description": "the standard's file (PDF, HTML, XML or text)",
+      "default": "regulations/inbox/"
+    },
+    {
+      "id": "route",
+      "type": "pickString",
+      "description": "route of configs/carla.yaml",
+      "options": [
+        "route1",
+        "route2",
+        "route3",
+        "route4",
+        "route5"
+      ],
+      "default": "route1"
+    },
+    {
+      "id": "carlaRun",
+      "type": "promptString",
+      "description": "run folder, e.g. results/carla/20261113_185858_route1"
+    }
+  ]
+}

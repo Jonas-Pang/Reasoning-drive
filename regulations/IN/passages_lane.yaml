@@ -1,0 +1,401 @@
+# Rule passages of IN (accepted from passages_draft.yaml on 2026-11-16 by Claude for the small pilot run; the owner reviews them before any test run).
+# Quotes not found on their page by the extractor (read them against the source): IN-8(3)(a)(iv), IN-14(5)(e), IN-22.(1)iv, IN-22.(1)viii, IN-22.(2)(c)
+
+- rule_id: IN-6(1)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 6(1)
+  page: 5
+  marking_type: lane markings
+  element: boundary
+  text_original: Where any road is marked by lanes for movement of traffic, the driver shall drive within the lane, and change
+    lanes only after giving a proper signal or road marking or signage.
+  text_en: Where any road is marked by lanes for movement of traffic, the driver shall drive within the lane, and change lanes
+    only after giving a proper signal or road marking or signage.
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-6(2)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 6(2)
+  page: 5
+  marking_type: vehicle-class reserved lane
+  element: lane_type
+  text_original: Where any lane is marked specially for a class of vehicles, a vehicle of that class shall drive in that lane
+    only.
+  text_en: Where any lane is marked specially for a class of vehicles, a vehicle of that class shall drive in that lane only.
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-6(3)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 6(3)
+  page: 5
+  marking_type: reserved or special-purpose lane
+  element: lane_type
+  text_original: Where a lane has been marked for a specified class of vehicles or for a special purpose, no other vehicle
+    of any other class shall be driven in that lane.
+  text_en: Where a lane has been marked for a specified class of vehicles or for a special purpose, no other vehicle of any
+    other class shall be driven in that lane.
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-6(4)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 6(4)
+  page: 5
+  marking_type: yellow or white solid longitudinal line
+  element: boundary
+  text_original: Where a road is divided by a longitudinal yellow or white solid line, the driver, proceeding in the same
+    direction and trying to overtake another vehicle ahead, shall not cross the said yellow or white solid line.
+  text_en: Where a road is divided by a longitudinal yellow or white solid line, the driver, proceeding in the same direction
+    and trying to overtake another vehicle ahead, shall not cross the said yellow or white solid line.
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-6(5)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 6(5)
+  page: 5
+  marking_type: solid-line turning lane
+  element: lane_type
+  text_original: While approaching inter-sections, where turning lanes are marked with a single solid line, the driver shall
+    ensure that the vehicle remains in the lane meant for the direction of manoeuvre.
+  text_en: While approaching inter-sections, where turning lanes are marked with a single solid line, the driver shall ensure
+    that the vehicle remains in the lane meant for the direction of manoeuvre.
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-6(6)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 6(6)
+  page: 5
+  marking_type: single or double solid line and painted traffic island
+  element: general
+  text_original: The driver shall not drive on or over a single or double longitudinal solid line, or on a painted traffic
+    island except in case of obstructions on the road.
+  text_en: The driver shall not drive on or over a single or double longitudinal solid line, or on a painted traffic island
+    except in case of obstructions on the road.
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-6(7)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 6(7)
+  page: 5
+  marking_type: broken-and-solid longitudinal line
+  element: boundary
+  text_original: On a road having a single broken line along with a solid line, the driver of the vehicle driving on the left
+    of broken line may cross the broken line in order to o vertake, but shall return to his lane after completing the manoeuvre,
+    observing the safety precautions specified in regulation 12.
+  text_en: On a road having a single broken line along with a solid line, the driver of the vehicle driving on the left of
+    broken line may cross the broken line in order to o vertake, but shall return to his lane after completing the manoeuvre,
+    observing the safety precautions specified in regulation 12.
+  text_en_is_translation: false
+  norm: permissive
+- rule_id: IN-7(1)(a)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 7(1)(a)
+  page: 5
+  marking_type: STOP line
+  element: transverse
+  text_original: Where a “STOP” sign is displayed on a road, the driver facing the sign shall- (a) stop before crossing the
+    transverse “STOP” line preceding the “STOP” sign;
+  text_en: Where a “STOP” sign is displayed on a road, the driver facing the sign shall- (a) stop before crossing the transverse
+    “STOP” line preceding the “STOP” sign;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-7(3)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 7(3)
+  page: 5
+  marking_type: Give Way transverse marking
+  element: transverse
+  text_original: Where a “Give Way” sign is displayed on the road, supplemented by a single or double broken transverse “Give
+    Way” road marking, the driver shall slowdown, give way to traffic on the road he is approaching, and proceed cautiously.
+  text_en: Where a “Give Way” sign is displayed on the road, supplemented by a single or double broken transverse “Give Way”
+    road marking, the driver shall slowdown, give way to traffic on the road he is approaching, and proceed cautiously.
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-8(1)(c)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 8(1)(c)
+  page: 6
+  marking_type: left-turn arrow
+  element: lane_marking
+  text_original: while driving on a multi-lane road, where direction arrows pointing to the left are marked on the road, the
+    driver shall use that lane while taking a left turn;
+  text_en: while driving on a multi-lane road, where direction arrows pointing to the left are marked on the road, the driver
+    shall use that lane while taking a left turn;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-8(1)(f)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 8(1)(f)
+  page: 6
+  marking_type: uncontrolled pedestrian crossing
+  element: transverse
+  text_original: at uncontrolled pedestrian crossings, the driver shall give way to the pedestrians before turning left;
+  text_en: at uncontrolled pedestrian crossings, the driver shall give way to the pedestrians before turning left;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-8(2)(c)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 8(2)(c)
+  page: 6
+  marking_type: right-turn arrow
+  element: lane_marking
+  text_original: while driving on a multi-lane road, where direction arrows pointing to the right are marked on the road,
+    the driver shall remain in that lane while taking right turn;
+  text_en: while driving on a multi-lane road, where direction arrows pointing to the right are marked on the road, the driver
+    shall remain in that lane while taking right turn;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-8(2)(e)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 8(2)(e)
+  page: 6
+  marking_type: uncontrolled pedestrian crossing
+  element: transverse
+  text_original: at uncontrolled pedestrian crossings, the driver shall give way to pedestrians.
+  text_en: at uncontrolled pedestrian crossings, the driver shall give way to pedestrians.
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-8(3)(a)(iv)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 8(3)(a)(iv)
+  page: 6
+  marking_type: continuous single or double solid line
+  element: boundary
+  text_original: a vehicle shall not make a ‘U’ turn - (iv) across a continuous single or a double solid line;
+  text_en: a vehicle shall not make a ‘U’ turn - (iv) across a continuous single or a double solid line;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-12(1)(a)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 12(1)(a)
+  page: 7
+  marking_type: stop line at red signal
+  element: transverse
+  text_original: a motor vehicle facing the red light of a traffic control signal at an intersection or at a place other than
+    an intersection, shall stop the vehicle before the stop line preceding the pedestrian crossing;
+  text_en: a motor vehicle facing the red light of a traffic control signal at an intersection or at a place other than an
+    intersection, shall stop the vehicle before the stop line preceding the pedestrian crossing;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-12(1)(b)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 12(1)(b)
+  page: 7
+  marking_type: pedestrian crossing at red signal
+  element: transverse
+  text_original: if the stop line is not marked or, if marked is not visible, the vehicle shall stop before the pedestrian
+    crossing;
+  text_en: if the stop line is not marked or, if marked is not visible, the vehicle shall stop before the pedestrian crossing;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-12(1)(e)(i)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 12(1)(e)(i)
+  page: 7
+  marking_type: stop line at flashing red signal
+  element: transverse
+  text_original: when, at an intersection or at a place other than an intersection, rapid intermittent flashes of red light
+    are displayed by a traffic control signal, the vehicle facing the signal shall,- (i) stop before the stop line preceding
+    the pedestrian crossing;
+  text_en: when, at an intersection or at a place other than an intersection, rapid intermittent flashes of red light are
+    displayed by a traffic control signal, the vehicle facing the signal shall,- (i) stop before the stop line preceding the
+    pedestrian crossing;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-12(3)(a)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 12(3)(a)
+  page: 8
+  marking_type: stop line
+  element: transverse
+  text_original: when, at an intersection or at a place other than an intersection, an amber light is on at a traffic control
+    signal, the vehicle facing the amber light shall stop before the stop line preceding the pedestrian crossing;
+  text_en: when, at an intersection or at a place other than an intersection, an amber light is on at a traffic control signal,
+    the vehicle facing the amber light shall stop before the stop line preceding the pedestrian crossing;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-12(3)(b)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 12(3)(b)
+  page: 8
+  marking_type: pedestrian crossing
+  element: transverse
+  text_original: 'if a stop line is not marked or, if marked is not visible, the vehicle shall stop before the pedestrian
+    crossing:'
+  text_en: 'if a stop line is not marked or, if marked is not visible, the vehicle shall stop before the pedestrian crossing:'
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-13(2)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 13(2)
+  page: 8
+  marking_type: stop line
+  element: transverse
+  text_original: When a “STOP” signal is shown by the police officer in uniform or any other authorised person, the driver
+    shall stop the vehicle before the stop line preceding the pedestrian crossing.
+  text_en: When a “STOP” signal is shown by the police officer in uniform or any other authorised person, the driver shall
+    stop the vehicle before the stop line preceding the pedestrian crossing.
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-13(3)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 13(3)
+  page: 8
+  marking_type: pedestrian crossing
+  element: transverse
+  text_original: In case the stop line is not marked or, if marked is not visible, the driver shall stop the vehicle before
+    the pedestrian crossing.
+  text_en: In case the stop line is not marked or, if marked is not visible, the driver shall stop the vehicle before the
+    pedestrian crossing.
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-14(2)(a)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 14(2)(a)
+  page: 9
+  marking_type: marked lane to the left
+  element: lane_type
+  text_original: 'Provided that a vehicle may be overtaken from the left, if-
+
+    (a) the vehicle which is to overtake and the vehicle which is to be overtaken are both driving on a multi-lane road and
+    the vehicle ahead can be safely overtaken in a marked lane to the left of the vehicle being overtaken;'
+  text_en: 'Provided that a vehicle may be overtaken from the left, if-
+
+    (a) the vehicle which is to overtake and the vehicle which is to be overtaken are both driving on a multi-lane road and
+    the vehicle ahead can be safely overtaken in a marked lane to the left of the vehicle being overtaken;'
+  text_en_is_translation: false
+  norm: permissive
+- rule_id: IN-14(5)(c)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 14(5)(c)
+  page: 9
+  marking_type: continuous single or double solid longitudinal lane marking
+  element: boundary
+  text_original: 'No vehicle shall overtake-
+
+    (c) by crossing the continuous single or double solid longitudinal lane marking dividing the road;'
+  text_en: 'No vehicle shall overtake-
+
+    (c) by crossing the continuous single or double solid longitudinal lane marking dividing the road;'
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-14(5)(e)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 14(5)(e)
+  page: 9
+  marking_type: pedestrian crossing
+  element: transverse
+  text_original: 'No vehicle shall overtake-
+
+    (e) at junctions, intersections and pedestrian crossings;'
+  text_en: 'No vehicle shall overtake-
+
+    (e) at junctions, intersections and pedestrian crossings;'
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-22.(1)iv
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 22. (1) iv
+  page: 11
+  marking_type: pedestrian crossing
+  element: transverse
+  text_original: A vehicle shall not be stopped- on, or five meters before, a pedestrian crossing;
+  text_en: A vehicle shall not be stopped- on, or five meters before, a pedestrian crossing;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-22.(1)viii
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 22. (1) viii
+  page: 11
+  marking_type: yellow box
+  element: area
+  text_original: A vehicle shall not be stopped- on a yellow box marked on road;
+  text_en: A vehicle shall not be stopped- on a yellow box marked on road;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-22.(2)(c)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 22. (2) (c)
+  page: 11
+  marking_type: cycle track and pedestrian crossing
+  element: area
+  text_original: A vehicle shall not be parked- on a footpath, cycle track and pedestrian crossing;
+  text_en: A vehicle shall not be parked- on a footpath, cycle track and pedestrian crossing;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-22.(2)(h)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 22. (2) (h)
+  page: 11
+  marking_type: bus lane
+  element: lane_type
+  text_original: A vehicle shall not be parked- in a bus lane;
+  text_en: A vehicle shall not be parked- in a bus lane;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-22.(2)(j)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 22. (2) (j)
+  page: 11
+  marking_type: continuous yellow kerb-side line
+  element: boundary
+  text_original: A vehicle shall not be parked- where there is a continuous yellow line installed or painted on the carriageway
+    on the kerb side;
+  text_en: A vehicle shall not be parked- where there is a continuous yellow line installed or painted on the carriageway
+    on the kerb side;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-22.(2)(r)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: 22. (2) (r)
+  page: 11
+  marking_type: parking bays
+  element: area
+  text_original: A vehicle shall not be parked- in a manner other than that specified in the parking bays in a designated
+    parking lot or in such a manner as to occupy excessive space;
+  text_en: A vehicle shall not be parked- in a manner other than that specified in the parking bays in a designated parking
+    lot or in such a manner as to occupy excessive space;
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: IN-(2)
+  region: IN
+  source: The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))
+  section: (2)
+  page: 16
+  marking_type: pedestrian crossing
+  element: transverse
+  text_original: If traffic has come to a standstill, the driver shall not drive the vehicle on the pedestrian crossing if
+    he is unlikely to be able to move further and thereby block the pedestrian crossing.
+  text_en: If traffic has come to a standstill, the driver shall not drive the vehicle on the pedestrian crossing if he is
+    unlikely to be able to move further and thereby block the pedestrian crossing.
+  text_en_is_translation: false
+  norm: mandatory

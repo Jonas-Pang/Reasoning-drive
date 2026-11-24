@@ -1,0 +1,31 @@
+#### Task
+From the pages below, list every passage that gives the meaning of a marking on the road surface for a driver in
+a lane. One passage = one rule, usually one or two sentences. If the pages hold no such passage, return an empty list.
+
+#### What counts
+- lines along the road: lane lines, centre lines, edge lines, broken, solid, double, solid-and-broken, dotted lines;
+  lines that guide, merge or separate lanes; lane-change or no-overtaking lines
+- markings inside a lane: arrows, words (ONLY, BUS, STOP and the like), symbols, waiting areas, two-way left-turn lanes,
+  reserved, bus, HOV, tidal or reversible lanes
+- lines across a lane: stop lines, yield lines, crosswalks; marked areas: hatched or chevron areas, no-stopping grids
+
+#### What does not count
+Sizes, colours of paint mixtures, materials, reflectivity, spacing tables, figures, legal procedure, signs that are not
+painted on the road, and sentences that only say where a marking is installed without saying what it means for a driver.
+
+#### How to copy
+- text_original: the passage in the language of the standard, word for word from the pages. Leave out figure and table
+  references. Keep it short: only the sentences that carry the rule.
+- text_en: the same passage in English (a translation if the standard is not in English; then text_en_is_translation is true).
+- section: the clause number as printed (for example 4.2.2 a or 3B.06 05); page: the page number shown in the page marker.
+- marking_type: a short English name of the marking (for example "white solid lane line", "left-turn arrow").
+- element: boundary (a line beside the lane), lane_marking (inside the lane), lane_type (the lane as a whole),
+  transverse (across the lane), area (a marked area) or general (lines in general).
+- norm: the force of the passage as the standard words it: mandatory (shall, must, shall not, may not, is prohibited, and
+  the same words in the standard's language, such as 应, 不得, 禁止, しなければならない), recommended (should, 宜),
+  permissive (may, 可, ことができる) or informative (a definition, description or purpose without such a word).
+- actions: what the passage itself says about each movement: allowed, prohibited or not_stated. Use prohibited also for
+  "shall not", "must not", "is not permitted" and for restrictions; use not_stated when the passage does not speak to it.
+
+#### Answer
+Only the JSON object of the schema.

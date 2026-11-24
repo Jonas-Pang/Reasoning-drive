@@ -1,0 +1,3074 @@
+{
+ "Town03|arrow|44|-4": {
+  "B": {
+   "image_id": "suite_arrow_left",
+   "region": "US",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "request": {
+    "hashes": {
+     "prompt_dir": "prompts/v3"
+    }
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 4187,
+     "input_tokens_details": {
+      "cache_write_tokens": 4184,
+      "cached_tokens": 0
+     },
+     "output_tokens": 315,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4502
+    },
+    "latency_s": 5.68,
+    "reasoning_summary": null
+   },
+   "answer": {
+    "description": "A single white bent arrow with its head pointing left is visible inside the rectangle.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "arrow",
+     "arrow_type": "left",
+     "position": "in_ego_lane"
+    },
+    "rule_reasoning": "Under US-3B.23-01, the left-pointing lane-use arrow indicates a left-turn movement, not straight, right-turn, or U-turn movements.",
+    "cited_rule_id": "US-3B.23-01",
+    "action_reasons": {
+     "cross_line": "not governed by this marking",
+     "go_straight": "The left-only arrow does not permit a straight movement.",
+     "turn_left": "The left-pointing arrow permits a left turn.",
+     "turn_right": "The left-only arrow does not permit a right turn.",
+     "u_turn": "The left-only arrow does not indicate a U-turn movement.",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "not_applicable",
+     "go_straight": "prohibited",
+     "turn_left": "allowed",
+     "turn_right": "prohibited",
+     "u_turn": "prohibited",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "text": "",
+   "parse_error": "",
+   "error": "",
+   "source_run": "20261113_120704_suite_Town03",
+   "source_case": "arrow_left"
+  },
+  "A": {
+   "image_id": "suite_arrow_left",
+   "region": "US",
+   "test": "A",
+   "repeat": 0,
+   "mock": false,
+   "request": {
+    "hashes": {
+     "prompt_dir": "prompts/v3"
+    }
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 2584,
+     "input_tokens_details": {
+      "cache_write_tokens": 2581,
+      "cached_tokens": 0
+     },
+     "output_tokens": 326,
+     "output_tokens_details": {
+      "reasoning_tokens": 21
+     },
+     "total_tokens": 2910
+    },
+    "latency_s": 6.98,
+    "reasoning_summary": "**Clarifying U-turn rules**\n\nI'm considering whether U-turns are allowed when there's an arrow pointing left in the U.S. Generally, it seems like left arrows don't prohibit U-turns, so that might be a go-ahead! I want to ensure I have that right because traffic rules can vary, and it’s important to understand the nuances. I should double-check local regulations to confirm this, just in case there are exceptions. But overall, it's looking like that might not be a problem!"
+   },
+   "answer": {
+    "description": "A white lane-use arrow inside the rectangle has a bent shaft and a single head pointing left.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "arrow",
+     "arrow_type": "left",
+     "position": "in_ego_lane"
+    },
+    "rule_reasoning": "In the United States, a left-turn lane arrow requires a leftward movement rather than proceeding straight or turning right, but does not by itself prohibit a U-turn.",
+    "cited_rule_id": null,
+    "action_reasons": {
+     "cross_line": "Not governed by this marking.",
+     "go_straight": "The left-only arrow prohibits proceeding straight.",
+     "turn_left": "The left-pointing arrow permits a left turn.",
+     "turn_right": "The left-only arrow prohibits a right turn.",
+     "u_turn": "The left-turn arrow does not itself prohibit a U-turn.",
+     "enter_center_lane_to_wait": "Not governed by this marking."
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "not_applicable",
+     "go_straight": "prohibited",
+     "turn_left": "allowed",
+     "turn_right": "prohibited",
+     "u_turn": "allowed",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "text": "",
+   "parse_error": "",
+   "error": "",
+   "source_run": "20261113_120704_suite_Town03",
+   "source_case": "arrow_left"
+  },
+  "C": {
+   "image_id": "suite_arrow_left",
+   "region": "CN",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "request": {
+    "hashes": {
+     "prompt_dir": "prompts/v3"
+    }
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 3723,
+     "input_tokens_details": {
+      "cache_write_tokens": 3720,
+      "cached_tokens": 0
+     },
+     "output_tokens": 309,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4032
+    },
+    "latency_s": 5.74,
+    "reasoning_summary": null
+   },
+   "answer": {
+    "description": "A white bent arrow with a single head pointing left is visible inside the rectangle.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "arrow",
+     "arrow_type": "left",
+     "position": "in_ego_lane"
+    },
+    "rule_reasoning": "Under CN-5.13.1, the left-pointing guide arrow indicates left turns only, excluding straight travel, right turns and U-turns.",
+    "cited_rule_id": "CN-5.13.1",
+    "action_reasons": {
+     "cross_line": "not governed by this marking",
+     "go_straight": "The left-only arrow does not indicate straight travel.",
+     "turn_left": "The left-pointing arrow indicates a left turn.",
+     "turn_right": "The left-only arrow does not indicate a right turn.",
+     "u_turn": "The left-only arrow does not indicate a U-turn.",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "not_applicable",
+     "go_straight": "prohibited",
+     "turn_left": "allowed",
+     "turn_right": "prohibited",
+     "u_turn": "prohibited",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "text": "",
+   "parse_error": "",
+   "error": "",
+   "source_run": "20261113_120704_suite_Town03",
+   "source_case": "arrow_left"
+  }
+ },
+ "Town03|arrow|44|-5": {
+  "B": {
+   "image_id": "suite_arrow_right",
+   "region": "US",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "request": {
+    "hashes": {
+     "prompt_dir": "prompts/v3"
+    }
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 4187,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 3055
+     },
+     "output_tokens": 411,
+     "output_tokens_details": {
+      "reasoning_tokens": 89
+     },
+     "total_tokens": 4598
+    },
+    "latency_s": 8.18,
+    "reasoning_summary": "**Evaluating arrow perspective**\n\nI need to visualize the arrow target from a horizontal perspective. I'm looking at coordinates with the head at y426, suggesting it points straight to the right at x680. I'll check the white marking around coordinates 590, 433, which moves to 659, 426, and 681, 427. The turn from the base at 590, 435 to 615, 427 also looks good, confirming that it ultimately points right. It seems like I’m inspecting everything thoroughly!"
+   },
+   "answer": {
+    "description": "Inside the rectangle is a white lane-use arrow with a bent shaft and a single head pointing right.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "arrow",
+     "arrow_type": "right",
+     "position": "in_ego_lane"
+    },
+    "rule_reasoning": "Under US-3B.23-01, lane-use arrows indicate mandatory or permissible lane movements, so this right-only arrow permits a right turn and excludes the other movements.",
+    "cited_rule_id": "US-3B.23-01",
+    "action_reasons": {
+     "cross_line": "not governed by this marking",
+     "go_straight": "The right-only arrow does not permit going straight.",
+     "turn_left": "The right-only arrow does not permit a left turn.",
+     "turn_right": "The arrow's right-pointing head permits a right turn.",
+     "u_turn": "The right-only arrow does not permit a U-turn.",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "not_applicable",
+     "go_straight": "prohibited",
+     "turn_left": "prohibited",
+     "turn_right": "allowed",
+     "u_turn": "prohibited",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "text": "",
+   "parse_error": "",
+   "error": "",
+   "source_run": "20261113_120704_suite_Town03",
+   "source_case": "arrow_right"
+  },
+  "A": {
+   "image_id": "suite_arrow_right",
+   "region": "US",
+   "test": "A",
+   "repeat": 0,
+   "mock": false,
+   "request": {
+    "hashes": {
+     "prompt_dir": "prompts/v3"
+    }
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 2584,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 1452
+     },
+     "output_tokens": 335,
+     "output_tokens_details": {
+      "reasoning_tokens": 27
+     },
+     "total_tokens": 2919
+    },
+    "latency_s": 6.01,
+    "reasoning_summary": null
+   },
+   "answer": {
+    "description": "A white lane-use arrow with a shaft bending toward a right-pointing head is visible inside the rectangle.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "arrow",
+     "arrow_type": "right",
+     "position": "in_ego_lane"
+    },
+    "rule_reasoning": "In the United States, a right-turn-only lane arrow requires traffic in that lane to turn right at the next intersection rather than proceed straight, turn left, or make a U-turn.",
+    "cited_rule_id": null,
+    "action_reasons": {
+     "cross_line": "Not governed by this marking.",
+     "go_straight": "The right-only arrow prohibits proceeding straight.",
+     "turn_left": "The right-only arrow prohibits turning left.",
+     "turn_right": "The right-pointing arrow permits turning right.",
+     "u_turn": "The right-only arrow prohibits making a U-turn.",
+     "enter_center_lane_to_wait": "Not governed by this marking."
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "not_applicable",
+     "go_straight": "prohibited",
+     "turn_left": "prohibited",
+     "turn_right": "allowed",
+     "u_turn": "prohibited",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "text": "",
+   "parse_error": "",
+   "error": "",
+   "source_run": "20261113_120704_suite_Town03",
+   "source_case": "arrow_right"
+  },
+  "C": {
+   "image_id": "suite_arrow_right",
+   "region": "CN",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "request": {
+    "hashes": {
+     "prompt_dir": "prompts/v3"
+    }
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 3723,
+     "input_tokens_details": {
+      "cache_write_tokens": 1127,
+      "cached_tokens": 2593
+     },
+     "output_tokens": 380,
+     "output_tokens_details": {
+      "reasoning_tokens": 74
+     },
+     "total_tokens": 4103
+    },
+    "latency_s": 6.8,
+    "reasoning_summary": "**Identifying arrow orientation**\n\nI'm trying to determine if the arrow image looks like a rightward horizontal arrow. I see a white box marking the stem at coordinates x590 y433 and the head at x658 y424. It seems to indicate a right turn. The stem appears near coordinates 591, 434, extending to 615, 430, before bending toward the upper right arrowhead at 674, 425. So, it looks like it is correctly oriented as a right arrow."
+   },
+   "answer": {
+    "description": "Inside the rectangle is a white lane-use arrow with a bent shaft and a head pointing right.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "arrow",
+     "arrow_type": "right",
+     "position": "in_ego_lane"
+    },
+    "rule_reasoning": "Under CN-5.13.1, the right-pointing guide arrow indicates right turns only from this lane.",
+    "cited_rule_id": "CN-5.13.1",
+    "action_reasons": {
+     "cross_line": "not governed by this marking",
+     "go_straight": "The right-only arrow does not permit going straight.",
+     "turn_left": "The right-only arrow does not permit a left turn.",
+     "turn_right": "The right-pointing arrow permits a right turn.",
+     "u_turn": "The right-only arrow does not permit a U-turn.",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "not_applicable",
+     "go_straight": "prohibited",
+     "turn_left": "prohibited",
+     "turn_right": "allowed",
+     "u_turn": "prohibited",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "text": "",
+   "parse_error": "",
+   "error": "",
+   "source_run": "20261113_120704_suite_Town03",
+   "source_case": "arrow_right"
+  }
+ },
+ "Town03|line|65|2|right|18": {
+  "A": {
+   "image_id": "route1_stop01_line",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "A",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "5a71268247c7ca38",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "6e0b6b5bcb58e90b",
+    "box": [
+     695,
+     403,
+     865,
+     538
+    ],
+    "cache_key": "a300325287258bd9ed8620be3f63224cc1658402"
+   },
+   "label": {
+    "marking_type": "white_dashed",
+    "arrow_type": "",
+    "position": "right",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3A.04-01;US-3B.06-05-06",
+    "act_cross_line": "allowed",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 2584,
+     "input_tokens_details": {
+      "cache_write_tokens": 2581,
+      "cached_tokens": 0
+     },
+     "output_tokens": 283,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 2867
+    },
+    "latency_s": 5.89,
+    "response_id": "resp_06457a33444dfa90016af7a097580887d1934d37d4f16ddeb8",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"The rectangle contains a single white broken longitudinal line, with visible dash portions separated by a clear gap.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"white_dashed\",\n    \"arrow_type\": null,\n    \"position\": \"right\"\n  },\n  \"rule_reasoning\": \"In the United States, a dashed white lane line may be crossed to change lanes when it is safe.\",\n  \"cited_rule_id\": null,\n  \"action_reasons\": {\n    \"cross_line\": \"The visible dashed white line permits crossing when safe.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"allowed\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "The rectangle contains a single white broken longitudinal line, with visible dash portions separated by a clear gap.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "white_dashed",
+     "arrow_type": null,
+     "position": "right"
+    },
+    "rule_reasoning": "In the United States, a dashed white lane line may be crossed to change lanes when it is safe.",
+    "cited_rule_id": null,
+    "action_reasons": {
+     "cross_line": "The visible dashed white line permits crossing when safe.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "allowed",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": null,
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "white_dashed",
+    "o1_label": "white_dashed"
+   },
+   "time_utc": "2026-11-13T23:43:18Z",
+   "cost": 0.007998
+  },
+  "B": {
+   "image_id": "route1_stop01_line",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "2a84a8724bd12051",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "6e0b6b5bcb58e90b",
+    "box": [
+     695,
+     403,
+     865,
+     538
+    ],
+    "cache_key": "57f58d7a26581a4a5c4215e25fbe4ce2e21bf942"
+   },
+   "label": {
+    "marking_type": "white_dashed",
+    "arrow_type": "",
+    "position": "right",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3A.04-01;US-3B.06-05-06",
+    "act_cross_line": "allowed",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 4187,
+     "input_tokens_details": {
+      "cache_write_tokens": 4184,
+      "cached_tokens": 0
+     },
+     "output_tokens": 292,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4479
+    },
+    "latency_s": 5.81,
+    "response_id": "resp_0097919789a1ea43016af7a09750e887d1bb0c9a78574134d1",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"The rectangle contains segments of a single broken white longitudinal line with a visible gap between them.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"white_dashed\",\n    \"arrow_type\": null,\n    \"position\": \"right\"\n  },\n  \"rule_reasoning\": \"Under US-3B.06-05-06, a broken white lane line permits crossing with care.\",\n  \"cited_rule_id\": \"US-3B.06-05-06\",\n  \"action_reasons\": {\n    \"cross_line\": \"The visible broken white line permits crossing with care.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"allowed\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "The rectangle contains segments of a single broken white longitudinal line with a visible gap between them.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "white_dashed",
+     "arrow_type": null,
+     "position": "right"
+    },
+    "rule_reasoning": "Under US-3B.06-05-06, a broken white lane line permits crossing with care.",
+    "cited_rule_id": "US-3B.06-05-06",
+    "action_reasons": {
+     "cross_line": "The visible broken white line permits crossing with care.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "allowed",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "white_dashed",
+    "o1_label": "white_dashed"
+   },
+   "time_utc": "2026-11-13T23:43:18Z",
+   "cost": 0.011294
+  },
+  "C": {
+   "image_id": "route1_stop01_line",
+   "collection": "carla",
+   "region": "CN",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "0d9899ddc6df679d",
+     "user_text": "c561216fcd2d7ed7",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "25a4f39c40f4486f",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "6e0b6b5bcb58e90b",
+    "box": [
+     695,
+     403,
+     865,
+     538
+    ],
+    "cache_key": "98af46941c0e3651eee5c9e8d4ea96355fb12724"
+   },
+   "label": {
+    "marking_type": "white_dashed",
+    "arrow_type": "",
+    "position": "right",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "CN-4.2.2-a;CN-5.2.1-2;CN-5.2.3",
+    "act_cross_line": "allowed",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 3723,
+     "input_tokens_details": {
+      "cache_write_tokens": 3720,
+      "cached_tokens": 0
+     },
+     "output_tokens": 296,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4019
+    },
+    "latency_s": 6.54,
+    "response_id": "resp_00367a0d596854bf016af7a09774e087d1a5ff77cf250c3d06",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"The rectangle contains a single broken white longitudinal line, with a visible dash, a gap, and part of the next dash.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"white_dashed\",\n    \"arrow_type\": null,\n    \"position\": \"right\"\n  },\n  \"rule_reasoning\": \"Under CN-4.2.2-a, a broken longitudinal line may be crossed.\",\n  \"cited_rule_id\": \"CN-4.2.2-a\",\n  \"action_reasons\": {\n    \"cross_line\": \"The visible broken white line may be crossed under the cited rule.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"allowed\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "The rectangle contains a single broken white longitudinal line, with a visible dash, a gap, and part of the next dash.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "white_dashed",
+     "arrow_type": null,
+     "position": "right"
+    },
+    "rule_reasoning": "Under CN-4.2.2-a, a broken longitudinal line may be crossed.",
+    "cited_rule_id": "CN-4.2.2-a",
+    "action_reasons": {
+     "cross_line": "The visible broken white line may be crossed under the cited rule.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "allowed",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "white_dashed",
+    "o1_label": "white_dashed"
+   },
+   "time_utc": "2026-11-13T23:43:18Z",
+   "cost": 0.010406
+  }
+ },
+ "Town03|line|44|-4|right|0": {
+  "A": {
+   "image_id": "route1_stop06_line",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "A",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "5a71268247c7ca38",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "00d43d46382adbb4",
+    "box": [
+     694,
+     403,
+     866,
+     537
+    ],
+    "cache_key": "bf8944233e7395ecf165a1693a9e6f4f4c26e0cb"
+   },
+   "label": {
+    "marking_type": "white_solid",
+    "arrow_type": "",
+    "position": "right",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3B.06-05-06;US-3A.04-01",
+    "act_cross_line": "allowed",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 2584,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 1452
+     },
+     "output_tokens": 283,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 2867
+    },
+    "latency_s": 4.77,
+    "response_id": "resp_05c211da7f98ef5b016af7a1420c3c87d1822dac1032185ff8",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"The rectangle contains a single white longitudinal line with an unbroken solid stretch.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"white_solid\",\n    \"arrow_type\": null,\n    \"position\": \"right\"\n  },\n  \"rule_reasoning\": \"In the United States, crossing a single solid white longitudinal line is discouraged but not prohibited by the marking alone.\",\n  \"cited_rule_id\": null,\n  \"action_reasons\": {\n    \"cross_line\": \"The single solid white line discourages crossing but does not prohibit it.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"allowed\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "The rectangle contains a single white longitudinal line with an unbroken solid stretch.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "white_solid",
+     "arrow_type": null,
+     "position": "right"
+    },
+    "rule_reasoning": "In the United States, crossing a single solid white longitudinal line is discouraged but not prohibited by the marking alone.",
+    "cited_rule_id": null,
+    "action_reasons": {
+     "cross_line": "The single solid white line discourages crossing but does not prohibit it.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "allowed",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": null,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {
+     "cross_line": true
+    },
+    "position": true,
+    "evidence_group": "correct",
+    "citation": null,
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "white_solid",
+    "o1_label": "white_solid"
+   },
+   "time_utc": "2026-11-13T23:46:09Z",
+   "cost": 0.007998
+  },
+  "B": {
+   "image_id": "route1_stop06_line",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "2a84a8724bd12051",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "00d43d46382adbb4",
+    "box": [
+     694,
+     403,
+     866,
+     537
+    ],
+    "cache_key": "a248673a4323f5b62c9c9c807699c460a25c9b19"
+   },
+   "label": {
+    "marking_type": "white_solid",
+    "arrow_type": "",
+    "position": "right",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3B.06-05-06;US-3A.04-01",
+    "act_cross_line": "allowed",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 4187,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 3055
+     },
+     "output_tokens": 298,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4485
+    },
+    "latency_s": 4.63,
+    "response_id": "resp_028c18aa456919ba016af7a1420c3487d1b814df582e79df41",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"The rectangle contains a single white longitudinal line with a continuous, unbroken stretch on the right of my lane.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"white_solid\",\n    \"arrow_type\": null,\n    \"position\": \"right\"\n  },\n  \"rule_reasoning\": \"A single solid white lane line discourages crossing but does not prohibit it, so crossing counts as allowed.\",\n  \"cited_rule_id\": \"US-3B.06-05-06\",\n  \"action_reasons\": {\n    \"cross_line\": \"The single solid white line discourages crossing without prohibiting it.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"allowed\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "The rectangle contains a single white longitudinal line with a continuous, unbroken stretch on the right of my lane.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "white_solid",
+     "arrow_type": null,
+     "position": "right"
+    },
+    "rule_reasoning": "A single solid white lane line discourages crossing but does not prohibit it, so crossing counts as allowed.",
+    "cited_rule_id": "US-3B.06-05-06",
+    "action_reasons": {
+     "cross_line": "The single solid white line discourages crossing without prohibiting it.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "allowed",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": null,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {
+     "cross_line": true
+    },
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "white_solid",
+    "o1_label": "white_solid"
+   },
+   "time_utc": "2026-11-13T23:46:09Z",
+   "cost": 0.011354
+  },
+  "C": {
+   "image_id": "route1_stop06_line",
+   "collection": "carla",
+   "region": "CN",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "0d9899ddc6df679d",
+     "user_text": "c561216fcd2d7ed7",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "25a4f39c40f4486f",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "00d43d46382adbb4",
+    "box": [
+     694,
+     403,
+     866,
+     537
+    ],
+    "cache_key": "ec99089cdaa5b221f4c1bcd766260b470842d922"
+   },
+   "label": {
+    "marking_type": "white_solid",
+    "arrow_type": "",
+    "position": "right",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "CN-4.2.2-a;CN-6.2.1;CN-6.10.1-2",
+    "act_cross_line": "prohibited",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 3723,
+     "input_tokens_details": {
+      "cache_write_tokens": 1127,
+      "cached_tokens": 2593
+     },
+     "output_tokens": 298,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4021
+    },
+    "latency_s": 5.11,
+    "response_id": "resp_02ecc030cd3d300a016af7a1420e6c87d19441bf0650c9e304",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"The rectangle contains an unbroken stretch of a single solid white longitudinal line to the right of my car.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"white_solid\",\n    \"arrow_type\": null,\n    \"position\": \"right\"\n  },\n  \"rule_reasoning\": \"Under CN-6.2.1, a single solid white lane line prohibits vehicles from crossing it.\",\n  \"cited_rule_id\": \"CN-6.2.1\",\n  \"action_reasons\": {\n    \"cross_line\": \"The visible solid white line prohibits crossing under CN-6.2.1.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"prohibited\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "The rectangle contains an unbroken stretch of a single solid white longitudinal line to the right of my car.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "white_solid",
+     "arrow_type": null,
+     "position": "right"
+    },
+    "rule_reasoning": "Under CN-6.2.1, a single solid white lane line prohibits vehicles from crossing it.",
+    "cited_rule_id": "CN-6.2.1",
+    "action_reasons": {
+     "cross_line": "The visible solid white line prohibits crossing under CN-6.2.1.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "prohibited",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "white_solid",
+    "o1_label": "white_solid"
+   },
+   "time_utc": "2026-11-13T23:46:09Z",
+   "cost": 0.010426
+  }
+ },
+ "Town03|twltl|67|2||28": {
+  "A": {
+   "image_id": "route1_stop07_centre",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "A",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "5a71268247c7ca38",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "f028b76f9f02d564",
+    "box": [
+     163,
+     393,
+     591,
+     489
+    ],
+    "cache_key": "825949815c16d7253a310829e6dac9dc609c9022"
+   },
+   "label": {
+    "marking_type": "two_way_left_turn_lane",
+    "arrow_type": "",
+    "position": "left",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3B.05-01;US-3B.23-01",
+    "act_cross_line": "not_applicable",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "allowed",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "allowed"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 2584,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 1452
+     },
+     "output_tokens": 416,
+     "output_tokens_details": {
+      "reasoning_tokens": 77
+     },
+     "total_tokens": 3000
+    },
+    "latency_s": 8.24,
+    "response_id": "resp_0767e97ec1370687016af7a1ca1f4887d1853dbc5d5786074d",
+    "attempts": 1,
+    "reasoning_summary": "**Identifying lane markings**\n\nI'm trying to figure out the lane markings: there are two edges with a solid and dashed line on the left boundary, which appears to be double solid. I need to check both edges closely; the solid and dashed lines are visible from certain coordinates. The center lane should be clear. It seems I need to define a two-way lane rectangle, where the right edge is solid and dashed on the left, and the left is solid with a dashed right edge.",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"The rectangle shows a lane to the left of my car bordered on both sides by paired yellow lines, with a solid line on the outside and a broken line on the inside of each pair.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"two_way_left_turn_lane\",\n    \"arrow_type\": null,\n    \"position\": \"left\"\n  },\n  \"rule_reasoning\": \"In the United States, these paired solid-and-broken yellow boundaries designate a two-way left-turn lane that may be entered to wait for and make a left turn.\",\n  \"cited_rule_id\": null,\n  \"action_reasons\": {\n    \"cross_line\": \"not governed by this marking\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"The yellow solid-and-broken boundaries designate a center lane from which left turns are allowed.\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"The yellow solid-and-broken boundaries designate a center lane that may be entered to wait for a left turn.\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"not_applicable\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"allowed\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"allowed\"\n  }\n}",
+   "answer": {
+    "description": "The rectangle shows a lane to the left of my car bordered on both sides by paired yellow lines, with a solid line on the outside and a broken line on the inside of each pair.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "two_way_left_turn_lane",
+     "arrow_type": null,
+     "position": "left"
+    },
+    "rule_reasoning": "In the United States, these paired solid-and-broken yellow boundaries designate a two-way left-turn lane that may be entered to wait for and make a left turn.",
+    "cited_rule_id": null,
+    "action_reasons": {
+     "cross_line": "not governed by this marking",
+     "go_straight": "not governed by this marking",
+     "turn_left": "The yellow solid-and-broken boundaries designate a center lane from which left turns are allowed.",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "The yellow solid-and-broken boundaries designate a center lane that may be entered to wait for a left turn."
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "not_applicable",
+     "go_straight": "not_applicable",
+     "turn_left": "allowed",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "allowed"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "turn_left": true,
+     "enter_center_lane_to_wait": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": null,
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "two_way_left_turn_lane",
+    "o1_label": "two_way_left_turn_lane"
+   },
+   "time_utc": "2026-11-13T23:48:26Z",
+   "cost": 0.009328
+  },
+  "B": {
+   "image_id": "route1_stop07_centre",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "2a84a8724bd12051",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "f028b76f9f02d564",
+    "box": [
+     163,
+     393,
+     591,
+     489
+    ],
+    "cache_key": "47230311098139a5fd744e26c116c5323d88e558"
+   },
+   "label": {
+    "marking_type": "two_way_left_turn_lane",
+    "arrow_type": "",
+    "position": "left",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3B.05-01;US-3B.23-01",
+    "act_cross_line": "not_applicable",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "allowed",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "allowed"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 4187,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 3055
+     },
+     "output_tokens": 406,
+     "output_tokens_details": {
+      "reasoning_tokens": 38
+     },
+     "total_tokens": 4593
+    },
+    "latency_s": 7.5,
+    "response_id": "resp_023efa9e2ce40beb016af7a1ca2be487d18dc4a2322fb115a0",
+    "attempts": 1,
+    "reasoning_summary": "**Identifying lane edges**\n\nI need to identify a twlt lane that is rectangular and encompasses both edges. I see that there are two edges: a solid and a broken yellow line, with the ego positioned right of center. I should ensure that both edges are clearly visible in pairs. It looks like entering is allowed from the left side. Let's make sure I have all the details right!",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"Inside the rectangle, a lane to the left of my car is bordered on both sides by paired yellow lines, each with a solid outer line and a broken inner line with visible segments and gaps.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"two_way_left_turn_lane\",\n    \"arrow_type\": null,\n    \"position\": \"left\"\n  },\n  \"rule_reasoning\": \"Under US-3B.05-01, a lane bordered on both sides by solid and broken yellow lines, with the broken lines facing inward, may be used by traffic in either direction as part of a left-turn maneuver.\",\n  \"cited_rule_id\": \"US-3B.05-01\",\n  \"action_reasons\": {\n    \"cross_line\": \"Not governed by this marking as a two-way left-turn lane.\",\n    \"go_straight\": \"Not governed by this marking.\",\n    \"turn_left\": \"The paired yellow boundaries with broken lines inward identify a lane usable for left-turn maneuvers.\",\n    \"turn_right\": \"Not governed by this marking.\",\n    \"u_turn\": \"Not governed by this marking.\",\n    \"enter_center_lane_to_wait\": \"The paired yellow boundaries with broken lines inward permit entering the center lane as part of a left-turn maneuver.\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"not_applicable\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"allowed\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"allowed\"\n  }\n}",
+   "answer": {
+    "description": "Inside the rectangle, a lane to the left of my car is bordered on both sides by paired yellow lines, each with a solid outer line and a broken inner line with visible segments and gaps.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "two_way_left_turn_lane",
+     "arrow_type": null,
+     "position": "left"
+    },
+    "rule_reasoning": "Under US-3B.05-01, a lane bordered on both sides by solid and broken yellow lines, with the broken lines facing inward, may be used by traffic in either direction as part of a left-turn maneuver.",
+    "cited_rule_id": "US-3B.05-01",
+    "action_reasons": {
+     "cross_line": "Not governed by this marking as a two-way left-turn lane.",
+     "go_straight": "Not governed by this marking.",
+     "turn_left": "The paired yellow boundaries with broken lines inward identify a lane usable for left-turn maneuvers.",
+     "turn_right": "Not governed by this marking.",
+     "u_turn": "Not governed by this marking.",
+     "enter_center_lane_to_wait": "The paired yellow boundaries with broken lines inward permit entering the center lane as part of a left-turn maneuver."
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "not_applicable",
+     "go_straight": "not_applicable",
+     "turn_left": "allowed",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "allowed"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "turn_left": true,
+     "enter_center_lane_to_wait": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "two_way_left_turn_lane",
+    "o1_label": "two_way_left_turn_lane"
+   },
+   "time_utc": "2026-11-13T23:48:26Z",
+   "cost": 0.012434
+  },
+  "C": {
+   "image_id": "route1_stop07_centre",
+   "collection": "carla",
+   "region": "CN",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "0d9899ddc6df679d",
+     "user_text": "c561216fcd2d7ed7",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "25a4f39c40f4486f",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "f028b76f9f02d564",
+    "box": [
+     163,
+     393,
+     591,
+     489
+    ],
+    "cache_key": "511da651cdc52b7541bebe5e1433b9d5a90e0ebe"
+   },
+   "label": {
+    "marking_type": "two_way_left_turn_lane",
+    "arrow_type": "",
+    "position": "left",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "",
+    "act_cross_line": "",
+    "act_go_straight": "",
+    "act_turn_left": "",
+    "act_turn_right": "",
+    "act_u_turn": "",
+    "act_enter_center_lane_to_wait": ""
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 3723,
+     "input_tokens_details": {
+      "cache_write_tokens": 1127,
+      "cached_tokens": 2593
+     },
+     "output_tokens": 393,
+     "output_tokens_details": {
+      "reasoning_tokens": 62
+     },
+     "total_tokens": 4116
+    },
+    "latency_s": 8.87,
+    "response_id": "resp_00b5834bfd511551016af7a1ca24f887d184fe77417a2f8baa",
+    "attempts": 1,
+    "reasoning_summary": "**Identifying lane boundaries**\n\nI need to identify a center lane with solid and dashed edges, which forms a visible rectangle that spans both edges. It looks likely like a two-way left turn lane. I see that the left boundary has a solid pair, while the right boundary is solid on the ego side and broken on the inner side. The target rectangle does indeed enclose the center lane, so I’ll choose the two-way option.",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"The rectangle contains a centre lane bounded on both sides by paired yellow lines, with solid outer lines and broken inner lines showing painted segments and gaps.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"two_way_left_turn_lane\",\n    \"arrow_type\": null,\n    \"position\": \"left\"\n  },\n  \"rule_reasoning\": \"No supplied passage specifically covers a two-way left-turn lane; under the supplied marking definitions, it permits entering the centre lane to wait for a left turn and turning left out of it.\",\n  \"cited_rule_id\": null,\n  \"action_reasons\": {\n    \"cross_line\": \"Not governed by this marking as a two-way left-turn lane.\",\n    \"go_straight\": \"Not governed by this marking.\",\n    \"turn_left\": \"The two-way left-turn lane permits turning left out of the centre lane.\",\n    \"turn_right\": \"Not governed by this marking.\",\n    \"u_turn\": \"Not governed by this marking.\",\n    \"enter_center_lane_to_wait\": \"The two-way left-turn lane permits entering to wait for a left turn.\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"not_applicable\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"allowed\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"allowed\"\n  }\n}",
+   "answer": {
+    "description": "The rectangle contains a centre lane bounded on both sides by paired yellow lines, with solid outer lines and broken inner lines showing painted segments and gaps.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "two_way_left_turn_lane",
+     "arrow_type": null,
+     "position": "left"
+    },
+    "rule_reasoning": "No supplied passage specifically covers a two-way left-turn lane; under the supplied marking definitions, it permits entering the centre lane to wait for a left turn and turning left out of it.",
+    "cited_rule_id": null,
+    "action_reasons": {
+     "cross_line": "Not governed by this marking as a two-way left-turn lane.",
+     "go_straight": "Not governed by this marking.",
+     "turn_left": "The two-way left-turn lane permits turning left out of the centre lane.",
+     "turn_right": "Not governed by this marking.",
+     "u_turn": "Not governed by this marking.",
+     "enter_center_lane_to_wait": "The two-way left-turn lane permits entering to wait for a left turn."
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "not_applicable",
+     "go_straight": "not_applicable",
+     "turn_left": "allowed",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "allowed"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": null,
+    "actions": {},
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "none_needed",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "two_way_left_turn_lane",
+    "o1_label": "two_way_left_turn_lane"
+   },
+   "time_utc": "2026-11-13T23:48:26Z",
+   "cost": 0.011376
+  }
+ },
+ "Town03|line|5|-1|left|0": {
+  "A": {
+   "image_id": "route1_stop02_line",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "A",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "5a71268247c7ca38",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "c95a2069fdb5bd71",
+    "box": [
+     567,
+     401,
+     656,
+     515
+    ],
+    "cache_key": "43de2c718fbcb41a83c1f80df65df09cca8bd676"
+   },
+   "label": {
+    "marking_type": "yellow_solid",
+    "arrow_type": "",
+    "position": "left",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3B.09-03;US-3B.01-05;US-3A.03-03-04",
+    "act_cross_line": "prohibited",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 2584,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 1452
+     },
+     "output_tokens": 412,
+     "output_tokens_details": {
+      "reasoning_tokens": 124
+     },
+     "total_tokens": 2996
+    },
+    "latency_s": 9.95,
+    "response_id": "resp_06161fa057a41662016af7a519956087d1b2d7f0809fb29d54",
+    "attempts": 1,
+    "reasoning_summary": "**Clarifying solid yellow lines**\n\nI’m trying to establish the rules around solid yellow lines in the U.S. Generally, a solid yellow line marks the left edge of a divided highway and prohibits crossing for passing, but crossing at the edge might be permitted in some conditions. Developers often expect actions to align with prohibitive rules. So, it seems like the consensus is that a solid yellow line indicates no crossing for passing or lane changes, which I should emphasize!",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"Inside the rectangle is a single continuous yellow line on the left of my car.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"yellow_solid\",\n    \"arrow_type\": null,\n    \"position\": \"left\"\n  },\n  \"rule_reasoning\": \"In the United States, a single solid yellow left-edge line delineates the roadway boundary but does not by itself prohibit crossing it.\",\n  \"cited_rule_id\": null,\n  \"action_reasons\": {\n    \"cross_line\": \"The single solid yellow edge line does not itself prohibit crossing.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"allowed\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "Inside the rectangle is a single continuous yellow line on the left of my car.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "yellow_solid",
+     "arrow_type": null,
+     "position": "left"
+    },
+    "rule_reasoning": "In the United States, a single solid yellow left-edge line delineates the roadway boundary but does not by itself prohibit crossing it.",
+    "cited_rule_id": null,
+    "action_reasons": {
+     "cross_line": "The single solid yellow edge line does not itself prohibit crossing.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "allowed",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": false,
+    "actions": {
+     "cross_line": false
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "wrong",
+    "citation": null,
+    "consistency": [],
+    "unsafe": [
+     "cross_line"
+    ],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "yellow_solid",
+    "o1_label": "yellow_solid"
+   },
+   "time_utc": "2026-11-14T00:02:33Z",
+   "cost": 0.009288
+  },
+  "B": {
+   "image_id": "route1_stop02_line",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "2a84a8724bd12051",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "c95a2069fdb5bd71",
+    "box": [
+     567,
+     401,
+     656,
+     515
+    ],
+    "cache_key": "d51b74915099cd2db54db9e7080266d2b75d5c1a"
+   },
+   "label": {
+    "marking_type": "yellow_solid",
+    "arrow_type": "",
+    "position": "left",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3B.09-03;US-3B.01-05;US-3A.03-03-04",
+    "act_cross_line": "prohibited",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 4187,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 3055
+     },
+     "output_tokens": 308,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4495
+    },
+    "latency_s": 5.15,
+    "response_id": "resp_00663cf0484da879016af7a51a0eec87d19f0f8f0b672d27cb",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"The rectangle contains a single solid yellow longitudinal line to the left of my car.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"yellow_solid\",\n    \"arrow_type\": null,\n    \"position\": \"left\"\n  },\n  \"rule_reasoning\": \"Under US-3B.09-03, a solid yellow left-edge line indicates driving or passing restrictions to its left, prohibiting crossing it for lane changes or overtaking.\",\n  \"cited_rule_id\": \"US-3B.09-03\",\n  \"action_reasons\": {\n    \"cross_line\": \"The solid yellow left-edge line restricts driving or passing to its left.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"prohibited\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "The rectangle contains a single solid yellow longitudinal line to the left of my car.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "yellow_solid",
+     "arrow_type": null,
+     "position": "left"
+    },
+    "rule_reasoning": "Under US-3B.09-03, a solid yellow left-edge line indicates driving or passing restrictions to its left, prohibiting crossing it for lane changes or overtaking.",
+    "cited_rule_id": "US-3B.09-03",
+    "action_reasons": {
+     "cross_line": "The solid yellow left-edge line restricts driving or passing to its left.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "prohibited",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "yellow_solid",
+    "o1_label": "yellow_solid"
+   },
+   "time_utc": "2026-11-14T00:02:33Z",
+   "cost": 0.011454
+  },
+  "C": {
+   "image_id": "route1_stop02_line",
+   "collection": "carla",
+   "region": "CN",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "0d9899ddc6df679d",
+     "user_text": "c561216fcd2d7ed7",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "25a4f39c40f4486f",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "c95a2069fdb5bd71",
+    "box": [
+     567,
+     401,
+     656,
+     515
+    ],
+    "cache_key": "3d93ed9d1ab74dd41359b57b715784f7e462b00e"
+   },
+   "label": {
+    "marking_type": "yellow_solid",
+    "arrow_type": "",
+    "position": "left",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "CN-6.1.1;CN-6.1.4",
+    "act_cross_line": "prohibited",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 3723,
+     "input_tokens_details": {
+      "cache_write_tokens": 1127,
+      "cached_tokens": 2593
+     },
+     "output_tokens": 295,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4018
+    },
+    "latency_s": 4.02,
+    "response_id": "resp_06a9497757ffd1e0016af7a51995c887d1987fced729221069",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"Inside the rectangle is a single solid yellow longitudinal line to the left of my car.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"yellow_solid\",\n    \"arrow_type\": null,\n    \"position\": \"left\"\n  },\n  \"rule_reasoning\": \"Under CN-6.1.4, a single solid yellow line prohibits vehicles in both directions from crossing.\",\n  \"cited_rule_id\": \"CN-6.1.4\",\n  \"action_reasons\": {\n    \"cross_line\": \"The single solid yellow line prohibits crossing under CN-6.1.4.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"prohibited\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "Inside the rectangle is a single solid yellow longitudinal line to the left of my car.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "yellow_solid",
+     "arrow_type": null,
+     "position": "left"
+    },
+    "rule_reasoning": "Under CN-6.1.4, a single solid yellow line prohibits vehicles in both directions from crossing.",
+    "cited_rule_id": "CN-6.1.4",
+    "action_reasons": {
+     "cross_line": "The single solid yellow line prohibits crossing under CN-6.1.4.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "prohibited",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "yellow_solid",
+    "o1_label": "yellow_solid"
+   },
+   "time_utc": "2026-11-14T00:02:33Z",
+   "cost": 0.010396
+  }
+ },
+ "Town03|arrow|59|-5": {
+  "A": {
+   "image_id": "route1_stop03_arrow",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "A",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "5a71268247c7ca38",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "e1fa186a43617eb2",
+    "box": [
+     495,
+     413,
+     725,
+     489
+    ],
+    "cache_key": "f6a881aea801e3b716bc59f7e87646b4b1d1dcf6"
+   },
+   "label": {
+    "marking_type": "arrow",
+    "arrow_type": "right",
+    "position": "in_ego_lane",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3B.23-01;US-3B.23-08",
+    "act_cross_line": "not_applicable",
+    "act_go_straight": "prohibited",
+    "act_turn_left": "prohibited",
+    "act_turn_right": "allowed",
+    "act_u_turn": "prohibited",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 2584,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 1452
+     },
+     "output_tokens": 341,
+     "output_tokens_details": {
+      "reasoning_tokens": 35
+     },
+     "total_tokens": 2925
+    },
+    "latency_s": 6.73,
+    "response_id": "resp_0a1a88b553786aca016af7a5567a1c87d1b0f5780434a2915c",
+    "attempts": 1,
+    "reasoning_summary": "**Evaluating arrow design**\n\nI need to confirm if the arrow looks right. The shaft is positioned at the bottom left, starting at coordinates 575, 442, and then it curves up and to the right, ending at 647, 434. The head is a bit faint, but I can still see it. It's interesting how small details can affect the overall appearance, and I'm curious to see if it meets the intended design perfectly.",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"A white bent arrow has a shaft curving to the right and an arrowhead pointing right.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"arrow\",\n    \"arrow_type\": \"right\",\n    \"position\": \"in_ego_lane\"\n  },\n  \"rule_reasoning\": \"In the United States, a right-only lane-use arrow requires traffic in that lane to turn right at the next intersection rather than proceed straight, turn left, or make a U-turn.\",\n  \"cited_rule_id\": null,\n  \"action_reasons\": {\n    \"cross_line\": \"not governed by this marking\",\n    \"go_straight\": \"The right-only arrow prohibits proceeding straight.\",\n    \"turn_left\": \"The right-only arrow prohibits turning left.\",\n    \"turn_right\": \"The right-pointing arrow allows turning right.\",\n    \"u_turn\": \"The right-only arrow prohibits making a U-turn.\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"not_applicable\",\n    \"go_straight\": \"prohibited\",\n    \"turn_left\": \"prohibited\",\n    \"turn_right\": \"allowed\",\n    \"u_turn\": \"prohibited\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "A white bent arrow has a shaft curving to the right and an arrowhead pointing right.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "arrow",
+     "arrow_type": "right",
+     "position": "in_ego_lane"
+    },
+    "rule_reasoning": "In the United States, a right-only lane-use arrow requires traffic in that lane to turn right at the next intersection rather than proceed straight, turn left, or make a U-turn.",
+    "cited_rule_id": null,
+    "action_reasons": {
+     "cross_line": "not governed by this marking",
+     "go_straight": "The right-only arrow prohibits proceeding straight.",
+     "turn_left": "The right-only arrow prohibits turning left.",
+     "turn_right": "The right-pointing arrow allows turning right.",
+     "u_turn": "The right-only arrow prohibits making a U-turn.",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "not_applicable",
+     "go_straight": "prohibited",
+     "turn_left": "prohibited",
+     "turn_right": "allowed",
+     "u_turn": "prohibited",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "go_straight": true,
+     "turn_left": true,
+     "turn_right": true,
+     "u_turn": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": null,
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "arrow/right",
+    "o1_label": "arrow/right"
+   },
+   "time_utc": "2026-11-14T00:03:34Z",
+   "cost": 0.008578
+  },
+  "B": {
+   "image_id": "route1_stop03_arrow",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "2a84a8724bd12051",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "e1fa186a43617eb2",
+    "box": [
+     495,
+     413,
+     725,
+     489
+    ],
+    "cache_key": "27e740c2e76dbe2a45c38b0ccd5c198f20c98596"
+   },
+   "label": {
+    "marking_type": "arrow",
+    "arrow_type": "right",
+    "position": "in_ego_lane",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3B.23-01;US-3B.23-08",
+    "act_cross_line": "not_applicable",
+    "act_go_straight": "prohibited",
+    "act_turn_left": "prohibited",
+    "act_turn_right": "allowed",
+    "act_u_turn": "prohibited",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 4187,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 3055
+     },
+     "output_tokens": 334,
+     "output_tokens_details": {
+      "reasoning_tokens": 27
+     },
+     "total_tokens": 4521
+    },
+    "latency_s": 6.86,
+    "response_id": "resp_010c2aa4b1a0a67b016af7a5567e7487d1b67e2a1d4ffd4c3b",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"A white bent lane-use arrow has a head pointing right.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"arrow\",\n    \"arrow_type\": \"right\",\n    \"position\": \"in_ego_lane\"\n  },\n  \"rule_reasoning\": \"Under the lane-use arrow rule, this right-pointing arrow indicates a right-turn movement rather than straight, left-turn, or U-turn movements.\",\n  \"cited_rule_id\": \"US-3B.23-01\",\n  \"action_reasons\": {\n    \"cross_line\": \"not governed by this marking\",\n    \"go_straight\": \"The right-only arrow does not permit a straight movement.\",\n    \"turn_left\": \"The right-only arrow does not permit a left turn.\",\n    \"turn_right\": \"The right-pointing arrow permits a right turn.\",\n    \"u_turn\": \"The right-only arrow does not permit a U-turn.\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"not_applicable\",\n    \"go_straight\": \"prohibited\",\n    \"turn_left\": \"prohibited\",\n    \"turn_right\": \"allowed\",\n    \"u_turn\": \"prohibited\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "A white bent lane-use arrow has a head pointing right.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "arrow",
+     "arrow_type": "right",
+     "position": "in_ego_lane"
+    },
+    "rule_reasoning": "Under the lane-use arrow rule, this right-pointing arrow indicates a right-turn movement rather than straight, left-turn, or U-turn movements.",
+    "cited_rule_id": "US-3B.23-01",
+    "action_reasons": {
+     "cross_line": "not governed by this marking",
+     "go_straight": "The right-only arrow does not permit a straight movement.",
+     "turn_left": "The right-only arrow does not permit a left turn.",
+     "turn_right": "The right-pointing arrow permits a right turn.",
+     "u_turn": "The right-only arrow does not permit a U-turn.",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "not_applicable",
+     "go_straight": "prohibited",
+     "turn_left": "prohibited",
+     "turn_right": "allowed",
+     "u_turn": "prohibited",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "go_straight": true,
+     "turn_left": true,
+     "turn_right": true,
+     "u_turn": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "arrow/right",
+    "o1_label": "arrow/right"
+   },
+   "time_utc": "2026-11-14T00:03:34Z",
+   "cost": 0.011714
+  },
+  "C": {
+   "image_id": "route1_stop03_arrow",
+   "collection": "carla",
+   "region": "CN",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "0d9899ddc6df679d",
+     "user_text": "c561216fcd2d7ed7",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "25a4f39c40f4486f",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "e1fa186a43617eb2",
+    "box": [
+     495,
+     413,
+     725,
+     489
+    ],
+    "cache_key": "191fa8984b844997791501a6db8f023be6d9fa18"
+   },
+   "label": {
+    "marking_type": "arrow",
+    "arrow_type": "right",
+    "position": "in_ego_lane",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "CN-5.13.1",
+    "act_cross_line": "not_applicable",
+    "act_go_straight": "prohibited",
+    "act_turn_left": "prohibited",
+    "act_turn_right": "allowed",
+    "act_u_turn": "prohibited",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 3723,
+     "input_tokens_details": {
+      "cache_write_tokens": 1127,
+      "cached_tokens": 2593
+     },
+     "output_tokens": 338,
+     "output_tokens_details": {
+      "reasoning_tokens": 26
+     },
+     "total_tokens": 4061
+    },
+    "latency_s": 5.75,
+    "response_id": "resp_0ead29371143b53a016af7a5567e3887d1889fb08c3532655d",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"A white lane-use arrow inside the rectangle bends to the right and has a right-pointing head.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"arrow\",\n    \"arrow_type\": \"right\",\n    \"position\": \"in_ego_lane\"\n  },\n  \"rule_reasoning\": \"Under CN-5.13.1, the right-pointing guide arrow indicates a right turn rather than straight, left, or U-turn travel.\",\n  \"cited_rule_id\": \"CN-5.13.1\",\n  \"action_reasons\": {\n    \"cross_line\": \"not governed by this marking\",\n    \"go_straight\": \"The arrow indicates right only, not straight ahead.\",\n    \"turn_left\": \"The arrow indicates right only, not left.\",\n    \"turn_right\": \"The right-pointing arrow indicates a right turn.\",\n    \"u_turn\": \"The arrow indicates right only, not a U-turn.\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"not_applicable\",\n    \"go_straight\": \"prohibited\",\n    \"turn_left\": \"prohibited\",\n    \"turn_right\": \"allowed\",\n    \"u_turn\": \"prohibited\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "A white lane-use arrow inside the rectangle bends to the right and has a right-pointing head.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "arrow",
+     "arrow_type": "right",
+     "position": "in_ego_lane"
+    },
+    "rule_reasoning": "Under CN-5.13.1, the right-pointing guide arrow indicates a right turn rather than straight, left, or U-turn travel.",
+    "cited_rule_id": "CN-5.13.1",
+    "action_reasons": {
+     "cross_line": "not governed by this marking",
+     "go_straight": "The arrow indicates right only, not straight ahead.",
+     "turn_left": "The arrow indicates right only, not left.",
+     "turn_right": "The right-pointing arrow indicates a right turn.",
+     "u_turn": "The arrow indicates right only, not a U-turn.",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "not_applicable",
+     "go_straight": "prohibited",
+     "turn_left": "prohibited",
+     "turn_right": "allowed",
+     "u_turn": "prohibited",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "go_straight": true,
+     "turn_left": true,
+     "turn_right": true,
+     "u_turn": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "arrow/right",
+    "o1_label": "arrow/right"
+   },
+   "time_utc": "2026-11-14T00:03:34Z",
+   "cost": 0.010826
+  }
+ },
+ "Town03|line|1100|-4|right|0": {
+  "A": {
+   "image_id": "route1_stop04_line",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "A",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "5a71268247c7ca38",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "3d785291e9419417",
+    "box": [
+     333,
+     410,
+     694,
+     515
+    ],
+    "cache_key": "13d44f42efd47ead580ce5a49174e14fc5acc8ec"
+   },
+   "label": {
+    "marking_type": "white_dashed",
+    "arrow_type": "",
+    "position": "right",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3A.04-01;US-3B.06-05-06",
+    "act_cross_line": "allowed",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 2584,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 1452
+     },
+     "output_tokens": 283,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 2867
+    },
+    "latency_s": 5.09,
+    "response_id": "resp_00951db3c69d5cfb016af7a5c503e487d193b368e50261b89a",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"A single broken white line, with several dashes and intervening gaps visible, lies to the right of my car.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"white_dashed\",\n    \"arrow_type\": null,\n    \"position\": \"right\"\n  },\n  \"rule_reasoning\": \"In the United States, a broken white lane line permits crossing to change lanes when safe.\",\n  \"cited_rule_id\": null,\n  \"action_reasons\": {\n    \"cross_line\": \"The broken white line permits crossing when safe.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"allowed\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "A single broken white line, with several dashes and intervening gaps visible, lies to the right of my car.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "white_dashed",
+     "arrow_type": null,
+     "position": "right"
+    },
+    "rule_reasoning": "In the United States, a broken white lane line permits crossing to change lanes when safe.",
+    "cited_rule_id": null,
+    "action_reasons": {
+     "cross_line": "The broken white line permits crossing when safe.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "allowed",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": null,
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "white_dashed",
+    "o1_label": "white_dashed"
+   },
+   "time_utc": "2026-11-14T00:05:24Z",
+   "cost": 0.007998
+  },
+  "B": {
+   "image_id": "route1_stop04_line",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "2a84a8724bd12051",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "3d785291e9419417",
+    "box": [
+     333,
+     410,
+     694,
+     515
+    ],
+    "cache_key": "aa600e65317bf9169e851cdab235f317be7c9904"
+   },
+   "label": {
+    "marking_type": "white_dashed",
+    "arrow_type": "",
+    "position": "right",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3A.04-01;US-3B.06-05-06",
+    "act_cross_line": "allowed",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 4187,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 3055
+     },
+     "output_tokens": 294,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4481
+    },
+    "latency_s": 4.47,
+    "response_id": "resp_06fc6195b07e4e00016af7a5c501b087d1b0155c45eb9da051",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"The rectangle contains a single broken white longitudinal line, with several white dashes separated by visible gaps.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"white_dashed\",\n    \"arrow_type\": null,\n    \"position\": \"right\"\n  },\n  \"rule_reasoning\": \"Under US-3B.06-05-06, a broken white lane line permits crossing with care.\",\n  \"cited_rule_id\": \"US-3B.06-05-06\",\n  \"action_reasons\": {\n    \"cross_line\": \"The visible broken white line permits crossing with care.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"allowed\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "The rectangle contains a single broken white longitudinal line, with several white dashes separated by visible gaps.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "white_dashed",
+     "arrow_type": null,
+     "position": "right"
+    },
+    "rule_reasoning": "Under US-3B.06-05-06, a broken white lane line permits crossing with care.",
+    "cited_rule_id": "US-3B.06-05-06",
+    "action_reasons": {
+     "cross_line": "The visible broken white line permits crossing with care.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "allowed",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "white_dashed",
+    "o1_label": "white_dashed"
+   },
+   "time_utc": "2026-11-14T00:05:24Z",
+   "cost": 0.011314
+  },
+  "C": {
+   "image_id": "route1_stop04_line",
+   "collection": "carla",
+   "region": "CN",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "0d9899ddc6df679d",
+     "user_text": "c561216fcd2d7ed7",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "25a4f39c40f4486f",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "3d785291e9419417",
+    "box": [
+     333,
+     410,
+     694,
+     515
+    ],
+    "cache_key": "9a9dd1527fee4cde0a9171c39548d5ba8b8166e8"
+   },
+   "label": {
+    "marking_type": "white_dashed",
+    "arrow_type": "",
+    "position": "right",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "CN-4.2.2-a;CN-5.2.1-2;CN-5.2.3",
+    "act_cross_line": "allowed",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 3723,
+     "input_tokens_details": {
+      "cache_write_tokens": 1127,
+      "cached_tokens": 2593
+     },
+     "output_tokens": 294,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4017
+    },
+    "latency_s": 4.19,
+    "response_id": "resp_0f32ea5dc37e0a1f016af7a5c5021487d1a2ed80c67d75dcaa",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"A single broken white longitudinal line with several visible dashes and intervening gaps lies to the right of the car.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"white_dashed\",\n    \"arrow_type\": null,\n    \"position\": \"right\"\n  },\n  \"rule_reasoning\": \"Under CN-4.2.2-a, a broken longitudinal line may be crossed.\",\n  \"cited_rule_id\": \"CN-4.2.2-a\",\n  \"action_reasons\": {\n    \"cross_line\": \"The visible broken white line may be crossed under the cited rule.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"allowed\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "A single broken white longitudinal line with several visible dashes and intervening gaps lies to the right of the car.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "white_dashed",
+     "arrow_type": null,
+     "position": "right"
+    },
+    "rule_reasoning": "Under CN-4.2.2-a, a broken longitudinal line may be crossed.",
+    "cited_rule_id": "CN-4.2.2-a",
+    "action_reasons": {
+     "cross_line": "The visible broken white line may be crossed under the cited rule.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "allowed",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "white_dashed",
+    "o1_label": "white_dashed"
+   },
+   "time_utc": "2026-11-14T00:05:24Z",
+   "cost": 0.010386
+  }
+ },
+ "Town03|line|20|1|left|12": {
+  "A": {
+   "image_id": "route1_stop05_line",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "A",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "5a71268247c7ca38",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "780711c0fd94e6e6",
+    "box": [
+     405,
+     401,
+     577,
+     537
+    ],
+    "cache_key": "acf6a5293a58b5bceb720f9196ec52e36018c43e"
+   },
+   "label": {
+    "marking_type": "yellow_double_solid",
+    "arrow_type": "",
+    "position": "left",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3B.01-04;US-3B.01-06",
+    "act_cross_line": "prohibited",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 2584,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 1452
+     },
+     "output_tokens": 283,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 2867
+    },
+    "latency_s": 4.56,
+    "response_id": "resp_0a6ee8873f55009b016af7a6485df887d19f96c62aaa0317d0",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"Inside the rectangle are two parallel, continuous yellow lines to the left of my car.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"yellow_double_solid\",\n    \"arrow_type\": null,\n    \"position\": \"left\"\n  },\n  \"rule_reasoning\": \"In the United States, double solid yellow centerlines prohibit crossing for passing or changing lanes.\",\n  \"cited_rule_id\": null,\n  \"action_reasons\": {\n    \"cross_line\": \"The two solid yellow lines prohibit crossing for changing lanes or overtaking.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"prohibited\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "Inside the rectangle are two parallel, continuous yellow lines to the left of my car.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "yellow_double_solid",
+     "arrow_type": null,
+     "position": "left"
+    },
+    "rule_reasoning": "In the United States, double solid yellow centerlines prohibit crossing for passing or changing lanes.",
+    "cited_rule_id": null,
+    "action_reasons": {
+     "cross_line": "The two solid yellow lines prohibit crossing for changing lanes or overtaking.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "prohibited",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": null,
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "yellow_double_solid",
+    "o1_label": "yellow_double_solid"
+   },
+   "time_utc": "2026-11-14T00:07:36Z",
+   "cost": 0.007998
+  },
+  "B": {
+   "image_id": "route1_stop05_line",
+   "collection": "carla",
+   "region": "US",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "2a84a8724bd12051",
+     "user_text": "342addc94759d914",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "d4466419b883daaf",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "780711c0fd94e6e6",
+    "box": [
+     405,
+     401,
+     577,
+     537
+    ],
+    "cache_key": "9b3ba2873a7da6ff88ddb20c0e8901a5f2c82f3e"
+   },
+   "label": {
+    "marking_type": "yellow_double_solid",
+    "arrow_type": "",
+    "position": "left",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "US-3B.01-04;US-3B.01-06",
+    "act_cross_line": "prohibited",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 4187,
+     "input_tokens_details": {
+      "cache_write_tokens": 1129,
+      "cached_tokens": 3055
+     },
+     "output_tokens": 282,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4469
+    },
+    "latency_s": 3.84,
+    "response_id": "resp_0df38bc5be0ed610016af7a64854b887d19d00b75a5dc5ce8b",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"Inside the rectangle are two parallel solid yellow longitudinal lines to the left of my car.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"yellow_double_solid\",\n    \"arrow_type\": null,\n    \"position\": \"left\"\n  },\n  \"rule_reasoning\": \"Double solid yellow center lines prohibit crossing for passing in either direction.\",\n  \"cited_rule_id\": \"US-3B.01-04\",\n  \"action_reasons\": {\n    \"cross_line\": \"The two solid yellow lines prohibit crossing for passing.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"prohibited\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "Inside the rectangle are two parallel solid yellow longitudinal lines to the left of my car.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "yellow_double_solid",
+     "arrow_type": null,
+     "position": "left"
+    },
+    "rule_reasoning": "Double solid yellow center lines prohibit crossing for passing in either direction.",
+    "cited_rule_id": "US-3B.01-04",
+    "action_reasons": {
+     "cross_line": "The two solid yellow lines prohibit crossing for passing.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "prohibited",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "yellow_double_solid",
+    "o1_label": "yellow_double_solid"
+   },
+   "time_utc": "2026-11-14T00:07:36Z",
+   "cost": 0.011194
+  },
+  "C": {
+   "image_id": "route1_stop05_line",
+   "collection": "carla",
+   "region": "CN",
+   "dataset": "carla_town03",
+   "split": "sim",
+   "test": "B",
+   "repeat": 0,
+   "mock": false,
+   "cached": false,
+   "request": {
+    "settings": {
+     "base_url": "https://api.openai.com/v1",
+     "model": "gpt-6.1-sol",
+     "reasoning_effort": "low",
+     "temperature": null,
+     "image_detail": "high",
+     "max_output_tokens": 2000,
+     "instruction_role": "developer",
+     "store": false,
+     "reasoning_summary": "auto"
+    },
+    "hashes": {
+     "instructions": "0d9899ddc6df679d",
+     "user_text": "c561216fcd2d7ed7",
+     "schema": "deb635735c5b42f0",
+     "shared_parts": "25a4f39c40f4486f",
+     "rules_file": "3f66bf1d6d07c3ee",
+     "prompt_dir": "prompts/v3"
+    },
+    "image_sha256": "780711c0fd94e6e6",
+    "box": [
+     405,
+     401,
+     577,
+     537
+    ],
+    "cache_key": "9541722d670d8295c2167913fa1060219fcdeb2a"
+   },
+   "label": {
+    "marking_type": "yellow_double_solid",
+    "arrow_type": "",
+    "position": "left",
+    "dashed_side": "",
+    "visibility": "V1",
+    "behavior_decidable": "",
+    "expected_evidence": "full",
+    "accepted_rule_ids": "CN-6.1.1;CN-6.1.2",
+    "act_cross_line": "prohibited",
+    "act_go_straight": "not_applicable",
+    "act_turn_left": "not_applicable",
+    "act_turn_right": "not_applicable",
+    "act_u_turn": "not_applicable",
+    "act_enter_center_lane_to_wait": "not_applicable"
+   },
+   "response": {
+    "model": "gpt-6.1-sol",
+    "usage": {
+     "input_tokens": 3723,
+     "input_tokens_details": {
+      "cache_write_tokens": 1127,
+      "cached_tokens": 2593
+     },
+     "output_tokens": 288,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 4011
+    },
+    "latency_s": 4.06,
+    "response_id": "resp_0c1dcf155d652db7016af7a64853e487d199eb60662ac11008",
+    "attempts": 1,
+    "reasoning_summary": "",
+    "reasoning_summary_note": null
+   },
+   "text": "{\n  \"description\": \"Inside the rectangle are two parallel, continuous yellow longitudinal lines to the left of my car.\",\n  \"evidence\": \"full\",\n  \"marking\": {\n    \"marking_type\": \"yellow_double_solid\",\n    \"arrow_type\": null,\n    \"position\": \"left\"\n  },\n  \"rule_reasoning\": \"A double solid yellow line prohibits vehicles in both directions from crossing.\",\n  \"cited_rule_id\": \"CN-6.1.2\",\n  \"action_reasons\": {\n    \"cross_line\": \"The two solid yellow lines prohibit crossing under CN-6.1.2.\",\n    \"go_straight\": \"not governed by this marking\",\n    \"turn_left\": \"not governed by this marking\",\n    \"turn_right\": \"not governed by this marking\",\n    \"u_turn\": \"not governed by this marking\",\n    \"enter_center_lane_to_wait\": \"not governed by this marking\"\n  },\n  \"self_check\": \"consistent\",\n  \"actions\": {\n    \"cross_line\": \"prohibited\",\n    \"go_straight\": \"not_applicable\",\n    \"turn_left\": \"not_applicable\",\n    \"turn_right\": \"not_applicable\",\n    \"u_turn\": \"not_applicable\",\n    \"enter_center_lane_to_wait\": \"not_applicable\"\n  }\n}",
+   "answer": {
+    "description": "Inside the rectangle are two parallel, continuous yellow longitudinal lines to the left of my car.",
+    "evidence": "full",
+    "marking": {
+     "marking_type": "yellow_double_solid",
+     "arrow_type": null,
+     "position": "left"
+    },
+    "rule_reasoning": "A double solid yellow line prohibits vehicles in both directions from crossing.",
+    "cited_rule_id": "CN-6.1.2",
+    "action_reasons": {
+     "cross_line": "The two solid yellow lines prohibit crossing under CN-6.1.2.",
+     "go_straight": "not governed by this marking",
+     "turn_left": "not governed by this marking",
+     "turn_right": "not governed by this marking",
+     "u_turn": "not governed by this marking",
+     "enter_center_lane_to_wait": "not governed by this marking"
+    },
+    "self_check": "consistent",
+    "actions": {
+     "cross_line": "prohibited",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_center_lane_to_wait": "not_applicable"
+    }
+   },
+   "parse_error": "",
+   "error": "",
+   "score": {
+    "output1": true,
+    "output2": true,
+    "actions": {
+     "cross_line": true
+    },
+    "contested": {},
+    "position": true,
+    "evidence_group": "correct",
+    "citation": "accepted",
+    "consistency": [],
+    "unsafe": [],
+    "over_cautious": [],
+    "contested_unsafe": [],
+    "contested_over_cautious": [],
+    "o1_answer": "yellow_double_solid",
+    "o1_label": "yellow_double_solid"
+   },
+   "time_utc": "2026-11-14T00:07:36Z",
+   "cost": 0.010326
+  }
+ }
+}

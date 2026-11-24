@@ -1,0 +1,55 @@
+carla_Town03_lane_change_mirrored | lane | Test B | gpt-6.1-sol
+---------------------------------------------------------------
+Step 1  Scene           An urban road runs beneath an elevated structure, with two lanes in each direction
+                        visible and no clear intersection or lane ending ahead. My car is in the right-hand
+                        lane of the left-hand carriageway. (lanes 2, mine 2, full)
+Step 2  Left            A continuous solid white line separates my lane from another lane to the left; no curb
+                        forms this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           Two parallel solid yellow lines separate my lane from the opposite-direction side of
+                        the road; no curb forms this boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: The lane line on the left and centre line on the right agree with my lane
+                        being the second of two same-direction lanes. | roles: The boundaries' positions
+                        support their roles, but the solid white lane divider and double yellow centre marking
+                        are not the broken white lane divider and white centre markings described in the
+                        supplied UK passages. | markings: No visible arrows, words, symbols, transverse lines
+                        or waiting areas conflict with the boundary observations. | unseen: No distant
+                        junction layout or obscured guidance marking has been inferred. | result: consistent
+Step 5  Rule            left_boundary: The recommendation to follow road markings applies, but the supplied
+                        passages do not establish a mandatory crossing prohibition for this single solid white
+                        lane divider. [UK-Rule134] "You should follow the signs and road markings and get into
+                        the lane as directed."
+Step 5  Rule            right_boundary: The recommendation to follow road markings applies, but the supplied
+                        white-centre-line prohibitions cannot be applied to these visibly yellow lines. [UK-
+                        Rule134] "You should follow the signs and road markings and get into the lane as
+                        directed."
+Step 6  change_left     allowed: The visible solid white divider is not covered by a supplied mandatory
+                        crossing prohibition; UK-Rule134 is advisory, so this action is not prohibited under
+                        the supplied rule-force convention.
+Step 6  change_right    allowed: The double yellow centre marking is not covered by the supplied double-white-
+                        line prohibition; UK-Rule134 is advisory, so this action is not prohibited under the
+                        supplied rule-force convention.
+Step 6  go_straight     not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_left       not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_right      not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  u_turn          not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  enter_waiting_areanot_applicable: No left-turn waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         Consistent: the boundary decisions reflect the supplied passages' limited coverage and
+                        advisory force, not a claim that crossing either boundary is safe or legally
+                        authorised by other rules.
+Advice                  Keep within your current lane rather than treating the limited-rule crossing
+                        classifications as practical permission, especially because the right boundary leads
+                        into opposing traffic. No visible arrows establish turn-lane choices, and no stop line
+                        is visible; the unusual markings require clarification before relying on a UK-specific
+                        interpretation.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation in_pack_not_accepted, contradictions
+                        ['change_right allowed across a double solid line']
+Tokens                  in 6305, out 1051, 20.5 s

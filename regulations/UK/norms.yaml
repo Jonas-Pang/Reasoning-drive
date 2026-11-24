@@ -1,0 +1,386 @@
+# Force of each passage (see regulations/US/norms.yaml). Set checked: true after reading.
+
+UK-HC_MARKINGS-p1:
+  norm: informative
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p1-2:
+  norm: informative
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p1-3:
+  norm: informative
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p1-4:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p1-5:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p1-6:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p2:
+  norm: permissive
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p2-2:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p2-8:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p2-9:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p3-2:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p3-3:
+  norm: informative
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p3-5:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-HC_MARKINGS-p3-6:
+  norm: informative
+  word: ''
+  checked: false
+UK-Rule127:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-Rule128:
+  norm: permissive
+  word: ''
+  checked: false
+UK-Rule128-2:
+  norm: informative
+  word: ''
+  checked: false
+UK-Rule129:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-Rule130:
+  norm: informative
+  word: ''
+  checked: false
+UK-Rule130-2:
+  norm: recommended
+  word: ''
+  checked: false
+UK-Rule130-3:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-Rule131:
+  norm: recommended
+  word: ''
+  checked: false
+UK-Rule134:
+  norm: recommended
+  word: ''
+  checked: false
+UK-Rule136:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-Rule140:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-Rule140-2:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-Rule140-3:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-p8:
+  norm: recommended
+  word: ''
+  checked: false
+UK-p8-2:
+  norm: informative
+  word: ''
+  checked: false
+UK-Rule141:
+  norm: informative
+  word: ''
+  checked: false
+UK-Rule141-2:
+  norm: recommended
+  word: ''
+  checked: false
+UK-Rule141-3:
+  norm: permissive
+  word: ''
+  checked: false
+UK-Rule142:
+  norm: informative
+  word: ''
+  checked: false
+UK-Rule142-2:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-Rule142-3:
+  norm: informative
+  word: ''
+  checked: false
+UK-Rule142-4:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item1:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item3:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item6:
+  norm: recommended
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item7:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item8:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item9:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item11:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item12:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item13:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item14:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item15:
+  norm: permissive
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item16:
+  norm: permissive
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item17:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item18:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item19:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item20:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item21:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item22:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item24:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-Part6,item26:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-3:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-4:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-5(1)(a):
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-5(1)(b):
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-5(1)(c):
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-7(a):
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-7(b):
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-7(c):
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-7(d):
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-8:
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-9(1)(a):
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-10:
+  norm: recommended
+  word: ''
+  checked: false
+UK-TSRGD-11(1):
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-11(2):
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-11(3):
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-11(4)–(5):
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-11(7):
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-12(2):
+  norm: mandatory
+  word: ''
+  checked: false
+UK-TSRGD-12(3):
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item2:
+  norm: recommended
+  word: should
+  checked: false
+UK-TSRGD-S11P4-item3:
+  norm: recommended
+  word: should
+  checked: false
+UK-TSRGD-S11P4-item4:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item5:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item6:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item7:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item8:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item10:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item11:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item13:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item14:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item15:
+  norm: recommended
+  word: should
+  checked: false
+UK-TSRGD-S11P4-item16:
+  norm: recommended
+  word: should
+  checked: false
+UK-TSRGD-S11P4-item19:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item20:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item21:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item22:
+  norm: informative
+  word: ''
+  checked: false
+UK-TSRGD-S11P4-item23:
+  norm: recommended
+  word: should
+  checked: false
+UK-TSRGD-S11P4-item25:
+  norm: recommended
+  word: should
+  checked: false
+UK-TSRGD-S11P4-item27:
+  norm: recommended
+  word: should
+  checked: false
+UK-TSRGD-S11P4-item28:
+  norm: informative
+  word: ''
+  checked: false

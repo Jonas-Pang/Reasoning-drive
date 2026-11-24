@@ -1,0 +1,27 @@
+# Images and labels of one country. Every label collection of the country is a folder next to this file;
+# each collection is one labeling workspace (python main.py label --data <workspace> ...).
+# A new country copies datasets/_template/ to datasets/<CODE>/ (the same code as regulations/<CODE>/).
+
+region: US
+collections:
+  - name: own_video
+    kind: video                 # own dash-cam videos: frames kept from each drive
+    source: "own recordings in Florida (own work; faces and plates blurred in published figures)"
+  - name: bdd100k
+    kind: images
+    source: "BDD100K validation split, Dataset Ninja mirror (educational, research and non-profit use)"
+  - name: waymo
+    kind: images
+    reader: folder              # any folder of images; the frames of one sub-folder form one clip
+    dataset_name: Waymo Open Dataset
+    source: "Waymo Open Dataset (non-commercial licence, registration)"
+    download: https://waymo.com/open/
+    default_source: data/extracted/waymo
+    candidates: datasets/US/candidates_geodrive.csv   # frames with lane markings in GeoDrive-Bench (label geodrive)
+    access: registration
+    access_note: "sign in at https://waymo.com/open/ with a Google account and accept the licence; the frames GeoDrive-Bench uses come from its camera data"
+
+split:                          # the same rule for every country, so dev and test never share a clip
+  rule: 'sha1("6216:" + clip) mod 10 = 0 -> dev, else test'
+  per_marking_type: {dev: 6, test: 30}
+  degraded_test: 30             # extra test images with worn, wet or hidden markings

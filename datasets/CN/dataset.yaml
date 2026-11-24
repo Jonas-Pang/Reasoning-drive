@@ -1,0 +1,37 @@
+# Images and labels of one country (see datasets/US/dataset.yaml for the fields).
+
+region: CN
+collections:
+  - name: culane
+    kind: images
+    source: "CULane test split (non-commercial research and teaching; no redistribution)"
+  - name: once
+    kind: images
+    reader: folder              # any folder of images; the frames of one sub-folder form one clip
+    dataset_name: ONCE
+    source: "ONCE (Huawei, NeurIPS 2021), front camera cam01, several Chinese cities 2020-2021; CC BY-NC-SA 4.0"
+    download: https://once-for-auto-driving.github.io/download.html
+    default_source: data/extracted/once
+    candidates: datasets/CN/candidates_geodrive.csv   # frames with lane markings in GeoDrive-Bench (label geodrive)
+    access: open                # public Google Drive folders (once-for-auto-driving.github.io/download.html)
+    fetch:                      # python main.py data fetch CN --root <root>: the front camera (cam01) of the labelled splits
+      - {kind: file, name: train_cam01.tar, file_id: 1bOVcrja8AZi8fmeZwYS98Y9mfDHU7wYl, extract_candidates: true}   # 1.5 GB
+      - {kind: file, name: val_cam01.tar, file_id: 1GTwLqPhj_63lC8avPR8Ul915Ct5JRbyt, extract_candidates: true}     # 0.7 GB
+      - {kind: file, name: test_cam01.tar, file_id: 1ySBHGDVusGHXmZap4M_yIz2L9-ft9t5j, extract_candidates: true}    # 1.8 GB
+    # newer, higher-resolution frames from more cities than CULane (2017, Beijing, 1640x590); ONCE_3DLanes has lane lines for 211K of them
+
+  - name: mapdr
+    kind: images
+    reader: folder              # one folder per clip: <category>__<clip>/ (frames + data.json)
+    dataset_name: MapDR-mini
+    source: "MapDR-mini (Amap / Xi'an Jiaotong University, CVPR 2025), front-view clips from several Chinese cities, 2024, with lane-level rules; CC BY-NC-SA 4.0"
+    download: https://modelscope.cn/datasets/MIV-XJTU/MapDR-mini
+    default_source: mapdr
+    access: open                # public on ModelScope; scripts/claude_fetch_mapdr.py downloads the mini version (3.9 GB, 180 clips)
+    # 9 lane categories: bus, direction (arrows), emergency, multi-lane, non-motorized, speed-limited, tidal-flow,
+    # variable-direction and ordinary vehicle lanes -- newer and higher-resolution than CULane (2017, Beijing, 1640x590)
+
+split:
+  rule: 'sha1("6216:" + clip) mod 10 = 0 -> dev, else test'
+  per_marking_type: {dev: 6, test: 30}
+  degraded_test: 30

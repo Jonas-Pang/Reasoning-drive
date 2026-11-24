@@ -1,4 +1,4 @@
-# Data collection: `playground.ipynb`
+# Data collection: `notebooks/playground.ipynb`
 
 How the public datasets and rule documents were retrieved, loaded and checked. The project overview and the reproduction steps are in the [README](../README.md).
 
@@ -9,7 +9,7 @@ How the public datasets and rule documents were retrieved, loaded and checked. T
 | 0 Setup | Imports, paths, settings; prints Python and package versions |
 | 1 BDD100K | Downloads the BDD100K validation split (official server, or the Dataset Ninja mirror when it is down) and unpacks the images and lane labels |
 | 2 CULane | Checks the five CULane archives (test split) and unpacks them |
-| 3 Rule sources | Downloads MUTCD Part 3, checks the GB 5768.3-2025 PDF, writes `data_manifest.csv` |
+| 3 Rule sources | Downloads MUTCD Part 3, checks the GB 5768.3-2025 PDF, writes `datasets/data_manifest.csv` |
 | 4 Load | Builds three tables: BDD100K images, BDD100K lane labels, CULane test frames |
 | 5 Size and types | Rows, fields and data types of each table, and the size on disk |
 | 6 Examples | Real BDD100K images with their lane annotations drawn on top; CULane frames only with `SHOW_CULANE = True` |
@@ -27,7 +27,7 @@ How the public datasets and rule documents were retrieved, loaded and checked. T
 | MUTCD (US rules) | 11th Edition (December 2023), Part 3 Markings | [FHWA](https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/part3.pdf) | U.S. government work, no copyright restrictions | 2026-10-05 |
 | GB 5768.3 (China rules) | GB 5768.3-2025, Part 3: Road traffic markings (in force from 2026-05-01) | [National standards platform](https://openstd.samr.gov.cn) | Mandatory national standard, free to read; text is copyrighted, so only short quotes are stored | 2026-10-05 |
 
-`data_manifest.csv` is rewritten on every run and lists each downloaded file with its origin, size, retrieval date and license. `python -m video_tool hash-sources` then adds the SHA-256 and MD5 of every file (also kept in `data_hashes.csv`, which the notebook does not rewrite).
+`datasets/data_manifest.csv` is rewritten on every run and lists each downloaded file with its origin, size, retrieval date and license. `python main.py label hash-sources` then adds the SHA-256 and MD5 of every file (also kept in `datasets/data_hashes.csv`, which the notebook does not rewrite).
 
 ## How the datasets are handled
 
@@ -36,7 +36,7 @@ How the public datasets and rule documents were retrieved, loaded and checked. T
 * CULane download: The notebook tries `gdown`, but Google Drive blocks popular files ("too many users have downloaded this file"). The five archives (`list`, `annotations_new` and the three `driver_*` test archives) were therefore downloaded in the browser into `data/raw/culane/`; the notebook checks them and unpacks them.
 * Unpacking: Archives stay in `data/raw/`; unpacked files go to `data/extracted/`. A marker file per archive makes reruns skip finished steps. File names are made safe for the exFAT drive, and macOS `._` helper files are ignored.
 * Labels used: BDD100K: lane category (e.g. single white, double yellow, crosswalk), solid/dashed, direction, and weather / time of day / scene. CULane: lane positions only (no colour or type) and the scene category of each frame.
-* Rule passages: 30 short passages (14 from GB 5768.3-2025, 16 from MUTCD Part 3) for the core marking types are in `rules/rule_passages.json`, each with section and page. Chinese passages keep the original text and have an English translation.
+* Rule passages: 30 short passages (14 from GB 5768.3-2025, 16 from MUTCD Part 3) for the core marking types are in `regulations/<CODE>/passages_marking.json`, each with section and page. Chinese passages keep the original text and have an English translation.
 
 ## Storage and licences
 
@@ -54,7 +54,7 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-Open `playground.ipynb` and choose **Kernel > Restart Kernel and Run All Cells**.
+Open `notebooks/playground.ipynb` and choose **Kernel > Restart Kernel and Run All Cells**.
 
 * The first run downloads about 20 GB. Later runs reuse `data/` and take about 15 minutes, mostly for reading tens of thousands of small label files.
 * If the five CULane archives are not in `data/raw/culane/`, the notebook stops and says which files to download from the official page.

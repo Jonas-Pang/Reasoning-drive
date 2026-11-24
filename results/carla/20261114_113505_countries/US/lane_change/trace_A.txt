@@ -1,0 +1,40 @@
+carla_Town03_lane_change | lane | Test A | gpt-6.1-sol
+------------------------------------------------------
+Step 1  Scene           A two-way urban road runs beneath an elevated structure and continues straight ahead;
+                        no intersection or lane ending is clearly visible. My car is in the leftmost of two
+                        apparent lanes in its direction. (lanes 2, mine 1, full)
+Step 2  Left            Two parallel solid yellow lines separate my lane from opposing traffic, with no curb
+                        at this boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 2  Right           A continuous solid white line separates my lane from another paved lane on the right;
+                        the roadside curb is beyond that lane rather than at this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: The yellow center line on the left and white lane divider on the right agree
+                        with my lane being the leftmost of two lanes in this direction. | roles: Double solid
+                        yellow fits separation of opposing traffic; solid white fits separation of same-
+                        direction lanes. | markings: No arrows, words, symbols, waiting areas, or transverse
+                        markings are visible in my lane. | unseen: No intersection-specific marking or
+                        movement restriction is inferred from the distant roadway. | result: consistent
+Step 5  Rule            left_boundary: The double solid yellow center line prohibits crossing to pass or
+                        travel in the opposing lane.
+Step 5  Rule            right_boundary: A single solid white same-direction lane line discourages, but does
+                        not by itself prohibit, crossing to change lanes when safe.
+Step 6  change_left     prohibited: The double solid yellow center line prohibits changing into the opposing
+                        traffic lane.
+Step 6  change_right    allowed: The single solid white lane divider discourages crossing but does not
+                        prohibit a safe lane change.
+Step 6  go_straight     not_applicable: No marking governs this action.
+Step 6  turn_left       not_applicable: No marking governs this action.
+Step 6  turn_right      not_applicable: No marking governs this action.
+Step 6  u_turn          not_applicable: No marking governs this action.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         consistent
+Advice                  Remain in your lane rather than crossing the double yellow center line; crossing the
+                        solid white divider to the right is discouraged and should be done only when necessary
+                        and safe. No visible lane-use arrows or stop line establish turning assignments or a
+                        stopping point ahead.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4426, out 864, 15.02 s

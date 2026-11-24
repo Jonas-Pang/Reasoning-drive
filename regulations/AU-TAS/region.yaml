@@ -1,0 +1,38 @@
+# Tasmania, Australia (AU-TAS). Its road rules copy the Australian Road Rules (AU) with local changes: only pages that differ from the model law are read.
+# Documents are downloaded and read by:
+#   python main.py regulations fetch AU-TAS
+#   python main.py regulations extract-all AU-TAS --real
+#   python main.py regulations accept AU-TAS        (after reading passages_draft.yaml)
+
+code: AU-TAS
+name: "Tasmania, Australia"
+name_zh: "塔斯马尼亚州（澳大利亚）"
+driving_side: left
+parent: AU                      # takes AU's passages; its own passages (what it changed) override them by rule number
+status: draft                   # planned -> draft (extracted) -> in use (accepted)
+
+standard:
+  title: "Road Rules 2019 (Tas), current version"
+  language: en
+  source_url: https://www.legislation.tas.gov.au/view/pdf/inforce/current/sr-2019-061
+  source_pdf: regulations/inbox/AU-TAS/tas_road_rules_2019
+  licence: "not checked yet: see the register's copyright page"
+
+documents:
+  - tag: rules
+    title: "Road Rules 2019 (Tas), current version"
+    urls:
+      - {url: "https://www.legislation.tas.gov.au/view/pdf/inforce/current/sr-2019-061", type: pdf}
+      - {url: "https://www.legislation.tas.gov.au/view/whole/html/inforce/current/sr-2019-061", type: html}
+    file: regulations/inbox/AU-TAS/tas_road_rules_2019          # suffix (.pdf/.html/.rtf) = the type obtained
+    keywords: ["dividing line", "lane line", "marked lane", "turn line", "traffic lane arrow", "lane arrow", "edge line", "painted island", "continuous line", "broken line", "keep clear", "stop line", "give way line", "hook turn", "transit lane", "bus lane", "tram lane", "truck lane", "bicycle lane", "special purpose lane", "changing lanes", "change lanes", "turning lane", "slip lane", "median strip", "line of traffic", "merge", "overtak", "keep left", "u-turn"]
+    min_hits: 2
+    same_as: AU:arr            # pages copied word for word from it are not sent
+
+passages:
+  marking: passages_lane.yaml
+  lane: [passages_lane.yaml]
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

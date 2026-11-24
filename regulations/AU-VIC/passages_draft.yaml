@@ -1,0 +1,1594 @@
+# DRAFT passages of Victoria, Australia (AU-VIC) from vic_road_safety_road_rules_2017.pdf, 2026-11-14 (gpt-6.1-sol).
+# Read every passage against the PDF. verified_quote: false means the original text was not found on its page.
+# Delete what is not a rule for drivers, fix sections and texts, then:  python main.py regulations accept AU-VIC
+
+- rule_id: AU-VIC-28(2A)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 28(2A)
+  page: 41
+  marking_type: bicycle storage area
+  element: area
+  text_original: If there is a bicycle storage area before an intersection that extends across one or more marked lanes of
+    a multi-lane road, a rider of a bicycle or an electric scooter turning left must approach and enter the intersection from
+    within the part of the bicycle storage area that is directly in front of the left marked lane or of a bicycle lane that
+    is on the left side of the road.
+  text_en: If there is a bicycle storage area before an intersection that extends across one or more marked lanes of a multi-lane
+    road, a rider of a bicycle or an electric scooter turning left must approach and enter the intersection from within the
+    part of the bicycle storage area that is directly in front of the left marked lane or of a bicycle lane that is on the
+    left side of the road.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    turn_left: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-29(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 29(1)
+  page: 42
+  marking_type: left-turn line
+  element: boundary
+  text_original: 'If a driver is turning left at an intersection and there is a turn line indicating how the turn is required
+    to be made, the driver must make the turn as indicated by the turn line unless—
+
+    (a) the driver is turning, at B lights or traffic arrows, in accordance with Division 2 of Part 17; or
+
+    (b) subrule (2) applies to the driver.'
+  text_en: 'If a driver is turning left at an intersection and there is a turn line indicating how the turn is required to
+    be made, the driver must make the turn as indicated by the turn line unless—
+
+    (a) the driver is turning, at B lights or traffic arrows, in accordance with Division 2 of Part 17; or
+
+    (b) subrule (2) applies to the driver.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    turn_left: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-29(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 29(2)
+  page: 43
+  marking_type: left-turn line
+  element: boundary
+  text_original: 'A driver may turn left at an intersection other than as indicated by a turn line if—
+
+    (a) the driver''s vehicle, together with any load or projection, is 75 metres long, or longer; and
+
+    (b) the vehicle displays a do not overtake turning vehicle sign; and
+
+    (c) it is not practicable for the driver to turn left as indicated by the turn line; and
+
+    (d) the driver can safely turn left other than as indicated by the turn line.'
+  text_en: 'A driver may turn left at an intersection other than as indicated by a turn line if—
+
+    (a) the driver''s vehicle, together with any load or projection, is 75 metres long, or longer; and
+
+    (b) the vehicle displays a do not overtake turning vehicle sign; and
+
+    (c) it is not practicable for the driver to turn left as indicated by the turn line; and
+
+    (d) the driver can safely turn left other than as indicated by the turn line.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    turn_left: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-33(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 33(2)
+  page: 51
+  marking_type: right-turn line
+  element: boundary
+  text_original: If there is a turn line indicating how the turn is required to be made, the driver must make the turn as
+    indicated by the turn line.
+  text_en: If there is a turn line indicating how the turn is required to be made, the driver must make the turn as indicated
+    by the turn line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    turn_right: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-34(2)Step2
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 34(2) Step 2
+  page: 54
+  marking_type: marked foot crossing
+  element: transverse
+  text_original: Move forward, keeping as near as practicable to the left of the intersection and clear of any marked foot
+    crossing, until the driver is as near as practicable to the far side of the road that the driver is entering.
+  text_en: Move forward, keeping as near as practicable to the left of the intersection and clear of any marked foot crossing,
+    until the driver is as near as practicable to the far side of the road that the driver is entering.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-VIC-35(4)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 35(4)
+  page: 57
+  marking_type: bicycle hook turn storage area
+  element: area
+  text_original: 'To make a hook turn under this rule at an intersection that has a bicycle hook turn storage area on the
+    left side of the intersection as the rider approaches the intersection, the rider must take the following initial 2 steps
+    instead of the initial 2 steps listed in subrule (3):
+
+    Step 1 Approach the intersection from the far left side of the road the rider is leaving and enter the intersection by
+    moving into the bicycle hook turn storage area, keeping clear of any marked foot crossing.
+
+    Step 2 Move forward in the bicycle hook turn storage area until the rider is as near as practicable to the far side of
+    the road that the rider is entering.'
+  text_en: 'To make a hook turn under this rule at an intersection that has a bicycle hook turn storage area on the left side
+    of the intersection as the rider approaches the intersection, the rider must take the following initial 2 steps instead
+    of the initial 2 steps listed in subrule (3):
+
+    Step 1 Approach the intersection from the far left side of the road the rider is leaving and enter the intersection by
+    moving into the bicycle hook turn storage area, keeping clear of any marked foot crossing.
+
+    Step 2 Move forward in the bicycle hook turn storage area until the rider is as near as practicable to the far side of
+    the road that the rider is entering.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    enter_waiting_area: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-56(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 56(1)
+  page: 73
+  marking_type: stop line
+  element: transverse
+  text_original: 'A driver approaching or at traffic lights showing a red traffic light must stop—
+
+    (a) if there is a stop line at or near the traffic lights—as near as practicable to, but before reaching, the stop line;
+    or
+
+    (b) if there is a stop here on red signal sign at or near the traffic lights, but no stop line—as near as practicable
+    to, but before reaching, the sign; or
+
+    (c) if there is no stop line or stop here on red signal sign at or near the traffic lights—as near as practicable to,
+    but before reaching, the nearest or only traffic lights—
+
+    and must not proceed past the stop line, stop here on red signal sign or nearest or only traffic lights (as the case may
+    be) until the traffic lights show a green or flashing yellow traffic light or no traffic light.'
+  text_en: 'A driver approaching or at traffic lights showing a red traffic light must stop—
+
+    (a) if there is a stop line at or near the traffic lights—as near as practicable to, but before reaching, the stop line;
+    or
+
+    (b) if there is a stop here on red signal sign at or near the traffic lights, but no stop line—as near as practicable
+    to, but before reaching, the sign; or
+
+    (c) if there is no stop line or stop here on red signal sign at or near the traffic lights—as near as practicable to,
+    but before reaching, the nearest or only traffic lights—
+
+    and must not proceed past the stop line, stop here on red signal sign or nearest or only traffic lights (as the case may
+    be) until the traffic lights show a green or flashing yellow traffic light or no traffic light.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-56(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 56(2)
+  page: 75
+  marking_type: stop line
+  element: transverse
+  text_original: 'A driver approaching or at traffic arrows showing a red traffic arrow who is turning in the direction indicated
+    by the arrow must stop—
+
+    (a) if there is a stop line at or near the traffic arrows—as near as practicable to, but before reaching, the stop line;
+    or
+
+    (b) if there is a stop here on red arrow sign at or near the traffic arrows, but no stop line—as near as practicable to,
+    but before reaching, the sign; or
+
+    (c) if there is no stop line or stop here on red arrow sign at or near the traffic arrows—as near as practicable to, but
+    before reaching, the nearest or only traffic arrows—
+
+    and must not proceed past the stop line, stop here on red arrow sign or nearest or only traffic arrows (as the case may
+    be) until the traffic arrows show a green or flashing yellow traffic arrow or no traffic arrow.'
+  text_en: 'A driver approaching or at traffic arrows showing a red traffic arrow who is turning in the direction indicated
+    by the arrow must stop—
+
+    (a) if there is a stop line at or near the traffic arrows—as near as practicable to, but before reaching, the stop line;
+    or
+
+    (b) if there is a stop here on red arrow sign at or near the traffic arrows, but no stop line—as near as practicable to,
+    but before reaching, the sign; or
+
+    (c) if there is no stop line or stop here on red arrow sign at or near the traffic arrows—as near as practicable to, but
+    before reaching, the nearest or only traffic arrows—
+
+    and must not proceed past the stop line, stop here on red arrow sign or nearest or only traffic arrows (as the case may
+    be) until the traffic arrows show a green or flashing yellow traffic arrow or no traffic arrow.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-56(3)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 56(3)
+  page: 76
+  marking_type: stop lines at bicycle storage area
+  element: transverse
+  text_original: 'If there is a bicycle storage area before any traffic lights referred to in subrule (1) or (2), a reference
+    to the stop line in subrule (1)(a) or (2)(a)—
+
+    (a) in the case of a driver of a motor vehicle—is a reference to the first stop line that the driver comes, or came, to
+    in approaching the lights; or
+
+    (b) in the case of a rider of a bicycle or an electric scooter—is a reference to the stop line that is nearest to the
+    intersection.'
+  text_en: 'If there is a bicycle storage area before any traffic lights referred to in subrule (1) or (2), a reference to
+    the stop line in subrule (1)(a) or (2)(a)—
+
+    (a) in the case of a driver of a motor vehicle—is a reference to the first stop line that the driver comes, or came, to
+    in approaching the lights; or
+
+    (b) in the case of a rider of a bicycle or an electric scooter—is a reference to the stop line that is nearest to the
+    intersection.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-57(1)(a)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 57(1)(a)
+  page: 76
+  marking_type: stop line
+  element: transverse
+  text_original: 'A driver approaching or at traffic lights showing a yellow traffic light must stop—
+
+    (a) if there is a stop line at or near the traffic lights and the driver can stop safely before reaching the stop line—as
+    near as practicable to, but before reaching, the stop line; or'
+  text_en: 'A driver approaching or at traffic lights showing a yellow traffic light must stop—
+
+    (a) if there is a stop line at or near the traffic lights and the driver can stop safely before reaching the stop line—as
+    near as practicable to, but before reaching, the stop line; or'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-59(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 59(1)
+  page: 79
+  marking_type: marked foot crossing
+  element: transverse
+  text_original: If traffic lights at an intersection or marked foot crossing are showing a red traffic light, a driver must
+    not enter the intersection or marked foot crossing.
+  text_en: If traffic lights at an intersection or marked foot crossing are showing a red traffic light, a driver must not
+    enter the intersection or marked foot crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+    turn_left: prohibited
+    turn_right: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-65(1)–(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 65(1)–(2)
+  page: 88
+  marking_type: marked foot crossing
+  element: transverse
+  text_original: 'This rule applies to a driver approaching or at a marked foot crossing (except at or near an intersection)
+    with a flashing yellow traffic light at the crossing.
+
+    The driver must—
+
+    (a) give way to any pedestrian on or entering the crossing; and
+
+    (b) not obstruct any pedestrian on the crossing; and
+
+    (c) not overtake or pass a vehicle that is travelling in the same direction as the driver and is stopping, or has stopped,
+    to give way at the crossing.'
+  text_en: 'This rule applies to a driver approaching or at a marked foot crossing (except at or near an intersection) with
+    a flashing yellow traffic light at the crossing.
+
+    The driver must—
+
+    (a) give way to any pedestrian on or entering the crossing; and
+
+    (b) not obstruct any pedestrian on the crossing; and
+
+    (c) not overtake or pass a vehicle that is travelling in the same direction as the driver and is stopping, or has stopped,
+    to give way at the crossing.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-65(3)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 65(3)
+  page: 89
+  marking_type: marked foot crossing
+  element: transverse
+  text_original: If there is no pedestrian on the crossing, and no other vehicle travelling in the same direction as the driver
+    that is stopping, or has stopped, to give way at the crossing, the driver may proceed through the crossing.
+  text_en: If there is no pedestrian on the crossing, and no other vehicle travelling in the same direction as the driver
+    that is stopping, or has stopped, to give way at the crossing, the driver may proceed through the crossing.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-66(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 66(2)
+  page: 90
+  marking_type: stop line at twin red lights
+  element: transverse
+  text_original: If there is a stop line at or near the lights and the driver can stop safely before reaching the stop line,
+    the driver must stop as near as practicable to, but before reaching, the stop line.
+  text_en: If there is a stop line at or near the lights and the driver can stop safely before reaching the stop line, the
+    driver must stop as near as practicable to, but before reaching, the stop line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-67(4)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 67(4)
+  page: 93
+  marking_type: stop line at an intersection
+  element: transverse
+  text_original: If the driver is turning left or right or making a U-turn, the driver must also give way to any pedestrian
+    at or near the intersection who is crossing the road, or part of the road, the driver is entering.
+  text_en: If the driver is turning left or right or making a U-turn, the driver must also give way to any pedestrian at or
+    near the intersection who is crossing the road, or part of the road, the driver is entering.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-68(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 68(1)
+  page: 95
+  marking_type: stop line at other places
+  element: transverse
+  text_original: 'A driver approaching or at a place with a stop sign or stop line must stop and give way in accordance with
+    this rule, unless the place is—
+
+    (a) an intersection; or
+
+    (b) a children''s crossing; or
+
+    (c) an area of a road that is not a children''s crossing only because it does not have—
+
+    (i) children crossing flags; or
+
+    (ii) children''s crossing signs and twin yellow lights; or
+
+    (d) a level crossing; or
+
+    (e) a place with twin red lights.'
+  text_en: 'A driver approaching or at a place with a stop sign or stop line must stop and give way in accordance with this
+    rule, unless the place is—
+
+    (a) an intersection; or
+
+    (b) a children''s crossing; or
+
+    (c) an area of a road that is not a children''s crossing only because it does not have—
+
+    (i) children crossing flags; or
+
+    (ii) children''s crossing signs and twin yellow lights; or
+
+    (d) a level crossing; or
+
+    (e) a place with twin red lights.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-68(1)Note2
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 68(1) Note 2
+  page: 95
+  marking_type: stop line at other places
+  element: transverse
+  text_original: For this rule, give way means the driver must remain stationary until it is safe for the driver to proceed—see
+    the definition in the dictionary.
+  text_en: For this rule, give way means the driver must remain stationary until it is safe for the driver to proceed—see
+    the definition in the dictionary.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-69(1)Note2
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 69(1) Note 2
+  page: 97
+  marking_type: give way line at an intersection
+  element: transverse
+  text_original: For this rule, give way means the driver must slow down and, if necessary, stop to avoid a collision—see
+    the definition in the dictionary.
+  text_en: For this rule, give way means the driver must slow down and, if necessary, stop to avoid a collision—see the definition
+    in the dictionary.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-69(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 69(2)
+  page: 97
+  marking_type: give way line at an intersection
+  element: transverse
+  text_original: 'Unless the driver is turning left using a slip lane, the driver must give way to a vehicle in, entering
+    or approaching the intersection except—
+
+    (a) an oncoming vehicle turning right at the intersection, if a stop sign, stop line, give way sign or give way line applies
+    to the driver of the oncoming vehicle; or
+
+    (b) a vehicle turning left at the intersection using a slip lane; or
+
+    (c) a vehicle making a U-turn.'
+  text_en: 'Unless the driver is turning left using a slip lane, the driver must give way to a vehicle in, entering or approaching
+    the intersection except—
+
+    (a) an oncoming vehicle turning right at the intersection, if a stop sign, stop line, give way sign or give way line applies
+    to the driver of the oncoming vehicle; or
+
+    (b) a vehicle turning left at the intersection using a slip lane; or
+
+    (c) a vehicle making a U-turn.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-69(3A)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 69(3A)
+  page: 98
+  marking_type: give way line at an intersection
+  element: transverse
+  text_original: 'If the driver is turning left using a slip lane, the driver must give way to—
+
+    (a) any vehicle on the road the driver is entering, or turning right at the intersection into the road the driver is entering
+    (except a vehicle making a U-turn at the intersection); and
+
+    (b) any other vehicle or pedestrian on the slip lane.'
+  text_en: 'If the driver is turning left using a slip lane, the driver must give way to—
+
+    (a) any vehicle on the road the driver is entering, or turning right at the intersection into the road the driver is entering
+    (except a vehicle making a U-turn at the intersection); and
+
+    (b) any other vehicle or pedestrian on the slip lane.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-76(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 76(1)
+  page: 117
+  marking_type: broken or continuous yellow line beside tram tracks
+  element: boundary
+  text_original: A driver must not move into the path of an approaching tram travelling in a tram lane or travelling on tram
+    tracks marked along the left side of the tracks by a broken or continuous yellow line parallel to the tracks.
+  text_en: A driver must not move into the path of an approaching tram travelling in a tram lane or travelling on tram tracks
+    marked along the left side of the tracks by a broken or continuous yellow line parallel to the tracks.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-76(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 76(2)
+  page: 118
+  marking_type: broken or continuous yellow line beside tram tracks
+  element: boundary
+  text_original: If a driver is in the path of an approaching tram travelling in a tram lane or travelling on tram tracks
+    marked along the left side of the tracks by a broken or continuous yellow line parallel to the tracks, the driver must
+    move out of the path of the tram as soon as the driver can do so safely.
+  text_en: If a driver is in the path of an approaching tram travelling in a tram lane or travelling on tram tracks marked
+    along the left side of the tracks by a broken or continuous yellow line parallel to the tracks, the driver must move out
+    of the path of the tram as soon as the driver can do so safely.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-80(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 80(1)
+  page: 124
+  marking_type: children's crossing
+  element: transverse
+  text_original: A driver approaching a children's crossing must drive at a speed at which the driver can, if necessary, stop
+    safely before the crossing.
+  text_en: A driver approaching a children's crossing must drive at a speed at which the driver can, if necessary, stop safely
+    before the crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-80(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 80(2)
+  page: 124
+  marking_type: children's crossing stop line
+  element: transverse
+  text_original: 'A driver approaching or at a children''s crossing must stop as near as practicable to, but before reaching,
+    the stop line at the crossing if—
+
+    (a) a hand-held stop sign is displayed at the crossing; or
+
+    (b) a pedestrian is on or entering the crossing.'
+  text_en: 'A driver approaching or at a children''s crossing must stop as near as practicable to, but before reaching, the
+    stop line at the crossing if—
+
+    (a) a hand-held stop sign is displayed at the crossing; or
+
+    (b) a pedestrian is on or entering the crossing.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-80(3)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 80(3)
+  page: 124
+  marking_type: children's crossing
+  element: transverse
+  text_original: 'If a driver stops at a children''s crossing for a hand-held stop sign, the driver must not proceed until
+    there is no pedestrian on or entering the crossing and the holder of the sign—
+
+    (a) no longer displays the sign towards the driver; or
+
+    (b) otherwise indicates that the driver may proceed.'
+  text_en: 'If a driver stops at a children''s crossing for a hand-held stop sign, the driver must not proceed until there
+    is no pedestrian on or entering the crossing and the holder of the sign—
+
+    (a) no longer displays the sign towards the driver; or
+
+    (b) otherwise indicates that the driver may proceed.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-80(4)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 80(4)
+  page: 125
+  marking_type: children's crossing
+  element: transverse
+  text_original: If a driver stops at a children's crossing for a pedestrian, the driver must not proceed until there is no
+    pedestrian on or entering the crossing.
+  text_en: If a driver stops at a children's crossing for a pedestrian, the driver must not proceed until there is no pedestrian
+    on or entering the crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-81(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 81(1)
+  page: 127
+  marking_type: pedestrian crossing
+  element: transverse
+  text_original: A driver approaching a pedestrian crossing must drive at a speed at which the driver can, if necessary, stop
+    safely before the crossing.
+  text_en: A driver approaching a pedestrian crossing must drive at a speed at which the driver can, if necessary, stop safely
+    before the crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-81(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 81(2)
+  page: 127
+  marking_type: pedestrian crossing
+  element: transverse
+  text_original: A driver must give way to any pedestrian on or entering a pedestrian crossing.
+  text_en: A driver must give way to any pedestrian on or entering a pedestrian crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-82
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: '82'
+  page: 129
+  marking_type: children's crossing or pedestrian crossing
+  element: transverse
+  text_original: A driver approaching a children's crossing, or pedestrian crossing, must not overtake or pass a vehicle that
+    is travelling in the same direction as the driver and is stopping, or has stopped, to give way to a pedestrian at the
+    crossing.
+  text_en: A driver approaching a children's crossing, or pedestrian crossing, must not overtake or pass a vehicle that is
+    travelling in the same direction as the driver and is stopping, or has stopped, to give way to a pedestrian at the crossing.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-111Notesforexamples4and5,1
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 111 Notes for examples 4 and 5, 1
+  page: 165
+  marking_type: traffic lane arrows
+  element: lane_marking
+  text_original: Rule 116 requires a driver to obey traffic lane arrows when driving in or leaving a roundabout.
+  text_en: Rule 116 requires a driver to obey traffic lane arrows when driving in or leaving a roundabout.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-VIC-132(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 132(2)
+  page: 187
+  marking_type: dividing line
+  element: boundary
+  text_original: A driver on a road with a dividing line must drive to the left of the dividing line, except as permitted
+    under rule 134, 139(2) or 144A(2).
+  text_en: A driver on a road with a dividing line must drive to the left of the dividing line, except as permitted under
+    rule 134, 139(2) or 144A(2).
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-132(2)Note
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 132(2) Note
+  page: 187
+  marking_type: single continuous dividing line or continuous line with broken line on right
+  element: boundary
+  text_original: in the case of a dividing line that is only a single continuous dividing line, or that is a broken dividing
+    line to the right of a single continuous dividing line, a driver may only drive to the right of such a line in the circumstances
+    set out in rules 134(3) and 139(2) (as supplemented by rule 139(3));
+  text_en: in the case of a dividing line that is only a single continuous dividing line, or that is a broken dividing line
+    to the right of a single continuous dividing line, a driver may only drive to the right of such a line in the circumstances
+    set out in rules 134(3) and 139(2) (as supplemented by rule 139(3));
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-132(2)Note-2
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 132(2) Note
+  page: 187
+  marking_type: continuous dividing line to right of broken dividing line
+  element: boundary
+  text_original: in the case of a dividing line that is a single continuous dividing line to the right of a broken dividing
+    line, a driver may only drive to the right of such a line in the circumstances set out in rules 134(2) and (3) and 139(2);
+  text_en: in the case of a dividing line that is a single continuous dividing line to the right of a broken dividing line,
+    a driver may only drive to the right of such a line in the circumstances set out in rules 134(2) and (3) and 139(2);
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-132(2)Note-3
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 132(2) Note
+  page: 188
+  marking_type: double continuous dividing lines
+  element: boundary
+  text_original: in the case of a dividing line that is 2 parallel continuous dividing lines, a driver may only drive to the
+    right of such a line in the circumstances set out in rule 139(2) (as supplemented by rule 139(3)).
+  text_en: in the case of a dividing line that is 2 parallel continuous dividing lines, a driver may only drive to the right
+    of such a line in the circumstances set out in rule 139(2) (as supplemented by rule 139(3)).
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-132(2A)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 132(2A)
+  page: 188
+  marking_type: continuous dividing lines
+  element: boundary
+  text_original: A driver on a road with a single continuous dividing line, a single continuous dividing line to the left
+    of a broken dividing line or 2 parallel continuous dividing lines must not drive across the dividing lines to perform
+    a U-turn.
+  text_en: A driver on a road with a single continuous dividing line, a single continuous dividing line to the left of a broken
+    dividing line or 2 parallel continuous dividing lines must not drive across the dividing lines to perform a U-turn.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+    u_turn: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-134(3)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 134(3)
+  page: 192
+  marking_type: single continuous, broken or combined dividing lines
+  element: boundary
+  text_original: 'If the dividing line is a single continuous or broken dividing line, or a broken dividing line to the left
+    or right of a single continuous dividing line, or 2 parallel broken dividing lines, the driver may drive to the right
+    of the dividing line—
+
+    (a) to enter or leave the road; or
+
+    (b) to enter a part of the road of one kind from a part of the road of another kind (for example, moving to or from a
+    service road or emergency stopping lane); or
+
+    (c) to park in angle parking on the opposite side of the road provided that the driver does not need to perform a U-turn
+    to reach the parking area.'
+  text_en: 'If the dividing line is a single continuous or broken dividing line, or a broken dividing line to the left or
+    right of a single continuous dividing line, or 2 parallel broken dividing lines, the driver may drive to the right of
+    the dividing line—
+
+    (a) to enter or leave the road; or
+
+    (b) to enter a part of the road of one kind from a part of the road of another kind (for example, moving to or from a
+    service road or emergency stopping lane); or
+
+    (c) to park in angle parking on the opposite side of the road provided that the driver does not need to perform a U-turn
+    to reach the parking area.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-137(2)(a)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 137(2)(a)
+  page: 196
+  marking_type: dividing strip marked by continuous lines
+  element: area
+  text_original: 'A driver may drive on a dividing strip that is at the same level as the road, and marked at each side by
+    a continuous line—
+
+    (a) to enter or leave the road; or'
+  text_en: 'A driver may drive on a dividing strip that is at the same level as the road, and marked at each side by a continuous
+    line—
+
+    (a) to enter or leave the road; or'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-138(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 138(2)
+  page: 198
+  marking_type: single continuous line bordering a painted island
+  element: area
+  text_original: 'A driver may drive on or over a single continuous line along the side of or surrounding a painted island
+    for up to 50 metres—
+
+    (a) to enter or leave the road; or
+
+    (b) to enter a turning lane that begins immediately after the painted island; or
+
+    (c) to enter a part of the road of one kind from a part of the road of another kind (for example, moving to or from a
+    service road or emergency stopping lane); or
+
+    (d) to park in angle parking on the opposite side of the road provided that the driver does not need to perform a U-turn
+    to reach the parking area.'
+  text_en: 'A driver may drive on or over a single continuous line along the side of or surrounding a painted island for up
+    to 50 metres—
+
+    (a) to enter or leave the road; or
+
+    (b) to enter a turning lane that begins immediately after the painted island; or
+
+    (c) to enter a part of the road of one kind from a part of the road of another kind (for example, moving to or from a
+    service road or emergency stopping lane); or
+
+    (d) to park in angle parking on the opposite side of the road provided that the driver does not need to perform a U-turn
+    to reach the parking area.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+    u_turn: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-146(1)Note2
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 146(1) Note 2
+  page: 211
+  marking_type: marked lane
+  element: lane_type
+  text_original: A driver is permitted to drive on a multi-lane road so that the driver's vehicle is not completely in a marked
+    lane to pass a bicycle or an electric scooter—see rule 144A(2).
+  text_en: A driver is permitted to drive on a multi-lane road so that the driver's vehicle is not completely in a marked
+    lane to pass a bicycle or an electric scooter—see rule 144A(2).
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-146(1)Note3
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 146(1) Note 3
+  page: 211
+  marking_type: continuous lane line
+  element: boundary
+  text_original: A driver is generally not permitted to move from one marked lane to another marked lane across a continuous
+    line separating the lanes—see rule 147.
+  text_en: A driver is generally not permitted to move from one marked lane to another marked lane across a continuous line
+    separating the lanes—see rule 147.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: AU-VIC-146(1)Note6
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 146(1) Note 6
+  page: 211
+  marking_type: marked lanes
+  element: lane_type
+  text_original: Drivers of certain long vehicles are permitted to use 2 marked lanes when turning at an intersection—see
+    rule 28 (left turns) and rule 32 (right turns).
+  text_en: Drivers of certain long vehicles are permitted to use 2 marked lanes when turning at an intersection—see rule 28
+    (left turns) and rule 32 (right turns).
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    turn_left: allowed
+    turn_right: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-147
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: '147'
+  page: 212
+  marking_type: continuous lane line
+  element: boundary
+  text_original: 'A driver on a multi-lane road must not move from one marked lane to another marked lane by crossing a continuous
+    line separating the lanes unless—
+
+    (a) the driver is avoiding an obstruction; or
+
+    (b) the driver is obeying a traffic control device applying to the first marked lane; or
+
+    (c) the driver is permitted to drive in both marked lanes under another provision of these Rules; or
+
+    (d) either of the marked lanes is a special purpose lane in which the driver is permitted to drive under these Rules and
+    the driver is moving to or from the special purpose lane; or
+
+    (e) either of the marked lanes is a special purpose lane during specified times only and the driver—
+
+    (i) is moving to or from that lane outside of the times during which it is a special purpose lane; and
+
+    (ii) is permitted to drive in that lane outside of the times during which it is a special purpose lane under these Rules;
+    or
+
+    (f) the rider of a motor cycle is engaging in lane filtering in the circumstances set out in rule 151B.'
+  text_en: 'A driver on a multi-lane road must not move from one marked lane to another marked lane by crossing a continuous
+    line separating the lanes unless—
+
+    (a) the driver is avoiding an obstruction; or
+
+    (b) the driver is obeying a traffic control device applying to the first marked lane; or
+
+    (c) the driver is permitted to drive in both marked lanes under another provision of these Rules; or
+
+    (d) either of the marked lanes is a special purpose lane in which the driver is permitted to drive under these Rules and
+    the driver is moving to or from the special purpose lane; or
+
+    (e) either of the marked lanes is a special purpose lane during specified times only and the driver—
+
+    (i) is moving to or from that lane outside of the times during which it is a special purpose lane; and
+
+    (ii) is permitted to drive in that lane outside of the times during which it is a special purpose lane under these Rules;
+    or
+
+    (f) the rider of a motor cycle is engaging in lane filtering in the circumstances set out in rule 151B.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-147Note2
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 147 Note 2
+  page: 213
+  marking_type: continuous lane line
+  element: boundary
+  text_original: A driver on a multi-lane road is permitted to drive from one marked lane to another marked lane by crossing
+    a continuous line separating the lanes to pass on the right side of a bicycle or an electric scooter—see rule 144A(2).
+  text_en: A driver on a multi-lane road is permitted to drive from one marked lane to another marked lane by crossing a continuous
+    line separating the lanes to pass on the right side of a bicycle or an electric scooter—see rule 144A(2).
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-150(3)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 150(3)
+  page: 218
+  marking_type: continuous white edge line
+  element: boundary
+  text_original: 'For this rule, a driver drives over a continuous white edge line on a road if—
+
+    (a) for a line on the far left side of the road—the driver''s vehicle is wholly or partly to the left of the line; or
+
+    (b) for a line on the far right side of the road—the driver''s vehicle is wholly or partly to the right of the line.'
+  text_en: 'For this rule, a driver drives over a continuous white edge line on a road if—
+
+    (a) for a line on the far left side of the road—the driver''s vehicle is wholly or partly to the left of the line; or
+
+    (b) for a line on the far right side of the road—the driver''s vehicle is wholly or partly to the right of the line.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-153(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 153(1)
+  page: 223
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: A driver (except the rider of a bicycle or an electric scooter) must not drive in a bicycle lane, unless
+    the driver is permitted to drive in the bicycle lane under this rule or rule 158.
+  text_en: A driver (except the rider of a bicycle or an electric scooter) must not drive in a bicycle lane, unless the driver
+    is permitted to drive in the bicycle lane under this rule or rule 158.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-153(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 153(2)
+  page: 223
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: If stopping or parking is permitted at a place in a bicycle lane, a driver may drive for up to 50 metres
+    in the bicycle lane to stop or park at that place.
+  text_en: If stopping or parking is permitted at a place in a bicycle lane, a driver may drive for up to 50 metres in the
+    bicycle lane to stop or park at that place.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-153(3)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 153(3)
+  page: 224
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: 'A driver may drive for up to 50 metres in a bicycle lane if the driver is driving—
+
+    (a) a commercial passenger vehicle while providing a commercial passenger vehicle service and is dropping off, or picking
+    up, passengers; or
+
+    (b) a public bus or public minibus and is dropping off, or picking up, passengers.'
+  text_en: 'A driver may drive for up to 50 metres in a bicycle lane if the driver is driving—
+
+    (a) a commercial passenger vehicle while providing a commercial passenger vehicle service and is dropping off, or picking
+    up, passengers; or
+
+    (b) a public bus or public minibus and is dropping off, or picking up, passengers.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-153(4)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 153(4)
+  page: 224
+  marking_type: bicycle lane symbol and word markings
+  element: lane_type
+  text_original: 'A bicycle lane is a marked lane, or the part of a marked lane—
+
+    (a) beginning at a bicycle lane sign applying to the lane, or a road marking comprising both a white bicycle symbol and
+    the word "lane" painted in white; and
+
+    (b) ending at the nearest of the following—
+
+    (i) an end bicycle lane sign applying to the lane, or a road marking comprising both a white bicycle symbol and the words
+    "end lane" painted in white;
+
+    (ii) an intersection (unless the lane is at the unbroken side of the continuing road at a T-intersection or continued
+    across the intersection by broken lines);
+
+    (iii) if the road ends at a dead end—the end of the road.'
+  text_en: 'A bicycle lane is a marked lane, or the part of a marked lane—
+
+    (a) beginning at a bicycle lane sign applying to the lane, or a road marking comprising both a white bicycle symbol and
+    the word "lane" painted in white; and
+
+    (b) ending at the nearest of the following—
+
+    (i) an end bicycle lane sign applying to the lane, or a road marking comprising both a white bicycle symbol and the words
+    "end lane" painted in white;
+
+    (ii) an intersection (unless the lane is at the unbroken side of the continuing road at a T-intersection or continued
+    across the intersection by broken lines);
+
+    (iii) if the road ends at a dead end—the end of the road.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-154(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 154(1)
+  page: 225
+  marking_type: bus lane
+  element: lane_type
+  text_original: A driver (except the driver of a public bus or coach or the rider of a bicycle or an electric scooter) must
+    not drive in a bus lane, unless the driver is permitted to drive in the bus lane under rule 158.
+  text_en: A driver (except the driver of a public bus or coach or the rider of a bicycle or an electric scooter) must not
+    drive in a bus lane, unless the driver is permitted to drive in the bus lane under rule 158.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-155(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 155(1)
+  page: 229
+  marking_type: tram lane
+  element: lane_type
+  text_original: A driver (except the driver of a tram, tram recovery vehicle or public bus) must not drive in a tram lane,
+    unless the driver is permitted to drive in the tram lane under this rule, rule 144A(2) or 158.
+  text_en: A driver (except the driver of a tram, tram recovery vehicle or public bus) must not drive in a tram lane, unless
+    the driver is permitted to drive in the tram lane under this rule, rule 144A(2) or 158.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-155(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 155(2)
+  page: 230
+  marking_type: tram lane
+  element: lane_type
+  text_original: A driver may drive in a tram lane if the driver is driving a truck and it is necessary for the driver to
+    drive in the tram lane to reach a place to drop off, or pick up, passengers or goods.
+  text_en: A driver may drive in a tram lane if the driver is driving a truck and it is necessary for the driver to drive
+    in the tram lane to reach a place to drop off, or pick up, passengers or goods.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-157(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 157(1)
+  page: 234
+  marking_type: truck lane
+  element: lane_type
+  text_original: A driver (except the driver of a truck) must not drive in a truck lane, unless the driver is permitted to
+    drive in the truck lane under rule 158.
+  text_en: A driver (except the driver of a truck) must not drive in a truck lane, unless the driver is permitted to drive
+    in the truck lane under rule 158.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-158(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 158(1)
+  page: 235
+  marking_type: special purpose lanes
+  element: lane_type
+  text_original: 'The driver of any vehicle may drive for up to the permitted distance in a bicycle lane, bus lane, tram lane,
+    transit lane or truck lane if it is necessary for the driver to drive in the lane—
+
+    (a) to enter or leave the road; or
+
+    (b) to turn at an intersection; or
+
+    (c) to enter a part of the road of one kind from a part of the road of another kind (for example, moving to or from a
+    service road, the shoulder of the road or an emergency stopping lane); or
+
+    (d) to overtake a vehicle that is turning right, or making a U-turn from the centre of the road, and is giving a right
+    change of direction signal; or
+
+    (e) to enter a marked lane, or part of the road where there is room for a line of traffic (other than motor bikes, bicycles,
+    electric scooters, motorised wheelchairs or animals), from the side of the road.'
+  text_en: 'The driver of any vehicle may drive for up to the permitted distance in a bicycle lane, bus lane, tram lane, transit
+    lane or truck lane if it is necessary for the driver to drive in the lane—
+
+    (a) to enter or leave the road; or
+
+    (b) to turn at an intersection; or
+
+    (c) to enter a part of the road of one kind from a part of the road of another kind (for example, moving to or from a
+    service road, the shoulder of the road or an emergency stopping lane); or
+
+    (d) to overtake a vehicle that is turning right, or making a U-turn from the centre of the road, and is giving a right
+    change of direction signal; or
+
+    (e) to enter a marked lane, or part of the road where there is room for a line of traffic (other than motor bikes, bicycles,
+    electric scooters, motorised wheelchairs or animals), from the side of the road.'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    go_straight: allowed
+    turn_left: allowed
+    turn_right: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-169
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: '169'
+  page: 249
+  marking_type: continuous yellow edge line
+  element: boundary
+  text_original: A driver must not stop at the side of a road marked with a continuous yellow edge line.
+  text_en: A driver must not stop at the side of a road marked with a continuous yellow edge line.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-187(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 187(1)
+  page: 269
+  marking_type: bus, transit or truck lane
+  element: lane_type
+  text_original: 'A driver must not stop in a bus lane, transit lane or truck lane unless the driver—
+
+    (a) is driving—
+
+    (i) a commercial passenger vehicle while providing a commercial passenger vehicle service and is dropping off, or picking
+    up, passengers; or
+
+    (ii) a public bus or public minibus and is dropping off, or picking up, passengers; and
+
+    (b) is permitted to drive in the lane under these Rules.'
+  text_en: 'A driver must not stop in a bus lane, transit lane or truck lane unless the driver—
+
+    (a) is driving—
+
+    (i) a commercial passenger vehicle while providing a commercial passenger vehicle service and is dropping off, or picking
+    up, passengers; or
+
+    (ii) a public bus or public minibus and is dropping off, or picking up, passengers; and
+
+    (b) is permitted to drive in the lane under these Rules.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-187(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 187(2)
+  page: 269
+  marking_type: tram lane or tramway
+  element: lane_type
+  text_original: A driver (except the driver of a tram, a tram recovery vehicle or a public bus) must not stop in a tram lane,
+    a tramway or on tram tracks.
+  text_en: A driver (except the driver of a tram, a tram recovery vehicle or a public bus) must not stop in a tram lane, a
+    tramway or on tram tracks.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-187(3)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 187(3)
+  page: 269
+  marking_type: bus only lane
+  element: lane_type
+  text_original: A driver must not stop in a bus only lane unless the driver is driving a public bus and is dropping off,
+    or picking up, passengers.
+  text_en: A driver must not stop in a bus only lane unless the driver is driving a public bus and is dropping off, or picking
+    up, passengers.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-197(1A)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 197(1A)
+  page: 280
+  marking_type: painted island
+  element: area
+  text_original: A driver must not stop on a painted island.
+  text_en: A driver must not stop on a painted island.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-203B(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 203B(1)
+  page: 288
+  marking_type: electric-powered vehicle parking area
+  element: area
+  text_original: A driver of a vehicle that is not an electric-powered vehicle must not stop in a parking area for electric-powered
+    vehicles.
+  text_en: A driver of a vehicle that is not an electric-powered vehicle must not stop in a parking area for electric-powered
+    vehicles.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-203B(2)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 203B(2)
+  page: 288
+  marking_type: electric-powered vehicle symbol
+  element: area
+  text_original: 'A parking area for electric-powered vehicles is a length or area of a road—
+
+    (a) to which a permissive parking sign displaying an electric-powered vehicle symbol applies; or
+
+    (b) to which an electric-powered vehicle parking sign applies; or
+
+    (c) indicated by a road marking that consists of, or includes, an electric-powered vehicle symbol.'
+  text_en: 'A parking area for electric-powered vehicles is a length or area of a road—
+
+    (a) to which a permissive parking sign displaying an electric-powered vehicle symbol applies; or
+
+    (b) to which an electric-powered vehicle parking sign applies; or
+
+    (c) indicated by a road marking that consists of, or includes, an electric-powered vehicle symbol.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-247(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 247(1)
+  page: 370
+  marking_type: bicycle lane
+  element: lane_type
+  text_original: The rider of a bicycle or an electric scooter riding on a length of road with a bicycle lane designed for
+    bicycles and electric scooters travelling in the same direction as the rider must ride in the bicycle lane unless it is
+    impracticable to do so.
+  text_en: The rider of a bicycle or an electric scooter riding on a length of road with a bicycle lane designed for bicycles
+    and electric scooters travelling in the same direction as the rider must ride in the bicycle lane unless it is impracticable
+    to do so.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-247A(1)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 247A(1)
+  page: 370
+  marking_type: bicycle storage area
+  element: area
+  text_original: A rider of a bicycle or an electric scooter approaching a bicycle storage area at an intersection that has
+    traffic lights or traffic arrows showing a red traffic light or red arrow must not enter the bicycle storage area other
+    than from a bicycle lane, unless the rider is not required to ride in the bicycle lane under these Rules.
+  text_en: A rider of a bicycle or an electric scooter approaching a bicycle storage area at an intersection that has traffic
+    lights or traffic arrows showing a red traffic light or red arrow must not enter the bicycle storage area other than from
+    a bicycle lane, unless the rider is not required to ride in the bicycle lane under these Rules.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    enter_waiting_area: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-281(a)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 281(a)
+  page: 420
+  marking_type: stop line at B lights
+  element: transverse
+  text_original: 'The driver of a public bus approaching or at B lights showing a red B light must stop—
+
+    (a) if there is a stop line at or near the B lights—as near as practicable to, but before reaching, the stop line; or'
+  text_en: 'The driver of a public bus approaching or at B lights showing a red B light must stop—
+
+    (a) if there is a stop line at or near the B lights—as near as practicable to, but before reaching, the stop line; or'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-282(a)
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 282(a)
+  page: 420
+  marking_type: stop line at B lights
+  element: transverse
+  text_original: 'The driver of a public bus approaching or at B lights showing a yellow B light must stop—
+
+    (a) if there is a stop line at or near the B lights and the driver can stop safely before reaching the stop line—as near
+    as practicable to, but before reaching, the stop line; or'
+  text_en: 'The driver of a public bus approaching or at B lights showing a yellow B light must stop—
+
+    (a) if there is a stop line at or near the B lights and the driver can stop safely before reaching the stop line—as near
+    as practicable to, but before reaching, the stop line; or'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-352Example
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: 352 Example
+  page: 523
+  marking_type: stop line
+  element: transverse
+  text_original: If a driver stops behind a vehicle that has stopped at a stop sign or stop line in accordance with rule 67,
+    68 or 121, the driver must, after the vehicle has proceeded, stop at the stop sign or stop line in accordance with the
+    rule.
+  text_en: If a driver stops behind a vehicle that has stopped at a stop sign or stop line in accordance with rule 67, 68
+    or 121, the driver must, after the vehicle has proceeded, stop at the stop sign or stop line in accordance with the rule.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-Dictionary—dividingline
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: Dictionary—dividing line
+  page: 578
+  marking_type: dividing line
+  element: boundary
+  text_original: dividing line means a road marking formed by a line, or 2 parallel lines, whether broken or continuous, designed
+    to indicate the parts of the road to be used by vehicles travelling in opposite directions;
+  text_en: dividing line means a road marking formed by a line, or 2 parallel lines, whether broken or continuous, designed
+    to indicate the parts of the road to be used by vehicles travelling in opposite directions;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-Dictionary
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: Dictionary
+  page: 589
+  marking_type: marked lane
+  element: lane_type
+  text_original: marked lane means an area of a road marked by continuous or broken lines, or rows of studs or markers, on
+    the road surface that is designed for use by a single line of vehicles;
+  text_en: marked lane means an area of a road marked by continuous or broken lines, or rows of studs or markers, on the road
+    surface that is designed for use by a single line of vehicles;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-Dictionary-2
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: Dictionary
+  page: 590
+  marking_type: marked lanes on a multi-lane road
+  element: lane_type
+  text_original: 'multi-lane road, for a driver, means a one-way road, or a two-way road, with 2 or more marked lanes (except
+    bicycle lanes) that are—
+
+    (a) on the side of the dividing line or median strip where the driver is driving; and
+
+    (b) for the use of vehicles travelling in the same direction;'
+  text_en: 'multi-lane road, for a driver, means a one-way road, or a two-way road, with 2 or more marked lanes (except bicycle
+    lanes) that are—
+
+    (a) on the side of the dividing line or median strip where the driver is driving; and
+
+    (b) for the use of vehicles travelling in the same direction;'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-Dictionary-3
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: Dictionary
+  page: 599
+  marking_type: right traffic lane arrows
+  element: lane_marking
+  text_original: right traffic lane arrows means traffic lane arrows applying to a marked lane that indicate only a direction
+    to the right;
+  text_en: right traffic lane arrows means traffic lane arrows applying to a marked lane that indicate only a direction to
+    the right;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    go_straight: prohibited
+    turn_left: prohibited
+    turn_right: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-Dictionary-4
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: Dictionary
+  page: 601
+  marking_type: slip lane separated by a painted island
+  element: lane_type
+  text_original: slip lane means an area of road for vehicles turning left that is separated, at some point, from other parts
+    of the road by a painted island or traffic island, but not by a median strip;
+  text_en: slip lane means an area of road for vehicles turning left that is separated, at some point, from other parts of
+    the road by a painted island or traffic island, but not by a median strip;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    turn_left: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-Dictionary-5
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: Dictionary
+  page: 604
+  marking_type: traffic lane arrows
+  element: lane_marking
+  text_original: traffic lane arrows means a traffic sign, road marking or device that displays arrows indicating one or more
+    directions and is designed to apply to one or more marked lanes, but does not include traffic arrows;
+  text_en: traffic lane arrows means a traffic sign, road marking or device that displays arrows indicating one or more directions
+    and is designed to apply to one or more marked lanes, but does not include traffic arrows;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-Dictionary-6
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: Dictionary
+  page: 606
+  marking_type: turn line
+  element: boundary
+  text_original: turn line means a road marking, at an intersection, consisting of a line (whether broken or continuous) that
+    is designed to indicate how a turn is to be made at the intersection;
+  text_en: turn line means a road marking, at an intersection, consisting of a line (whether broken or continuous) that is
+    designed to indicate how a turn is to be made at the intersection;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: AU-VIC-Dictionary-7
+  region: AU-VIC
+  source: Road Safety Road Rules 2017 (Vic), authorised version 027 (27 Oct 2026)
+  section: Dictionary
+  page: 607
+  marking_type: U-turn traffic lane arrows
+  element: lane_marking
+  text_original: U-turn traffic lane arrows means traffic lane arrows applying to a marked lane that indicate only a U-turn
+    direction;
+  text_en: U-turn traffic lane arrows means traffic lane arrows applying to a marked lane that indicate only a U-turn direction;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    go_straight: prohibited
+    turn_left: prohibited
+    turn_right: prohibited
+    u_turn: allowed
+  verified_quote: true
+  norm_check: agrees

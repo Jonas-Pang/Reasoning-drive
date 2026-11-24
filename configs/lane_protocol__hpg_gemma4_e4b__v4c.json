@@ -1,0 +1,116 @@
+{
+  "frozen_utc": "2026-11-18T04:43:26Z",
+  "git_commit": "",
+  "note": "lane_v4c for hpg_gemma4_e4b (same prompt as gemma4:31b lane_v4c; owner conventions 2026-11-17)",
+  "files": {
+    "prompts/lane_v4c/README.md": "ff3dd0f8cdbd986d",
+    "prompts/lane_v4c/citation_A.txt": "39d57891f25f3857",
+    "prompts/lane_v4c/citation_B.txt": "20932d132ae40750",
+    "prompts/lane_v4c/fields.txt": "45ea25129426fd82",
+    "prompts/lane_v4c/passage_line.txt": "bf0873ed2b50f7d2",
+    "prompts/lane_v4c/procedure.txt": "d2bb5654e7b66840",
+    "prompts/lane_v4c/role.txt": "c62b902f146c65c6",
+    "prompts/lane_v4c/rules_header.txt": "cd54994f3b1eb176",
+    "prompts/lane_v4c/rules_step_A.txt": "f04fe439219d483b",
+    "prompts/lane_v4c/rules_step_B.txt": "0726a1f68ac04c58",
+    "prompts/lane_v4c/user.txt": "af93305a4361d6c0",
+    "prompts/lane_v4c/user_D.txt": "5f28756473ca983a",
+    "prompts/lane_v4c/zoom.json": "19d957ea8a6c3dad",
+    "reasoning_drive/agent/lane.py": "1634dc212c870879",
+    "reasoning_drive/evaluation/lane_scoring.py": "c244e8ba1320ff82",
+    "reasoning_drive/labeling/lanes.py": "e116cd12134ce57c",
+    "configs/schemas/lane_schema.json": "a1d772be86243480",
+    "regulations/_common/lane_action_rules.json": "2aa94c6d3277700c",
+    "regulations/CN/lane_action_rules.json": "97f9ba75d7a7e557",
+    "regulations/IN/lane_action_rules.json": "da499eae0695c8f7",
+    "regulations/UK/lane_action_rules.json": "40edf9ba895a7df4",
+    "regulations/US/lane_action_rules.json": "ec53acc532b5f4a6",
+    "regulations/CN/passages_marking.json": "7fb4757074227763",
+    "regulations/CN/passages_lane.yaml": "a876c488ae68a5fb",
+    "regulations/IN/passages_lane.yaml": "daebc70c53cb40ca",
+    "regulations/UK/passages_lane.yaml": "e0976312e55c39d5",
+    "regulations/US/passages_marking.json": "4fb48f3989d5bce1",
+    "regulations/US/passages_lane.yaml": "fdc6b557c2a68241"
+  },
+  "settings": {
+    "base_url": "http://127.0.0.1:11434",
+    "model": "gemma4:e4b",
+    "reasoning_effort": null,
+    "temperature": 0,
+    "image_detail": null,
+    "max_output_tokens": 6000,
+    "instruction_role": "developer",
+    "store": false,
+    "provider": "ollama",
+    "think": false,
+    "num_ctx": 16384,
+    "seed": 6216,
+    "num_thread": 2,
+    "quantization": "Q4_K_M",
+    "model_digest": "dc35e8d9c6061baa6f0fa870975ab6932e2542b579b13ea0f199fa4bb7300c9c",
+    "parameter_size": "7.5B",
+    "engine": "ollama 0.33.0"
+  },
+  "prompts": {
+    "A_CN": {
+      "instructions": "c22f78199faf46aa",
+      "user_text": "844caccafa8ca66b",
+      "schema": "139a081103372a93"
+    },
+    "B_CN": {
+      "instructions": "f8e6cddfe36ebd96",
+      "user_text": "844caccafa8ca66b",
+      "schema": "139a081103372a93"
+    },
+    "C_CN": {
+      "instructions": "be046f1331bc9798",
+      "user_text": "844caccafa8ca66b",
+      "schema": "139a081103372a93"
+    },
+    "A_IN": {
+      "instructions": "c22f78199faf46aa",
+      "user_text": "e0909b806b48fb42",
+      "schema": "139a081103372a93"
+    },
+    "B_IN": {
+      "instructions": "19ad7e657fe07e54",
+      "user_text": "e0909b806b48fb42",
+      "schema": "139a081103372a93"
+    },
+    "C_IN": {
+      "instructions": "d4038dbe023621b5",
+      "user_text": "e0909b806b48fb42",
+      "schema": "139a081103372a93"
+    },
+    "A_UK": {
+      "instructions": "36cc1d6d9b34f78d",
+      "user_text": "4f2c52fb578ad983",
+      "schema": "dbc85933833401a6"
+    },
+    "B_UK": {
+      "instructions": "76ccca9900218fd1",
+      "user_text": "4f2c52fb578ad983",
+      "schema": "dbc85933833401a6"
+    },
+    "C_UK": {
+      "instructions": "8af6dfacf232f77c",
+      "user_text": "4f2c52fb578ad983",
+      "schema": "dbc85933833401a6"
+    },
+    "A_US": {
+      "instructions": "c22f78199faf46aa",
+      "user_text": "74e5823acc8c746f",
+      "schema": "139a081103372a93"
+    },
+    "B_US": {
+      "instructions": "be046f1331bc9798",
+      "user_text": "74e5823acc8c746f",
+      "schema": "139a081103372a93"
+    },
+    "C_US": {
+      "instructions": "f8e6cddfe36ebd96",
+      "user_text": "74e5823acc8c746f",
+      "schema": "139a081103372a93"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+carla_Town03_lane_change | lane | Test B | gpt-6.1-sol
+------------------------------------------------------
+Step 1  Scene           An urban two-way road runs beneath an elevated structure. Two lanes are visible in our
+                        direction; our car is in the left lane, with no clearly identifiable intersection or
+                        lane ending ahead. (lanes 2, mine 1, full)
+Step 2  Left            Two parallel solid yellow lines separate our lane from opposing traffic; neither line
+                        has visible gaps, and there is no curb at this boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 2  Right           A single solid white line separates our lane from another paved lane in our direction;
+                        the sidewalk curb lies beyond that adjacent lane.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: The center line on the left and same-direction lane line on the right agree
+                        with our being lane 1 of 2. | roles: Double solid yellow fits separation from opposing
+                        traffic, and solid white fits separation of same-direction lanes. | markings: No
+                        arrows, words, symbols, transverse lines, or marked waiting areas are visible in our
+                        lane. | unseen: No intersection movements or distant markings have been inferred from
+                        the road layout. | result: consistent
+Step 5  Rule            left_boundary: The double solid yellow center line establishes a two-direction no-
+                        passing zone, prohibiting crossing left to pass. [US-3B.01-06] "Except where a
+                        reversible lane or a two-way left-turn lane is present, the center line markings on
+                        undivided two-way roadways with four or more lanes for moving"
+Step 5  Rule            right_boundary: The single solid white lane line discourages, but does not prohibit,
+                        changing into the adjacent right lane. [US-3B.06-05-06] "Where crossing the lane line
+                        markings with care is not discouraged or prohibited, the lane line markings shall
+                        consist of a normal width broken white line. Wher"
+Step 6  change_left     prohibited: The double solid yellow center line prohibits crossing into opposing
+                        traffic to pass under US-3B.01-06.
+Step 6  change_right    allowed: The single solid white lane line only discourages crossing under
+                        US-3B.06-05-06.
+Step 6  go_straight     not_applicable: No marking governs this action.
+Step 6  turn_left       not_applicable: No marking governs this action.
+Step 6  turn_right      not_applicable: No marking governs this action.
+Step 6  u_turn          not_applicable: No marking governs this action.
+Step 6  enter_waiting_areanot_applicable: No waiting area or adjacent two-way left-turn lane is visible.
+Step 7  Reflect         consistent
+Advice                  Stay to the right of the double yellow center line; changing into the right lane is
+                        discouraged but not prohibited by its solid white boundary. No visible turn arrows or
+                        stop line establish intersection movements or a stopping point.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation in_pack_not_accepted, contradictions []
+Tokens                  in 9598, out 886, 13.69 s

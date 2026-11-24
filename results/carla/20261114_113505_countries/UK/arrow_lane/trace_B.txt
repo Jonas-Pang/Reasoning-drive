@@ -1,0 +1,52 @@
+carla_Town03_arrow_lane_mirrored | lane | Test B | gpt-6.1-sol
+--------------------------------------------------------------
+Step 1  Scene           An urban road approaches a junction beneath an elevated structure. My car is in the
+                        right-hand lane, which has a right-turn arrow; two apparent approach lanes are
+                        visible, although the distant layout is less clear. (lanes 2, mine 2, partial)
+Step 2  Left            A white longitudinal line separates my lane from pavement on the left; the foreground
+                        section is continuous over a long distance, and its distant continuation is too
+                        compressed to establish a reliable dash-and-gap pattern.
+                        white solid, curb no, lane_line, evidence partial
+Step 2  Right           A continuous white line runs along the right side of my lane beside a raised pavement
+                        curb, with buildings beyond.
+                        white solid, curb yes, edge_line, evidence full
+Step 3  Markings        arrow:right (full): A white arrow ahead has a shaft bending to the right and a single
+                        right-pointing arrowhead.
+Step 4  Cross-check     position: The apparent right-hand position among two approach lanes agrees with a lane
+                        divider on the left and a road edge on the right, but the direction of traffic in the
+                        adjoining lane is not independently confirmed. | roles: The right white edge line and
+                        curb fit the roadway edge; the left line's precise pattern and lane-divider
+                        interpretation remain partially evidenced. | markings: The right-turn arrow agrees
+                        with the apparent right-hand approach lane; no additional readable guidance marking or
+                        waiting area is visible. | unseen: The left line is described as continuous only over
+                        its visible foreground stretch; its complete pattern and the distant junction markings
+                        cannot be established. | result: Consistent with partial evidence for the left
+                        boundary and approach layout.
+Step 5  Rule            left_boundary: No supplied passage establishes the crossing rule for this incompletely
+                        resolved white boundary; Rule 131 cannot confidently be applied without confirming a
+                        broken lane divider.
+Step 5  Rule            right_boundary: No supplied passage covers this curb and edge line, but the raised
+                        physical roadway edge is not an adjoining drivable lane.
+Step 5  Rule            arrow:right: Follow the lane direction indicated by the marking; the single right-turn
+                        arrow designates a right turn rather than straight ahead, left or a U-turn. [UK-
+                        Rule134] "You should follow the signs and road markings and get into the lane as
+                        directed."
+Step 6  change_left     not_determined: The left boundary's complete pattern is unresolved, so its crossing
+                        permission cannot be established.
+Step 6  change_right    prohibited: The right boundary is a raised curb and roadway edge, not a drivable
+                        continuation.
+Step 6  go_straight     prohibited: The single right-turn lane-use arrow does not designate straight ahead.
+Step 6  turn_left       prohibited: The single right-turn lane-use arrow does not designate a left turn.
+Step 6  turn_right      allowed: The visible right-turn arrow designates this movement.
+Step 6  u_turn          prohibited: The single right-turn lane-use arrow does not designate a U-turn.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         Consistent: the arrow governs junction movements, the curb governs leaving the lane to
+                        the right, and the unresolved left boundary leaves crossing to the left undetermined.
+Advice                  Use this lane for the marked right turn and do not move across the right-hand curb.
+                        For any other movement, establish the adjoining lane's direction and boundary pattern
+                        before considering a lane change; no clear stopping line is identifiable here.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:right'], missed []), actions None, unsafe [], citation in_pack_not_accepted,
+                        contradictions []
+Tokens                  in 6305, out 1303, 28.8 s

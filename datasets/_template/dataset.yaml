@@ -1,0 +1,25 @@
+# Template of one country's images and labels. Copy this folder to datasets/<CODE>/ (the same code as
+# regulations/<CODE>/), list the label collections, then label them with the labeling tool:
+#   python main.py label --data <workspace> images init <collection>  a public dataset: built-in readers (bdd100k, culane),
+#                                                                     or any folder of images with reader: folder below
+#   python main.py label ingest <video>                               own dash-cam videos
+#   python main.py label --data <workspace> lanes                     lane labels, one per image
+#   python main.py label combine <workspace> ...                      all final labels -> datasets/splits/
+# The labels of a collection are written to datasets/<CODE>/<collection>/; the development and test images are
+# chosen by the split rule below, so a new country gets a development set and a test set the same way as US and CN.
+
+region: XX
+collections:
+  - name: xx_dataset            # folder name of the collection = "collection" in the labeling workspace
+    kind: images                # images (a dataset) or video (own recordings)
+    source: ""                  # where the images come from and their licence
+    # reader: folder            # for a dataset without a built-in reader: every image under default_source, one clip per folder
+    # dataset_name: ""          # the dataset's name in the labels
+    # download: ""              # where to get it (accept its terms there)
+    # default_source: data/extracted/xx_dataset
+    # candidates: datasets/XX/candidates_geodrive.csv   # optional list of frames to look at first (rel column)
+
+split:
+  rule: 'sha1("6216:" + clip) mod 10 = 0 -> dev, else test'
+  per_marking_type: {dev: 6, test: 30}
+  degraded_test: 30

@@ -1,0 +1,58 @@
+# the United Kingdom (UK). The rule text is read into passages by the extractor; until it is accepted the country is listed
+# but not used by any run until then:
+#   python main.py regulations extract --pdf regulations/inbox/uk_highway_code_103-158.html --code UK --name "the United Kingdom" --driving-side left --language en --title "The Highway Code, rules 127-132 (Lines and lane markings on the road) and rules 133-143 (Multi-lane carriageways)" --real
+#   python main.py regulations accept UK
+# Official sources only (GOV.UK, legislation.gov.uk). The Highway Code says what each marking means for drivers; MUST / MUST NOT mark a legal requirement. The Traffic Signs Manual, Chapter 5 (2018) is the design manual for highway authorities.
+
+# Scotland and Wales have no lane-marking rules of their own: The Highway Code (Great Britain version) applies to England,
+# Scotland and Wales, and the Traffic Signs Regulations and General Directions 2016 (TSRGD) apply across Great Britain.
+# Northern Ireland has its own Highway Code: region UK-NI.
+#   python main.py regulations fetch UK
+#   python main.py regulations extract-all UK --real
+
+code: UK
+name: the United Kingdom
+name_zh: 英国
+driving_side: left
+applies_to: [England, Scotland, Wales]
+status: in use                  # planned -> draft (extracted) -> in use (accepted)
+
+standard:
+  title: "The Highway Code (rules 127-143 and Road markings) and the Traffic Signs Regulations and General Directions 2016, Schedule 9 Part 6 (regulatory road markings) and Schedule 11 Part 4 (advisory road markings)"
+  language: en
+  source_url: https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158
+  source_pdf: regulations/inbox/uk_highway_code_103-158.html
+  licence: "Open Government Licence v3.0"
+
+documents:
+  - tag: highway_code
+    title: "The Highway Code (Great Britain), rules 103-158: lines and lane markings (127-132), multi-lane carriageways (133-143)"
+    urls:
+      - {url: "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158", type: html}
+    file: regulations/inbox/uk_highway_code_103-158.html
+  - tag: hc_markings
+    title: "The Highway Code (Great Britain), Road markings"
+    urls:
+      - {url: "https://www.gov.uk/guidance/the-highway-code/road-markings", type: html}
+    file: regulations/inbox/UK/uk_highway_code_road_markings
+  - tag: tsrgd
+    title: "The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 9: road markings and their significance"
+    urls:
+      - {url: "https://www.legislation.gov.uk/uksi/2016/362/schedule/9?view=plain", type: html}
+    file: regulations/inbox/UK/uk_tsrgd_2016_schedule_9
+    keywords: ["road marking", "diagram 10", "double white", "hatched", "lane line", "centre line", "edge of the carriageway", "traffic lane", "bus lane", "cycle lane", "box junction", "give way", "stop line"]
+    min_hits: 2
+  - tag: tsrgd_s11
+    title: "The Traffic Signs Regulations and General Directions 2016 (SI 2016/362), Schedule 11 Part 4: advisory road markings (lane lines 1005, centre lines 1008, warning lines 1004, edge lines 1012, hatching 1040/1041, lane arrows 1038)"
+    urls:
+      - {url: "https://www.legislation.gov.uk/uksi/2016/362/schedule/11/part/4?view=plain", type: html}
+    file: regulations/inbox/UK/uk_tsrgd_2016_schedule_11_part_4
+    note: "Copied word for word from the page on 2026-11-17 (latest revised version); passages UK-TSRGD-S11P4-item<N> written from it without the API."
+
+passages:
+  marking: passages_lane.yaml
+  lane: [passages_lane.yaml]
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

@@ -1,0 +1,798 @@
+rel,collection,items,categories,lane_words
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531883987862460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531883988362460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531883988862460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531883989362460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531883989862460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531883990362460.jpg,nuscenes_sg,2,region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531883990862460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531883991362460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531883991912468.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531883992412462.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531883992912463.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531884309762460.jpg,nuscenes_sg,1,planning,bus lane;dashed;lane change;lane markings;overtak
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531884310262460.jpg,nuscenes_sg,1,planning,bus lane;dashed;lane change;lane markings;overtak
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531884310762460.jpg,nuscenes_sg,1,planning,bus lane;dashed;lane change;lane markings;overtak
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531884311262460.jpg,nuscenes_sg,1,planning,bus lane;dashed;lane change;lane markings;overtak
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531884311762460.jpg,nuscenes_sg,1,planning,bus lane;dashed;lane change;lane markings;overtak
+samples/CAM_FRONT/n015-2018-07-18-11-18-34+0800__CAM_FRONT__1531884312162460.jpg,nuscenes_sg,1,planning,bus lane;dashed;lane change;lane markings;overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886089612464.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886090112467.jpg,nuscenes_sg,2,planning;region,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886090612463.jpg,nuscenes_sg,2,planning;region,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886091162460.jpg,nuscenes_sg,2,planning;region,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886091662460.jpg,nuscenes_sg,2,planning;region,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886092162460.jpg,nuscenes_sg,2,planning;region,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886092662460.jpg,nuscenes_sg,2,planning;region,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886139012467.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886139512478.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886140012465.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886140412464.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886140912465.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886141512466.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886161012469.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886161512469.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886162012466.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886162412465.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886162912464.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886163512466.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886167762460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886168262460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886168762460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886169262460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886169762460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886170262460.jpg,nuscenes_sg,2,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886170662460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886171162460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886171662460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886172162460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886172662460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886173162460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886173662460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886174162460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886174662460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886175162460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-18-11-50-34+0800__CAM_FRONT__1531886175662460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-24-11-03-52+0800__CAM_FRONT__1532401618362460.jpg,nuscenes_sg,1,prediction,stop line
+samples/CAM_FRONT/n015-2018-07-24-11-03-52+0800__CAM_FRONT__1532401618862460.jpg,nuscenes_sg,1,prediction,stop line
+samples/CAM_FRONT/n015-2018-07-24-11-03-52+0800__CAM_FRONT__1532401619412460.jpg,nuscenes_sg,1,prediction,stop line
+samples/CAM_FRONT/n015-2018-07-24-11-03-52+0800__CAM_FRONT__1532401619912460.jpg,nuscenes_sg,1,prediction,stop line
+samples/CAM_FRONT/n015-2018-07-24-11-03-52+0800__CAM_FRONT__1532401620412460.jpg,nuscenes_sg,1,prediction,stop line
+samples/CAM_FRONT/n015-2018-07-24-11-03-52+0800__CAM_FRONT__1532401620912460.jpg,nuscenes_sg,1,prediction,stop line
+samples/CAM_FRONT/n015-2018-07-24-11-03-52+0800__CAM_FRONT__1532401626362460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-24-11-03-52+0800__CAM_FRONT__1532401626912460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-24-11-03-52+0800__CAM_FRONT__1532401627412460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-24-11-03-52+0800__CAM_FRONT__1532401627912460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-24-11-03-52+0800__CAM_FRONT__1532401628362460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-24-11-03-52+0800__CAM_FRONT__1532401628862460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402044412460.jpg,nuscenes_sg,2,planning;region,bus lane;turn arrow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402044862460.jpg,nuscenes_sg,2,planning;region,bus lane;turn arrow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402045362460.jpg,nuscenes_sg,2,planning;region,bus lane;turn arrow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402045862460.jpg,nuscenes_sg,2,planning;region,bus lane;turn arrow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402046412460.jpg,nuscenes_sg,2,planning;region,bus lane;turn arrow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402046912487.jpg,nuscenes_sg,3,planning;region,bus lane;dashed;give way line;solid white;solid yellow;turn arrow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402047412460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402047862460.jpg,nuscenes_sg,2,region,dashed;give way line;solid white;solid yellow;stop line
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402048412460.jpg,nuscenes_sg,2,region,dashed;give way line;solid white;solid yellow;stop line
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402048912460.jpg,nuscenes_sg,2,region,dashed;give way line;solid white;solid yellow;stop line
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402049512460.jpg,nuscenes_sg,2,region,dashed;give way line;solid white;solid yellow;stop line
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402050012460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402050612460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402053162460.jpg,nuscenes_sg,2,perception;region,lane markings;overtak
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402053662755.jpg,nuscenes_sg,3,perception;region,bus lane;lane markings;overtak
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402054162460.jpg,nuscenes_sg,3,perception;region,bus lane;lane markings;overtak
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402054662460.jpg,nuscenes_sg,3,perception;region,bus lane;lane markings;overtak
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402055162460.jpg,nuscenes_sg,3,perception;region,bus lane;lane markings;overtak
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402055662460.jpg,nuscenes_sg,3,perception;region,bus lane;lane markings;overtak
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402056162460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402418012468.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402422662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402423162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402423662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402424162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402424612460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402425112460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402431762460.jpg,nuscenes_sg,1,perception,turn arrow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402432262460.jpg,nuscenes_sg,1,perception,turn arrow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402432862460.jpg,nuscenes_sg,1,perception,turn arrow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402433362460.jpg,nuscenes_sg,1,perception,turn arrow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402433862460.jpg,nuscenes_sg,1,perception,turn arrow
+samples/CAM_FRONT/n015-2018-07-24-11-13-19+0800__CAM_FRONT__1532402434362472.jpg,nuscenes_sg,1,perception,turn arrow
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402825012460.jpg,nuscenes_sg,1,prediction,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402825412460.jpg,nuscenes_sg,1,prediction,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402826012460.jpg,nuscenes_sg,2,prediction;region,overtak;stop line
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402826512460.jpg,nuscenes_sg,2,prediction;region,overtak;stop line
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402827012460.jpg,nuscenes_sg,2,prediction;region,overtak;stop line
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402827512460.jpg,nuscenes_sg,2,prediction;region,overtak;stop line
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402828012460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402828612460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402928112460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402928662460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402929162460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402929662460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402930112460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402930612460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402931162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402933112460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402933612460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402934112460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402934662484.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402935162463.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402935662460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662759912460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662760412460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662760912460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662761412460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662761912460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662762512460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662764012460.jpg,nuscenes_sg,2,perception;region,center line;lane markings;road marking;stop line
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662764512460.jpg,nuscenes_sg,2,perception;region,center line;lane markings;road marking;stop line
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662765012460.jpg,nuscenes_sg,3,perception;planning;region,center line;lane markings;road marking;stop line
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662765512460.jpg,nuscenes_sg,3,perception;planning;region,center line;lane markings;road marking;stop line
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662766012460.jpg,nuscenes_sg,3,perception;planning;region,center line;lane markings;road marking;stop line
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662766512460.jpg,nuscenes_sg,3,perception;planning;region,center line;lane markings;road marking;stop line
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662767012460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-07-27-11-36-48+0800__CAM_FRONT__1532662767512460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112723162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112723662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112724162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112724662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112725162460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112725662460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112726162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112726662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112727162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112727662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112789162473.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112789612460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112790112460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112790612460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112791012460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112791612460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112792012460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112792512460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112793012460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112793512460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112796162460.jpg,nuscenes_sg,1,planning,lane markings
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112796662460.jpg,nuscenes_sg,1,planning,lane markings
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112797162460.jpg,nuscenes_sg,1,planning,lane markings
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112797662460.jpg,nuscenes_sg,1,planning,lane markings
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112798162460.jpg,nuscenes_sg,1,planning,lane markings
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112798662460.jpg,nuscenes_sg,1,planning,lane markings
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112799162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112799662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112800162460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112800662460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112801162460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112801662460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112802262460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112802762460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112856662460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112857162460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112857662460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112858162460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112858662460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112859162460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112859662460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112860162460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112860612460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112861162460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112861662460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-32-59+0800__CAM_FRONT__1533112862162460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112930412460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112930912460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112931412460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112931912460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112932412460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112932912460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112934412460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112934912460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112935412460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112935912460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112936412460.jpg,nuscenes_sg,2,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112936912460.jpg,nuscenes_sg,2,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112937412460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112937912460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112938412460.jpg,nuscenes_sg,2,region,overtak;stop line
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112938912460.jpg,nuscenes_sg,2,region,overtak;stop line
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112939412460.jpg,nuscenes_sg,3,perception;planning;region,overtak;road marking;stop line
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112939912460.jpg,nuscenes_sg,3,perception;planning;region,overtak;road marking;stop line
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112940412460.jpg,nuscenes_sg,4,perception;planning;region,overtak;road marking;solid white;stop line
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112940862460.jpg,nuscenes_sg,4,perception;planning;region,overtak;road marking;solid white;stop line
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112941362460.jpg,nuscenes_sg,4,perception;planning,overtak;road marking;solid white
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112941862460.jpg,nuscenes_sg,4,perception;planning,overtak;road marking;solid white
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112942362638.jpg,nuscenes_sg,2,planning,overtak;solid white
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112942862460.jpg,nuscenes_sg,2,planning,overtak;solid white
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112943362460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112943862460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112987512460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112993412460.jpg,nuscenes_sg,1,planning,lane markings
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112993912460.jpg,nuscenes_sg,1,planning,lane markings
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112994412460.jpg,nuscenes_sg,1,planning,lane markings
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112994912460.jpg,nuscenes_sg,1,planning,lane markings
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112995412460.jpg,nuscenes_sg,1,planning,lane markings
+samples/CAM_FRONT/n015-2018-08-01-16-41-59+0800__CAM_FRONT__1533112995912460.jpg,nuscenes_sg,1,planning,lane markings
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114274162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114274662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114275162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114275662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114276162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114276662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114282162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114282662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114283112460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114283612460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114284012460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114284512460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114318662460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114319162460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114319662460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114320162460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114320662460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114321162460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114322662460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114323162460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114323662460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114324162460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114324762460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114325262460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114326612460.jpg,nuscenes_sg,2,planning;region,overtak
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114327612460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114328112460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114328662460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114329162460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114329662460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-04-15+0800__CAM_FRONT__1533114330162460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115183012460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115183412460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115183912460.jpg,nuscenes_sg,2,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115184512460.jpg,nuscenes_sg,2,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115185012460.jpg,nuscenes_sg,2,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115185512460.jpg,nuscenes_sg,2,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115186012460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115186512460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115188412460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115188912460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115189362460.jpg,nuscenes_sg,3,prediction;region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115189912460.jpg,nuscenes_sg,3,prediction;region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115190362460.jpg,nuscenes_sg,3,prediction;region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115190862460.jpg,nuscenes_sg,3,prediction;region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115191412460.jpg,nuscenes_sg,2,prediction;region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-08-01-17-13-57+0800__CAM_FRONT__1533115191912460.jpg,nuscenes_sg,2,prediction;region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202381412460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202381912460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202382412460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202382912460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202383412460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202383912460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202625162460.jpg,nuscenes_sg,2,planning;region,overtak;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202625662460.jpg,nuscenes_sg,2,planning;region,overtak;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202626162460.jpg,nuscenes_sg,2,planning;region,overtak;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202626612460.jpg,nuscenes_sg,2,planning;region,overtak;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202627112460.jpg,nuscenes_sg,2,planning;region,overtak;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202627662460.jpg,nuscenes_sg,2,planning;region,overtak;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202629012460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202630662460.jpg,nuscenes_sg,2,planning;region,bus lane;lane arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202631162460.jpg,nuscenes_sg,2,planning;region,bus lane;lane arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202631762460.jpg,nuscenes_sg,2,planning;region,bus lane;lane arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202632262460.jpg,nuscenes_sg,2,planning;region,bus lane;lane arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202632762460.jpg,nuscenes_sg,2,planning;region,bus lane;lane arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202633262460.jpg,nuscenes_sg,2,planning;region,bus lane;lane arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202634512460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202635012460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202635612460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202636112460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202636612460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202637112460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202641262460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202641762460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202642262460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202642762460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202643262460.jpg,nuscenes_sg,2,region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202643762460.jpg,nuscenes_sg,2,region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202644262460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202644762460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202645262460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202645762460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202649612460.jpg,nuscenes_sg,1,planning,stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202650112460.jpg,nuscenes_sg,1,planning,stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202650512460.jpg,nuscenes_sg,2,planning;region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202651012460.jpg,nuscenes_sg,2,planning;region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202651512460.jpg,nuscenes_sg,2,planning;region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202651912460.jpg,nuscenes_sg,2,planning;region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202652412460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202652862460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202660162460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;solid white;solid yellow;turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202660662460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;solid white;solid yellow;turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202661162460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;solid white;solid yellow;turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202661662460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;solid white;solid yellow;turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202662162460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;solid white;solid yellow;turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202662662460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;solid white;solid yellow;turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202668612460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202672662460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202673162460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202673662460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202674162460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202674662460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202675162460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202679112460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202679612460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202680112460.jpg,nuscenes_sg,3,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202680612460.jpg,nuscenes_sg,3,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202681112460.jpg,nuscenes_sg,3,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202681612460.jpg,nuscenes_sg,3,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202682112460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202682612460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202684162460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202684612460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202685112460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202685612460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202686112460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202686612477.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202765112460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202765612460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202766162460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202766662460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202767162460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-02-17-28-51+0800__CAM_FRONT__1533202767662460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279638762460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279646912460.jpg,nuscenes_sg,2,planning,lane markings;overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279647512460.jpg,nuscenes_sg,3,planning;region,lane markings;overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279648012460.jpg,nuscenes_sg,3,planning;region,lane markings;overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279648512460.jpg,nuscenes_sg,4,planning;region,lane arrow;lane markings;overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279649012460.jpg,nuscenes_sg,4,planning;region,lane arrow;lane markings;overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279649512460.jpg,nuscenes_sg,4,planning;region,lane arrow;lane markings;overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279650012460.jpg,nuscenes_sg,2,planning;region,lane arrow;lane markings;overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279650512460.jpg,nuscenes_sg,1,planning,lane arrow;lane markings
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279651012460.jpg,nuscenes_sg,1,planning,lane arrow;lane markings
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279652512460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279653012460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279653512460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279654012460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279654512460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279655012460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279655512460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279656012460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279687662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279688164387.jpg,nuscenes_sg,3,planning;prediction,overtak;road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279688662460.jpg,nuscenes_sg,3,planning;prediction,overtak;road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279689262460.jpg,nuscenes_sg,3,planning;prediction,overtak;road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279689762460.jpg,nuscenes_sg,3,planning;prediction,overtak;road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279690262460.jpg,nuscenes_sg,3,planning;prediction,overtak;road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279690762460.jpg,nuscenes_sg,2,planning;prediction,overtak;road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279699862460.jpg,nuscenes_sg,1,planning,overtak;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279700412460.jpg,nuscenes_sg,1,planning,overtak;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279700912460.jpg,nuscenes_sg,1,planning,overtak;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279701412460.jpg,nuscenes_sg,1,planning,overtak;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279701862460.jpg,nuscenes_sg,1,planning,overtak;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279702412460.jpg,nuscenes_sg,1,planning,overtak;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279705362460.jpg,nuscenes_sg,1,prediction,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279705862460.jpg,nuscenes_sg,1,prediction,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279706362460.jpg,nuscenes_sg,2,planning;prediction,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279706862460.jpg,nuscenes_sg,2,planning;prediction,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279707362460.jpg,nuscenes_sg,4,perception;planning;prediction,lane lines;lane markings;overtak;road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279707862515.jpg,nuscenes_sg,4,perception;planning;prediction,lane lines;lane markings;overtak;road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279708362460.jpg,nuscenes_sg,3,perception;planning,lane lines;lane markings;overtak;road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279708862460.jpg,nuscenes_sg,4,perception;planning,lane lines;lane markings;overtak;road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279709362460.jpg,nuscenes_sg,3,perception;planning,lane lines;lane markings;road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279709912460.jpg,nuscenes_sg,3,perception;planning,lane lines;lane markings;road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279710512460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279711012460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533279711512460.jpg,nuscenes_sg,1,perception,road marking
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280035112460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280035662460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280036162460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280036662460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280037162460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280037662460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280038662480.jpg,nuscenes_sg,1,prediction,turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039162460.jpg,nuscenes_sg,1,prediction,turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280039662460.jpg,nuscenes_sg,1,prediction,turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280040162460.jpg,nuscenes_sg,1,prediction,turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280040612460.jpg,nuscenes_sg,2,prediction;region,bus lane;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280041112460.jpg,nuscenes_sg,2,prediction;region,bus lane;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280041612460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042112460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280042612460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280043112460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280043612460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280044112460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280044612460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045112460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280045612460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280046112460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280046612460.jpg,nuscenes_sg,1,perception,cross lane
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280047112460.jpg,nuscenes_sg,1,perception,cross lane
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280047612460.jpg,nuscenes_sg,2,perception,box junction;bus lane;cross lane;dashed;lane markings
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280048162460.jpg,nuscenes_sg,2,perception,box junction;bus lane;cross lane;dashed;lane markings
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280048662460.jpg,nuscenes_sg,2,perception,box junction;bus lane;cross lane;dashed;lane markings
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280049162460.jpg,nuscenes_sg,2,perception,box junction;bus lane;cross lane;dashed;lane markings
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280049662460.jpg,nuscenes_sg,1,perception,box junction;bus lane;dashed;lane markings
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280050162460.jpg,nuscenes_sg,1,perception,box junction;bus lane;dashed;lane markings
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280050662460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280051162460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280051662460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280052162460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280052662460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280053162460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280289912460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280290412460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280290912460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280291412461.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280291912460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280292362460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280294862460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280295362460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280295862460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280296362460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280296862460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-08-03-15-00-36+0800__CAM_FRONT__1533280297362460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845251762460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845252262460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845252762460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845253262460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845253862460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845254362460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845291162460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845291662460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845292262460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845292762460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845293262460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845293762460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845294262460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845294762460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845295262460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845295762460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845296262460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845296762460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845297262460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845297762608.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845298762460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845299262460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845299862460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845300362589.jpg,nuscenes_sg,2,region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845300862460.jpg,nuscenes_sg,2,region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845301362460.jpg,nuscenes_sg,2,region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845301762460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845302262460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845302762460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845383664331.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845384162460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845384662460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845385262460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845385762460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845386262460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845403162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845403662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845404162460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845404662460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845405162460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845405662460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845406162460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845406662460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845407162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845407662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845408162460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845408662460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845409162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845409612460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845410162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845410612460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845412262460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845564262460.jpg,nuscenes_sg,3,planning;region,dashed;give way line;lane arrow;road marking;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845564762460.jpg,nuscenes_sg,3,planning;region,dashed;give way line;lane arrow;road marking;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845565262460.jpg,nuscenes_sg,3,planning;region,dashed;give way line;lane arrow;road marking;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845565762460.jpg,nuscenes_sg,3,planning;region,dashed;give way line;lane arrow;road marking;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845566262460.jpg,nuscenes_sg,3,planning;region,dashed;give way line;lane arrow;road marking;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845566762460.jpg,nuscenes_sg,3,planning;region,dashed;give way line;lane arrow;road marking;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845568262460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845568762460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845569262460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845569662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845570162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845570612460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845614262460.jpg,nuscenes_sg,1,perception,lane markings
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845614762460.jpg,nuscenes_sg,1,perception,lane markings
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845615262460.jpg,nuscenes_sg,1,perception,lane markings
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845615762460.jpg,nuscenes_sg,1,perception,lane markings
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845616262460.jpg,nuscenes_sg,1,perception,lane markings
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845616762460.jpg,nuscenes_sg,1,perception,lane markings
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845620762460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845621262460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845621762460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845622262460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845622762460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845623262460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845624162460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845624662460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845625112460.jpg,nuscenes_sg,2,region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845625612460.jpg,nuscenes_sg,2,region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845626112460.jpg,nuscenes_sg,2,region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845626612460.jpg,nuscenes_sg,2,region,bus lane;stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845627112460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845627612460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845628112460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845628612460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845629112461.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845629662460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845630112460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-09-25-11-10-38+0800__CAM_FRONT__1537845630612460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932216412477.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932216912460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932217412460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932217912460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932218412460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932218912460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932222912460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932223412460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932223912460.jpg,nuscenes_sg,2,region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932224412460.jpg,nuscenes_sg,2,region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932224912460.jpg,nuscenes_sg,2,region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932225412460.jpg,nuscenes_sg,2,region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932225912460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932226412460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932260512460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932261012460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932261512460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932262012460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932262512460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932263012460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932263512460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932264012460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932264512460.jpg,nuscenes_sg,2,planning,overtak;turn arrow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932265012460.jpg,nuscenes_sg,2,planning,overtak;turn arrow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932265612460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932266112460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932266612460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932267112460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932281262460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932281762460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932282262460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932282662460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932283162460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932283612460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932284162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932284662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932285162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932285662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932286162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-26-11-17-24+0800__CAM_FRONT__1537932286662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033627762460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033628262460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033628762460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033629262460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033629762460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033630262460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033641762460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033645762460.jpg,nuscenes_sg,1,prediction,turn arrow
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033646262460.jpg,nuscenes_sg,1,prediction,turn arrow
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033646762460.jpg,nuscenes_sg,1,prediction,turn arrow
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033647262460.jpg,nuscenes_sg,1,prediction,turn arrow
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033647762460.jpg,nuscenes_sg,1,prediction,turn arrow
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033648262460.jpg,nuscenes_sg,1,prediction,turn arrow
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033681262460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033681762460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033682262460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033682762460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033683262460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-09-27-15-33-17+0800__CAM_FRONT__1538033683762460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-02-10-56-37+0800__CAM_FRONT__1538449283412460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-10-02-10-56-37+0800__CAM_FRONT__1538449283912460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-10-02-10-56-37+0800__CAM_FRONT__1538449284412460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-10-02-10-56-37+0800__CAM_FRONT__1538449284912460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-10-02-10-56-37+0800__CAM_FRONT__1538449285412460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-10-02-10-56-37+0800__CAM_FRONT__1538449285912460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-10-02-10-56-37+0800__CAM_FRONT__1538449292912460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-10-02-10-56-37+0800__CAM_FRONT__1538449293412460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-10-02-10-56-37+0800__CAM_FRONT__1538449293912460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-10-02-10-56-37+0800__CAM_FRONT__1538449294412460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-10-02-10-56-37+0800__CAM_FRONT__1538449294912460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-10-02-10-56-37+0800__CAM_FRONT__1538449295412460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985150262460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985152262460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985152662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985153162460.jpg,nuscenes_sg,3,planning;prediction,lane markings;overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985153662460.jpg,nuscenes_sg,3,planning;prediction,lane markings;overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985154162608.jpg,nuscenes_sg,3,planning;prediction,lane markings;overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985154662651.jpg,nuscenes_sg,3,planning;prediction,lane markings;overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985155163231.jpg,nuscenes_sg,2,planning;prediction,lane markings;overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985155662911.jpg,nuscenes_sg,2,planning;prediction,lane markings;overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985198762460.jpg,nuscenes_sg,1,perception,chevron;road marking
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985199262460.jpg,nuscenes_sg,1,perception,chevron;road marking
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985199762460.jpg,nuscenes_sg,1,perception,chevron;road marking
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985200262460.jpg,nuscenes_sg,1,perception,chevron;road marking
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985200762460.jpg,nuscenes_sg,1,perception,chevron;road marking
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985201262460.jpg,nuscenes_sg,1,perception,chevron;road marking
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985219162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985219662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985220162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985220662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985221162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985221662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985287162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985287662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985288162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985288662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985289162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985289662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985294262460.jpg,nuscenes_sg,1,planning,box junction
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985294662460.jpg,nuscenes_sg,1,planning,box junction
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985295112460.jpg,nuscenes_sg,1,planning,box junction
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985295512460.jpg,nuscenes_sg,1,planning,box junction
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985296012460.jpg,nuscenes_sg,1,planning,box junction
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985296512460.jpg,nuscenes_sg,1,planning,box junction
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985297012460.jpg,nuscenes_sg,2,planning;region,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985297512460.jpg,nuscenes_sg,2,planning;region,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985298012460.jpg,nuscenes_sg,3,planning;region,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985298512460.jpg,nuscenes_sg,3,planning;region,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985299012460.jpg,nuscenes_sg,3,planning;region,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985299512460.jpg,nuscenes_sg,3,planning;region,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985300012460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985300512460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985301012460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985301512460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985302012460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985302512460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985303012460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985303412460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985303912460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985304412460.jpg,nuscenes_sg,2,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985304912462.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985305412460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985305912460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985306412460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985420262460.jpg,nuscenes_sg,2,prediction;region,overtak
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985421262460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985421762460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985422262460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985422762460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985423262460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985423762460.jpg,nuscenes_sg,1,planning,road marking
+samples/CAM_FRONT/n015-2018-10-08-15-52-24+0800__CAM_FRONT__1538985589262460.jpg,nuscenes_sg,1,prediction,turn arrow
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985811862465.jpg,nuscenes_sg,1,prediction,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985812412460.jpg,nuscenes_sg,1,prediction,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985812912460.jpg,nuscenes_sg,1,prediction,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985813412460.jpg,nuscenes_sg,1,prediction,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985813912460.jpg,nuscenes_sg,1,prediction,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985814412460.jpg,nuscenes_sg,1,prediction,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985910662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985911112460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985911612460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985912112460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985912612460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985913112460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985915662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985916162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985916662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985917162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985917662460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985918162460.jpg,nuscenes_sg,1,planning,overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985966762460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985967262460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985967762460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985968262460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985968762460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538985969262460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986299762460.jpg,nuscenes_sg,1,planning,dashed;double solid;lane change;overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986300162460.jpg,nuscenes_sg,1,planning,dashed;double solid;lane change;overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986300662460.jpg,nuscenes_sg,1,planning,dashed;double solid;lane change;overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986301162460.jpg,nuscenes_sg,1,planning,dashed;double solid;lane change;overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986301662460.jpg,nuscenes_sg,1,planning,dashed;double solid;lane change;overtak
+samples/CAM_FRONT/n015-2018-10-08-16-03-24+0800__CAM_FRONT__1538986302162460.jpg,nuscenes_sg,1,planning,dashed;double solid;lane change;overtak
+samples/CAM_FRONT/n015-2018-11-14-19-09-14+0800__CAM_FRONT__1542194112112460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-14-19-09-14+0800__CAM_FRONT__1542194112612460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-14-19-09-14+0800__CAM_FRONT__1542194113112460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-14-19-09-14+0800__CAM_FRONT__1542194113662460.jpg,nuscenes_sg,3,perception;region,lane markings;overtak
+samples/CAM_FRONT/n015-2018-11-14-19-09-14+0800__CAM_FRONT__1542194114112460.jpg,nuscenes_sg,3,perception;region,lane markings;overtak
+samples/CAM_FRONT/n015-2018-11-14-19-09-14+0800__CAM_FRONT__1542194114662460.jpg,nuscenes_sg,3,perception;region,lane markings;overtak
+samples/CAM_FRONT/n015-2018-11-14-19-09-14+0800__CAM_FRONT__1542194115162460.jpg,nuscenes_sg,3,perception;region,bus lane;lane markings;overtak
+samples/CAM_FRONT/n015-2018-11-14-19-09-14+0800__CAM_FRONT__1542194115612480.jpg,nuscenes_sg,3,perception;region,bus lane;lane markings;overtak
+samples/CAM_FRONT/n015-2018-11-14-19-09-14+0800__CAM_FRONT__1542194116262460.jpg,nuscenes_sg,3,perception;region,bus lane;lane markings;overtak
+samples/CAM_FRONT/n015-2018-11-14-19-09-14+0800__CAM_FRONT__1542194116662460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-11-14-19-09-14+0800__CAM_FRONT__1542194117162460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-11-14-19-09-14+0800__CAM_FRONT__1542194117762474.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798693612460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798694112460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798694612460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798695112460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798695612460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798696112460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798700112460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798700612460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798701012460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798701512460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798702012460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798702412460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798705862460.jpg,nuscenes_sg,2,prediction;region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798706362460.jpg,nuscenes_sg,2,prediction;region,dashed;give way line;overtak;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798706912460.jpg,nuscenes_sg,3,planning;prediction;region,dashed;give way line;overtak;solid white;solid yellow;stop line
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798707412460.jpg,nuscenes_sg,3,planning;prediction;region,dashed;give way line;overtak;solid white;solid yellow;stop line
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798707912460.jpg,nuscenes_sg,3,planning;prediction;region,dashed;give way line;overtak;solid white;solid yellow;stop line
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798708412460.jpg,nuscenes_sg,3,planning;prediction;region,dashed;give way line;overtak;solid white;solid yellow;stop line
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798708912460.jpg,nuscenes_sg,1,planning,stop line
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798709412460.jpg,nuscenes_sg,1,planning,stop line
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798712112460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798712612460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798713112460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798713612460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798714112460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798714612460.jpg,nuscenes_sg,2,planning;region,overtak;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798715112460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798715612460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798716112460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798716612460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798717112460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798724012460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798724412460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798724912460.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798725412472.jpg,nuscenes_sg,1,planning,turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798725912460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;solid white;solid yellow;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798726412460.jpg,nuscenes_sg,2,planning;region,dashed;give way line;solid white;solid yellow;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798726912460.jpg,nuscenes_sg,3,planning;region,dashed;give way line;solid white;solid yellow;stop line;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798727412460.jpg,nuscenes_sg,3,planning;region,dashed;give way line;solid white;solid yellow;stop line;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798727912460.jpg,nuscenes_sg,3,planning;region,dashed;give way line;solid white;solid yellow;stop line;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798728412460.jpg,nuscenes_sg,3,planning;region,dashed;give way line;solid white;solid yellow;stop line;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798728912460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798729412460.jpg,nuscenes_sg,2,planning;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798734112460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798734662460.jpg,nuscenes_sg,2,planning;region,overtak;stop line
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798735162460.jpg,nuscenes_sg,2,planning;region,overtak;stop line
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798735662460.jpg,nuscenes_sg,3,planning;region,bus lane;overtak;stop line
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798736162460.jpg,nuscenes_sg,3,planning;region,bus lane;overtak;stop line
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798736662460.jpg,nuscenes_sg,3,planning;region,bus lane;overtak;stop line
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798737162460.jpg,nuscenes_sg,2,planning;region,bus lane;overtak
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798737662460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798738162460.jpg,nuscenes_sg,1,region,bus lane
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798802112460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798802662460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798803162460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798803662460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798804162460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-11-29+0800__CAM_FRONT__1542798804662460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800434012460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800434512460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800435012460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800435512460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800436112460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800436612460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800536012460.jpg,nuscenes_sg,1,planning,lane change
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800536512460.jpg,nuscenes_sg,1,planning,lane change
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800537012460.jpg,nuscenes_sg,1,planning,lane change
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800537512460.jpg,nuscenes_sg,1,planning,lane change
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800538012460.jpg,nuscenes_sg,1,planning,lane change
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800538512460.jpg,nuscenes_sg,1,planning,lane change
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800804112460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800804612460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800805112460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800805612460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800806112460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800806662460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800842362460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800842862460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800843362460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800843862460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800844362460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800844862460.jpg,nuscenes_sg,1,region,overtak
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800849412460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800849912460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800850412460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800850912460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800851412460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800851912460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800854412460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800854912460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800855412460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800855912460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800856412460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800856912460.jpg,nuscenes_sg,1,region,stop line
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800969412460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800969862460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800970362460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800970862460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800971362460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800971862460.jpg,nuscenes_sg,1,region,dashed;give way line;solid white;solid yellow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800978912460.jpg,nuscenes_sg,2,prediction;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800979412460.jpg,nuscenes_sg,2,prediction;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800979913884.jpg,nuscenes_sg,2,prediction;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800980412460.jpg,nuscenes_sg,2,prediction;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800980912460.jpg,nuscenes_sg,2,prediction;region,stop line;turn arrow
+samples/CAM_FRONT/n015-2018-11-21-19-38-26+0800__CAM_FRONT__1542800981412460.jpg,nuscenes_sg,2,prediction;region,stop line;turn arrow

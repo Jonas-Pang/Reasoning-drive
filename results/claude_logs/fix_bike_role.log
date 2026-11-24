@@ -1,0 +1,21 @@
+=== 20261115_175305 
+datasets\CN\culane\culane_test.lane_annotations.csv: 0 sides corrected
+datasets\CN\mapdr\mapdr.lane_annotations.csv: 9 sides corrected
+   mapdr__MultiLane_08b632e49f4743498ed405f0c22928df_1709685444115806000:right not_determined->not_determined
+   mapdr__MultiLane_450e61de53db4b5a846882736f260709_1710126711598183000:right prohibited->prohibited
+   mapdr__MultiLane_58ca0d6f04fc4605a76bc1b7899b0dfe_1709854271926265000:right not_determined->not_determined
+   mapdr__MultiLane_69f3684158b54119b533ae2fc2455671_1711065856681727000:right not_determined->not_determined
+   mapdr__Non_MotorizedLane_0b32e42c00214d90b0c122dc79f9e3a6_1710461292870577000:right prohibited->prohibited
+   mapdr__Non_MotorizedLane_86e2ab7b4a8d4f78a3dce852ff9c1d82_1711149624116337000:right prohibited->prohibited
+   mapdr__VehicleLane_019e550228d74df1b84f85116d54d61e_1711416452149561000:right prohibited->prohibited
+   mapdr__VehicleLane_adbfaa44038e457ea9871c13ec8fbfbe_1711407599241124000:right not_determined->not_determined
+   mapdr__VehicleLane_b60541c776134f089e676ba51ee4417f_1709865113125919000:right prohibited->prohibited
+datasets\US\bdd100k\bdd100k_val.lane_annotations.csv: 8 sides corrected
+   bdd100k_val__b321c6b6-ab603d42:left prohibited->prohibited
+   bdd100k_val__b49d6c0d-457e13b3:right prohibited->prohibited
+   bdd100k_val__b54c065e-8b13cfe7:right prohibited->prohibited
+   bdd100k_val__b928271b-fe5cc5d1:right prohibited->prohibited
+   bdd100k_val__bfe2b817-505676ef:right prohibited->prohibited
+   bdd100k_val__c068a67b-03b6e200:right prohibited->prohibited
+   bdd100k_val__c6d77a40-03423c96:right prohibited->prohibited
+   bdd100k_val__c90b5398-8d49f2f2:left prohibited->prohibited

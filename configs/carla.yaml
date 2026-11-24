@@ -1,0 +1,304 @@
+# CARLA simulation: the server, the three experiments and the routes. Used by: python main.py carla ...
+# A route is one continuous loop through every kind of lane marking of one map. Each stop picks one place of its kind
+# (seed, or pick: the n-th candidate) and is asked once per experiment; the navigation route gives the intent, and the
+# car checks it against the answer of the experiment named in drive_with before it acts. Places used in earlier runs are
+# excluded; an identical target already asked (answer_cache) is reused instead of asking again.
+# Town03 has no straight-only arrow and no solid + broken passing-zone line (its solid + broken yellow lines are the edges
+# of two-way left-turn lanes). The roundabout stop only asks about the lane line: roundabout prompts are not designed yet.
+
+server:
+  host: 127.0.0.1
+  port: 2000
+  timeout_s: 120
+  carla_root: D:/Carla/CARLA_0.9.16         # the CARLA package; its PythonAPI/carla holds the route planner (agents)
+  version: 0.9.16                           # the carla Python package must have the same version (0.9.16 adds left-hand traffic)
+  python: D:/Carla/env916/Scripts/python.exe   # a Python that has the carla package; the web page starts routes with it
+  # CARLA 0.9.15 is still in D:/Carla/WindowsNoEditor with its client D:/Carla/env/python.exe (Python 3.8)
+  start_args: [-quality-level=Epic, -windowed, -ResX=1280, -ResY=720]   # CarlaUE4.exe options when the web page starts CARLA
+
+experiments:            # name -> region whose rules are used and test (A = image only, B = image + rule passages)
+  A: {region: US, test: A}
+  B: {region: US, test: B}
+  C: {region: CN, test: B}    # US road, Chinese rules: the photo is said to be from China
+
+output: results/carla                       # one folder per run
+answer_cache: results/carla/answer_cache.json
+trace_seconds: 5.0                          # how long each answer's reasoning stays on the live window
+
+countries:              # python main.py carla countries: the same places asked and driven as each country (simulation/countries.py)
+  map: Town03
+  weather: ClearNoon
+  prompt: lane_v2       # the lane task's prompt folder
+  tests: [A, B]         # A photo and country; B also the country's rule passages
+  drive_with: B
+  approach_m: 40        # the car starts this far before each place
+  reasoning_summary: auto
+  countries: [US, CN, UK, JP]   # left-hand countries see the photo flipped left to right (mirror world)
+  scenes:
+    lane_change:
+      label: solid white line between two lanes of my direction, double yellow centre line on the other side
+      road: 20
+      lane: 1
+      s: 126.6
+      intent: change_right
+      intent_text: change to the right lane
+    arrow_lane:
+      label: left-turn arrow in my lane, solid white line to the lane on the right
+      road: 44
+      lane: -4
+      s: 9.0
+      intent: turn_right
+      intent_text: turn right at the junction
+
+routes:
+  route1:
+    map: Town03
+    weather: ClearNoon
+    seed: 101
+    order: shortest
+    drive_with: B
+    stops:
+    - type: line
+      label: broken white lane line
+      marking: white_dashed
+      neighbour: same
+      intent: change lane across the line
+      exclude_roads: [67]
+    - type: line
+      label: double solid yellow centre line
+      marking: yellow_double_solid
+      side: left
+      neighbour: opposite
+      intent: overtake across the centre line
+      exclude_roads: [43]
+    - type: line
+      label: single solid yellow line on the left
+      marking: yellow_solid
+      side: left
+      neighbour: none
+      intent: cross the yellow line to the left
+      exclude: [[6, -1]]
+    - type: twltl
+      label: two-way left-turn lane
+      intent: enter the centre lane to wait for a left turn
+      exclude_roads: [4, 28, 65]
+    - type: roundabout
+      label: 'roundabout: line between the circulating lanes'
+      intent: move to the outer lane to leave the roundabout
+      exclude_roads: [1470]
+    - type: approach
+      label: 'junction approach: left-turn arrow and the line to the right lane'
+      road: 44
+      lane: -4
+      arrow_type: left
+      line_side: right
+      truth_override: white_solid
+      intent: turn_right
+      note: map data calls this line solid yellow; the paint is solid white (checked by eye), so the truth uses white_solid
+    - type: arrow
+      label: right-turn arrow
+      arrow_type: right
+      road: 59
+      intent: go_straight
+    reasoning_summary: auto
+  route2:
+    map: Town03
+    weather: CloudyNoon
+    seed: 202
+    order: shortest
+    drive_with: B
+    stops:
+    - type: line
+      label: broken white lane line
+      marking: white_dashed
+      neighbour: same
+      intent: change lane across the line
+      exclude_roads: [67]
+    - type: line
+      label: double solid yellow centre line
+      marking: yellow_double_solid
+      side: left
+      neighbour: opposite
+      intent: overtake across the centre line
+      exclude_roads: [43]
+    - type: line
+      label: single solid yellow line on the left
+      marking: yellow_solid
+      side: left
+      neighbour: none
+      intent: cross the yellow line to the left
+      exclude: [[6, -1]]
+    - type: twltl
+      label: two-way left-turn lane
+      intent: enter the centre lane to wait for a left turn
+      exclude_roads: [4, 28, 65]
+    - type: roundabout
+      label: 'roundabout: line between the circulating lanes'
+      intent: move to the outer lane to leave the roundabout
+      exclude_roads: [1470]
+    - type: approach
+      label: 'junction approach: left-turn arrow and the line to the right lane'
+      road: 44
+      lane: -4
+      arrow_type: left
+      line_side: right
+      truth_override: white_solid
+      intent: go_straight
+      note: map data calls this line solid yellow; the paint is solid white (checked by eye), so the truth uses white_solid
+    - type: arrow
+      label: right-turn arrow
+      arrow_type: right
+      road: 75
+      intent: turn_right
+    reasoning_summary: auto
+  route3:
+    map: Town03
+    weather: WetCloudyNoon
+    seed: 303
+    order: shortest
+    drive_with: B
+    stops:
+    - type: line
+      label: broken white lane line
+      marking: white_dashed
+      neighbour: same
+      intent: change lane across the line
+      exclude_roads: [67]
+    - type: line
+      label: double solid yellow centre line
+      marking: yellow_double_solid
+      side: left
+      neighbour: opposite
+      intent: overtake across the centre line
+      exclude_roads: [43]
+    - type: line
+      label: single solid yellow line on the left
+      marking: yellow_solid
+      side: left
+      neighbour: none
+      intent: cross the yellow line to the left
+      exclude: [[6, -1]]
+    - type: twltl
+      label: two-way left-turn lane
+      intent: enter the centre lane to wait for a left turn
+      exclude_roads: [4, 28, 65]
+    - type: roundabout
+      label: 'roundabout: line between the circulating lanes'
+      intent: move to the outer lane to leave the roundabout
+      exclude_roads: [1470]
+    - type: approach
+      label: 'junction approach: left-turn arrow and the line to the right lane'
+      road: 44
+      lane: -4
+      arrow_type: left
+      line_side: right
+      truth_override: white_solid
+      intent: turn_left
+      note: map data calls this line solid yellow; the paint is solid white (checked by eye), so the truth uses white_solid
+    - type: arrow
+      label: right-turn arrow
+      arrow_type: right
+      road: 41
+      intent: turn_left
+    reasoning_summary: auto
+  route4:
+    map: Town03
+    weather: ClearSunset
+    seed: 404
+    order: shortest
+    drive_with: B
+    stops:
+    - type: line
+      label: broken white lane line
+      marking: white_dashed
+      neighbour: same
+      intent: change lane across the line
+      exclude_roads: [67]
+    - type: line
+      label: double solid yellow centre line
+      marking: yellow_double_solid
+      side: left
+      neighbour: opposite
+      intent: overtake across the centre line
+      exclude_roads: [43]
+    - type: line
+      label: single solid yellow line on the left
+      marking: yellow_solid
+      side: left
+      neighbour: none
+      intent: cross the yellow line to the left
+      exclude: [[6, -1]]
+    - type: twltl
+      label: two-way left-turn lane
+      intent: enter the centre lane to wait for a left turn
+      exclude_roads: [4, 28, 65]
+    - type: roundabout
+      label: 'roundabout: line between the circulating lanes'
+      intent: move to the outer lane to leave the roundabout
+      exclude_roads: [1470]
+    - type: approach
+      label: 'junction approach: left-turn arrow and the line to the right lane'
+      road: 44
+      lane: -4
+      arrow_type: left
+      line_side: right
+      truth_override: white_solid
+      intent: turn_right
+      note: map data calls this line solid yellow; the paint is solid white (checked by eye), so the truth uses white_solid
+    - type: arrow
+      label: right-turn arrow
+      arrow_type: right
+      road: 6
+      intent: turn_right
+    reasoning_summary: auto
+  route5:
+    map: Town03
+    weather: ClearNoon
+    night: true
+    seed: 505
+    order: shortest
+    drive_with: B
+    stops:
+    - type: line
+      label: broken white lane line
+      marking: white_dashed
+      neighbour: same
+      intent: change lane across the line
+      exclude_roads: [67]
+    - type: line
+      label: double solid yellow centre line
+      marking: yellow_double_solid
+      side: left
+      neighbour: opposite
+      intent: overtake across the centre line
+      exclude_roads: [43]
+    - type: line
+      label: single solid yellow line on the left
+      marking: yellow_solid
+      side: left
+      neighbour: none
+      intent: cross the yellow line to the left
+      exclude: [[6, -1]]
+    - type: twltl
+      label: two-way left-turn lane
+      intent: enter the centre lane to wait for a left turn
+      exclude_roads: [4, 28, 65]
+    - type: roundabout
+      label: 'roundabout: line between the circulating lanes'
+      intent: move to the outer lane to leave the roundabout
+      exclude_roads: [1470]
+    - type: approach
+      label: 'junction approach: left-turn arrow and the line to the right lane'
+      road: 44
+      lane: -4
+      arrow_type: left
+      line_side: right
+      truth_override: white_solid
+      intent: go_straight
+      note: map data calls this line solid yellow; the paint is solid white (checked by eye), so the truth uses white_solid
+    - type: arrow
+      label: right-turn arrow
+      arrow_type: right
+      road: 75
+      intent: go_straight
+    reasoning_summary: auto

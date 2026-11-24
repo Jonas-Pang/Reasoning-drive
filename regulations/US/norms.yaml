@@ -1,0 +1,189 @@
+# Force of each passage of US (mandatory, recommended, permissive, informative), proposed from the
+# standard's own words (shall/should/may, 应/宜/可 ...). Read each one against its passage; set checked: true
+# when it is right, or change norm. The lane prompt from lane_v2 on prints these values.
+
+US-3A.03-03-04:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3A.04-01:
+  norm: mandatory
+  word: shall
+  checked: false
+  note: changed from the proposal by reading the passage
+US-3A.04-06:
+  norm: recommended
+  word: should
+  checked: false
+US-3B.01-01:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.01-04:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.01-05:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.01-06:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.05-01:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.05-04:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.06-01:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.06-05-06:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.06-07:
+  norm: recommended
+  word: should
+  checked: false
+US-3B.06-12:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.09-03:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.23-01:
+  norm: informative
+  word: ''
+  checked: false
+US-3B.23-08:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3A.04-01-DE:
+  norm: informative
+  word: ''
+  checked: false
+US-3A.04-04:
+  norm: informative
+  word: ''
+  checked: false
+US-3B.04-01:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.05-02:
+  norm: recommended
+  word: should
+  checked: false
+US-3B.05-07:
+  norm: recommended
+  word: should
+  checked: false
+US-3B.06-08:
+  norm: permissive
+  word: may
+  checked: false
+US-3B.07-01:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.07-07:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.08-01-03:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.09-01-02:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.11-03:
+  norm: recommended
+  word: should
+  checked: false
+US-3B.11-05:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.12-04:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.19-01-02:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.19-10:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.20-01:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.21-04:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.23-03:
+  norm: recommended
+  word: should
+  checked: false
+US-3B.23-09:
+  norm: recommended
+  word: should
+  checked: false
+US-FIG-3B-21:
+  norm: informative
+  word: ''
+  checked: false
+US-3B.24-02:
+  norm: permissive
+  word: may
+  checked: false
+US-3B.25-01:
+  norm: informative
+  word: ''
+  checked: false
+US-3B.26-01:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3E.01-01:
+  norm: informative
+  word: ''
+  checked: false
+US-3E.03-02:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3H.07-01:
+  norm: mandatory
+  word: shall
+  checked: false
+US-3B.12-14:
+  norm: permissive
+  word: may
+  checked: false
+US-3B.18-01-04:
+  norm: recommended
+  word: should
+  checked: false
+US-3B.09-07:
+  norm: recommended
+  word: should
+  checked: false
+US-3H.04-02-03:
+  norm: mandatory
+  word: shall
+  checked: false

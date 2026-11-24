@@ -1,0 +1,460 @@
+{
+  "summary": {
+    "n": 4,
+    "lane": {
+      "correct": 0,
+      "n": 4,
+      "acc": 0.0
+    },
+    "output2": {
+      "correct": 2,
+      "n": 2,
+      "acc": 1.0
+    },
+    "lane_count": {
+      "correct": 0,
+      "n": 2,
+      "acc": 0.0
+    },
+    "ego_index": {
+      "correct": 2,
+      "n": 2,
+      "acc": 1.0
+    },
+    "markings_exact": {
+      "correct": 0,
+      "n": 4,
+      "acc": 0.0
+    },
+    "lane_core": {
+      "correct": 0,
+      "n": 4,
+      "acc": 0.0
+    },
+    "markings_core_exact": {
+      "correct": 4,
+      "n": 4,
+      "acc": 1.0
+    },
+    "failed": 0,
+    "left_boundary": {
+      "correct": 2,
+      "n": 4,
+      "acc": 0.5
+    },
+    "left_color": {
+      "correct": 3,
+      "n": 4,
+      "acc": 0.75
+    },
+    "left_pattern": {
+      "correct": 3,
+      "n": 4,
+      "acc": 0.75
+    },
+    "left_curb": {
+      "correct": 3,
+      "n": 4,
+      "acc": 0.75
+    },
+    "left_role": {
+      "correct": 0,
+      "n": 4,
+      "acc": 0.0
+    },
+    "right_boundary": {
+      "correct": 0,
+      "n": 4,
+      "acc": 0.0
+    },
+    "right_color": {
+      "correct": 0,
+      "n": 4,
+      "acc": 0.0
+    },
+    "right_pattern": {
+      "correct": 0,
+      "n": 4,
+      "acc": 0.0
+    },
+    "right_curb": {
+      "correct": 2,
+      "n": 4,
+      "acc": 0.5
+    },
+    "right_role": {
+      "correct": 1,
+      "n": 4,
+      "acc": 0.25
+    },
+    "both_boundaries": {
+      "correct": 0,
+      "n": 4,
+      "acc": 0.0
+    },
+    "markings_added": 4,
+    "markings_missed": 0,
+    "markings_precision": 0.0,
+    "markings_recall": null,
+    "added_by_token": {
+      "line:stop_line": 3,
+      "line:stop_yield": 1
+    },
+    "added_transverse": 4,
+    "added_by_evidence": {
+      "full": 3,
+      "insufficient": 1
+    },
+    "missed_by_token": {},
+    "actions": {
+      "change_left": {
+        "n": 2,
+        "correct": 2
+      }
+    },
+    "contested": {
+      "n": 6,
+      "correct": 6
+    },
+    "unsafe_errors": 0,
+    "unsafe_by_action": {},
+    "over_cautious_errors": 0,
+    "contested_unsafe_errors": 0,
+    "prohibited_recall": {
+      "correct": 2,
+      "n": 2,
+      "acc": 1.0
+    },
+    "extra_decisions": 3,
+    "citations": {
+      "in_pack_not_accepted": 4
+    },
+    "citation_ids_with_brackets": 0,
+    "inconsistent_answers": 3,
+    "consistency_kinds": {
+      "leftmost lane, but a lane line on the left": 2,
+      "go_straight allowed without the stop that the STOP or 停 marking in my lane requires": 1
+    },
+    "boundary_evidence": {
+      "same": 4,
+      "unsupported_guess": 4
+    },
+    "requests": 4,
+    "errors": 0,
+    "readable": {
+      "n": 4,
+      "of": 4
+    },
+    "cached": 4,
+    "usage": {
+      "input_tokens": 0,
+      "cached_input_tokens": 0,
+      "output_tokens": 0
+    },
+    "cost_usd": 0.0,
+    "latency_s": {},
+    "elapsed_s": 0.1
+  },
+  "per_image": {
+    "idd__primary_d1_leftCamImgs_0000529": {
+      "image_id": "idd__primary_d1_leftCamImgs_0000529",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [
+            "line:stop_line"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "line:stop_line": "full"
+          },
+          "label": [],
+          "answer": [
+            "line:stop_line"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "change_right"
+        ],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule131",
+          "UK-TSRGD-S11P4-item11"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [
+          "leftmost lane, but a lane line on the left"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "idd__primary_d1_leftCamImgs_0000786": {
+      "image_id": "idd__primary_d1_leftCamImgs_0000786",
+      "score": {
+        "scene": {
+          "lane_count": false,
+          "ego_index": true
+        },
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": true,
+            "all": true
+          },
+          "right": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [
+            "line:stop_line"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "line:stop_line": "full"
+          },
+          "label": [],
+          "answer": [
+            "line:stop_line"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {
+          "change_left": true
+        },
+        "contested": {
+          "go_straight": true
+        },
+        "output2": true,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {
+          "change_left": true
+        },
+        "extra_decisions": [
+          "change_right"
+        ],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule131",
+          "UK-TSRGD-S11P4-item11"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [
+          "leftmost lane, but a lane line on the left"
+        ],
+        "evidence": {
+          "left": [
+            "full",
+            "full"
+          ],
+          "right": [
+            "partial",
+            "full"
+          ]
+        }
+      }
+    },
+    "idd__primary_d1_leftCamImgs_0002250": {
+      "image_id": "idd__primary_d1_leftCamImgs_0002250",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          },
+          "right": {
+            "color": false,
+            "pattern": false,
+            "curb": true,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": true
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [
+            "line:stop_line"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "line:stop_line": "full"
+          },
+          "label": [],
+          "answer": [
+            "line:stop_line"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [
+          "change_left"
+        ],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule127",
+          "UK-Rule129",
+          "UK-TSRGD-Part6,item1"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    },
+    "idd__primary_d1_leftCamImgs_0002357": {
+      "image_id": "idd__primary_d1_leftCamImgs_0002357",
+      "score": {
+        "scene": {},
+        "sides": {
+          "left": {
+            "color": true,
+            "pattern": true,
+            "curb": false,
+            "all": false
+          },
+          "right": {
+            "color": false,
+            "pattern": false,
+            "curb": false,
+            "all": false
+          }
+        },
+        "role": {
+          "left": false,
+          "right": false
+        },
+        "markings": {
+          "exact": false,
+          "core_exact": true,
+          "added": [
+            "line:stop_yield"
+          ],
+          "missed": [],
+          "added_evidence": {
+            "line:stop_yield": "insufficient"
+          },
+          "label": [],
+          "answer": [
+            "line:stop_yield"
+          ]
+        },
+        "lane": false,
+        "lane_core": false,
+        "actions": {},
+        "contested": {
+          "change_right": true,
+          "go_straight": true
+        },
+        "output2": null,
+        "unsafe": [],
+        "over_cautious": [],
+        "contested_unsafe": [],
+        "prohibited": {},
+        "extra_decisions": [],
+        "cite_format_fixed": 0,
+        "cited": [
+          "UK-Rule131"
+        ],
+        "citation": "in_pack_not_accepted",
+        "consistency": [
+          "go_straight allowed without the stop that the STOP or 停 marking in my lane requires"
+        ],
+        "evidence": {
+          "left": [
+            "partial",
+            "full"
+          ],
+          "right": [
+            "full",
+            "full"
+          ]
+        }
+      }
+    }
+  }
+}

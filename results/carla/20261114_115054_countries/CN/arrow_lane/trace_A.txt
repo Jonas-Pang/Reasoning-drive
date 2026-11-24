@@ -1,0 +1,47 @@
+carla_Town03_arrow_lane | lane | Test A | gpt-6.1-sol
+-----------------------------------------------------
+Step 1  Scene           An urban road approaches an intersection beneath an elevated structure. My car is in
+                        the leftmost of two visible lanes in its direction. (lanes 2, mine 1, full)
+Step 2  Left            A continuous solid white line runs along the left of my lane beside a raised curb and
+                        sidewalk.
+                        white solid, curb yes, edge_line, evidence full
+Step 2  Right           A single solid white line separates my lane from another paved traffic lane on the
+                        right.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        arrow:left (full): A white arrow has a bent shaft ending in a single left-pointing
+                        arrowhead.
+Step 4  Cross-check     position: The left roadway edge and the lane divider on the right agree with my lane
+                        being the leftmost of two same-direction lanes. | roles: The solid white edge line
+                        beside the sidewalk and the solid white lane divider fit their assigned roles. |
+                        markings: The left-turn arrow is consistent with a leftmost approach lane; no
+                        conflicting word, arrow, or waiting-area marking is visible. | unseen: No distant
+                        transverse marking or waiting area is inferred from indistinct pavement near the
+                        intersection. | result: consistent
+Step 5  Rule            left_boundary: The roadway edge and raised curb prohibit leaving my lane onto the
+                        sidewalk.
+Step 5  Rule            right_boundary: In China, a solid white lane divider prohibits crossing it to change
+                        lanes.
+Step 5  Rule            arrow:left: The left-turn-only lane arrow permits a left turn and excludes straight,
+                        right-turn, and U-turn movements from this lane.
+Step 6  change_left     prohibited: The raised curb at the left roadway edge prohibits moving onto the
+                        sidewalk.
+Step 6  change_right    prohibited: The solid white lane divider prohibits crossing into the right lane.
+Step 6  go_straight     prohibited: The left-turn-only arrow does not permit proceeding straight.
+Step 6  turn_left       allowed: The left-pointing lane-use arrow permits a left turn.
+Step 6  turn_right      prohibited: The left-turn-only arrow excludes a right turn.
+Step 6  u_turn          prohibited: The left-turn-only arrow does not designate a U-turn movement.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         consistent
+Advice                  Use this lane for a left turn and do not cross either visible boundary. For another
+                        movement, select an appropriately marked lane before entering the solid-line section;
+                        obey intersection controls and yield as required.
+Model's summary         **Clarifying directional signs**  I need to identify the elements in the image
+                        clearly. There's a left arrow that curves and points left, while the right line
+                        appears solid and continuous. The two leftmost lanes show a white curb. I wonder if
+                        the far stop is as clear as it should be. The image at y378 contains some dashed
+                        shapes that complicate things. Overall, it seems like the schema lacks a design
+                        pattern that follows the observed attributes.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:left'], missed []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4424, out 868, 14.89 s

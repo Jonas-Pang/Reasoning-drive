@@ -1,0 +1,901 @@
+# DRAFT passages of Singapore (SG): the drafts of 3 documents (highway_code, rules, signs) in drafts/, merged. Edit those files, not this one; each extraction writes this file again.
+# Then:  python main.py regulations accept SG
+
+- rule_id: SG-RULES-1A
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: 1A
+  page: 4
+  marking_type: single yellow zig-zag line
+  element: boundary
+  text_original: “Demerit Points No Parking Zone” means any part of a road that is marked with a single yellow zig-zag line
+    and includes the public footpath adjacent to the road;
+  text_en: “Demerit Points No Parking Zone” means any part of a road that is marked with a single yellow zig-zag line and
+    includes the public footpath adjacent to the road;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-RULES-1A-2
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: 1A
+  page: 4
+  marking_type: double yellow zig-zag line
+  element: boundary
+  text_original: “Demerit Points No Stopping Zone” means any part of a road that is marked with a double yellow zig-zag line
+    and includes the public footpath adjacent to the road;
+  text_en: “Demerit Points No Stopping Zone” means any part of a road that is marked with a double yellow zig-zag line and
+    includes the public footpath adjacent to the road;
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-RULES-7
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: '7'
+  page: 6
+  marking_type: directional arrows
+  element: lane_marking
+  text_original: The driver or rider of a vehicle who intends to turn to the right at an intersection or junction of roads
+    shall, before reaching such intersection or junction and as opportunity offers, move into the appropriate lane as indicated
+    by the directional arrows to turn right and any driver or rider of a vehicle intending to turn to the left shall, as opportunity
+    offers, move into the appropriate lane as indicated by the directional arrows to turn left.
+  text_en: The driver or rider of a vehicle who intends to turn to the right at an intersection or junction of roads shall,
+    before reaching such intersection or junction and as opportunity offers, move into the appropriate lane as indicated by
+    the directional arrows to turn right and any driver or rider of a vehicle intending to turn to the left shall, as opportunity
+    offers, move into the appropriate lane as indicated by the directional arrows to turn left.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    turn_left: allowed
+    turn_right: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-RULES-9(2)
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: 9(2)
+  page: 6
+  marking_type: left-turn permission lines
+  element: general
+  text_original: At particular intersections or junctions where the turn to the left into crossing traffic is permitted, notices,
+    lines or signs as defined in the Road Traffic (Traffic Signs) Rules (R 33) shall be placed to indicate such permission;
+    and in such case the driver or rider of the vehicle shall proceed with due regard for the safety of pedestrians crossing
+    the road and of the traffic stream which the vehicle seeks to enter.
+  text_en: At particular intersections or junctions where the turn to the left into crossing traffic is permitted, notices,
+    lines or signs as defined in the Road Traffic (Traffic Signs) Rules (R 33) shall be placed to indicate such permission;
+    and in such case the driver or rider of the vehicle shall proceed with due regard for the safety of pedestrians crossing
+    the road and of the traffic stream which the vehicle seeks to enter.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    turn_left: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-RULES-22(a)
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: 22(a)
+  page: 8
+  marking_type: unbroken white line or double white lines
+  element: boundary
+  text_original: 'No person shall park a vehicle —
+
+    ( a ) on any road between the edge of a roadway and any portion of an unbroken white line or unbroken double white lines
+    laid down on such road;'
+  text_en: 'No person shall park a vehicle —
+
+    ( a ) on any road between the edge of a roadway and any portion of an unbroken white line or unbroken double white lines
+    laid down on such road;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-RULES-22(b)
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: 22(b)
+  page: 8
+  marking_type: unbroken double yellow lines
+  element: boundary
+  text_original: 'No person shall park a vehicle —
+
+    ( b ) on any road where unbroken double yellow lines are laid down, from the point where such lines commence to the point
+    they end;'
+  text_en: 'No person shall park a vehicle —
+
+    ( b ) on any road where unbroken double yellow lines are laid down, from the point where such lines commence to the point
+    they end;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-RULES-22(c)
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: 22(c)
+  page: 8
+  marking_type: unbroken yellow line
+  element: boundary
+  text_original: 'No person shall park a vehicle —
+
+    ( c ) on the side of any road between the hours of 7 a.m. and 7 p.m. on any day except Sundays or gazetted public holidays
+    if on that side of the road an unbroken yellow line is laid down;'
+  text_en: 'No person shall park a vehicle —
+
+    ( c ) on the side of any road between the hours of 7 a.m. and 7 p.m. on any day except Sundays or gazetted public holidays
+    if on that side of the road an unbroken yellow line is laid down;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-RULES-22(e)
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: 22(e)
+  page: 8
+  marking_type: pedestrian crossing
+  element: transverse
+  text_original: 'No person shall park a vehicle —
+
+    ( e ) within any pedestrian crossing;'
+  text_en: 'No person shall park a vehicle —
+
+    ( e ) within any pedestrian crossing;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: false
+  norm_check: agrees
+- rule_id: SG-RULES-22(g)
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: 22(g)
+  page: 8
+  marking_type: yellow bus stop box
+  element: area
+  text_original: 'No person shall park a vehicle —
+
+    ( g ) within 9 metres of a bus stop —
+
+    (i) from the edge of the yellow demarcated box; or
+
+    (ii) from the tip of a bus bay,
+
+    except when the vehicle breaks down owing to a defect in the vehicle or its tyres;'
+  text_en: 'No person shall park a vehicle —
+
+    ( g ) within 9 metres of a bus stop —
+
+    (i) from the edge of the yellow demarcated box; or
+
+    (ii) from the tip of a bus bay,
+
+    except when the vehicle breaks down owing to a defect in the vehicle or its tyres;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-RULES-25
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: '25'
+  page: 9
+  marking_type: perpendicular yellow lines
+  element: area
+  text_original: 'No person shall stop or park any vehicle on any part of a road which is marked by perpendicular yellow lines
+    for the purpose of loading or unloading goods —
+
+    ( a ) on Mondays to Fridays (with the exception of gazetted public holidays) between the hours of —
+
+    (i) 7.30 a.m. and 9.30 a.m.;
+
+    (ii) 12.30 p.m. and 2 p.m.; and
+
+    (iii) 4 p.m. and 6 p.m.; and
+
+    ( b ) on Saturdays (with the exception of gazetted public holidays) between the hours of —
+
+    (i) 7.30 a.m. and 9.30 a.m.; and
+
+    (ii) 12 noon and 2 p.m.'
+  text_en: 'No person shall stop or park any vehicle on any part of a road which is marked by perpendicular yellow lines for
+    the purpose of loading or unloading goods —
+
+    ( a ) on Mondays to Fridays (with the exception of gazetted public holidays) between the hours of —
+
+    (i) 7.30 a.m. and 9.30 a.m.;
+
+    (ii) 12.30 p.m. and 2 p.m.; and
+
+    (iii) 4 p.m. and 6 p.m.; and
+
+    ( b ) on Saturdays (with the exception of gazetted public holidays) between the hours of —
+
+    (i) 7.30 a.m. and 9.30 a.m.; and
+
+    (ii) 12 noon and 2 p.m.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-RULES-26
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: '26'
+  page: 9
+  marking_type: yellow box
+  element: area
+  text_original: 'Any person who drives or rides, or turns a vehicle or part thereof into a yellow box indicated by yellow
+    lines connecting the 4 corners of —
+
+    ( a ) a road junction and hatching the junction diagonally, notwithstanding that the light signals controlling the movement
+    of vehicular traffic permit him to do so; or
+
+    ( b ) an area of road at a road junction or on any part of the road as defined under rule 7(8) of the Road Traffic (Traffic
+    Signs) Rules (R 33), notwithstanding that he has the right of way,
+
+    and by doing so causes obstruction to any other vehicle proceeding to or along that road junction or any part of the road
+    shall be guilty of an offence.'
+  text_en: 'Any person who drives or rides, or turns a vehicle or part thereof into a yellow box indicated by yellow lines
+    connecting the 4 corners of —
+
+    ( a ) a road junction and hatching the junction diagonally, notwithstanding that the light signals controlling the movement
+    of vehicular traffic permit him to do so; or
+
+    ( b ) an area of road at a road junction or on any part of the road as defined under rule 7(8) of the Road Traffic (Traffic
+    Signs) Rules (R 33), notwithstanding that he has the right of way,
+
+    and by doing so causes obstruction to any other vehicle proceeding to or along that road junction or any part of the road
+    shall be guilty of an offence.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+    turn_left: prohibited
+    turn_right: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-RULES-26A(1)
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: 26A(1)
+  page: 10
+  marking_type: Bus Give-Way Line
+  element: transverse
+  text_original: 'Where —
+
+    ( a ) a bus is entering a Bus Give-Way Box from a bus stop or a bus bay; or
+
+    ( b ) a bus which is at a bus stop, or a bus bay, stops before entering a Bus Give-Way Box and the driver of the bus signals
+    his intention to turn the bus into the Bus Give-Way Box,
+
+    the driver or rider of a vehicle, driving or riding the vehicle in a Bus Give-Way Controlled Area and approaching the
+    Bus Give-Way Box, shall stop before the Bus Give-Way Line and give way to the bus entering or waiting to enter the Bus
+    Give-Way Box.'
+  text_en: 'Where —
+
+    ( a ) a bus is entering a Bus Give-Way Box from a bus stop or a bus bay; or
+
+    ( b ) a bus which is at a bus stop, or a bus bay, stops before entering a Bus Give-Way Box and the driver of the bus signals
+    his intention to turn the bus into the Bus Give-Way Box,
+
+    the driver or rider of a vehicle, driving or riding the vehicle in a Bus Give-Way Controlled Area and approaching the
+    Bus Give-Way Box, shall stop before the Bus Give-Way Line and give way to the bus entering or waiting to enter the Bus
+    Give-Way Box.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-RULES-26A(2)
+  region: SG
+  source: Road Traffic Rules (R 20)
+  document: rules
+  section: 26A(2)
+  page: 10
+  marking_type: Bus Give-Way Box
+  element: area
+  text_original: No person shall drive or ride any vehicle in, or cause or permit any vehicle to remain in, a Bus Give-Way
+    Box so as to cause obstruction to any bus entering or about to enter the Bus Give-Way Box from a bus stop or a bus bay.
+  text_en: No person shall drive or ride any vehicle in, or cause or permit any vehicle to remain in, a Bus Give-Way Box so
+    as to cause obstruction to any bus entering or about to enter the Bus Give-Way Box from a bus stop or a bus bay.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(1)(a)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(1)(a)
+  page: 5
+  marking_type: stop or speed-reduction marking
+  element: transverse
+  text_original: 'Lines, markings and other traffic devices may be drawn or placed on a road to indicate —
+
+    (a) the position where vehicles shall stop or reduce speed when required to do so by a traffic sign, or a police officer
+    engaged in the control of traffic;'
+  text_en: 'Lines, markings and other traffic devices may be drawn or placed on a road to indicate —
+
+    (a) the position where vehicles shall stop or reduce speed when required to do so by a traffic sign, or a police officer
+    engaged in the control of traffic;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(1)(b)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(1)(b)
+  page: 5
+  marking_type: traffic course and direction markings
+  element: general
+  text_original: 'Lines, markings and other traffic devices may be drawn or placed on a road to indicate —
+
+    (b) the course and direction to be followed by traffic;'
+  text_en: 'Lines, markings and other traffic devices may be drawn or placed on a road to indicate —
+
+    (b) the course and direction to be followed by traffic;'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(1)(d)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(1)(d)
+  page: 5
+  marking_type: reserved-place markings
+  element: area
+  text_original: 'Lines, markings and other traffic devices may be drawn or placed on a road to indicate —
+
+    (d) places reserved for bus terminals, bus stops, taxi stands, taxi stops, P2P stops, trishaw stands, motor cycle parks,
+    bicycle parks, car parks, coach parks, lorry parks, trailer parks, loading and unloading bays and vehicles of handicapped
+    persons;'
+  text_en: 'Lines, markings and other traffic devices may be drawn or placed on a road to indicate —
+
+    (d) places reserved for bus terminals, bus stops, taxi stands, taxi stops, P2P stops, trishaw stands, motor cycle parks,
+    bicycle parks, car parks, coach parks, lorry parks, trailer parks, loading and unloading bays and vehicles of handicapped
+    persons;'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(1)(l)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(1)(l)
+  page: 5
+  marking_type: parking restriction markings
+  element: general
+  text_original: 'Lines, markings and other traffic devices may be drawn or placed on a road to indicate —
+
+    (l) the section of the road where parking of vehicles is restricted or prohibited;'
+  text_en: 'Lines, markings and other traffic devices may be drawn or placed on a road to indicate —
+
+    (l) the section of the road where parking of vehicles is restricted or prohibited;'
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(1)(m)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(1)(m)
+  page: 5
+  marking_type: no-crossing boundary
+  element: boundary
+  text_original: 'Lines, markings and other traffic devices may be drawn or placed on a road to indicate —
+
+    (m) the boundary on the road which no vehicle, whether overtaking other vehicles or not, shall cross;'
+  text_en: 'Lines, markings and other traffic devices may be drawn or placed on a road to indicate —
+
+    (m) the boundary on the road which no vehicle, whether overtaking other vehicles or not, shall cross;'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(5)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(5)
+  page: 6
+  marking_type: white signalised pedestrian crossing lines
+  element: transverse
+  text_original: A signalised pedestrian crossing is indicated by 2 parallel, continuous or broken white lines each of not
+    less than 200 mm in width and spaced not less than 3,000 mm apart from each other, and with the 2 lines running from one
+    edge of the road to the other.
+  text_en: A signalised pedestrian crossing is indicated by 2 parallel, continuous or broken white lines each of not less
+    than 200 mm in width and spaced not less than 3,000 mm apart from each other, and with the 2 lines running from one edge
+    of the road to the other.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(6)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(6)
+  page: 6
+  marking_type: yellow pedestrian crossing lines
+  element: transverse
+  text_original: A pedestrian crossing (other than a signalised pedestrian crossing) at a signal-controlled junction is indicated
+    by 2 parallel yellow lines each of not less than 300 mm in width and spaced not less than 3,000 mm apart from the centre
+    to centre from one edge of the road to the other.
+  text_en: A pedestrian crossing (other than a signalised pedestrian crossing) at a signal-controlled junction is indicated
+    by 2 parallel yellow lines each of not less than 300 mm in width and spaced not less than 3,000 mm apart from the centre
+    to centre from one edge of the road to the other.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(7)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(7)
+  page: 6
+  marking_type: signalised bicycle crossing lines
+  element: transverse
+  text_original: A signalised bicycle crossing is indicated by 2 parallel white lines each of not less than 300 mm in width
+    and spaced not less than 3,000 mm apart from the centre of one line to the other and with the 2 lines running from one
+    edge of the road, subway or bridge, as the case may be, to the other.
+  text_en: A signalised bicycle crossing is indicated by 2 parallel white lines each of not less than 300 mm in width and
+    spaced not less than 3,000 mm apart from the centre of one line to the other and with the 2 lines running from one edge
+    of the road, subway or bridge, as the case may be, to the other.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say permissive (may)
+- rule_id: SG-SIGNS-7(9)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(9)
+  page: 6
+  marking_type: continuous white road shoulder line
+  element: boundary
+  text_original: A road shoulder is the strip constructed with a surface suitable for motor vehicles to move along or stop,
+    along the left (nearside) or right (offside) of a road and is demarcated from the road by a continuous white marginal
+    line of not less than 300 mm in width.
+  text_en: A road shoulder is the strip constructed with a surface suitable for motor vehicles to move along or stop, along
+    the left (nearside) or right (offside) of a road and is demarcated from the road by a continuous white marginal line of
+    not less than 300 mm in width.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(10)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(10)
+  page: 6
+  marking_type: white road edge line
+  element: boundary
+  text_original: The edge of a road is indicated by a continuous or broken white marginal line of not less than 300 mm in
+    width.
+  text_en: The edge of a road is indicated by a continuous or broken white marginal line of not less than 300 mm in width.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(11)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(11)
+  page: 6
+  marking_type: part-day bus lane markings
+  element: lane_type
+  text_original: A part-day bus lane is the section of a road marked by a longitudinal continuous yellow line of not less
+    than 300 mm in width and transverse yellow lines of not less than 200 mm in width and 1,200 mm in length.
+  text_en: A part-day bus lane is the section of a road marked by a longitudinal continuous yellow line of not less than 300
+    mm in width and transverse yellow lines of not less than 200 mm in width and 1,200 mm in length.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(11A)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(11A)
+  page: 6
+  marking_type: full-day bus lane markings
+  element: lane_type
+  text_original: 'A full-day bus lane is the section of a road marked by —
+
+    (a) a longitudinal continuous yellow line of not less than 300 mm in width parallel to a longitudinal continuous red line
+    of not less than 150 mm in width; and
+
+    (b) transverse yellow lines of not less than 200 mm in width and 1,200 mm in length,'
+  text_en: 'A full-day bus lane is the section of a road marked by —
+
+    (a) a longitudinal continuous yellow line of not less than 300 mm in width parallel to a longitudinal continuous red line
+    of not less than 150 mm in width; and
+
+    (b) transverse yellow lines of not less than 200 mm in width and 1,200 mm in length,'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(11AA)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(11AA)
+  page: 6
+  marking_type: bus-only lane markings
+  element: lane_type
+  text_original: 'A bus-only lane is the section of a road, marked by —
+
+    (a) a longitudinal continuous red line of not less than 300 mm in width; and
+
+    (b) transverse red lines of not less than 200 mm in width and 1,200 mm in length.'
+  text_en: 'A bus-only lane is the section of a road, marked by —
+
+    (a) a longitudinal continuous red line of not less than 300 mm in width; and
+
+    (b) transverse red lines of not less than 200 mm in width and 1,200 mm in length.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(11AC)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(11AC)
+  page: 7
+  marking_type: part-day bicycle lane markings
+  element: lane_type
+  text_original: 'A part-day bicycle lane is the section of a road, marked by —
+
+    ( a ) a broken or continuous blue line; and
+
+    ( b ) a bicycle symbol that appears at regular intervals on that section of the road.'
+  text_en: 'A part-day bicycle lane is the section of a road, marked by —
+
+    ( a ) a broken or continuous blue line; and
+
+    ( b ) a bicycle symbol that appears at regular intervals on that section of the road.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(11B)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(11B)
+  page: 7
+  marking_type: full-day bicycle lane markings
+  element: lane_type
+  text_original: 'A full-day bicycle lane is the section of a road, marked by —
+
+    ( a ) a longitudinal, continuous chevron marking; and
+
+    ( b ) a bicycle symbol that appears at regular intervals on that section of the road.'
+  text_en: 'A full-day bicycle lane is the section of a road, marked by —
+
+    ( a ) a longitudinal, continuous chevron marking; and
+
+    ( b ) a bicycle symbol that appears at regular intervals on that section of the road.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(12)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(12)
+  page: 7
+  marking_type: continuous double white lines
+  element: boundary
+  text_original: The boundary which no vehicle shall cross under paragraph (1)( m ) is indicated by continuous double white
+    lines
+  text_en: The boundary which no vehicle shall cross under paragraph (1)( m ) is indicated by continuous double white lines
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(13)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(13)
+  page: 7
+  marking_type: parking place or public service vehicle stand lines
+  element: area
+  text_original: A parking place or a public service vehicle stand is indicated by broken or continuous lines
+  text_en: A parking place or a public service vehicle stand is indicated by broken or continuous lines
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(14)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(14)
+  page: 7
+  marking_type: Bus Give-Way Controlled Area markings
+  element: area
+  text_original: A Bus Give-Way Controlled Area is the section of a road marked by white triangle markings and the word “Bus”
+    in white
+  text_en: A Bus Give-Way Controlled Area is the section of a road marked by white triangle markings and the word “Bus” in
+    white
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-7(15)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 7(15)
+  page: 7
+  marking_type: Bus Give-Way Box
+  element: area
+  text_original: 'A Bus Give-Way Box is the section of a road painted in yellow and marked by an arrow, which —
+
+    ( a ) appears after a Bus Give-Way Controlled Area; and
+
+    ( b ) is separated from the Bus Give-Way Controlled Area by a Bus Give-Way Line,'
+  text_en: 'A Bus Give-Way Box is the section of a road painted in yellow and marked by an arrow, which —
+
+    ( a ) appears after a Bus Give-Way Controlled Area; and
+
+    ( b ) is separated from the Bus Give-Way Controlled Area by a Bus Give-Way Line,'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-8(1)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 8(1)
+  page: 8
+  marking_type: part-day bus lane
+  element: lane_type
+  text_original: Except on any Saturday, Sunday or public holiday, no person shall drive a vehicle other than an omnibus,
+    or cause or permit any such vehicle to remain, on a part-day bus lane during the hours of 7.30 a.m. to 9.30 a.m. and 5
+    p.m. to 8 p.m.
+  text_en: Except on any Saturday, Sunday or public holiday, no person shall drive a vehicle other than an omnibus, or cause
+    or permit any such vehicle to remain, on a part-day bus lane during the hours of 7.30 a.m. to 9.30 a.m. and 5 p.m. to
+    8 p.m.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-8(1A)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 8(1A)
+  page: 8
+  marking_type: full-day bus lane
+  element: lane_type
+  text_original: Except on any Sunday or public holiday, no person shall drive a vehicle other than an omnibus, or cause or
+    permit any such vehicle to remain, on a full-day bus lane during the hours of 7.30 a.m. to 11 p.m.
+  text_en: Except on any Sunday or public holiday, no person shall drive a vehicle other than an omnibus, or cause or permit
+    any such vehicle to remain, on a full-day bus lane during the hours of 7.30 a.m. to 11 p.m.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-8(1B)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 8(1B)
+  page: 8
+  marking_type: bus-only lane
+  element: lane_type
+  text_original: A person must not drive a vehicle other than an omnibus, or cause or permit any such vehicle to remain, on
+    a bus-only lane at all times.
+  text_en: A person must not drive a vehicle other than an omnibus, or cause or permit any such vehicle to remain, on a bus-only
+    lane at all times.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-8(2)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 8(2)
+  page: 8
+  marking_type: bus lane exceptions
+  element: lane_type
+  text_original: 'Paragraphs (1), (1A) and (1B) shall not apply to —
+
+    ( a ) the driver of an authorised ambulance, fire engine or any vehicle for police or rescue purposes on urgent duty call
+    if the approach of such vehicle is made known by means of some distinctive siren, bell or multi-toned horn, as the case
+    may be;
+
+    ( b ) a cyclist who is not cycling alongside of another bicycle, three‑wheeled pedal cycle, recumbent device or power‑assisted
+    bicycle on his left;
+
+    ( c ) the driver of a motor vehicle who drives along the bus lane in order to avoid causing danger to any person or a
+    collision with any other vehicle if that driver does not cause or permit the vehicle to remain on the bus lane longer
+    than is necessary to avoid causing such danger or collision;
+
+    ( d ) the driver of a school bus, a private hire bus or an excursion bus when it is used to carry passengers for reward
+    under a Supplementary Public Transport Scheme in accordance with —
+
+    (i) a public service vehicle licence that is issued for that bus under section 102 of the Act; and
+
+    (ii) a bus service licence that is granted or is deemed granted under section 13 of the Bus Services Industry Act 2015
+    (Act 30 of 2015); and
+
+    ( e ) the driver of any other bus except that he shall not stop the bus in a bus lane or at a bus stand or bus bay within
+    a bus lane for any purpose other than for the purpose of negotiating traffic.'
+  text_en: 'Paragraphs (1), (1A) and (1B) shall not apply to —
+
+    ( a ) the driver of an authorised ambulance, fire engine or any vehicle for police or rescue purposes on urgent duty call
+    if the approach of such vehicle is made known by means of some distinctive siren, bell or multi-toned horn, as the case
+    may be;
+
+    ( b ) a cyclist who is not cycling alongside of another bicycle, three‑wheeled pedal cycle, recumbent device or power‑assisted
+    bicycle on his left;
+
+    ( c ) the driver of a motor vehicle who drives along the bus lane in order to avoid causing danger to any person or a
+    collision with any other vehicle if that driver does not cause or permit the vehicle to remain on the bus lane longer
+    than is necessary to avoid causing such danger or collision;
+
+    ( d ) the driver of a school bus, a private hire bus or an excursion bus when it is used to carry passengers for reward
+    under a Supplementary Public Transport Scheme in accordance with —
+
+    (i) a public service vehicle licence that is issued for that bus under section 102 of the Act; and
+
+    (ii) a bus service licence that is granted or is deemed granted under section 13 of the Bus Services Industry Act 2015
+    (Act 30 of 2015); and
+
+    ( e ) the driver of any other bus except that he shall not stop the bus in a bus lane or at a bus stand or bus bay within
+    a bus lane for any purpose other than for the purpose of negotiating traffic.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: SG-SIGNS-8(2A)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 8(2A)
+  page: 8
+  marking_type: bus-only lane exceptions
+  element: lane_type
+  text_original: 'In addition, paragraph (1B) does not apply to —
+
+    ( a ) the driver of a vehicle which is being used —
+
+    (i) by the Authority to carry out any function or duty of the Authority;
+
+    (ii) to carry out works on a public street, where such works have been approved by the Authority under section 17(1) of
+    the Street Works Act 1995; or
+
+    (iii) to carry out any emergency works on a public street mentioned in regulation 31(1) of the Street Works (Works on
+    Public Streets) Regulations (Rg 2);
+
+    ( b ) the driver of a vehicle which has been authorised by the National Parks Board, the Public Utilities Board or the
+    National Environment Agency (as the case may be) to be used to carry out any works that require the use of the bus-only
+    lane and are necessary to carry out any function or duty of the National Parks Board, the Public Utilities Board or the
+    National Environment Agency (as the case may be), other than the works mentioned in regulation 31(1) of the Street Works
+    (Works on Public Streets) Regulations; and
+
+    ( c ) the driver of a vehicle which has been authorised by the licensee of any bus interchange, bus park, bus terminal
+    or bus depot (as the case may be) to be used by that licensee, provided that the vehicle is being driven on a bus-only
+    lane that leads into or out of any bus interchange, bus park, bus terminal or bus depot, as the case may be.'
+  text_en: 'In addition, paragraph (1B) does not apply to —
+
+    ( a ) the driver of a vehicle which is being used —
+
+    (i) by the Authority to carry out any function or duty of the Authority;
+
+    (ii) to carry out works on a public street, where such works have been approved by the Authority under section 17(1) of
+    the Street Works Act 1995; or
+
+    (iii) to carry out any emergency works on a public street mentioned in regulation 31(1) of the Street Works (Works on
+    Public Streets) Regulations (Rg 2);
+
+    ( b ) the driver of a vehicle which has been authorised by the National Parks Board, the Public Utilities Board or the
+    National Environment Agency (as the case may be) to be used to carry out any works that require the use of the bus-only
+    lane and are necessary to carry out any function or duty of the National Parks Board, the Public Utilities Board or the
+    National Environment Agency (as the case may be), other than the works mentioned in regulation 31(1) of the Street Works
+    (Works on Public Streets) Regulations; and
+
+    ( c ) the driver of a vehicle which has been authorised by the licensee of any bus interchange, bus park, bus terminal
+    or bus depot (as the case may be) to be used by that licensee, provided that the vehicle is being driven on a bus-only
+    lane that leads into or out of any bus interchange, bus park, bus terminal or bus depot, as the case may be.'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated:
+    go_straight: allowed
+  verified_quote: true
+  norm_check: words say permissive (may)
+- rule_id: SG-SIGNS-8A(1)
+  region: SG
+  source: Road Traffic (Traffic Signs) Rules (R 33)
+  document: signs
+  section: 8A(1)
+  page: 9
+  marking_type: bicycle lane parking restriction
+  element: lane_type
+  text_original: 'A person must not park a vehicle —
+
+    ( a ) on a part-day bicycle lane, on a Sunday at any time between 5 a.m. and 11 a.m.; or
+
+    ( b ) on a full-day bicycle lane at any time.'
+  text_en: 'A person must not park a vehicle —
+
+    ( a ) on a part-day bicycle lane, on a Sunday at any time between 5 a.m. and 11 a.m.; or
+
+    ( b ) on a full-day bicycle lane at any time.'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees

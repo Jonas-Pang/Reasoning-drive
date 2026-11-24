@@ -1,0 +1,27 @@
+{
+  "pdf": "sg_highway_code_r11.html",
+  "file_sha256": "2b0d4cc77061c920f89a8cbebf8b3172f64cabb6a688494b8b1ee3382dfca72e",
+  "code": "SG",
+  "document": "highway_code",
+  "pages": 3,
+  "pages_read": [
+    1,
+    2,
+    3
+  ],
+  "pages_same_as_reference": [],
+  "reference": "",
+  "requests": 1,
+  "mock": false,
+  "passages": 0,
+  "verified_quotes": 0,
+  "errors": [],
+  "usage": {
+    "input_tokens": 3062,
+    "output_tokens": 16
+  },
+  "cost_usd": 0.0063,
+  "draft": "D:\\Project\\Reasoning_Drive\\regulations\\SG\\passages_draft.yaml",
+  "region_file": "D:\\Project\\Reasoning_Drive\\regulations\\SG\\region.yaml",
+  "time_utc": "2026-11-14T20:31:15Z"
+}

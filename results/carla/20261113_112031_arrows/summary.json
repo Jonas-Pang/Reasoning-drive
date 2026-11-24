@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "map": "Town03_Opt",
+    "scenario": "arrows",
+    "weather": "ClearNoon",
+    "region": "US",
+    "prompt": "prompts/v3",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "reasoning_summary": "auto",
+    "tests": [
+      "A",
+      "B"
+    ],
+    "drive_with": "B",
+    "seed": 6216,
+    "started": "20261113_112031",
+    "mock": false
+  },
+  "per_test": {
+    "A": {
+      "requests": 2,
+      "answered": 2,
+      "cost_usd": 0.0167,
+      "mean_latency_s": 6.01,
+      "by_kind": {
+        "arrow": {
+          "targets": 2,
+          "marking_correct": 2,
+          "actions_checked": 8,
+          "actions_correct": 8,
+          "unsafe": 0,
+          "over_cautious": 0
+        }
+      }
+    },
+    "B": {
+      "requests": 2,
+      "answered": 2,
+      "cost_usd": 0.0234,
+      "mean_latency_s": 6.62,
+      "by_kind": {
+        "arrow": {
+          "targets": 2,
+          "marking_correct": 2,
+          "actions_checked": 8,
+          "actions_correct": 8,
+          "unsafe": 0,
+          "over_cautious": 0
+        }
+      }
+    }
+  },
+  "closed_loop": {
+    "decision_points": 2,
+    "wanted_something_prohibited": 2,
+    "blocked_by_system": 2,
+    "allowed_although_prohibited": 0,
+    "chosen_movement_allowed_by_rules": 2,
+    "car_went_as_chosen": 2
+  }
+}

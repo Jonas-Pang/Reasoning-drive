@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lane labeling</title>
+<link rel="stylesheet" href="lanes.css">
+</head>
+<body>
+<header>
+  <h1 data-t="title">Lane labeling</h1>
+  <span id="who"></span>
+  <span id="progress"></span>
+  <span class="grow"></span>
+  <select id="filter">
+    <option value="todo" data-t="f_todo">To do</option>
+    <option value="all" data-t="f_all">All</option>
+    <option value="conflict" data-t="f_conflict">Disagreements</option>
+    <option value="done" data-t="f_done">Final</option>
+  </select>
+  <button id="prev">&larr;</button>
+  <span id="pos"></span>
+  <button id="next">&rarr;</button>
+  <button id="export" class="offline-only" data-t="export">Export results</button>
+  <button id="remove" class="remove-only" data-t="remove">Remove image</button>
+  <button id="lang">中文</button>
+</header>
+<details id="guide">
+  <summary data-t="guide_title">How to label (read once)</summary>
+  <div id="guide_body"></div>
+</details>
+<div id="notices"></div>
+<div id="empty" data-t="none_left"></div>
+<main>
+  <section id="left">
+    <div id="imgbox"><canvas id="canvas"></canvas><canvas id="loupe" width="240" height="240"></canvas></div>
+    <div class="row tools">
+      <button id="toggle_lines" data-t="hide_lines">Hide lines (H)</button>
+      <label class="check"><input type="checkbox" id="loupe_on" checked> <span data-t="loupe">Magnifier</span></label>
+      <span class="sep"></span>
+      <span class="muted" data-t="draw">Draw (optional):</span>
+      <button id="draw_left" data-t="draw_left">Left line</button>
+      <button id="draw_right" data-t="draw_right">Right line</button>
+      <button id="draw_stop" data-t="draw_stop">Stop</button>
+      <button id="clear_lines" data-t="clear_lines">Clear</button>
+    </div>
+    <div id="sug_note" class="muted"></div>
+    <div id="meta" class="muted"></div>
+    <div id="adjudicate" class="server-only"></div>
+  </section>
+  <section id="right">
+    <fieldset id="fs_scene">
+      <legend data-t="scene">1. Where my lane is</legend>
+      <div class="opts"><span class="name" data-t="lane_count">Lanes of my direction</span><span id="lane_count_opts" class="chips"></span></div>
+      <div class="opts"><span class="name" data-t="ego_index">My lane (1 = leftmost)</span><span id="ego_index_opts" class="chips"></span></div>
+      <div class="opts" id="scene_evidence"></div>
+    </fieldset>
+    <fieldset id="fs_sides">
+      <legend data-t="sides">2. Both boundaries of my lane</legend>
+      <div class="sides">
+        <div class="side" id="fs_left"><h3 data-t="left">Left boundary</h3></div>
+        <div class="side" id="fs_right"><h3 data-t="right">Right boundary</h3></div>
+      </div>
+    </fieldset>
+    <fieldset id="fs_markings">
+      <legend data-t="markings">3. Markings in my lane (up to its stop line or end)</legend>
+      <div id="tokens_common" class="chips"></div>
+      <div id="tokens_none" class="muted" data-t="no_markings">Nothing painted in my lane.</div>
+      <details id="tokens_more"><summary data-t="more_markings">All markings</summary><div id="tokens"></div></details>
+      <div class="opts" id="markings_evidence"></div>
+    </fieldset>
+    <fieldset id="fs_actions">
+      <legend data-t="actions">4. What it means for my car</legend>
+      <div class="muted" data-t="acts_help">Filled in from the rule table as you go; click to change. A changed value stays.</div>
+      <table id="acts"></table>
+      <div class="row"><button id="reset_acts" data-t="reset_acts">Back to the rule table</button><span id="prefill_notes" class="muted"></span></div>
+      <div class="opts"><span class="name" data-t="rules">Rule passages</span><select id="rule_add"></select></div>
+      <div id="passages"></div>
+    </fieldset>
+    <fieldset id="fs_save">
+      <label><input type="checkbox" id="unsure"> <span data-t="unsure">I am not sure (the owner will decide)</span></label>
+      <input id="comment" data-tp="comment" placeholder="Comment">
+      <div id="msgs"></div>
+      <button id="save_draft" data-t="save_draft">Save draft</button>
+      <button id="save_done" class="primary" data-t="save_done">Done, next image</button>
+    </fieldset>
+  </section>
+</main>
+<script src="lanes.js"></script>
+</body>
+</html>

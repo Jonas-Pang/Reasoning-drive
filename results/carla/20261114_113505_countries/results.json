@@ -1,0 +1,708 @@
+{
+ "meta": {
+  "map": "Town03",
+  "carla_server": "0.9.16",
+  "carla_client": "",
+  "weather": "ClearNoon",
+  "prompt": "prompts/lane_v2",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "tests": [
+   "A",
+   "B"
+  ],
+  "drive_with": "B",
+  "mock": false,
+  "started": "20261114_113505",
+  "countries": {
+   "US": {
+    "name": "the United States",
+    "driving_side": "right",
+    "mirrored": false,
+    "draft_passages": false,
+    "passages": 46
+   },
+   "CN": {
+    "name": "China",
+    "driving_side": "right",
+    "mirrored": false,
+    "draft_passages": false,
+    "passages": 45
+   },
+   "UK": {
+    "name": "the United Kingdom",
+    "driving_side": "left",
+    "mirrored": true,
+    "draft_passages": true,
+    "passages": 22
+   },
+   "JP": {
+    "name": "Japan",
+    "driving_side": "left",
+    "mirrored": true,
+    "draft_passages": true,
+    "passages": 23
+   }
+  },
+  "scenes": {
+   "lane_change": {
+    "label": "solid white line between two lanes of my direction, double yellow centre line on the other side",
+    "road": 20,
+    "lane": 1,
+    "s": 126.6,
+    "intent": "change_right",
+    "intent_text": "change to the right lane"
+   },
+   "arrow_lane": {
+    "label": "left-turn arrow in my lane, solid white line to the lane on the right",
+    "road": 44,
+    "lane": -4,
+    "s": 9.0,
+    "intent": "turn_right",
+    "intent_text": "turn right at the junction"
+   }
+  }
+ },
+ "records": [
+  {
+   "country": "US",
+   "scene": "lane_change",
+   "mirrored": false,
+   "label": "solid white line between two lanes of my direction, double yellow centre line on the other side",
+   "intent": "change_right",
+   "intent_text": "change to the right lane",
+   "intent_in_photo": "change_right",
+   "road": 20,
+   "lane": 1,
+   "s": 126.6,
+   "frames": 190,
+   "first_frame": 0,
+   "stop_frame": 80,
+   "act_frame": 80,
+   "ask_seconds": 15.3,
+   "actions": {
+    "A": {
+     "change_left": "prohibited",
+     "change_right": "allowed",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_waiting_area": "not_applicable"
+    },
+    "B": {
+     "change_left": "prohibited",
+     "change_right": "allowed",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_waiting_area": "not_applicable"
+    }
+   },
+   "decisions": {
+    "A": {
+     "shift": "right",
+     "choice": null,
+     "text": "change right (allowed)",
+     "text_cn": "向右变道（允许）",
+     "does_intent": true
+    },
+    "B": {
+     "shift": "right",
+     "choice": null,
+     "text": "change right (allowed)",
+     "text_cn": "向右变道（允许）",
+     "does_intent": true
+    }
+   },
+   "drove": {
+    "shift": "right",
+    "choice": null,
+    "text": "change right (allowed)",
+    "text_cn": "向右变道（允许）",
+    "does_intent": true
+   },
+   "car": {
+    "shift": "right",
+    "choice": null,
+    "text": "change right (allowed)",
+    "text_cn": "向右变道（允许）",
+    "does_intent": true
+   },
+   "end": {
+    "road": 20,
+    "lane": 1
+   },
+   "cost_usd": 0.0455,
+   "cached": {
+    "A": false,
+    "B": false
+   },
+   "errors": {
+    "A": "",
+    "B": ""
+   }
+  },
+  {
+   "country": "US",
+   "scene": "arrow_lane",
+   "mirrored": false,
+   "label": "left-turn arrow in my lane, solid white line to the lane on the right",
+   "intent": "turn_right",
+   "intent_text": "turn right at the junction",
+   "intent_in_photo": "turn_right",
+   "road": 44,
+   "lane": -4,
+   "s": 9.0,
+   "frames": 180,
+   "first_frame": 0,
+   "stop_frame": 79,
+   "act_frame": 79,
+   "ask_seconds": 13.8,
+   "actions": {
+    "A": {
+     "change_left": "prohibited",
+     "change_right": "allowed",
+     "go_straight": "prohibited",
+     "turn_left": "allowed",
+     "turn_right": "prohibited",
+     "u_turn": "prohibited",
+     "enter_waiting_area": "not_applicable"
+    },
+    "B": {
+     "change_left": "prohibited",
+     "change_right": "allowed",
+     "go_straight": "prohibited",
+     "turn_left": "allowed",
+     "turn_right": "prohibited",
+     "u_turn": "prohibited",
+     "enter_waiting_area": "not_applicable"
+    }
+   },
+   "decisions": {
+    "A": {
+     "shift": "right",
+     "choice": "turn_right",
+     "text": "turn right not allowed from this lane; changes to the right lane first (allowed), then turns",
+     "text_cn": "本车道不能右转（禁止），先向右变道（允许），再右转",
+     "does_intent": true
+    },
+    "B": {
+     "shift": "right",
+     "choice": "turn_right",
+     "text": "turn right not allowed from this lane; changes to the right lane first (allowed), then turns",
+     "text_cn": "本车道不能右转（禁止），先向右变道（允许），再右转",
+     "does_intent": true
+    }
+   },
+   "drove": {
+    "shift": "right",
+    "choice": "turn_right",
+    "text": "turn right not allowed from this lane; changes to the right lane first (allowed), then turns",
+    "text_cn": "本车道不能右转（禁止），先向右变道（允许），再右转",
+    "does_intent": true
+   },
+   "car": {
+    "shift": "right",
+    "choice": "turn_right",
+    "text": "turn right not allowed from this lane; changes to the right lane first (allowed), then turns",
+    "text_cn": "本车道不能右转（禁止），先向右变道（允许），再右转",
+    "does_intent": true
+   },
+   "end": {
+    "road": 1909,
+    "lane": -1
+   },
+   "cost_usd": 0.0238,
+   "cached": {
+    "A": false,
+    "B": false
+   },
+   "errors": {
+    "A": "",
+    "B": ""
+   }
+  },
+  {
+   "country": "CN",
+   "scene": "lane_change",
+   "mirrored": false,
+   "label": "solid white line between two lanes of my direction, double yellow centre line on the other side",
+   "intent": "change_right",
+   "intent_text": "change to the right lane",
+   "intent_in_photo": "change_right",
+   "road": 20,
+   "lane": 1,
+   "s": 126.6,
+   "frames": 189,
+   "first_frame": 0,
+   "stop_frame": 79,
+   "act_frame": 79,
+   "ask_seconds": 12.2,
+   "actions": {
+    "A": {
+     "change_left": "prohibited",
+     "change_right": "prohibited",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_waiting_area": "not_applicable"
+    },
+    "B": {
+     "change_left": "prohibited",
+     "change_right": "prohibited",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_waiting_area": "not_applicable"
+    }
+   },
+   "decisions": {
+    "A": {
+     "shift": null,
+     "choice": null,
+     "text": "stays in its lane (change right: prohibited)",
+     "text_cn": "保持本车道（向右变道：禁止）",
+     "does_intent": false
+    },
+    "B": {
+     "shift": null,
+     "choice": null,
+     "text": "stays in its lane (change right: prohibited)",
+     "text_cn": "保持本车道（向右变道：禁止）",
+     "does_intent": false
+    }
+   },
+   "drove": {
+    "shift": null,
+    "choice": null,
+    "text": "stays in its lane (change right: prohibited)",
+    "text_cn": "保持本车道（向右变道：禁止）",
+    "does_intent": false
+   },
+   "car": {
+    "shift": null,
+    "choice": null,
+    "text": "stays in its lane (change right: prohibited)",
+    "text_cn": "保持本车道（向右变道：禁止）",
+    "does_intent": false
+   },
+   "end": {
+    "road": 20,
+    "lane": 1
+   },
+   "cost_usd": 0.0365,
+   "cached": {
+    "A": false,
+    "B": false
+   },
+   "errors": {
+    "A": "",
+    "B": ""
+   }
+  },
+  {
+   "country": "CN",
+   "scene": "arrow_lane",
+   "mirrored": false,
+   "label": "left-turn arrow in my lane, solid white line to the lane on the right",
+   "intent": "turn_right",
+   "intent_text": "turn right at the junction",
+   "intent_in_photo": "turn_right",
+   "road": 44,
+   "lane": -4,
+   "s": 9.0,
+   "frames": 186,
+   "first_frame": 0,
+   "stop_frame": 79,
+   "act_frame": 79,
+   "ask_seconds": 16.2,
+   "actions": {
+    "A": {
+     "change_left": "prohibited",
+     "change_right": "prohibited",
+     "go_straight": "prohibited",
+     "turn_left": "allowed",
+     "turn_right": "prohibited",
+     "u_turn": "prohibited",
+     "enter_waiting_area": "not_applicable"
+    },
+    "B": {
+     "change_left": "prohibited",
+     "change_right": "prohibited",
+     "go_straight": "prohibited",
+     "turn_left": "allowed",
+     "turn_right": "prohibited",
+     "u_turn": "prohibited",
+     "enter_waiting_area": "not_applicable"
+    }
+   },
+   "decisions": {
+    "A": {
+     "shift": null,
+     "choice": "turn_left",
+     "text": "turn right: prohibited, change_right: prohibited -> follows the lane (turn left)",
+     "text_cn": "右转：禁止，向右变道：禁止 → 按本车道走（左转）",
+     "does_intent": false
+    },
+    "B": {
+     "shift": null,
+     "choice": "turn_left",
+     "text": "turn right: prohibited, change_right: prohibited -> follows the lane (turn left)",
+     "text_cn": "右转：禁止，向右变道：禁止 → 按本车道走（左转）",
+     "does_intent": false
+    }
+   },
+   "drove": {
+    "shift": null,
+    "choice": "turn_left",
+    "text": "turn right: prohibited, change_right: prohibited -> follows the lane (turn left)",
+    "text_cn": "右转：禁止，向右变道：禁止 → 按本车道走（左转）",
+    "does_intent": false
+   },
+   "car": {
+    "shift": null,
+    "choice": "turn_left",
+    "text": "turn right: prohibited, change_right: prohibited -> follows the lane (turn left)",
+    "text_cn": "右转：禁止，向右变道：禁止 → 按本车道走（左转）",
+    "does_intent": false
+   },
+   "end": {
+    "road": 1930,
+    "lane": -1
+   },
+   "cost_usd": 0.025,
+   "cached": {
+    "A": false,
+    "B": false
+   },
+   "errors": {
+    "A": "",
+    "B": ""
+   }
+  },
+  {
+   "country": "UK",
+   "scene": "lane_change",
+   "mirrored": true,
+   "label": "solid white line between two lanes of my direction, double yellow centre line on the other side",
+   "intent": "change_right",
+   "intent_text": "change to the right lane",
+   "intent_in_photo": "change_left",
+   "road": 20,
+   "lane": 1,
+   "s": 126.6,
+   "frames": 189,
+   "first_frame": 0,
+   "stop_frame": 79,
+   "act_frame": 79,
+   "ask_seconds": 19.2,
+   "actions": {
+    "A": {
+     "change_left": "allowed",
+     "change_right": "allowed",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_waiting_area": "not_applicable"
+    },
+    "B": {
+     "change_left": "not_determined",
+     "change_right": "not_determined",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_waiting_area": "not_applicable"
+    }
+   },
+   "decisions": {
+    "A": {
+     "shift": "left",
+     "choice": null,
+     "text": "change left (allowed)",
+     "text_cn": "向左变道（允许）",
+     "does_intent": true
+    },
+    "B": {
+     "shift": null,
+     "choice": null,
+     "text": "stays in its lane (change left: not_determined)",
+     "text_cn": "保持本车道（向左变道：无法确定）",
+     "does_intent": false
+    }
+   },
+   "drove": {
+    "shift": null,
+    "choice": null,
+    "text": "stays in its lane (change left: not_determined)",
+    "text_cn": "保持本车道（向左变道：无法确定）",
+    "does_intent": false
+   },
+   "car": {
+    "shift": null,
+    "choice": null,
+    "text": "stays in its lane (change left: not_determined)",
+    "text_cn": "保持本车道（向左变道：无法确定）",
+    "does_intent": false
+   },
+   "end": {
+    "road": 20,
+    "lane": 1
+   },
+   "cost_usd": 0.0352,
+   "cached": {
+    "A": false,
+    "B": false
+   },
+   "errors": {
+    "A": "",
+    "B": ""
+   }
+  },
+  {
+   "country": "UK",
+   "scene": "arrow_lane",
+   "mirrored": true,
+   "label": "left-turn arrow in my lane, solid white line to the lane on the right",
+   "intent": "turn_right",
+   "intent_text": "turn right at the junction",
+   "intent_in_photo": "turn_left",
+   "road": 44,
+   "lane": -4,
+   "s": 9.0,
+   "frames": 186,
+   "first_frame": 0,
+   "stop_frame": 79,
+   "act_frame": 79,
+   "ask_seconds": 29.1,
+   "actions": {
+    "A": {
+     "change_left": "allowed",
+     "change_right": "prohibited",
+     "go_straight": "prohibited",
+     "turn_left": "prohibited",
+     "turn_right": "allowed",
+     "u_turn": "prohibited",
+     "enter_waiting_area": "not_applicable"
+    },
+    "B": {
+     "change_left": "not_determined",
+     "change_right": "prohibited",
+     "go_straight": "prohibited",
+     "turn_left": "prohibited",
+     "turn_right": "allowed",
+     "u_turn": "prohibited",
+     "enter_waiting_area": "not_applicable"
+    }
+   },
+   "decisions": {
+    "A": {
+     "shift": "left",
+     "choice": "turn_left",
+     "text": "turn left not allowed from this lane; changes to the left lane first (allowed), then turns",
+     "text_cn": "本车道不能左转（禁止），先向左变道（允许），再左转",
+     "does_intent": true
+    },
+    "B": {
+     "shift": null,
+     "choice": "turn_right",
+     "text": "turn left: prohibited, change_left: not_determined -> follows the lane (turn right)",
+     "text_cn": "左转：禁止，向左变道：无法确定 → 按本车道走（右转）",
+     "does_intent": false
+    }
+   },
+   "drove": {
+    "shift": null,
+    "choice": "turn_right",
+    "text": "turn left: prohibited, change_left: not_determined -> follows the lane (turn right)",
+    "text_cn": "左转：禁止，向左变道：无法确定 → 按本车道走（右转）",
+    "does_intent": false
+   },
+   "car": {
+    "shift": null,
+    "choice": "turn_left",
+    "text": "turn left: prohibited, change_left: not_determined -> follows the lane (turn right)",
+    "text_cn": "左转：禁止，向左变道：无法确定 → 按本车道走（右转）",
+    "does_intent": false
+   },
+   "end": {
+    "road": 1930,
+    "lane": -1
+   },
+   "cost_usd": 0.0278,
+   "cached": {
+    "A": false,
+    "B": false
+   },
+   "errors": {
+    "A": "",
+    "B": ""
+   }
+  },
+  {
+   "country": "JP",
+   "scene": "lane_change",
+   "mirrored": true,
+   "label": "solid white line between two lanes of my direction, double yellow centre line on the other side",
+   "intent": "change_right",
+   "intent_text": "change to the right lane",
+   "intent_in_photo": "change_left",
+   "road": 20,
+   "lane": 1,
+   "s": 126.6,
+   "frames": 188,
+   "first_frame": 0,
+   "stop_frame": 78,
+   "act_frame": 78,
+   "ask_seconds": 16.7,
+   "actions": {
+    "A": {
+     "change_left": "allowed",
+     "change_right": "prohibited",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_waiting_area": "not_applicable"
+    },
+    "B": {
+     "change_left": "allowed",
+     "change_right": "prohibited",
+     "go_straight": "not_applicable",
+     "turn_left": "not_applicable",
+     "turn_right": "not_applicable",
+     "u_turn": "not_applicable",
+     "enter_waiting_area": "not_applicable"
+    }
+   },
+   "decisions": {
+    "A": {
+     "shift": "left",
+     "choice": null,
+     "text": "change left (allowed)",
+     "text_cn": "向左变道（允许）",
+     "does_intent": true
+    },
+    "B": {
+     "shift": "left",
+     "choice": null,
+     "text": "change left (allowed)",
+     "text_cn": "向左变道（允许）",
+     "does_intent": true
+    }
+   },
+   "drove": {
+    "shift": "left",
+    "choice": null,
+    "text": "change left (allowed)",
+    "text_cn": "向左变道（允许）",
+    "does_intent": true
+   },
+   "car": {
+    "shift": "right",
+    "choice": null,
+    "text": "change left (allowed)",
+    "text_cn": "向左变道（允许）",
+    "does_intent": true
+   },
+   "end": {
+    "road": 20,
+    "lane": 1
+   },
+   "cost_usd": 0.0348,
+   "cached": {
+    "A": false,
+    "B": false
+   },
+   "errors": {
+    "A": "",
+    "B": ""
+   }
+  },
+  {
+   "country": "JP",
+   "scene": "arrow_lane",
+   "mirrored": true,
+   "label": "left-turn arrow in my lane, solid white line to the lane on the right",
+   "intent": "turn_right",
+   "intent_text": "turn right at the junction",
+   "intent_in_photo": "turn_left",
+   "road": 44,
+   "lane": -4,
+   "s": 9.0,
+   "frames": 180,
+   "first_frame": 0,
+   "stop_frame": 79,
+   "act_frame": 79,
+   "ask_seconds": 17.2,
+   "actions": {
+    "A": {
+     "change_left": "allowed",
+     "change_right": "prohibited",
+     "go_straight": "prohibited",
+     "turn_left": "prohibited",
+     "turn_right": "allowed",
+     "u_turn": "prohibited",
+     "enter_waiting_area": "not_applicable"
+    },
+    "B": {
+     "change_left": "allowed",
+     "change_right": "prohibited",
+     "go_straight": "prohibited",
+     "turn_left": "prohibited",
+     "turn_right": "allowed",
+     "u_turn": "prohibited",
+     "enter_waiting_area": "not_applicable"
+    }
+   },
+   "decisions": {
+    "A": {
+     "shift": "left",
+     "choice": "turn_left",
+     "text": "turn left not allowed from this lane; changes to the left lane first (allowed), then turns",
+     "text_cn": "本车道不能左转（禁止），先向左变道（允许），再左转",
+     "does_intent": true
+    },
+    "B": {
+     "shift": "left",
+     "choice": "turn_left",
+     "text": "turn left not allowed from this lane; changes to the left lane first (allowed), then turns",
+     "text_cn": "本车道不能左转（禁止），先向左变道（允许），再左转",
+     "does_intent": true
+    }
+   },
+   "drove": {
+    "shift": "left",
+    "choice": "turn_left",
+    "text": "turn left not allowed from this lane; changes to the left lane first (allowed), then turns",
+    "text_cn": "本车道不能左转（禁止），先向左变道（允许），再左转",
+    "does_intent": true
+   },
+   "car": {
+    "shift": "right",
+    "choice": "turn_right",
+    "text": "turn left not allowed from this lane; changes to the left lane first (allowed), then turns",
+    "text_cn": "本车道不能左转（禁止），先向左变道（允许），再左转",
+    "does_intent": true
+   },
+   "end": {
+    "road": 1909,
+    "lane": -1
+   },
+   "cost_usd": 0.0249,
+   "cached": {
+    "A": false,
+    "B": false
+   },
+   "errors": {
+    "A": "",
+    "B": ""
+   }
+  }
+ ]
+}

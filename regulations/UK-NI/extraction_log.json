@@ -1,0 +1,32 @@
+{
+  "pdf": "ni_highway_code_103-158.html",
+  "file_sha256": "43ca7b04e2648ac197e83d030a65762fc0cc6c8853a16fffc5527715f6d9ddc6",
+  "code": "UK-NI",
+  "document": "",
+  "pages": 12,
+  "pages_read": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    12
+  ],
+  "pages_same_as_reference": [],
+  "reference": "",
+  "requests": 2,
+  "mock": false,
+  "passages": 28,
+  "verified_quotes": 28,
+  "errors": [],
+  "usage": {
+    "input_tokens": 6811,
+    "output_tokens": 4870
+  },
+  "cost_usd": 0.0623,
+  "draft": "D:\\Project\\Reasoning_Drive\\regulations\\UK-NI\\passages_draft.yaml",
+  "region_file": "D:\\Project\\Reasoning_Drive\\regulations\\UK-NI\\region.yaml",
+  "time_utc": "2026-11-14T20:34:19Z"
+}

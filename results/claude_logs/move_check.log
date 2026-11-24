@@ -1,0 +1,136 @@
+Project: F:\Project\Reasoning_Drive
+1. .env: DATASETS_ROOT -> F:\数据集 (found), DATA_DIR -> F:\Project\Reasning_Drive\data (found)
+2. Image sets (source_root):
+   datasets\CN\culane\culane_test.set.json: /Volumes/T9/Project/Reasning_Drive/data/extracted/culane  ->  ../Project/Reasning_Drive/data/extracted/culane  [OK F:\Project\Reasning_Drive\data\extracted\culane]
+   datasets\CN\mapdr\mapdr.set.json: mapdr  ->  mapdr  [OK F:\数据集\mapdr]
+   datasets\US\bdd100k\bdd100k_val.set.json: D:\Project\Reasning_Drive\data\extracted\bdd100k\mirror\val  ->  ../Project/Reasning_Drive/data/extracted/bdd100k/mirror/val  [OK F:\Project\Reasning_Drive\data\extracted\bdd100k\mirror\val]
+
+3. Labeled items (only lane labels marked done are used by the runs):
+
+$ main.py lane items --region US --split dev
+truststore: using the system certificate store
+bdd100k_val__c588eb5e-dfd59d8e           bdd100k    dev   L yellow/double_solid R white/dashed 
+bdd100k_val__bd026bc5-9418706c           bdd100k    dev   L white/solid R white/solid arrow:straight
+bdd100k_val__c01c4d85-36b417ee           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__b7719f1d-e6e580dd           bdd100k    dev   L white/dashed R white/dashed 
+bdd100k_val__b9db357e-cd30a8ae           bdd100k    dev   L white/solid R white/solid 
+bdd100k_val__c39dc2ff-6976d19d           bdd100k    dev   L none/none R white/solid arrow:left;text:only
+bdd100k_val__c0f5b0d0-17e0110c           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__c7c042ec-4986a853           bdd100k    dev   L white/dashed R white/dashed arrow:straight_right
+bdd100k_val__c0a71f47-14439a44           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c464c963-0279dcc0           bdd100k    dev   L yellow/double_solid R none/none 
+bdd100k_val__bcbbfd82-add80c05           bdd100k    dev   L white/solid R white/dashed 
+bdd100k_val__b2afce7f-0cb9967a           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__be4cbd00-97fec78b           bdd100k    dev   L white/dashed R white/dashed arrow:straight
+bdd100k_val__beccfad4-d24a29c5           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__b459e707-2d208c56           bdd100k    dev   L white/dashed R yellow/solid 
+bdd100k_val__fe194677-e2d2ac8c           bdd100k    dev   L white/solid R white/solid_dashed 
+bdd100k_val__c400a0e1-c137168b           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__c74ee988-8f4b380d           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c5b2506d-07e406a6           bdd100k    dev   L white/dashed R white/dashed 
+bdd100k_val__c4e92086-e1b8324f           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__bf6315ee-a77e1bb2           bdd100k    dev   L white/solid R white/solid 
+bdd100k_val__bc05c126-d00aeb9c           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c4b77809-63fd577c           bdd100k    dev   L yellow/double_solid R none/none line:stop_line
+bdd100k_val__b6decb24-82234e11           bdd100k    dev   L white/dashed R white/dashed arrow:straight
+bdd100k_val__c4d25f00-3b1d8669           bdd100k    dev   L white/dashed R white/dashed line:crosswalk
+bdd100k_val__c3ecb3cb-5fb43d29           bdd100k    dev   L yellow/double_solid R white/solid arrow:straight;text:only
+bdd100k_val__be278041-2173a980           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__c1e6340e-084ce27d           bdd100k    dev   L yellow/solid R white/dashed 
+bdd100k_val__b5046f1e-b1ef44b9           bdd100k    dev   L white/solid R white/dashed 
+bdd100k_val__bca36352-5de70a3f           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__bf6711ef-76e408aa           bdd100k    dev   L yellow/solid R white/solid text:only
+bdd100k_val__c55da7df-facccafc           bdd100k    dev   L white/dashed R white/solid text:only
+bdd100k_val__c16d3fdb-a3a8c912           bdd100k    dev   L yellow/solid R white/dashed 
+bdd100k_val__bfd64d5f-ec05de8b           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__c96ffe59-1cf2df11           bdd100k    dev   L white/dashed R none/none 
+bdd100k_val__bbda6802-894aa456           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c59500f0-130d7415           bdd100k    dev   L yellow/double_solid R white/dashed 
+bdd100k_val__ca15f699-e51c14c0           bdd100k    dev   L white/dashed R white/dashed 
+38 images with a final lane label for region US
+[exit 0]
+
+$ main.py lane items --region US --split test
+truststore: using the system certificate store
+0 images with a final lane label for region US
+[exit 0]
+
+$ main.py lane items --region CN --split dev
+truststore: using the system certificate store
+culane_test__d37_05181919_0299_02970     culane     dev   L white/dashed R white/solid arrow:straight
+culane_test__d193_06060919_0820_00450    culane     dev   L yellow/dashed R white/solid 
+culane_test__d193_06051603_0727_01080    culane     dev   L white/solid R white/solid 
+culane_test__d100_05251309_0397_03150    culane     dev   L white/dashed R white/solid arrow:straight_right
+culane_test__d193_06042058_0527_03240    culane     dev   L white/dashed R white/solid 
+culane_test__d100_05251207_0380_02400    culane     dev   L white/dashed R white/dashed 
+culane_test__d193_06051734_0757_00000    culane     dev   L white/solid_dashed R white/solid_dashed 
+culane_test__d193_06060642_0768_03060    culane     dev   L white/dashed R white/solid 
+culane_test__d100_05251207_0380_02130    culane     dev   L white/dashed R white/dashed 
+culane_test__d193_06051114_0632_02790    culane     dev   L white/solid R white/solid arrow:straight
+culane_test__d100_05251222_0385_01710    culane     dev   L white/solid R white/solid arrow:straight
+culane_test__d193_06051123_0635_00990    culane     dev   L yellow/dashed R white/dashed 
+culane_test__d37_05181919_0299_03120     culane     dev   L white/solid R white/solid arrow:straight
+culane_test__d37_05190927_0395_02340     culane     dev   L white/solid R white/solid 
+culane_test__d193_06060748_0790_02970    culane     dev   L white/dashed R white/dashed 
+culane_test__d193_06051123_0635_00900    culane     dev   L yellow/solid R white/solid 
+culane_test__d193_06060925_0822_04140    culane     dev   L white/dashed R white/solid arrow:straight
+culane_test__d193_06051114_0632_04320    culane     dev   L white/solid R white/dashed 
+culane_test__d100_05251718_0469_05190    culane     dev   L white/dashed R white/dashed 
+culane_test__d193_06060925_0822_04320    culane     dev   L white/dashed R white/solid 
+culane_test__d100_05251327_0403_03870    culane     dev   L white/solid R white/solid 
+culane_test__d37_05181608_0235_05220     culane     dev   L white/solid R white/solid 
+culane_test__d193_06051603_0727_01620    culane     dev   L white/solid R white/solid 
+culane_test__d193_06060925_0822_04680    culane     dev   L white/dashed R white/solid 
+culane_test__d100_05251207_0380_01410    culane     dev   L white/dashed R white/solid 
+culane_test__d100_05251207_0380_03270    culane     dev   L white/dashed R white/solid 
+culane_test__d193_06042058_0527_02610    culane     dev   L white/dashed R white/solid 
+culane_test__d100_05251718_0469_00390    culane     dev   L white/solid R white/solid arrow:straight
+culane_test__d193_06060925_0822_05310    culane     dev   L white/dashed R white/solid 
+culane_test__d100_05251718_0469_02250    culane     dev   L white/solid R white/dashed 
+culane_test__d37_05181608_0235_03720     culane     dev   L white/solid R white/dashed 
+culane_test__d100_05251309_0397_03390    culane     dev   L white/solid R white/solid arrow:straight
+culane_test__d100_05251718_0469_01320    culane     dev   L white/solid R white/dashed 
+culane_test__d193_06051123_0635_02160    culane     dev   L white/solid R white/solid arrow:right
+culane_test__d193_06051734_0757_02430    culane     dev   L white/dashed R white/dashed 
+culane_test__d193_06060642_0768_00900    culane     dev   L white/dashed R white/solid 
+culane_test__d100_05251947_0499_00840    culane     dev   L white/solid R white/dashed 
+culane_test__d100_05252026_0512_01020    culane     dev   L white/dashed R white/dashed 
+culane_test__d193_06051734_0757_04050    culane     dev   L white/solid R white/solid 
+culane_test__d100_05251327_0403_01200    culane     dev   L white/dashed R white/dashed 
+culane_test__d193_06051123_0635_03690    culane     dev   L white/solid R white/solid arrow:straight
+culane_test__d100_05251947_0499_04830    culane     dev   L white/dashed R white/solid arrow:right
+culane_test__d100_05251222_0385_02400    culane     dev   L white/solid R white/solid arrow:straight
+culane_test__d37_05181608_0235_03090     culane     dev   L white/solid R white/solid 
+culane_test__d37_05190927_0395_05220     culane     dev   L yellow/solid R white/double_solid 
+culane_test__d100_05251718_0469_02040    culane     dev   L white/solid R white/dashed 
+culane_test__d100_05252026_0512_01350    culane     dev   L white/dashed R white/solid 
+culane_test__d100_05251627_0452_02850    culane     dev   L yellow/solid R white/solid 
+culane_test__d100_05251207_0380_02190    culane     dev   L white/dashed R white/dashed 
+culane_test__d100_05251327_0403_00180    culane     dev   L white/solid R white/dashed arrow:straight
+culane_test__d100_05251327_0403_03960    culane     dev   L white/solid R white/solid 
+culane_test__d193_06060642_0768_00360    culane     dev   L white/dashed R white/solid 
+culane_test__d100_05251327_0403_00930    culane     dev   L white/solid R white/dashed arrow:straight
+culane_test__d100_05251327_0403_00630    culane     dev   L white/solid R white/dashed 
+culane_test__d100_05251222_0385_02280    culane     dev   L white/solid R white/dashed arrow:left;arrow:u_turn
+culane_test__d193_06060925_0822_01260    culane     dev   L white/dashed R white/solid 
+culane_test__d100_05252026_0512_00450    culane     dev   L white/dashed R white/solid 
+culane_test__d193_06051123_0635_01980    culane     dev   L white/dashed R white/dashed arrow:straight
+culane_test__d100_05251718_0469_05070    culane     dev   L white/solid R white/dashed 
+culane_test__d193_06051411_0691_03960    culane     dev   L yellow/double_solid R white/dashed 
+culane_test__d37_05190927_0395_02430     culane     dev   L white/solid R white/solid arrow:straight;arrow:u_turn
+culane_test__d100_05251222_0385_01140    culane     dev   L white/solid R white/dashed 
+culane_test__d100_05251327_0403_02340    culane     dev   L white/solid R white/solid 
+culane_test__d37_05181608_0235_05340     culane     dev   L white/solid R white/solid 
+culane_test__d100_05251222_0385_05250    culane     dev   L white/solid R white/dashed 
+culane_test__d193_06051123_0635_00450    culane     dev   L yellow/solid R white/dashed 
+culane_test__d193_06060925_0822_02700    culane     dev   L white/dashed R white/dashed 
+culane_test__d100_05251222_0385_04920    culane     dev   L white/solid R white/solid arrow:straight
+68 images with a final lane label for region CN
+[exit 0]
+
+$ main.py lane items --region CN --split test
+truststore: using the system certificate store
+0 images with a final lane label for region CN
+[exit 0]
+
+ALL DONE

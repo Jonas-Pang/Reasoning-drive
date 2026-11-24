@@ -1,0 +1,126 @@
+# Force of each passage (see regulations/US/norms.yaml). Set checked: true after reading.
+
+IN-6(1):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-6(2):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-6(3):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-6(4):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-6(5):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-6(6):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-6(7):
+  norm: permissive
+  word: ''
+  checked: false
+IN-7(1)(a):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-7(3):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-8(1)(c):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-8(1)(f):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-8(2)(c):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-8(2)(e):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-8(3)(a)(iv):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-12(1)(a):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-12(1)(b):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-12(1)(e)(i):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-12(3)(a):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-12(3)(b):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-13(2):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-13(3):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-14(2)(a):
+  norm: permissive
+  word: ''
+  checked: false
+IN-14(5)(c):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-14(5)(e):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-22.(1)iv:
+  norm: mandatory
+  word: ''
+  checked: false
+IN-22.(1)viii:
+  norm: mandatory
+  word: ''
+  checked: false
+IN-22.(2)(c):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-22.(2)(h):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-22.(2)(j):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-22.(2)(r):
+  norm: mandatory
+  word: ''
+  checked: false
+IN-(2):
+  norm: mandatory
+  word: ''
+  checked: false

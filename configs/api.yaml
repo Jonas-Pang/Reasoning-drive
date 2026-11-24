@@ -1,0 +1,21 @@
+# Model and API settings. The key itself is never written here: put OPENAI_API_KEY=... in .env (copy .env.example).
+# The demo page's settings dialog can change these values for the open page and, on request, save them here.
+
+model:
+  provider: openai
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY   # name of the variable in .env that holds the key
+  name: gpt-6.1-sol
+  reasoning_effort: low         # low, medium, high, xhigh or max (gpt-6.1-sol does not accept "none")
+  reasoning_summary: off        # off, auto, concise or detailed: also ask for the model's summary of its hidden reasoning
+  temperature: null             # null = not sent (gpt-6.1-sol does not accept it)
+  image_detail: high
+  max_output_tokens: 2000       # includes the hidden reasoning tokens
+  instruction_role: developer
+  store: false
+  timeout_s: 90
+  max_retries: 4
+  parallel: 5                   # requests sent at the same time
+  price_per_million_tokens:     # USD per million tokens, per model; cached_input = input tokens served from the prompt cache
+    gpt-6.1-sol: {input: 2.0, cached_input: 0.10, output: 10.0}
+    gpt-6-sol: {input: 2.0, cached_input: 0.20, output: 10.0}

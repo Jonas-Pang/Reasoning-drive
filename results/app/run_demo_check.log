@@ -1,0 +1,85 @@
+== 21:13:03 start
+== 1/4 build (first time 5-10 min)
+== copying the build context to /Users/jonaspp/.cache/reasoning_drive_build (without ._ files)
+== docker build -t reasoning-driving:latest
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.44kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 75B done
+#3 DONE 0.0s
+
+#4 [ 1/11] FROM docker.io/library/python:3.11-slim@sha256:07d4824036af339fa1b6ef769cc99d9c10a141769538b52b3b597c84f7a7b535
+#4 resolve docker.io/library/python:3.11-slim@sha256:07d4824036af339fa1b6ef769cc99d9c10a141769538b52b3b597c84f7a7b535 done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 75.82kB 0.0s done
+#5 DONE 0.0s
+
+#6 [ 4/11] COPY deploy/requirements-docker.lock deploy/requirements-docker.lock
+#6 CACHED
+
+#7 [ 9/11] COPY --chmod=755 prompts prompts
+#7 CACHED
+
+#8 [10/11] COPY --chmod=755 regulations regulations
+#8 CACHED
+
+#9 [ 3/11] RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg && rm -rf /var/lib/apt/lists/*
+#9 CACHED
+
+#10 [ 6/11] COPY --chmod=755 main.py main.py
+#10 CACHED
+
+#11 [ 2/11] WORKDIR /app
+#11 CACHED
+
+#12 [ 5/11] RUN pip install --no-cache-dir --require-hashes -r deploy/requirements-docker.lock
+#12 CACHED
+
+#13 [ 7/11] COPY --chmod=755 reasoning_drive reasoning_drive
+#13 CACHED
+
+#14 [ 8/11] COPY --chmod=755 configs configs
+#14 CACHED
+
+#15 [11/11] RUN useradd --create-home --uid 1000 appuser     && mkdir -p /app/results /app/datasets /app/regulations/inbox     && chown -R appuser:appuser /app/results /app/configs /app/regulations
+#15 CACHED
+
+#16 exporting to image
+#16 exporting layers done
+#16 exporting manifest sha256:6948c277ebcf71af2dccff5346bd7423f66716ed54e8b0e3cda8c7af25c87edf done
+#16 exporting config sha256:0ec289dea8c181321db17b57e74b485579ae0d4e98be9d3b4f29944f243a1570 done
+#16 exporting attestation manifest sha256:d34ccef460bbbd89dab2ce9bab35a3eb57d8a7e46289e4d023258a774213808a done
+#16 exporting manifest list sha256:218ac54f5f2f1425d24a8a63ac00e3d4eec6be5d644982c6a7144517ad473869 done
+#16 naming to docker.io/library/reasoning-driving:latest done
+#16 unpacking to docker.io/library/reasoning-driving:latest done
+#16 DONE 0.0s
+== 2/4 start
+ Container reasoning-driving-demo-1 Running 
+ Container reasoning-driving-prometheus-1 Running 
+ Container reasoning-driving-grafana-1 Running 
+NAME                             IMAGE                                                                     COMMAND                   SERVICE      CREATED         STATUS                   PORTS
+reasoning-driving-demo-1         sha256:e9ba218516517987db3b9aba3cac2c4ffcd4f8d18bd2d3023d867deee64c6a1b   "python main.py web …"   demo         6 minutes ago   Up 2 minutes (healthy)   127.0.0.1:8770->8770/tcp
+reasoning-driving-grafana-1      grafana/grafana:13.0.1                                                    "/run.sh"                 grafana      6 hours ago     Up 4 minutes             127.0.0.1:3000->3000/tcp
+reasoning-driving-prometheus-1   prom/prometheus:v3.5.3                                                    "/bin/prometheus --c…"   prometheus   6 hours ago     Up 4 minutes             127.0.0.1:9090->9090/tcp
+== 3/4 wait for the app
+app is up
+/usr/bin/ffmpeg
+2
+data-tab="analyze" data-tab="video" data-tab="apikey" data-tab="feedback" data-tab="monitor" 
+== 4/4 video check with Mock answers: clips 08 and 04
+04 US  done   turn_left @ 11.3s  truth=prohibited  system=not_applicable  fault=perception_layer  problems=1  18.2s
+08 US  done   change_right @ 8.0s  truth=allowed  system=not_applicable  fault=compliant  problems=0  12.2s
+08 CN  done   change_right @ 8.0s  truth=prohibited  system=not_applicable  fault=perception_layer  problems=1  14.1s
+
+fault counts: {'perception_layer': 2, 'compliant': 1} 
+summary: /Volumes/T9/Project/Reasoning_Drive/carla_violation_clips/runs_mock.json
+== 21:13:51 DONE

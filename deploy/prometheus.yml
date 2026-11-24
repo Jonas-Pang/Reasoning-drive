@@ -1,0 +1,12 @@
+# Prometheus settings for docker compose: read the demo page's metrics every 15 seconds.
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: demo
+    static_configs:
+      - targets: ["demo:8770"]       # service "demo" of docker-compose.yml; metrics at /metrics
+  - job_name: prometheus
+    static_configs:
+      - targets: ["localhost:9090"]

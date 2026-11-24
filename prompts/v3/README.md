@@ -9,7 +9,7 @@ The prompt is split into files by what they do. A request is built from them in 
 | `step2_A.txt` / `step2_B.txt` | slot `{STEP2}` in `procedure.txt` | step 2 without rules (Test A: recall the region's rule) or with rules (Test B: use the passages below) |
 | `fields.txt` | instructions | how to fill in each answer field, with the definitions of the marking types and the six actions |
 | `citation_A.txt` / `citation_B.txt` | slot `{CITATION}` in `fields.txt` | how to fill in `cited_rule_id` |
-| `rules_header.txt` + passages | instructions, Test B only | the heading of the rule block, then every passage of the region (file and code set in `config/experiment.yaml`) |
+| `rules_header.txt` + passages | instructions, Test B only | the heading of the rule block, then every passage of the region (file and code set in `configs/experiment.yaml`) |
 | `examples.json` | instructions | fixed text examples (empty: zero-shot) |
 | `user.txt` | user message, followed by the photo | the input sentence, with the region's name |
 | `answer_fields.txt` | answer schema | the order of the answer fields |
@@ -26,6 +26,6 @@ The answer is strict JSON, and the model writes its fields in the order of `answ
 4. `self_check`: the answer checked against the task definition
 5. `actions`: the final decision (Output 2)
 
-In v1 and v2, `actions` came before `reasoning`, so the reasoning was written after the decision. In v3 every decision is written after the steps it depends on. `python -m lane_reasoner ask <image_id>` and `python -m lane_reasoner trace <run_id>` print these steps for each answer.
+In v1 and v2, `actions` came before `reasoning`, so the reasoning was written after the decision. In v3 every decision is written after the steps it depends on. `python main.py ask <image_id>` and `python main.py trace <run_id>` print these steps for each answer.
 
-The model also reasons internally before it writes the answer (`reasoning_effort`). Those tokens are not returned; with `model.reasoning_summary: auto` in `config/experiment.yaml` the API adds the model's own summary of them, which the trace shows as well.
+The model also reasons internally before it writes the answer (`reasoning_effort`). Those tokens are not returned; with `model.reasoning_summary: auto` in `configs/experiment.yaml` the API adds the model's own summary of them, which the trace shows as well.

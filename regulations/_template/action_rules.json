@@ -1,0 +1,248 @@
+{
+  "white_dashed": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": []
+  },
+  "white_solid": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": [],
+    "note": "",
+    "note_zh": "",
+    "contested": []
+  },
+  "white_double_solid": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": []
+  },
+  "yellow_dashed": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": []
+  },
+  "yellow_solid": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": [],
+    "note": "",
+    "note_zh": ""
+  },
+  "yellow_double_solid": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": [],
+    "note": "",
+    "note_zh": ""
+  },
+  "yellow_solid_dashed|ego_side": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": [],
+    "note": "",
+    "note_zh": ""
+  },
+  "yellow_solid_dashed|far_side": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": [],
+    "note": "",
+    "note_zh": ""
+  },
+  "two_way_left_turn_lane": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": [],
+    "note": "",
+    "note_zh": ""
+  },
+  "arrow|straight": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": []
+  },
+  "arrow|left": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": [],
+    "note": "",
+    "note_zh": "",
+    "contested": []
+  },
+  "arrow|right": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": []
+  },
+  "arrow|straight_left": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": [],
+    "note": "",
+    "note_zh": "",
+    "contested": []
+  },
+  "arrow|straight_right": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": []
+  },
+  "arrow|left_right": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": [],
+    "note": "",
+    "note_zh": "",
+    "contested": []
+  },
+  "arrow|u_turn": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": []
+  },
+  "arrow|left_u_turn": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": []
+  },
+  "arrow|straight_u_turn": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": []
+  },
+  "other": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": [],
+    "note": "",
+    "note_zh": ""
+  },
+  "none_visible": {
+    "actions": {
+      "cross_line": "",
+      "go_straight": "",
+      "turn_left": "",
+      "turn_right": "",
+      "u_turn": "",
+      "enter_center_lane_to_wait": ""
+    },
+    "rule_ids": [],
+    "note": "",
+    "note_zh": ""
+  }
+}

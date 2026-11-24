@@ -1,0 +1,185 @@
+{
+  "run_id": "20261115_232040_laneC_CN",
+  "task": "lane",
+  "created_utc": "2026-11-16T04:20:40Z",
+  "tool": "reasoning_drive 0.1",
+  "git_commit": "",
+  "code_sha": "80db37a3da002183",
+  "marking_code_sha": "c73ddcb056048d5d",
+  "test": "C",
+  "region": "CN",
+  "mock": false,
+  "use_cache": true,
+  "repeats": 1,
+  "n_items": 25,
+  "rules_region": "US",
+  "settings": {
+    "base_url": "https://api.openai.com/v1",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "temperature": null,
+    "image_detail": "high",
+    "max_output_tokens": 6000,
+    "instruction_role": "developer",
+    "store": false
+  },
+  "prompt_hashes": {
+    "instructions": "67027f33a25dd8c0",
+    "user_text": "844caccafa8ca66b",
+    "schema": "84e99a1356d325aa",
+    "shared_parts": "97523d96a809f387",
+    "rules_file": "2029650fa895a286",
+    "prompt_dir": "prompts/lane_v3"
+  },
+  "label_sets": {
+    "mapdr": "8aac03554c3c86a0"
+  },
+  "split": "dev",
+  "split_version": 2,
+  "protocol": {
+    "frozen": false,
+    "matches": false,
+    "frozen_utc": null
+  },
+  "again": false,
+  "items": [
+    "mapdr__EmergencyLane_987cbcf5032841918cc3253559eba301_1710574770200029000",
+    "mapdr__Non_MotorizedLane_9f3c0c0a6ff4481488b410e657356dff_1711069393822514000",
+    "mapdr__EmergencyLane_9ee796aad4664b568e71213ba4ffa24c_1711153752673414000",
+    "mapdr__MultiLane_450e61de53db4b5a846882736f260709_1710126711598183000",
+    "mapdr__BusLane_156dfc0abe354cfbab4b501631382d4d_1709433609117850000",
+    "mapdr__EmergencyLane_9ee796aad4664b568e71213ba4ffa24c_1711153748406702000",
+    "mapdr__VariableDirectionLane_8c224bff3a284f00be33f7f361c9060c_1712187254288664000",
+    "mapdr__SpeedLimitedLane_28031b5893a24e9f81f64237ed68d8bf_1709684738352944000",
+    "mapdr__MultiLane_93e985a80fd04226af8647ea2004d077_1711261263869749000",
+    "mapdr__MultiLane_78d5ff12c78548088813ddb4467d0945_1711414356487925000",
+    "mapdr__VehicleLane_99899d036da944ceb41404c3ec3c9fa9_1710733702898064000",
+    "mapdr__Non_MotorizedLane_9f3c0c0a6ff4481488b410e657356dff_1711069399955886000",
+    "mapdr__VehicleLane_3153623906844b34850b0d88037cd764_1711423473888839000",
+    "mapdr__VariableDirectionLane_6b9fe861b6c9413cbaabfb6f9af02b89_1711423450109557000",
+    "mapdr__VariableDirectionLane_c002a63d8292458fb36fb00aca153f97_1709777167709286000",
+    "mapdr__VariableDirectionLane_8c224bff3a284f00be33f7f361c9060c_1712187253488645000",
+    "mapdr__BusLane_156dfc0abe354cfbab4b501631382d4d_1709433612851257000",
+    "mapdr__VariableDirectionLane_6b9fe861b6c9413cbaabfb6f9af02b89_1711423450909576000",
+    "mapdr__SpeedLimitedLane_63bab9ca228d43e696bb51f0409b6cc8_1710727788941398000",
+    "mapdr__VehicleLane_52cd1b9fb40d468e90e5a0b8ae9f57d7_1710391616984525000",
+    "mapdr__VehicleLane_1b2c4e0578804ec38753f760c633b6ab_1710549573412872000",
+    "mapdr__SpeedLimitedLane_92c36838dd5a494a9d590f908034be91_1709945751995536000",
+    "mapdr__VehicleLane_52cd1b9fb40d468e90e5a0b8ae9f57d7_1710391619384567000",
+    "mapdr__VariableDirectionLane_8c224bff3a284f00be33f7f361c9060c_1712187255355347000",
+    "mapdr__MultiLane_93e985a80fd04226af8647ea2004d077_1711261270536469000"
+  ],
+  "config": {
+    "version": "3",
+    "mock": false,
+    "api": {
+      "provider": "openai",
+      "base_url": "https://api.openai.com/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "reasoning_summary": null,
+      "temperature": null,
+      "image_detail": "high",
+      "max_output_tokens": 2000,
+      "instruction_role": "developer",
+      "store": false,
+      "timeout_s": 90,
+      "max_retries": 4,
+      "parallel": 5,
+      "price_per_million_tokens": {
+        "gpt-6.1-sol": {
+          "input": 2.0,
+          "cached_input": 0.1,
+          "output": 10.0
+        },
+        "gpt-6-sol": {
+          "input": 2.0,
+          "cached_input": 0.2,
+          "output": 10.0
+        }
+      },
+      "api_key_set": true
+    },
+    "run": {
+      "test": "A",
+      "region": "CN",
+      "split": "dev",
+      "repeats": 1,
+      "limit": 0,
+      "marking_types": [],
+      "order_seed": 6216
+    },
+    "datasets_root": "",
+    "workspaces": [
+      "UF",
+      "bdd100k",
+      "culane",
+      "mapdr_ws"
+    ],
+    "data_policy": {
+      "send_to_api": [
+        "own_video",
+        "bdd100k",
+        "culane",
+        "mapdr"
+      ]
+    },
+    "prompt": {
+      "dir": "prompts/v4",
+      "box_color_rgb": [
+        0,
+        229,
+        255
+      ],
+      "box_width": 3,
+      "box_margin": 6,
+      "jpeg_quality": 92,
+      "restrict_rule_ids_in_schema": false
+    },
+    "regions": {
+      "CN": {
+        "name": "China",
+        "name_zh": "中国",
+        "rule_region": "CN",
+        "rule_text": "text_en",
+        "rules_title": "GB 5768.3-2025 Road traffic signs and markings, Part 3: Road traffic markings (English translation by the project)",
+        "rules_file": "regulations/CN/passages_marking.json",
+        "driving_side": "right",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/CN/passages_marking.json",
+          "regulations/CN/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "CN"
+        ]
+      },
+      "US": {
+        "name": "the United States",
+        "name_zh": "美国",
+        "rule_region": "US",
+        "rule_text": "text_en",
+        "rules_title": "MUTCD 11th Edition (December 2023), Part 3 Markings",
+        "rules_file": "regulations/US/passages_marking.json",
+        "driving_side": "right",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/US/passages_marking.json",
+          "regulations/US/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "US"
+        ]
+      }
+    },
+    "lane": {
+      "prompt_dir": "prompts/lane_v3",
+      "max_output_tokens": 6000,
+      "control_region": {
+        "CN": "US",
+        "US": "CN"
+      }
+    }
+  }
+}

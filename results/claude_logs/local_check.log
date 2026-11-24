@@ -1,0 +1,383 @@
+=== 2026/11/16 周一 13:28:26.34 
+no server
+starting ollama serve 
+--- ollama list 
+NAME    ID    SIZE    MODIFIED 
+--- try local_qwen35_4b 
+Model qwen3.5:4b is not downloaded. Run:  ollama pull qwen3.5:4b   (downloaded: none)
+exit 0 
+--- try local_qwen35_9b 
+Model qwen3.5:9b is not downloaded. Run:  ollama pull qwen3.5:9b   (downloaded: none)
+exit 0 
+--- try local_gemma4_12b 
+Model gemma4:12b is not downloaded. Run:  ollama pull gemma4:12b   (downloaded: none)
+exit 0 
+--- ollama ps 
+NAME    ID    SIZE    PROCESSOR    CONTEXT    RUNNER    UNTIL 
+=== 2026/11/16 周一 13:30:19.82 
+{"version":"0.40.16"}
+--- pull qwen3.5:4b 
+pull qwen3.5:4b ok 
+--- pull qwen3.5:9b 
+pull qwen3.5:9b ok 
+--- pull gemma4:12b 
+pull gemma4:12b ok 
+--- ollama list 
+NAME          ID              SIZE      MODIFIED               
+gemma4:12b    6114515d63c1    8.0 GB    Less than a second ago    
+qwen3.5:9b    56671c2ab938    6.6 GB    13 minutes ago            
+qwen3.5:4b    d8b0f5e9760c    3.3 GB    25 minutes ago            
+--- try local_qwen35_4b 
+
+=== 2026-11-16 14:02:39  model=qwen3.5:4b split=dev regions=US tests=A prompt=lane_v3 excluded=['culane']
+
+$ main.py lane items --region US --split dev
+bdd100k_val__c588eb5e-dfd59d8e           bdd100k    dev   L yellow/double_solid R white/dashed 
+bdd100k_val__bd026bc5-9418706c           bdd100k    dev   L white/solid R white/solid arrow:straight
+bdd100k_val__c01c4d85-36b417ee           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__b7719f1d-e6e580dd           bdd100k    dev   L white/dashed R white/dashed 
+bdd100k_val__b9db357e-cd30a8ae           bdd100k    dev   L white/solid R white/solid 
+bdd100k_val__c39dc2ff-6976d19d           bdd100k    dev   L none/none R white/solid arrow:left;text:only
+bdd100k_val__c0f5b0d0-17e0110c           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__c7c042ec-4986a853           bdd100k    dev   L white/dashed R white/dashed arrow:straight_right
+bdd100k_val__c0a71f47-14439a44           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c464c963-0279dcc0           bdd100k    dev   L yellow/double_solid R none/none 
+bdd100k_val__bcbbfd82-add80c05           bdd100k    dev   L white/solid R white/dashed 
+bdd100k_val__b2afce7f-0cb9967a           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__be4cbd00-97fec78b           bdd100k    dev   L white/dashed R white/dashed arrow:straight
+bdd100k_val__beccfad4-d24a29c5           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__b459e707-2d208c56           bdd100k    dev   L white/dashed R yellow/solid 
+bdd100k_val__b775af1c-bb5afbe3           bdd100k    dev   L white/solid R white/solid arrow:right
+bdd100k_val__fe194677-e2d2ac8c           bdd100k    dev   L white/solid R white/solid_dashed 
+bdd100k_val__c400a0e1-c137168b           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__c74ee988-8f4b380d           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c5b2506d-07e406a6           bdd100k    dev   L white/dashed R white/dashed 
+bdd100k_val__c4e92086-e1b8324f           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__bf6315ee-a77e1bb2           bdd100k    dev   L white/solid R white/solid 
+bdd100k_val__bc05c126-d00aeb9c           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c4b77809-63fd577c           bdd100k    dev   L yellow/double_solid R none/none line:stop_line
+bdd100k_val__b6decb24-82234e11           bdd100k    dev   L white/dashed R white/dashed arrow:straight
+bdd100k_val__c4d25f00-3b1d8669           bdd100k    dev   L white/dashed R white/dashed line:crosswalk
+bdd100k_val__c3ecb3cb-5fb43d29           bdd100k    dev   L yellow/double_solid R white/solid arrow:straight;text:only
+bdd100k_val__be278041-2173a980           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__c1e6340e-084ce27d           bdd100k    dev   L yellow/solid R white/dashed 
+bdd100k_val__b5046f1e-b1ef44b9           bdd100k    dev   L white/solid R white/dashed 
+bdd100k_val__bca36352-5de70a3f           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__bf6711ef-76e408aa           bdd100k    dev   L yellow/solid R white/solid text:only
+bdd100k_val__c55da7df-facccafc           bdd100k    dev   L white/dashed R white/solid text:only
+bdd100k_val__c16d3fdb-a3a8c912           bdd100k    dev   L yellow/solid R white/dashed 
+bdd100k_val__bfd64d5f-ec05de8b           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__c96ffe59-1cf2df11           bdd100k    dev   L white/dashed R none/none 
+bdd100k_val__c59500f0-130d7415           bdd100k    dev   L yellow/double_solid R white/dashed 
+bdd100k_val__ca15f699-e51c14c0           bdd100k    dev   L white/dashed R white/dashed 
+38 images with a final lane label for region US
+[exit 0]
+
+$ main.py lane run --test A --region US --split dev --prompt lane_v3 --real --limit 2 --api local_qwen35_4b
+Lane run 20261116_140239_laneA_US: lane 0.5, actions 0.0, unsafe 0, 0 errors, cost about $0.0
+Saved in results/runs/20261116_140239_laneA_US/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane runs --api local_qwen35_4b
+20261116_140239_laneA_US               Test A US n=2 lane=0.5 actions=0.0 unsafe=0 $0.0
+20261116_132900_laneR_US               Test R US n=38 lane=0.5 actions=0.861 unsafe=2 $0.0
+20261116_132857_laneD_US               Test D US n=38 lane=0.474 actions=0.833 unsafe=2 $0.0
+20261116_132854_laneC_US               Test C US n=38 lane=0.5 actions=0.833 unsafe=1 $0.0
+20261116_132851_laneB_US               Test B US n=38 lane=0.474 actions=0.917 unsafe=1 $0.0
+20261116_132848_laneA_US               Test A US n=38 lane=0.5 actions=0.778 unsafe=4 $0.0
+20261116_132837_laneR_CN               Test R CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.0
+20261116_132834_laneD_CN               Test D CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.0
+20261116_132830_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.0
+20261116_132827_laneB_CN               Test B CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.0
+20261116_132824_laneA_CN               Test A CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.0
+20261116_012205_laneR_US               Test R US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_012014_laneD_US               Test D US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011823_laneC_US               Test C US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011631_laneB_US               Test B US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011440_laneA_US               Test A US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011207_laneR_CN               Test R CN n=124 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_010353_laneD_CN               Test D CN n=124 lane=0.298 actions=0.549 unsafe=12 $2.0201
+20261116_005447_laneC_CN               Test C CN n=124 lane=0.306 actions=0.492 unsafe=42 $2.1358
+20261116_004611_laneB_CN               Test B CN n=124 lane=0.273 actions=0.598 unsafe=12 $2.0892
+20261116_003746_laneA_CN               Test A CN n=124 lane=0.298 actions=0.59 unsafe=10 $1.9725
+20261115_233428_laneR_US               Test R US n=38 lane=0.5 actions=0.861 unsafe=2 $0.7019
+20261115_233322_laneR_CN               Test R CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.2103
+20261115_233320_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.0
+20261115_232336_laneR_US               Test R US n=38 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261115_232220_laneR_CN               Test R CN n=25 lane=0.24 actions=0.409 unsafe=0 $0.3302
+20261115_232040_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.3381
+20261115_231546_laneD_US               Test D US n=38 lane=0.474 actions=0.833 unsafe=2 $0.4926
+20261115_231257_laneC_US               Test C US n=38 lane=0.5 actions=0.833 unsafe=1 $0.5064
+20261115_231006_laneB_US               Test B US n=38 lane=0.474 actions=0.917 unsafe=1 $0.5074
+20261115_230714_laneA_US               Test A US n=38 lane=0.5 actions=0.778 unsafe=4 $0.4774
+20261115_230516_laneD_CN               Test D CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.4072
+20261115_230448_laneC_CN               Test C CN n=25 lane=None actions=None unsafe=None $None
+20261115_230247_laneB_CN               Test B CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.4372
+20261115_230052_laneA_CN               Test A CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.4061
+20261115_154539_laneC_US               Test C US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0416
+20261115_154537_laneB_US               Test B US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0
+20261115_154534_laneA_US               Test A US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0
+20261114_010650_laneR_US               Test R US n=38 lane=0.316 actions=0.528 unsafe=4 $0.5835
+20261114_010242_laneR_CN               Test R CN n=68 lane=0.544 actions=0.868 unsafe=1 $1.1224
+20261114_005949_laneD_US               Test D US n=38 lane=0.447 actions=0.75 unsafe=3 $0.5174
+20261114_005514_laneD_CN               Test D CN n=68 lane=0.471 actions=0.765 unsafe=4 $0.8987
+20261114_005301_laneB_US               Test B US n=38 lane=0.447 actions=0.806 unsafe=3 $0.5261
+20261114_004918_laneB_CN               Test B CN n=68 lane=0.485 actions=0.809 unsafe=2 $0.9154
+20261114_004006_laneR_US               Test R US n=38 lane=None actions=None unsafe=None $None
+20261114_004004_laneR_CN               Test R CN n=68 lane=None actions=None unsafe=None $None
+20261114_004003_laneD_US               Test D US n=38 lane=None actions=None unsafe=None $None
+20261114_004002_laneD_CN               Test D CN n=68 lane=None actions=None unsafe=None $None
+20261114_004001_laneB_US               Test B US n=38 lane=None actions=None unsafe=None $None
+20261114_003959_laneB_CN               Test B CN n=68 lane=None actions=None unsafe=None $None
+20261105_075052_laneB_US               Test B US n=38 lane=0.395 actions=0.833 unsafe=3 $0.5245
+20261105_075052_laneA_US               Test A US n=38 lane=0.5 actions=0.75 unsafe=5 $0.4772
+20261105_074605_laneB_CN               Test B CN n=68 lane=0.471 actions=0.853 unsafe=2 $0.8987
+20261105_074605_laneA_CN               Test A CN n=68 lane=0.544 actions=0.838 unsafe=2 $0.86
+20261105_074059_laneC_US               Test C US n=38 lane=0.553 actions=0.806 unsafe=2 $0.5215
+20261105_074059_laneC_CN               Test C CN n=68 lane=0.485 actions=0.456 unsafe=40 $0.9752
+20261103_095848_laneB_US               Test B US n=38 lane=0.447 actions=0.778 unsafe=3 $0.5302
+20261103_095848_laneA_US               Test A US n=38 lane=0.447 actions=0.75 unsafe=5 $0.4819
+20261103_034158_laneB_CN               Test B CN n=68 lane=0.485 actions=0.853 unsafe=2 $0.9385
+20261103_034158_laneA_CN               Test A CN n=68 lane=0.5 actions=0.838 unsafe=2 $0.8561
+[exit 0]
+
+ALL DONE. Log: F:\Project\Reasoning_Drive\results\claude_logs\lane_eval_dev_local_qwen35_4b.log
+exit 0 
+--- try local_qwen35_9b 
+
+=== 2026-11-16 14:04:16  model=qwen3.5:9b split=dev regions=US tests=A prompt=lane_v3 excluded=['culane']
+
+$ main.py lane items --region US --split dev
+bdd100k_val__c588eb5e-dfd59d8e           bdd100k    dev   L yellow/double_solid R white/dashed 
+bdd100k_val__bd026bc5-9418706c           bdd100k    dev   L white/solid R white/solid arrow:straight
+bdd100k_val__c01c4d85-36b417ee           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__b7719f1d-e6e580dd           bdd100k    dev   L white/dashed R white/dashed 
+bdd100k_val__b9db357e-cd30a8ae           bdd100k    dev   L white/solid R white/solid 
+bdd100k_val__c39dc2ff-6976d19d           bdd100k    dev   L none/none R white/solid arrow:left;text:only
+bdd100k_val__c0f5b0d0-17e0110c           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__c7c042ec-4986a853           bdd100k    dev   L white/dashed R white/dashed arrow:straight_right
+bdd100k_val__c0a71f47-14439a44           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c464c963-0279dcc0           bdd100k    dev   L yellow/double_solid R none/none 
+bdd100k_val__bcbbfd82-add80c05           bdd100k    dev   L white/solid R white/dashed 
+bdd100k_val__b2afce7f-0cb9967a           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__be4cbd00-97fec78b           bdd100k    dev   L white/dashed R white/dashed arrow:straight
+bdd100k_val__beccfad4-d24a29c5           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__b459e707-2d208c56           bdd100k    dev   L white/dashed R yellow/solid 
+bdd100k_val__b775af1c-bb5afbe3           bdd100k    dev   L white/solid R white/solid arrow:right
+bdd100k_val__fe194677-e2d2ac8c           bdd100k    dev   L white/solid R white/solid_dashed 
+bdd100k_val__c400a0e1-c137168b           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__c74ee988-8f4b380d           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c5b2506d-07e406a6           bdd100k    dev   L white/dashed R white/dashed 
+bdd100k_val__c4e92086-e1b8324f           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__bf6315ee-a77e1bb2           bdd100k    dev   L white/solid R white/solid 
+bdd100k_val__bc05c126-d00aeb9c           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c4b77809-63fd577c           bdd100k    dev   L yellow/double_solid R none/none line:stop_line
+bdd100k_val__b6decb24-82234e11           bdd100k    dev   L white/dashed R white/dashed arrow:straight
+bdd100k_val__c4d25f00-3b1d8669           bdd100k    dev   L white/dashed R white/dashed line:crosswalk
+bdd100k_val__c3ecb3cb-5fb43d29           bdd100k    dev   L yellow/double_solid R white/solid arrow:straight;text:only
+bdd100k_val__be278041-2173a980           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__c1e6340e-084ce27d           bdd100k    dev   L yellow/solid R white/dashed 
+bdd100k_val__b5046f1e-b1ef44b9           bdd100k    dev   L white/solid R white/dashed 
+bdd100k_val__bca36352-5de70a3f           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__bf6711ef-76e408aa           bdd100k    dev   L yellow/solid R white/solid text:only
+bdd100k_val__c55da7df-facccafc           bdd100k    dev   L white/dashed R white/solid text:only
+bdd100k_val__c16d3fdb-a3a8c912           bdd100k    dev   L yellow/solid R white/dashed 
+bdd100k_val__bfd64d5f-ec05de8b           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__c96ffe59-1cf2df11           bdd100k    dev   L white/dashed R none/none 
+bdd100k_val__c59500f0-130d7415           bdd100k    dev   L yellow/double_solid R white/dashed 
+bdd100k_val__ca15f699-e51c14c0           bdd100k    dev   L white/dashed R white/dashed 
+38 images with a final lane label for region US
+[exit 0]
+
+$ main.py lane run --test A --region US --split dev --prompt lane_v3 --real --limit 2 --api local_qwen35_9b
+Lane run 20261116_140416_laneA_US: lane 0.0, actions 0.5, unsafe 0, 0 errors, cost about $0.0
+Saved in results/runs/20261116_140416_laneA_US/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane runs --api local_qwen35_9b
+20261116_140416_laneA_US               Test A US n=2 lane=0.0 actions=0.5 unsafe=0 $0.0
+20261116_140239_laneA_US               Test A US n=2 lane=0.5 actions=0.0 unsafe=0 $0.0
+20261116_132900_laneR_US               Test R US n=38 lane=0.5 actions=0.861 unsafe=2 $0.0
+20261116_132857_laneD_US               Test D US n=38 lane=0.474 actions=0.833 unsafe=2 $0.0
+20261116_132854_laneC_US               Test C US n=38 lane=0.5 actions=0.833 unsafe=1 $0.0
+20261116_132851_laneB_US               Test B US n=38 lane=0.474 actions=0.917 unsafe=1 $0.0
+20261116_132848_laneA_US               Test A US n=38 lane=0.5 actions=0.778 unsafe=4 $0.0
+20261116_132837_laneR_CN               Test R CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.0
+20261116_132834_laneD_CN               Test D CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.0
+20261116_132830_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.0
+20261116_132827_laneB_CN               Test B CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.0
+20261116_132824_laneA_CN               Test A CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.0
+20261116_012205_laneR_US               Test R US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_012014_laneD_US               Test D US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011823_laneC_US               Test C US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011631_laneB_US               Test B US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011440_laneA_US               Test A US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011207_laneR_CN               Test R CN n=124 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_010353_laneD_CN               Test D CN n=124 lane=0.298 actions=0.549 unsafe=12 $2.0201
+20261116_005447_laneC_CN               Test C CN n=124 lane=0.306 actions=0.492 unsafe=42 $2.1358
+20261116_004611_laneB_CN               Test B CN n=124 lane=0.273 actions=0.598 unsafe=12 $2.0892
+20261116_003746_laneA_CN               Test A CN n=124 lane=0.298 actions=0.59 unsafe=10 $1.9725
+20261115_233428_laneR_US               Test R US n=38 lane=0.5 actions=0.861 unsafe=2 $0.7019
+20261115_233322_laneR_CN               Test R CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.2103
+20261115_233320_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.0
+20261115_232336_laneR_US               Test R US n=38 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261115_232220_laneR_CN               Test R CN n=25 lane=0.24 actions=0.409 unsafe=0 $0.3302
+20261115_232040_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.3381
+20261115_231546_laneD_US               Test D US n=38 lane=0.474 actions=0.833 unsafe=2 $0.4926
+20261115_231257_laneC_US               Test C US n=38 lane=0.5 actions=0.833 unsafe=1 $0.5064
+20261115_231006_laneB_US               Test B US n=38 lane=0.474 actions=0.917 unsafe=1 $0.5074
+20261115_230714_laneA_US               Test A US n=38 lane=0.5 actions=0.778 unsafe=4 $0.4774
+20261115_230516_laneD_CN               Test D CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.4072
+20261115_230448_laneC_CN               Test C CN n=25 lane=None actions=None unsafe=None $None
+20261115_230247_laneB_CN               Test B CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.4372
+20261115_230052_laneA_CN               Test A CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.4061
+20261115_154539_laneC_US               Test C US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0416
+20261115_154537_laneB_US               Test B US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0
+20261115_154534_laneA_US               Test A US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0
+20261114_010650_laneR_US               Test R US n=38 lane=0.316 actions=0.528 unsafe=4 $0.5835
+20261114_010242_laneR_CN               Test R CN n=68 lane=0.544 actions=0.868 unsafe=1 $1.1224
+20261114_005949_laneD_US               Test D US n=38 lane=0.447 actions=0.75 unsafe=3 $0.5174
+20261114_005514_laneD_CN               Test D CN n=68 lane=0.471 actions=0.765 unsafe=4 $0.8987
+20261114_005301_laneB_US               Test B US n=38 lane=0.447 actions=0.806 unsafe=3 $0.5261
+20261114_004918_laneB_CN               Test B CN n=68 lane=0.485 actions=0.809 unsafe=2 $0.9154
+20261114_004006_laneR_US               Test R US n=38 lane=None actions=None unsafe=None $None
+20261114_004004_laneR_CN               Test R CN n=68 lane=None actions=None unsafe=None $None
+20261114_004003_laneD_US               Test D US n=38 lane=None actions=None unsafe=None $None
+20261114_004002_laneD_CN               Test D CN n=68 lane=None actions=None unsafe=None $None
+20261114_004001_laneB_US               Test B US n=38 lane=None actions=None unsafe=None $None
+20261114_003959_laneB_CN               Test B CN n=68 lane=None actions=None unsafe=None $None
+20261105_075052_laneB_US               Test B US n=38 lane=0.395 actions=0.833 unsafe=3 $0.5245
+20261105_075052_laneA_US               Test A US n=38 lane=0.5 actions=0.75 unsafe=5 $0.4772
+20261105_074605_laneB_CN               Test B CN n=68 lane=0.471 actions=0.853 unsafe=2 $0.8987
+20261105_074605_laneA_CN               Test A CN n=68 lane=0.544 actions=0.838 unsafe=2 $0.86
+20261105_074059_laneC_US               Test C US n=38 lane=0.553 actions=0.806 unsafe=2 $0.5215
+20261105_074059_laneC_CN               Test C CN n=68 lane=0.485 actions=0.456 unsafe=40 $0.9752
+20261103_095848_laneB_US               Test B US n=38 lane=0.447 actions=0.778 unsafe=3 $0.5302
+20261103_095848_laneA_US               Test A US n=38 lane=0.447 actions=0.75 unsafe=5 $0.4819
+20261103_034158_laneB_CN               Test B CN n=68 lane=0.485 actions=0.853 unsafe=2 $0.9385
+20261103_034158_laneA_CN               Test A CN n=68 lane=0.5 actions=0.838 unsafe=2 $0.8561
+[exit 0]
+
+ALL DONE. Log: F:\Project\Reasoning_Drive\results\claude_logs\lane_eval_dev_local_qwen35_9b.log
+exit 0 
+--- try local_gemma4_12b 
+
+=== 2026-11-16 14:11:07  model=gemma4:12b split=dev regions=US tests=A prompt=lane_v3 excluded=['culane']
+
+$ main.py lane items --region US --split dev
+bdd100k_val__c588eb5e-dfd59d8e           bdd100k    dev   L yellow/double_solid R white/dashed 
+bdd100k_val__bd026bc5-9418706c           bdd100k    dev   L white/solid R white/solid arrow:straight
+bdd100k_val__c01c4d85-36b417ee           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__b7719f1d-e6e580dd           bdd100k    dev   L white/dashed R white/dashed 
+bdd100k_val__b9db357e-cd30a8ae           bdd100k    dev   L white/solid R white/solid 
+bdd100k_val__c39dc2ff-6976d19d           bdd100k    dev   L none/none R white/solid arrow:left;text:only
+bdd100k_val__c0f5b0d0-17e0110c           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__c7c042ec-4986a853           bdd100k    dev   L white/dashed R white/dashed arrow:straight_right
+bdd100k_val__c0a71f47-14439a44           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c464c963-0279dcc0           bdd100k    dev   L yellow/double_solid R none/none 
+bdd100k_val__bcbbfd82-add80c05           bdd100k    dev   L white/solid R white/dashed 
+bdd100k_val__b2afce7f-0cb9967a           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__be4cbd00-97fec78b           bdd100k    dev   L white/dashed R white/dashed arrow:straight
+bdd100k_val__beccfad4-d24a29c5           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__b459e707-2d208c56           bdd100k    dev   L white/dashed R yellow/solid 
+bdd100k_val__b775af1c-bb5afbe3           bdd100k    dev   L white/solid R white/solid arrow:right
+bdd100k_val__fe194677-e2d2ac8c           bdd100k    dev   L white/solid R white/solid_dashed 
+bdd100k_val__c400a0e1-c137168b           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__c74ee988-8f4b380d           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c5b2506d-07e406a6           bdd100k    dev   L white/dashed R white/dashed 
+bdd100k_val__c4e92086-e1b8324f           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__bf6315ee-a77e1bb2           bdd100k    dev   L white/solid R white/solid 
+bdd100k_val__bc05c126-d00aeb9c           bdd100k    dev   L yellow/double_solid R white/solid 
+bdd100k_val__c4b77809-63fd577c           bdd100k    dev   L yellow/double_solid R none/none line:stop_line
+bdd100k_val__b6decb24-82234e11           bdd100k    dev   L white/dashed R white/dashed arrow:straight
+bdd100k_val__c4d25f00-3b1d8669           bdd100k    dev   L white/dashed R white/dashed line:crosswalk
+bdd100k_val__c3ecb3cb-5fb43d29           bdd100k    dev   L yellow/double_solid R white/solid arrow:straight;text:only
+bdd100k_val__be278041-2173a980           bdd100k    dev   L yellow/solid R white/solid 
+bdd100k_val__c1e6340e-084ce27d           bdd100k    dev   L yellow/solid R white/dashed 
+bdd100k_val__b5046f1e-b1ef44b9           bdd100k    dev   L white/solid R white/dashed 
+bdd100k_val__bca36352-5de70a3f           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__bf6711ef-76e408aa           bdd100k    dev   L yellow/solid R white/solid text:only
+bdd100k_val__c55da7df-facccafc           bdd100k    dev   L white/dashed R white/solid text:only
+bdd100k_val__c16d3fdb-a3a8c912           bdd100k    dev   L yellow/solid R white/dashed 
+bdd100k_val__bfd64d5f-ec05de8b           bdd100k    dev   L white/dashed R white/solid 
+bdd100k_val__c96ffe59-1cf2df11           bdd100k    dev   L white/dashed R none/none 
+bdd100k_val__c59500f0-130d7415           bdd100k    dev   L yellow/double_solid R white/dashed 
+bdd100k_val__ca15f699-e51c14c0           bdd100k    dev   L white/dashed R white/dashed 
+38 images with a final lane label for region US
+[exit 0]
+
+$ main.py lane run --test A --region US --split dev --prompt lane_v3 --real --limit 2 --api local_gemma4_12b
+Lane run 20261116_141108_laneA_US: lane 0.5, actions 0.5, unsafe 0, 0 errors, cost about $0.0
+Saved in results/runs/20261116_141108_laneA_US/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane runs --api local_gemma4_12b
+20261116_141108_laneA_US               Test A US n=2 lane=0.5 actions=0.5 unsafe=0 $0.0
+20261116_140416_laneA_US               Test A US n=2 lane=0.0 actions=0.5 unsafe=0 $0.0
+20261116_140239_laneA_US               Test A US n=2 lane=0.5 actions=0.0 unsafe=0 $0.0
+20261116_132900_laneR_US               Test R US n=38 lane=0.5 actions=0.861 unsafe=2 $0.0
+20261116_132857_laneD_US               Test D US n=38 lane=0.474 actions=0.833 unsafe=2 $0.0
+20261116_132854_laneC_US               Test C US n=38 lane=0.5 actions=0.833 unsafe=1 $0.0
+20261116_132851_laneB_US               Test B US n=38 lane=0.474 actions=0.917 unsafe=1 $0.0
+20261116_132848_laneA_US               Test A US n=38 lane=0.5 actions=0.778 unsafe=4 $0.0
+20261116_132837_laneR_CN               Test R CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.0
+20261116_132834_laneD_CN               Test D CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.0
+20261116_132830_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.0
+20261116_132827_laneB_CN               Test B CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.0
+20261116_132824_laneA_CN               Test A CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.0
+20261116_012205_laneR_US               Test R US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_012014_laneD_US               Test D US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011823_laneC_US               Test C US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011631_laneB_US               Test B US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011440_laneA_US               Test A US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011207_laneR_CN               Test R CN n=124 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_010353_laneD_CN               Test D CN n=124 lane=0.298 actions=0.549 unsafe=12 $2.0201
+20261116_005447_laneC_CN               Test C CN n=124 lane=0.306 actions=0.492 unsafe=42 $2.1358
+20261116_004611_laneB_CN               Test B CN n=124 lane=0.273 actions=0.598 unsafe=12 $2.0892
+20261116_003746_laneA_CN               Test A CN n=124 lane=0.298 actions=0.59 unsafe=10 $1.9725
+20261115_233428_laneR_US               Test R US n=38 lane=0.5 actions=0.861 unsafe=2 $0.7019
+20261115_233322_laneR_CN               Test R CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.2103
+20261115_233320_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.0
+20261115_232336_laneR_US               Test R US n=38 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261115_232220_laneR_CN               Test R CN n=25 lane=0.24 actions=0.409 unsafe=0 $0.3302
+20261115_232040_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.3381
+20261115_231546_laneD_US               Test D US n=38 lane=0.474 actions=0.833 unsafe=2 $0.4926
+20261115_231257_laneC_US               Test C US n=38 lane=0.5 actions=0.833 unsafe=1 $0.5064
+20261115_231006_laneB_US               Test B US n=38 lane=0.474 actions=0.917 unsafe=1 $0.5074
+20261115_230714_laneA_US               Test A US n=38 lane=0.5 actions=0.778 unsafe=4 $0.4774
+20261115_230516_laneD_CN               Test D CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.4072
+20261115_230448_laneC_CN               Test C CN n=25 lane=None actions=None unsafe=None $None
+20261115_230247_laneB_CN               Test B CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.4372
+20261115_230052_laneA_CN               Test A CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.4061
+20261115_154539_laneC_US               Test C US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0416
+20261115_154537_laneB_US               Test B US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0
+20261115_154534_laneA_US               Test A US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0
+20261114_010650_laneR_US               Test R US n=38 lane=0.316 actions=0.528 unsafe=4 $0.5835
+20261114_010242_laneR_CN               Test R CN n=68 lane=0.544 actions=0.868 unsafe=1 $1.1224
+20261114_005949_laneD_US               Test D US n=38 lane=0.447 actions=0.75 unsafe=3 $0.5174
+20261114_005514_laneD_CN               Test D CN n=68 lane=0.471 actions=0.765 unsafe=4 $0.8987
+20261114_005301_laneB_US               Test B US n=38 lane=0.447 actions=0.806 unsafe=3 $0.5261
+20261114_004918_laneB_CN               Test B CN n=68 lane=0.485 actions=0.809 unsafe=2 $0.9154
+20261114_004006_laneR_US               Test R US n=38 lane=None actions=None unsafe=None $None
+20261114_004004_laneR_CN               Test R CN n=68 lane=None actions=None unsafe=None $None
+20261114_004003_laneD_US               Test D US n=38 lane=None actions=None unsafe=None $None
+20261114_004002_laneD_CN               Test D CN n=68 lane=None actions=None unsafe=None $None
+20261114_004001_laneB_US               Test B US n=38 lane=None actions=None unsafe=None $None
+20261114_003959_laneB_CN               Test B CN n=68 lane=None actions=None unsafe=None $None
+20261105_075052_laneB_US               Test B US n=38 lane=0.395 actions=0.833 unsafe=3 $0.5245
+20261105_075052_laneA_US               Test A US n=38 lane=0.5 actions=0.75 unsafe=5 $0.4772
+20261105_074605_laneB_CN               Test B CN n=68 lane=0.471 actions=0.853 unsafe=2 $0.8987
+20261105_074605_laneA_CN               Test A CN n=68 lane=0.544 actions=0.838 unsafe=2 $0.86
+20261105_074059_laneC_US               Test C US n=38 lane=0.553 actions=0.806 unsafe=2 $0.5215
+20261105_074059_laneC_CN               Test C CN n=68 lane=0.485 actions=0.456 unsafe=40 $0.9752
+20261103_095848_laneB_US               Test B US n=38 lane=0.447 actions=0.778 unsafe=3 $0.5302
+20261103_095848_laneA_US               Test A US n=38 lane=0.447 actions=0.75 unsafe=5 $0.4819
+20261103_034158_laneB_CN               Test B CN n=68 lane=0.485 actions=0.853 unsafe=2 $0.9385
+20261103_034158_laneA_CN               Test A CN n=68 lane=0.5 actions=0.838 unsafe=2 $0.8561
+[exit 0]
+
+ALL DONE. Log: F:\Project\Reasoning_Drive\results\claude_logs\lane_eval_dev_local_gemma4_12b.log
+exit 0 
+--- ollama ps 
+NAME          ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL               
+gemma4:12b    6114515d63c1    898 MB    100% GPU     16384      llamacpp    29 minutes from now    

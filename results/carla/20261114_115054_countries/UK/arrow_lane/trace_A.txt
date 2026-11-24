@@ -1,0 +1,43 @@
+carla_Town03_arrow_lane_mirrored | lane | Test A | gpt-6.1-sol
+--------------------------------------------------------------
+Step 1  Scene           An urban road approaches a junction beneath an elevated structure. My car is in the
+                        right-hand of two approach lanes, with a right-turn arrow ahead. (lanes 2, mine 2,
+                        full)
+Step 2  Left            A single solid white line separates my lane from the lane on the left over the
+                        foreground approach; short broken markings are visible farther ahead near the
+                        junction.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           A single solid white line runs along the right side of my lane beside a raised
+                        pavement curb, with buildings beyond.
+                        white solid, curb yes, edge_line, evidence full
+Step 3  Markings        arrow:right (full): A white bent arrow has a single head pointing right.
+Step 4  Cross-check     position: Two approach lanes and position 2 agree with a lane divider on the left and
+                        the roadway edge on the right. | roles: The white divider separates approach lanes;
+                        the white line beside the raised pavement marks the roadway edge. | markings: The
+                        right-turn arrow agrees with the right-hand approach-lane position; no conflicting
+                        word or area marking is visible. | unseen: No stop line or waiting area is clearly
+                        visible, and none is inferred. | result: consistent
+Step 5  Rule            left_boundary: The solid white approach-lane divider restricts crossing into the lane
+                        on the left along its solid stretch.
+Step 5  Rule            right_boundary: The roadway edge and raised pavement do not permit an ordinary lane
+                        change to the right onto the pavement.
+Step 5  Rule            arrow:right: The right-turn lane arrow directs my car to turn right rather than
+                        continue straight, turn left or make a U-turn.
+Step 6  change_left     prohibited: The solid white lane divider restricts crossing to the left on the visible
+                        approach.
+Step 6  change_right    prohibited: The raised pavement forms the right boundary and cannot be used as another
+                        traffic lane.
+Step 6  go_straight     prohibited: The single-headed right-turn arrow does not provide a straight-ahead
+                        movement.
+Step 6  turn_left       prohibited: The right-turn arrow does not provide a left-turn movement.
+Step 6  turn_right      allowed: The right-turn arrow provides this movement.
+Step 6  u_turn          prohibited: The right-turn arrow does not provide a U-turn movement.
+Step 6  enter_waiting_areanot_applicable: No marked waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         consistent
+Advice                  Follow this lane for the right turn; do not cross the solid approach divider or move
+                        onto the pavement. Check junction priority and approaching traffic before turning; no
+                        clear stop line is visible.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:right'], missed []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4426, out 936, 15.58 s

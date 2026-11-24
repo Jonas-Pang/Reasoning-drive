@@ -1,0 +1,21 @@
+# One country: everything the prompts, the labeling tool and the scoring need to know about its rules.
+# A new country copies regulations/_template/ to regulations/<CODE>/ and fills in the same fields.
+
+code: US                        # the code used everywhere (configs/experiment.yaml, labels, passage "region" field)
+name: the United States         # used in the prompt: "This photo was taken in ..."
+name_zh: 美国
+driving_side: right             # right or left
+
+standard:
+  title: MUTCD 11th Edition (December 2023), Part 3 Markings
+  language: en                  # text sent to the model: en, zh or both
+  source_pdf: data/raw/rules/MUTCD_11th_Part3_Markings.pdf
+  licence: U.S. government work
+
+passages:
+  marking: passages_marking.json                         # single-marking task (Test B rule block)
+  lane: [passages_marking.json, passages_lane.yaml]      # lane task: both files
+
+rule_tables:                    # used only to prefill labels consistently, never to score the model
+  marking: action_rules.json
+  lane: lane_action_rules.json

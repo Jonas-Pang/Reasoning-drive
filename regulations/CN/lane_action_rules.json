@@ -1,0 +1,437 @@
+{
+ "boundary": [
+  {
+   "when": {
+    "curb": "yes"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "CN-5.4.5",
+    "CN-4.2.3-a"
+   ],
+   "note": "A curb is the physical edge of the carriageway (5.4.5): leaving the carriageway across it is not a lane change."
+  },
+  {
+   "when": {
+    "pattern": "none"
+   },
+   "change": "not_applicable",
+   "rule_ids": [],
+   "note": "Nothing is marked on this side: no marking governs crossing it."
+  },
+  {
+   "when": {
+    "role": "special_lane_line"
+   },
+   "change": "",
+   "rule_ids": [
+    "CN-6.9.1",
+    "CN-6.9.2",
+    "CN-5.3.1-2"
+   ],
+   "note": "Bus, HOV or tidal lane: decide from the passages, the reserved times and the signs. Prefill convention (contested): changing into the special lane is prohibited (ordinary car, reserved time assumed); leaving it, when my lane is the special lane, follows the line type."
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "dashed",
+    "role": "edge_line"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "CN-5.4.6",
+    "CN-4.2.2-a"
+   ]
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "dashed"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "CN-4.2.2-a",
+    "CN-5.2.1-2",
+    "CN-5.2.3"
+   ]
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "dotted",
+    "role": "edge_line"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "CN-5.4.2",
+    "CN-5.4.6"
+   ]
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "dotted"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "CN-5.7.1-2",
+    "CN-4.2.2-a"
+   ]
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "solid",
+    "role": "edge_line"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "CN-4.2.2-a",
+    "CN-5.4.3",
+    "CN-5.4.7"
+   ]
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "CN-4.2.2-a",
+    "CN-6.2.1",
+    "CN-6.2.2"
+   ]
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "double_solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "CN-4.2.2-a"
+   ],
+   "note": "No passage is specific to a double solid white lane line; next to the road edge it can be the no-parking line on the pavement (6.3.1)."
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "solid_dashed",
+    "near_line": "dashed"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "CN-4.2.2-a",
+    "CN-6.2.3"
+   ]
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "solid_dashed",
+    "near_line": "solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "CN-4.2.2-a",
+    "CN-6.2.3"
+   ]
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "dashed"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "CN-4.3.2",
+    "CN-5.1.1",
+    "CN-5.1.2"
+   ]
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "solid",
+    "role": "edge_line"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "CN-5.4.3",
+    "CN-4.2.2-a"
+   ]
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "CN-6.1.1",
+    "CN-6.1.4"
+   ]
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "double_solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "CN-6.1.1",
+    "CN-6.1.2"
+   ]
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "solid_dashed",
+    "near_line": "dashed"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "CN-4.2.2-a",
+    "CN-6.1.3"
+   ]
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "solid_dashed",
+    "near_line": "solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "CN-4.2.2-a",
+    "CN-6.1.3"
+   ]
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "double_dashed"
+   },
+   "change": "",
+   "rule_ids": [
+    "CN-5.3.1-2"
+   ],
+   "note": "Tidal lane line: the direction of the tidal lane comes from signals or signs."
+  }
+ ],
+ "markings": {
+  "arrow:straight": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "prohibited",
+    "turn_right": "prohibited",
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "CN-5.13.1"
+   ]
+  },
+  "arrow:left": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "allowed",
+    "turn_right": "prohibited",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "CN-5.13.1"
+   ],
+   "note": "A left arrow does not by itself prohibit a U-turn; Chinese law allows a U-turn where left turns are allowed unless a sign or marking prohibits it. Decide in the labeling guide. U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17).",
+   "note_zh": "左转箭头本身并不禁止掉头；按中国法规，允许左转的地方可以掉头，除非有标志或标线禁止。请按标注约定选择。"
+  },
+  "arrow:right": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "prohibited",
+    "turn_right": "allowed",
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "CN-5.13.1"
+   ]
+  },
+  "arrow:straight_left": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "allowed",
+    "turn_right": "prohibited",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "CN-5.13.1"
+   ],
+   "note": "A left arrow does not by itself prohibit a U-turn; Chinese law allows a U-turn where left turns are allowed unless a sign or marking prohibits it. Decide in the labeling guide. U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17).",
+   "note_zh": "左转箭头本身并不禁止掉头；按中国法规，允许左转的地方可以掉头，除非有标志或标线禁止。请按标注约定选择。"
+  },
+  "arrow:straight_right": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "prohibited",
+    "turn_right": "allowed",
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "CN-5.13.1"
+   ]
+  },
+  "arrow:left_right": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "allowed",
+    "turn_right": "allowed",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "CN-5.13.1"
+   ],
+   "note": "A left arrow does not by itself prohibit a U-turn; Chinese law allows a U-turn where left turns are allowed unless a sign or marking prohibits it. Decide in the labeling guide. U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17).",
+   "note_zh": "左转箭头本身并不禁止掉头；按中国法规，允许左转的地方可以掉头，除非有标志或标线禁止。请按标注约定选择。"
+  },
+  "arrow:u_turn": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "prohibited",
+    "turn_right": "prohibited",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "CN-5.13.1"
+   ]
+  },
+  "arrow:left_u_turn": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "allowed",
+    "turn_right": "prohibited",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "CN-5.13.1"
+   ],
+   "note": "U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17)."
+  },
+  "arrow:straight_u_turn": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "prohibited",
+    "turn_right": "prohibited",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "CN-5.13.1"
+   ]
+  },
+  "arrow:merge_left": {
+   "actions": {},
+   "rule_ids": [
+    "CN-5.13.1",
+    "CN-5.13.2"
+   ],
+   "note": "Merge arrow: my lane ends ahead; the advice is to merge. The change actions come from the boundaries."
+  },
+  "arrow:merge_right": {
+   "actions": {},
+   "rule_ids": [
+    "CN-5.13.1",
+    "CN-5.13.2"
+   ],
+   "note": "Merge arrow: my lane ends ahead; the advice is to merge. The change actions come from the boundaries."
+  },
+  "no_turn:u_turn": {
+   "actions": {
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "CN-6.11.1-2"
+   ]
+  },
+  "no_turn:left": {
+   "actions": {
+    "turn_left": "prohibited"
+   },
+   "rule_ids": [
+    "CN-6.11.1-2"
+   ]
+  },
+  "no_turn:right": {
+   "actions": {
+    "turn_right": "prohibited"
+   },
+   "rule_ids": [
+    "CN-6.11.1-2"
+   ]
+  },
+  "area:left_turn_waiting": {
+   "actions": {
+    "enter_waiting_area": "allowed"
+   },
+   "rule_ids": [
+    "CN-5.5.1-3"
+   ],
+   "note": "Left-turn vehicles may enter the waiting area in advance (5.5.1); used with a left-turn signal (5.5.3)."
+  },
+  "text:bus": {
+   "actions": {},
+   "rule_ids": [
+    "CN-6.9.1"
+   ],
+   "note": "Bus lane: other vehicles shall not enter it (in its reserved times)."
+  },
+  "text:hov": {
+   "actions": {},
+   "rule_ids": [
+    "CN-6.9.2"
+   ]
+  },
+  "text:speed_limit": {
+   "actions": {},
+   "rule_ids": [
+    "CN-5.14.2"
+   ]
+  },
+  "symbol:bike": {
+   "actions": {},
+   "rule_ids": [
+    "CN-5.15.1-2"
+   ],
+   "note": "Non-motorized vehicle space: a car should not drive in it (advice)."
+  },
+  "area:grid": {
+   "actions": {},
+   "rule_ids": [
+    "CN-6.8.1-2"
+   ],
+   "note": "Grid: stopping for any reason is prohibited inside it (advice)."
+  },
+  "area:channelizing": {
+   "actions": {},
+   "rule_ids": [
+    "CN-6.6.1-3"
+   ]
+  },
+  "line:stop_line": {
+   "actions": {},
+   "rule_ids": [
+    "CN-6.4.1-2"
+   ]
+  },
+  "line:stop_yield": {
+   "actions": {},
+   "rule_ids": [
+    "CN-6.5.1.1-2"
+   ]
+  },
+  "line:yield_line": {
+   "actions": {},
+   "rule_ids": [
+    "CN-6.5.2.1-2"
+   ]
+  }
+ }
+}

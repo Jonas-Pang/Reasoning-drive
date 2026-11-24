@@ -1,0 +1,27 @@
+# Images and labels of the United Kingdom (see datasets/US/dataset.yaml for the fields). The image sources are the ones
+# GeoDrive-Bench uses for this country; download them from their pages (each has its own terms), then:
+#   python main.py label --data <root>/lingoqa images init lingoqa --source <the unpacked dataset>
+
+region: UK
+collections:
+  - name: lingoqa
+    kind: images
+    reader: folder              # any folder of images; the frames of one sub-folder form one clip
+    dataset_name: LingoQA
+    source: "LingoQA (Wayve, ECCV 2024), central London; terms on the download page"
+    download: https://github.com/wayveai/LingoQA
+    default_source: data/extracted/lingoqa
+    candidates: datasets/UK/candidates_geodrive.csv   # frames with lane markings in GeoDrive-Bench (label geodrive)
+    access: open                # public Google Drive folders (github.com/wayveai/LingoQA); terms: the LingoQA licence
+    fetch:                      # python main.py data fetch UK --root <root>: only the candidate frames are read from the zips
+      - {kind: zip_members, name: action/images.zip, file_id: 1Iqps7_irlTcVAXPeujJKLaw9QRdY0U7o}     # 57 GB, read by byte ranges
+      - {kind: zip_members, name: scenery/images.zip, file_id: 1Qv04SMKRMWW0sAGRTNCrXIDPbRaZWFrR}    # 8.3 GB, read by byte ranges
+      - {kind: file, name: action/train.parquet, file_id: 12hpHv5qJK31caoT8AV2SsYyJfEfs1W_W}         # questions and answers
+      - {kind: file, name: scenery/train.parquet, file_id: 1mN55vQKyrgKops09u7Hx4N773Kz5rq9o}
+      - {kind: file, name: evaluation/images.zip, file_id: 1U5tBTZjw0rH9ID1JuuWsOmIp2HNvQvQo, extract_all: true, extract_to: evaluation}   # 0.23 GB
+      - {kind: file, name: evaluation/val.parquet, file_id: 1I8u6uYysQUstoVYZapyRQkXmOwr-AG3d}
+
+split:
+  rule: 'sha1("6216:" + clip) mod 10 = 0 -> dev, else test'
+  per_marking_type: {dev: 6, test: 30}
+  degraded_test: 30

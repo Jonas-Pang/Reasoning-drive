@@ -1,0 +1,21 @@
+# One country: everything the prompts, the labeling tool and the scoring need to know about its rules.
+# A new country copies regulations/_template/ to regulations/<CODE>/ and fills in the same fields.
+
+code: CN
+name: China
+name_zh: 中国
+driving_side: right
+
+standard:
+  title: "GB 5768.3-2025 Road traffic signs and markings, Part 3: Road traffic markings (English translation by the project)"
+  language: en                  # the passages keep the Chinese text (text_zh); en sends our translation
+  source_pdf: data/raw/rules/GB_5768.3-2025.pdf
+  licence: free to read; short quotes only
+
+passages:
+  marking: passages_marking.json
+  lane: [passages_marking.json, passages_lane.yaml]
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

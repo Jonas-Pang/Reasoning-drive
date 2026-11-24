@@ -1,0 +1,20 @@
+# Rule passages of one country, one item per passage. Same fields for every country.
+#   rule_id       <CODE>-<section>, unique; the model cites it in Test B
+#   region        the country code
+#   source        short name of the standard
+#   section, page where the passage is
+#   marking_type  what the passage is about (free text, e.g. "white solid line", "left-turn arrow")
+#   element       boundary, lane_marking, lane_type, transverse, area or general
+#   text_original the passage as written in the standard (short quotes only, as the licence allows)
+#   text_en       English text (the original, or a translation: then text_en_is_translation: true)
+
+- rule_id: XX-1.1
+  region: XX
+  source: Example standard
+  section: "1.1"
+  page: 1
+  marking_type: white solid line
+  element: boundary
+  text_original: "A solid white line shall not be crossed."
+  text_en: "A solid white line shall not be crossed."
+  text_en_is_translation: false

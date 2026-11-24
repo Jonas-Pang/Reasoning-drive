@@ -1,0 +1,54 @@
+carla_Town03_lane_change_mirrored | lane | Test B | gpt-6.1-sol
+---------------------------------------------------------------
+Step 1  Scene           An urban road runs beneath an elevated structure, with two lanes in each direction and
+                        no clearly visible intersection or lane ending ahead. My car is in the rightmost lane
+                        of the two left-driving lanes. (lanes 2, mine 2, full)
+Step 2  Left            A continuous solid white line separates my lane from another same-direction lane on
+                        the left; no curb forms this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           Two parallel solid yellow lines separate my lane from the opposing-traffic side on the
+                        right; there is no curb at this boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: The white lane boundary on the left and the centre line on the right agree
+                        with my lane being lane 2 of 2. | roles: The white line separates same-direction
+                        lanes, while the double yellow line marks the division from opposing traffic. |
+                        markings: No arrows, words, symbols, transverse lines or waiting areas are visible in
+                        my lane. | unseen: No markings beyond the clearly visible road stretch are inferred;
+                        the distant lane end cannot be inspected. | result: consistent
+Step 5  Rule            left_boundary: The white line identifies a boundary between lanes and does not, under
+                        this passage, prohibit changing into the lane on the left. [JP-別表第五車線境界線（２０６）]
+                        "Indicates the boundary between lanes on a section of road with four or more lanes."
+Step 5  Rule            right_boundary: The yellow centre marking also serves as a prohibition against
+                        entering the right-hand portion for overtaking, so moving across it into opposing
+                        traffic is prohibited. [JP-別表第六備考一（七）] "Regulatory markings indicating prohibition of
+                        encroaching onto the right-hand portion for overtaking, in format 1 (a) or (b), shall
+                        also serve as centre-line in"
+Step 6  change_left     allowed: The white lane boundary identifies adjacent lanes; the supplied lane-boundary
+                        rule imposes no crossing prohibition.
+Step 6  change_right    prohibited: The yellow centre marking prohibits crossing into the opposing-traffic
+                        side for overtaking.
+Step 6  go_straight     not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_left       not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_right      not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  u_turn          not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  enter_waiting_areanot_applicable: No left-turn waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         consistent
+Advice                  Stay on the left-driving side of the double yellow centre marking; a move into the
+                        adjacent lane on the left is not prohibited by the visible white lane boundary,
+                        subject to checking traffic. No visible arrows or stop line establish an intersection
+                        movement or stopping location.
+Model's summary         **Creating a concise JSON structure**  I'm focusing on generating a concise JSON
+                        format. I need to clarify lane markings: a solid white line on the left, a double
+                        yellow line on the right, and how they relate to overtaking rules. The double yellow
+                        line prohibits crossing for overtaking, while the solid white lane boundary is
+                        informative and does not prohibit crossing. I'm also considering how to structure this
+                        with necessary notes but omitting unnecessary patterns or markings.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation in_pack_not_accepted, contradictions []
+Tokens                  in 7122, out 932, 15.61 s

@@ -1,0 +1,33 @@
+{
+  "_comment": "Countries shown in the single labeling window (scripts/label_all.bat). One entry per country: region code, workspace folder under DATASETS_ROOT, image set id, port of its own tool (unique, 8765 and up), name on the switch. enabled false hides a country without deleting it. The country also needs regulations/<CODE>/ (rule passages and lane_action_rules.json).",
+  "regions": [
+    {
+      "region": "CN",
+      "workspace": "mapdr_ws",
+      "set_id": "mapdr",
+      "port": 8765,
+      "name": "中国 MapDR"
+    },
+    {
+      "region": "US",
+      "workspace": "bdd100k",
+      "set_id": "bdd100k_val",
+      "port": 8766,
+      "name": "美国 BDD100K"
+    },
+    {
+      "region": "UK",
+      "workspace": "lingoqa_ws",
+      "set_id": "lingoqa",
+      "port": 8767,
+      "name": "英国 LingoQA"
+    },
+    {
+      "region": "IN",
+      "workspace": "idd_ws",
+      "set_id": "idd",
+      "port": 8768,
+      "name": "印度 IDD"
+    }
+  ]
+}

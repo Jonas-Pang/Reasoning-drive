@@ -1,0 +1,48 @@
+carla_Town03_arrow_lane_mirrored | lane | Test A | gpt-6.1-sol
+--------------------------------------------------------------
+Step 1  Scene           An urban road approaches an intersection beneath an elevated structure. My car is in
+                        the right-hand of two approach lanes, with a right-turn arrow ahead. (lanes 2, mine 2,
+                        full)
+Step 2  Left            A single white line appears continuous along the visible approach, separating my lane
+                        from another approach lane on the left; there is no curb on this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           A solid white line runs beside a raised curb and sidewalk on the right, with no
+                        traffic lane beyond it.
+                        white solid, curb yes, edge_line, evidence full
+Step 3  Markings        arrow:right (full): A white arrow has a bent shaft and a single arrowhead pointing
+                        right.
+Step 4  Cross-check     position: Two approach lanes and an ego position of 2 agree with a lane divider on the
+                        left and a roadway edge on the right. | roles: The white divider is consistent with
+                        separation of same-direction lanes, and the right white line and curb identify the
+                        roadway edge. | markings: The right-turn arrow is consistent with the rightmost
+                        approach lane; no conflicting words, arrows or waiting areas are visible. | unseen: No
+                        stop line or additional guidance marking can be identified at the distant
+                        intersection; none is inferred. | result: consistent
+Step 5  Rule            left_boundary: In Japan, a solid white same-direction lane divider does not itself
+                        prohibit changing lanes, so crossing it to the left is permitted when safe.
+Step 5  Rule            right_boundary: The raised curb and sidewalk form a roadway edge that must not be
+                        crossed as a lane-change maneuver.
+Step 5  Rule            arrow:right: The right-turn lane arrow requires a right turn at the intersection
+                        rather than proceeding straight, turning left or making a U-turn.
+Step 6  change_left     allowed: The solid white same-direction lane divider does not itself prohibit crossing
+                        to the left in Japan.
+Step 6  change_right    prohibited: The raised curb and sidewalk prohibit leaving the lane to the right.
+Step 6  go_straight     prohibited: The right-only arrow excludes proceeding straight.
+Step 6  turn_left       prohibited: The right-only arrow excludes turning left.
+Step 6  turn_right      allowed: The arrow explicitly permits a right turn.
+Step 6  u_turn          prohibited: The right-only arrow does not permit a U-turn.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         consistent
+Advice                  Remain in this lane to turn right; for another movement, change left only when safe
+                        and confirm that lane's guidance before proceeding. Do not cross the right curb, and
+                        check intersection controls and pedestrians before turning.
+Model's summary         **Interpreting lane markings**  I need to quickly interpret the road situation. In
+                        Japan, there's a right turn lane that's the farthest to the right. The left line seems
+                        to be a solid continuous line from one point to another, but there are dashes further
+                        along. The white solid line is long and uninterrupted. It seems I'll choose the solid
+                        lane, as it allows changes, not prohibiting. The right edge has a curb, and I notice
+                        there's no stop visible. The lane count is two.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:right'], missed []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4424, out 938, 15.53 s

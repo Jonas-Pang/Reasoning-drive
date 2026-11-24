@@ -1,0 +1,222 @@
+{
+  "run_id": "20261117_035908_laneA_UK",
+  "task": "lane",
+  "created_utc": "2026-11-17T08:59:09Z",
+  "tool": "reasoning_drive 0.1",
+  "git_commit": "",
+  "code_sha": "7c7cf8531f7d0061",
+  "marking_code_sha": "208c018d27817576",
+  "test": "A",
+  "region": "UK",
+  "mock": false,
+  "use_cache": true,
+  "repeats": 1,
+  "n_items": 11,
+  "rules_region": null,
+  "settings": {
+    "base_url": "http://127.0.0.1:11434",
+    "model": "gemma4:31b",
+    "reasoning_effort": null,
+    "temperature": 0,
+    "image_detail": null,
+    "max_output_tokens": 6000,
+    "instruction_role": "developer",
+    "store": false,
+    "provider": "ollama",
+    "think": false,
+    "num_ctx": 16384,
+    "seed": 6216,
+    "num_thread": 2,
+    "quantization": "Q4_K_M",
+    "model_digest": "17ba34c06c801ba22f6047bab21ced9429c6d43e0e42ecf339b0f3e5a61e8d97",
+    "parameter_size": "30.7B",
+    "engine": "ollama 0.33.0"
+  },
+  "prompt_hashes": {
+    "instructions": "eea4bfe819dd0eb5",
+    "user_text": "4f2c52fb578ad983",
+    "schema": "84e99a1356d325aa",
+    "shared_parts": "b9c034a87816243a",
+    "rules_file": "c3e42daa99eac0cb",
+    "prompt_dir": "prompts/lane_v3"
+  },
+  "label_sets": {
+    "lingoqa": "851980e1ada5e750"
+  },
+  "split": "test",
+  "split_version": 2,
+  "protocol": {
+    "frozen": true,
+    "matches": true,
+    "frozen_utc": "2026-11-17T07:32:43Z"
+  },
+  "again": false,
+  "items": [
+    "lingoqa__train_2fbe08dff3dad5e735cda2ccbca737d3_2",
+    "lingoqa__train_1c248b91fcec1954ff5503505d99c727_1",
+    "lingoqa__train_74be6bb80c7b66a911cef6cb3c999227_0",
+    "lingoqa__train_39b0fb645812ec9da3cbf9a64e3e2b12_0",
+    "lingoqa__train_4fea456d82bfafd9161a364928d30234_0",
+    "lingoqa__train_97b78557b9103ec9b3b5dce23c33e5f6_0",
+    "lingoqa__train_a7fef42c584e5d3b67be7e244e35cd21_0",
+    "lingoqa__train_70a63438f4f5c50ef21f29cc45d849ab_0",
+    "lingoqa__train_1c5078b108792bcad84aacafb7edf52d_0",
+    "lingoqa__train_1869901e085ad9bfb1081f4efa101c93_2",
+    "lingoqa__train_3510c0055b143081d71aa4122da19639_0"
+  ],
+  "config": {
+    "version": "3",
+    "mock": false,
+    "api": {
+      "provider": "ollama",
+      "base_url": "http://127.0.0.1:11434",
+      "api_key_env": "OPENAI_API_KEY",
+      "model": "gemma4:31b",
+      "reasoning_effort": null,
+      "temperature": 0,
+      "image_detail": null,
+      "max_output_tokens": 2000,
+      "instruction_role": "developer",
+      "store": false,
+      "timeout_s": 900,
+      "max_retries": 2,
+      "parallel": 3,
+      "price_per_million_tokens": {
+        "gemma4:31b": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "seed": 6216,
+      "num_ctx": 16384,
+      "think": false,
+      "num_thread": 2,
+      "protocol_file": "configs/lane_protocol__hpg_gemma4_31b.json",
+      "profile": "hpg_gemma4_31b",
+      "connect_url": "http://127.0.0.1:11434",
+      "engine": "ollama 0.33.0",
+      "model_digest": "17ba34c06c801ba22f6047bab21ced9429c6d43e0e42ecf339b0f3e5a61e8d97",
+      "parameter_size": "30.7B",
+      "quantization": "Q4_K_M",
+      "api_key_set": false
+    },
+    "run": {
+      "test": "A",
+      "region": "UK",
+      "split": "dev",
+      "repeats": 1,
+      "limit": 0,
+      "marking_types": [],
+      "order_seed": 6216
+    },
+    "datasets_root": "",
+    "workspaces": [
+      "UF",
+      "bdd100k",
+      "culane",
+      "mapdr_ws",
+      "lingoqa_ws",
+      "idd_ws"
+    ],
+    "data_policy": {
+      "send_to_api": [
+        "own_video",
+        "bdd100k",
+        "culane",
+        "mapdr",
+        "lingoqa",
+        "idd"
+      ]
+    },
+    "prompt": {
+      "dir": "prompts/v4",
+      "box_color_rgb": [
+        0,
+        229,
+        255
+      ],
+      "box_width": 3,
+      "box_margin": 6,
+      "jpeg_quality": 92,
+      "restrict_rule_ids_in_schema": false
+    },
+    "regions": {
+      "CN": {
+        "name": "China",
+        "name_zh": "中国",
+        "rule_region": "CN",
+        "rule_text": "text_en",
+        "rules_title": "GB 5768.3-2025 Road traffic signs and markings, Part 3: Road traffic markings (English translation by the project)",
+        "rules_file": "regulations/CN/passages_marking.json",
+        "driving_side": "right",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/CN/passages_marking.json",
+          "regulations/CN/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "CN"
+        ]
+      },
+      "IN": {
+        "name": "India",
+        "name_zh": "印度",
+        "rule_region": "IN",
+        "rule_text": "text_en",
+        "rules_title": "The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))",
+        "rules_file": "regulations/IN/passages_lane.yaml",
+        "driving_side": "left",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/IN/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "IN"
+        ]
+      },
+      "UK": {
+        "name": "the United Kingdom",
+        "name_zh": "英国",
+        "rule_region": "UK",
+        "rule_text": "text_en",
+        "rules_title": "The Highway Code (rules 127-143 and Road markings) and the Traffic Signs Regulations and General Directions 2016, Schedule 9 Part 6 (regulatory road markings) and Schedule 11 Part 4 (advisory road markings)",
+        "rules_file": "regulations/UK/passages_lane.yaml",
+        "driving_side": "left",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/UK/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "UK"
+        ]
+      },
+      "US": {
+        "name": "the United States",
+        "name_zh": "美国",
+        "rule_region": "US",
+        "rule_text": "text_en",
+        "rules_title": "MUTCD 11th Edition (December 2023), Part 3 Markings",
+        "rules_file": "regulations/US/passages_marking.json",
+        "driving_side": "right",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/US/passages_marking.json",
+          "regulations/US/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "US"
+        ]
+      }
+    },
+    "lane": {
+      "prompt_dir": "prompts/lane_v3",
+      "max_output_tokens": 6000,
+      "control_region": {
+        "CN": "US",
+        "US": "CN",
+        "UK": "IN",
+        "IN": "UK"
+      }
+    }
+  }
+}

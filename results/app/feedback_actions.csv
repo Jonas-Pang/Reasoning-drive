@@ -1,0 +1,8 @@
+action,wrong,judged,wrong_rate
+change_left,50,232,0.216
+change_right,69,232,0.297
+go_straight,8,232,0.034
+turn_left,12,232,0.052
+turn_right,13,232,0.056
+u_turn,17,232,0.073
+enter_waiting_area,3,232,0.013

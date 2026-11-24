@@ -1,0 +1,107 @@
+image_id,region,split,dataset,level,level_why,rule_sensitive,sensitive_actions,sensitive_vs,markings,left,right
+culane_test__d193_06051603_0727_01620,CN,dev,CULane,L1,one kind of element,no,,,,white/solid,white/solid
+culane_test__d100_05251327_0403_03870,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/solid
+culane_test__d100_05251718_0469_02250,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/dashed
+culane_test__d193_06051123_0635_00900,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/solid,white/solid
+culane_test__d100_05251207_0380_02400,CN,dev,CULane,L1,one kind of element,no,,,,white/dashed,white/dashed
+culane_test__d193_06051114_0632_02790,CN,dev,CULane,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_left, change_right by a boundary)",yes,change_left;change_right,US,arrow:straight,white/solid,white/solid
+culane_test__d100_05251207_0380_02190,CN,dev,CULane,L1,one kind of element,no,,,,white/dashed,white/dashed
+culane_test__d100_05251222_0385_04920,CN,dev,CULane,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_left, change_right by a boundary)",yes,change_left;change_right,US,arrow:straight,white/solid,white/solid
+culane_test__d100_05251627_0452_02850,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",yes,change_right,US,,yellow/solid,white/solid
+culane_test__d193_06060748_0790_02970,CN,dev,CULane,L1,one kind of element,no,,,,white/dashed,white/dashed
+culane_test__d100_05251947_0499_00840,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/dashed
+culane_test__d100_05251207_0380_02130,CN,dev,CULane,L1,one kind of element,no,,,,white/dashed,white/dashed
+culane_test__d193_06042058_0527_03240,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d100_05251207_0380_03270,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d193_06060642_0768_03060,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d100_05251718_0469_01320,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/dashed
+culane_test__d193_06060642_0768_00360,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d193_06051734_0757_04050,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/solid
+culane_test__d100_05251718_0469_05070,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/dashed
+culane_test__d100_05251718_0469_05190,CN,dev,CULane,L1,one kind of element,no,,,,white/dashed,white/dashed
+culane_test__d100_05251947_0499_04830,CN,dev,CULane,L3,"the lane commits the car (go_straight, turn_left, u_turn prohibited by a marking, change_right by a boundary)",no,,,arrow:right,white/dashed,white/solid
+culane_test__d100_05251327_0403_01200,CN,dev,CULane,L1,one kind of element,no,,,,white/dashed,white/dashed
+culane_test__d37_05181608_0235_03090,CN,dev,CULane,L1,one kind of element,no,,,,white/solid,white/solid
+culane_test__d193_06060925_0822_05310,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d100_05251207_0380_01410,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d37_05181608_0235_05340,CN,dev,CULane,L1,one kind of element,yes,change_left;change_right,US,,white/solid,white/solid
+culane_test__d37_05181919_0299_03120,CN,dev,CULane,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_left, change_right by a boundary)",yes,change_left;change_right,US,arrow:straight,white/solid,white/solid
+culane_test__d37_05190927_0395_02340,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",yes,change_right,US,,white/solid,white/solid
+culane_test__d37_05181608_0235_05220,CN,dev,CULane,L1,one kind of element,yes,change_left;change_right,US,,white/solid,white/solid
+culane_test__d193_06060642_0768_00900,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d193_06051411_0691_03960,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/double_solid,white/dashed
+culane_test__d100_05251718_0469_00390,CN,dev,CULane,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_left, change_right by a boundary)",yes,change_left;change_right,US,arrow:straight,white/solid,white/solid
+culane_test__d193_06051603_0727_01080,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/solid
+culane_test__d100_05251327_0403_02340,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",yes,change_right,US,,white/solid,white/solid
+culane_test__d37_05190927_0395_05220,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/solid,white/double_solid
+culane_test__d100_05251222_0385_02280,CN,dev,CULane,L3,"actions decided by two elements: go_straight, turn_left, turn_right; the lane commits the car (go_straight, turn_right prohibited by a marking, change_left by a boundary)",no,,,arrow:left;arrow:u_turn,white/solid,white/dashed
+culane_test__d193_06060925_0822_04320,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d193_06060925_0822_04680,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d100_05251309_0397_03150,CN,dev,CULane,L3,"the lane commits the car (turn_left, u_turn prohibited by a marking, change_right by a boundary)",no,,,arrow:straight_right,white/dashed,white/solid
+culane_test__d193_06051123_0635_00450,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/solid,white/dashed
+culane_test__d100_05251327_0403_03960,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/solid
+culane_test__d193_06051734_0757_00000,CN,dev,CULane,L3,solid-and-broken pair on the left and right,no,,,,white/solid_dashed,white/solid_dashed
+culane_test__d193_06060925_0822_02700,CN,dev,CULane,L1,one kind of element,no,,,,white/dashed,white/dashed
+culane_test__d100_05252026_0512_00450,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d100_05251222_0385_01140,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/dashed
+culane_test__d100_05251718_0469_02040,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/dashed
+culane_test__d193_06060925_0822_01260,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d100_05251222_0385_01710,CN,dev,CULane,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_left, change_right by a boundary)",yes,change_left;change_right,US,arrow:straight,white/solid,white/solid
+culane_test__d100_05251309_0397_03390,CN,dev,CULane,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_left, change_right by a boundary)",yes,change_left;change_right,US,arrow:straight,white/solid,white/solid
+culane_test__d37_05181608_0235_03720,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/dashed
+culane_test__d100_05252026_0512_01020,CN,dev,CULane,L1,one kind of element,no,,,,white/dashed,white/dashed
+culane_test__d193_06042058_0527_02610,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d193_06060919_0820_00450,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/dashed,white/solid
+culane_test__d100_05252026_0512_01350,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+culane_test__d193_06051123_0635_00990,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/dashed,white/dashed
+culane_test__d193_06051123_0635_03690,CN,dev,CULane,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_left, change_right by a boundary)",yes,change_left;change_right,US,arrow:straight,white/solid,white/solid
+culane_test__d100_05251327_0403_00930,CN,dev,CULane,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_left by a boundary)",no,,,arrow:straight,white/solid,white/dashed
+culane_test__d37_05190927_0395_02430,CN,dev,CULane,L2,"4 kinds of element, each deciding its own actions",yes,change_right,US,arrow:straight;arrow:u_turn,white/solid,white/solid
+culane_test__d100_05251327_0403_00180,CN,dev,CULane,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_left by a boundary)",no,,,arrow:straight,white/solid,white/dashed
+culane_test__d37_05181919_0299_02970,CN,dev,CULane,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_right by a boundary)",yes,change_right,US,arrow:straight,white/dashed,white/solid
+culane_test__d193_06051114_0632_04320,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/dashed
+culane_test__d100_05251222_0385_02400,CN,dev,CULane,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_left, change_right by a boundary)",yes,change_left;change_right,US,arrow:straight,white/solid,white/solid
+culane_test__d193_06051123_0635_02160,CN,dev,CULane,L3,"the lane commits the car (go_straight, turn_left, u_turn prohibited by a marking, change_left, change_right by a boundary)",yes,change_left,US,arrow:right,white/solid,white/solid
+culane_test__d193_06060925_0822_04140,CN,dev,CULane,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_right by a boundary)",no,,,arrow:straight,white/dashed,white/solid
+culane_test__d100_05251222_0385_05250,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/dashed
+culane_test__d193_06051123_0635_01980,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",no,,,arrow:straight,white/dashed,white/dashed
+culane_test__d100_05251327_0403_00630,CN,dev,CULane,L2,"2 kinds of element, each deciding its own actions",yes,change_left,US,,white/solid,white/dashed
+culane_test__d193_06051734_0757_02430,CN,dev,CULane,L1,one kind of element,no,,,,white/dashed,white/dashed
+bdd100k_val__beccfad4-d24a29c5,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/solid,white/solid
+bdd100k_val__c0a71f47-14439a44,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/double_solid,white/solid
+bdd100k_val__c16d3fdb-a3a8c912,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/solid,white/dashed
+bdd100k_val__b2afce7f-0cb9967a,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+bdd100k_val__c464c963-0279dcc0,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/double_solid,none/none
+bdd100k_val__b5046f1e-b1ef44b9,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/dashed
+bdd100k_val__fe194677-e2d2ac8c,US,dev,BDD100K,L3,solid-and-broken pair on the right,no,,,,white/solid,white/solid_dashed
+bdd100k_val__c1e6340e-084ce27d,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/solid,white/dashed
+bdd100k_val__c400a0e1-c137168b,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",yes,change_right,CN,,yellow/solid,white/solid
+bdd100k_val__b9db357e-cd30a8ae,US,dev,BDD100K,L1,one kind of element,yes,change_left,CN,,white/solid,white/solid
+bdd100k_val__b7719f1d-e6e580dd,US,dev,BDD100K,L1,one kind of element,no,,,,white/dashed,white/dashed
+bdd100k_val__bd026bc5-9418706c,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",yes,change_left;change_right,CN,arrow:straight,white/solid,white/solid
+bdd100k_val__bf6315ee-a77e1bb2,US,dev,BDD100K,L1,one kind of element,yes,change_left;change_right,CN,,white/solid,white/solid
+bdd100k_val__c55da7df-facccafc,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,text:only,white/dashed,white/solid
+bdd100k_val__be4cbd00-97fec78b,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,arrow:straight,white/dashed,white/dashed
+bdd100k_val__b6decb24-82234e11,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,arrow:straight,white/dashed,white/dashed
+bdd100k_val__bfd64d5f-ec05de8b,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+bdd100k_val__ca15f699-e51c14c0,US,dev,BDD100K,L1,one kind of element,no,,,,white/dashed,white/dashed
+bdd100k_val__c4e92086-e1b8324f,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",yes,change_right,CN,,white/dashed,white/solid
+bdd100k_val__c39dc2ff-6976d19d,US,dev,BDD100K,L3,"the lane commits the car (go_straight, turn_right prohibited by a marking, change_left by a boundary)",yes,change_right,CN,arrow:left;text:only,none/none,white/solid
+bdd100k_val__be278041-2173a980,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",yes,change_right,CN,,yellow/solid,white/solid
+bdd100k_val__c01c4d85-36b417ee,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+bdd100k_val__b459e707-2d208c56,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,yellow/solid
+bdd100k_val__c588eb5e-dfd59d8e,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/double_solid,white/dashed
+bdd100k_val__c59500f0-130d7415,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/double_solid,white/dashed
+bdd100k_val__c7c042ec-4986a853,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,arrow:straight_right,white/dashed,white/dashed
+bdd100k_val__bbda6802-894aa456,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/double_solid,white/solid
+bdd100k_val__bc05c126-d00aeb9c,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/double_solid,white/solid
+bdd100k_val__c4b77809-63fd577c,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,line:stop_line,yellow/double_solid,none/none
+bdd100k_val__c4d25f00-3b1d8669,US,dev,BDD100K,L1,one kind of element,no,,,line:crosswalk,white/dashed,white/dashed
+bdd100k_val__c74ee988-8f4b380d,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/double_solid,white/solid
+bdd100k_val__c96ffe59-1cf2df11,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,none/none
+bdd100k_val__c5b2506d-07e406a6,US,dev,BDD100K,L1,one kind of element,no,,,,white/dashed,white/dashed
+bdd100k_val__c0f5b0d0-17e0110c,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,yellow/solid,white/solid
+bdd100k_val__c3ecb3cb-5fb43d29,US,dev,BDD100K,L3,"the lane commits the car (turn_left, turn_right, u_turn prohibited by a marking, change_left by a boundary)",yes,change_right,CN,arrow:straight;text:only,yellow/double_solid,white/solid
+bdd100k_val__bf6711ef-76e408aa,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",yes,change_right,CN,text:only,yellow/solid,white/solid
+bdd100k_val__bca36352-5de70a3f,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,white/dashed,white/solid
+bdd100k_val__bcbbfd82-add80c05,US,dev,BDD100K,L2,"2 kinds of element, each deciding its own actions",no,,,,white/solid,white/dashed

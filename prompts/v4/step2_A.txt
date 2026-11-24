@@ -1,0 +1,1 @@
+2. Rule (field "rule_reasoning"): recall the traffic rule of the region where the photo was taken that applies to this marking, and say in one sentence what it allows or prohibits.

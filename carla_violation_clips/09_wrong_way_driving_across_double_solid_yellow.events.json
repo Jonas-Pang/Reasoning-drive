@@ -1,0 +1,11 @@
+[
+ {
+  "t": 5.9,
+  "action": "change_left",
+  "truth": {
+   "US": "prohibited",
+   "CN": "prohibited"
+  },
+  "note": "drove on the wrong side of the yellow_double_solid centre line for about 70 m, then came back"
+ }
+]

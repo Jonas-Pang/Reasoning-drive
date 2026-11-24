@@ -1,0 +1,51 @@
+carla_Town03_arrow_lane_mirrored | lane | Test B | gpt-6.1-sol
+--------------------------------------------------------------
+Step 1  Scene           An urban road approaches an intersection beneath an elevated structure. My car is in
+                        the right-hand of two approach lanes. (lanes 2, mine 2, full)
+Step 2  Left            A single solid white line separates my lane from another approach lane on the left;
+                        there is no curb along this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           A single solid white line runs beside a raised sidewalk curb on the right, with
+                        buildings beyond.
+                        white solid, curb yes, edge_line, evidence full
+Step 3  Markings        arrow:right (full): A white lane-use arrow has a shaft bending right and a single
+                        right-pointing head.
+Step 4  Cross-check     position: The lane line on the left and roadway edge on the right agree with my lane
+                        being the second and rightmost of two approach lanes. | roles: The white lane
+                        separator and white roadside line fit their respective lane-line and edge-line roles;
+                        the raised curb confirms the right roadway edge. | markings: The right-only arrow is
+                        consistent with the right-hand approach lane and does not conflict with either
+                        boundary. | unseen: No stop line, crosswalk, waiting area, or additional movement
+                        arrow is clearly visible in my lane. | result: consistent
+Step 5  Rule            left_boundary: The white lane boundary identifies the adjacent lane and does not
+                        itself prohibit crossing; no supplied passage makes this solid white lane line a lane-
+                        change prohibition. [JP-別表第五車線境界線（２０６）] "Indicates the boundary between lanes on a
+                        section of road with four or more lanes."
+Step 5  Rule            right_boundary: No supplied passage covers this edge line or curb; the raised curb is
+                        a physical roadway boundary, so moving across it is prohibited.
+Step 5  Rule            arrow:right: The arrow indicates that this lane permits a right turn, excluding
+                        straight, left-turn, and U-turn movements. [JP-別表第五進行方向（２０４）] "Indicates a direction
+                        in which vehicles may proceed."
+Step 6  change_left     allowed: The white lane boundary identifies another lane and carries no crossing
+                        prohibition under the supplied lane-boundary passage.
+Step 6  change_right    prohibited: The raised curb forms a physical boundary that must not be crossed.
+Step 6  go_straight     prohibited: The right-only arrow does not permit proceeding straight.
+Step 6  turn_left       prohibited: The right-only arrow does not permit a left turn.
+Step 6  turn_right      allowed: The right-pointing arrow permits a right turn under JP-別表第五進行方向（２０４）.
+Step 6  u_turn          prohibited: The right-only arrow does not indicate a U-turn.
+Step 6  enter_waiting_areanot_applicable: No marked waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         consistent
+Advice                  Use this lane for a right turn and stay clear of the right curb. For another movement,
+                        change lanes only when safe and confirm that the destination lane's markings permit
+                        it; no stop line is clearly identifiable here.
+Model's summary         **Analyzing lane markings**  I need to determine the significance of the solid white
+                        lane lines comparing the left lane to the center. The image shows both lanes moving in
+                        the same direction, with the left lane indicating a left turn arrow at specific
+                        coordinates. The left boundary shows a continuous white line that seems solid
+                        throughout. It appears that one lane is for left turns and the other for right turns.
+                        I must be careful not to invent any information that isn't visible.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:right'], missed []), actions None, unsafe [], citation in_pack_not_accepted,
+                        contradictions []
+Tokens                  in 7122, out 1008, 16.27 s

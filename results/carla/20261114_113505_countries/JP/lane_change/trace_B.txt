@@ -1,0 +1,45 @@
+carla_Town03_lane_change_mirrored | lane | Test B | gpt-6.1-sol
+---------------------------------------------------------------
+Step 1  Scene           An urban road runs beneath an elevated structure, with two lanes in each direction. My
+                        car is in the rightmost of the two left-driving lanes; no intersection or lane ending
+                        is clearly visible ahead. (lanes 2, mine 2, full)
+Step 2  Left            A continuous solid white line separates my lane from another same-direction lane on
+                        the left; no curb forms this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           Two parallel solid yellow lines separate my lane from opposing traffic lanes on the
+                        right; there is no curb at this boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: Two same-direction lanes and ego lane index 2 agree with a lane boundary on
+                        the left and the road centre on the right under left-hand traffic. | roles: The white
+                        lane boundary and double yellow centre marking fit their observed roles. | markings:
+                        No arrows, words, symbols, transverse lines or waiting areas are visible in my lane. |
+                        unseen: No distant intersection layout or hidden lane-use marking has been inferred. |
+                        result: consistent
+Step 5  Rule            left_boundary: The white line identifies the boundary between lanes; this passage does
+                        not prohibit crossing it to change lanes. [JP-別表第五車線境界線（２０６）] "Indicates the boundary
+                        between lanes on a section of road with four or more lanes."
+Step 5  Rule            right_boundary: The yellow overtaking-restriction marking also serves as the centre
+                        line and prohibits moving into the opposing side for overtaking. [JP-別表第六備考一（七）]
+                        "Regulatory markings indicating prohibition of encroaching onto the right-hand portion
+                        for overtaking, in format 1 (a) or (b), shall also serve as centre-line in"
+Step 6  change_left     allowed: The white lane boundary identifies an adjacent same-direction lane, and the
+                        applicable lane-boundary passage does not prohibit changing across it.
+Step 6  change_right    prohibited: The double yellow centre marking prohibits crossing into the opposing side
+                        for overtaking.
+Step 6  go_straight     not_applicable: No lane-use arrow or prohibited-movement marking governs this action.
+Step 6  turn_left       not_applicable: No lane-use arrow or prohibited-movement marking governs this action.
+Step 6  turn_right      not_applicable: No lane-use arrow or prohibited-movement marking governs this action.
+Step 6  u_turn          not_applicable: No lane-use arrow or prohibited-movement marking governs this action;
+                        the centre boundary governs crossing alongside the lane, not an unseen intersection
+                        movement.
+Step 6  enter_waiting_areanot_applicable: No left-turn waiting area or adjacent two-way left-turn lane is
+                          visible.
+Step 7  Reflect         consistent
+Advice                  Remain on the left side of the double yellow centre marking; the white boundary
+                        permits a lane change to the lane on your left when safe. No visible arrows establish
+                        turn permissions or a stopping location, so reassess the markings when approaching the
+                        next intersection.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation in_pack_not_accepted, contradictions []
+Tokens                  in 7122, out 914, 16.41 s

@@ -1,0 +1,50 @@
+carla_Town03_lane_change_mirrored | lane | Test A | gpt-6.1-sol
+---------------------------------------------------------------
+Step 1  Scene           An urban two-way road runs beneath an elevated structure in Japan. My car is in the
+                        rightmost of two lanes in its direction, beside the centre lines; no intersection or
+                        lane ending is clearly visible ahead. (lanes 2, mine 2, full)
+Step 2  Left            A continuous white solid line separates my lane from another same-direction lane on
+                        the left; there is no curb at this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 2  Right           Two parallel solid yellow lines separate my lane from opposing traffic lanes on the
+                        right; there is no curb at this boundary.
+                        yellow double_solid, curb no, center_line, evidence full
+Step 3  Markings        none
+Step 4  Cross-check     position: The white lane separator on the left and centre lines on the right agree
+                        with my lane being lane 2 of 2 in left-hand traffic. | roles: The white solid line
+                        fits a same-direction lane separator, and the double yellow solid lines fit the
+                        opposing-direction boundary. | markings: No arrows, words, symbols, transverse lines
+                        or marked waiting areas are visible in my lane. | unseen: No intersection layout or
+                        distant lane-use marking has been inferred. | result: consistent
+Step 5  Rule            left_boundary: In Japan, a solid white same-direction lane separator does not itself
+                        prohibit changing lanes, so crossing it to the left is permitted when safe.
+Step 5  Rule            right_boundary: The solid yellow centre lines prohibit crossing into the opposing side
+                        for overtaking, so moving right across this boundary is prohibited.
+Step 6  change_left     allowed: The solid white lane separator permits a lane change to the adjacent same-
+                        direction lane when safe.
+Step 6  change_right    prohibited: The double solid yellow centre lines prohibit crossing right into opposing
+                        traffic for overtaking.
+Step 6  go_straight     not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_left       not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  turn_right      not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  u_turn          not_applicable: No visible lane-use arrow or prohibited-movement marking governs this
+                        action.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         consistent: boundary decisions follow the Japanese marking rules, and no intersection
+                        movement is assigned permission without a governing marking.
+Advice                  You may move into the left same-direction lane when safe; do not cross the double
+                        yellow centre lines to overtake. No visible arrows establish turn permissions, and no
+                        stop line is visible, so reassess as the next junction comes into view.
+Model's summary         **Clarifying JSON schema**  I need to create a concise JSON. The schema seems to lack
+                        a clear pattern, which makes it hard to add properties. They aren't strict, but I can
+                        use my observations. For instance, in Japan, crossing a solid white lane is allowed,
+                        but a double yellow line prohibits overtaking and changing lanes. At the far end,
+                        there are no visible markings or arrows, making it not applicable for certain rules.
+                        I'll need to count and index properly too.
+Score                   lane True, boundaries {'left': None, 'right': None}, markings True (added [], missed
+                        []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4424, out 887, 14.22 s

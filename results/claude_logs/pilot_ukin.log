@@ -1,0 +1,144 @@
+=== UK: workspace F:\数据集\lingoqa_ws, images F:\数据集\lingoqa
+  Reading the LingoQA labels in F:\数据集\lingoqa (once; this can take a few minutes) ...
+  Set up lingoqa: 988 images (93 in the development pool, 895 in the test pool).
+    labels: F:\Project\Reasoning_Drive\datasets\UK\lingoqa
+    picked images, packages, results: F:\数据集\lingoqa_ws
+  Next: python main.py label --data "F:\数据集\lingoqa_ws" label
+  picked  dev  degraded lingoqa__train_27ca312fb6ce3cb70036e317c6c758ba_2
+  picked  dev  yellow   lingoqa__train_d21bf5635928983657b67b4aa8a13fac_0
+  picked  dev  dashed   lingoqa__train_dde41275b6a47da6fe2992ae2f1b7673_1
+  picked  dev  dashed   lingoqa__train_e12d585d1cf304230d7d39744f0797cd_0
+  picked  dev  arrow    lingoqa__train_f2b37a8b7f23380de3834e8165fd2620_1
+  picked  test dashed   lingoqa__train_1c248b91fcec1954ff5503505d99c727_1
+  picked  test dashed   lingoqa__train_3510c0055b143081d71aa4122da19639_0
+  picked  test yellow   lingoqa__train_1869901e085ad9bfb1081f4efa101c93_2
+  picked  test yellow   lingoqa__train_70a63438f4f5c50ef21f29cc45d849ab_0
+  picked  test degraded lingoqa__train_1c5078b108792bcad84aacafb7edf52d_0
+  picked  test dashed   lingoqa__train_4fea456d82bfafd9161a364928d30234_0
+  picked  test solid    lingoqa__train_39b0fb645812ec9da3cbf9a64e3e2b12_0
+  picked  test dashed   lingoqa__train_74be6bb80c7b66a911cef6cb3c999227_0
+  picked  test yellow   lingoqa__train_a7fef42c584e5d3b67be7e244e35cd21_0
+  picked  test yellow   lingoqa__train_97b78557b9103ec9b3b5dce23c33e5f6_0
+  picked  test yellow   lingoqa__train_2fbe08dff3dad5e735cda2ccbca737d3_2
+  draft saved  lingoqa__train_27ca312fb6ce3cb70036e317c6c758ba_2  (kept)
+  draft saved  lingoqa__train_d21bf5635928983657b67b4aa8a13fac_0  (kept)
+  draft saved  lingoqa__train_dde41275b6a47da6fe2992ae2f1b7673_1  (kept)
+  draft saved  lingoqa__train_e12d585d1cf304230d7d39744f0797cd_0  (kept)
+  draft saved  lingoqa__train_f2b37a8b7f23380de3834e8165fd2620_1  (kept)
+  draft saved  lingoqa__train_1c248b91fcec1954ff5503505d99c727_1  (kept)
+  draft saved  lingoqa__train_3510c0055b143081d71aa4122da19639_0  (kept)
+  draft saved  lingoqa__train_1869901e085ad9bfb1081f4efa101c93_2  (kept)
+  draft saved  lingoqa__train_70a63438f4f5c50ef21f29cc45d849ab_0  (kept)
+  draft saved  lingoqa__train_1c5078b108792bcad84aacafb7edf52d_0  (kept)
+  draft saved  lingoqa__train_4fea456d82bfafd9161a364928d30234_0  (kept)
+  draft saved  lingoqa__train_39b0fb645812ec9da3cbf9a64e3e2b12_0  (kept)
+  draft saved  lingoqa__train_74be6bb80c7b66a911cef6cb3c999227_0  (kept)
+  draft saved  lingoqa__train_a7fef42c584e5d3b67be7e244e35cd21_0  (kept)
+  draft saved  lingoqa__train_97b78557b9103ec9b3b5dce23c33e5f6_0  (kept)
+  draft saved  lingoqa__train_2fbe08dff3dad5e735cda2ccbca737d3_2  (kept)
+=== IN: workspace F:\数据集\idd_ws, images F:\数据集\idd
+  Reading the IDD labels in F:\数据集\idd (once; this can take a few minutes) ...
+  Set up idd: 561 images (198 in the development pool, 363 in the test pool).
+    labels: F:\Project\Reasoning_Drive\datasets\IN\idd
+    picked images, packages, results: F:\数据集\idd_ws
+  Next: python main.py label --data "F:\数据集\idd_ws" label
+  picked  dev  solid    idd__primary_d1_leftCamImgs_0000529
+  picked  dev  solid    idd__primary_d1_leftCamImgs_0000786
+  picked  dev  degraded idd__primary_d1_leftCamImgs_0002357
+  picked  dev  degraded idd__primary_d1_leftCamImgs_0002250
+  picked  test solid    idd__primary_d0_leftCamImgs_0000778
+  picked  test dashed   idd__primary_d0_leftCamImgs_0001907
+  picked  test dashed   idd__primary_d0_leftCamImgs_0002074
+  picked  test dashed   idd__primary_d2_leftCamImgs_0001842
+  picked  test dashed   idd__primary_d0_leftCamImgs_0004361
+  picked  test degraded idd__primary_d0_leftCamImgs_0004255
+  picked  test degraded idd__primary_d2_leftCamImgs_0002423
+  picked  test degraded idd__primary_d2_leftCamImgs_0003438
+  picked  test degraded idd__primary_d0_leftCamImgs_0002563
+  draft saved  idd__primary_d1_leftCamImgs_0000529  (kept)
+  draft saved  idd__primary_d1_leftCamImgs_0000786  (kept)
+  draft saved  idd__primary_d1_leftCamImgs_0002357  (kept)
+  draft saved  idd__primary_d1_leftCamImgs_0002250  (kept)
+  draft saved  idd__primary_d0_leftCamImgs_0000778  (kept)
+  draft saved  idd__primary_d0_leftCamImgs_0001907  (kept)
+  draft saved  idd__primary_d0_leftCamImgs_0002074  (kept)
+  draft saved  idd__primary_d2_leftCamImgs_0001842  (kept)
+  draft saved  idd__primary_d0_leftCamImgs_0004361  (kept)
+  draft saved  idd__primary_d0_leftCamImgs_0004255  (kept)
+  draft saved  idd__primary_d2_leftCamImgs_0002423  (kept)
+  draft saved  idd__primary_d2_leftCamImgs_0003438  (kept)
+  draft saved  idd__primary_d0_leftCamImgs_0002563  (kept)
+Provenance: 29 rows added to F:\Project\Reasoning_Drive\results\claude_logs\provenance_labels.csv
+Done. Open the labeling window (scripts/label_all.bat) and switch to UK / India to review the drafts.
+=== UK: workspace F:\数据集\lingoqa_ws, images F:\数据集\lingoqa
+  Candidate index already there (988 images). Use --rebuild-index to read the dataset again.
+  Updated lingoqa: 988 images (93 in the development pool, 895 in the test pool).
+    labels: F:\Project\Reasoning_Drive\datasets\UK\lingoqa
+    picked images, packages, results: F:\数据集\lingoqa_ws
+  Next: python main.py label --data "F:\数据集\lingoqa_ws" label
+  kept    dev  degraded lingoqa__train_27ca312fb6ce3cb70036e317c6c758ba_2
+  kept    dev  yellow   lingoqa__train_d21bf5635928983657b67b4aa8a13fac_0
+  kept    dev  dashed   lingoqa__train_dde41275b6a47da6fe2992ae2f1b7673_1
+  kept    dev  dashed   lingoqa__train_e12d585d1cf304230d7d39744f0797cd_0
+  kept    dev  arrow    lingoqa__train_f2b37a8b7f23380de3834e8165fd2620_1
+  kept    test dashed   lingoqa__train_1c248b91fcec1954ff5503505d99c727_1
+  kept    test dashed   lingoqa__train_3510c0055b143081d71aa4122da19639_0
+  kept    test yellow   lingoqa__train_1869901e085ad9bfb1081f4efa101c93_2
+  kept    test yellow   lingoqa__train_70a63438f4f5c50ef21f29cc45d849ab_0
+  kept    test degraded lingoqa__train_1c5078b108792bcad84aacafb7edf52d_0
+  kept    test dashed   lingoqa__train_4fea456d82bfafd9161a364928d30234_0
+  kept    test solid    lingoqa__train_39b0fb645812ec9da3cbf9a64e3e2b12_0
+  kept    test dashed   lingoqa__train_74be6bb80c7b66a911cef6cb3c999227_0
+  kept    test yellow   lingoqa__train_a7fef42c584e5d3b67be7e244e35cd21_0
+  kept    test yellow   lingoqa__train_97b78557b9103ec9b3b5dce23c33e5f6_0
+  kept    test yellow   lingoqa__train_2fbe08dff3dad5e735cda2ccbca737d3_2
+  draft saved  lingoqa__train_27ca312fb6ce3cb70036e317c6c758ba_2  (kept)
+  draft saved  lingoqa__train_d21bf5635928983657b67b4aa8a13fac_0  (kept)
+  draft saved  lingoqa__train_dde41275b6a47da6fe2992ae2f1b7673_1  (kept)
+  draft saved  lingoqa__train_e12d585d1cf304230d7d39744f0797cd_0  (kept)
+  draft saved  lingoqa__train_f2b37a8b7f23380de3834e8165fd2620_1  (kept)
+  draft saved  lingoqa__train_1c248b91fcec1954ff5503505d99c727_1  (kept)
+  draft saved  lingoqa__train_3510c0055b143081d71aa4122da19639_0  (kept)
+  draft saved  lingoqa__train_1869901e085ad9bfb1081f4efa101c93_2  (kept)
+  draft saved  lingoqa__train_70a63438f4f5c50ef21f29cc45d849ab_0  (kept)
+  draft saved  lingoqa__train_1c5078b108792bcad84aacafb7edf52d_0  (kept)
+  draft saved  lingoqa__train_4fea456d82bfafd9161a364928d30234_0  (kept)
+  draft saved  lingoqa__train_39b0fb645812ec9da3cbf9a64e3e2b12_0  (kept)
+  draft saved  lingoqa__train_74be6bb80c7b66a911cef6cb3c999227_0  (kept)
+  draft saved  lingoqa__train_a7fef42c584e5d3b67be7e244e35cd21_0  (kept)
+  draft saved  lingoqa__train_97b78557b9103ec9b3b5dce23c33e5f6_0  (kept)
+  draft saved  lingoqa__train_2fbe08dff3dad5e735cda2ccbca737d3_2  (kept)
+=== IN: workspace F:\数据集\idd_ws, images F:\数据集\idd
+  Candidate index already there (561 images). Use --rebuild-index to read the dataset again.
+  Updated idd: 561 images (198 in the development pool, 363 in the test pool).
+    labels: F:\Project\Reasoning_Drive\datasets\IN\idd
+    picked images, packages, results: F:\数据集\idd_ws
+  Next: python main.py label --data "F:\数据集\idd_ws" label
+  kept    dev  solid    idd__primary_d1_leftCamImgs_0000529
+  kept    dev  solid    idd__primary_d1_leftCamImgs_0000786
+  kept    dev  degraded idd__primary_d1_leftCamImgs_0002357
+  kept    dev  degraded idd__primary_d1_leftCamImgs_0002250
+  kept    test solid    idd__primary_d0_leftCamImgs_0000778
+  kept    test dashed   idd__primary_d0_leftCamImgs_0001907
+  kept    test dashed   idd__primary_d0_leftCamImgs_0002074
+  kept    test dashed   idd__primary_d2_leftCamImgs_0001842
+  kept    test dashed   idd__primary_d0_leftCamImgs_0004361
+  kept    test degraded idd__primary_d0_leftCamImgs_0004255
+  kept    test degraded idd__primary_d2_leftCamImgs_0002423
+  kept    test degraded idd__primary_d2_leftCamImgs_0003438
+  kept    test degraded idd__primary_d0_leftCamImgs_0002563
+  draft saved  idd__primary_d1_leftCamImgs_0000529  (kept)
+  draft saved  idd__primary_d1_leftCamImgs_0000786  (kept)
+  draft saved  idd__primary_d1_leftCamImgs_0002357  (kept)
+  draft saved  idd__primary_d1_leftCamImgs_0002250  (kept)
+  draft saved  idd__primary_d0_leftCamImgs_0000778  (kept)
+  draft saved  idd__primary_d0_leftCamImgs_0001907  (kept)
+  draft saved  idd__primary_d0_leftCamImgs_0002074  (kept)
+  draft saved  idd__primary_d2_leftCamImgs_0001842  (kept)
+  draft saved  idd__primary_d0_leftCamImgs_0004361  (kept)
+  draft saved  idd__primary_d0_leftCamImgs_0004255  (kept)
+  draft saved  idd__primary_d2_leftCamImgs_0002423  (kept)
+  draft saved  idd__primary_d2_leftCamImgs_0003438  (kept)
+  draft saved  idd__primary_d0_leftCamImgs_0002563  (kept)
+Provenance: 0 rows added to F:\Project\Reasoning_Drive\results\claude_logs\provenance_labels.csv
+Done. Open the labeling window (scripts/label_all.bat) and switch to UK / India to review the drafts.

@@ -1,0 +1,27 @@
+{
+  "pdf": "uk_highway_code_road_markings.html",
+  "file_sha256": "81ae0cf3ef87a58f738dc657f09f761cb60882534b11f9feb2ba81c7eebb36da",
+  "code": "UK",
+  "document": "hc_markings",
+  "pages": 3,
+  "pages_read": [
+    1,
+    2,
+    3
+  ],
+  "pages_same_as_reference": [],
+  "reference": "",
+  "requests": 1,
+  "mock": false,
+  "passages": 33,
+  "verified_quotes": 33,
+  "errors": [],
+  "usage": {
+    "input_tokens": 2533,
+    "output_tokens": 4184
+  },
+  "cost_usd": 0.0469,
+  "draft": "D:\\Project\\Reasoning_Drive\\regulations\\UK\\passages_draft.yaml",
+  "region_file": "D:\\Project\\Reasoning_Drive\\regulations\\UK\\region.yaml",
+  "time_utc": "2026-11-14T20:32:26Z"
+}

@@ -1,0 +1,246 @@
+# UK passages that are not lane rules (parking, loading, stopping bays), moved out of passages_lane.yaml on 2026-11-17.
+# Not listed in region.yaml, so no run or labeling page uses them.
+
+- rule_id: UK-HC_MARKINGS-p2-3
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: waiting restriction markings
+  element: boundary
+  text_original: The times at which the restrictions apply for other road markings are shown on nearby plates or on entry
+    signs to controlled parking zones. If no days are shown on the signs, the restrictions are in force every day including
+    Sundays and Bank Holidays.
+  text_en: The times at which the restrictions apply for other road markings are shown on nearby plates or on entry signs
+    to controlled parking zones. If no days are shown on the signs, the restrictions are in force every day including Sundays
+    and Bank Holidays.
+  text_en_is_translation: false
+  norm: informative
+- rule_id: UK-HC_MARKINGS-p2-4
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: white parking bay markings
+  element: area
+  text_original: White bay markings and upright signs (see below) indicate where parking is allowed.
+  text_en: White bay markings and upright signs (see below) indicate where parking is allowed.
+  text_en_is_translation: false
+  norm: informative
+- rule_id: UK-HC_MARKINGS-p2-5
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: no-waiting marking
+  element: boundary
+  text_original: No waiting at any time
+  text_en: No waiting at any time
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: UK-HC_MARKINGS-p2-6
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: timed no-waiting marking
+  element: boundary
+  text_original: No waiting during times shown on sign
+  text_en: No waiting during times shown on sign
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: UK-HC_MARKINGS-p2-7
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: limited waiting bay
+  element: area
+  text_original: Waiting is limited to the duration specified during the days and times shown
+  text_en: Waiting is limited to the duration specified during the days and times shown
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: UK-HC_MARKINGS-p2-10
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: Red Route stopping box
+  element: area
+  text_original: On Red Routes you may stop to park, load/unload in specially marked boxes and adjacent signs specify the
+    times and purposes and duration allowed.
+  text_en: On Red Routes you may stop to park, load/unload in specially marked boxes and adjacent signs specify the times
+    and purposes and duration allowed.
+  text_en_is_translation: false
+  norm: permissive
+- rule_id: UK-HC_MARKINGS-p2-11
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: Red Route red box
+  element: area
+  text_original: A box MARKED IN RED indicates that it may only be available for the purpose specified for part of the day
+    (eg between busy peak periods).
+  text_en: A box MARKED IN RED indicates that it may only be available for the purpose specified for part of the day (eg between
+    busy peak periods).
+  text_en_is_translation: false
+  norm: informative
+- rule_id: UK-HC_MARKINGS-p2-12
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: Red Route white box
+  element: area
+  text_original: A box MARKED IN WHITE means that it is available throughout the day.
+  text_en: A box MARKED IN WHITE means that it is available throughout the day.
+  text_en_is_translation: false
+  norm: informative
+- rule_id: UK-HC_MARKINGS-p2-13
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: no-stopping marking
+  element: boundary
+  text_original: No stopping at any time
+  text_en: No stopping at any time
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: UK-HC_MARKINGS-p2-14
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: timed no-stopping marking
+  element: boundary
+  text_original: No stopping during times shown on sign
+  text_en: No stopping during times shown on sign
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: UK-HC_MARKINGS-p2-15
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: limited parking box
+  element: area
+  text_original: Parking is limited to the duration specified during the days and times shown
+  text_en: Parking is limited to the duration specified during the days and times shown
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: UK-HC_MARKINGS-p2-16
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: loading-only box
+  element: area
+  text_original: Only loading may take place at the times shown for up to a maximum duration of 20 mins
+  text_en: Only loading may take place at the times shown for up to a maximum duration of 20 mins
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: UK-HC_MARKINGS-p2-17
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: yellow loading restriction marks
+  element: boundary
+  text_original: Yellow marks on the kerb or at the edge of the carriageway indicate that loading or unloading is prohibited
+    at the times shown on the nearby black and white plates. You may stop while passengers board or alight.
+  text_en: Yellow marks on the kerb or at the edge of the carriageway indicate that loading or unloading is prohibited at
+    the times shown on the nearby black and white plates. You may stop while passengers board or alight.
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: UK-HC_MARKINGS-p2-18
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: yellow loading restriction marks
+  element: boundary
+  text_original: If no days are indicated on the signs the restrictions are in force every day including Sundays and Bank
+    Holidays.
+  text_en: If no days are indicated on the signs the restrictions are in force every day including Sundays and Bank Holidays.
+  text_en_is_translation: false
+  norm: informative
+- rule_id: UK-HC_MARKINGS-p2-19
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: Loading Only bay
+  element: area
+  text_original: Lengths of road reserved for vehicles loading and unloading are indicated by a white ‘bay’ marking with the
+    words ‘Loading Only’ and a sign with the white on blue ‘trolley’ symbol.
+  text_en: Lengths of road reserved for vehicles loading and unloading are indicated by a white ‘bay’ marking with the words
+    ‘Loading Only’ and a sign with the white on blue ‘trolley’ symbol.
+  text_en_is_translation: false
+  norm: informative
+- rule_id: UK-HC_MARKINGS-p2-20
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: Loading Only bay
+  element: area
+  text_original: If no times or days are shown it may be used at any time. Vehicles may not park here if they are not loading
+    or unloading.
+  text_en: If no times or days are shown it may be used at any time. Vehicles may not park here if they are not loading or
+    unloading.
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: UK-HC_MARKINGS-p2-21
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 2
+  marking_type: no-loading marking
+  element: boundary
+  text_original: No loading or unloading at any time
+  text_en: No loading or unloading at any time
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: UK-HC_MARKINGS-p3
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 3
+  marking_type: timed no-loading marking
+  element: boundary
+  text_original: No loading or unloading at the times shown
+  text_en: No loading or unloading at the times shown
+  text_en_is_translation: false
+  norm: mandatory
+- rule_id: UK-HC_MARKINGS-p3-4
+  region: UK
+  source: The Highway Code (Great Britain), Road markings
+  document: hc_markings
+  section: ''
+  page: 3
+  marking_type: reserved parking space
+  element: area
+  text_original: Parking space reserved for vehicles named
+  text_en: Parking space reserved for vehicles named
+  text_en_is_translation: false
+  norm: informative

@@ -1,0 +1,34 @@
+# Northern Ireland, the United Kingdom (UK-NI). Northern Ireland has its own Highway Code (based on the Great Britain version) and its own traffic sign regulations.
+# Documents are downloaded and read by:
+#   python main.py regulations fetch UK-NI
+#   python main.py regulations extract-all UK-NI --real
+#   python main.py regulations accept UK-NI        (after reading passages_draft.yaml)
+
+code: UK-NI
+name: "Northern Ireland, the United Kingdom"
+name_zh: "北爱尔兰（英国）"
+driving_side: left
+status: draft                   # planned -> draft (extracted) -> in use (accepted)
+
+standard:
+  title: "The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)"
+  language: en
+  source_url: https://www.nidirect.gov.uk/articles/rules-and-advice-drivers-and-riders-103-158
+  source_pdf: regulations/inbox/UK-NI/ni_highway_code_103-158
+  licence: "Open Government Licence v3.0"
+
+documents:
+  - tag: highway_code
+    title: "The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)"
+    urls:
+      - {url: "https://www.nidirect.gov.uk/articles/rules-and-advice-drivers-and-riders-103-158", type: html}
+      - {url: "https://www.nidirect.gov.uk/sites/default/files/publications/the-official-Highway-Code-for-Northern-Ireland-2020.PDF", type: pdf}
+    file: regulations/inbox/UK-NI/ni_highway_code_103-158          # suffix (.pdf/.html/.rtf) = the type obtained
+
+passages:
+  marking: passages_lane.yaml
+  lane: [passages_lane.yaml]
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

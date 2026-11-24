@@ -1,0 +1,78 @@
+# The web page with monitoring (docs/deployment.md).
+#   in .env: GRAFANA_ADMIN_PASSWORD (required), OPENAI_API_KEY (for real answers), DATASETS_ROOT (the labeled images)
+#   docker compose up --build
+# Lane advisor http://localhost:8770/app (user page: analyze, feedback, monitor) · research console http://localhost:8770
+# Grafana http://localhost:3000 (dashboard "Lane advisor – monitoring", alert rules) · Prometheus http://localhost:9090
+# Model: LANE_API_PROFILE in .env (default nav_gemma4_31b_bf16 = Gemma 4 31B on UF NaviGator, key NAVIGATOR_API_KEY);
+#        prompt lane_v4c (the final, frozen prompt). Without a key the page still shows saved answers (offline mode).
+# The ports are bound to 127.0.0.1, so only this computer can open them. Values like ${DATASETS_ROOT} come from .env.
+name: reasoning-driving
+
+services:
+  demo:
+    build: .
+    image: reasoning-driving:latest
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}                # given to this container only; not in the image
+      NAVIGATOR_API_KEY: ${NAVIGATOR_API_KEY:-}          # UF NaviGator key (team navigator-toolkit), same rule
+      DATASETS_ROOT: /data                               # where the datasets folder appears inside the container
+    volumes:
+      - ${DATASETS_ROOT:-./data}:/data:ro                # labeled images, read-only, never copied into the image
+      - ./datasets:/app/datasets:ro                      # final labels per country, read-only
+      - ./configs:/app/configs                           # settings; "Save" on the page writes configs/*.yaml here
+      - ./results:/app/results                           # saved runs, the answer cache, reports, the same folder as without Docker
+      - ./regulations:/app/regulations                   # the countries' rules; the extractor writes drafts here
+    command: ["python", "main.py", "web", "--host", "0.0.0.0", "--port", "8770", "--no-browser",
+              "--api", "${LANE_API_PROFILE:-nav_gemma4_31b_bf16}", "--lane-prompt", "lane_v4c"]
+    ports:
+      - "127.0.0.1:8770:8770"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 2G
+
+  prometheus:
+    image: prom/prometheus:v3.5.3                        # long-term support release
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.time=30d
+    volumes:
+      - ./deploy/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    ports:
+      - "127.0.0.1:9090:9090"
+    depends_on:
+      - demo
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:13.0.1
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:?Set GRAFANA_ADMIN_PASSWORD in .env (see .env.example)}
+      GF_AUTH_ANONYMOUS_ENABLED: "false"
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_ANALYTICS_REPORTING_ENABLED: "false"
+      GF_ANALYTICS_CHECK_FOR_UPDATES: "false"
+      GF_PLUGINS_PREINSTALL_DISABLED: "true"
+      GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH: /etc/grafana/dashboards/app.json
+    volumes:
+      # single files, not folders: on a drive formatted exFAT, macOS puts "._" files next to every file and Grafana would try to read them
+      - ./deploy/grafana/provisioning/datasources/prometheus.yml:/etc/grafana/provisioning/datasources/prometheus.yml:ro
+      - ./deploy/grafana/provisioning/dashboards/dashboards.yml:/etc/grafana/provisioning/dashboards/dashboards.yml:ro
+      - ./deploy/grafana/dashboards/demo.json:/etc/grafana/dashboards/demo.json:ro
+      - ./deploy/grafana/dashboards/app.json:/etc/grafana/dashboards/app.json:ro
+      - ./deploy/grafana/provisioning/alerting/rules.yml:/etc/grafana/provisioning/alerting/rules.yml:ro
+      - grafana_data:/var/lib/grafana
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+
+volumes:
+  prometheus_data:
+  grafana_data:

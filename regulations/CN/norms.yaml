@@ -1,0 +1,188 @@
+# Force of each passage of CN (mandatory, recommended, permissive, informative), proposed from the
+# standard's own words (shall/should/may, 应/宜/可 ...). Read each one against its passage; set checked: true
+# when it is right, or change norm. The lane prompt from lane_v2 on prints these values.
+
+CN-4.2.2-a:
+  norm: mandatory
+  word: 禁止
+  checked: false
+CN-4.3.2:
+  norm: informative
+  word: ''
+  checked: false
+CN-5.1.1:
+  norm: permissive
+  word: 可
+  checked: false
+CN-5.1.2:
+  norm: informative
+  word: 可
+  checked: false
+  note: changed from the proposal by reading the passage
+CN-5.2.1-2:
+  norm: permissive
+  word: 可
+  checked: false
+CN-5.2.3:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-6.1.1:
+  norm: mandatory
+  word: 禁止
+  checked: false
+CN-6.1.2:
+  norm: mandatory
+  word: 禁止
+  checked: false
+CN-6.1.3:
+  norm: mandatory
+  word: 禁止
+  checked: false
+CN-6.1.4:
+  norm: mandatory
+  word: 禁止
+  checked: false
+CN-6.2.1:
+  norm: mandatory
+  word: 禁止
+  checked: false
+CN-6.2.3:
+  norm: mandatory
+  word: 禁止
+  checked: false
+CN-6.10.1-2:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-5.13.1:
+  norm: informative
+  word: 应
+  checked: false
+  note: changed from the proposal by reading the passage
+CN-4.1.3:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-4.2.3-a:
+  norm: informative
+  word: ''
+  checked: false
+CN-4.3.2-c:
+  norm: informative
+  word: ''
+  checked: false
+CN-5.3.1-2:
+  norm: mandatory
+  word: 禁止
+  checked: false
+CN-5.4.1:
+  norm: informative
+  word: ''
+  checked: false
+CN-5.4.2:
+  norm: recommended
+  word: 宜
+  checked: false
+CN-5.4.3:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-5.4.5:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-5.4.6:
+  norm: permissive
+  word: 可
+  checked: false
+CN-5.4.7:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-5.5.1-3:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-5.6.1-2:
+  norm: informative
+  word: ''
+  checked: false
+CN-5.7.1-2:
+  norm: informative
+  word: ''
+  checked: false
+CN-5.13.2:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-5.13.5-6:
+  norm: recommended
+  word: 应
+  checked: false
+  note: changed from the proposal by reading the passage
+CN-5.14.1:
+  norm: informative
+  word: 应
+  checked: false
+  note: changed from the proposal by reading the passage
+CN-5.14.2:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-5.15.1-2:
+  norm: informative
+  word: ''
+  checked: false
+CN-6.2.2:
+  norm: mandatory
+  word: 禁止
+  checked: false
+CN-6.3.1:
+  norm: mandatory
+  word: 禁止
+  checked: false
+CN-6.4.1-2:
+  norm: informative
+  word: ''
+  checked: false
+CN-6.5.1.1-2:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-6.5.2.1-2:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-6.6.1-3:
+  norm: mandatory
+  word: 不可
+  checked: false
+CN-6.8.1-2:
+  norm: mandatory
+  word: 禁止
+  checked: false
+CN-6.9.1:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-6.9.2:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-6.10.1-4-V:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-6.11.1-2:
+  norm: mandatory
+  word: 应
+  checked: false
+CN-6.12.1-2:
+  norm: permissive
+  word: 可
+  checked: false
+CN-7.1.1:
+  norm: informative
+  word: ''
+  checked: false

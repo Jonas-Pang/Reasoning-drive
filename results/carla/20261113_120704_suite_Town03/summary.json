@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "map": "Town03",
+    "weather": "ClearNoon",
+    "prompt": "prompts/v3",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "reasoning_summary": "auto",
+    "asks": [
+      [
+        "US",
+        "B"
+      ],
+      [
+        "US",
+        "A"
+      ],
+      [
+        "CN",
+        "B"
+      ],
+      [
+        "CN",
+        "A"
+      ]
+    ],
+    "seed": 6216,
+    "started": "20261113_120704",
+    "mock": false
+  },
+  "per_ask": {
+    "US-B": {
+      "requests": 6,
+      "answered": 6,
+      "cost_usd": 0.0711,
+      "marking_correct": 6,
+      "actions_checked": 12,
+      "actions_correct": 10,
+      "unsafe": 1,
+      "over_cautious": 1,
+      "wrong": [
+        "arrow_left:u_turn said prohibited, truth allowed",
+        "yellow_solid:cross_line said allowed, truth prohibited"
+      ]
+    },
+    "US-A": {
+      "requests": 6,
+      "answered": 6,
+      "cost_usd": 0.0492,
+      "marking_correct": 6,
+      "actions_checked": 12,
+      "actions_correct": 12,
+      "unsafe": 0,
+      "over_cautious": 0,
+      "wrong": []
+    },
+    "CN-B": {
+      "requests": 6,
+      "answered": 6,
+      "cost_usd": 0.0633,
+      "marking_correct": 6,
+      "actions_checked": 11,
+      "actions_correct": 11,
+      "unsafe": 0,
+      "over_cautious": 0,
+      "wrong": []
+    },
+    "CN-A": {
+      "requests": 6,
+      "answered": 6,
+      "cost_usd": 0.0489,
+      "marking_correct": 6,
+      "actions_checked": 11,
+      "actions_correct": 11,
+      "unsafe": 0,
+      "over_cautious": 0,
+      "wrong": []
+    }
+  },
+  "cost_usd": 0.2325
+}

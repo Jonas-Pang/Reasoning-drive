@@ -1,0 +1,205 @@
+{
+  "run_id": "20261117_233535_laneB_UK",
+  "task": "lane",
+  "created_utc": "2026-11-18T04:35:35Z",
+  "tool": "reasoning_drive 0.1",
+  "git_commit": "",
+  "code_sha": "adf061465cf04505",
+  "marking_code_sha": "7368702812425cd7",
+  "test": "B",
+  "region": "UK",
+  "mock": false,
+  "use_cache": true,
+  "repeats": 1,
+  "n_items": 8,
+  "rules_region": "UK",
+  "settings": {
+    "base_url": "https://api.navigator.ai.ufl.edu/v1",
+    "model": "meta-muse-glimmer-30b",
+    "reasoning_effort": null,
+    "temperature": 0,
+    "image_detail": null,
+    "max_output_tokens": 6000,
+    "instruction_role": "developer",
+    "store": false,
+    "provider": "openai_chat",
+    "seed": 6216
+  },
+  "prompt_hashes": {
+    "instructions": "76ccca9900218fd1",
+    "user_text": "4f2c52fb578ad983",
+    "schema": "dbc85933833401a6",
+    "shared_parts": "eec27972e8df720b",
+    "rules_file": "1e4a5e326132656d",
+    "prompt_dir": "prompts/lane_v4c"
+  },
+  "label_sets": {
+    "lingoqa": "0788de047f8924af"
+  },
+  "split": "dev",
+  "split_version": 2,
+  "protocol": {
+    "frozen": false,
+    "matches": false,
+    "frozen_utc": null
+  },
+  "again": false,
+  "items": [
+    "lingoqa__train_27ca312fb6ce3cb70036e317c6c758ba_2",
+    "lingoqa__evaluation_images_val_f6d832c4b3279c6491278500918e792e_2",
+    "lingoqa__train_e12d585d1cf304230d7d39744f0797cd_0",
+    "lingoqa__train_d21bf5635928983657b67b4aa8a13fac_0",
+    "lingoqa__train_e0b3b51abefa2478a7a13edb958e8f33_1",
+    "lingoqa__evaluation_images_val_a1109658670fb29d13ac113d322c004c_2",
+    "lingoqa__train_f2b37a8b7f23380de3834e8165fd2620_1",
+    "lingoqa__train_dde41275b6a47da6fe2992ae2f1b7673_1"
+  ],
+  "config": {
+    "version": "3",
+    "mock": false,
+    "api": {
+      "provider": "openai_chat",
+      "base_url": "https://api.navigator.ai.ufl.edu/v1",
+      "api_key_env": "NAVIGATOR_API_KEY",
+      "model": "meta-muse-glimmer-30b",
+      "reasoning_effort": null,
+      "reasoning_summary": null,
+      "temperature": 0,
+      "image_detail": null,
+      "max_output_tokens": 2000,
+      "instruction_role": "developer",
+      "store": false,
+      "timeout_s": 600,
+      "max_retries": 3,
+      "parallel": 4,
+      "price_per_million_tokens": {
+        "meta-muse-glimmer-30b": {
+          "input": 0,
+          "output": 0
+        }
+      },
+      "seed": 6216,
+      "protocol_file": "configs/lane_protocol__nav_muse_glimmer_30b.json",
+      "profile": "nav_muse_glimmer_30b",
+      "api_key_set": true
+    },
+    "run": {
+      "test": "B",
+      "region": "UK",
+      "split": "dev",
+      "repeats": 1,
+      "limit": 0,
+      "marking_types": [],
+      "order_seed": 6216
+    },
+    "datasets_root": "",
+    "workspaces": [
+      "UF",
+      "bdd100k",
+      "culane",
+      "mapdr_ws",
+      "lingoqa_ws",
+      "idd_ws"
+    ],
+    "data_policy": {
+      "send_to_api": [
+        "own_video",
+        "bdd100k",
+        "culane",
+        "mapdr",
+        "lingoqa",
+        "idd"
+      ]
+    },
+    "prompt": {
+      "dir": "prompts/v4",
+      "box_color_rgb": [
+        0,
+        229,
+        255
+      ],
+      "box_width": 3,
+      "box_margin": 6,
+      "jpeg_quality": 92,
+      "restrict_rule_ids_in_schema": false
+    },
+    "regions": {
+      "CN": {
+        "name": "China",
+        "name_zh": "中国",
+        "rule_region": "CN",
+        "rule_text": "text_en",
+        "rules_title": "GB 5768.3-2025 Road traffic signs and markings, Part 3: Road traffic markings (English translation by the project)",
+        "rules_file": "regulations/CN/passages_marking.json",
+        "driving_side": "right",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/CN/passages_marking.json",
+          "regulations/CN/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "CN"
+        ]
+      },
+      "IN": {
+        "name": "India",
+        "name_zh": "印度",
+        "rule_region": "IN",
+        "rule_text": "text_en",
+        "rules_title": "The Motor Vehicles (Driving) Regulations, 2017 (G.S.R. 634(E))",
+        "rules_file": "regulations/IN/passages_lane.yaml",
+        "driving_side": "left",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/IN/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "IN"
+        ]
+      },
+      "UK": {
+        "name": "the United Kingdom",
+        "name_zh": "英国",
+        "rule_region": "UK",
+        "rule_text": "text_en",
+        "rules_title": "The Highway Code (rules 127-143 and Road markings) and the Traffic Signs Regulations and General Directions 2016, Schedule 9 Part 6 (regulatory road markings) and Schedule 11 Part 4 (advisory road markings)",
+        "rules_file": "regulations/UK/passages_lane.yaml",
+        "driving_side": "left",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/UK/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "UK"
+        ]
+      },
+      "US": {
+        "name": "the United States",
+        "name_zh": "美国",
+        "rule_region": "US",
+        "rule_text": "text_en",
+        "rules_title": "MUTCD 11th Edition (December 2023), Part 3 Markings",
+        "rules_file": "regulations/US/passages_marking.json",
+        "driving_side": "right",
+        "draft": false,
+        "lane_rules_files": [
+          "regulations/US/passages_marking.json",
+          "regulations/US/passages_lane.yaml"
+        ],
+        "rule_regions": [
+          "US"
+        ]
+      }
+    },
+    "lane": {
+      "prompt_dir": "prompts/lane_v4c",
+      "max_output_tokens": 6000,
+      "control_region": {
+        "CN": "US",
+        "US": "CN",
+        "UK": "IN",
+        "IN": "UK"
+      }
+    }
+  }
+}

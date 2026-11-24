@@ -1,0 +1,42 @@
+[
+ {
+  "stop": "plan",
+  "start": 4,
+  "end": 57
+ },
+ {
+  "stop": 1,
+  "label": "broken white lane line",
+  "drive_start": 57,
+  "ask": 113,
+  "answered": 158,
+  "traces_done": 257,
+  "maneuver_start": 275,
+  "maneuver_end": 328
+ },
+ {
+  "stop": 6,
+  "label": "junction approach: left-turn arrow and the line to the right lane",
+  "drive_start": 638,
+  "ask": 1360,
+  "answered": 1395,
+  "traces_done": 1540,
+  "maneuver_start": 1558,
+  "maneuver_end": 1652
+ },
+ {
+  "stop": 7,
+  "label": "two-way left-turn lane",
+  "drive_start": 1652,
+  "ask": 2345,
+  "answered": 2405,
+  "traces_done": 2504,
+  "maneuver_start": 2522,
+  "maneuver_end": 2610
+ },
+ {
+  "stop": "loop",
+  "drive_start": 2610,
+  "drive_end": 3175
+ }
+]

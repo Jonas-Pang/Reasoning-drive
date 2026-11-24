@@ -1,0 +1,13 @@
+# The build sees only what the image needs. Everything else (.env, data, datasets, results, notebooks, .git) is left out.
+*
+!main.py
+!reasoning_drive/
+!configs/
+!prompts/
+!regulations/
+!deploy/requirements-docker.lock
+regulations/inbox/
+**/__pycache__
+**/*.pyc
+**/.DS_Store
+**/._*

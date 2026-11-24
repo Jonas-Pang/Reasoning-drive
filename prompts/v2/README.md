@@ -13,4 +13,4 @@ Same four parts, same schema, same user message and the same rule block as v1 (`
 
 What v2 deliberately does not do: it contains no region's rules (Test A must still rely on the model's own knowledge), and no examples (examples written from the same development images that are scored would inflate the scores; they need a separate pool of development images first).
 
-`lane_reasoner.scoring.consistency_issues` checks every answer against the same constraints without the API, so the effect of v2 on unsupported or contradictory answers can be measured.
+`reasoning_drive.evaluation.scoring.consistency_issues` checks every answer against the same constraints without the API, so the effect of v2 on unsupported or contradictory answers can be measured.

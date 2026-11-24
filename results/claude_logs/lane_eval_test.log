@@ -1,0 +1,732 @@
+
+=== 2026-11-16 00:36:03  split=test regions=CN,US tests=A,B,C,D,R prompt=lane_v3 excluded=['culane']
+
+$ main.py lane items --region CN --split test
+mapdr__TidalFlowLane_8f5b7fa125df46d58641796df45384cb_1710048090674402000 mapdr      test  L white/dashed R white/dashed arrow:straight
+mapdr__MultiLane_17ec82fa09a8451ab2e2b464343ad02c_1709855464277303000 mapdr      test  L white/solid R white/solid 
+mapdr__TidalFlowLane_dce62010e5e946f789dfd62b34bfb201_1711068060437800000 mapdr      test  L none/none R none/none 
+mapdr__EmergencyLane_12b11a695e1b4c9b82921a9180a2fc53_1711327197777677000 mapdr      test  L white/solid R white/solid 
+mapdr__VehicleLane_03d33a54b23744cc8cfc1faa1c730f57_1711513674435018000 mapdr      test  L yellow/solid R white/dashed 
+mapdr__VehicleLane_b4cc0a67c39b467a9b43113660cf42ed_1710812102619029000 mapdr      test  L white/solid R white/solid 
+mapdr__EmergencyLane_2a1f8894096d46a29efc130923b0ea53_1711583176493111000 mapdr      test  L white/dashed R white/dashed 
+mapdr__BusLane_318cb11d50954093bb129118b8bd2ca4_1711600837938350000 mapdr      test  L yellow/dashed R white/dashed 
+mapdr__BusLane_27b8601f20dd4bd487a2eae8f21cea1c_1709518351221799000 mapdr      test  L white/solid R yellow/dashed 
+mapdr__DirectionLane_8c55eb645a084d67b4ef46c21f3e12a5_1709517075665723000 mapdr      test  L white/solid R white/solid 
+mapdr__TidalFlowLane_a6c934f5c4ab4fc2ad1970be0259d642_1711410698324105000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__DirectionLane_62b71b376d334fecbc1c4f8f434063f7_1710997080632482000 mapdr      test  L white/dashed R white/dashed arrow:straight
+mapdr__SpeedLimitedLane_5b6e1c0c6a2f485f96aa3989e0fc550a_1710979257785896000 mapdr      test  L white/solid R white/dashed 
+mapdr__DirectionLane_4b981cd0989f4cfaabff379758d180d8_1710544474099074000 mapdr      test  L white/solid R white/dashed arrow:straight
+mapdr__DirectionLane_8f2aaef21ebc4abeb5f4ff26653f3db5_1710896687128840000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_8db7574779504f58bbe9126598a116a5_1710311757749160000 mapdr      test  L white/dashed R white/dashed 
+mapdr__SpeedLimitedLane_9c677d0c0c0942cda69ffa5059152fd8_1710895405943707000 mapdr      test  L white/dashed R white/dashed text:speed_limit
+mapdr__SpeedLimitedLane_4c16c3f61cd5432abf11bab4d55f0507_1710821166609878000 mapdr      test  L white/dashed R white/dashed 
+mapdr__Non_MotorizedLane_286a400725cd4ba9aca2e6d5148f8851_1711588100576079000 mapdr      test  L yellow/dashed R none/none 
+mapdr__VariableDirectionLane_852b46659aec46258cf6752a3e40cbe4_1711608460555996000 mapdr      test  L white/solid R white/solid line:crosswalk
+mapdr__EmergencyLane_00de2c5ef1554c3baf47ce85cfd98f67_1709711014547398000 mapdr      test  L white/dashed R white/solid 
+mapdr__Non_MotorizedLane_8ba12b7f9c1c4f799b997b7b201e70aa_1710718607114715000 mapdr      test  L white/solid R none/none 
+mapdr__DirectionLane_8c3777cc0b944f12a8ebb5034248e4d0_1711414759900456000 mapdr      test  L yellow/double_solid R white/dashed arrow:left_u_turn;arrow:straight
+mapdr__VariableDirectionLane_df2cf4e1441940b080bbfce49fca8a15_1709882701082446000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__BusLane_9ff2df0e8cf04c7fa72ac9ceb928f324_1709457275071657000 mapdr      test  L white/dashed R white/dashed 
+mapdr__MultiLane_098a159b6c274183a94acd1983790d70_1711157385414762000 mapdr      test  L white/solid R white/dashed 
+mapdr__VehicleLane_adbfaa44038e457ea9871c13ec8fbfbe_1711407599241124000 mapdr      test  L yellow/solid R white/solid 
+mapdr__EmergencyLane_1a986017e476416fa6c2fc2bfe9fa1a8_1709705848977891000 mapdr      test  L white/dashed R white/dashed 
+mapdr__Non_MotorizedLane_0b32e42c00214d90b0c122dc79f9e3a6_1710461292870577000 mapdr      test  L white/solid R white/solid 
+mapdr__TidalFlowLane_7b2732cd56c1441ba9f22e7dee246990_1710041475468370000 mapdr      test  L yellow/double_dashed R yellow/dashed 
+mapdr__EmergencyLane_80df0005fc3d450fae05a675aebf7994_1710212735808183000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_10c76981b5474a0fba1167e2c9edfc70_1711089649734886000 mapdr      test  L white/solid R white/solid 
+mapdr__BusLane_3f63f9a1c884494d9788a8041542d427_1711167006977722000 mapdr      test  L white/dashed R yellow/dashed 
+mapdr__VariableDirectionLane_5b6edf5a25944e3484c3ecefb077d38c_1711441031907099000 mapdr      test  L yellow/double_solid R white/dashed arrow:straight
+mapdr__TidalFlowLane_2c85182201fd4f8faefc551f0cfe0bfa_1709687101136571000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__Non_MotorizedLane_86e2ab7b4a8d4f78a3dce852ff9c1d82_1711149624116337000 mapdr      test  L white/dashed R white/solid 
+mapdr__VariableDirectionLane_81e98f3adc2e4013ad438f51e47f80ca_1709698755700928000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__VariableDirectionLane_dca4739c4a80441ab59dfcd945fe9ab2_1712125867456978000 mapdr      test  L white/solid R white/solid text:other
+mapdr__SpeedLimitedLane_1ba4905f0cd94230a4e87293c44bfd49_1709693417745813000 mapdr      test  L white/dashed R white/dashed 
+mapdr__Non_MotorizedLane_0f80edcf297c4187829dd012d9966e8e_1710038985287087000 mapdr      test  L yellow/solid R white/dashed 
+mapdr__DirectionLane_8c3777cc0b944f12a8ebb5034248e4d0_1711414757233772000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__EmergencyLane_01a2822a642a447286c55eeedab682e0_1710911921307783000 mapdr      test  L white/dashed R white/solid 
+mapdr__Non_MotorizedLane_4ea09ef56d74498899ea4759eb326fd2_1711415187080137000 mapdr      test  L white/solid R white/solid arrow:straight_right
+mapdr__TidalFlowLane_1dae4caa72a34e5cbf2ebe696b6e3de0_1709952541106346000 mapdr      test  L white/dashed R white/dashed 
+mapdr__EmergencyLane_2cdbb32e26484b9ea447532500f89f36_1710919190859410000 mapdr      test  L white/dashed R white/solid 
+mapdr__DirectionLane_2da8b419155e4dd38a3a28fbd7fd37b7_1710907381140136000 mapdr      test  L white/solid R white/solid arrow:straight_left
+mapdr__EmergencyLane_3bb16e3f99b54b9cbe2ce804992d6343_1709700343511596000 mapdr      test  L white/dashed R white/solid 
+mapdr__SpeedLimitedLane_5fd2028ab8f941b7957e541cb1eefcfc_1710919631201752000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_5bc683cf2728478fb495b2b9a275a28b_1711429408205130000 mapdr      test  L white/solid R white/solid arrow:right
+mapdr__DirectionLane_55ec13980f824f72999db9c341658d27_1709789159559456000 mapdr      test  L yellow/solid R white/solid symbol:other
+mapdr__BusLane_93157115d08543f2bf77126674d5e284_1710305343884150000 mapdr      test  L yellow/dashed R yellow/dashed 
+mapdr__MultiLane_7f0434d460cb4b92b68544ef77217c50_1709798720694368000 mapdr      test  L white/solid R white/solid 
+mapdr__VehicleLane_019e550228d74df1b84f85116d54d61e_1711416452149561000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__VariableDirectionLane_6fa7c4b986204f518c266a6727fea22b_1712030568103240000 mapdr      test  L white/dashed R white/dashed 
+mapdr__BusLane_27f7c53a5d4a4bd3832faf7b6e2a632a_1711670013574098000 mapdr      test  L white/dashed R white/dashed 
+mapdr__TidalFlowLane_4842d1c117a44b17872fc225243a1b71_1711000625776249000 mapdr      test  L yellow/double_solid R yellow/dashed arrow:straight
+mapdr__DirectionLane_5e9d9ed0d5194ce795fa8fd51eacd541_1711614607274696000 mapdr      test  L white/solid R white/dashed 
+mapdr__DirectionLane_24c04ccef0e44052966189681baeacdf_1712135288834200000 mapdr      test  L white/dashed R white/dashed arrow:straight
+mapdr__Non_MotorizedLane_9b6b5daea5164914ae24a8bd5423bccb_1710730488312000000 mapdr      test  L white/solid R white/solid arrow:right
+mapdr__SpeedLimitedLane_5a47c462b2144775a6e68fd921b4bb1e_1709957383712615000 mapdr      test  L white/dashed R white/dashed 
+mapdr__MultiLane_2091fbc8531b4d4788d8f5faac11e5a1_1709693251047744000 mapdr      test  L white/solid R white/solid 
+mapdr__VariableDirectionLane_694d73de4c424c7b9931647af982de41_1711426714893192000 mapdr      test  L white/dashed R white/dashed arrow:straight
+mapdr__VehicleLane_b60541c776134f089e676ba51ee4417f_1709865113125919000 mapdr      test  L white/dashed R white/solid 
+mapdr__DirectionLane_09c3f48ec59b4d96b691a64c4562e3f0_1711850376979277000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__BusLane_0cdea530a3c24022b22a7320ad2e4818_1711619299216507000 mapdr      test  L yellow/dashed R white/solid 
+mapdr__Non_MotorizedLane_25dae80194fc4b428cb2579b95ed4292_1710299204968700000 mapdr      test  L white/dashed R white/solid 
+mapdr__BusLane_9a6818a05d6d43708d1fb1d1a7ffa3e8_1711693892899118000 mapdr      test  L white/solid R white/solid 
+mapdr__TidalFlowLane_85010d619c45485e9ac6d170a345154a_1710976194093153000 mapdr      test  L white/double_solid R white/dashed 
+mapdr__BusLane_1af9cc80e9dd41bda208c413b4d7dd6e_1711790652568285000 mapdr      test  L white/solid R white/dashed 
+mapdr__DirectionLane_20d1964b84ce4f418a9395d1658c8ec2_1710802401956712000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__BusLane_082905737c59400ab39b52f935ca913d_1711845479559752000 mapdr      test  L yellow/solid R white/dashed 
+mapdr__DirectionLane_8db7574779504f58bbe9126598a116a5_1710311760549212000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__EmergencyLane_065c41e605264418ad3dd675a41e3a2a_1711084342774609000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_20d1964b84ce4f418a9395d1658c8ec2_1710802400356714000 mapdr      test  L white/dashed R white/dashed arrow:straight
+mapdr__EmergencyLane_0e7f925072374a2b95aad5b44a1e6b95_1711868840772150000 mapdr      test  L white/dashed R white/dashed 
+mapdr__TidalFlowLane_164dc888bc3b4955a6ca27293a2d514e_1709885288453032000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__DirectionLane_4b981cd0989f4cfaabff379758d180d8_1710544478099110000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__BusLane_15514670dcde4a41bd9bfa135d4c4c2f_1711768724703636000 mapdr      test  L white/dashed R white/dashed 
+mapdr__SpeedLimitedLane_159b10a3d6574fa4b3f3043e91435066_1709537194987486000 mapdr      test  L white/dashed R white/dashed 
+mapdr__SpeedLimitedLane_153c9b0831774a17b6d206ea65cb9b67_1710890517158418000 mapdr      test  L white/dashed R white/dashed text:speed_limit
+mapdr__MultiLane_6085c35e887343e79989022e3a580bad_1711172164820827000 mapdr      test  L white/dashed R white/solid 
+mapdr__MultiLane_58ca0d6f04fc4605a76bc1b7899b0dfe_1709854271926265000 mapdr      test  L none/none R white/solid 
+mapdr__SpeedLimitedLane_6417acfdac2148e6a13a5c5416c67f88_1711089077689520000 mapdr      test  L white/solid R white/dashed 
+mapdr__VehicleLane_1036e89588864e379ce8660a432e9b10_1711866900144753000 mapdr      test  L white/dashed R white/solid 
+mapdr__VehicleLane_1036e89588864e379ce8660a432e9b10_1711866903744814000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__MultiLane_6d78ed924c8f490081cf9750e1f0d0da_1710733680991016000 mapdr      test  L white/solid R white/solid 
+mapdr__MultiLane_054e381d007742419c83604796aef772_1709777355676042000 mapdr      test  L white/solid R white/solid 
+mapdr__SpeedLimitedLane_5761b550887c494396dfbdfab57e3658_1709871635336045000 mapdr      test  L white/dashed R white/dashed 
+mapdr__Non_MotorizedLane_84ed44fcda554100a15272f3df855733_1711005238793896000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__Non_MotorizedLane_84ed44fcda554100a15272f3df855733_1711005241460616000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_8c55eb645a084d67b4ef46c21f3e12a5_1709517073665698000 mapdr      test  L white/dashed R white/dashed 
+mapdr__TidalFlowLane_ef4e7607ebb748b391255f4275607ea7_1709628255495496000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__TidalFlowLane_265c2ea27db0409b840de267e9cd64af_1711000444306818000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__Non_MotorizedLane_06ac8e9ffc9f4a48b15e7266e9fbc065_1711669708398811000 mapdr      test  L yellow/solid R white/dashed 
+mapdr__BusLane_1bc12c43c65140b49aa35fae20bada91_1711352278937239000 mapdr      test  L white/dashed R white/dashed 
+mapdr__EmergencyLane_1076a5f7a4cb4e80b5567db2953310a3_1711702619480155000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_79e9c06f70c1441b82762c324facbb34_1711000813221111000 mapdr      test  L white/dashed R white/dashed 
+mapdr__BusLane_98cd173888e8492cb807ed54a72ee3d7_1710809843204902000 mapdr      test  L white/dashed R yellow/dashed 
+mapdr__VariableDirectionLane_44993ba8e34c47b4856cd979c5dc2c08_1710301217970650000 mapdr      test  L yellow/double_solid R white/solid 
+mapdr__DirectionLane_4b981cd0989f4cfaabff379758d180d8_1710544478365779000 mapdr      test  L white/solid R white/solid arrow:straight;line:crosswalk
+mapdr__MultiLane_4bbd379e3c274e198dea80522b9967aa_1710219509478038000 mapdr      test  L white/dashed R white/dashed 
+mapdr__BusLane_413817bcf2784b99aa6b7ece511bfe01_1709887687980147000 mapdr      test  L white/solid R white/dashed 
+mapdr__DirectionLane_09c3f48ec59b4d96b691a64c4562e3f0_1711850371779181000 mapdr      test  L white/dashed R white/solid 
+mapdr__EmergencyLane_329feffbfc454c62a33eec5906e4ba06_1709888677701261000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_9c5c7c2e398649fab673af4b39b71ccd_1710893238070992000 mapdr      test  L white/solid R white/dashed 
+mapdr__TidalFlowLane_fcf0b941d7a04592b2be351c3de0618b_1711596818438262000 mapdr      test  L yellow/double_solid R yellow/dashed 
+mapdr__MultiLane_08b632e49f4743498ed405f0c22928df_1709685444115806000 mapdr      test  L none/none R white/solid 
+mapdr__Non_MotorizedLane_3fba9a5e18764a0f99610e0d2575b946_1710386997905413000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_2da8b419155e4dd38a3a28fbd7fd37b7_1710907382473496000 mapdr      test  L white/solid R white/dashed 
+mapdr__DirectionLane_62b71b376d334fecbc1c4f8f434063f7_1710997082499180000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__SpeedLimitedLane_74ce826f2e9441c593a69281963aa557_1711085029860869000 mapdr      test  L white/dashed R white/dashed 
+mapdr__SpeedLimitedLane_694b51c337864180b0af1b273beb1d3d_1709771819737819000 mapdr      test  L white/solid R white/dashed 
+mapdr__EmergencyLane_063d5bdc545a47a9bf8c83a7fab5f7de_1709528622976528000 mapdr      test  L yellow/dashed R yellow/dashed text:bus
+mapdr__MultiLane_69f3684158b54119b533ae2fc2455671_1711065856681727000 mapdr      test  L white/dashed R white/solid arrow:straight
+mapdr__VariableDirectionLane_dc7e02beddc6497eab4aeefd0ddb8fb9_1709695347140121000 mapdr      test  L white/dashed R white/dashed 
+mapdr__EmergencyLane_3acbbcc1e38b4321810120e62c24d64f_1710734161121759000 mapdr      test  L white/dashed R white/dashed 
+mapdr__EmergencyLane_4cee791d67694060a619326f3bf99d76_1709869395130753000 mapdr      test  L white/dashed R white/solid 
+mapdr__EmergencyLane_50aad8191b454f58b226fce7d06ee921_1711342170440912000 mapdr      test  L white/solid R white/solid 
+mapdr__BusLane_1af9cc80e9dd41bda208c413b4d7dd6e_1711790656568323000 mapdr      test  L white/solid R white/dashed 
+mapdr__SpeedLimitedLane_9bcaa7405b7943e89db2eb67d3163825_1709782706558838000 mapdr      test  L white/dashed R white/dashed 
+mapdr__EmergencyLane_4ff65188dbf04bf1a5a6840cd07de3fc_1709873700987803000 mapdr      test  L white/dashed R white/solid 
+mapdr__DirectionLane_55ec13980f824f72999db9c341658d27_1709789157159392000 mapdr      test  L yellow/solid R white/dashed area:grid
+mapdr__DirectionLane_38c846f3de1148d898b44814ee21a590_1709882978567210000 mapdr      test  L white/solid R white/solid arrow:right
+mapdr__SpeedLimitedLane_112ec2107aaf4bf196e351e045d452bb_1711167820291325000 mapdr      test  L white/dashed R white/dashed 
+124 images with a final lane label for region CN
+[exit 0]
+
+$ main.py lane run --test A --region CN --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+Trying once more ...
+
+$ main.py lane run --test A --region CN --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+
+$ main.py lane run --test B --region CN --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+Trying once more ...
+
+$ main.py lane run --test B --region CN --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+
+$ main.py lane run --test C --region CN --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+Trying once more ...
+
+$ main.py lane run --test C --region CN --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+
+$ main.py lane run --test D --region CN --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+Trying once more ...
+
+$ main.py lane run --test D --region CN --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+
+$ main.py lane run --test R --region CN --split test --prompt lane_v3 --real --from 20261115_230052_laneA_CN
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+Trying once more ...
+
+$ main.py lane run --test R --region CN --split test --prompt lane_v3 --real --from 20261115_230052_laneA_CN
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+
+$ main.py lane items --region US --split test
+bdd100k_val__c6dcc1a9-0fa80e62           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__bdf6ab8b-3ebe8356           bdd100k    test  L yellow/solid R white/solid 
+bdd100k_val__c300fd4b-8ff92c2d           bdd100k    test  L yellow/solid R none/none 
+bdd100k_val__c4b3ce3d-cdc056ce           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c561cb9a-aafc0bad           bdd100k    test  L white/solid R white/solid arrow:straight;text:only
+bdd100k_val__b263f57d-1ccf6e51           bdd100k    test  L white/dashed R none/none 
+bdd100k_val__bfe2b817-505676ef           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__c1627cd8-d8c10968           bdd100k    test  L yellow/solid R white/solid arrow:straight;text:only
+bdd100k_val__c1589305-200e315b           bdd100k    test  L white/solid R white/solid line:crosswalk;line:stop_line
+bdd100k_val__bcbf328d-953430de           bdd100k    test  L yellow/solid R white/solid 
+bdd100k_val__c94d8213-1f593522           bdd100k    test  L white/solid R white/solid 
+bdd100k_val__b91cdc5d-bce994ce           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c264943c-5e493c9f           bdd100k    test  L yellow/double_solid R white/solid text:other
+bdd100k_val__b306fb3f-f02e46cc           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__bfa92b30-f12f3535           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__b8fe9f2b-d63131a3           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c0e7271a-a3c8d55f           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__be22a1e1-cbcd82a6           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b1f0efd9-e900c6e5           bdd100k    test  L none/none R white/dashed 
+bdd100k_val__bdc0dc52-b4d05890           bdd100k    test  L white/dashed R white/dashed line:stop_line
+bdd100k_val__b5042634-1034573c           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b59e50fa-ca034dd0           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c1b3582d-b9c87c82           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__bbfe3b4f-5137ff9f           bdd100k    test  L white/solid R white/solid arrow:straight;line:crosswalk;line:stop_line
+bdd100k_val__c3bb4925-f78e285a           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c31d9531-694298f0           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c9283177-4ac407c3           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__bbf48d08-b6a11dd8           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__be926190-5293afb9           bdd100k    test  L yellow/double_solid R none/none 
+bdd100k_val__c47fb4ff-92db68d6           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__b928271b-fe5cc5d1           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__b5cd5f72-32232751           bdd100k    test  L white/solid R white/solid arrow:right
+bdd100k_val__bbf0f5d7-ea2f1cc3           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__b20b69d2-e31380a7           bdd100k    test  L none/none R white/solid 
+bdd100k_val__c909551e-fb24caeb           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__bab692c9-4d1f2bdd           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__b1f4491b-dd8dfed5           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c4e97226-7be7eef5           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c07733d0-aebb8786           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__bd656105-ed6f8161           bdd100k    test  L white/solid R white/solid line:crosswalk
+bdd100k_val__c121b93f-b2ee73d4           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__b4542860-0b880bb4           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b5661732-3684230b           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__bd8d420d-ec34c634           bdd100k    test  L white/dashed R white/solid arrow:straight_right
+bdd100k_val__be60191c-2dea5114           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__bd65dd37-4c3cdf2d           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c2021c8c-474a8eda           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__bd338426-4b27de63           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b3060c96-d2391b61           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__c173438f-01b0b013           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c308561a-1b698bb4           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c8a7a62d-e58e7297           bdd100k    test  L yellow/double_solid R none/none text:other
+bdd100k_val__b2fbf86d-d5de82a4           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b80018ef-3a620af0           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__c66d2237-f9c0a1ef           bdd100k    test  L yellow/double_solid R white/dashed 
+bdd100k_val__c6ed8102-2bbcbcc2           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c90c8198-f73aed79           bdd100k    test  L yellow/double_solid R none/none 
+bdd100k_val__bb8dba97-3537805c           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__c68f8fd2-61681484           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__be0a188d-c47bac51           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c100db13-71b423e5           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__b4d18d1a-193e24a1           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c65c2462-96e8ae92           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c6d77a40-03423c96           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__ba2db972-f29458c8           bdd100k    test  L white/dashed R none/none 
+bdd100k_val__c5588233-b03622f3           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__bc9b5bfb-51ebcf39           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__bb289fdb-4bc01501           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c4ee0cc4-b7af9602           bdd100k    test  L white/solid R white/dashed 
+bdd100k_val__b7935597-13c4b9dd           bdd100k    test  L none/none R white/solid 
+bdd100k_val__c2fb790e-4cd5a630           bdd100k    test  L yellow/double_solid R white/solid arrow:left;text:only
+bdd100k_val__b84146a1-a5f588ef           bdd100k    test  L white/dotted R white/dotted 
+bdd100k_val__ba9f6c98-2a75a096           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__c3026ac7-8105e9a9           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b5f84825-c97df380           bdd100k    test  L white/solid R white/solid arrow:straight_right;line:stop_line
+bdd100k_val__bff4bb8b-152c6105           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__c85416bd-db975d94           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c9b099e4-6ab2e4f4           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__b7aa329e-25d68dec           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__b54c065e-8b13cfe7           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__bd354e59-e5a9e8c6           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c02d18db-f5278de0           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c1b5a91c-9e402e78           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__c28b60fb-a5e9b955           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__b49d6c0d-457e13b3           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__be839b4c-fba3ea45           bdd100k    test  L white/dashed R white/dashed line:crosswalk
+bdd100k_val__b9429f07-33ae3ff1           bdd100k    test  L yellow/double_solid R white/dashed 
+bdd100k_val__ca146661-7f70d0c4           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b1c66a42-6f7d68ca           bdd100k    test  L yellow/double_solid R none/none text:other
+bdd100k_val__b65fd3df-87ed965a           bdd100k    test  L white/solid R white/solid 
+bdd100k_val__b48c7b5f-800d31b4           bdd100k    test  L yellow/dashed R white/solid 
+bdd100k_val__c4057c0c-000a6aaf           bdd100k    test  L yellow/dashed R white/dashed text:stop
+bdd100k_val__c15c29a5-74788f46           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__c0efbe92-2ee3e529           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__b577827c-28fc9b0d           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__bc19c993-c0a0f85f           bdd100k    test  L yellow/solid R white/dashed text:other
+bdd100k_val__c6e1c974-906461f4           bdd100k    test  L white/dashed R white/dashed arrow:straight;text:only
+bdd100k_val__c07733d0-7525eae7           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__c107c2f1-b2b8fff0           bdd100k    test  L yellow/double_solid R white/dashed 
+bdd100k_val__b321c6b6-ab603d42           bdd100k    test  L white/solid R white/solid 
+bdd100k_val__c8e01103-9ff8595d           bdd100k    test  L white/solid R white/solid arrow:straight;line:crosswalk
+bdd100k_val__c6dca574-6e641016           bdd100k    test  L yellow/double_solid R none/none 
+bdd100k_val__c3321660-e6b60390           bdd100k    test  L white/solid R white/solid arrow:straight;line:stop_line
+bdd100k_val__b7041acc-6de39959           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c4b3ab99-a4a09eeb           bdd100k    test  L white/solid R white/solid 
+bdd100k_val__c068a67b-03b6e200           bdd100k    test  L yellow/dashed R white/solid 
+bdd100k_val__bd3bd3ab-8e38f822           bdd100k    test  L white/solid R white/dashed 
+bdd100k_val__c90b5398-8d49f2f2           bdd100k    test  L white/solid R white/dashed 
+108 images with a final lane label for region US
+[exit 0]
+
+$ main.py lane run --test A --region US --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+Trying once more ...
+
+$ main.py lane run --test A --region US --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+
+$ main.py lane run --test B --region US --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+Trying once more ...
+
+$ main.py lane run --test B --region US --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+
+$ main.py lane run --test C --region US --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+Trying once more ...
+
+$ main.py lane run --test C --region US --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+
+$ main.py lane run --test D --region US --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+Trying once more ...
+
+$ main.py lane run --test D --region US --split test --prompt lane_v3 --real
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+
+$ main.py lane run --test R --region US --split test --prompt lane_v3 --real --from 20261115_230714_laneA_US
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+Trying once more ...
+
+$ main.py lane run --test R --region US --split test --prompt lane_v3 --real --from 20261115_230714_laneA_US
+Error: Test images are answered only with the frozen protocol. no frozen protocol (python main.py lane freeze)
+[exit 1]
+
+$ main.py lane runs
+20261115_233428_laneR_US               Test R US n=38 lane=0.5 actions=0.861 unsafe=2 $0.7019
+20261115_233322_laneR_CN               Test R CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.2103
+20261115_233320_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.0
+20261115_232336_laneR_US               Test R US n=38 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261115_232220_laneR_CN               Test R CN n=25 lane=0.24 actions=0.409 unsafe=0 $0.3302
+20261115_232040_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.3381
+20261115_231546_laneD_US               Test D US n=38 lane=0.474 actions=0.833 unsafe=2 $0.4926
+20261115_231257_laneC_US               Test C US n=38 lane=0.5 actions=0.833 unsafe=1 $0.5064
+20261115_231006_laneB_US               Test B US n=38 lane=0.474 actions=0.917 unsafe=1 $0.5074
+20261115_230714_laneA_US               Test A US n=38 lane=0.5 actions=0.778 unsafe=4 $0.4774
+20261115_230516_laneD_CN               Test D CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.4072
+20261115_230448_laneC_CN               Test C CN n=25 lane=None actions=None unsafe=None $None
+20261115_230247_laneB_CN               Test B CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.4372
+20261115_230052_laneA_CN               Test A CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.4061
+20261115_154539_laneC_US               Test C US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0416
+20261115_154537_laneB_US               Test B US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0
+20261115_154534_laneA_US               Test A US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0
+20261114_010650_laneR_US               Test R US n=38 lane=0.316 actions=0.528 unsafe=4 $0.5835
+20261114_010242_laneR_CN               Test R CN n=68 lane=0.544 actions=0.868 unsafe=1 $1.1224
+20261114_005949_laneD_US               Test D US n=38 lane=0.447 actions=0.75 unsafe=3 $0.5174
+20261114_005514_laneD_CN               Test D CN n=68 lane=0.471 actions=0.765 unsafe=4 $0.8987
+20261114_005301_laneB_US               Test B US n=38 lane=0.447 actions=0.806 unsafe=3 $0.5261
+20261114_004918_laneB_CN               Test B CN n=68 lane=0.485 actions=0.809 unsafe=2 $0.9154
+20261114_004006_laneR_US               Test R US n=38 lane=None actions=None unsafe=None $None
+20261114_004004_laneR_CN               Test R CN n=68 lane=None actions=None unsafe=None $None
+20261114_004003_laneD_US               Test D US n=38 lane=None actions=None unsafe=None $None
+20261114_004002_laneD_CN               Test D CN n=68 lane=None actions=None unsafe=None $None
+20261114_004001_laneB_US               Test B US n=38 lane=None actions=None unsafe=None $None
+20261114_003959_laneB_CN               Test B CN n=68 lane=None actions=None unsafe=None $None
+20261105_075052_laneB_US               Test B US n=38 lane=0.395 actions=0.833 unsafe=3 $0.5245
+20261105_075052_laneA_US               Test A US n=38 lane=0.5 actions=0.75 unsafe=5 $0.4772
+20261105_074605_laneB_CN               Test B CN n=68 lane=0.471 actions=0.853 unsafe=2 $0.8987
+20261105_074605_laneA_CN               Test A CN n=68 lane=0.544 actions=0.838 unsafe=2 $0.86
+20261105_074059_laneC_US               Test C US n=38 lane=0.553 actions=0.806 unsafe=2 $0.5215
+20261105_074059_laneC_CN               Test C CN n=68 lane=0.485 actions=0.456 unsafe=40 $0.9752
+20261103_095848_laneB_US               Test B US n=38 lane=0.447 actions=0.778 unsafe=3 $0.5302
+20261103_095848_laneA_US               Test A US n=38 lane=0.447 actions=0.75 unsafe=5 $0.4819
+20261103_034158_laneB_CN               Test B CN n=68 lane=0.485 actions=0.853 unsafe=2 $0.9385
+20261103_034158_laneA_CN               Test A CN n=68 lane=0.5 actions=0.838 unsafe=2 $0.8561
+[exit 0]
+
+ALL DONE. Log: F:\Project\Reasoning_Drive\results\claude_logs\lane_eval_test.log
+
+=== 2026-11-16 00:37:43  split=test regions=CN,US tests=A,B,C,D,R prompt=lane_v3 excluded=['culane']
+
+$ main.py lane freeze --prompt lane_v3 --note owner decision 2026-11-16: prompt lane_v3 frozen after the development runs (CN MapDR, US BDD100K)
+Frozen at 2026-11-16T05:37:45Z: 23 files, settings and 6 prompt hashes in configs/lane_protocol.json.
+[exit 0]
+
+$ main.py lane items --region CN --split test
+mapdr__TidalFlowLane_8f5b7fa125df46d58641796df45384cb_1710048090674402000 mapdr      test  L white/dashed R white/dashed arrow:straight
+mapdr__MultiLane_17ec82fa09a8451ab2e2b464343ad02c_1709855464277303000 mapdr      test  L white/solid R white/solid 
+mapdr__TidalFlowLane_dce62010e5e946f789dfd62b34bfb201_1711068060437800000 mapdr      test  L none/none R none/none 
+mapdr__EmergencyLane_12b11a695e1b4c9b82921a9180a2fc53_1711327197777677000 mapdr      test  L white/solid R white/solid 
+mapdr__VehicleLane_03d33a54b23744cc8cfc1faa1c730f57_1711513674435018000 mapdr      test  L yellow/solid R white/dashed 
+mapdr__VehicleLane_b4cc0a67c39b467a9b43113660cf42ed_1710812102619029000 mapdr      test  L white/solid R white/solid 
+mapdr__EmergencyLane_2a1f8894096d46a29efc130923b0ea53_1711583176493111000 mapdr      test  L white/dashed R white/dashed 
+mapdr__BusLane_318cb11d50954093bb129118b8bd2ca4_1711600837938350000 mapdr      test  L yellow/dashed R white/dashed 
+mapdr__BusLane_27b8601f20dd4bd487a2eae8f21cea1c_1709518351221799000 mapdr      test  L white/solid R yellow/dashed 
+mapdr__DirectionLane_8c55eb645a084d67b4ef46c21f3e12a5_1709517075665723000 mapdr      test  L white/solid R white/solid 
+mapdr__TidalFlowLane_a6c934f5c4ab4fc2ad1970be0259d642_1711410698324105000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__DirectionLane_62b71b376d334fecbc1c4f8f434063f7_1710997080632482000 mapdr      test  L white/dashed R white/dashed arrow:straight
+mapdr__SpeedLimitedLane_5b6e1c0c6a2f485f96aa3989e0fc550a_1710979257785896000 mapdr      test  L white/solid R white/dashed 
+mapdr__DirectionLane_4b981cd0989f4cfaabff379758d180d8_1710544474099074000 mapdr      test  L white/solid R white/dashed arrow:straight
+mapdr__DirectionLane_8f2aaef21ebc4abeb5f4ff26653f3db5_1710896687128840000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_8db7574779504f58bbe9126598a116a5_1710311757749160000 mapdr      test  L white/dashed R white/dashed 
+mapdr__SpeedLimitedLane_9c677d0c0c0942cda69ffa5059152fd8_1710895405943707000 mapdr      test  L white/dashed R white/dashed text:speed_limit
+mapdr__SpeedLimitedLane_4c16c3f61cd5432abf11bab4d55f0507_1710821166609878000 mapdr      test  L white/dashed R white/dashed 
+mapdr__Non_MotorizedLane_286a400725cd4ba9aca2e6d5148f8851_1711588100576079000 mapdr      test  L yellow/dashed R none/none 
+mapdr__VariableDirectionLane_852b46659aec46258cf6752a3e40cbe4_1711608460555996000 mapdr      test  L white/solid R white/solid line:crosswalk
+mapdr__EmergencyLane_00de2c5ef1554c3baf47ce85cfd98f67_1709711014547398000 mapdr      test  L white/dashed R white/solid 
+mapdr__Non_MotorizedLane_8ba12b7f9c1c4f799b997b7b201e70aa_1710718607114715000 mapdr      test  L white/solid R none/none 
+mapdr__DirectionLane_8c3777cc0b944f12a8ebb5034248e4d0_1711414759900456000 mapdr      test  L yellow/double_solid R white/dashed arrow:left_u_turn;arrow:straight
+mapdr__VariableDirectionLane_df2cf4e1441940b080bbfce49fca8a15_1709882701082446000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__BusLane_9ff2df0e8cf04c7fa72ac9ceb928f324_1709457275071657000 mapdr      test  L white/dashed R white/dashed 
+mapdr__MultiLane_098a159b6c274183a94acd1983790d70_1711157385414762000 mapdr      test  L white/solid R white/dashed 
+mapdr__VehicleLane_adbfaa44038e457ea9871c13ec8fbfbe_1711407599241124000 mapdr      test  L yellow/solid R white/solid 
+mapdr__EmergencyLane_1a986017e476416fa6c2fc2bfe9fa1a8_1709705848977891000 mapdr      test  L white/dashed R white/dashed 
+mapdr__Non_MotorizedLane_0b32e42c00214d90b0c122dc79f9e3a6_1710461292870577000 mapdr      test  L white/solid R white/solid 
+mapdr__TidalFlowLane_7b2732cd56c1441ba9f22e7dee246990_1710041475468370000 mapdr      test  L yellow/double_dashed R yellow/dashed 
+mapdr__EmergencyLane_80df0005fc3d450fae05a675aebf7994_1710212735808183000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_10c76981b5474a0fba1167e2c9edfc70_1711089649734886000 mapdr      test  L white/solid R white/solid 
+mapdr__BusLane_3f63f9a1c884494d9788a8041542d427_1711167006977722000 mapdr      test  L white/dashed R yellow/dashed 
+mapdr__VariableDirectionLane_5b6edf5a25944e3484c3ecefb077d38c_1711441031907099000 mapdr      test  L yellow/double_solid R white/dashed arrow:straight
+mapdr__TidalFlowLane_2c85182201fd4f8faefc551f0cfe0bfa_1709687101136571000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__Non_MotorizedLane_86e2ab7b4a8d4f78a3dce852ff9c1d82_1711149624116337000 mapdr      test  L white/dashed R white/solid 
+mapdr__VariableDirectionLane_81e98f3adc2e4013ad438f51e47f80ca_1709698755700928000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__VariableDirectionLane_dca4739c4a80441ab59dfcd945fe9ab2_1712125867456978000 mapdr      test  L white/solid R white/solid text:other
+mapdr__SpeedLimitedLane_1ba4905f0cd94230a4e87293c44bfd49_1709693417745813000 mapdr      test  L white/dashed R white/dashed 
+mapdr__Non_MotorizedLane_0f80edcf297c4187829dd012d9966e8e_1710038985287087000 mapdr      test  L yellow/solid R white/dashed 
+mapdr__DirectionLane_8c3777cc0b944f12a8ebb5034248e4d0_1711414757233772000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__EmergencyLane_01a2822a642a447286c55eeedab682e0_1710911921307783000 mapdr      test  L white/dashed R white/solid 
+mapdr__Non_MotorizedLane_4ea09ef56d74498899ea4759eb326fd2_1711415187080137000 mapdr      test  L white/solid R white/solid arrow:straight_right
+mapdr__TidalFlowLane_1dae4caa72a34e5cbf2ebe696b6e3de0_1709952541106346000 mapdr      test  L white/dashed R white/dashed 
+mapdr__EmergencyLane_2cdbb32e26484b9ea447532500f89f36_1710919190859410000 mapdr      test  L white/dashed R white/solid 
+mapdr__DirectionLane_2da8b419155e4dd38a3a28fbd7fd37b7_1710907381140136000 mapdr      test  L white/solid R white/solid arrow:straight_left
+mapdr__EmergencyLane_3bb16e3f99b54b9cbe2ce804992d6343_1709700343511596000 mapdr      test  L white/dashed R white/solid 
+mapdr__SpeedLimitedLane_5fd2028ab8f941b7957e541cb1eefcfc_1710919631201752000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_5bc683cf2728478fb495b2b9a275a28b_1711429408205130000 mapdr      test  L white/solid R white/solid arrow:right
+mapdr__DirectionLane_55ec13980f824f72999db9c341658d27_1709789159559456000 mapdr      test  L yellow/solid R white/solid symbol:other
+mapdr__BusLane_93157115d08543f2bf77126674d5e284_1710305343884150000 mapdr      test  L yellow/dashed R yellow/dashed 
+mapdr__MultiLane_7f0434d460cb4b92b68544ef77217c50_1709798720694368000 mapdr      test  L white/solid R white/solid 
+mapdr__VehicleLane_019e550228d74df1b84f85116d54d61e_1711416452149561000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__VariableDirectionLane_6fa7c4b986204f518c266a6727fea22b_1712030568103240000 mapdr      test  L white/dashed R white/dashed 
+mapdr__BusLane_27f7c53a5d4a4bd3832faf7b6e2a632a_1711670013574098000 mapdr      test  L white/dashed R white/dashed 
+mapdr__TidalFlowLane_4842d1c117a44b17872fc225243a1b71_1711000625776249000 mapdr      test  L yellow/double_solid R yellow/dashed arrow:straight
+mapdr__DirectionLane_5e9d9ed0d5194ce795fa8fd51eacd541_1711614607274696000 mapdr      test  L white/solid R white/dashed 
+mapdr__DirectionLane_24c04ccef0e44052966189681baeacdf_1712135288834200000 mapdr      test  L white/dashed R white/dashed arrow:straight
+mapdr__Non_MotorizedLane_9b6b5daea5164914ae24a8bd5423bccb_1710730488312000000 mapdr      test  L white/solid R white/solid arrow:right
+mapdr__SpeedLimitedLane_5a47c462b2144775a6e68fd921b4bb1e_1709957383712615000 mapdr      test  L white/dashed R white/dashed 
+mapdr__MultiLane_2091fbc8531b4d4788d8f5faac11e5a1_1709693251047744000 mapdr      test  L white/solid R white/solid 
+mapdr__VariableDirectionLane_694d73de4c424c7b9931647af982de41_1711426714893192000 mapdr      test  L white/dashed R white/dashed arrow:straight
+mapdr__VehicleLane_b60541c776134f089e676ba51ee4417f_1709865113125919000 mapdr      test  L white/dashed R white/solid 
+mapdr__DirectionLane_09c3f48ec59b4d96b691a64c4562e3f0_1711850376979277000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__BusLane_0cdea530a3c24022b22a7320ad2e4818_1711619299216507000 mapdr      test  L yellow/dashed R white/solid 
+mapdr__Non_MotorizedLane_25dae80194fc4b428cb2579b95ed4292_1710299204968700000 mapdr      test  L white/dashed R white/solid 
+mapdr__BusLane_9a6818a05d6d43708d1fb1d1a7ffa3e8_1711693892899118000 mapdr      test  L white/solid R white/solid 
+mapdr__TidalFlowLane_85010d619c45485e9ac6d170a345154a_1710976194093153000 mapdr      test  L white/double_solid R white/dashed 
+mapdr__BusLane_1af9cc80e9dd41bda208c413b4d7dd6e_1711790652568285000 mapdr      test  L white/solid R white/dashed 
+mapdr__DirectionLane_20d1964b84ce4f418a9395d1658c8ec2_1710802401956712000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__BusLane_082905737c59400ab39b52f935ca913d_1711845479559752000 mapdr      test  L yellow/solid R white/dashed 
+mapdr__DirectionLane_8db7574779504f58bbe9126598a116a5_1710311760549212000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__EmergencyLane_065c41e605264418ad3dd675a41e3a2a_1711084342774609000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_20d1964b84ce4f418a9395d1658c8ec2_1710802400356714000 mapdr      test  L white/dashed R white/dashed arrow:straight
+mapdr__EmergencyLane_0e7f925072374a2b95aad5b44a1e6b95_1711868840772150000 mapdr      test  L white/dashed R white/dashed 
+mapdr__TidalFlowLane_164dc888bc3b4955a6ca27293a2d514e_1709885288453032000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__DirectionLane_4b981cd0989f4cfaabff379758d180d8_1710544478099110000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__BusLane_15514670dcde4a41bd9bfa135d4c4c2f_1711768724703636000 mapdr      test  L white/dashed R white/dashed 
+mapdr__SpeedLimitedLane_159b10a3d6574fa4b3f3043e91435066_1709537194987486000 mapdr      test  L white/dashed R white/dashed 
+mapdr__SpeedLimitedLane_153c9b0831774a17b6d206ea65cb9b67_1710890517158418000 mapdr      test  L white/dashed R white/dashed text:speed_limit
+mapdr__MultiLane_6085c35e887343e79989022e3a580bad_1711172164820827000 mapdr      test  L white/dashed R white/solid 
+mapdr__MultiLane_58ca0d6f04fc4605a76bc1b7899b0dfe_1709854271926265000 mapdr      test  L none/none R white/solid 
+mapdr__SpeedLimitedLane_6417acfdac2148e6a13a5c5416c67f88_1711089077689520000 mapdr      test  L white/solid R white/dashed 
+mapdr__VehicleLane_1036e89588864e379ce8660a432e9b10_1711866900144753000 mapdr      test  L white/dashed R white/solid 
+mapdr__VehicleLane_1036e89588864e379ce8660a432e9b10_1711866903744814000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__MultiLane_6d78ed924c8f490081cf9750e1f0d0da_1710733680991016000 mapdr      test  L white/solid R white/solid 
+mapdr__MultiLane_054e381d007742419c83604796aef772_1709777355676042000 mapdr      test  L white/solid R white/solid 
+mapdr__SpeedLimitedLane_5761b550887c494396dfbdfab57e3658_1709871635336045000 mapdr      test  L white/dashed R white/dashed 
+mapdr__Non_MotorizedLane_84ed44fcda554100a15272f3df855733_1711005238793896000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__Non_MotorizedLane_84ed44fcda554100a15272f3df855733_1711005241460616000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_8c55eb645a084d67b4ef46c21f3e12a5_1709517073665698000 mapdr      test  L white/dashed R white/dashed 
+mapdr__TidalFlowLane_ef4e7607ebb748b391255f4275607ea7_1709628255495496000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__TidalFlowLane_265c2ea27db0409b840de267e9cd64af_1711000444306818000 mapdr      test  L yellow/double_solid R white/dashed 
+mapdr__Non_MotorizedLane_06ac8e9ffc9f4a48b15e7266e9fbc065_1711669708398811000 mapdr      test  L yellow/solid R white/dashed 
+mapdr__BusLane_1bc12c43c65140b49aa35fae20bada91_1711352278937239000 mapdr      test  L white/dashed R white/dashed 
+mapdr__EmergencyLane_1076a5f7a4cb4e80b5567db2953310a3_1711702619480155000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_79e9c06f70c1441b82762c324facbb34_1711000813221111000 mapdr      test  L white/dashed R white/dashed 
+mapdr__BusLane_98cd173888e8492cb807ed54a72ee3d7_1710809843204902000 mapdr      test  L white/dashed R yellow/dashed 
+mapdr__VariableDirectionLane_44993ba8e34c47b4856cd979c5dc2c08_1710301217970650000 mapdr      test  L yellow/double_solid R white/solid 
+mapdr__DirectionLane_4b981cd0989f4cfaabff379758d180d8_1710544478365779000 mapdr      test  L white/solid R white/solid arrow:straight;line:crosswalk
+mapdr__MultiLane_4bbd379e3c274e198dea80522b9967aa_1710219509478038000 mapdr      test  L white/dashed R white/dashed 
+mapdr__BusLane_413817bcf2784b99aa6b7ece511bfe01_1709887687980147000 mapdr      test  L white/solid R white/dashed 
+mapdr__DirectionLane_09c3f48ec59b4d96b691a64c4562e3f0_1711850371779181000 mapdr      test  L white/dashed R white/solid 
+mapdr__EmergencyLane_329feffbfc454c62a33eec5906e4ba06_1709888677701261000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_9c5c7c2e398649fab673af4b39b71ccd_1710893238070992000 mapdr      test  L white/solid R white/dashed 
+mapdr__TidalFlowLane_fcf0b941d7a04592b2be351c3de0618b_1711596818438262000 mapdr      test  L yellow/double_solid R yellow/dashed 
+mapdr__MultiLane_08b632e49f4743498ed405f0c22928df_1709685444115806000 mapdr      test  L none/none R white/solid 
+mapdr__Non_MotorizedLane_3fba9a5e18764a0f99610e0d2575b946_1710386997905413000 mapdr      test  L white/dashed R white/dashed 
+mapdr__DirectionLane_2da8b419155e4dd38a3a28fbd7fd37b7_1710907382473496000 mapdr      test  L white/solid R white/dashed 
+mapdr__DirectionLane_62b71b376d334fecbc1c4f8f434063f7_1710997082499180000 mapdr      test  L white/solid R white/solid arrow:straight
+mapdr__SpeedLimitedLane_74ce826f2e9441c593a69281963aa557_1711085029860869000 mapdr      test  L white/dashed R white/dashed 
+mapdr__SpeedLimitedLane_694b51c337864180b0af1b273beb1d3d_1709771819737819000 mapdr      test  L white/solid R white/dashed 
+mapdr__EmergencyLane_063d5bdc545a47a9bf8c83a7fab5f7de_1709528622976528000 mapdr      test  L yellow/dashed R yellow/dashed text:bus
+mapdr__MultiLane_69f3684158b54119b533ae2fc2455671_1711065856681727000 mapdr      test  L white/dashed R white/solid arrow:straight
+mapdr__VariableDirectionLane_dc7e02beddc6497eab4aeefd0ddb8fb9_1709695347140121000 mapdr      test  L white/dashed R white/dashed 
+mapdr__EmergencyLane_3acbbcc1e38b4321810120e62c24d64f_1710734161121759000 mapdr      test  L white/dashed R white/dashed 
+mapdr__EmergencyLane_4cee791d67694060a619326f3bf99d76_1709869395130753000 mapdr      test  L white/dashed R white/solid 
+mapdr__EmergencyLane_50aad8191b454f58b226fce7d06ee921_1711342170440912000 mapdr      test  L white/solid R white/solid 
+mapdr__BusLane_1af9cc80e9dd41bda208c413b4d7dd6e_1711790656568323000 mapdr      test  L white/solid R white/dashed 
+mapdr__SpeedLimitedLane_9bcaa7405b7943e89db2eb67d3163825_1709782706558838000 mapdr      test  L white/dashed R white/dashed 
+mapdr__EmergencyLane_4ff65188dbf04bf1a5a6840cd07de3fc_1709873700987803000 mapdr      test  L white/dashed R white/solid 
+mapdr__DirectionLane_55ec13980f824f72999db9c341658d27_1709789157159392000 mapdr      test  L yellow/solid R white/dashed area:grid
+mapdr__DirectionLane_38c846f3de1148d898b44814ee21a590_1709882978567210000 mapdr      test  L white/solid R white/solid arrow:right
+mapdr__SpeedLimitedLane_112ec2107aaf4bf196e351e045d452bb_1711167820291325000 mapdr      test  L white/dashed R white/dashed 
+124 images with a final lane label for region CN
+[exit 0]
+
+$ main.py lane run --test A --region CN --split test --prompt lane_v3 --real
+Lane run 20261116_003746_laneA_CN: lane 0.298, actions 0.59, unsafe 10, 0 errors, cost about $1.9725
+Saved in results/runs/20261116_003746_laneA_CN/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane run --test B --region CN --split test --prompt lane_v3 --real
+Lane run 20261116_004611_laneB_CN: lane 0.273, actions 0.598, unsafe 12, 0 errors, cost about $2.0892
+Saved in results/runs/20261116_004611_laneB_CN/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane run --test C --region CN --split test --prompt lane_v3 --real
+Lane run 20261116_005447_laneC_CN: lane 0.306, actions 0.492, unsafe 42, 0 errors, cost about $2.1358
+Saved in results/runs/20261116_005447_laneC_CN/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane run --test D --region CN --split test --prompt lane_v3 --real
+Lane run 20261116_010353_laneD_CN: lane 0.298, actions 0.549, unsafe 12, 0 errors, cost about $2.0201
+Saved in results/runs/20261116_010353_laneD_CN/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane run --test R --region CN --split test --prompt lane_v3 --real --from 20261116_003746_laneA_CN
+Lane run 20261116_011207_laneR_CN: lane 0.0, actions 0.0, unsafe 0, 124 errors, cost about $0.0. First error: HTTP 429: You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.
+124 of 124 requests failed, so this run is incomplete. Fix the cause and run the same command again: the answers that arrived are cached and are not paid again.
+Saved in results/runs/20261116_011207_laneR_CN/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane items --region US --split test
+bdd100k_val__c6dcc1a9-0fa80e62           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__bdf6ab8b-3ebe8356           bdd100k    test  L yellow/solid R white/solid 
+bdd100k_val__c300fd4b-8ff92c2d           bdd100k    test  L yellow/solid R none/none 
+bdd100k_val__c4b3ce3d-cdc056ce           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c561cb9a-aafc0bad           bdd100k    test  L white/solid R white/solid arrow:straight;text:only
+bdd100k_val__b263f57d-1ccf6e51           bdd100k    test  L white/dashed R none/none 
+bdd100k_val__bfe2b817-505676ef           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__c1627cd8-d8c10968           bdd100k    test  L yellow/solid R white/solid arrow:straight;text:only
+bdd100k_val__c1589305-200e315b           bdd100k    test  L white/solid R white/solid line:crosswalk;line:stop_line
+bdd100k_val__bcbf328d-953430de           bdd100k    test  L yellow/solid R white/solid 
+bdd100k_val__c94d8213-1f593522           bdd100k    test  L white/solid R white/solid 
+bdd100k_val__b91cdc5d-bce994ce           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c264943c-5e493c9f           bdd100k    test  L yellow/double_solid R white/solid text:other
+bdd100k_val__b306fb3f-f02e46cc           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__bfa92b30-f12f3535           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__b8fe9f2b-d63131a3           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c0e7271a-a3c8d55f           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__be22a1e1-cbcd82a6           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b1f0efd9-e900c6e5           bdd100k    test  L none/none R white/dashed 
+bdd100k_val__bdc0dc52-b4d05890           bdd100k    test  L white/dashed R white/dashed line:stop_line
+bdd100k_val__b5042634-1034573c           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b59e50fa-ca034dd0           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c1b3582d-b9c87c82           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__bbfe3b4f-5137ff9f           bdd100k    test  L white/solid R white/solid arrow:straight;line:crosswalk;line:stop_line
+bdd100k_val__c3bb4925-f78e285a           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c31d9531-694298f0           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c9283177-4ac407c3           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__bbf48d08-b6a11dd8           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__be926190-5293afb9           bdd100k    test  L yellow/double_solid R none/none 
+bdd100k_val__c47fb4ff-92db68d6           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__b928271b-fe5cc5d1           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__b5cd5f72-32232751           bdd100k    test  L white/solid R white/solid arrow:right
+bdd100k_val__bbf0f5d7-ea2f1cc3           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__b20b69d2-e31380a7           bdd100k    test  L none/none R white/solid 
+bdd100k_val__c909551e-fb24caeb           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__bab692c9-4d1f2bdd           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__b1f4491b-dd8dfed5           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c4e97226-7be7eef5           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c07733d0-aebb8786           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__bd656105-ed6f8161           bdd100k    test  L white/solid R white/solid line:crosswalk
+bdd100k_val__c121b93f-b2ee73d4           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__b4542860-0b880bb4           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b5661732-3684230b           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__bd8d420d-ec34c634           bdd100k    test  L white/dashed R white/solid arrow:straight_right
+bdd100k_val__be60191c-2dea5114           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__bd65dd37-4c3cdf2d           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c2021c8c-474a8eda           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__bd338426-4b27de63           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b3060c96-d2391b61           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__c173438f-01b0b013           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c308561a-1b698bb4           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c8a7a62d-e58e7297           bdd100k    test  L yellow/double_solid R none/none text:other
+bdd100k_val__b2fbf86d-d5de82a4           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b80018ef-3a620af0           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__c66d2237-f9c0a1ef           bdd100k    test  L yellow/double_solid R white/dashed 
+bdd100k_val__c6ed8102-2bbcbcc2           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c90c8198-f73aed79           bdd100k    test  L yellow/double_solid R none/none 
+bdd100k_val__bb8dba97-3537805c           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__c68f8fd2-61681484           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__be0a188d-c47bac51           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c100db13-71b423e5           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__b4d18d1a-193e24a1           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c65c2462-96e8ae92           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c6d77a40-03423c96           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__ba2db972-f29458c8           bdd100k    test  L white/dashed R none/none 
+bdd100k_val__c5588233-b03622f3           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__bc9b5bfb-51ebcf39           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__bb289fdb-4bc01501           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c4ee0cc4-b7af9602           bdd100k    test  L white/solid R white/dashed 
+bdd100k_val__b7935597-13c4b9dd           bdd100k    test  L none/none R white/solid 
+bdd100k_val__c2fb790e-4cd5a630           bdd100k    test  L yellow/double_solid R white/solid arrow:left;text:only
+bdd100k_val__b84146a1-a5f588ef           bdd100k    test  L white/dotted R white/dotted 
+bdd100k_val__ba9f6c98-2a75a096           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__c3026ac7-8105e9a9           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b5f84825-c97df380           bdd100k    test  L white/solid R white/solid arrow:straight_right;line:stop_line
+bdd100k_val__bff4bb8b-152c6105           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__c85416bd-db975d94           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c9b099e4-6ab2e4f4           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__b7aa329e-25d68dec           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__b54c065e-8b13cfe7           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__bd354e59-e5a9e8c6           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c02d18db-f5278de0           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__c1b5a91c-9e402e78           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__c28b60fb-a5e9b955           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__b49d6c0d-457e13b3           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__be839b4c-fba3ea45           bdd100k    test  L white/dashed R white/dashed line:crosswalk
+bdd100k_val__b9429f07-33ae3ff1           bdd100k    test  L yellow/double_solid R white/dashed 
+bdd100k_val__ca146661-7f70d0c4           bdd100k    test  L white/dashed R white/dashed 
+bdd100k_val__b1c66a42-6f7d68ca           bdd100k    test  L yellow/double_solid R none/none text:other
+bdd100k_val__b65fd3df-87ed965a           bdd100k    test  L white/solid R white/solid 
+bdd100k_val__b48c7b5f-800d31b4           bdd100k    test  L yellow/dashed R white/solid 
+bdd100k_val__c4057c0c-000a6aaf           bdd100k    test  L yellow/dashed R white/dashed text:stop
+bdd100k_val__c15c29a5-74788f46           bdd100k    test  L yellow/double_solid R white/solid 
+bdd100k_val__c0efbe92-2ee3e529           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__b577827c-28fc9b0d           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__bc19c993-c0a0f85f           bdd100k    test  L yellow/solid R white/dashed text:other
+bdd100k_val__c6e1c974-906461f4           bdd100k    test  L white/dashed R white/dashed arrow:straight;text:only
+bdd100k_val__c07733d0-7525eae7           bdd100k    test  L yellow/solid R white/dashed 
+bdd100k_val__c107c2f1-b2b8fff0           bdd100k    test  L yellow/double_solid R white/dashed 
+bdd100k_val__b321c6b6-ab603d42           bdd100k    test  L white/solid R white/solid 
+bdd100k_val__c8e01103-9ff8595d           bdd100k    test  L white/solid R white/solid arrow:straight;line:crosswalk
+bdd100k_val__c6dca574-6e641016           bdd100k    test  L yellow/double_solid R none/none 
+bdd100k_val__c3321660-e6b60390           bdd100k    test  L white/solid R white/solid arrow:straight;line:stop_line
+bdd100k_val__b7041acc-6de39959           bdd100k    test  L white/dashed R white/solid 
+bdd100k_val__c4b3ab99-a4a09eeb           bdd100k    test  L white/solid R white/solid 
+bdd100k_val__c068a67b-03b6e200           bdd100k    test  L yellow/dashed R white/solid 
+bdd100k_val__bd3bd3ab-8e38f822           bdd100k    test  L white/solid R white/dashed 
+bdd100k_val__c90b5398-8d49f2f2           bdd100k    test  L white/solid R white/dashed 
+108 images with a final lane label for region US
+[exit 0]
+
+$ main.py lane run --test A --region US --split test --prompt lane_v3 --real
+Lane run 20261116_011440_laneA_US: lane 0.0, actions 0.0, unsafe 0, 108 errors, cost about $0.0. First error: HTTP 429: You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.
+108 of 108 requests failed, so this run is incomplete. Fix the cause and run the same command again: the answers that arrived are cached and are not paid again.
+Saved in results/runs/20261116_011440_laneA_US/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane run --test B --region US --split test --prompt lane_v3 --real
+Lane run 20261116_011631_laneB_US: lane 0.0, actions 0.0, unsafe 0, 108 errors, cost about $0.0. First error: HTTP 429: You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.
+108 of 108 requests failed, so this run is incomplete. Fix the cause and run the same command again: the answers that arrived are cached and are not paid again.
+Saved in results/runs/20261116_011631_laneB_US/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane run --test C --region US --split test --prompt lane_v3 --real
+Lane run 20261116_011823_laneC_US: lane 0.0, actions 0.0, unsafe 0, 108 errors, cost about $0.0. First error: HTTP 429: You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.
+108 of 108 requests failed, so this run is incomplete. Fix the cause and run the same command again: the answers that arrived are cached and are not paid again.
+Saved in results/runs/20261116_011823_laneC_US/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane run --test D --region US --split test --prompt lane_v3 --real
+Lane run 20261116_012014_laneD_US: lane 0.0, actions 0.0, unsafe 0, 108 errors, cost about $0.0. First error: HTTP 429: You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.
+108 of 108 requests failed, so this run is incomplete. Fix the cause and run the same command again: the answers that arrived are cached and are not paid again.
+Saved in results/runs/20261116_012014_laneD_US/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane run --test R --region US --split test --prompt lane_v3 --real --from 20261116_011440_laneA_US
+Lane run 20261116_012205_laneR_US: lane 0.0, actions 0.0, unsafe 0, 108 errors, cost about $0.0. First error: HTTP 429: You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.
+108 of 108 requests failed, so this run is incomplete. Fix the cause and run the same command again: the answers that arrived are cached and are not paid again.
+Saved in results/runs/20261116_012205_laneR_US/ (summary.md, trace.md, scores.json, results.jsonl, manifest.json)
+[exit 0]
+
+$ main.py lane runs
+20261116_012205_laneR_US               Test R US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_012014_laneD_US               Test D US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011823_laneC_US               Test C US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011631_laneB_US               Test B US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011440_laneA_US               Test A US n=108 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_011207_laneR_CN               Test R CN n=124 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261116_010353_laneD_CN               Test D CN n=124 lane=0.298 actions=0.549 unsafe=12 $2.0201
+20261116_005447_laneC_CN               Test C CN n=124 lane=0.306 actions=0.492 unsafe=42 $2.1358
+20261116_004611_laneB_CN               Test B CN n=124 lane=0.273 actions=0.598 unsafe=12 $2.0892
+20261116_003746_laneA_CN               Test A CN n=124 lane=0.298 actions=0.59 unsafe=10 $1.9725
+20261115_233428_laneR_US               Test R US n=38 lane=0.5 actions=0.861 unsafe=2 $0.7019
+20261115_233322_laneR_CN               Test R CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.2103
+20261115_233320_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.0
+20261115_232336_laneR_US               Test R US n=38 lane=0.0 actions=0.0 unsafe=0 $0.0
+20261115_232220_laneR_CN               Test R CN n=25 lane=0.24 actions=0.409 unsafe=0 $0.3302
+20261115_232040_laneC_CN               Test C CN n=25 lane=0.56 actions=0.545 unsafe=11 $0.3381
+20261115_231546_laneD_US               Test D US n=38 lane=0.474 actions=0.833 unsafe=2 $0.4926
+20261115_231257_laneC_US               Test C US n=38 lane=0.5 actions=0.833 unsafe=1 $0.5064
+20261115_231006_laneB_US               Test B US n=38 lane=0.474 actions=0.917 unsafe=1 $0.5074
+20261115_230714_laneA_US               Test A US n=38 lane=0.5 actions=0.778 unsafe=4 $0.4774
+20261115_230516_laneD_CN               Test D CN n=25 lane=0.52 actions=0.818 unsafe=0 $0.4072
+20261115_230448_laneC_CN               Test C CN n=25 lane=None actions=None unsafe=None $None
+20261115_230247_laneB_CN               Test B CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.4372
+20261115_230052_laneA_CN               Test A CN n=25 lane=0.48 actions=0.818 unsafe=0 $0.4061
+20261115_154539_laneC_US               Test C US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0416
+20261115_154537_laneB_US               Test B US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0
+20261115_154534_laneA_US               Test A US n=2 lane=0.5 actions=1.0 unsafe=0 $0.0
+20261114_010650_laneR_US               Test R US n=38 lane=0.316 actions=0.528 unsafe=4 $0.5835
+20261114_010242_laneR_CN               Test R CN n=68 lane=0.544 actions=0.868 unsafe=1 $1.1224
+20261114_005949_laneD_US               Test D US n=38 lane=0.447 actions=0.75 unsafe=3 $0.5174
+20261114_005514_laneD_CN               Test D CN n=68 lane=0.471 actions=0.765 unsafe=4 $0.8987
+20261114_005301_laneB_US               Test B US n=38 lane=0.447 actions=0.806 unsafe=3 $0.5261
+20261114_004918_laneB_CN               Test B CN n=68 lane=0.485 actions=0.809 unsafe=2 $0.9154
+20261114_004006_laneR_US               Test R US n=38 lane=None actions=None unsafe=None $None
+20261114_004004_laneR_CN               Test R CN n=68 lane=None actions=None unsafe=None $None
+20261114_004003_laneD_US               Test D US n=38 lane=None actions=None unsafe=None $None
+20261114_004002_laneD_CN               Test D CN n=68 lane=None actions=None unsafe=None $None
+20261114_004001_laneB_US               Test B US n=38 lane=None actions=None unsafe=None $None
+20261114_003959_laneB_CN               Test B CN n=68 lane=None actions=None unsafe=None $None
+20261105_075052_laneB_US               Test B US n=38 lane=0.395 actions=0.833 unsafe=3 $0.5245
+20261105_075052_laneA_US               Test A US n=38 lane=0.5 actions=0.75 unsafe=5 $0.4772
+20261105_074605_laneB_CN               Test B CN n=68 lane=0.471 actions=0.853 unsafe=2 $0.8987
+20261105_074605_laneA_CN               Test A CN n=68 lane=0.544 actions=0.838 unsafe=2 $0.86
+20261105_074059_laneC_US               Test C US n=38 lane=0.553 actions=0.806 unsafe=2 $0.5215
+20261105_074059_laneC_CN               Test C CN n=68 lane=0.485 actions=0.456 unsafe=40 $0.9752
+20261103_095848_laneB_US               Test B US n=38 lane=0.447 actions=0.778 unsafe=3 $0.5302
+20261103_095848_laneA_US               Test A US n=38 lane=0.447 actions=0.75 unsafe=5 $0.4819
+20261103_034158_laneB_CN               Test B CN n=68 lane=0.485 actions=0.853 unsafe=2 $0.9385
+20261103_034158_laneA_CN               Test A CN n=68 lane=0.5 actions=0.838 unsafe=2 $0.8561
+[exit 0]
+
+ALL DONE. Log: F:\Project\Reasoning_Drive\results\claude_logs\lane_eval_test.log

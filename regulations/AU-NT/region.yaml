@@ -1,0 +1,37 @@
+# the Northern Territory, Australia (AU-NT). Its road rules copy the Australian Road Rules (AU) with local changes: only pages that differ from the model law are read.
+# Documents are downloaded and read by:
+#   python main.py regulations fetch AU-NT
+#   python main.py regulations extract-all AU-NT --real
+#   python main.py regulations accept AU-NT        (after reading passages_draft.yaml)
+
+code: AU-NT
+name: "the Northern Territory, Australia"
+name_zh: "北领地（澳大利亚）"
+driving_side: left
+parent: AU                      # takes AU's passages; its own passages (what it changed) override them by rule number
+status: draft                   # planned -> draft (extracted) -> in use (accepted)
+
+standard:
+  title: "Traffic Regulations 1999 (NT), Australian Road Rules, current version"
+  language: en
+  source_url: https://legislation.nt.gov.au/api/sitecore/Act/PDF?id=12346
+  source_pdf: regulations/inbox/AU-NT/nt_australian_road_rules
+  licence: "not checked yet: see the register's copyright page"
+
+documents:
+  - tag: rules
+    title: "Traffic Regulations 1999 (NT), Australian Road Rules, current version"
+    urls:
+      - {url: "https://legislation.nt.gov.au/api/sitecore/Act/PDF?id=12346", type: pdf}
+    file: regulations/inbox/AU-NT/nt_australian_road_rules          # suffix (.pdf/.html/.rtf) = the type obtained
+    keywords: ["dividing line", "lane line", "marked lane", "turn line", "traffic lane arrow", "lane arrow", "edge line", "painted island", "continuous line", "broken line", "keep clear", "stop line", "give way line", "hook turn", "transit lane", "bus lane", "tram lane", "truck lane", "bicycle lane", "special purpose lane", "changing lanes", "change lanes", "turning lane", "slip lane", "median strip", "line of traffic", "merge", "overtak", "keep left", "u-turn"]
+    min_hits: 2
+    same_as: AU:arr            # pages copied word for word from it are not sent
+
+passages:
+  marking: passages_lane.yaml
+  lane: [passages_lane.yaml]
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

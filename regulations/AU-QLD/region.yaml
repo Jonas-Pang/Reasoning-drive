@@ -1,0 +1,38 @@
+# Queensland, Australia (AU-QLD). Its road rules copy the Australian Road Rules (AU) with local changes: only pages that differ from the model law are read.
+# Documents are downloaded and read by:
+#   python main.py regulations fetch AU-QLD
+#   python main.py regulations extract-all AU-QLD --real
+#   python main.py regulations accept AU-QLD        (after reading passages_draft.yaml)
+
+code: AU-QLD
+name: "Queensland, Australia"
+name_zh: "昆士兰州（澳大利亚）"
+driving_side: left
+parent: AU                      # takes AU's passages; its own passages (what it changed) override them by rule number
+status: draft                   # planned -> draft (extracted) -> in use (accepted)
+
+standard:
+  title: "Transport Operations (Road Use Management—Road Rules) Regulation 2009 (Qld), current version"
+  language: en
+  source_url: https://www.legislation.qld.gov.au/view/pdf/inforce/current/sl-2009-0194
+  source_pdf: regulations/inbox/AU-QLD/qld_road_rules_2009
+  licence: "not checked yet: see the register's copyright page"
+
+documents:
+  - tag: rules
+    title: "Transport Operations (Road Use Management—Road Rules) Regulation 2009 (Qld), current version"
+    urls:
+      - {url: "https://www.legislation.qld.gov.au/view/pdf/inforce/current/sl-2009-0194", type: pdf}
+      - {url: "https://www.legislation.qld.gov.au/view/whole/html/inforce/current/sl-2009-0194", type: html}
+    file: regulations/inbox/AU-QLD/qld_road_rules_2009          # suffix (.pdf/.html/.rtf) = the type obtained
+    keywords: ["dividing line", "lane line", "marked lane", "turn line", "traffic lane arrow", "lane arrow", "edge line", "painted island", "continuous line", "broken line", "keep clear", "stop line", "give way line", "hook turn", "transit lane", "bus lane", "tram lane", "truck lane", "bicycle lane", "special purpose lane", "changing lanes", "change lanes", "turning lane", "slip lane", "median strip", "line of traffic", "merge", "overtak", "keep left", "u-turn"]
+    min_hits: 2
+    same_as: AU:arr            # pages copied word for word from it are not sent
+
+passages:
+  marking: passages_lane.yaml
+  lane: [passages_lane.yaml]
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

@@ -1,0 +1,1 @@
+5. Rules (field "element_rules"): for each boundary and each marking you listed, recall the traffic rule of the region where the photo was taken that applies to it, and say in one sentence what it allows or prohibits for my car.

@@ -1,0 +1,152 @@
+# Named experiments of Milestone 4 (Section 7.2 of the project document).
+# Each variant is the settings (configs/experiment.yaml, configs/api.yaml) with the values listed here changed; "settings" applies to every variant.
+# run: the run that produced the reported result (the table is rebuilt from it without API calls).
+#
+#   python main.py experiment            list the experiments
+#   python main.py experiment E1_rules   rebuild the table from the saved runs
+#   python main.py experiment E3_model --real   also run the variants that have no saved run (calls the API)
+
+E1_rules:
+  question: Does adding the region's rule passages to the prompt change the actions (Output 2) and the unsafe errors on the same images?
+  changed: use_rules (Test A, image only; Test B, image and the 16 US passages)
+  fixed: model gpt-6.1-sol, reasoning effort low, image detail high, prompt version within each pair, the 40 development images and labels (split v2), 3 repeats
+  judged: Output 2 exact match on the 37 images with an uncontested decided action, unsafe errors, exact McNemar test on paired images; Output 1, citations, cost
+  settings: {split: dev, repeats: 3, model: gpt-6.1-sol, reasoning_effort: low}
+  variants:
+    A_v1: {use_rules: no, prompt: v1, run: 20261027_021643_testA_US}
+    B_v1: {use_rules: yes, prompt: v1, run: 20261027_021740_testB_US}
+    A_v2: {use_rules: no, prompt: v2, run: 20261027_021835_testA_US}
+    B_v2: {use_rules: yes, prompt: v2, run: 20261027_021957_testB_US}
+    A_v3: {use_rules: no, prompt: v3, run: 20261027_221432_testA_US}
+    B_v3: {use_rules: yes, prompt: v3, run: 20261027_221432_testB_US}
+    A_v4: {use_rules: no, prompt: v4, run: 20261102_145452_testA_US}
+    B_v4: {use_rules: yes, prompt: v4, run: 20261102_145708_testB_US}
+  compare: [[A_v1, B_v1], [A_v2, B_v2], [A_v3, B_v3], [A_v4, B_v4]]
+
+E2_prompt:
+  question: Which prompt version should be frozen for the test run, judged by errors, contradictions and stability on the development images?
+  changed: prompt version (v1 first version; v2 task definitions and self-check; v3 reasoning fields written before the decision; v4 rule for the specific marking decides)
+  fixed: model, settings, images, labels, 3 repeats; each version run as Test A and Test B
+  judged: Output 2, unsafe errors, inconsistent answers (no label needed), same answer in all 3 repeats, cost per request
+  settings: {split: dev, repeats: 3, model: gpt-6.1-sol, reasoning_effort: low}
+  variants:
+    A_v1: {use_rules: no, prompt: v1, run: 20261027_021643_testA_US}
+    A_v2: {use_rules: no, prompt: v2, run: 20261027_021835_testA_US}
+    A_v3: {use_rules: no, prompt: v3, run: 20261027_221432_testA_US}
+    A_v4: {use_rules: no, prompt: v4, run: 20261102_145452_testA_US}
+    B_v1: {use_rules: yes, prompt: v1, run: 20261027_021740_testB_US}
+    B_v2: {use_rules: yes, prompt: v2, run: 20261027_021957_testB_US}
+    B_v3: {use_rules: yes, prompt: v3, run: 20261027_221432_testB_US}
+    B_v4: {use_rules: yes, prompt: v4, run: 20261102_145708_testB_US}
+  compare: [[A_v2, A_v3], [A_v3, A_v4], [B_v2, B_v3], [B_v3, B_v4]]
+
+E3_model:
+  question: Is the Milestone 3 plan (gpt-6-sol, reasoning effort none, temperature 0) as accurate and more repeatable than gpt-6.1-sol with effort low, and what does each cost?
+  changed: model (gpt-6.1-sol or gpt-6-sol) and, for gpt-6-sol, reasoning effort (low without temperature; none with temperature 0)
+  fixed: prompt v4, images, labels, 3 repeats, image detail, output limit; Test A and Test B
+  judged: Output 2, unsafe errors, same answer in all 3 repeats, latency, cost per request
+  settings: {split: dev, repeats: 3, prompt: v4}
+  variants:
+    A_61low: {use_rules: no, model: gpt-6.1-sol, reasoning_effort: low, run: 20261102_145452_testA_US}
+    A_6low: {use_rules: no, model: gpt-6-sol, reasoning_effort: low, run: 20261102_150301_testA_US}
+    A_6none: {use_rules: no, model: gpt-6-sol, reasoning_effort: none, temperature: 0, run: 20261102_145958_testA_US}
+    B_61low: {use_rules: yes, model: gpt-6.1-sol, reasoning_effort: low, run: 20261102_145708_testB_US}
+    B_6low: {use_rules: yes, model: gpt-6-sol, reasoning_effort: low, run: 20261102_150452_testB_US}
+    B_6none: {use_rules: yes, model: gpt-6-sol, reasoning_effort: none, temperature: 0, run: 20261102_150116_testB_US}
+  compare: [[A_61low, A_6none], [B_61low, B_6none], [A_61low, A_6low], [A_6low, A_6none], [B_61low, B_6low], [B_6low, B_6none]]
+
+E4_repeats:
+  question: Does the majority of 3 repeats change the scores compared with one request per image, and is the threefold cost needed for the test run?
+  changed: number of requests per image (first repeat only; majority of 3), computed from the saved runs without new calls
+  fixed: everything; the same saved answers
+  judged: Output 2 and unsafe errors with one request and with the majority, number of images where they differ, cost
+  analysis: repeats
+  settings: {split: dev, repeats: 3, model: gpt-6.1-sol, reasoning_effort: low}
+  variants:
+    A_v1: {use_rules: no, prompt: v1, run: 20261027_021643_testA_US}
+    B_v1: {use_rules: yes, prompt: v1, run: 20261027_021740_testB_US}
+    A_v2: {use_rules: no, prompt: v2, run: 20261027_021835_testA_US}
+    B_v2: {use_rules: yes, prompt: v2, run: 20261027_021957_testB_US}
+    A_v3: {use_rules: no, prompt: v3, run: 20261027_221432_testA_US}
+    B_v3: {use_rules: yes, prompt: v3, run: 20261027_221432_testB_US}
+    A_v4: {use_rules: no, prompt: v4, run: 20261102_145452_testA_US}
+    B_v4: {use_rules: yes, prompt: v4, run: 20261102_145708_testB_US}
+
+E5_lane_rules:
+  task: lane
+  question: At lane level (both boundaries, the markings in my lane and the seven lane actions), does adding the region's rule passages improve on the image alone?
+  changed: use_rules (Test A, image only; Test B, image and the region's single-marking and lane passages)
+  fixed: model gpt-6.1-sol, reasoning effort low, prompt lane_v1, one request per image, the development images with a final lane label (split v2), image without any box
+  judged: lane actions (every action the label decides) and lane identification (both boundaries and the marking set), exact McNemar on paired images; unsafe errors, prohibited actions kept, markings added that are not there, contradictions inside the answer, citations, cost
+  settings: {split: dev, model: gpt-6.1-sol, reasoning_effort: low, lane_prompt: lane_v1}
+  variants:
+    A_lane_US: {use_rules: no, region: US, run: 20261103_095848_laneA_US}
+    B_lane_US: {use_rules: yes, region: US, run: 20261103_095848_laneB_US}
+    A_lane_CN: {use_rules: no, region: CN, run: 20261103_034158_laneA_CN}
+    B_lane_CN: {use_rules: yes, region: CN, run: 20261103_034158_laneB_CN}
+  compare: [[A_lane_US, B_lane_US], [A_lane_CN, B_lane_CN]]
+
+E6_lane_controls:
+  task: lane
+  question: Do the lane answers follow the rule passages at all, and how much do two runs of the same test differ?
+  changed: the passages (Test B, the region's; Test C, the other region's under their own title, everything else as in Test B); a second run of Test A and Test B with new requests (not the cache)
+  fixed: as in E5
+  judged: as in E5; B against C shows whether the passages change the answers; the two runs of one test show the variation that a difference between A and B has to exceed (python main.py lane compare with all four A and B runs of a region combines the repeats)
+  settings: {split: dev, model: gpt-6.1-sol, reasoning_effort: low, lane_prompt: lane_v1}
+  variants:
+    A_lane_CN: {use_rules: no, region: CN, run: 20261103_034158_laneA_CN}
+    A2_lane_CN: {use_rules: no, region: CN, run: 20261105_074605_laneA_CN}
+    B_lane_CN: {use_rules: yes, region: CN, run: 20261103_034158_laneB_CN}
+    B2_lane_CN: {use_rules: yes, region: CN, run: 20261105_074605_laneB_CN}
+    C_lane_CN: {use_rules: other_region, region: CN, run: 20261105_074059_laneC_CN}
+    A_lane_US: {use_rules: no, region: US, run: 20261103_095848_laneA_US}
+    A2_lane_US: {use_rules: no, region: US, run: 20261105_075052_laneA_US}
+    B_lane_US: {use_rules: yes, region: US, run: 20261103_095848_laneB_US}
+    B2_lane_US: {use_rules: yes, region: US, run: 20261105_075052_laneB_US}
+    C_lane_US: {use_rules: other_region, region: US, run: 20261105_074059_laneC_US}
+  compare: [[B_lane_CN, C_lane_CN], [A_lane_CN, A2_lane_CN], [B_lane_CN, B2_lane_CN], [A2_lane_CN, B2_lane_CN],
+            [B_lane_US, C_lane_US], [A_lane_US, A2_lane_US], [B_lane_US, B2_lane_US], [A2_lane_US, B2_lane_US]]
+
+E7_lane_norms:
+  task: lane
+  question: Does printing the force of every passage (mandatory, recommended, permissive, informative) change the lane decisions of Test B?
+  changed: lane prompt (lane_v1; lane_v2, which prints the force of each passage from regulations/<CODE>/norms.yaml and says how to use it)
+  fixed: as in E5, Test B (the region's passages)
+  judged: as in E5, paired on the same images; unsafe errors and over-cautious errors, and lane actions per composition level and on the rule-sensitive images (python main.py evaluate)
+  settings: {split: dev, model: gpt-6.1-sol, reasoning_effort: low, use_rules: yes}
+  variants:
+    B_v1_CN: {region: CN, lane_prompt: lane_v1, run: 20261105_074605_laneB_CN}
+    B_v2_CN: {region: CN, lane_prompt: lane_v2, run: 20261114_004918_laneB_CN}
+    B_v1_US: {region: US, lane_prompt: lane_v1, run: 20261105_075052_laneB_US}
+    B_v2_US: {region: US, lane_prompt: lane_v2, run: 20261114_005301_laneB_US}
+  compare: [[B_v1_CN, B_v2_CN], [B_v1_US, B_v2_US]]
+
+E8_lane_country_given:
+  task: lane
+  question: Without rule passages, does it matter whether the prompt says which country the photo is from (Test A) or the model has to infer it (Test D, as in GeoDrive-Bench)?
+  changed: the user message (Test A names the country and the driving side; Test D names neither and asks which country it is)
+  fixed: as in E5, prompt lane_v2 (its Test A is the same request as lane_v1's), no passages
+  judged: as in E5; in Test D also the country the answer names
+  settings: {split: dev, model: gpt-6.1-sol, reasoning_effort: low, lane_prompt: lane_v2}
+  variants:
+    A_CN: {region: CN, use_rules: no, run: 20261105_074605_laneA_CN}
+    D_CN: {region: CN, use_rules: no_country, run: 20261114_005514_laneD_CN}
+    A_US: {region: US, use_rules: no, run: 20261105_075052_laneA_US}
+    D_US: {region: US, use_rules: no_country, run: 20261114_005949_laneD_US}
+  compare: [[A_CN, D_CN], [A_US, D_US]]
+
+E9_lane_retrieval:
+  task: lane
+  question: Does a shorter rule block, with only the passages about the elements the model itself reported in Test A, decide as well as all of the region's passages?
+  changed: the passages (Test B, all of the region's; Test R, those about the boundaries and markings of the image's Test A answer)
+  fixed: as in E5, prompt lane_v2
+  judged: as in E5; passages per prompt, input tokens and cost
+  settings: {split: dev, model: gpt-6.1-sol, reasoning_effort: low, lane_prompt: lane_v2}
+  variants:
+    A_CN: {region: CN, use_rules: no, run: 20261105_074605_laneA_CN}
+    B_v2_CN: {region: CN, use_rules: yes, run: 20261114_004918_laneB_CN}
+    R_v2_CN: {region: CN, use_rules: retrieved, from: A_CN, run: 20261114_010242_laneR_CN}
+    A_US: {region: US, use_rules: no, run: 20261105_075052_laneA_US}
+    B_v2_US: {region: US, use_rules: yes, run: 20261114_005301_laneB_US}
+    R_v2_US: {region: US, use_rules: retrieved, from: A_US}  # run pending: the first run stopped when the API credit ran out
+  compare: [[B_v2_CN, R_v2_CN], [B_v2_US, R_v2_US]]

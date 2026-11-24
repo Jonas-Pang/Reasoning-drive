@@ -1,0 +1,207 @@
+{
+  "run_id": "20261103_034158_laneB_CN",
+  "task": "lane",
+  "created_utc": "2026-11-03T08:41:58Z",
+  "tool": "lane_reasoner 0.1",
+  "git_commit": "13d3ba533610",
+  "code_sha": "76185c4801dc6319",
+  "marking_code_sha": "8deb7b85f20206b8",
+  "test": "B",
+  "region": "CN",
+  "mock": false,
+  "use_cache": true,
+  "repeats": 1,
+  "n_items": 68,
+  "settings": {
+    "base_url": "https://api.openai.com/v1",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "temperature": null,
+    "image_detail": "high",
+    "max_output_tokens": 6000,
+    "instruction_role": "developer",
+    "store": false
+  },
+  "prompt_hashes": {
+    "instructions": "80370956d9d4c547",
+    "user_text": "844caccafa8ca66b",
+    "schema": "4bece1e7f7a80036",
+    "shared_parts": "0ed5eece63ea6985",
+    "rules_file": "381de623e10cd075",
+    "prompt_dir": "prompts/lane_v1"
+  },
+  "label_sets": {
+    "culane": "e1b24a11b83534b5"
+  },
+  "split": "dev",
+  "split_version": 2,
+  "items": [
+    "culane_test__d37_05181919_0299_02970",
+    "culane_test__d193_06060919_0820_00450",
+    "culane_test__d193_06051603_0727_01080",
+    "culane_test__d100_05251309_0397_03150",
+    "culane_test__d193_06042058_0527_03240",
+    "culane_test__d100_05251207_0380_02400",
+    "culane_test__d193_06051734_0757_00000",
+    "culane_test__d193_06060642_0768_03060",
+    "culane_test__d100_05251207_0380_02130",
+    "culane_test__d193_06051114_0632_02790",
+    "culane_test__d100_05251222_0385_01710",
+    "culane_test__d193_06051123_0635_00990",
+    "culane_test__d37_05181919_0299_03120",
+    "culane_test__d37_05190927_0395_02340",
+    "culane_test__d193_06060748_0790_02970",
+    "culane_test__d193_06051123_0635_00900",
+    "culane_test__d193_06060925_0822_04140",
+    "culane_test__d193_06051114_0632_04320",
+    "culane_test__d100_05251718_0469_05190",
+    "culane_test__d193_06060925_0822_04320",
+    "culane_test__d100_05251327_0403_03870",
+    "culane_test__d37_05181608_0235_05220",
+    "culane_test__d193_06051603_0727_01620",
+    "culane_test__d193_06060925_0822_04680",
+    "culane_test__d100_05251207_0380_01410",
+    "culane_test__d100_05251207_0380_03270",
+    "culane_test__d193_06042058_0527_02610",
+    "culane_test__d100_05251718_0469_00390",
+    "culane_test__d193_06060925_0822_05310",
+    "culane_test__d100_05251718_0469_02250",
+    "culane_test__d37_05181608_0235_03720",
+    "culane_test__d100_05251309_0397_03390",
+    "culane_test__d100_05251718_0469_01320",
+    "culane_test__d193_06051123_0635_02160",
+    "culane_test__d193_06051734_0757_02430",
+    "culane_test__d193_06060642_0768_00900",
+    "culane_test__d100_05251947_0499_00840",
+    "culane_test__d100_05252026_0512_01020",
+    "culane_test__d193_06051734_0757_04050",
+    "culane_test__d100_05251327_0403_01200",
+    "culane_test__d193_06051123_0635_03690",
+    "culane_test__d100_05251947_0499_04830",
+    "culane_test__d100_05251222_0385_02400",
+    "culane_test__d37_05181608_0235_03090",
+    "culane_test__d37_05190927_0395_05220",
+    "culane_test__d100_05251718_0469_02040",
+    "culane_test__d100_05252026_0512_01350",
+    "culane_test__d100_05251627_0452_02850",
+    "culane_test__d100_05251207_0380_02190",
+    "culane_test__d100_05251327_0403_00180",
+    "culane_test__d100_05251327_0403_03960",
+    "culane_test__d193_06060642_0768_00360",
+    "culane_test__d100_05251327_0403_00930",
+    "culane_test__d100_05251327_0403_00630",
+    "culane_test__d100_05251222_0385_02280",
+    "culane_test__d193_06060925_0822_01260",
+    "culane_test__d100_05252026_0512_00450",
+    "culane_test__d193_06051123_0635_01980",
+    "culane_test__d100_05251718_0469_05070",
+    "culane_test__d193_06051411_0691_03960",
+    "culane_test__d37_05190927_0395_02430",
+    "culane_test__d100_05251222_0385_01140",
+    "culane_test__d100_05251327_0403_02340",
+    "culane_test__d37_05181608_0235_05340",
+    "culane_test__d100_05251222_0385_05250",
+    "culane_test__d193_06051123_0635_00450",
+    "culane_test__d193_06060925_0822_02700",
+    "culane_test__d100_05251222_0385_04920"
+  ],
+  "config": {
+    "version": "3",
+    "mock": false,
+    "api": {
+      "provider": "openai",
+      "base_url": "https://api.openai.com/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "reasoning_summary": null,
+      "temperature": null,
+      "image_detail": "high",
+      "max_output_tokens": 2000,
+      "instruction_role": "developer",
+      "store": false,
+      "timeout_s": 90,
+      "max_retries": 4,
+      "parallel": 5,
+      "price_per_million_tokens": {
+        "gpt-6.1-sol": {
+          "input": 2.0,
+          "cached_input": 0.1,
+          "output": 10.0
+        },
+        "gpt-6-sol": {
+          "input": 2.0,
+          "cached_input": 0.2,
+          "output": 10.0
+        }
+      },
+      "api_key_set": true
+    },
+    "run": {
+      "test": "A",
+      "region": "CN",
+      "split": "dev",
+      "repeats": 1,
+      "limit": 0,
+      "marking_types": [],
+      "order_seed": 6216
+    },
+    "datasets_root": "",
+    "workspaces": [
+      "UF",
+      "bdd100k",
+      "culane"
+    ],
+    "data_policy": {
+      "send_to_api": [
+        "own_video",
+        "bdd100k",
+        "culane"
+      ]
+    },
+    "prompt": {
+      "dir": "prompts/v4",
+      "box_color_rgb": [
+        0,
+        229,
+        255
+      ],
+      "box_width": 3,
+      "box_margin": 6,
+      "jpeg_quality": 92,
+      "restrict_rule_ids_in_schema": false
+    },
+    "regions": {
+      "US": {
+        "name": "the United States",
+        "name_zh": "美国",
+        "rule_region": "US",
+        "rule_text": "text_en",
+        "rules_title": "MUTCD 11th Edition (December 2023), Part 3 Markings",
+        "rules_file": "rules/rule_passages.json",
+        "driving_side": "right",
+        "lane_rules_files": [
+          "rules/rule_passages.json",
+          "rules/us_mutcd_lane.yaml"
+        ]
+      },
+      "CN": {
+        "name": "China",
+        "name_zh": "中国",
+        "rule_region": "CN",
+        "rule_text": "text_en",
+        "rules_title": "GB 5768.3-2025 Road traffic signs and markings, Part 3: Road traffic markings (English translation by the project)",
+        "rules_file": "rules/rule_passages.json",
+        "driving_side": "right",
+        "lane_rules_files": [
+          "rules/rule_passages.json",
+          "rules/cn_gb5768_lane.yaml"
+        ]
+      }
+    },
+    "lane": {
+      "prompt_dir": "prompts/lane_v1",
+      "max_output_tokens": 6000
+    }
+  }
+}

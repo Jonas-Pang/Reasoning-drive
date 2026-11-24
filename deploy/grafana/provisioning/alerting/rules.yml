@@ -1,0 +1,243 @@
+# Alert rules of the lane advisor (Claude, 2026-11-18). Loaded by Grafana at start.
+apiVersion: 1
+groups:
+- orgId: 1
+  name: lane-advisor
+  folder: Reasoning Driving
+  interval: 1m
+  rules:
+  - uid: rule-agreement-low
+    title: Rule agreement below 0.85
+    condition: C
+    for: 5m
+    noDataState: OK
+    execErrState: Error
+    annotations:
+      summary: Answers contradict the rule table for the lines the model reported
+        (possible model or prompt drift).
+    labels:
+      severity: warning
+      service: lane-advisor
+    data:
+    - refId: A
+      relativeTimeRange:
+        from: 900
+        to: 0
+      datasourceUid: prometheus
+      model:
+        refId: A
+        expr: sum(rate(app_rule_agreement_sum[15m])) / sum(rate(app_rule_agreement_count[15m]))
+        instant: true
+        datasource: &id001
+          type: prometheus
+          uid: prometheus
+    - refId: B
+      datasourceUid: __expr__
+      model:
+        refId: B
+        type: reduce
+        expression: A
+        reducer: last
+        datasource:
+          type: __expr__
+          uid: __expr__
+    - refId: C
+      datasourceUid: __expr__
+      model:
+        refId: C
+        type: threshold
+        expression: B
+        conditions:
+        - evaluator:
+            type: lt
+            params:
+            - 0.85
+        datasource:
+          type: __expr__
+          uid: __expr__
+  - uid: feedback-bad-high
+    title: More than 30 % of feedback is bad
+    condition: C
+    for: 5m
+    noDataState: OK
+    execErrState: Error
+    annotations:
+      summary: 'Users rate many answers bad: open the feedback report and the review
+        queue.'
+    labels:
+      severity: warning
+      service: lane-advisor
+    data:
+    - refId: A
+      relativeTimeRange:
+        from: 3600
+        to: 0
+      datasourceUid: prometheus
+      model:
+        refId: A
+        expr: sum(increase(app_feedback_total{rating="bad"}[1h])) / sum(increase(app_feedback_total{rating=~"good|bad"}[1h]))
+        instant: true
+        datasource: *id001
+    - refId: B
+      datasourceUid: __expr__
+      model:
+        refId: B
+        type: reduce
+        expression: A
+        reducer: last
+        datasource:
+          type: __expr__
+          uid: __expr__
+    - refId: C
+      datasourceUid: __expr__
+      model:
+        refId: C
+        type: threshold
+        expression: B
+        conditions:
+        - evaluator:
+            type: gt
+            params:
+            - 0.3
+        datasource:
+          type: __expr__
+          uid: __expr__
+  - uid: latency-p90-high
+    title: Latency p90 above 60 s
+    condition: C
+    for: 5m
+    noDataState: OK
+    execErrState: Error
+    annotations:
+      summary: The model endpoint is slow (NaviGator / Ollama load).
+    labels:
+      severity: warning
+      service: lane-advisor
+    data:
+    - refId: A
+      relativeTimeRange:
+        from: 900
+        to: 0
+      datasourceUid: prometheus
+      model:
+        refId: A
+        expr: histogram_quantile(0.9, sum by (le) (rate(app_latency_seconds_bucket{mode="live"}[15m])))
+        instant: true
+        datasource: *id001
+    - refId: B
+      datasourceUid: __expr__
+      model:
+        refId: B
+        type: reduce
+        expression: A
+        reducer: last
+        datasource:
+          type: __expr__
+          uid: __expr__
+    - refId: C
+      datasourceUid: __expr__
+      model:
+        refId: C
+        type: threshold
+        expression: B
+        conditions:
+        - evaluator:
+            type: gt
+            params:
+            - 60
+        datasource:
+          type: __expr__
+          uid: __expr__
+  - uid: replay-decision-fault
+    title: 'Replay: decision-layer violation'
+    condition: C
+    for: 0m
+    noDataState: OK
+    execErrState: Error
+    annotations:
+      summary: 'A replayed manoeuvre broke a rule that perception read correctly:
+        open the Video tab and the evidence frame.'
+    labels:
+      severity: warning
+      service: lane-advisor
+    data:
+    - refId: A
+      relativeTimeRange:
+        from: 3600
+        to: 0
+      datasourceUid: prometheus
+      model:
+        refId: A
+        expr: sum(increase(app_video_attribution_total{attribution="decision_layer"}[1h]))
+        instant: true
+        datasource: *id001
+    - refId: B
+      datasourceUid: __expr__
+      model:
+        refId: B
+        type: reduce
+        expression: A
+        reducer: last
+        datasource:
+          type: __expr__
+          uid: __expr__
+    - refId: C
+      datasourceUid: __expr__
+      model:
+        refId: C
+        type: threshold
+        expression: B
+        conditions:
+        - evaluator:
+            type: gt
+            params:
+            - 0
+        datasource:
+          type: __expr__
+          uid: __expr__
+  - uid: model-errors
+    title: Model errors
+    condition: C
+    for: 0m
+    noDataState: OK
+    execErrState: Error
+    annotations:
+      summary: The model returned an error or an answer that does not parse.
+    labels:
+      severity: warning
+      service: lane-advisor
+    data:
+    - refId: A
+      relativeTimeRange:
+        from: 900
+        to: 0
+      datasourceUid: prometheus
+      model:
+        refId: A
+        expr: sum(increase(app_evidence_flags_total{flag="model_error"}[15m]))
+        instant: true
+        datasource: *id001
+    - refId: B
+      datasourceUid: __expr__
+      model:
+        refId: B
+        type: reduce
+        expression: A
+        reducer: last
+        datasource:
+          type: __expr__
+          uid: __expr__
+    - refId: C
+      datasourceUid: __expr__
+      model:
+        refId: C
+        type: threshold
+        expression: B
+        conditions:
+        - evaluator:
+            type: gt
+            params:
+            - 0
+        datasource:
+          type: __expr__
+          uid: __expr__

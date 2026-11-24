@@ -1,0 +1,82 @@
+[
+ {
+  "stop": "plan",
+  "start": 4,
+  "end": 59
+ },
+ {
+  "stop": 1,
+  "label": "broken white lane line",
+  "drive_start": 59,
+  "ask": 115,
+  "answered": 116,
+  "traces_done": 158,
+  "maneuver_start": 176,
+  "maneuver_end": 228
+ },
+ {
+  "stop": 2,
+  "label": "single solid yellow line on the left",
+  "drive_start": 228,
+  "ask": 1603,
+  "answered": 1671,
+  "traces_done": 1773,
+  "maneuver_start": 1791,
+  "maneuver_end": 1791
+ },
+ {
+  "stop": 3,
+  "label": "right-turn arrow",
+  "drive_start": 1791,
+  "ask": 2054,
+  "answered": 2104,
+  "traces_done": 2209,
+  "maneuver_start": 2227,
+  "maneuver_end": 2303
+ },
+ {
+  "stop": 4,
+  "label": "roundabout: line between the circulating lanes",
+  "drive_start": 2303,
+  "ask": 2887,
+  "answered": 2924,
+  "traces_done": 3029,
+  "maneuver_start": 3047,
+  "maneuver_end": 3122
+ },
+ {
+  "stop": 5,
+  "label": "double solid yellow centre line",
+  "drive_start": 3122,
+  "ask": 3901,
+  "answered": 3934,
+  "traces_done": 4038,
+  "maneuver_start": 4057,
+  "maneuver_end": 4057
+ },
+ {
+  "stop": 6,
+  "label": "junction approach: left-turn arrow and the line to the right lane",
+  "drive_start": 4057,
+  "ask": 4809,
+  "answered": 4810,
+  "traces_done": 4894,
+  "maneuver_start": 4911,
+  "maneuver_end": 5005
+ },
+ {
+  "stop": 7,
+  "label": "two-way left-turn lane",
+  "drive_start": 5005,
+  "ask": 5698,
+  "answered": 5699,
+  "traces_done": 5741,
+  "maneuver_start": 5759,
+  "maneuver_end": 5848
+ },
+ {
+  "stop": "loop",
+  "drive_start": 5848,
+  "drive_end": 6414
+ }
+]

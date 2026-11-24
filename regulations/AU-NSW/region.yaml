@@ -1,0 +1,38 @@
+# New South Wales, Australia (AU-NSW). Its road rules copy the Australian Road Rules (AU) with local changes: only pages that differ from the model law are read.
+# Documents are downloaded and read by:
+#   python main.py regulations fetch AU-NSW
+#   python main.py regulations extract-all AU-NSW --real
+#   python main.py regulations accept AU-NSW        (after reading passages_draft.yaml)
+
+code: AU-NSW
+name: "New South Wales, Australia"
+name_zh: "新南威尔士州（澳大利亚）"
+driving_side: left
+parent: AU                      # takes AU's passages; its own passages (what it changed) override them by rule number
+status: planned                 # planned -> draft (extracted) -> in use (accepted)
+
+standard:
+  title: "Road Rules 2014 (NSW), current version"
+  language: en
+  source_url: https://legislation.nsw.gov.au/view/pdf/inforce/current/sl-2014-0758
+  source_pdf: regulations/inbox/AU-NSW/nsw_road_rules_2014
+  licence: "not checked yet: see the register's copyright page"
+
+documents:
+  - tag: rules
+    title: "Road Rules 2014 (NSW), current version"
+    urls:
+      - {url: "https://legislation.nsw.gov.au/view/pdf/inforce/current/sl-2014-0758", type: pdf}
+      - {url: "https://legislation.nsw.gov.au/view/whole/html/inforce/current/sl-2014-0758", type: html}
+    file: regulations/inbox/AU-NSW/nsw_road_rules_2014          # suffix (.pdf/.html/.rtf) = the type obtained
+    keywords: ["dividing line", "lane line", "marked lane", "turn line", "traffic lane arrow", "lane arrow", "edge line", "painted island", "continuous line", "broken line", "keep clear", "stop line", "give way line", "hook turn", "transit lane", "bus lane", "tram lane", "truck lane", "bicycle lane", "special purpose lane", "changing lanes", "change lanes", "turning lane", "slip lane", "median strip", "line of traffic", "merge", "overtak", "keep left", "u-turn"]
+    min_hits: 2
+    same_as: AU:arr            # pages copied word for word from it are not sent
+
+passages:
+  marking: passages_lane.yaml
+  lane: [passages_lane.yaml]
+
+rule_tables:
+  marking: action_rules.json
+  lane: lane_action_rules.json

@@ -1,0 +1,451 @@
+# DRAFT passages of Northern Ireland, the United Kingdom (UK-NI) from ni_highway_code_103-158.html, 2026-11-14 (gpt-6.1-sol).
+# Read every passage against the PDF. verified_quote: false means the original text was not found on its page.
+# Delete what is not a rule for drivers, fix sections and texts, then:  python main.py regulations accept UK-NI
+
+- rule_id: UK-NI-127
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '127'
+  page: 6
+  marking_type: broken white centre line
+  element: boundary
+  text_original: This marks the centre of the road. When this line lengthens and the gaps shorten, it means that there is
+    a hazard ahead.
+  text_en: This marks the centre of the road. When this line lengthens and the gaps shorten, it means that there is a hazard
+    ahead.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-127-2
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '127'
+  page: 6
+  marking_type: broken white centre line
+  element: boundary
+  text_original: Do not cross it unless you can see the road is clear and wish to overtake or turn off.
+  text_en: Do not cross it unless you can see the road is clear and wish to overtake or turn off.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-NI-128
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '128'
+  page: 6
+  marking_type: double white lines with nearer line broken
+  element: boundary
+  text_original: This means you may cross the lines to overtake if it is safe, provided you can complete the manoeuvre before
+    reaching a solid white line on your side.
+  text_en: This means you may cross the lines to overtake if it is safe, provided you can complete the manoeuvre before reaching
+    a solid white line on your side.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-128-2
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '128'
+  page: 6
+  marking_type: white direction arrows
+  element: lane_marking
+  text_original: White direction arrows on the road mean that you need to get back onto your side of the road.
+  text_en: White direction arrows on the road mean that you need to get back onto your side of the road.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-129
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '129'
+  page: 6
+  marking_type: double white lines with nearer line solid
+  element: boundary
+  text_original: This means you must not cross or straddle it unless it is safe and you need to enter adjoining premises or
+    a side road.
+  text_en: This means you must not cross or straddle it unless it is safe and you need to enter adjoining premises or a side
+    road.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-129-2
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '129'
+  page: 6
+  marking_type: double white lines with nearer line solid
+  element: boundary
+  text_original: You may cross the line if necessary, provided the road is clear, to pass a stationary vehicle, or overtake
+    a pedal cycle, horse or road maintenance vehicle, if they are travelling at 10 mph (16 km/h) or less.
+  text_en: You may cross the line if necessary, provided the road is clear, to pass a stationary vehicle, or overtake a pedal
+    cycle, horse or road maintenance vehicle, if they are travelling at 10 mph (16 km/h) or less.
+  text_en_is_translation: false
+  norm: permissive
+  actions_stated:
+    cross_line: allowed
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-130
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '130'
+  page: 6
+  marking_type: white diagonal stripes or chevrons
+  element: area
+  text_original: 'These are to separate traffic lanes or to protect traffic turning right:'
+  text_en: 'These are to separate traffic lanes or to protect traffic turning right:'
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-130-2
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '130'
+  page: 6
+  marking_type: striped area bordered by broken white line
+  element: area
+  text_original: if the area is bordered by a broken white line, you should not enter the area unless it is necessary and
+    you can see that it is safe to do so
+  text_en: if the area is bordered by a broken white line, you should not enter the area unless it is necessary and you can
+    see that it is safe to do so
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-130-3
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '130'
+  page: 6
+  marking_type: chevron area bordered by solid white lines
+  element: area
+  text_original: if the area is marked by chevrons and bordered by solid white lines, you must not enter it, except in an
+    emergency
+  text_en: if the area is marked by chevrons and bordered by solid white lines, you must not enter it, except in an emergency
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    cross_line: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-131
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '131'
+  page: 6
+  marking_type: short broken white lane dividers
+  element: boundary
+  text_original: These are short broken white lines which are used on wide carriageways to divide them into lanes. You should
+    keep between them.
+  text_en: These are short broken white lines which are used on wide carriageways to divide them into lanes. You should keep
+    between them.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-132
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '132'
+  page: 6
+  marking_type: white reflective road studs
+  element: boundary
+  text_original: white studs mark the lanes or the middle of the road
+  text_en: white studs mark the lanes or the middle of the road
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-132-2
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '132'
+  page: 6
+  marking_type: red reflective road studs
+  element: boundary
+  text_original: red studs mark the left edge of the road
+  text_en: red studs mark the left edge of the road
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-132-3
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '132'
+  page: 6
+  marking_type: amber reflective road studs
+  element: boundary
+  text_original: amber studs mark the central reservation of a dual carriageway or motorway
+  text_en: amber studs mark the central reservation of a dual carriageway or motorway
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-132-4
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '132'
+  page: 6
+  marking_type: green reflective road studs
+  element: boundary
+  text_original: green studs mark the edge of the main carriageway at lay-bys and slip roads
+  text_en: green studs mark the edge of the main carriageway at lay-bys and slip roads
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-132-5
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '132'
+  page: 6
+  marking_type: green/yellow reflective road studs
+  element: general
+  text_original: green/ yellow studs suggests temporary adjustments to lane layouts example where road works are taking place
+  text_en: green/ yellow studs suggests temporary adjustments to lane layouts example where road works are taking place
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-134
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '134'
+  page: 6
+  marking_type: lane direction markings
+  element: general
+  text_original: You should follow the signs and road markings and get into the lane as directed.
+  text_en: You should follow the signs and road markings and get into the lane as directed.
+  text_en_is_translation: false
+  norm: recommended
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-135
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '135'
+  page: 6
+  marking_type: middle lane of three-lane single carriageway
+  element: lane_type
+  text_original: 'Where a single carriageway has three lanes and the road markings or signs do not give priority to traffic
+    in either direction:
+
+
+    use the middle lane only for overtaking or turning right (remember, you have no more right to use the middle lane than
+    a driver coming from the opposite direction)'
+  text_en: 'Where a single carriageway has three lanes and the road markings or signs do not give priority to traffic in either
+    direction:
+
+
+    use the middle lane only for overtaking or turning right (remember, you have no more right to use the middle lane than
+    a driver coming from the opposite direction)'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+    turn_left: prohibited
+    turn_right: allowed
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-NI-136
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '136'
+  page: 7
+  marking_type: marked lanes on a single carriageway
+  element: lane_type
+  text_original: Where a single carriageway has four or more lanes, use only the lanes that signs or markings suggest.
+  text_en: Where a single carriageway has four or more lanes, use only the lanes that signs or markings suggest.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-NI-139
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '139'
+  page: 7
+  marking_type: climbing and crawler lane
+  element: lane_type
+  text_original: Use this lane if you are driving a slow-moving vehicle or if there are vehicles behind you wishing to overtake.
+  text_en: Use this lane if you are driving a slow-moving vehicle or if there are vehicles behind you wishing to overtake.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-NI-139-2
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '139'
+  page: 7
+  marking_type: climbing and crawler lane ending markings
+  element: lane_marking
+  text_original: Be aware of the signs and markings which show the lane is about to end.
+  text_en: Be aware of the signs and markings which show the lane is about to end.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-140
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '140'
+  page: 7
+  marking_type: solid white cycle lane line
+  element: lane_type
+  text_original: You must not drive or park in a cycle lane marked by a solid white line during its time of operation.
+  text_en: You must not drive or park in a cycle lane marked by a solid white line during its time of operation.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-140-2
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '140'
+  page: 7
+  marking_type: broken white cycle lane line
+  element: lane_type
+  text_original: Do not drive or park in a cycle lane marked by a broken white line unless it is unavoidable.
+  text_en: Do not drive or park in a cycle lane marked by a broken white line unless it is unavoidable.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: words say informative
+- rule_id: UK-NI-140-3
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '140'
+  page: 7
+  marking_type: cycle lane
+  element: lane_type
+  text_original: You must not park in any cycle lane whilst waiting restrictions apply.
+  text_en: You must not park in any cycle lane whilst waiting restrictions apply.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated: {}
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-141
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '141'
+  page: 7
+  marking_type: bus lane
+  element: lane_type
+  text_original: These are shown by road markings and signs that show which (if any) other vehicles are permitted to use the
+    bus lane, and the times of operation.
+  text_en: These are shown by road markings and signs that show which (if any) other vehicles are permitted to use the bus
+    lane, and the times of operation.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say permissive (are permitted)
+- rule_id: UK-NI-141-2
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '141'
+  page: 7
+  marking_type: bus lane
+  element: lane_type
+  text_original: Unless directed you must not drive or ride in a bus lane during its period of operation.
+  text_en: Unless directed you must not drive or ride in a bus lane during its period of operation.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-142
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '142'
+  page: 7
+  marking_type: designated vehicle lane
+  element: lane_type
+  text_original: Lanes may be restricted for use by particular types of vehicle; these restrictions may apply some or all
+    of the time. The operating times and vehicle types will be shown by traffic signs.
+  text_en: Lanes may be restricted for use by particular types of vehicle; these restrictions may apply some or all of the
+    time. The operating times and vehicle types will be shown by traffic signs.
+  text_en_is_translation: false
+  norm: informative
+  actions_stated: {}
+  verified_quote: true
+  norm_check: words say permissive (may)
+- rule_id: UK-NI-142-2
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '142'
+  page: 7
+  marking_type: designated vehicle lane
+  element: lane_type
+  text_original: You must not drive in such lanes during their times of operation unless signs show your vehicle is permitted.
+  text_en: You must not drive in such lanes during their times of operation unless signs show your vehicle is permitted.
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees
+- rule_id: UK-NI-142-3
+  region: UK-NI
+  source: The Highway Code for Northern Ireland, rules 103-158 (incl. lines and lane markings, multi-lane carriageways)
+  section: '142'
+  page: 7
+  marking_type: high occupancy vehicle lane
+  element: lane_type
+  text_original: 'Where HOV lanes are in operation, they must only be used by:
+
+
+    vehicles containing at least the minimum number of people indicated on the traffic signs
+
+
+    any other vehicles, such as buses and motorcycles, as shown on signs before the start of the lane, despite the number
+    of occupants'
+  text_en: 'Where HOV lanes are in operation, they must only be used by:
+
+
+    vehicles containing at least the minimum number of people indicated on the traffic signs
+
+
+    any other vehicles, such as buses and motorcycles, as shown on signs before the start of the lane, despite the number
+    of occupants'
+  text_en_is_translation: false
+  norm: mandatory
+  actions_stated:
+    go_straight: prohibited
+  verified_quote: true
+  norm_check: agrees

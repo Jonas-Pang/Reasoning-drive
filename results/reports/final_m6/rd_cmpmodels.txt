@@ -1,0 +1,45 @@
+=== Test A, 283 images in common
+31b  lane_v3  key4 0.604  acts 0.604  lines 0.509  unsafe 55  not_determined 2  | change_left 0.78  change_right 0.72  go_straight 0.96  turn_left 0.94  turn_right 0.94  u_turn 0.89
+         unsafe by action: {'change_left': 27, 'change_right': 22, 'go_straight': 5, 'turn_left': 1}
+31b  lane_v4  key4 0.640  acts 0.608  lines 0.498  unsafe 35  not_determined 3  | change_left 0.80  change_right 0.75  go_straight 0.96  turn_left 0.95  turn_right 0.94  u_turn 0.84
+         unsafe by action: {'change_left': 20, 'change_right': 13, 'go_straight': 1, 'turn_left': 1}
+31b  lane_v4c key4 0.650  acts 0.611  lines 0.519  unsafe 44  not_determined 0  | change_left 0.80  change_right 0.76  go_straight 0.98  turn_left 0.96  turn_right 0.96  u_turn 0.92
+         unsafe by action: {'change_left': 20, 'change_right': 18, 'go_straight': 2, 'turn_left': 1, 'u_turn': 3}
+12b  lane_v3  key4 0.396  acts 0.360  lines 0.360  unsafe 24  not_determined 0  | change_left 0.75  change_right 0.50  go_straight 0.92  turn_left 0.83  turn_right 0.84  u_turn 0.85
+         unsafe by action: {'change_left': 12, 'change_right': 4, 'go_straight': 4, 'turn_left': 4}
+12b  lane_v4c key4 0.512  acts 0.541  lines 0.459  unsafe 33  not_determined 0  | change_left 0.81  change_right 0.62  go_straight 0.92  turn_left 0.75  turn_right 0.76  u_turn 0.77
+         unsafe by action: {'change_left': 17, 'change_right': 7, 'go_straight': 2, 'turn_left': 7}
+e4b  lane_v3  key4 0.297  acts 0.339  lines 0.216  unsafe 70  not_determined 1  | change_left 0.57  change_right 0.51  go_straight 0.92  turn_left 0.77  turn_right 0.53  u_turn 0.77
+         unsafe by action: {'change_left': 34, 'change_right': 22, 'go_straight': 6, 'turn_left': 3, 'turn_right': 4, 'u_turn': 1}
+e4b  lane_v4c key4 0.367  acts 0.463  lines 0.272  unsafe 85  not_determined 0  | change_left 0.63  change_right 0.60  go_straight 0.92  turn_left 0.77  turn_right 0.75  u_turn 0.76
+         unsafe by action: {'change_left': 33, 'change_right': 34, 'go_straight': 5, 'turn_left': 4, 'turn_right': 6, 'u_turn': 3}
+=== Test B, 286 images in common
+31b  lane_v3  key4 0.538  acts 0.545  lines 0.402  unsafe 60  not_determined 7  | change_left 0.73  change_right 0.70  go_straight 0.96  turn_left 0.92  turn_right 0.93  u_turn 0.91
+         unsafe by action: {'change_left': 31, 'change_right': 23, 'go_straight': 5, 'turn_left': 1}
+31b  lane_v4  key4 0.580  acts 0.591  lines 0.479  unsafe 43  not_determined 8  | change_left 0.80  change_right 0.70  go_straight 0.96  turn_left 0.95  turn_right 0.95  u_turn 0.92
+         unsafe by action: {'change_left': 20, 'change_right': 18, 'go_straight': 3, 'turn_left': 2}
+31b  lane_v4c key4 0.587  acts 0.577  lines 0.479  unsafe 48  not_determined 0  | change_left 0.79  change_right 0.70  go_straight 0.97  turn_left 0.95  turn_right 0.95  u_turn 0.93
+         unsafe by action: {'change_left': 21, 'change_right': 18, 'go_straight': 3, 'turn_left': 2, 'u_turn': 4}
+12b  lane_v3  key4 0.360  acts 0.315  lines 0.325  unsafe 17  not_determined 0  | change_left 0.69  change_right 0.50  go_straight 0.92  turn_left 0.80  turn_right 0.83  u_turn 0.82
+         unsafe by action: {'change_left': 8, 'change_right': 1, 'go_straight': 5, 'turn_left': 3}
+12b  lane_v4c key4 0.444  acts 0.455  lines 0.416  unsafe 37  not_determined 0  | change_left 0.71  change_right 0.60  go_straight 0.92  turn_left 0.80  turn_right 0.81  u_turn 0.78
+         unsafe by action: {'change_left': 13, 'change_right': 4, 'go_straight': 4, 'turn_left': 4, 'turn_right': 2, 'u_turn': 10}
+e4b  lane_v3  key4 0.290  acts 0.381  lines 0.213  unsafe 95  not_determined 6  | change_left 0.60  change_right 0.51  go_straight 0.95  turn_left 0.83  turn_right 0.81  u_turn 0.81
+         unsafe by action: {'change_left': 46, 'change_right': 39, 'go_straight': 6, 'turn_right': 4}
+e4b  lane_v4c key4 0.283  acts 0.458  lines 0.269  unsafe 108  not_determined 0  | change_left 0.63  change_right 0.55  go_straight 0.93  turn_left 0.81  turn_right 0.77  u_turn 0.82
+         unsafe by action: {'change_left': 38, 'change_right': 39, 'go_straight': 5, 'turn_left': 4, 'turn_right': 20, 'u_turn': 2}
+=== Test C, 289 images in common
+31b  lane_v3  key4 0.516  acts 0.516  lines 0.422  unsafe 77  not_determined 7  | change_left 0.72  change_right 0.66  go_straight 0.96  turn_left 0.93  turn_right 0.92  u_turn 0.79
+         unsafe by action: {'change_left': 40, 'change_right': 29, 'go_straight': 6, 'turn_left': 1, 'u_turn': 1}
+31b  lane_v4  key4 0.606  acts 0.578  lines 0.516  unsafe 50  not_determined 4  | change_left 0.79  change_right 0.70  go_straight 0.97  turn_left 0.94  turn_right 0.93  u_turn 0.84
+         unsafe by action: {'change_left': 24, 'change_right': 23, 'go_straight': 2, 'turn_left': 1}
+31b  lane_v4c key4 0.616  acts 0.616  lines 0.526  unsafe 49  not_determined 0  | change_left 0.79  change_right 0.72  go_straight 0.97  turn_left 0.94  turn_right 0.96  u_turn 0.90
+         unsafe by action: {'change_left': 23, 'change_right': 20, 'go_straight': 1, 'turn_left': 2, 'u_turn': 3}
+12b  lane_v3  key4 0.377  acts 0.308  lines 0.315  unsafe 15  not_determined 4  | change_left 0.68  change_right 0.50  go_straight 0.93  turn_left 0.82  turn_right 0.83  u_turn 0.82
+         unsafe by action: {'change_left': 5, 'change_right': 1, 'go_straight': 4, 'turn_left': 5}
+12b  lane_v4c key4 0.460  acts 0.457  lines 0.388  unsafe 19  not_determined 0  | change_left 0.73  change_right 0.60  go_straight 0.92  turn_left 0.82  turn_right 0.81  u_turn 0.83
+         unsafe by action: {'change_left': 8, 'change_right': 2, 'go_straight': 2, 'turn_left': 5, 'turn_right': 2}
+e4b  lane_v3  key4 0.270  acts 0.363  lines 0.253  unsafe 94  not_determined 4  | change_left 0.50  change_right 0.51  go_straight 0.93  turn_left 0.81  turn_right 0.80  u_turn 0.80
+         unsafe by action: {'change_left': 51, 'change_right': 35, 'go_straight': 6, 'turn_right': 2}
+e4b  lane_v4c key4 0.308  acts 0.443  lines 0.277  unsafe 101  not_determined 0  | change_left 0.58  change_right 0.57  go_straight 0.94  turn_left 0.82  turn_right 0.81  u_turn 0.81
+         unsafe by action: {'change_left': 45, 'change_right': 40, 'go_straight': 6, 'turn_left': 2, 'turn_right': 7, 'u_turn': 1}

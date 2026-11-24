@@ -1,0 +1,39 @@
+carla_Town03_arrow_lane | lane | Test A | gpt-6.1-sol
+-----------------------------------------------------
+Step 1  Scene           An urban road approaches an intersection beneath an elevated structure. My car is in
+                        the left of two visible lanes traveling in this direction. (lanes 2, mine 1, full)
+Step 2  Left            A continuous white solid line runs along the left of my lane, with a narrow paved
+                        margin and raised sidewalk curb beyond it.
+                        white solid, curb yes, edge_line, evidence full
+Step 2  Right           A continuous white solid line separates my lane from another traffic lane on the
+                        right; there is no curb at this boundary.
+                        white solid, curb no, lane_line, evidence full
+Step 3  Markings        arrow:left (full): A white bent arrow has a single head pointing left.
+Step 4  Cross-check     position: The left roadway edge and right lane divider agree with my car occupying
+                        lane 1 of 2. | roles: The white solid left edge line borders the sidewalk margin,
+                        while the white solid right line separates same-direction lanes. | markings: The left-
+                        turn arrow is compatible with the leftmost lane; neither boundary contradicts it. |
+                        unseen: No stop line or waiting area is clearly identifiable; distant pavement details
+                        are too small to classify reliably. | result: consistent
+Step 5  Rule            left_boundary: The solid roadway edge and raised curb do not permit leaving this lane
+                        to drive onto the sidewalk.
+Step 5  Rule            right_boundary: In China, a solid white same-direction lane divider prohibits crossing
+                        it to change lanes.
+Step 5  Rule            arrow:left: The left-only lane-use arrow permits a left turn and excludes straight
+                        travel, a right turn, and a U-turn from this lane.
+Step 6  change_left     prohibited: The left roadway edge and raised sidewalk curb prohibit moving out onto
+                        the sidewalk.
+Step 6  change_right    prohibited: The solid white lane divider prohibits crossing into the right lane.
+Step 6  go_straight     prohibited: The left-only arrow excludes straight travel.
+Step 6  turn_left       allowed: The left-only arrow permits a left turn.
+Step 6  turn_right      prohibited: The left-only arrow excludes a right turn.
+Step 6  u_turn          prohibited: The left-only arrow does not authorize a U-turn.
+Step 6  enter_waiting_areanot_applicable: No marked left-turn waiting area or adjacent two-way left-turn lane
+                          is visible.
+Step 7  Reflect         consistent
+Advice                  Stay in this lane for a left turn and do not cross either solid boundary. For another
+                        movement, select an appropriately marked lane before the solid divider begins; obey
+                        intersection controls and yield as required.
+Score                   lane False, boundaries {'left': None, 'right': None}, markings False (added
+                        ['arrow:left'], missed []), actions None, unsafe [], citation None, contradictions []
+Tokens                  in 4424, out 907, 15.99 s

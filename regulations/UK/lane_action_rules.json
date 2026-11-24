@@ -1,0 +1,334 @@
+{
+ "_comment": "Lane rule table of the United Kingdom (left-hand traffic), written by Claude on 2026-11-16 from the accepted passages (The Highway Code, TSRGD 2016 Schedule 9 Part 6 and Schedule 11 Part 4; Schedule 11 added 2026-11-17). Used only to prefill the labeling tool; never used to score. Rows marked contested rest on a project convention, not on a passage's words.",
+ "boundary": [
+  {
+   "when": {
+    "curb": "yes"
+   },
+   "change": "prohibited",
+   "rule_ids": [],
+   "contested": true,
+   "note": "A kerb is the physical edge of the carriageway: leaving the carriageway across it is not a lane change (project convention, as for CN and US)."
+  },
+  {
+   "when": {
+    "pattern": "none"
+   },
+   "change": "not_applicable",
+   "rule_ids": [],
+   "note": "Nothing is marked on this side."
+  },
+  {
+   "when": {
+    "role": "special_lane_line"
+   },
+   "change": "",
+   "rule_ids": [
+    "UK-Rule141-2",
+    "UK-Rule142-2",
+    "UK-TSRGD-Part6,item11"
+   ],
+   "note": "Bus, cycle or other designated lane: changing into it is prohibited during its hours of operation (project convention: reserved time assumed)."
+  },
+  {
+   "when": {
+    "pattern": "zigzag"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "UK-Rule191",
+    "UK-KYTS-zigzag"
+   ],
+   "contested": true,
+   "note": "Zig-zag lines of a pedestrian crossing (added 2026-11-17): overtaking the moving vehicle nearest the crossing is forbidden (MUST NOT); a lane change inside the zig-zag area is treated as overtaking (project convention, contested)."
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "dashed",
+    "role": "center_line"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "UK-Rule127",
+    "UK-TSRGD-S11P4-item6",
+    "UK-TSRGD-S11P4-item2"
+   ],
+   "note": "Broken white centre line: do not cross unless the road is clear and you wish to overtake or turn off (permitted when safe)."
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "dashed"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "UK-Rule131",
+    "UK-TSRGD-S11P4-item4",
+    "UK-TSRGD-S11P4-item2"
+   ],
+   "note": "Lane line (diagram 1005, short dashes) or warning line (diagram 1004, long dashes; should not be crossed unless it is safe): a lane change is permitted."
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "dotted"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "UK-Rule131"
+   ]
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "solid_dashed",
+    "near_line": "dashed"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "UK-Rule128",
+    "UK-TSRGD-10"
+   ]
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "solid_dashed",
+    "near_line": "solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "UK-Rule129"
+   ]
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "double_solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "UK-Rule129"
+   ],
+   "note": "Double white lines, both solid: the line nearer my car is solid, so it MUST NOT be crossed (Rule 129)."
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "solid",
+    "role": "edge_line"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "UK-TSRGD-S11P4-item11"
+   ],
+   "contested": true,
+   "note": "Diagram 1012.1 marks the edge of the carriageway available for through traffic; no passage says whether it may be crossed. Prefill convention (contested, as for CN and US edge lines): prohibited."
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "solid"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "UK-Rule131"
+   ],
+   "contested": true,
+   "note": "A single solid white line between lanes: no passage of this pack prohibits crossing it (the Highway Code rules here cover double white lines and lane dividers). As in the US table, a line that only discourages a change counts as allowed (contested)."
+  },
+  {
+   "when": {
+    "color": "yellow"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "UK-HC_MARKINGS-p2",
+    "UK-HC_MARKINGS-p2-2"
+   ],
+   "contested": true,
+   "note": "Yellow lines in the UK are waiting restrictions along the kerb, not lane lines; beyond them is the kerb or verge. Prefill convention as for an edge line (contested)."
+  },
+  {
+   "when": {
+    "color": "other"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "UK-HC_MARKINGS-p2-8"
+   ],
+   "contested": true,
+   "note": "Red Route lines along the kerb: stopping restrictions, not lane lines; treated as an edge line (contested)."
+  }
+ ],
+ "markings": {
+  "arrow:straight": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "prohibited",
+    "turn_right": "prohibited",
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "UK-Rule134",
+    "UK-TSRGD-Part6,item20",
+    "UK-TSRGD-S11P4-item20"
+   ],
+   "note": "Owner to decide: lane arrows alone are advisory in TSRGD (Schedule 11 Part 4 item 20, 'appropriate traffic lanes'); they are mandatory only as Schedule 9 Part 6 items 19-21 with the matching upright sign. The prohibitions in this row follow the CN/US convention."
+  },
+  "arrow:left": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "allowed",
+    "turn_right": "prohibited",
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "UK-Rule134",
+    "UK-TSRGD-Part6,item19",
+    "UK-TSRGD-S11P4-item20"
+   ],
+   "note": "Owner to decide: lane arrows alone are advisory in TSRGD (Schedule 11 Part 4 item 20, 'appropriate traffic lanes'); they are mandatory only as Schedule 9 Part 6 items 19-21 with the matching upright sign. The prohibitions in this row follow the CN/US convention."
+  },
+  "arrow:right": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "prohibited",
+    "turn_right": "allowed",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "UK-Rule134",
+    "UK-TSRGD-Part6,item21",
+    "UK-TSRGD-S11P4-item20"
+   ],
+   "note": "Left-hand traffic: a U-turn is made from the right-hand side of the road, like a right turn. A right arrow does not by itself prohibit a U-turn; decide per image (labeling convention, contested). Owner to decide: lane arrows alone are advisory in TSRGD (Schedule 11 Part 4 item 20, 'appropriate traffic lanes'); they are mandatory only as Schedule 9 Part 6 items 19-21 with the matching upright sign. The prohibitions in this row follow the CN/US convention. U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17).",
+   "contested": []
+  },
+  "arrow:straight_left": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "allowed",
+    "turn_right": "prohibited",
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "UK-Rule134",
+    "UK-TSRGD-S11P4-item20"
+   ],
+   "note": "Owner to decide: lane arrows alone are advisory in TSRGD (Schedule 11 Part 4 item 20, 'appropriate traffic lanes'); they are mandatory only as Schedule 9 Part 6 items 19-21 with the matching upright sign. The prohibitions in this row follow the CN/US convention."
+  },
+  "arrow:straight_right": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "prohibited",
+    "turn_right": "allowed",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "UK-Rule134",
+    "UK-TSRGD-S11P4-item20"
+   ],
+   "note": "Left-hand traffic: a U-turn is made from the right-hand side of the road, like a right turn. A right arrow does not by itself prohibit a U-turn; decide per image (labeling convention, contested). Owner to decide: lane arrows alone are advisory in TSRGD (Schedule 11 Part 4 item 20, 'appropriate traffic lanes'); they are mandatory only as Schedule 9 Part 6 items 19-21 with the matching upright sign. The prohibitions in this row follow the CN/US convention. U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17).",
+   "contested": []
+  },
+  "arrow:left_right": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "allowed",
+    "turn_right": "allowed",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "UK-Rule134",
+    "UK-TSRGD-S11P4-item20"
+   ],
+   "note": "Left-hand traffic: a U-turn is made from the right-hand side of the road, like a right turn. A right arrow does not by itself prohibit a U-turn; decide per image (labeling convention, contested). Owner to decide: lane arrows alone are advisory in TSRGD (Schedule 11 Part 4 item 20, 'appropriate traffic lanes'); they are mandatory only as Schedule 9 Part 6 items 19-21 with the matching upright sign. The prohibitions in this row follow the CN/US convention. U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17).",
+   "contested": []
+  },
+  "arrow:u_turn": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "prohibited",
+    "turn_right": "prohibited",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "UK-Rule134",
+    "UK-TSRGD-S11P4-item20"
+   ],
+   "note": "Owner to decide: lane arrows alone are advisory in TSRGD (Schedule 11 Part 4 item 20, 'appropriate traffic lanes'); they are mandatory only as Schedule 9 Part 6 items 19-21 with the matching upright sign. The prohibitions in this row follow the CN/US convention."
+  },
+  "arrow:merge_left": {
+   "actions": {},
+   "rule_ids": [
+    "UK-Rule134",
+    "UK-TSRGD-S11P4-item14"
+   ],
+   "note": "Merge arrow: my lane ends ahead; the advice is to merge. The change actions come from the boundaries."
+  },
+  "arrow:merge_right": {
+   "actions": {},
+   "rule_ids": [
+    "UK-Rule134",
+    "UK-TSRGD-S11P4-item14"
+   ],
+   "note": "Merge arrow: my lane ends ahead; the advice is to merge. The change actions come from the boundaries."
+  },
+  "text:bus": {
+   "actions": {},
+   "rule_ids": [
+    "UK-TSRGD-Part6,item14",
+    "UK-Rule141-2"
+   ],
+   "note": "Bus lane: do not drive in it during its period of operation (advice)."
+  },
+  "symbol:bike": {
+   "actions": {},
+   "rule_ids": [
+    "UK-Rule140",
+    "UK-Rule140-2",
+    "UK-TSRGD-S11P4-item28"
+   ],
+   "note": "Cycle lane: do not drive in it (advice)."
+  },
+  "area:grid": {
+   "actions": {},
+   "rule_ids": [
+    "UK-TSRGD-11(1)"
+   ],
+   "note": "Yellow box junction: do not enter unless the exit is clear (advice)."
+  },
+  "area:channelizing": {
+   "actions": {},
+   "rule_ids": [
+    "UK-Rule130",
+    "UK-Rule130-2",
+    "UK-Rule130-3",
+    "UK-TSRGD-S11P4-item23",
+    "UK-TSRGD-S11P4-item27"
+   ]
+  },
+  "text:keep_clear": {
+   "actions": {},
+   "rule_ids": [
+    "UK-HC_MARKINGS-p3-5",
+    "UK-TSRGD-S11P4-item16"
+   ]
+  },
+  "line:stop_line": {
+   "actions": {},
+   "rule_ids": [
+    "UK-TSRGD-Part6,item1"
+   ]
+  },
+  "line:yield_line": {
+   "actions": {},
+   "rule_ids": [
+    "UK-TSRGD-Part6,item3",
+    "UK-TSRGD-7(a)"
+   ]
+  }
+ }
+}

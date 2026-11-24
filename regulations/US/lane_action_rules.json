@@ -1,0 +1,372 @@
+{
+ "boundary": [
+  {
+   "when": {
+    "curb": "yes"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "US-3B.09-01-02"
+   ],
+   "note": "A curb is the physical edge of the roadway: leaving the roadway across it is not a lane change."
+  },
+  {
+   "when": {
+    "pattern": "none"
+   },
+   "change": "not_applicable",
+   "rule_ids": [],
+   "note": "Nothing is marked on this side: no marking governs crossing it."
+  },
+  {
+   "when": {
+    "role": "special_lane_line"
+   },
+   "change": "",
+   "rule_ids": [
+    "US-3E.01-01",
+    "US-3E.03-02"
+   ],
+   "note": "Preferential, reversible or other special lane: decide from the passages and the signs. Prefill convention (contested): changing into the special lane is prohibited (ordinary car, reserved time assumed); leaving it, when my lane is the special lane, follows the line type."
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "dashed"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "US-3A.04-01",
+    "US-3B.06-05-06"
+   ]
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "dotted"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "US-3A.04-01-DE",
+    "US-3B.07-01"
+   ]
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "solid",
+    "role": "edge_line"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "US-3B.09-01-02"
+   ],
+   "contested": true,
+   "note": "Project convention: the right edge line marks the edge of the roadway (3B.09 ¶01 to ¶02); beyond it there is no travel lane, so driving across it is not a lane change. No passage says so in words. Contested cell: scored separately.",
+   "note_zh": "项目约定：右侧边缘线表示路面边缘（3B.09 第 01 至 02 段），线外不是行车道，越过它不是变道。没有条文直接这样写。这是有争议的格子，评估时单独统计。"
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "solid"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "US-3B.06-05-06",
+    "US-3A.04-01"
+   ],
+   "contested": true,
+   "note": "Project convention (as in the single-marking task): a single solid white lane line discourages crossing (3A.04, 3B.06 ¶06); a prohibition is shown by a double solid white line (3B.06 ¶12). Contested cell: scored separately.",
+   "note_zh": "项目约定（与单标线任务相同）：单条白实线是“不鼓励”跨越（3A.04、3B.06 第 06 段）；禁止跨越用双白实线（3B.06 第 12 段）。这是有争议的格子，评估时单独统计。"
+  },
+  {
+   "when": {
+    "color": "white",
+    "pattern": "double_solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "US-3A.04-01",
+    "US-3B.06-12"
+   ]
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "dashed"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "US-3B.01-04",
+    "US-3A.04-01"
+   ]
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "US-3B.09-03",
+    "US-3B.01-05",
+    "US-3A.03-03-04"
+   ]
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "double_solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "US-3B.01-04",
+    "US-3B.01-06"
+   ]
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "solid_dashed",
+    "near_line": "dashed"
+   },
+   "change": "allowed",
+   "rule_ids": [
+    "US-3B.01-04"
+   ],
+   "note": "Broken line on my side: passing with care is permitted (also the edge of a two-way left-turn lane, 3B.05)."
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "solid_dashed",
+    "near_line": "solid"
+   },
+   "change": "prohibited",
+   "rule_ids": [
+    "US-3B.01-04"
+   ]
+  },
+  {
+   "when": {
+    "color": "yellow",
+    "pattern": "double_dashed"
+   },
+   "change": "",
+   "rule_ids": [
+    "US-3B.04-01"
+   ],
+   "note": "Reversible lane: the direction comes from signs or lane-use signals (3B.04 ¶02)."
+  }
+ ],
+ "markings": {
+  "arrow:straight": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "prohibited",
+    "turn_right": "prohibited",
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "US-3B.23-01",
+    "US-3B.23-08"
+   ]
+  },
+  "arrow:left": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "allowed",
+    "turn_right": "prohibited",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "US-3B.23-01",
+    "US-3B.23-08"
+   ],
+   "contested": [],
+   "note": "Project convention: a U-turn is made from a lane where left turns are allowed, and no passage prohibits it, so u_turn = allowed. If a NO U-TURN sign is visible, keep this answer, tick Unsure and write it in the comment. Contested cell: the arrow does not show a U-turn; scored separately. U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17).",
+   "note_zh": "项目约定：掉头是在允许左转的车道里进行的，而且没有条文禁止，所以掉头 = 允许。如果图里能看到“禁止掉头”标志，保持这个答案，勾“不确定”并在备注里写明。这是有争议的格子（箭头没有画出掉头），评估时单独统计。"
+  },
+  "arrow:right": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "prohibited",
+    "turn_right": "allowed",
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "US-3B.23-01",
+    "US-3B.23-08"
+   ]
+  },
+  "arrow:straight_left": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "allowed",
+    "turn_right": "prohibited",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "US-3B.23-01",
+    "US-3B.23-08"
+   ],
+   "contested": [],
+   "note": "Project convention: a U-turn is made from a lane where left turns are allowed, and no passage prohibits it, so u_turn = allowed. If a NO U-TURN sign is visible, keep this answer, tick Unsure and write it in the comment. Contested cell: the arrow does not show a U-turn; scored separately. U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17).",
+   "note_zh": "项目约定：掉头是在允许左转的车道里进行的，而且没有条文禁止，所以掉头 = 允许。如果图里能看到“禁止掉头”标志，保持这个答案，勾“不确定”并在备注里写明。这是有争议的格子（箭头没有画出掉头），评估时单独统计。"
+  },
+  "arrow:straight_right": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "prohibited",
+    "turn_right": "allowed",
+    "u_turn": "prohibited"
+   },
+   "rule_ids": [
+    "US-3B.23-01",
+    "US-3B.23-08"
+   ]
+  },
+  "arrow:left_right": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "allowed",
+    "turn_right": "allowed",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "US-3B.23-01",
+    "US-3B.23-08"
+   ],
+   "contested": [],
+   "note": "Project convention: a U-turn is made from a lane where left turns are allowed, and no passage prohibits it, so u_turn = allowed. If a NO U-TURN sign is visible, keep this answer, tick Unsure and write it in the comment. Contested cell: the arrow does not show a U-turn; scored separately. U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17).",
+   "note_zh": "项目约定：掉头是在允许左转的车道里进行的，而且没有条文禁止，所以掉头 = 允许。如果图里能看到“禁止掉头”标志，保持这个答案，勾“不确定”并在备注里写明。这是有争议的格子（箭头没有画出掉头），评估时单独统计。"
+  },
+  "arrow:u_turn": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "prohibited",
+    "turn_right": "prohibited",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "US-3B.23-01",
+    "US-3B.23-08"
+   ]
+  },
+  "arrow:left_u_turn": {
+   "actions": {
+    "go_straight": "prohibited",
+    "turn_left": "allowed",
+    "turn_right": "prohibited",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "US-3B.23-01",
+    "US-3B.23-08"
+   ],
+   "note": "U-turn: allowed with this arrow unless a no-U-turn marking or sign is visible (owner, 2026-11-17)."
+  },
+  "arrow:straight_u_turn": {
+   "actions": {
+    "go_straight": "allowed",
+    "turn_left": "prohibited",
+    "turn_right": "prohibited",
+    "u_turn": "allowed"
+   },
+   "rule_ids": [
+    "US-3B.23-01",
+    "US-3B.23-08"
+   ]
+  },
+  "arrow:merge_left": {
+   "actions": {},
+   "rule_ids": [
+    "US-3B.12-14",
+    "US-FIG-3B-21"
+   ],
+   "note": "Lane-reduction arrow: my lane ends ahead; the advice is to merge. The change actions come from the boundaries."
+  },
+  "arrow:merge_right": {
+   "actions": {},
+   "rule_ids": [
+    "US-3B.12-14",
+    "US-FIG-3B-21"
+   ],
+   "note": "Lane-reduction arrow: my lane ends ahead; the advice is to merge. The change actions come from the boundaries."
+  },
+  "arrow:two_way_left": {
+   "actions": {
+    "turn_left": "allowed"
+   },
+   "rule_ids": [
+    "US-3B.05-01",
+    "US-3B.05-02",
+    "US-3B.23-01"
+   ],
+   "note": "My car is in a two-way left-turn lane: it is used for left turns (3B.05 ¶01)."
+  },
+  "area:two_way_left_turn_lane": {
+   "actions": {
+    "enter_waiting_area": "allowed"
+   },
+   "rule_ids": [
+    "US-3B.05-01",
+    "US-3B.05-02"
+   ],
+   "note": "A two-way left-turn lane next to my lane may be entered to wait for a left turn (3B.05 ¶01)."
+  },
+  "text:only": {
+   "actions": {},
+   "rule_ids": [
+    "US-3B.21-04"
+   ],
+   "note": "ONLY: the lane is for the single movement of its arrow (3B.21 ¶04 to ¶08)."
+  },
+  "text:bus": {
+   "actions": {},
+   "rule_ids": [
+    "US-3E.03-02",
+    "US-3H.07-01"
+   ],
+   "note": "Bus lane: general traffic does not use it (advice)."
+  },
+  "text:hov": {
+   "actions": {},
+   "rule_ids": [
+    "US-3E.03-02"
+   ]
+  },
+  "symbol:hov_diamond": {
+   "actions": {},
+   "rule_ids": [
+    "US-3E.03-02"
+   ]
+  },
+  "area:grid": {
+   "actions": {},
+   "rule_ids": [
+    "US-3B.26-01"
+   ],
+   "note": "Do Not Block area: do not stop inside it (advice)."
+  },
+  "area:channelizing": {
+   "actions": {},
+   "rule_ids": [
+    "US-3B.08-01-03",
+    "US-3B.25-01"
+   ]
+  },
+  "line:stop_line": {
+   "actions": {},
+   "rule_ids": [
+    "US-3B.19-01-02"
+   ]
+  },
+  "line:yield_line": {
+   "actions": {},
+   "rule_ids": [
+    "US-3B.19-10"
+   ]
+  }
+ }
+}

@@ -1,0 +1,419 @@
+rel,collection,items,categories,lane_words
+images/05e3ef473e8b1c99/0000.jpg,covla,1,region,hatched
+images/05e3ef473e8b1c99/0001.jpg,covla,1,region,hatched
+images/05e3ef473e8b1c99/0002.jpg,covla,1,region,hatched
+images/07003c3765a2a2ac/0049.jpg,covla,1,planning,overtak
+images/07003c3765a2a2ac/0050.jpg,covla,1,planning,overtak
+images/07003c3765a2a2ac/0051.jpg,covla,1,planning,overtak
+images/071809da60e3e48c/0037.jpg,covla,1,region,hatched
+images/071809da60e3e48c/0038.jpg,covla,1,region,hatched
+images/071809da60e3e48c/0039.jpg,covla,1,region,hatched
+images/083a7a12acfbe07a/0004.jpg,covla,1,prediction,stop line
+images/083a7a12acfbe07a/0005.jpg,covla,1,prediction,stop line
+images/083a7a12acfbe07a/0006.jpg,covla,1,prediction,stop line
+images/099abb11851f026c/0035.jpg,covla,1,planning,overtak
+images/099abb11851f026c/0036.jpg,covla,1,planning,overtak
+images/099abb11851f026c/0037.jpg,covla,1,planning,overtak
+images/0a015f7a7ab0132c/0009.jpg,covla,1,planning,center line
+images/0a015f7a7ab0132c/0010.jpg,covla,1,planning,center line
+images/0a015f7a7ab0132c/0011.jpg,covla,1,planning,center line
+images/10359bb77a5fbd03/0002.jpg,covla,1,planning,overtak;road marking
+images/10359bb77a5fbd03/0003.jpg,covla,1,planning,overtak;road marking
+images/10359bb77a5fbd03/0004.jpg,covla,1,planning,overtak;road marking
+images/11639ccca335994f/0012.jpg,covla,1,planning,overtak
+images/11639ccca335994f/0013.jpg,covla,1,planning,overtak
+images/11639ccca335994f/0014.jpg,covla,1,planning,overtak
+images/12ba54608194338e/0002.jpg,covla,1,planning,turn arrow
+images/12ba54608194338e/0003.jpg,covla,1,planning,turn arrow
+images/12ba54608194338e/0004.jpg,covla,1,planning,turn arrow
+images/1324cafe12ad2e31/0016.jpg,covla,1,prediction,overtak
+images/1324cafe12ad2e31/0017.jpg,covla,1,prediction,overtak
+images/1324cafe12ad2e31/0018.jpg,covla,1,prediction,overtak
+images/13a98d0cb8568191/0010.jpg,covla,1,planning,overtak
+images/13a98d0cb8568191/0011.jpg,covla,1,planning,overtak
+images/13a98d0cb8568191/0012.jpg,covla,1,planning,overtak
+images/14ca1b191ab45ae2/0013.jpg,covla,1,perception,road marking
+images/14ca1b191ab45ae2/0014.jpg,covla,1,perception,road marking
+images/14ca1b191ab45ae2/0015.jpg,covla,1,perception,road marking
+images/16273e9f734600b7/0037.jpg,covla,1,planning,lane change;overtak
+images/16273e9f734600b7/0038.jpg,covla,1,planning,lane change;overtak
+images/16273e9f734600b7/0039.jpg,covla,1,planning,lane change;overtak
+images/167d4564d619d707/0054.jpg,covla,1,region,hatched
+images/167d4564d619d707/0055.jpg,covla,1,region,hatched
+images/167d4564d619d707/0056.jpg,covla,1,region,hatched
+images/16c11762b4ad9456/0006.jpg,covla,1,planning,overtak
+images/16c11762b4ad9456/0007.jpg,covla,1,planning,overtak
+images/16c11762b4ad9456/0008.jpg,covla,1,planning,overtak
+images/19666f355faafec9/0021.jpg,covla,1,planning,overtak
+images/19666f355faafec9/0022.jpg,covla,1,planning,overtak
+images/19666f355faafec9/0023.jpg,covla,1,planning,overtak
+images/1c3d84035a026dd3/0026.jpg,covla,1,planning,lane change;overtak
+images/1c3d84035a026dd3/0027.jpg,covla,1,planning,lane change;overtak
+images/1c3d84035a026dd3/0028.jpg,covla,1,planning,lane change;overtak
+images/214e7c6d7fb8aed5/0008.jpg,covla,1,planning,overtak
+images/214e7c6d7fb8aed5/0009.jpg,covla,1,planning,overtak
+images/214e7c6d7fb8aed5/0010.jpg,covla,1,planning,overtak
+images/2399db47a6ec292c/0049.jpg,covla,1,planning,overtak
+images/2399db47a6ec292c/0050.jpg,covla,1,planning,overtak
+images/2399db47a6ec292c/0051.jpg,covla,1,planning,overtak
+images/251d79ec67e1f45e/0041.jpg,covla,1,planning,overtak
+images/251d79ec67e1f45e/0042.jpg,covla,1,planning,overtak
+images/251d79ec67e1f45e/0043.jpg,covla,1,planning,overtak
+images/258335e7d8b568d8/0020.jpg,covla,1,prediction,cross the lane
+images/258335e7d8b568d8/0021.jpg,covla,1,prediction,cross the lane
+images/258335e7d8b568d8/0022.jpg,covla,1,prediction,cross the lane
+images/2a691a271104cf7d/0002.jpg,covla,2,planning;prediction,dashed;lane change;overtak;road marking
+images/2a691a271104cf7d/0003.jpg,covla,2,planning;prediction,dashed;lane change;overtak;road marking
+images/2a691a271104cf7d/0004.jpg,covla,2,planning;prediction,dashed;lane change;overtak;road marking
+images/2bf0b44949219280/0041.jpg,covla,1,planning,overtak
+images/2bf0b44949219280/0042.jpg,covla,1,planning,overtak
+images/2bf0b44949219280/0043.jpg,covla,1,planning,overtak
+images/2e66f62dba23a600/0012.jpg,covla,1,planning,overtak
+images/2e66f62dba23a600/0013.jpg,covla,1,planning,overtak
+images/2e66f62dba23a600/0014.jpg,covla,1,planning,overtak
+images/2eb92ebd3ce72fff/0055.jpg,covla,1,prediction,lane change
+images/2eb92ebd3ce72fff/0056.jpg,covla,1,prediction,lane change
+images/2eb92ebd3ce72fff/0057.jpg,covla,1,prediction,lane change
+images/2ebd08aaa69695f5/0032.jpg,covla,1,region,hatched
+images/2ebd08aaa69695f5/0033.jpg,covla,1,region,hatched
+images/2ebd08aaa69695f5/0034.jpg,covla,1,region,hatched
+images/326b2eb7eb984e71/0055.jpg,covla,1,planning,overtak
+images/326b2eb7eb984e71/0056.jpg,covla,1,planning,overtak
+images/326b2eb7eb984e71/0057.jpg,covla,1,planning,overtak
+images/340f95772d69835f/0036.jpg,covla,1,planning,turn arrow
+images/340f95772d69835f/0037.jpg,covla,1,planning,turn arrow
+images/340f95772d69835f/0038.jpg,covla,1,planning,turn arrow
+images/3581962ee241c3a1/0001.jpg,covla,1,planning,lane change;road marking
+images/3622930ad8f24ccf/0048.jpg,covla,1,planning,overtak
+images/3622930ad8f24ccf/0049.jpg,covla,1,planning,overtak
+images/3622930ad8f24ccf/0050.jpg,covla,1,planning,overtak
+images/39127fd4a9aa5224/0045.jpg,covla,1,region,hatched
+images/39127fd4a9aa5224/0046.jpg,covla,1,region,hatched
+images/39127fd4a9aa5224/0047.jpg,covla,1,region,hatched
+images/39ebf1668589cc9e/0001.jpg,covla,1,region,hatched
+images/3b08326ffec608a1/0042.jpg,covla,1,planning,overtak
+images/3b08326ffec608a1/0043.jpg,covla,1,planning,overtak
+images/3b08326ffec608a1/0044.jpg,covla,1,planning,overtak
+images/3bb168aab3bd4836/0016.jpg,covla,1,planning,overtak
+images/3bb168aab3bd4836/0017.jpg,covla,1,planning,overtak
+images/3bb168aab3bd4836/0018.jpg,covla,1,planning,overtak
+images/3d82aedcc49f6a21/0001.jpg,covla,2,planning;prediction,overtak
+images/3d82aedcc49f6a21/0002.jpg,covla,2,planning;prediction,overtak
+images/3d82aedcc49f6a21/0003.jpg,covla,2,planning;prediction,overtak
+images/3f69bd04dd00721f/0031.jpg,covla,1,planning,overtak
+images/3f69bd04dd00721f/0032.jpg,covla,1,planning,overtak
+images/3f69bd04dd00721f/0033.jpg,covla,1,planning,overtak
+images/404c21ce3875db34/0005.jpg,covla,1,planning,overtak
+images/404c21ce3875db34/0006.jpg,covla,1,planning,overtak
+images/404c21ce3875db34/0007.jpg,covla,1,planning,overtak
+images/426b3486ca9ffa95/0013.jpg,covla,1,planning,overtak
+images/426b3486ca9ffa95/0014.jpg,covla,1,planning,overtak
+images/426b3486ca9ffa95/0015.jpg,covla,1,planning,overtak
+images/446c860e9711c1e6/0006.jpg,covla,2,planning;prediction,overtak
+images/446c860e9711c1e6/0007.jpg,covla,2,planning;prediction,overtak
+images/446c860e9711c1e6/0008.jpg,covla,2,planning;prediction,overtak
+images/44770f769192b170/0007.jpg,covla,1,planning,lane change;overtak
+images/44770f769192b170/0008.jpg,covla,1,planning,lane change;overtak
+images/44770f769192b170/0009.jpg,covla,1,planning,lane change;overtak
+images/447c1386202bcd86/0008.jpg,covla,2,planning;prediction,dashed;lane change;overtak
+images/447c1386202bcd86/0009.jpg,covla,2,planning;prediction,dashed;lane change;overtak
+images/447c1386202bcd86/0010.jpg,covla,2,planning;prediction,dashed;lane change;overtak
+images/46c541f92bde5d40/0020.jpg,covla,1,planning,overtak
+images/46c541f92bde5d40/0021.jpg,covla,1,planning,overtak
+images/46c541f92bde5d40/0022.jpg,covla,1,planning,overtak
+images/4798a7ec273ff631/0014.jpg,covla,1,region,hatched
+images/4798a7ec273ff631/0015.jpg,covla,1,region,hatched
+images/4798a7ec273ff631/0016.jpg,covla,1,region,hatched
+images/4856bf76f719c713/0032.jpg,covla,2,perception;planning,overtak;white line
+images/4856bf76f719c713/0033.jpg,covla,2,perception;planning,overtak;white line
+images/4856bf76f719c713/0034.jpg,covla,2,perception;planning,overtak;white line
+images/48c3254e5dd704a3/0035.jpg,covla,1,planning,overtak
+images/48c3254e5dd704a3/0036.jpg,covla,1,planning,overtak
+images/48c3254e5dd704a3/0037.jpg,covla,1,planning,overtak
+images/498be5801039cf8f/0013.jpg,covla,1,planning,overtak
+images/498be5801039cf8f/0014.jpg,covla,1,planning,overtak
+images/498be5801039cf8f/0015.jpg,covla,1,planning,overtak
+images/4b63d5d5f8123fc7/0033.jpg,covla,1,planning,overtak
+images/4b63d5d5f8123fc7/0034.jpg,covla,1,planning,overtak
+images/4b63d5d5f8123fc7/0035.jpg,covla,1,planning,overtak
+images/4c039493f5e23ef4/0040.jpg,covla,1,region,center line
+images/4c039493f5e23ef4/0041.jpg,covla,1,region,center line
+images/4c039493f5e23ef4/0042.jpg,covla,1,region,center line
+images/4cc81fcf06f06990/0035.jpg,covla,1,prediction,overtak
+images/4cc81fcf06f06990/0036.jpg,covla,1,prediction,overtak
+images/4cc81fcf06f06990/0037.jpg,covla,1,prediction,overtak
+images/507b407693007717/0045.jpg,covla,1,region,hatched
+images/507b407693007717/0046.jpg,covla,1,region,hatched
+images/507b407693007717/0047.jpg,covla,1,region,hatched
+images/50b30446566e22d0/0043.jpg,covla,1,planning,stop line
+images/50b30446566e22d0/0044.jpg,covla,1,planning,stop line
+images/50b30446566e22d0/0045.jpg,covla,1,planning,stop line
+images/50e93f1168ee3309/0038.jpg,covla,1,planning,dashed;lane change;overtak
+images/50e93f1168ee3309/0039.jpg,covla,1,planning,dashed;lane change;overtak
+images/50e93f1168ee3309/0040.jpg,covla,1,planning,dashed;lane change;overtak
+images/51dc8c14178a6916/0025.jpg,covla,1,planning,turn arrow
+images/51dc8c14178a6916/0026.jpg,covla,1,planning,turn arrow
+images/51dc8c14178a6916/0027.jpg,covla,1,planning,turn arrow
+images/5563864e768de921/0055.jpg,covla,1,planning,road marking;stop line
+images/5563864e768de921/0056.jpg,covla,1,planning,road marking;stop line
+images/5563864e768de921/0057.jpg,covla,1,planning,road marking;stop line
+images/55ef702e07f2af91/0040.jpg,covla,1,planning,overtak
+images/55ef702e07f2af91/0041.jpg,covla,1,planning,overtak
+images/55ef702e07f2af91/0042.jpg,covla,1,planning,overtak
+images/59c07337f1ff6b33/0047.jpg,covla,2,perception;planning,lane arrow;lane marking
+images/59c07337f1ff6b33/0048.jpg,covla,2,perception;planning,lane arrow;lane marking
+images/59c07337f1ff6b33/0049.jpg,covla,2,perception;planning,lane arrow;lane marking
+images/5bd2154a52a9dcd9/0051.jpg,covla,1,region,center line
+images/5bd2154a52a9dcd9/0052.jpg,covla,1,region,center line
+images/5bd2154a52a9dcd9/0053.jpg,covla,1,region,center line
+images/5d9d4ed913da671f/0026.jpg,covla,1,planning,overtak
+images/5d9d4ed913da671f/0027.jpg,covla,1,planning,overtak
+images/5d9d4ed913da671f/0028.jpg,covla,1,planning,overtak
+images/6055e72339df80bf/0046.jpg,covla,1,planning,overtak
+images/6055e72339df80bf/0047.jpg,covla,1,planning,overtak
+images/6055e72339df80bf/0048.jpg,covla,1,planning,overtak
+images/607dc55ac05a4b9c/0040.jpg,covla,1,planning,lane change;overtak
+images/607dc55ac05a4b9c/0041.jpg,covla,1,planning,lane change;overtak
+images/607dc55ac05a4b9c/0042.jpg,covla,1,planning,lane change;overtak
+images/655307ff15ccc68c/0031.jpg,covla,1,region,center line
+images/655307ff15ccc68c/0032.jpg,covla,1,region,center line
+images/655307ff15ccc68c/0033.jpg,covla,1,region,center line
+images/6bb9b389b5eb085c/0038.jpg,covla,2,planning;region,hatched;overtak
+images/6bb9b389b5eb085c/0039.jpg,covla,2,planning;region,hatched;overtak
+images/6bb9b389b5eb085c/0040.jpg,covla,2,planning;region,hatched;overtak
+images/6e18775e10c8fe2f/0039.jpg,covla,1,planning,overtak
+images/6e18775e10c8fe2f/0040.jpg,covla,1,planning,overtak
+images/6e18775e10c8fe2f/0041.jpg,covla,1,planning,overtak
+images/6f516d974f41373c/0011.jpg,covla,1,region,center line
+images/6f516d974f41373c/0012.jpg,covla,1,region,center line
+images/6f516d974f41373c/0013.jpg,covla,1,region,center line
+images/7135f3b1327bad80/0006.jpg,covla,1,planning,double solid
+images/7135f3b1327bad80/0007.jpg,covla,1,planning,double solid
+images/7135f3b1327bad80/0008.jpg,covla,1,planning,double solid
+images/733f1529f4080cd6/0045.jpg,covla,1,planning,lane change
+images/733f1529f4080cd6/0046.jpg,covla,1,planning,lane change
+images/733f1529f4080cd6/0047.jpg,covla,1,planning,lane change
+images/78465f44014b12f8/0019.jpg,covla,1,planning,lane markings
+images/78465f44014b12f8/0020.jpg,covla,1,planning,lane markings
+images/78465f44014b12f8/0021.jpg,covla,1,planning,lane markings
+images/7bb8afeccd786ff3/0008.jpg,covla,1,planning,overtak
+images/7bb8afeccd786ff3/0009.jpg,covla,1,planning,overtak
+images/7bb8afeccd786ff3/0010.jpg,covla,1,planning,overtak
+images/7e5549c8bc91cd2f/0030.jpg,covla,1,region,center line
+images/7e5549c8bc91cd2f/0031.jpg,covla,1,region,center line
+images/7e5549c8bc91cd2f/0032.jpg,covla,1,region,center line
+images/7ec60914bf01b139/0038.jpg,covla,1,planning,overtak
+images/7ec60914bf01b139/0039.jpg,covla,1,planning,overtak
+images/7ec60914bf01b139/0040.jpg,covla,1,planning,overtak
+images/80f6379e79f9ddb9/0041.jpg,covla,1,planning,dashed;lane change;lane markings;overtak
+images/80f6379e79f9ddb9/0042.jpg,covla,1,planning,dashed;lane change;lane markings;overtak
+images/80f6379e79f9ddb9/0043.jpg,covla,1,planning,dashed;lane change;lane markings;overtak
+images/84c90580c1bf5fda/0002.jpg,covla,2,planning;prediction,lane markings;overtak
+images/84c90580c1bf5fda/0003.jpg,covla,2,planning;prediction,lane markings;overtak
+images/84c90580c1bf5fda/0004.jpg,covla,2,planning;prediction,lane markings;overtak
+images/84c90580c1bf5fda/0015.jpg,covla,1,planning,overtak
+images/84c90580c1bf5fda/0016.jpg,covla,1,planning,overtak
+images/84c90580c1bf5fda/0017.jpg,covla,1,planning,overtak
+images/8972e9c74b8c4dad/0025.jpg,covla,1,region,hatched
+images/8972e9c74b8c4dad/0026.jpg,covla,1,region,hatched
+images/8972e9c74b8c4dad/0027.jpg,covla,1,region,hatched
+images/8d5415b75943ebb1/0040.jpg,covla,2,planning;region,center line;overtak
+images/8d5415b75943ebb1/0041.jpg,covla,2,planning;region,center line;overtak
+images/8d5415b75943ebb1/0042.jpg,covla,2,planning;region,center line;overtak
+images/8dda152227656931/0006.jpg,covla,1,planning,overtak
+images/8dda152227656931/0007.jpg,covla,1,planning,overtak
+images/8dda152227656931/0008.jpg,covla,1,planning,overtak
+images/8f2550605b227a5f/0056.jpg,covla,1,planning,turn arrow
+images/8f2550605b227a5f/0057.jpg,covla,1,planning,turn arrow
+images/8f2550605b227a5f/0058.jpg,covla,1,planning,turn arrow
+images/8f996f3302f4319a/0025.jpg,covla,1,region,center line
+images/8f996f3302f4319a/0026.jpg,covla,1,region,center line
+images/8f996f3302f4319a/0027.jpg,covla,1,region,center line
+images/8f9b225da3186fc2/0055.jpg,covla,1,planning,stop line
+images/8f9b225da3186fc2/0056.jpg,covla,1,planning,stop line
+images/8f9b225da3186fc2/0057.jpg,covla,1,planning,stop line
+images/9002639b2c2299d7/0028.jpg,covla,1,planning,overtak
+images/9002639b2c2299d7/0029.jpg,covla,1,planning,overtak
+images/9002639b2c2299d7/0030.jpg,covla,1,planning,overtak
+images/9108258b375b021b/0039.jpg,covla,1,planning,overtak
+images/9108258b375b021b/0040.jpg,covla,1,planning,overtak
+images/9108258b375b021b/0041.jpg,covla,1,planning,overtak
+images/91c3b9b1348be717/0034.jpg,covla,1,planning,overtak
+images/91c3b9b1348be717/0035.jpg,covla,1,planning,overtak
+images/91c3b9b1348be717/0036.jpg,covla,1,planning,overtak
+images/91db69490feaa6a8/0035.jpg,covla,1,planning,overtak
+images/91db69490feaa6a8/0036.jpg,covla,1,planning,overtak
+images/91db69490feaa6a8/0037.jpg,covla,1,planning,overtak
+images/9409b0dc2a1c96bc/0008.jpg,covla,1,prediction,overtak
+images/9409b0dc2a1c96bc/0009.jpg,covla,1,prediction,overtak
+images/9409b0dc2a1c96bc/0010.jpg,covla,1,prediction,overtak
+images/94ca1c749c70c665/0054.jpg,covla,1,region,center line
+images/94ca1c749c70c665/0055.jpg,covla,1,region,center line
+images/94ca1c749c70c665/0056.jpg,covla,1,region,center line
+images/959d5327c1ba71cc/0042.jpg,covla,1,planning,turn arrow
+images/959d5327c1ba71cc/0043.jpg,covla,1,planning,turn arrow
+images/959d5327c1ba71cc/0044.jpg,covla,1,planning,turn arrow
+images/95c012c076fd434e/0002.jpg,covla,1,planning,overtak
+images/95c012c076fd434e/0003.jpg,covla,1,planning,overtak
+images/95c012c076fd434e/0004.jpg,covla,1,planning,overtak
+images/97e707398df035f2/0027.jpg,covla,1,planning,overtak
+images/97e707398df035f2/0028.jpg,covla,1,planning,overtak
+images/97e707398df035f2/0029.jpg,covla,1,planning,overtak
+images/991ec6140bc98c24/0002.jpg,covla,1,planning,overtak
+images/991ec6140bc98c24/0003.jpg,covla,1,planning,overtak
+images/991ec6140bc98c24/0004.jpg,covla,1,planning,overtak
+images/9bb4143216ebb4fa/0020.jpg,covla,1,planning,overtak
+images/9bb4143216ebb4fa/0021.jpg,covla,1,planning,overtak
+images/9bb4143216ebb4fa/0022.jpg,covla,1,planning,overtak
+images/9d19c97828575038/0028.jpg,covla,1,planning,overtak
+images/9d19c97828575038/0029.jpg,covla,1,planning,overtak
+images/9d19c97828575038/0030.jpg,covla,1,planning,overtak
+images/9e5715121f11d37e/0004.jpg,covla,1,prediction,turn arrow
+images/9e5715121f11d37e/0005.jpg,covla,1,prediction,turn arrow
+images/9e5715121f11d37e/0006.jpg,covla,1,prediction,turn arrow
+images/9e879c0939ec8f29/0007.jpg,covla,1,planning,lane marking
+images/9e879c0939ec8f29/0008.jpg,covla,1,planning,lane marking
+images/9e879c0939ec8f29/0009.jpg,covla,1,planning,lane marking
+images/a05fe79b371f7f9e/0035.jpg,covla,1,planning,overtak
+images/a05fe79b371f7f9e/0036.jpg,covla,1,planning,overtak
+images/a05fe79b371f7f9e/0037.jpg,covla,1,planning,overtak
+images/a145b7dadd8c1103/0007.jpg,covla,1,region,center line
+images/a145b7dadd8c1103/0008.jpg,covla,1,region,center line
+images/a145b7dadd8c1103/0009.jpg,covla,1,region,center line
+images/a16e799d2a566628/0018.jpg,covla,1,planning,overtak
+images/a16e799d2a566628/0019.jpg,covla,1,planning,overtak
+images/a16e799d2a566628/0020.jpg,covla,1,planning,overtak
+images/a221786438ecb883/0023.jpg,covla,1,planning,overtak
+images/a221786438ecb883/0024.jpg,covla,1,planning,overtak
+images/a221786438ecb883/0025.jpg,covla,1,planning,overtak
+images/a460637475859fcb/0001.jpg,covla,1,planning,overtak
+images/a460637475859fcb/0002.jpg,covla,1,planning,overtak
+images/a460637475859fcb/0003.jpg,covla,1,planning,overtak
+images/a6ddcd98861a17dd/0023.jpg,covla,1,region,center line
+images/a6ddcd98861a17dd/0024.jpg,covla,1,region,center line
+images/a6ddcd98861a17dd/0025.jpg,covla,1,region,center line
+images/ad0757c7c7912ea1/0030.jpg,covla,1,planning,stop line
+images/ad0757c7c7912ea1/0031.jpg,covla,1,planning,stop line
+images/ad0757c7c7912ea1/0032.jpg,covla,1,planning,stop line
+images/ad0a02e23608e556/0020.jpg,covla,1,region,center line
+images/ad0a02e23608e556/0021.jpg,covla,1,region,center line
+images/ad0a02e23608e556/0022.jpg,covla,1,region,center line
+images/afb9f0a4c5e22c1c/0026.jpg,covla,1,region,hatched
+images/afb9f0a4c5e22c1c/0027.jpg,covla,1,region,hatched
+images/afb9f0a4c5e22c1c/0028.jpg,covla,1,region,hatched
+images/b0bdc3fd0ddd1f3f/0017.jpg,covla,1,planning,overtak
+images/b0bdc3fd0ddd1f3f/0018.jpg,covla,1,planning,overtak
+images/b0bdc3fd0ddd1f3f/0019.jpg,covla,1,planning,overtak
+images/b20ceea93a263848/0016.jpg,covla,1,planning,overtak
+images/b20ceea93a263848/0017.jpg,covla,1,planning,overtak
+images/b20ceea93a263848/0018.jpg,covla,1,planning,overtak
+images/b48ba0a47417fec8/0000.jpg,covla,1,planning,overtak
+images/b4bdd9fd963248dc/0010.jpg,covla,1,planning,overtak
+images/b4bdd9fd963248dc/0011.jpg,covla,1,planning,overtak
+images/b4bdd9fd963248dc/0012.jpg,covla,1,planning,overtak
+images/b880bff3c6ae4c94/0057.jpg,covla,1,planning,overtak
+images/b880bff3c6ae4c94/0058.jpg,covla,1,planning,overtak
+images/b880bff3c6ae4c94/0059.jpg,covla,1,planning,overtak
+images/ba7c4326ca07836b/0006.jpg,covla,1,planning,overtak
+images/ba7c4326ca07836b/0007.jpg,covla,1,planning,overtak
+images/ba7c4326ca07836b/0008.jpg,covla,1,planning,overtak
+images/bb669f6dd9ce24d1/0009.jpg,covla,1,planning,lane markings
+images/bb669f6dd9ce24d1/0010.jpg,covla,1,planning,lane markings
+images/bb669f6dd9ce24d1/0011.jpg,covla,1,planning,lane markings
+images/be0bafc4bcc460a5/0018.jpg,covla,1,planning,overtak
+images/be0bafc4bcc460a5/0019.jpg,covla,1,planning,overtak
+images/be0bafc4bcc460a5/0020.jpg,covla,1,planning,overtak
+images/c01d62d5d7eeee76/0000.jpg,covla,1,planning,turn arrow
+images/c0502925ab2fe113/0028.jpg,covla,1,planning,stop line
+images/c0502925ab2fe113/0029.jpg,covla,1,planning,stop line
+images/c0502925ab2fe113/0030.jpg,covla,1,planning,stop line
+images/c35687b994fba738/0038.jpg,covla,1,planning,overtak
+images/c35687b994fba738/0039.jpg,covla,1,planning,overtak
+images/c35687b994fba738/0040.jpg,covla,1,planning,overtak
+images/c95e3259720fa6fc/0022.jpg,covla,1,region,center line
+images/c95e3259720fa6fc/0023.jpg,covla,1,region,center line
+images/c95e3259720fa6fc/0024.jpg,covla,1,region,center line
+images/cbc9b8d5fb9d75fb/0000.jpg,covla,1,planning,overtak
+images/cf459583c1d83508/0035.jpg,covla,1,planning,overtak;stop line
+images/cf459583c1d83508/0036.jpg,covla,1,planning,overtak;stop line
+images/cf459583c1d83508/0037.jpg,covla,1,planning,overtak;stop line
+images/d34d9bd08448ce05/0005.jpg,covla,2,planning;region,center line;overtak
+images/d34d9bd08448ce05/0006.jpg,covla,2,planning;region,center line;overtak
+images/d34d9bd08448ce05/0007.jpg,covla,2,planning;region,center line;overtak
+images/d4dec984505fd9a4/0023.jpg,covla,1,planning,overtak
+images/d4dec984505fd9a4/0024.jpg,covla,1,planning,overtak
+images/d4dec984505fd9a4/0025.jpg,covla,1,planning,overtak
+images/d576ae42de515e31/0048.jpg,covla,1,perception,lane markings
+images/d576ae42de515e31/0049.jpg,covla,1,perception,lane markings
+images/d576ae42de515e31/0050.jpg,covla,1,perception,lane markings
+images/d8f5bc003b390a04/0007.jpg,covla,1,planning,overtak
+images/d8f5bc003b390a04/0008.jpg,covla,1,planning,overtak
+images/d8f5bc003b390a04/0009.jpg,covla,1,planning,overtak
+images/dab7d9bde1a2a8f0/0001.jpg,covla,1,planning,overtak
+images/dc985db75a6715e5/0003.jpg,covla,1,planning,turn arrow
+images/dc985db75a6715e5/0004.jpg,covla,1,planning,turn arrow
+images/dc985db75a6715e5/0005.jpg,covla,1,planning,turn arrow
+images/dd1c2aff73866e9c/0006.jpg,covla,1,planning,overtak
+images/dd1c2aff73866e9c/0007.jpg,covla,1,planning,overtak
+images/dd1c2aff73866e9c/0008.jpg,covla,1,planning,overtak
+images/ddf26751693a5a1b/0016.jpg,covla,1,planning,overtak
+images/ddf26751693a5a1b/0017.jpg,covla,1,planning,overtak
+images/ddf26751693a5a1b/0018.jpg,covla,1,planning,overtak
+images/dfc7bd0b992ae7b2/0029.jpg,covla,1,planning,overtak;stop line
+images/dfc7bd0b992ae7b2/0030.jpg,covla,1,planning,overtak;stop line
+images/dfc7bd0b992ae7b2/0031.jpg,covla,1,planning,overtak;stop line
+images/e1febbb9a8e5b72e/0027.jpg,covla,1,planning,overtak
+images/e1febbb9a8e5b72e/0028.jpg,covla,1,planning,overtak
+images/e1febbb9a8e5b72e/0029.jpg,covla,1,planning,overtak
+images/e320cb65b3d20386/0051.jpg,covla,1,planning,overtak
+images/e320cb65b3d20386/0052.jpg,covla,1,planning,overtak
+images/e320cb65b3d20386/0053.jpg,covla,1,planning,overtak
+images/e3ceafe36a4d6a40/0042.jpg,covla,1,planning,lane change;overtak
+images/e3ceafe36a4d6a40/0043.jpg,covla,1,planning,lane change;overtak
+images/e3ceafe36a4d6a40/0044.jpg,covla,1,planning,lane change;overtak
+images/e8d4901752396e62/0024.jpg,covla,1,planning,overtak
+images/e8d4901752396e62/0025.jpg,covla,1,planning,overtak
+images/e8d4901752396e62/0026.jpg,covla,1,planning,overtak
+images/e94024acdeffc227/0052.jpg,covla,1,prediction,overtak
+images/e94024acdeffc227/0053.jpg,covla,1,prediction,overtak
+images/e94024acdeffc227/0054.jpg,covla,1,prediction,overtak
+images/ed5a85211f0a2ba5/0006.jpg,covla,1,planning,overtak
+images/ed5a85211f0a2ba5/0007.jpg,covla,1,planning,overtak
+images/ed5a85211f0a2ba5/0008.jpg,covla,1,planning,overtak
+images/ef0beeb289e81a2c/0004.jpg,covla,1,planning,overtak
+images/ef0beeb289e81a2c/0005.jpg,covla,1,planning,overtak
+images/ef0beeb289e81a2c/0006.jpg,covla,1,planning,overtak
+images/f05f7c725bddec11/0000.jpg,covla,1,planning,stop line
+images/f15f589c809b7221/0002.jpg,covla,1,region,hatched
+images/f15f589c809b7221/0003.jpg,covla,1,region,hatched
+images/f15f589c809b7221/0004.jpg,covla,1,region,hatched
+images/f24b74af3634247c/0036.jpg,covla,1,planning,overtak
+images/f24b74af3634247c/0037.jpg,covla,1,planning,overtak
+images/f24b74af3634247c/0038.jpg,covla,1,planning,overtak
+images/f4644c857387bb56/0022.jpg,covla,1,planning,overtak
+images/f4644c857387bb56/0023.jpg,covla,1,planning,overtak
+images/f4644c857387bb56/0024.jpg,covla,1,planning,overtak
+images/f5ec9953c21d8b80/0049.jpg,covla,1,region,hatched
+images/f5ec9953c21d8b80/0050.jpg,covla,1,region,hatched
+images/f5ec9953c21d8b80/0051.jpg,covla,1,region,hatched
+images/f8179875a40aef80/0032.jpg,covla,1,planning,lane change;overtak
+images/f8179875a40aef80/0033.jpg,covla,1,planning,lane change;overtak
+images/f8179875a40aef80/0034.jpg,covla,1,planning,lane change;overtak
+images/f987e6fea1556af4/0055.jpg,covla,1,planning,center line;overtak
+images/f987e6fea1556af4/0056.jpg,covla,1,planning,center line;overtak
+images/f987e6fea1556af4/0057.jpg,covla,1,planning,center line;overtak
+images/f9b228f04de557a0/0044.jpg,covla,1,planning,overtak
+images/f9b228f04de557a0/0045.jpg,covla,1,planning,overtak
+images/f9b228f04de557a0/0046.jpg,covla,1,planning,overtak
+images/fa3b59983a31dcfa/0057.jpg,covla,1,planning,lane change;lane lines;overtak
+images/fa3b59983a31dcfa/0058.jpg,covla,1,planning,lane change;lane lines;overtak
+images/fa3b59983a31dcfa/0059.jpg,covla,1,planning,lane change;lane lines;overtak
+images/fc4631685f57e047/0057.jpg,covla,1,region,center line
+images/fc4631685f57e047/0058.jpg,covla,1,region,center line
+images/fc4631685f57e047/0059.jpg,covla,1,region,center line
+images/ff0c6b1a1068c187/0023.jpg,covla,1,region,center line
+images/ff0c6b1a1068c187/0024.jpg,covla,1,region,center line
+images/ff0c6b1a1068c187/0025.jpg,covla,1,region,center line
+images/ff721d22b6ea4f6d/0051.jpg,covla,1,region,hatched
+images/ff721d22b6ea4f6d/0052.jpg,covla,1,region,hatched
+images/ff721d22b6ea4f6d/0053.jpg,covla,1,region,hatched

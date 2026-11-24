@@ -1,0 +1,1 @@
+RULE PASSAGES. Traffic rules of {region_name}: {rules_title}. These are the only rules you may cite. They are grouped by the part of a lane they are about. Each passage carries its force as the standard words it: [mandatory] (shall, must, may not, prohibited; 应, 不得, 禁止), [recommended] (should; 宜), [permissive] (may; 可) or [informative] (a definition or description).

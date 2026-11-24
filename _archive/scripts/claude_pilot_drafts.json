@@ -1,0 +1,650 @@
+{
+ "UK": {
+  "train/27ca312fb6ce3cb70036e317c6c758ba/2.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "partial",
+    "left_color": "yellow",
+    "left_pattern": "double_solid",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "no",
+    "right_role": "unknown",
+    "right_evidence": "insufficient"
+   },
+   "group": "degraded",
+   "override": {
+    "act_change_right": "not_determined"
+   },
+   "note": "wet road; the right side is hidden by a van"
+  },
+  "train/d21bf5635928983657b67b4aa8a13fac/0.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "full",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "yellow",
+    "left_pattern": "double_solid",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "yes",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "yellow",
+   "override": {},
+   "note": "double yellow at the kerb; traffic island on the right"
+  },
+  "train/dde41275b6a47da6fe2992ae2f1b7673/1.jpg": {
+   "fields": {
+    "lane_count": "2",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "symbol:bike;line:stop_line",
+    "markings_evidence": "full",
+    "left_color": "other",
+    "left_pattern": "solid",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "lane_line",
+    "right_evidence": "partial"
+   },
+   "group": "dashed",
+   "override": {},
+   "note": "red route line at the kerb; advanced stop line with cycle box ahead"
+  },
+  "train/e12d585d1cf304230d7d39744f0797cd/0.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "full",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "none",
+    "left_pattern": "none",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "partial",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "dashed",
+   "override": {},
+   "note": "parked cars on the left; broken white centre line"
+  },
+  "train/f2b37a8b7f23380de3834e8165fd2620/1.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "text:other",
+    "markings_evidence": "full",
+    "left_color": "none",
+    "left_pattern": "none",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "no",
+    "right_role": "unknown",
+    "right_evidence": "partial"
+   },
+   "group": "arrow",
+   "override": {},
+   "note": "SLOW painted in my lane; no centre line"
+  },
+  "train/1c248b91fcec1954ff5503505d99c727/1.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "full",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "other",
+    "left_pattern": "solid",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "dashed",
+   "override": {},
+   "note": "red line at the kerb; long broken white centre line"
+  },
+  "train/3510c0055b143081d71aa4122da19639/0.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "full",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "white",
+    "left_pattern": "dashed",
+    "left_curb": "no",
+    "left_role": "special_lane_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "dashed",
+   "override": {},
+   "note": "advisory cycle lane (broken white line) on my left, double yellow beyond it"
+  },
+  "train/1869901e085ad9bfb1081f4efa101c93/2.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "yellow",
+    "left_pattern": "double_solid",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "yellow",
+   "override": {},
+   "note": ""
+  },
+  "train/70a63438f4f5c50ef21f29cc45d849ab/0.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "yellow",
+    "left_pattern": "double_solid",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "yellow",
+   "override": {},
+   "note": "overcast; double yellow at the kerb"
+  },
+  "train/1c5078b108792bcad84aacafb7edf52d/0.jpg": {
+   "fields": {
+    "lane_count": "",
+    "ego_index": "",
+    "scene_evidence": "insufficient",
+    "markings": "",
+    "markings_evidence": "partial",
+    "left_color": "yellow",
+    "left_pattern": "solid",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "partial",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "no",
+    "right_role": "unknown",
+    "right_evidence": "insufficient"
+   },
+   "group": "degraded",
+   "override": {
+    "act_change_right": "not_determined"
+   },
+   "note": "rain and glare; single yellow at the kerb"
+  },
+  "train/4fea456d82bfafd9161a364928d30234/0.jpg": {
+   "fields": {
+    "lane_count": "",
+    "ego_index": "",
+    "scene_evidence": "insufficient",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "white",
+    "left_pattern": "dashed",
+    "left_curb": "no",
+    "left_role": "lane_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "lane_line",
+    "right_evidence": "full"
+   },
+   "group": "dashed",
+   "override": {},
+   "note": "multi-lane road, broken lane lines on both sides; the lane count is not clear"
+  },
+  "train/39b0fb645812ec9da3cbf9a64e3e2b12/0.jpg": {
+   "fields": {
+    "lane_count": "2",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "white",
+    "left_pattern": "solid",
+    "left_curb": "no",
+    "left_role": "special_lane_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "lane_line",
+    "right_evidence": "full"
+   },
+   "group": "solid",
+   "override": {},
+   "note": "bus lane on my left (wide solid white line)"
+  },
+  "train/74be6bb80c7b66a911cef6cb3c999227/0.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "none",
+    "left_pattern": "none",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "dashed",
+   "override": {},
+   "note": ""
+  },
+  "train/a7fef42c584e5d3b67be7e244e35cd21/0.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "yellow",
+    "left_pattern": "double_solid",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "center_line",
+    "right_evidence": "partial"
+   },
+   "group": "yellow",
+   "override": {},
+   "note": ""
+  },
+  "train/97b78557b9103ec9b3b5dce23c33e5f6/0.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "text:other",
+    "markings_evidence": "full",
+    "left_color": "yellow",
+    "left_pattern": "dashed",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "yellow",
+   "override": {},
+   "note": "BUS STOP box (yellow) at the kerb"
+  },
+  "train/2fbe08dff3dad5e735cda2ccbca737d3/2.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "area:grid",
+    "markings_evidence": "full",
+    "left_color": "none",
+    "left_pattern": "none",
+    "left_curb": "yes",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "center_line",
+    "right_evidence": "partial"
+   },
+   "group": "yellow",
+   "override": {},
+   "note": "yellow box junction ahead"
+  }
+ },
+ "IN": {
+  "primary/d1/leftCamImgs/0000529.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "white",
+    "left_pattern": "solid",
+    "left_curb": "no",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "no",
+    "right_role": "unknown",
+    "right_evidence": "partial"
+   },
+   "group": "solid",
+   "override": {},
+   "note": "two-way street with white edge lines and no centre line"
+  },
+  "primary/d1/leftCamImgs/0000786.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "white",
+    "left_pattern": "solid",
+    "left_curb": "no",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "no",
+    "right_role": "unknown",
+    "right_evidence": "partial"
+   },
+   "group": "solid",
+   "override": {},
+   "note": "two-way street with white edge lines and no centre line"
+  },
+  "primary/d1/leftCamImgs/0002357.jpg": {
+   "fields": {
+    "lane_count": "",
+    "ego_index": "",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "none",
+    "left_pattern": "none",
+    "left_curb": "no",
+    "left_role": "unknown",
+    "left_evidence": "partial",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "yes",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "degraded",
+   "override": {},
+   "note": "divided road, kerbed median on the right, no lane lines"
+  },
+  "primary/d1/leftCamImgs/0002250.jpg": {
+   "fields": {
+    "lane_count": "",
+    "ego_index": "",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "none",
+    "left_pattern": "none",
+    "left_curb": "no",
+    "left_role": "unknown",
+    "left_evidence": "partial",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "yes",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "degraded",
+   "override": {},
+   "note": "divided road, kerbed median on the right, no lane lines"
+  },
+  "primary/d0/leftCamImgs/0000778.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "white",
+    "left_pattern": "solid",
+    "left_curb": "no",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "no",
+    "right_role": "unknown",
+    "right_evidence": "partial"
+   },
+   "group": "solid",
+   "override": {},
+   "note": "two-way street with white edge lines and no centre line"
+  },
+  "primary/d0/leftCamImgs/0001907.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "full",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "white",
+    "left_pattern": "solid",
+    "left_curb": "no",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "dashed",
+   "override": {},
+   "note": ""
+  },
+  "primary/d0/leftCamImgs/0002074.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "full",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "white",
+    "left_pattern": "solid",
+    "left_curb": "no",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "dashed",
+   "override": {},
+   "note": ""
+  },
+  "primary/d2/leftCamImgs/0001842.jpg": {
+   "fields": {
+    "lane_count": "1",
+    "ego_index": "1",
+    "scene_evidence": "full",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "white",
+    "left_pattern": "solid",
+    "left_curb": "no",
+    "left_role": "edge_line",
+    "left_evidence": "full",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "dashed",
+   "override": {},
+   "note": ""
+  },
+  "primary/d0/leftCamImgs/0004361.jpg": {
+   "fields": {
+    "lane_count": "2",
+    "ego_index": "1",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "white",
+    "left_pattern": "solid",
+    "left_curb": "no",
+    "left_role": "edge_line",
+    "left_evidence": "partial",
+    "right_color": "white",
+    "right_pattern": "dashed",
+    "right_curb": "no",
+    "right_role": "lane_line",
+    "right_evidence": "full"
+   },
+   "group": "dashed",
+   "override": {},
+   "note": "carriageway under the metro, median on the far right"
+  },
+  "primary/d0/leftCamImgs/0004255.jpg": {
+   "fields": {
+    "lane_count": "",
+    "ego_index": "",
+    "scene_evidence": "insufficient",
+    "markings": "",
+    "markings_evidence": "partial",
+    "left_color": "white",
+    "left_pattern": "solid",
+    "left_curb": "no",
+    "left_role": "edge_line",
+    "left_evidence": "partial",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "no",
+    "right_role": "unknown",
+    "right_evidence": "insufficient"
+   },
+   "group": "degraded",
+   "override": {
+    "act_change_right": "not_determined"
+   },
+   "note": "faint markings, low sun"
+  },
+  "primary/d2/leftCamImgs/0002423.jpg": {
+   "fields": {
+    "lane_count": "",
+    "ego_index": "",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "none",
+    "left_pattern": "none",
+    "left_curb": "no",
+    "left_role": "unknown",
+    "left_evidence": "partial",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "yes",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "degraded",
+   "override": {},
+   "note": "divided road, kerbed median on the right, no lane lines"
+  },
+  "primary/d2/leftCamImgs/0003438.jpg": {
+   "fields": {
+    "lane_count": "",
+    "ego_index": "",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "none",
+    "left_pattern": "none",
+    "left_curb": "no",
+    "left_role": "unknown",
+    "left_evidence": "partial",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "yes",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "degraded",
+   "override": {},
+   "note": "concrete barrier median on the right; worn, dusty surface"
+  },
+  "primary/d0/leftCamImgs/0002563.jpg": {
+   "fields": {
+    "lane_count": "",
+    "ego_index": "",
+    "scene_evidence": "partial",
+    "markings": "",
+    "markings_evidence": "full",
+    "left_color": "none",
+    "left_pattern": "none",
+    "left_curb": "no",
+    "left_role": "unknown",
+    "left_evidence": "partial",
+    "right_color": "none",
+    "right_pattern": "none",
+    "right_curb": "yes",
+    "right_role": "center_line",
+    "right_evidence": "full"
+   },
+   "group": "degraded",
+   "override": {},
+   "note": "divided road, kerbed median on the right, no lane lines"
+  }
+ }
+}
