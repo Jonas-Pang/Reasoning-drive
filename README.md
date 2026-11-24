@@ -8,6 +8,27 @@ Lane markings mean different things in different countries, and a lane detector 
 
 From Milestone 5 the unit is the lane the car drives in: both of its boundaries (colour, pattern, curb, role) and the guidance markings in it (arrows, prohibited-movement markings, words such as ONLY or 公交, waiting areas), with seven lane-level actions and a short advice, asked once per image (*Lane-level task*). A control, Test C, gives the passages of the other region instead, to see whether the answers follow the passages at all.
 
+## Final submission (Milestones 5–6): run the Lane Rule Advisor
+
+The deployed system is the lane-level advisor (`/app`): upload a dash-cam photo or a short clip, pick the region
+(CN, US, UK, IN) and the rules setting (own region / none / another region), and it returns both lane lines, seven
+lane-level actions with reasons, the cited rule IDs and a guard status ("needs review" when its checks fail).
+Every answer is logged (`results/app/predictions.jsonl`) and counted for Prometheus; Grafana has the dashboard and
+five alert rules. Details: [docs/lane_advisor.md](docs/lane_advisor.md), [docs/deployment.md](docs/deployment.md).
+
+```bash
+git clone https://github.com/Jonas-Pang/Reasoning-drive && cd Reasoning-drive
+cp .env.example .env              # set GRAFANA_ADMIN_PASSWORD; NAVIGATOR_API_KEY is optional
+docker compose up --build         # app http://localhost:8770/app · Grafana http://localhost:3000 · Prometheus http://localhost:9090
+```
+
+Without a project key, choose the model **Mock** (no model call) or paste your own OpenAI-compatible key in the
+**Your API key** tab (kept in memory only). "Saved answer" mode replays the frozen test answers but needs the dataset
+images (`DATASETS_ROOT`), which cannot be redistributed. Without Docker: `pip install -r requirements.txt` (Python 3.11),
+then `python main.py web`. Self-test: `python main.py selftest`. The lane-level result tables are rebuilt from the
+saved runs by `results/reports/final_m6/` (no model call). Milestone 4 (single-marking study, package `lane_reasoner`)
+is commit `13d3ba5`. The sections below describe the whole project and were written during development.
+
 ## Project layout
 
 The code is one package with a single entry point, and everything that changes between experiments lives outside the code: settings in `configs/`, prompt templates in `prompts/`, the countries' rules in `regulations/`, images and labels per country in `datasets/`, and every saved result in `results/`. The layout follows [DiLu](https://github.com/PJLab-ADG/DiLu) (one entry script, one settings folder, fixed prompt templates, an agent package and a results folder).

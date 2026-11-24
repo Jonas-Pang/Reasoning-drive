@@ -110,10 +110,17 @@ function render(r, secs) {
   const acts = a.actions || {};
   const lab = r.label_actions;
   const chips = ACTIONS.map((k) => {
-    const v = acts[k] || "—"; const cls = v === "allowed" ? "ok" : v === "prohibited" ? "no" : v === "stop_first" ? "warn" : "na";
+    const v = acts[k] || "—";
+    // Walkthrough 2026-11-23: for a turn or U-turn the model often says "not applicable" where the project convention
+    // (a direction with no arrow is prohibited) says "prohibited"; for the driver both mean "do not turn from this lane".
+    // Show it as "not allowed (no arrow)" and count it as agreeing with a "prohibited" label. Straight is left as it is.
+    const naMove = v === "not_applicable" && ["turn_left", "turn_right", "u_turn"].includes(k);
+    const shown = naMove ? "not allowed (no arrow)" : v.replace("_", " ");
+    const cls = v === "allowed" ? "ok" : (v === "prohibited" || naMove) ? "no" : v === "stop_first" ? "warn" : "na";
     const dis = (rc.disagreements || []).find((d) => d.action === k);
-    const l = lab ? (lab[k] === v ? `<span class="lab good" title="label: ${esc(lab[k])}">✓ label</span>` : `<span class="lab bad" title="label: ${esc(lab[k])}">✗ label: ${esc(lab[k])}</span>`) : "";
-    return `<div class="act ${cls}"><div class="an">${NAMES[k]}</div><div class="av">${esc(v.replace("_", " "))}</div>
+    const same = lab && (lab[k] === v || (naMove && lab[k] === "prohibited"));
+    const l = lab ? (same ? `<span class="lab good" title="label: ${esc(lab[k])}">✓ label</span>` : `<span class="lab bad" title="label: ${esc(lab[k])}">✗ label: ${esc(lab[k])}</span>`) : "";
+    return `<div class="act ${cls}"><div class="an">${NAMES[k]}</div><div class="av">${esc(shown)}</div>
       ${dis ? `<div class="ad">rule table: ${esc(dis.rules)}</div>` : ""}${l}</div>`;
   }).join("");
   const rules = (a.element_rules || []).filter((e) => e && e.rule_id).map((e) => {
@@ -122,7 +129,7 @@ function render(r, secs) {
   }).join("");
   $("#out").innerHTML = `
     <div class="verdict ${ok ? "pass" : "review"}">
-      <div class="vt">${ok ? "✔ Verified" : "⚠ Needs human review"}</div>
+      <div class="vt">${ok ? "✔ No conflict found — not a check that the answer is right" : "⚠ Needs human review"}</div>
       <div class="vd">Rule check: model and rule table agree on <b>${agree}</b> decided actions${rc.agreement != null ? ` (${Math.round(rc.agreement * 100)} %)` : ""}.
         ${(c.reasons || []).length ? "<br>" + c.reasons.map(esc).join("<br>") : ""}</div>
     </div>

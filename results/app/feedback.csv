@@ -311,3 +311,17 @@ time_utc,request_id,source,region,test,model,image_id,rating,left_line,right_lin
 2026-11-18T20:15:58Z,60d4f4d058ea,simulated_reviewer,US,B,gemma4:31b,bdd100k_val__c4e97226-7be7eef5,bad,,,right,wrong,right,right,right,right,right,change right should be allowed (too cautious),too_cautious
 2026-11-18T20:15:59Z,6a28e31cf43b,simulated_reviewer,US,B,gemma4:31b,bdd100k_val__c07733d0-aebb8786,good,,,right,right,right,right,right,right,right,,
 2026-11-18T20:15:59Z,2170ae19a5ab,simulated_reviewer,US,B,gemma4:31b,bdd100k_val__bd656105-ed6f8161,bad,,,right,wrong,wrong,right,right,right,right,change right should be prohibited (unsafe); go straight: expected allowed,unsafe
+2026-11-24T03:04:53Z,97adca6bf9da,user,US,B,gemma4:31b,bdd100k_val__c6dcc1a9-0fa80e62,good,right,right,right,right,right,right,right,right,right,,
+2026-11-24T03:09:36Z,64818748de4b,user,US,B,gemma4:31b,bdd100k_val__c3321660-e6b60390,good,right,right,right,right,right,right,right,right,right,,
+2026-11-24T03:10:09Z,b670febcd9df,user,US,B,gemma4:31b,bdd100k_val__c068a67b-03b6e200,good,right,right,right,right,right,right,right,right,right,,
+2026-11-24T03:10:31Z,2aa31a2eff03,user,US,B,gemma4:31b,bdd100k_val__b321c6b6-ab603d42,good,right,right,right,right,right,right,right,right,right,,
+2026-11-24T03:10:57Z,60eb5a87033e,user,US,B,gemma4:31b,bdd100k_val__c6e1c974-906461f4,good,right,right,right,right,right,right,right,right,right,,
+2026-11-24T03:11:14Z,d04de60fc8d5,user,US,B,gemma4:31b,bdd100k_val__b49d6c0d-457e13b3,good,right,right,right,right,right,right,right,right,right,,
+2026-11-24T03:12:22Z,6d1894d85b80,user,US,B,gemma4:31b,bdd100k_val__b5f84825-c97df380,good,right,right,right,right,right,wrong,wrong,wrong,right,,
+2026-11-24T03:12:41Z,4519b4d5706a,user,US,B,gemma4:31b,bdd100k_val__bb289fdb-4bc01501,good,right,right,right,right,right,right,right,right,right,,
+2026-11-24T03:13:11Z,bfa792cbf33c,user,CN,B,gemma4:31b,mapdr__TidalFlowLane_8f5b7fa125df46d58641796df45384cb_1710048090674402000,good,right,right,right,right,right,wrong,wrong,wrong,right,,
+2026-11-24T03:13:12Z,bfa792cbf33c,user,CN,B,gemma4:31b,mapdr__TidalFlowLane_8f5b7fa125df46d58641796df45384cb_1710048090674402000,good,right,right,right,right,right,wrong,wrong,wrong,right,,
+2026-11-24T03:14:04Z,116e8c580c86,user,CN,B,gemma4:31b,mapdr__DirectionLane_4b981cd0989f4cfaabff379758d180d8_1710544474099074000,good,right,right,right,right,right,right,right,right,right,,
+2026-11-24T03:36:42Z,116e8c580c86,user,CN,B,gemma4:31b,mapdr__DirectionLane_4b981cd0989f4cfaabff379758d180d8_1710544474099074000,good,right,right,right,right,right,right,right,right,right,,
+2026-11-24T03:36:53Z,116e8c580c86,user,CN,B,gemma4:31b,mapdr__DirectionLane_4b981cd0989f4cfaabff379758d180d8_1710544474099074000,good,right,right,right,right,right,right,right,right,right,,
+2026-11-24T03:37:18Z,1d765c56c40f,user,CN,B,gemma4:31b,mapdr__BusLane_3f63f9a1c884494d9788a8041542d427_1711167006977722000,good,right,right,right,right,right,right,right,right,right,,
